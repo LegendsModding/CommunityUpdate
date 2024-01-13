@@ -1,6 +1,6 @@
 {
 	"badger:template": {
-		"game_mode": "LCU_PVP",
+		"game_mode": "lcu_pvp",
 		"parent": "game_rules"
 	},
 	"defaults": {

@@ -32,7 +32,7 @@
     },
     "badger:template": {
       "parent": "custom_game_rules",
-      "game_mode": "LCU_Campaign"
+      "game_mode": "lcu_campaign"
     }
   }
 }

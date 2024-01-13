@@ -4,7 +4,7 @@
 	"icon_alt": "dlc_data/icon_alt.jpg",
 	"reward_icon": "dlc_data/reward.png",
 	//end hardcoded
-	"name": "LCU_PVP",
-	"pack_id": "LCU_PVP",
+	"name": "lcu_pvp",
+	"pack_id": "lcu_pvp",
 	"type": "myth"
 }

@@ -1,3 +1,3 @@
-SNIPPET_InheritsFromGameMode("LCU_PVP", () => {
+SNIPPET_InheritsFromGameMode("lcu_pvp", () => {
     SetWorldGenDefinition(pvpWorldGenDefinition)
 })

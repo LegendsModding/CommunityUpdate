@@ -10,22 +10,22 @@
 			"loading_tip_set": "campaign",
 			"max_players": 8,
 			"requires_online_premium": true,
-			"name": "LCU_Campaign",
-			"telemetry_name": "LCU_Campaign",
-			"lobby_title": "hbui.lobby.LCU_Campaign.screenTitle",
-			"invite_panel_text": "hbui.inviteReceivedItem.invite.LCU_Campaign",
+			"name": "lcu_campaign",
+			"telemetry_name": "lcu_campaign",
+			"lobby_title": "Legends Community Campaign",
+			"invite_panel_text": "hbui.inviteReceivedItem.invite.lcu_campaign",
 			"host_warning_string": "hbui.inviteReceived.hostWarningContentLcu",
 			"ui_style": "lostLegend",
 			"reports_telemetry": true,
 			"activity_enabled": true,
 			"lobby_route": "/badger/lostLegendsLobby",
 			"lobby_route_name": "/hbui/lostLegendsLobby.html",
-			"lobby_name": "lobby.title.LCU_Campaign"
+			"lobby_name": "lobby.title.lcu_campaign"
 		}
 	],
 	"myths_hub_host_list": [
 		{
-			"name": "LCU_Campaign"
+			"name": "lcu_campaign"
 		}
 	]
 }

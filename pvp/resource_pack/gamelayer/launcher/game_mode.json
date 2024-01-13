@@ -8,9 +8,9 @@
       "game_session_template_name": "BadgerGame",
       "loading_tip_set": "pvp",
       "requires_online_premium": true,
-      "name": "LCU_PVP",
-      "telemetry_name": "LCU_PVP",
-      "lobby_title": "LCU_PVP",
+      "name": "lcu_pvp",
+      "telemetry_name": "lcu_pvp",
+      "lobby_title": "Legends Community PVP",
       "invite_panel_text": "hbui.inviteReceivedItem.invite.pvp",
       "host_warning_string": "hbui.inviteReceived.hostWarningContentPvp",
       "ui_style": "pvp",
@@ -25,7 +25,7 @@
   ],
   "myths_hub_host_list": [
     {
-      "name": "LCU_PVP"
+      "name": "lcu_pvp"
     }
   ]
 }

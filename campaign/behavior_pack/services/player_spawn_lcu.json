@@ -1,7 +1,7 @@
 {
   "badger:player_spawn_service": {
     "badger:template": {
-      "game_mode": "LCU_Campaign",
+      "game_mode": "lcu_campaign",
       "parent": "badger:player_spawn_service"
     },
     "player_archetype": "minecraft:player",

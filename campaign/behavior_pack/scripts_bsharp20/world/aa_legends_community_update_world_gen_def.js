@@ -1,8 +1,7 @@
-// An example definition
 const legendsCommunityUpdateWorldGenDefinition = {
-    base: campaignWorldGenDefinition, // if base is not null, then inherit from that definition
+    base: campaignWorldGenDefinition, // Use default campaign world gen definition
 };
 
-SNIPPET_InheritsFromGameMode('LCU_Campaign', () => {
-    SetWorldGenDefinition(campaignWorldGenDefinition);
+SNIPPET_InheritsFromGameMode('lcu_campaign', () => {
+    SetWorldGenDefinition(legendsCommunityUpdateWorldGenDefinition);
 });

@@ -4,7 +4,7 @@
   "icon_alt": "dlc_data/icon_alt.jpg",
   "reward_icon": "dlc_data/reward.png",
   //end hardcoded
-  "name": "LCU_Campaign",
-  "pack_id": "LCU_Campaign",
+  "name": "lcu_campaign",
+  "pack_id": "lcu_campaign",
   "type": "lost_legend"
 }
