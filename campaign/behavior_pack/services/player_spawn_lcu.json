@@ -1,0 +1,19 @@
+{
+  "badger:player_spawn_service": {
+    "badger:template": {
+      "game_mode": "LCU_Campaign",
+      "parent": "badger:player_spawn_service"
+    },
+    "player_archetype": "minecraft:player",
+    "default_mount_archetype": "badger:mount_horse",
+    "player_spawn_world_request_type": "player_spawn",
+    "respawn_seconds": 10.0,
+    "min_block_radius": 100,
+    "pending_villages": [
+      {
+        "name": "Well Of Fate",
+        "count": 1
+      }
+    ]
+  }
+}

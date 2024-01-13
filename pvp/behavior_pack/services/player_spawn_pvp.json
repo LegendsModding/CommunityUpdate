@@ -1,0 +1,27 @@
+{
+  "badger:player_spawn_service": {
+    "player_archetype": "minecraft:player",
+    "default_mount_archetype": "badger:mount_horse",
+    "player_spawn_world_request_type": "player_spawn",
+    "respawn_seconds": 13.0,
+    "apply_status": {
+      "spawn_invincibility": {
+        "strength": 1.0
+      }
+    },
+    "pending_villages": [
+      {
+        "name": "pvp.hq.red.name",
+        "count": 1
+      },
+      {
+        "name": "pvp.hq.blue.name",
+        "count": 1
+      }
+    ],
+    "badger:template": {
+      "parent": "badger:player_spawn_service",
+      "game_mode": "pvp"
+    }
+  }
+}

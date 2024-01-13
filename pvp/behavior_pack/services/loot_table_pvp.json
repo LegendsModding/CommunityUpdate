@@ -1,0 +1,136 @@
+{
+  "badger:loot_table": {
+    "badger:template": {
+      "parent": "badger:loot_table",
+      "game_mode": "pvp"
+    },
+    "definitions": [
+      {
+        "id": "piglin_barracks",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "xp_common",
+              "percent_chance": 100,
+              "min": 35,
+              "max": 35
+            }
+          ]
+        }
+      },
+      {
+        "id": "piglin_tower",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "xp_common",
+              "percent_chance": 100,
+              "min": 35,
+              "max": 35
+            }
+          ]
+        }
+      },
+      {
+        "id": "piglin_super_tower",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "xp_common",
+              "percent_chance": 100,
+              "min": 60,
+              "max": 60
+            }
+          ]
+        }
+      },
+      {
+        "id": "common_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [            
+            {
+              "resource_type": "emerald",
+              "percent_chance":100,
+              "min": 1,
+              "max": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "uncommon_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [            
+            {
+              "resource_type": "emerald",
+              "percent_chance":100,
+              "min": 3,
+              "max": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "rare_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [            
+            {
+              "resource_type": "emerald",
+              "percent_chance":100,
+              "min": 20,
+              "max": 20
+            }
+          ]
+        }
+      },
+      {
+        "id": "roaming_common_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [            
+            {
+              "resource_type": "emerald",
+              "percent_chance":100,
+              "min": 1,
+              "max": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "roaming_uncommon_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [            
+            {
+              "resource_type": "emerald",
+              "percent_chance":100,
+              "min": 3,
+              "max": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "roaming_rare_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [            
+            {
+              "resource_type": "emerald",
+              "percent_chance":100,
+              "min": 20,
+              "max": 20
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

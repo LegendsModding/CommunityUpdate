@@ -1,0 +1,72 @@
+{
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_outpostInnerCirclePvP",
+      "cost": 0,
+      "tags": [
+        "outpostInnerCirclePvP"
+      ],
+      "zone_filter": "outpostInnerCirclePvP",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_outpostOuterCirclePvP",
+      "cost": 0,
+      "tags": [
+        "outpostOuterCirclePvP"
+      ],
+      "zone_filter": "outpostOuterCirclePvP",
+      "exclude": false
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_outpostInnerCirclePvP",
+      "cost": 0,
+      "tags": [
+        "outpostInnerCirclePvP"
+      ],
+      "zone_tag": "outpostInnerCirclePvP"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_outpostOuterCirclePvP",
+      "cost": 0,
+      "tags": [
+        "outpostOuterCirclePvP"
+      ],
+      "zone_tag": "outpostOuterCirclePvP"
+    }
+  ],
+  "zone_height_change_cards": [
+    {
+      "unique_card_id": "levelWithCenterPvP",
+      "cost": 0,
+      "tags": [
+        "levelWithCenterPvP"
+      ],
+      "biome": "nether_horderunner",
+      "zone_height_change": 0,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "1DownFromCenterPvP",
+      "cost": 0,
+      "tags": [
+        "1DownFromCenterPvP"
+      ],
+      "biome": "nether_horderunner",
+      "zone_height_change": -1,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "2DownFromCenterPvP",
+      "cost": 0,
+      "tags": [
+        "2DownFromCenterPvP"
+      ],
+      "biome": "nether_horderunner",
+      "zone_height_change": -2,
+      "zone_height_control": "height_control_centered"
+    }
+  ]
+}

@@ -1,0 +1,1927 @@
+{
+  "settings": {
+    "seconds_per_played_faction_card": 0.25
+  },
+  "factions": [
+    {
+      "unique_card_id": "pvp_center_pvp_center",
+      "placement_name": "center",
+      "placement_type": "special",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "center"
+      ],
+      "placement_rules": [
+        {
+          "game_start": {}
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_blue_hq_pvp_team_blue_hq_base_pvp",
+      "map_data": "badger:pvp_hq_blue_team",
+      "village_data": "badger:pvp_hq_blue",
+      "placement_name": "blue_hq",
+      "placement_type": "base",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "tags": [
+        "pvp_team_blue_hq",
+        "base_pvp"
+      ],
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_village_stamp_evergreen",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 100
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_red_hq_pvp_team_red_hq_base_pvp",
+      "map_data": "badger:pvp_hq_red_team",
+      "village_data": "badger:pvp_hq_red",
+      "placement_name": "red_hq",
+      "placement_type": "base",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_village_stamp_autumn",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "tags": [
+        "pvp_team_red_hq",
+        "base_pvp"
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              32,
+              33
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 100
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 100
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_blue_hq_pvp_team_blue_hq_base_pvp_mirrored",
+      "map_data": "badger:pvp_hq_blue_team",
+      "village_data": "badger:pvp_hq_blue",
+      "placement_name": "blue_hq",
+      "placement_type": "base",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "tags": [
+        "pvp_team_blue_hq_mirrored",
+        "base_pvp"
+      ],
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_village_stamp_evergreen",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 100
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              17
+            ],
+            "distance_to_zero_score": 4,
+            "tag_parent": "center_line",
+            "weight": 100
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_red_hq_pvp_team_red_hq_base_pvp_mirrored",
+      "map_data": "badger:pvp_hq_red_team",
+      "village_data": "badger:pvp_hq_red",
+      "placement_name": "red_hq",
+      "placement_type": "base",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_village_stamp_autumn",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "tags": [
+        "pvp_team_red_hq_mirrored",
+        "base_pvp"
+      ],
+      "placement_rules": [
+        {
+          "mirror": {
+            "placement_to_mirror": "blue_hq"
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_red_hq_pvp_team_red_hq_practice_base_pvp",
+      "map_data": "badger:pvp_hq_red_team",
+      "village_data": "badger:pvp_hq_red",
+      "placement_name": "red_hq",
+      "placement_type": "base",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_village_stamp_npc",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "tags": [
+        "pvp_team_red_hq_practice",
+        "base_pvp"
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              32,
+              33
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 100
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 100
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "witch_hut_pvp_placement",
+      "map_data": "badger:pvp_witch_hut_faction",
+      "village_data": "badger:pvp_witch_hut",
+      "placement_name": "witch_hut",
+      "placement_type": [
+        "base",
+        "wetlands"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 4,
+        "starting_pixels": 4
+      },
+      "jitter": 0,
+      "tags": [
+        "pvp_witch_hut"
+      ],
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_witch_stamp_swamp",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "blue_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "red_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 100
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "witch_hut_pvp_placement_mirrored",
+      "map_data": "badger:pvp_witch_hut_faction",
+      "village_data": "badger:pvp_witch_hut",
+      "placement_name": "witch_hut",
+      "placement_type": [
+        "base",
+        "wetlands"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 4,
+        "starting_pixels": 4
+      },
+      "jitter": 0,
+      "tags": [
+        "pvp_witch_hut_mirrored"
+      ],
+      "textures": [
+        {
+          "enabled": true,
+          "texture_name": "pvp_biome_witch_stamp_swamp",
+          "texture_key": "primary_texture"
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "blue_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "red_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 100
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              0
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center_line",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_outpost_slot_outpost_slot",
+      "map_data": "badger:piglin_pvp_faction",
+      "village_data": "",
+      "placement_name": "outpost_slot",
+      "placement_type": "slot",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "jitter": 0,
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 2,
+        "starting_pixels": 1
+      },
+      "tags": [
+        "outpost_slot"
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "blue_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "red_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "slot",
+            "weight": 5
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_outpost_slot_outpost_slot_mirrored_center",
+      "map_data": "badger:piglin_pvp_faction",
+      "village_data": "",
+      "placement_name": "outpost_slot",
+      "placement_type": "slot",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "jitter": 0,
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 2,
+        "starting_pixels": 1
+      },
+      "tags": [
+        "outpost_slot_center"
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "blue_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "red_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              0
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center_line",
+            "weight": 5,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_outpost_slot_outpost_slot_mirrored_first",
+      "map_data": "badger:piglin_pvp_faction",
+      "village_data": "",
+      "placement_name": "outpost_slot",
+      "placement_type": "slot",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "jitter": 0,
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 2,
+        "starting_pixels": 1
+      },
+      "tags": [
+        "outpost_slot_mirrored_first"
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "blue_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "red_hq",
+            "weight": 10
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "slot",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 8,
+            "distance_to_zero_score": 0,
+            "tag_parent": "center_line",
+            "weight": 5,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_outpost_slot_outpost_slot_mirrored_second",
+      "map_data": "badger:piglin_pvp_faction",
+      "village_data": "",
+      "placement_name": "outpost_slot",
+      "placement_type": "slot",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "jitter": 0,
+      "tags": [
+        "outpost_slot_mirrored_second"
+      ],
+      "placement_rules": [
+        {
+          "mirror": {
+            "placement_to_mirror": "outpost_slot"
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_fateful_land_pvp_1_pvp_biome_fate_elevated_stone_large",
+      "placement_name": "fateful_land_pvp_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "fate",
+        "elevated",
+        "stone",
+        "large"
+      ],
+      "biome": {
+        "biome": "fateful_land_pvp",
+        "total_pixels": 5,
+        "starting_pixels": 2
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              16
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              16
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              24
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_fateful_land_pvp_2_pvp_biome_fate_elevated_stone_small",
+      "placement_name": "fateful_land_pvp_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "fate",
+        "elevated",
+        "stone",
+        "small"
+      ],
+      "biome": {
+        "biome": "fateful_land_pvp",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              64
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              64
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              640
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "fateful_land_pvp_1",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_forest_1_pvp_biome_forest_wood_iron_coal_large",
+      "placement_name": "forest_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "forest",
+        "wood",
+        "iron",
+        "coal",
+        "large"
+      ],
+      "biome": {
+        "biome": "forest",
+        "total_pixels": 4,
+        "starting_pixels": 2
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 6
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_forest_2_pvp_biome_forest_wood_small_iron_coal",
+      "placement_name": "forest_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "forest",
+        "wood",
+        "small",
+        "iron",
+        "coal"
+      ],
+      "biome": {
+        "biome": "forest",
+        "total_pixels": 4,
+        "starting_pixels": 2
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 6
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_grasslands_1_pvp_biome_grasslands_plains_iron_coal_large",
+      "placement_name": "grasslands_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "grasslands",
+        "plains",
+        "iron",
+        "coal",
+        "large"
+      ],
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 5,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_frostlands_1_pvp_biome_frostlands_plains_mob_alliance_biome_diamond_large",
+      "placement_name": "frostlands_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "frostlands",
+        "plains",
+        "mob_alliance_biome",
+        "diamond",
+        "large"
+      ],
+      "biome": {
+        "biome": "frostlands",
+        "total_pixels": 5,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_drylands_1_pvp_biome_drylands_plains_big_iron_large",
+      "placement_name": "drylands_1",
+      "placement_type": [
+        "biome",
+        "drylands"
+      ],
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "jitter": 0,
+      "tags": [
+        "pvp",
+        "biome",
+        "drylands",
+        "plains",
+        "big",
+        "iron",
+        "large"
+      ],
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 7,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_wetlands_1_pvp_biome_wetlands_wood_redstone_large",
+      "placement_name": "wetlands_1",
+      "placement_type": [
+        "biome",
+        "wetlands"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "wetlands",
+        "wood",
+        "redstone",
+        "large"
+      ],
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 7,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_jungle_1_pvp_biome_jungle_wood_mob_alliance_biome_redstone_large",
+      "placement_name": "jungle_1",
+      "placement_type": [
+        "biome",
+        "jungle"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "jungle",
+        "wood",
+        "mob_alliance_biome",
+        "redstone",
+        "large"
+      ],
+      "biome": {
+        "biome": "jungle",
+        "total_pixels": 7,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_brokenlands_1_pvp_biome_brokenlands_elevated_mob_alliance_biome_coal_large",
+      "placement_name": "brokenlands_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "brokenlands",
+        "elevated",
+        "mob_alliance_biome",
+        "coal",
+        "large"
+      ],
+      "biome": {
+        "biome": "brokenlands",
+        "total_pixels": 5,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 1,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 3,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_extreme_hills_1_pvp_biome_mountains_elevated_diamond_large",
+      "placement_name": "extreme_hills_1",
+      "placement_type": [
+        "biome",
+        "mountains"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "mountains",
+        "elevated",
+        "diamond",
+        "large"
+      ],
+      "biome": {
+        "biome": "mountain_parent_valleys_pvp",
+        "total_pixels": 7,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              48
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              23
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_drylands_2_pvp_biome_drylands_plains_stone_small_iron",
+      "placement_name": "drylands_2",
+      "placement_type": [
+        "biome",
+        "drylands"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "drylands",
+        "plains",
+        "stone",
+        "small",
+        "iron"
+      ],
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              640
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "drylands_1",
+            "weight": 4
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_wetlands_2_pvp_biome_wetlands_wood_small_redstone",
+      "placement_name": "wetlands_2",
+      "placement_type": [
+        "biome",
+        "wetlands"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "wetlands",
+        "wood",
+        "small",
+        "redstone"
+      ],
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              640
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "wetlands_1",
+            "weight": 4
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_frostlands_2_pvp_biome_frostlands_plains_mob_alliance_biome_small_diamond",
+      "placement_name": "frostlands_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "frostlands",
+        "plains",
+        "mob_alliance_biome",
+        "small",
+        "diamond"
+      ],
+      "biome": {
+        "biome": "frostlands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              640
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "frostlands_1",
+            "weight": 4
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "pvp_grasslands_2_pvp_biome_grasslands_plains_small_iron_coal",
+      "placement_name": "grasslands_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "pvp",
+        "biome",
+        "grasslands",
+        "plains",
+        "small",
+        "iron",
+        "coal"
+      ],
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "blue_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "red_hq",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              8,
+              32
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              640
+            ],
+            "distance_to_zero_score": 0,
+            "tag_parent": "grasslands_1",
+            "weight": 4
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_1_pvp",
+      "map_data": "badger:poi_mount_01_faction",
+      "village_data": "badger:poi_mount_01_village",
+      "placement_name": "mount_1",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_01"
+      ],
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_01_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            27,
+            30
+          ]
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 0,
+            "distance_to_zero_score": 10,
+            "tag_parent": "drylands",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 20,
+            "distance_to_zero_score": 10,
+            "tag_parent": "base",
+            "weight": 3
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_3_pvp",
+      "map_data": "badger:poi_mount_03_faction",
+      "village_data": "badger:poi_mount_03_village",
+      "placement_name": "mount_3",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_03"
+      ],
+      "biome": {
+        "biome": "jungle",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_03_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 0,
+            "distance_to_zero_score": 10,
+            "tag_parent": "jungle",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 20,
+            "distance_to_zero_score": 10,
+            "tag_parent": "base",
+            "weight": 3
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_4_pvp",
+      "map_data": "badger:poi_mount_04_faction",
+      "village_data": "badger:poi_mount_04_village",
+      "placement_name": "mount_4",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_04"
+      ],
+      "biome": {
+        "biome": "mountain_parent_valleys_pvp",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_04_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            31,
+            36
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 0,
+            "distance_to_zero_score": 10,
+            "tag_parent": "mountains",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 20,
+            "distance_to_zero_score": 10,
+            "tag_parent": "base",
+            "weight": 3
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_6_pvp",
+      "map_data": "badger:poi_mount_06_faction",
+      "village_data": "badger:poi_mount_06_village",
+      "placement_name": "mount_6",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_06"
+      ],
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 1,
+        "starting_pixels": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_06_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            23
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 0,
+            "distance_to_zero_score": 10,
+            "tag_parent": "wetlands",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 20,
+            "distance_to_zero_score": 15,
+            "tag_parent": "base",
+            "weight": 3,
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_1_pvp_mirrored",
+      "map_data": "badger:poi_mount_01_faction",
+      "village_data": "badger:poi_mount_01_village",
+      "placement_name": "mount_1_mirrored",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_01_mirrored"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_01_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            27,
+            30
+          ]
+        }
+      ],
+      "placement_rules": [
+        {
+          "mirror": {
+            "placement_to_mirror": "mount_1",
+            "skip_if_parent_on_center_line": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_3_pvp_mirrored",
+      "map_data": "badger:poi_mount_03_faction",
+      "village_data": "badger:poi_mount_03_village",
+      "placement_name": "mount_3_mirrored",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_03_mirrored"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_03_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "mirror": {
+            "placement_to_mirror": "mount_3",
+            "skip_if_parent_on_center_line": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_4_pvp_mirrored",
+      "map_data": "badger:poi_mount_04_faction",
+      "village_data": "badger:poi_mount_04_village",
+      "placement_name": "mount_4_mirrored",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_04_mirrored"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_04_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            31,
+            36
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "mirror": {
+            "placement_to_mirror": "mount_4",
+            "skip_if_parent_on_center_line": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_6_pvp_mirrored",
+      "map_data": "badger:poi_mount_06_faction",
+      "village_data": "badger:poi_mount_06_village",
+      "placement_name": "mount_6_mirrored",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mount_06_mirrored"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_06_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            23
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "mirror": {
+            "placement_to_mirror": "mount_6",
+            "skip_if_parent_on_center_line": true
+          }
+        }
+      ]
+    }
+  ]
+}

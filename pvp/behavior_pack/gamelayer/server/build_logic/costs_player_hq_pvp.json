@@ -1,0 +1,161 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "pvp_aiZombieSpawner",
+      "cost": 0,
+      "tags": [
+        "aiZombieSpawner"
+      ],
+      "buildable": "badger:spawner_zombie_practice_ai"
+    },
+    {
+      "unique_card_id": "pvp_aiSkeletonSpawner",
+      "cost": 0,
+      "tags": [
+        "aiSkeletonSpawner"
+      ],
+      "buildable": "badger:spawner_skeleton_practice_ai"
+    },
+    {
+      "unique_card_id": "pvp_aiCreeperSpawner",
+      "cost": 0,
+      "tags": [
+        "aiCreeperSpawner"
+      ],
+      "buildable": "badger:spawner_creeper_practice_ai"
+    },
+    {
+      "unique_card_id": "pvp_aiStoneGolemSpawner",
+      "cost": 0,
+      "tags": [
+        "aiStoneGolemSpawner"
+      ],
+      "buildable": "badger:spawner_stone_golem_practice_ai"
+    },
+    {
+      "unique_card_id": "pvp_aiWoodGolemSpawner",
+      "cost": 0,
+      "tags": [
+        "aiWoodGolemSpawner"
+      ],
+      "buildable": "badger:spawner_wood_golem_practice_ai"
+    },
+    {
+      "unique_card_id": "pvp_aiCavalryGolemSpawner",
+      "cost": 0,
+      "tags": [
+        "aiCavalryGolemSpawner"
+      ],
+      "buildable": "badger:spawner_cavalry_golem_practice_ai"
+    },
+    {
+      "unique_card_id": "pvp_aiSupportGolemSpawner",
+      "cost": 0,
+      "tags": [
+        "aiSupportGolemSpawner"
+      ],
+      "buildable": "badger:spawner_support_golem_practice_ai"
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_hqInnerCirclePvP",
+      "cost": 0,
+      "tags": [
+        "hqInnerCirclePvP"
+      ],
+      "zone_filter": "hqInnerCirclePvP",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_hqOuterCirclePvP",
+      "cost": 0,
+      "tags": [
+        "hqOuterCirclePvP"
+      ],
+      "zone_filter": "hqOuterCirclePvP",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_playerPathZone",
+      "cost": 0,
+      "tags": [
+        "playerPathZone"
+      ],
+      "zone_filter": "playerPathZone",
+      "exclude": false
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_hqInnerCirclePvP",
+      "cost": 0,
+      "tags": [
+        "hqInnerCirclePvP"
+      ],
+      "zone_tag": "hqInnerCirclePvP"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_hqOuterCirclePvP",
+      "cost": 0,
+      "tags": [
+        "hqOuterCirclePvP"
+      ],
+      "zone_tag": "hqOuterCirclePvP"
+    }
+  ],
+  "walls_cards": [
+    {
+      "unique_card_id": "playerWalls",
+      "cost": 0,
+      "tags": [
+        "playerWalls"
+      ],
+      "wall_buildable": "badger:chunk_drag_wall",
+      "path_entrance": "badger:gate",
+      "embedded_buildables": []
+    }
+  ],
+  "zone_height_change_cards": [
+    {
+      "unique_card_id": "LevelWithCenterPvPHQ",
+      "cost": 0,
+      "tags": [
+        "LevelWithCenterPvPHQ"
+      ],
+      "biome": "fateful_land_pvp",
+      "zone_height_change": 0,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "1DownFromCenterPvPHQ",
+      "cost": 0,
+      "tags": [
+        "1DownFromCenterPvPHQ"
+      ],
+      "biome": "fateful_land_pvp",
+      "zone_height_change": -1,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "2DownFromCenterPvPHQ",
+      "cost": 0,
+      "tags": [
+        "2DownFromCenterPvPHQ"
+      ],
+      "biome": "fateful_land_pvp",
+      "zone_height_change": -2,
+      "zone_height_control": "height_control_centered"
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "playerPath",
+      "cost": 0,
+      "tags": [
+        "playerPath"
+      ],
+      "is_district_path": true
+    }
+  ]
+}

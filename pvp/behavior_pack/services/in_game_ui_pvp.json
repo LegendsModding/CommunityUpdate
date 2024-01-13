@@ -1,0 +1,140 @@
+{
+  "badger:in_game_ui": {
+    "badger:template": {
+      "parent": "badger:in_game_ui",
+      "game_mode": "pvp"
+    },
+    "resource_items": [
+      "wood",
+
+      "stone",
+
+      "iron",
+
+      "coal",
+
+      "redstone",
+
+      "diamond",
+
+      "xp_common",
+
+      "emerald"
+    ],
+    "max_hotbar_size": 8,
+    "respawn_post_delay_time": 2,
+    "respawn_pre_screen_delay_time": 3.0,
+    "show_locked_recipes": true,
+    "show_interactable_building": true,
+    "compass_ranges": [
+      {
+        "compass_range_id": "short",
+        "compass_range_value": 100.0
+      },
+
+      {
+        "compass_range_id": "medium",
+        "compass_range_value": 350.0
+      },
+
+      {
+        "compass_range_id": "long",
+        "compass_range_value": 2000.0
+      },
+
+      {
+        "compass_range_id": "infinite",
+        "compass_range_value": -1.0
+      },
+
+      {
+        "compass_range_id": "none",
+        "compass_range_value": 0.0
+      }
+    ],
+
+    // gamepad: dpad up, down, left, right
+    // keyboard: 1, 2, 3 ,4
+    "songbook_categories": ["resourcing", "mobs", "utility", "village"],
+    // Order of toolbar_items must match order of songbook_categories
+    "toolbar_items": [
+      {
+        // resourcing
+        "toolbar_id": "resourcing",
+
+        "initial_hotbar_items": [
+          "badger:terraform_gather_surface_wood",
+
+          "badger:terraform_gather_surface_stone"
+        ]
+      },
+      {
+        // combat
+        "toolbar_id": "mobs",
+
+        "initial_hotbar_items": [
+          "badger:spawner_wood_golem",
+          "badger:spawner_stone_golem",
+          "badger:spawner_support_golem",
+          "badger:spawner_cavalry_golem",
+          "badger:spawner_zombie",
+          "badger:spawner_skeleton",
+          "badger:spawner_creeper",
+          "badger:spawner_vindicator"
+        ]
+      },
+      {
+        // structure
+        "toolbar_id": "utility",
+
+        "initial_hotbar_items": [
+          "badger:chunk_drag_wall",
+          "badger:stairs_wood",
+          "badger:gate",
+          "badger:tower_arrow",
+          "badger:zoner_regen_structures",
+          "badger:totem_unlock_village_pvp",
+          "badger:redstone_launcher",
+          "badger:tower_shotgun"
+        ]
+      },
+      {
+        // village
+        "toolbar_id": "village",
+
+        "initial_hotbar_items": [
+          "badger:poi_zoner_well_of_fate_pylon",
+          "badger:unlock_gather_uncommon",
+          "badger:unlock_gather_coal",
+          "badger:unlock_gather_rare",
+          "badger:unlock_redstone",
+          "badger:increase_allay_cap_gather_build",
+          "badger:increase_spawner_cap",
+          "badger:increase_lure_cap"
+
+        ]
+      }
+    ],
+    // initial hud elements that are visible at start of game, only affects hud if onboarding is on
+    // all available hud elements: hud_hearts, hud_toolbar, hud_hotbar, hud_quickslot, hud_spawner_bar_flames, hud_spawner_bar_spawners, hud_spawner_bar_build_allays
+    // hud_spawner_bar_gather_allays, hud_map, hud_face_buttons, hud_resource_bar_core, hud_resource_bar_other, hud_compass, songbook
+    "hud_initial_visible_elements": [
+      "hud_hearts", 
+      "hud_compass", 
+      "hud_toolbar", 
+      "hud_hotbar", 
+      "hud_quickslot", 
+      "hud_spawner_bar_flames", 
+      "hud_spawner_bar_spawners", 
+      "hud_spawner_bar_build_allays", 
+      "hud_spawner_bar_gather_allays", 
+      "hud_map",
+      "hud_face_buttons", 
+      "hud_resource_bar_core", 
+      "hud_resource_bar_other", 
+      "hud_objective_health_bars", 
+      "hud_global_timer",
+      "songbook"
+    ]
+  }
+}

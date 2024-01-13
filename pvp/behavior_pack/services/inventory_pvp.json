@@ -1,0 +1,9 @@
+{
+    "badger:inventory": {
+      "badger:template": {
+        "parent": "badger:inventory",
+        "game_mode": "pvp"
+      },
+      "encountered": ["wood", "stone", "xp_common", "emerald"]
+    }
+  }

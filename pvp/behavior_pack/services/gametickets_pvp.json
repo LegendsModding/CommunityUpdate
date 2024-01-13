@@ -1,0 +1,27 @@
+{
+  "badger:game_tickets_service": {
+    "build_ticket_name": "build",
+	  "gather_ticket_name": "gather",
+    "game_tickets": [
+      {
+        "ticket_type": "gather",
+        "owner_type": "player",
+        "initial_cap": 3
+      },
+      {
+        "ticket_type": "build",
+        "owner_type": "player",
+        "initial_cap": 3
+      },
+      {
+        "ticket_type": "spawn",
+        "owner_type": "team",
+        "initial_cap": 40
+      }
+    ],
+    "badger:template": {
+      "parent": "badger:game_tickets_service",
+      "game_mode": "pvp"
+    }
+  }
+}

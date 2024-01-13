@@ -1,0 +1,66 @@
+{
+  "badger:pop_cap_service": {
+    "badger:template": {
+      "parent": "badger:pop_cap_service",
+      "game_mode": "pvp"
+    },
+    "default_configuration": {
+      "pop_cap": 50
+    },
+    "heuristics": {
+      "heartbeat_time": {
+        "multiplier": 0.5
+      },
+      "suspended_time": {
+        "multiplier": 0.001,
+        "squared": true
+      },
+      "distance": {
+        "multiplier": 1.0,
+        "squared": true
+      }
+    },
+    "configurations": [
+      {
+        "teams": [
+          "team_one"
+        ],
+        "pop_cap": 100
+      },
+      {
+        "teams": [
+          "team_two"
+        ],
+        "pop_cap": 100
+      },
+      {
+        "teams": [
+          "outpost_piglin_team"
+        ],
+        "pop_cap": 150
+      },
+      {
+        "teams": [
+          "piglin_team"
+        ],
+        "pop_cap": 50
+      },
+      {
+        "teams": [
+          "wild_team"
+        ],
+        "pop_cap": 30
+      }
+    ],
+    "non_pop_cap_override_limit": 20,
+    "spawn_caps": {
+      "magma_cubes_launched": 15,
+      "magma_boss_cubes_launched": 15,
+      "piglin_crates_launched_runts": 40,
+      "piglin_crates_launched_boars": 28,
+      "piglin_crates_launched_pigmadilos": 10,
+      "carrier_reinforcements": 15
+    },
+    "default_spawn_cap": 1
+  }
+}

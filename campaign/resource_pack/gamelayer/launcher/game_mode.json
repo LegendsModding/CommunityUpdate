@@ -1,0 +1,31 @@
+{
+	"game_modes": [
+		{
+			"parent": "lost_legend",
+			"behavior_pack": "2c98e892-1983-4d9b-80cb-ddfc0a64dc41",
+			"resource_pack": "07e19d0a-5843-4f10-bbcf-23891496b57f",
+			"lobby_session_template_name": "BadgerLobby_8p",
+			"game_session_template_name": "BadgerGame_8p",
+			"default_privacy": 1,
+			"loading_tip_set": "campaign",
+			"max_players": 8,
+			"requires_online_premium": true,
+			"name": "LCU_Campaign",
+			"telemetry_name": "LCU_Campaign",
+			"lobby_title": "hbui.lobby.LCU_Campaign.screenTitle",
+			"invite_panel_text": "hbui.inviteReceivedItem.invite.LCU_Campaign",
+			"host_warning_string": "hbui.inviteReceived.hostWarningContentLcu",
+			"ui_style": "lostLegend",
+			"reports_telemetry": true,
+			"activity_enabled": true,
+			"lobby_route": "/badger/lostLegendsLobby",
+			"lobby_route_name": "/hbui/lostLegendsLobby.html",
+			"lobby_name": "lobby.title.LCU_Campaign"
+		}
+	],
+	"myths_hub_host_list": [
+		{
+			"name": "LCU_Campaign"
+		}
+	]
+}

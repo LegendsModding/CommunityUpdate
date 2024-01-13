@@ -1,0 +1,31 @@
+{
+  "game_modes": [
+    {
+      "parent": "conquest",
+      "behavior_pack": "c233c5fb-c48a-4842-920d-ca8da624b932",
+      "resource_pack": "e78fe0ea-7b1a-4920-b1b1-8d36621bd97b",
+      "lobby_session_template_name": "BadgerLobby",
+      "game_session_template_name": "BadgerGame",
+      "loading_tip_set": "pvp",
+      "requires_online_premium": true,
+      "name": "LCU_PVP",
+      "telemetry_name": "LCU_PVP",
+      "lobby_title": "LCU_PVP",
+      "invite_panel_text": "hbui.inviteReceivedItem.invite.pvp",
+      "host_warning_string": "hbui.inviteReceived.hostWarningContentPvp",
+      "ui_style": "pvp",
+      "generate_match_guid": true,
+      "reports_telemetry": true,
+      "activity_enabled": true,
+      "end_of_match_enter_sound": "BAE_pvp_endOfMatch_enter",
+      "end_of_match_exit_sound": "BAE_pvp_endOfMatch_exit",
+      "level_name": "Badger PvP",
+      "lobby_name": "PvP Lobby"
+    }
+  ],
+  "myths_hub_host_list": [
+    {
+      "name": "LCU_PVP"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+	"badger:player_spawn_service": {
+		"badger:template": {
+			"game_mode": "Creative_PVP",
+			"parent": "badger:player_spawn_service"
+		},
+		"default_mount_archetype": "badger:mount_beetle",
+		"min_block_radius": 150,
+		"pending_villages": [],
+		"player_archetype": "minecraft:player",
+		"respawn_seconds": 0.0,
+		"apply_status": {
+			"spawn_invincibility": {
+				"strength": 1.0
+			}
+		}
+	}
+}
