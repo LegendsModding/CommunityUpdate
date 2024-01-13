@@ -1,0 +1,83 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_first_brick",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_first_brick",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_first_brick",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spawner_first_brick"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_first_brick",
+        "tooltip_title": "structures.spawner.first.brick.name",
+        "tactical_description": "structures.spawner.first.brick.tactical_description",
+        "tooltip_description": "structures.spawner.first.brick.description",
+        "buildable_category": "mobs",
+        "sort_order": 1700
+      },
+      "badger:zone_type_requirement": {
+        "include_tags": [
+          "housing"
+        ]
+      },
+      "badger:zone_visualization": {
+        "group": "hq_zone_spawners"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [
+          {
+            "item": "unlock_firsts_spawners",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "iron",
+            "amount": 400
+          },
+          {
+            "item": "emerald",
+            "amount": 225
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_spawner_first_brick",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

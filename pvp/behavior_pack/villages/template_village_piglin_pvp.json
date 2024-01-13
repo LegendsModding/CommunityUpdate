@@ -1,0 +1,50 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:template_village_piglin_pvp"
+		},
+		"components": {
+			"badger:village_heart_destruction": {
+				"groups": {
+					"structures": { 
+						"delay": 0.1,
+						"interval": 0.1,
+						"amount": 1,
+						"disable_vfx": true
+					},
+					"walls": {
+						"delay": 0.1,
+						"interval": 0.1,
+						"amount": 5,
+						"disable_vfx": true
+					},
+					"cages": {
+						"delay": 1,
+						"interval": 0.2,
+						"amount": 1,
+						"disable_vfx": false
+					},
+					"units": {
+						"delay": 1.5,
+						"interval": 0.5,
+						"amount": 10,
+						"disable_vfx": false
+					}
+				}
+			},
+			"badger:invader": {},
+			"badger:track_damage": {
+			  "dealt": true,
+			  "taken": true
+			},
+			"badger:telemetry_game_zone": {
+				"id": 3,
+				"alt_id": 99,
+				"add_details_in_pvp": true
+			},
+			"badger:audio_ignore_vo_reminder": {},
+			"badger:template": "badger:template_village_root"
+		}
+	}
+}

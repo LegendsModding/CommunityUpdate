@@ -1,0 +1,131 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_allay_cap_gather_build",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Upgrade"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:increase_allay_cap_gather_build",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_increase_allay_cap",
+        "tooltip_title": "structures.increase.allay.cap.gatherbuild.pvp.name",
+        "tactical_description": "structures.increase.allay.cap.gatherbuild.pvp.tactical_description",
+        "tooltip_description": "structures.increase.allay.cap.gatherbuild.pvp.description",
+        "buildable_category": "village",
+        "sort_order": 107,
+        "force_hide_when_locked": false
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [
+          {
+            "item": "unlock_prismarine_upgrades",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 250
+          },
+          {
+            "item": "xp_common",
+            "amount": 70
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.2,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "melee": 0.075,
+          "fire": 0.5,
+          "chop": 0.255
+        }
+      },
+      "badger:ticket_cap_modifier": {
+        "ticket_modifiers": [
+          {
+            "ticket": "build",
+            "amount": 1
+          },
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_medium",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_increase_allay_cap_gather_build"
+      },
+      "badger:nbt_parts": {
+        "locator": "badger:locator_swappable_icon",
+        "block": "block_deco_xp_lute"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "increase_allay_cap_gather_build_pvp",
+          "player_upgrade",
+          "tier2PlayerStructure"
+        ]
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 15,
+          "sc": 0,
+          "rc": 15
+        }
+      },
+      "badger:generate_ruins": {
+        "max": 0,
+        "min": 0
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 13,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction_upgrades_pvp"
+          }
+        ]
+      }
+    }
+  }
+}

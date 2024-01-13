@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_anti_siege",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Towers"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:tower_anti_siege",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "tower_anti_siege",
+        "tooltip_title": "structures.tower.anti.siege.pvp.name",
+        "tactical_description": "structures.tower.anti.siege.pvp.tactical_description",
+        "tooltip_description": "structures.tower.anti.siege.pvp.description",
+        "buildable_category": "utility",
+        "sort_order": 250
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "tower_anti_siege",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_tower_anti_siege"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 300
+          },
+          {
+            "item": "iron",
+            "amount": 150
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 12,
+          "rc": 12
+        }
+      }
+    }
+  }
+}

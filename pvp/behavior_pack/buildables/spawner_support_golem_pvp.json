@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_support_golem",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_support_golem",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_golem_support",
+        "tooltip_title": "structures.spawner.supportGolem.pvp.name",
+        "tactical_description": "structures.spawner.supportGolem.pvp.tactical_description",
+        "tooltip_description": "structures.spawner.supportGolem.pvp.description",
+        "buildable_category": "mobs",
+        "sort_order": 1300
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_golem_support",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spawner_support_golem"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "iron",
+            "amount": 10
+          },
+          {
+            "item": "emerald",
+            "amount": 30
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "none"
+      },
+      "badger:zone_visualization": {
+        "group": "carpenter"
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_spawner_golem_mossy",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

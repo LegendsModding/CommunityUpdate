@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_ore_iron_vein_high_density_pvp",
+      "places_feature": "badger:feature_ore_iron_vein_expression"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": 3,
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "resource_iron"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "scatter_chance": "q.custom_iron_density * query.get_game_rule_value('custom_iron_density')"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:stairs_wood_end_filler",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:stairs_wood_end_filler",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "stairs_wood_end_filler",
+        "build_time": 0.5,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "flowing_water"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "world_hazard"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "stairs",
+          "structure",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "playerBridge",
+          "tier1PlayerStructure",
+          "noHealthBar"
+        ]
+      }
+    }
+  }
+}

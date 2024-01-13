@@ -1,0 +1,77 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "animal" : {},
+         "badger:overworld_height" : {
+            "height_params" : {
+               "average_height" : 25,
+               "texture_heights": [19, 30]
+            },
+            "noise_params" : [ 0.10, 0 ]
+         },
+         "badger:rivers" : {
+            "river_biome" : "mountain_river"
+         },
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.50,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#9db987"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.0,
+                  "grass_overlay_noise_scale" : 0.0,
+                  "grass_overlay_surface_color" : "#9db987"
+               }
+            },
+            "map" : {
+               "biome_banner" : "",
+               "biome_display_name" : "burnt_grass",
+               "common_resource_icon" : "",
+               "map_color" : "#44aff5",
+               "map_color_odd" : "#44aff5",
+               "map_pattern_index" : 5
+            },
+            "particulates" : {
+               "nether_spores" : 0.0,
+               "sparkles" : 0.0
+            },
+            "rain" : {
+               "downfall" : 12.0,
+               "lower_limit" : 0.6999999880790710,
+               "rain_to_snow_height" : 200,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit" : 0.8999999761581421
+            },
+            "water" : {
+               "water_blur_distance" : 15.0,
+               "water_color_blend_distance" : 0.0,
+               "water_depths_color" : "#44AFF5",
+               "water_surface_color" : "#44AFF5",
+               "water_surface_transparency" : 0.6499999761581421
+            }
+         },
+         "burnt_grass" : {},
+         "decorate_priority" : {},
+         "minecraft:surface_parameters" : {
+            "default_surface" : {
+               "mid_material" : "badger:block_dirt",
+               "top_material" : "minecraft:grass"
+            },
+            "foundation_material" : "badger:block_dirt",
+            "sea_floor_depth" : 4,
+            "sea_floor_material" : "badger:block_dirt",
+            "sea_material" : "badger:block_water"
+         },
+         "monster" : {},
+         "overworld" : {}
+      },
+      "description" : {
+         "identifier" : "burnt_grass"
+      }
+   }
+}

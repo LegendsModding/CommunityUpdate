@@ -1,0 +1,43 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_poi_loot_treasure_chest_pvp",
+      "places_feature": "badger:feature_poi_loot_biome_treasure_chest"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": 5,
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "overworld"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "nether_burnt_border"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": "1", 
+      "scatter_chance": "q.poi_distance(v.worldx, v.worldz) > 120 ? (q.custom_chest_density * q.get_game_rule_value('custom_chest_density')) : 0", 
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "gaussian",
+        "extent": [0, 15]
+      }
+    }
+  }
+}

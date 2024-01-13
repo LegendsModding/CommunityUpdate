@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_poi_tower",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Template"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:template_poi_tower",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

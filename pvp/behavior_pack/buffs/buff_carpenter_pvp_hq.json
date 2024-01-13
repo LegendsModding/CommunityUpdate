@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_carpenter_pvp_hq",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buff": {},
+      "badger:modifier_health_regen": {
+        "regen_cooldown_seconds": 2.5,
+        "health_regen_amount": 1.5,
+        "attack_cooldown_seconds": 0,
+        "applied_by": "carpenter"
+      },
+      "badger:status": {
+				"applied_name": "carpenter_pvp_hq",
+				"default_resistance": {
+					"resisted": false,
+					"time": 5,
+					"resistance_persist_time": 0.5
+				}
+			}
+    }
+  }
+}

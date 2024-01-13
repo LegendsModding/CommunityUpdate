@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:proj_poi_ice_tower_impact_aoe",
+      "runtime_identifier": "badger:aoe",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "PvP",
+      "function": "Player",
+      "type": "Projectile"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:proj_poi_ice_tower_impact_aoe",
+        "game_mode": "pvp"
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 10
+        },
+        "damage_effects": [
+          {
+            "name": "aoe_poi_ice_tower_impact_pvp",
+            "damage": 0,
+            "damage_types": [
+              "neutral"
+            ],
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "apply_status": {
+              "frozen": {
+                "chance": 1.0,
+                "strength": 2.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

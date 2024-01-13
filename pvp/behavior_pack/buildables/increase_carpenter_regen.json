@@ -1,0 +1,109 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_carpenter_regen",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_increase_carpenter_regen",
+        "tooltip_title": "structures.increase.carpenter.regen.name",
+        "tactical_description": "structures.increase.carpenter.regen.tactical_description",
+        "tooltip_description": "structures.increase.carpenter.regen.description",
+        "buildable_category": "village",
+        "sort_order": 220
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 200
+          },
+          {
+            "item": "xp_common",
+            "amount": 200
+          },
+          {
+            "item": "gold",
+            "amount": 50
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "upgrade_carpenter",
+            "amount": 1
+          },
+          {
+            "item": "ui_tracking_increase_carpenter_regen",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_medium",
+        "build_time": 15,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_unlock_increase_carpenter_regen"
+      },
+      "badger:nbt_parts": {
+        "locator": "badger:locator_swappable_icon",
+        "block": "block_deco_xp_lute"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_stone_small"
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 0,
+          "rc": 0
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "donotattack",
+          "player_upgrade"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 7,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:template": [
+        "badger:template_upgrade_xp",
+        "badger:template_structure_player"
+      ]
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:unlock_linked_village_chests",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_unlock_linked_village_chests",
+        "tooltip_title": "structures.unlock.linked_village_chests.name",
+        "tactical_description": "structures.unlock.linked_village_chests.tactical_description",
+        "tooltip_description": "structures.unlock.linked_village_chests.description",
+        "buildable_category": "village",
+        "sort_order": 210
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 100
+          },
+          {
+            "item": "xp_common",
+            "amount": 100
+          },
+          {
+            "item": "iron",
+            "amount": 25
+          },
+          {
+            "item": "coal",
+            "amount": 25
+          },
+          {
+            "item": "diamond",
+            "amount": 25
+          },
+          {
+            "item": "redstone",
+            "amount": 25
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "unlock_linked_village_chest",
+            "amount": 1
+          },
+          {
+            "item": "ui_tracking_linked_village_chests",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_small",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_unlock_linked_village_chests"
+      },
+      "badger:nbt_parts": {
+        "locator": "badger:locator_swappable_icon",
+        "block": "block_deco_xp_bank"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_stone_small"
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 0,
+          "rc": 0
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "donotattack",
+          "unlock_linked_village_chests",
+          "player_upgrade"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 7,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:template": [
+        "badger:template_upgrade_xp",
+        "badger:template_structure_player"
+      ]
+    }
+  }
+}

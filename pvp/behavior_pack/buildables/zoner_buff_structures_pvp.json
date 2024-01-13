@@ -1,0 +1,108 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_buff_structures",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:zoner_buff_structures",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "zoner_buff_structures",
+        "tooltip_title": "structures.zoner.mason.pvp.name",
+        "tactical_description": "structures.zoner.mason.pvp.tactical_description",
+        "tooltip_description": "structures.zoner.mason.pvp.description",
+        "buildable_category": "utility",
+        "sort_order": 212
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_buff_structures",
+        "build_time": 30
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 500
+          },
+          {
+            "item": "iron",
+            "amount": 100
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:aura_applicator": {
+        "auras": [
+          {
+            "unlock_condition": {
+              "resource": "upgrade_mason",
+              "has_unlock": false
+            },
+            "include_tags": [
+              "buffable-mason"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "buff_id": "badger:buff_zoner_buff_structures",
+            "only_apply_to_construction_completed": true,
+            "persistent": true,
+            "buff_queue": {
+              "limit_concurrent_applications": 1,
+              "time_interval": 3.0
+            }
+          },
+          {
+            "unlock_condition": {
+              "resource": "upgrade_mason",
+              "has_unlock": true
+            },
+            "include_tags": [
+              "buffable-mason"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "buff_id": "badger:buff_zoner_buff_structures",
+            "only_apply_to_construction_completed": true,
+            "persistent": true,
+            "buff_queue": {
+              "limit_concurrent_applications": 1,
+              "time_interval": 1.0
+            }
+          }
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_mason",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

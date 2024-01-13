@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_mount_04",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:animal_bird",
+            "percentage": 1
+          }
+        ],
+        "spawn_delay": 10.0,
+        "cap": 0,
+        "batch": 1,
+        "rate": 10,
+        "max_radius": 2,
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:template": {
+        "parent": "badger:spawner_mount_04",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_celebrate",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:granted_actions": {
+        "actions": [
+          {
+            "name": "celebration",
+            "range": {
+              "max_range": 40
+            }
+          },
+          {
+            "name": "celebration_fear",
+            "self_trigger": true,
+            "state_machine": {
+              "wind_up": 1
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 15
+              },
+              "collision": {
+                "alliance_rule_filter": "enemy",
+                "include_tags": [
+                  "mob"
+                ],
+                "exclude_tags": [
+                  "player"
+                ]
+              },
+              "apply_status": {
+                "feared": {
+                  "chance": 1.0,
+                  "strength": 0.25
+                }
+              }
+            }
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:buff_celebrate",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

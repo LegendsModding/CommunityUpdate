@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:pvp_hq_red_team"
+        },
+        "components": {
+            "badger:faction": {
+                "id": "faction.player.pvp.hq.red",
+                "name": "Red HQ",
+                "description": "pvp.hq.red.description",
+                "known": true
+            },
+            "badger:campaign_team": {
+                "team_tag": "team_one"
+            }
+        }
+    }
+}

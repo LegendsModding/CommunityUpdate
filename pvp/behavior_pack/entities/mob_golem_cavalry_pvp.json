@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_cavalry",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Cavalry",
+      "function": "Player",
+      "type": "Mob"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:mob_golem_cavalry",
+        "game_mode": "pvp"
+      },
+      "badger:spawn_costs": {
+        "costs": [
+          {
+            "item": "wood",
+            "amount": 15
+          },
+          {
+            "item": "iron",
+            "amount": 5
+          },
+          {
+            "item": "emerald",
+            "amount": 5
+          }
+        ],
+        "tickets": [
+          {
+            "ticket": "spawn",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

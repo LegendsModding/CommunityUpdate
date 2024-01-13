@@ -1,0 +1,69 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_z_all",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Gather"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:template_terraform_gather_surface",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "terraform_gather_surface_z_all",
+        "tooltip_title": "gather_gold",
+        "tactical_description": "terraform.gather.surface.001.tactical_description",
+        "tooltip_description": "terraform.gather.surface.001.description",
+        "buildable_category": "resourcing",
+        "sort_order": 2,
+        "height_offset": 1
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "terraform_gather_surface_z_all",
+        "build_time": 0,
+        "buildable_placed_player_trigger": "on_building_terraform_gather_surface_z_all",
+        "construction_end_trigger": "on_construction_end",
+        "silence_destroyed_trigger_when_killed": true
+      },
+      "badger:core_resource_consumer": {
+        "material_category": [
+          "gold"
+        ]
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "badger:rewards": {
+          "reward": [
+            {
+              "item": "gather_gold",
+              "amount": 1
+            },
+            {
+              "item": "ui_tracking_gather_gold",
+              "amount": 1
+            }
+          ]
+        },
+        "unlock": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      }
+    }
+  }
+}

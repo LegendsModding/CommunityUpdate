@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_carpenter_regen",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Upgrade"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:increase_carpenter_regen",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "buildable_category": ""
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_shield_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:mob_golem_shield_nis",
+        "game_mode": "pvp"
+      },
+      "badger:bsharp_interact_cost": {
+        "resource_cost": [
+          {
+            "item": "emerald",
+            "amount": 150
+          },
+          {
+            "item": "redstone",
+            "amount": 100
+          }
+        ],
+        "unlock": {
+          "item": "unlock_poi_golem_resource",
+          "amount": 1
+        }
+      },
+      "badger:hud_message_proximity": {
+        "messages": [
+          {
+            "range": 6.0,
+            "hud_message_id": "interact_cost_required",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": ["resources.emerald.name", "key.item.lapis", "resources.redstone.name", "key.item.redstone", "poi.ally.01.name"],
+            "filter": {
+              "include": ["player"],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          },
+          {
+            "range": 6.0,
+            "hud_message_id": "interact_unlock_required",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": ["poi.ally.04.name"],
+            "filter": {
+              "include": ["player"],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

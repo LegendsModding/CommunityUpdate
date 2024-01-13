@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_drag_wall_panel",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_drag_wall_panel",
+        "build_time": 1.25,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:template": {
+        "parent": "badger:chunk_drag_wall_panel",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 3
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      }
+    }
+  }
+}

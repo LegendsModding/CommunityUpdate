@@ -1,0 +1,121 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_regen_structures",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:zoner_regen_structures",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "zoner_regen_structures",
+        "tooltip_title": "structures.zoner.regen.structures.name",
+        "tactical_description": "structures.zoner.regen.structures.tactical_description",
+        "tooltip_description": "structures.zoner.regen.structures.description",
+        "buildable_category": "utility",
+        "sort_order": 210
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_regen_structures",
+        "build_time": 25
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 250
+          },
+          {
+            "item": "stone",
+            "amount": 125
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:aura_applicator": {
+        "auras": [
+          {
+            "unlock_condition": {
+              "resource": "upgrade_carpenter",
+              "has_unlock": false
+            },
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "gather",
+              "egg",
+              "pvphq"
+            ],
+            "alliance_rule_filter": "friendly",
+            "only_apply_to_construction_completed": true,
+            "can_apply_to_self": true,
+            "buff_id": "badger:buff_carpenter",
+            "only_apply_to_damaged": true
+          },
+          {
+            "unlock_condition": {
+              "resource": "upgrade_carpenter",
+              "has_unlock": true
+            },
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "gather",
+              "egg",
+              "pvphq"
+            ],
+            "alliance_rule_filter": "friendly",
+            "only_apply_to_construction_completed": true,
+            "can_apply_to_self": true,
+            "buff_id": "badger:buff_carpenter_upgrade",
+            "only_apply_to_damaged": true
+          },
+          {
+            "include_tags": [
+              "buffable-carpenter-hq"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "can_apply_to_self": false,
+            "only_apply_to_construction_completed": true,
+            "buff_id": "badger:buff_carpenter_pvp_hq",
+            "only_apply_to_damaged": true
+          }
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_carpenter",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

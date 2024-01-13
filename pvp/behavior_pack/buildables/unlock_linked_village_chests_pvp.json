@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:unlock_linked_village_chests",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Upgrade"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:unlock_linked_village_chests",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "",
+        "tooltip_title": "",
+        "tooltip_description": "",
+        "buildable_category": "",
+        "sort_order": 0
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 7,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction_upgrades_pvp"
+          }
+        ]
+      }
+    }
+  }
+}

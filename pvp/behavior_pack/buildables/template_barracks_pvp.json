@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_barracks",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Piglin",
+      "type": "Template"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:template_barracks",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

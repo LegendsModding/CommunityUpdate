@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:unlock_gold",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Gather"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:unlock_gold",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "",
+        "tooltip_title": "",
+        "tooltip_description": "",
+        "buildable_category": "",
+        "sort_order": 0
+      }
+    }
+  }
+}

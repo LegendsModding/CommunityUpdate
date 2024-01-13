@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_illager_axe",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Mob",
+      "role": "Melee"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:mob_illager_axe",
+        "game_mode": "pvp"
+      },
+      "badger:spawn_costs": {
+        "costs": [
+          {
+            "item": "redstone",
+            "amount": 15
+          },
+          {
+            "item": "emerald",
+            "amount": 15
+          },
+          {
+            "item": "iron",
+            "amount": 10
+          }
+        ],
+        "tickets": [
+          {
+            "ticket": "spawn",
+            "amount": 2
+          }
+        ]
+      }
+    }
+  }
+}

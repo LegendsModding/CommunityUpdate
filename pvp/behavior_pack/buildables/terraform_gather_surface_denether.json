@@ -1,0 +1,527 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_denether",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "terraform_gather_surface_denether",
+        "tooltip_title": "terraform.gather.surface.denether.name",
+        "tactical_description": "terraform.gather.surface.denether.tactical_description",
+        "tooltip_description": "terraform.gather.surface.denether.description",
+        "ping_message": "denether",
+        "buildable_category": "resourcing",
+        "sort_order": 1400,
+        "height_offset": 1
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "terraform_clear_nether",
+        "build_time": 0,
+        "buildable_placed_player_trigger": "on_building_terraform_gather_surface_denether",
+        "construction_end_trigger": "on_construction_end",
+        "silence_destroyed_trigger_when_killed": true
+      },
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "unlock": [
+          {
+            "item": "clear_nether_resource",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_planks_dark_oak",
+          "block_stair_planks_dark_oak",
+          "block_deco_chair_oak",
+          "block_deco_player_lantern_chunk",
+          "block_log_dark_oak",
+          "block_dark_oak_carved"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      },
+      "badger:health": {
+        "max_health": 10
+      },
+      "badger:tags": {
+        "tags": [
+          "gather",
+          "validrangedtarget",
+          "denether",
+          "buildable_combat"
+        ]
+      },
+      "badger:core_resource_consumer": {
+        "only_gather_surface": true,
+        "material_category": [
+          "nether"
+        ],
+        "replacement_block": "block_slag_var01",
+        "special_replacement_biome": "denether",
+        "special_replacements": [
+          {
+            "initial": "block_slab_netherrack",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_netherrack_var01",
+            "replacement": "block_slag"
+          },
+          {
+            "initial": "block_netherrack_var02",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_nylium_var01",
+            "replacement": "block_slag"
+          },
+          {
+            "initial": "block_nylium_var02",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_nether_wart_warped",
+            "replacement": "block_slag"
+          },
+          {
+            "initial": "block_nether_wart_warped_var02",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_slab_netherrack_var01",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_slab_netherrack_var02",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_slab_netherrack_var03",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_slab_nylium",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_slab_nylium_var01",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_slab_nylium_var02",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_sheet_nether_wart_warped",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_nether_wart_warped_var01",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_nether_wart_warped_var02",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_netherrack",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_netherrack_var01",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_netherrack_var02",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_netherrack_var03",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_sheet_netherrack_dried",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_deco_nether_grass_dried",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_burning_edge",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_burning_edge_var01",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_burning_edge_var02",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_burning_edge_var03",
+            "replacement": "block_slag"
+          },
+          {
+            "initial": "block_burning_edge_var04",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_burning_edge_var05",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_burning_edge_var06",
+            "replacement": "block_slag"
+          },
+          {
+            "initial": "block_burning_edge_var07",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_burning_edge_var08",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_burning_edge_vfx",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_carpet_burning_edge_var01",
+            "replacement": "block_carpet_slag"
+          },
+          {
+            "initial": "block_sheet_burning_edge_var01",
+            "replacement": "block_sheet_slag"
+          },
+          {
+            "initial": "block_slab_burning_edge_var01",
+            "replacement": "block_slab_slag"
+          },
+          {
+            "initial": "block_nylium_grass_var01",
+            "replacement": "block_slag_var02"
+          },
+          {
+            "initial": "block_nylium_grass",
+            "replacement": "block_slag"
+          },
+          {
+            "initial": "block_mushroom_obstacle",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_obstacle_bottom",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_light",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_vine_obstacle",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_warped",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_warped_large",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_warped_small",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_nether_wart_leaves",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_light_attack_transition",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_vine_nether",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_nether_wart_leaves",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_mushroom_obstacle",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_mushroom_obstacle_bottom",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_mushroom_obstacle_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_mushroom_obstacle_var03",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_mushroom",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_rust",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_rust_small",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_rust_tall",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_rust_large",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_rust_small",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_light_attack_transition",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_light_obstacle_transition",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_obstacle",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_obstacle_bottom",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_obstacle_bottom_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_netherrack_moss_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_warped",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_warped_small",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_nether_grass_warped_tall",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_dried_large",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_dried_small",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_warped_small_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_warped_small_var02",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_netherwart_warped_torch",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_vine_nether",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_deco_vine_twisted",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_obstacle",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_obstacle_bottom_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_obstacle_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_obstacle_var02",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_mushroom_obstacle_var03",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_nether_wart_warped_var02",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_nylium_warped_var02",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_deco_bramble",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_deco_bramble_var01",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_deco_bramble_var02",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_chunk_mushroom_light",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_light",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_light_attack_transition",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_light_obstacle_transition",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_nylium_warped_grass",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_column_netherrack_moss",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_moss_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_moss_vine",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_moss_vine_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_moss_vine_var02",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_nylium_warped",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_nylium_warped_var01",
+            "replacement": "block_slag_var01"
+          },
+          {
+            "initial": "block_upright_netherrack_moss_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_netherrack_moss_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_moss",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_mushroom_obstacle_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_netherwart_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_netherrack_netherwart_var01",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_netherrack_netherwart",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_upright_nether_wart",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_nether_wart",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_slab_nether_wart_leaves",
+            "replacement": "air"
+          },
+          {
+            "initial": "block_barrier_soft_denether",
+            "replacement": "air"
+          }
+        ],
+        "force_gather_non_surface_blocks_list": [
+          "block_upright_mushroom_light_attack_transition",
+          "block_upright_mushroom_obstacle_var01",
+          "block_mushroom_light",
+          "block_netherrack_moss",
+          "block_netherrack_moss_var01",
+          "block_mushroom_obstacle_var03",
+          "block_mushroom_obstacle_bottom",
+          "block_slab_mushroom_obstacle_var03",
+          "block_chunk_mushroom_light",
+          "block_upright_mushroom_light",
+          "block_upright_mushroom_light_obstacle_transition",
+          "block_upright_netherrack_moss_var01",
+          "block_nether_wart_leaves",
+          "block_barrier_soft_denether"
+        ]
+      },
+      "badger:template": "badger:template_terraform_gather_surface"
+    }
+  }
+}

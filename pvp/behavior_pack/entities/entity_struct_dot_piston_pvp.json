@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:entity_struct_dot_piston",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:entity_struct_dot_piston",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

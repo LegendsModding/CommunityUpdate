@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_shotgun",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Towers"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "tower_shotgun",
+        "tooltip_title": "structures.tower.shotgun.pvp.name",
+        "tactical_description": "structures.tower.shotgun.pvp.tactical_description",
+        "tooltip_description": "structures.tower.shotgun.pvp.description",
+        "buildable_category": "utility",
+        "sort_order": 206
+      },
+      "badger:template": {
+        "parent": "badger:tower_shotgun",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "tower_shotgun",
+        "build_time": 30
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 150
+          },
+          {
+            "item": "coal",
+            "amount": 25
+          },
+          {
+            "item": "stone",
+            "amount": 150
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:culture": {
+        "base_culture_a": 30
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:targeting"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_controller_roaming_piglin_general_world_night",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Piglin",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_controller_roaming_piglin_general_world_night",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_controller_spawner": {
+        "global_active": [
+          {
+            "horde_name": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          },
+          {
+            "horde_name": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_runt"
+            ],
+            "times": "night"
+          },
+          {
+            "horde_name": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_grunter",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          }
+        ],
+        "claimed_area": [
+          {
+            "claimed_by": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          },
+          {
+            "claimed_by": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_runt"
+            ],
+            "times": "night"
+          },
+          {
+            "claimed_by": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_grunter",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          }
+        ],
+        "ticks_between_checks": 32
+      },
+      "badger:spawner_rules": {
+        "distance_rule": {
+          "village_distance_data": [
+            {
+              "min_distance": 150,
+              "max_distance": 450,
+              "horde_names": [
+                "faction.player.pvp.hq.blue",
+                "faction.player.pvp.hq.red"
+              ],
+              "is_destroyed": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

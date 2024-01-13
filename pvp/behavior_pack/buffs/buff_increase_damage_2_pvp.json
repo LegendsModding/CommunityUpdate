@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:buff_increase_damage_2_pvp",
+      "runtime_identifier": "badger:buff",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buff": {
+        "propagates_to_projectiles": true
+      },
+      "badger:modifier_damage": {
+        "post_multiply": 1.6
+      }
+    }
+  }
+}

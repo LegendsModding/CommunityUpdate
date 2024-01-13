@@ -21,7 +21,7 @@ const resourceDripWoF = {
         gatherRestone: {
             resourceUnlock: "gather_redstone_passive",
             resource: "redstone",
-            reward: 1
+            rewarda: 1
         }
     },
     snippetName: "t_resource_gather_passive_drip", // the name of the snippet for timer

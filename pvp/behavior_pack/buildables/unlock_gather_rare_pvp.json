@@ -1,0 +1,136 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:unlock_gather_rare",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Gather"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:unlock_gather_rare",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_unlock_gather_diamond",
+        "tooltip_title": "structures.unlock.gather.rare.pvp.name",
+        "tactical_description": "structures.unlock.gather.rare.pvp.tactical_description",
+        "tooltip_description": "structures.unlock.gather.rare.pvp.description",
+        "buildable_category": "village",
+        "sort_order": 102
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_small",
+        "build_time": 15
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [
+          {
+            "item": "unlock_prismarine_upgrades",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 600
+          },
+          {
+            "item": "wood",
+            "amount": 300
+          },
+          {
+            "item": "xp_common",
+            "amount": 25
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "unlock_diamond_tech",
+            "amount": 1
+          },
+          {
+            "item": "ui_tracking_gather_rare",
+            "amount": 1
+          },
+          {
+            "item": "unlock_battle_view_skeleton",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:resource_modifier": {
+        "modifiers": [
+          {
+            "resource": "diamond",
+            "amount": 125
+          }
+        ]
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.2,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "melee": 0.075,
+          "fire": 0.5,
+          "chop": 0.255
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 15,
+          "sc": 0,
+          "rc": 15
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "unlock_gather_diamond_pvp",
+          "unlock_gather_rare_pvp",
+          "player_upgrade",
+          "tier2PlayerStructure"
+        ]
+      },
+      "badger:generate_ruins": {
+        "max": 0,
+        "min": 0
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 7,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction_upgrades_pvp"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:gate",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:gate",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_gate",
+        "tooltip_title": "structures.gate.pvp.name",
+        "tactical_description": "structures.gate.pvp.tactical_description",
+        "tooltip_description": "structures.gate.pvp.description",
+        "buildable_category": "utility",
+        "sort_order": 200
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "gate",
+        "build_time": 10
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 150
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          
+          
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "gate",
+          "buffable-crows_nest",
+          "buffable-mason",
+          "defense-target",
+          "tier1PlayerStructure"
+        ]
+      }
+    }
+  }
+}

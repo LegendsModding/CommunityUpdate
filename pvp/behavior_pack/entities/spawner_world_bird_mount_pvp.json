@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_world_bird_mount",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_world_bird_mount",
+        "game_mode": "pvp"
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      }
+    }
+  }
+}

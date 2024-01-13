@@ -1,0 +1,50 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "badger:rule_roaming_piglin_spawner_controllers_pvp",
+      "places_feature": "badger:feature_roaming_piglin_spawner_controllers"
+    },
+    "conditions": {
+      "enabled": true,
+      "placement_pass": 5,
+      "minecraft:biome_filter": [
+        {
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "overworld"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "fate"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "early_out": "query.water_distance(v.scatteredx, v.scatteredz) <= 2",
+      "iterations": "1",
+      "scatter_chance": "query.get_game_rule_value('roaming_piglins') ? 5 : 0",
+      "coordinate_eval_order": "xzy",
+      "x": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      },
+      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "z": {
+        "distribution": "uniform",
+        "extent": [
+          0,
+          15
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_rare_ore",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Gather"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:terraform_gather_surface_rare_ore",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "terraform_gather_surface_rare_ore",
+        "tooltip_title": "terraform.gather.surface.rare.ore.pvp.name",
+        "tactical_description": "terraform.gather.surface.rare.ore.pvp.tactical_description",
+        "tooltip_description": "terraform.gather.surface.rare.ore.pvp.description",
+        "buildable_category": "resourcing",
+        "sort_order": 1500,
+        "height_offset": 1
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "ticket_cost": [
+          {
+            "ticket": "gather",
+            "amount": 1
+          }
+        ],
+        "unlock": [
+          {
+            "item": "unlock_diamond_tech",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "piglin_base_not_buildable"
+        ],
+        "invalid_block_snaptoground": true
+      },
+      "badger:deconstruction": {
+        "deconstruct_time_percent": 1,
+        "resource_refund_percent": 1,
+        "isIndestructable": false,
+        "resource_cost": [],
+        "ticket_cost": []
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "none"
+      }
+    }
+  }
+}

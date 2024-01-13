@@ -1,0 +1,92 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_pvp_defend",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:village": {
+        "name": "Piglin PvP Defend"
+      },
+      "badger:reset_heartbeat_in_range": {
+        "range": 100.0
+      },
+      "badger:village_zone": {
+        "expansion_distance": 200.0,
+        "zone_jitter_min": 0.0,
+        "zone_jitter_max": 5.0,
+        "is_zone_jitter_bell_curve_enabled": false,
+        "zone_spacing": 16.0,
+        "water_search_resolution": 6.0
+      },
+      "badger:village_building_placement": {
+        "max_placement_attempts_with_jitter": 4,
+        "placement_jitter_min": 0.0,
+        "placement_jitter_max": 12.0,
+        "is_placement_jitter_bell_curve": false
+      },
+      "badger:village_zone_scoring": {
+        "close_to_easing": "linear",
+        "far_from_easing": "linear",
+        "direction_easing": "linear",
+        "close_to_wall_easing": "linear",
+        "spacing_easing": "linear",
+        "close_to_weight": 1.0,
+        "far_from_weight": 1.0,
+        "direction_weight": 1.0,
+        "close_to_wall_weight": 1.0,
+        "random_weight": 1.0,
+        "elevation_weight": 0.0,
+        "distance_from_weight": 1.0
+      },
+      "badger:track_damage": {
+        "dealt": true,
+        "taken": true
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "long"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglinbase_unbreak_outpost",
+        "label": "faction.piglin_pvp_faction.defend.name",
+        "world_position_offset": [0, 4, 0],
+        "screen_position_offset": [0, 0],
+        "priority": 1
+      },
+      "badger:gatherable_resources" : {
+        "gatherable_resource_names" : ["prismarine"]
+    },
+      "badger:village_height_change": {
+        "clamp_size": 3.0
+      },
+      "badger:village_weathering": {
+        "is_overhanging_edge": false,
+        "position_noise_scale": 0.6,
+        "wave_depth_max": 3,
+        "wave_depth_min": 0.2,
+        "wave_period_scale": 0.4,
+        "wave_noise_scale": 0.6,
+        "gradient_passes": [
+          {
+            "gradient_depths": [3.0, 2.5, 2.0, 0.8],
+            "gradient_weight_heights": [0.8, 0.6, 0.3, 0.1],
+            "gradient_2d_noise_scale": 2.8,
+            "gradient_3d_noise_scale": 1.0,
+            "gradient_affected_by_wave": true
+          },
+          {
+            "gradient_depths": [1.2, 1.0, 0.5],
+            "gradient_weight_heights": [0.7, 0.3, 0.2],
+            "gradient_2d_noise_scale": 1.8,
+            "gradient_3d_noise_scale": 1.0,
+            "gradient_affected_by_wave": false
+          }
+        ]
+      },
+      "badger:template": "badger:template_village_piglin_pvp"
+    }
+  }
+}

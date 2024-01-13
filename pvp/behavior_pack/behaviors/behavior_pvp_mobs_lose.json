@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_pvp_mobs_lose",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 100,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "any_team",
+            "actions": [
+              "fear"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "fear",
+            "range": {
+              "max_range": 100
+            },
+            "apply_status_to_owner": {
+              "feared": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:mount_bird",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Player",
+            "type": "Mount"
+        },
+        "components": {
+            "badger:glide_telemetry_tracking": {},
+            "badger:aabb": {
+                "width": 1.4,
+                "length": 1.4,
+                "height": 1.8
+            },
+            "badger:physics": {
+                "gravity": -0.1,
+                "friction": 0.1,
+                "buoyancy": 30,
+                "water_drag": 0.25,
+                "water_submerged_ratio": 0.75
+            },
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20.0,
+                "waypoint_max_range": 20.0,
+                "compass_max_range": "short"
+            },
+            "badger:waypoint_marker": {
+                "path": "temp_waypoint_terror_bird",
+                "label": "",
+                "world_position_offset": [
+                    0,
+                    7,
+                    0
+                ]
+            },
+            "badger:telemetry_category": {
+                "category_name": "Mount Ability"
+            },
+            "badger:entity_collision": {},
+            "badger:world_collision": {
+                "has_collision": true,
+                "auto_step": 2.1,
+                "interpolation_speed": 24,
+                "interpolate_from_height": false
+            },
+            "badger:interacts_with_blocks": {},
+            "badger:collision_weight": {
+                "weight": 100
+            },
+            "badger:movement": {
+                "move_speed": 30.15,
+                "air_control_factor": 1,
+				"enable_air_control_on_knockback": true
+            },
+            "badger:fast_travel": {
+                "windup_time": 0,
+                "cooldown_time": 0
+            },
+            "badger:jump": {
+                "initial_height": 100,
+                "hold_velocity": {
+                    "start": 0.01,
+                    "end": -60.0
+                },
+                "hold_duration": 1.0,
+                "jump_from_water": true
+            },
+            "badger:glide": {
+                "drag": 0.8
+            },
+            "badger:tags": {
+                "tags": [
+                    "cavalry",
+                    "blocks_respawn"
+                ]
+            },
+            "badger:mount": {
+                "include_tags": [
+                    "rider"
+                ],
+                "alliance_rule_filter": "friendly",
+                "unlock_requirement": "unlock_quest_mount_04",
+                "base_skin": "badger:mount_bird"
+            },
+            "badger:has_saddle": {
+                "search_range": 0.0,
+                "mount_range": 0.0,
+                "despawn_if_dismounted": true
+            },
+            "badger:knockback_resistance": {
+                "affected_scale": 2.0
+            },
+            "badger:sprint": {
+                "idle_time_to_deactivate": -1,
+                "sprint_status": {
+                    "apply_status": {
+                        "sprint": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                },
+                "sprint_negate_status": {
+                    "apply_status": {
+                        "sprint_negate": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                },
+                "exhausted_status": {
+                    "apply_status": {
+                        "exhausted": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                },
+                "exhausted_negate_status": {
+                    "apply_status": {
+                        "exhausted_negate": {
+                            "chance": 1.0,
+                            "strength": 1.0
+                        }
+                    }
+                }
+            },
+            "badger:template": {
+                "parent": "badger:mount_bird",
+                "game_mode": "pvp"
+            }
+        }
+    }
+}

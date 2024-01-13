@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_ore_gold",
+      "material": "badger_metal"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube",
+        "directional_texture": false,
+        "directional_shape": false,
+        "render_layer": "opaque_resource_block"
+      },
+      "badger:block_type": {
+        "tags": [
+          "deco_nether",
+          "gatherable_gold"
+        ]
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:terrain_type": {
+        "terrain": "stone"
+      }
+    }
+  }
+}

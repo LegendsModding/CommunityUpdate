@@ -1,0 +1,152 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:unlock_gather_uncommon_large",
+        "runtime_identifier": "badger:buildable",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:buildable_presentation": {
+          "icon": "structure_unlock_gather_uncommon_large",
+          "tooltip_title": "structures.unlock.gather.uncommon.large.name",
+          "tactical_description": "structures.unlock.gather.uncommon.large.tactical_description",
+          "tooltip_description": "structures.unlock.gather.uncommon.large.description",
+          "buildable_category": "village",
+          "sort_order": 105
+        },
+        "badger:buildable_requirement": {
+          "recipe": [
+            {
+              "item": "stone",
+              "amount": 400
+            },
+            {
+              "item": "xp_common",
+              "amount": 400
+            },
+            {
+                "item": "gold",
+                "amount": 100
+            },
+            {
+                "item": "iron",
+                "amount": 100
+            }
+          ],
+          "unlock": [
+            {
+              "item": "unlock_iron_tech",
+              "amount": 1
+            }
+          ],
+          "ticket_cost": [
+            {
+              "ticket": "build",
+              "amount": 1
+            }
+          ]
+        },
+        "badger:rewards": {
+          "deduct_on_destroyed": true,
+          "reward": [
+            {
+              "item": "gather_uncommon_resource",
+              "amount": 1
+            },
+            {
+              "item": "gather_uncommon_resource_passive",
+              "amount": 1
+            },
+            {
+              "item": "ui_tracking_gather_uncommon_large",
+              "amount": 1
+            },
+            {
+              "item": "unlock_spawner_support",
+              "amount": 1
+            },
+            {
+              "item": "unlock_spawner_golemcavalry",
+              "amount": 1
+            },
+            {
+              "item": "unlock_battle_view_golemcavalry",
+              "amount": 1
+            }, 
+            {
+              "item": "unlock_battle_view_support",
+              "amount": 1
+            }
+          ]
+        },
+        "badger:resource_modifier": {
+          "modifiers": [
+            {
+              "resource": "iron",
+              "amount": 150
+            }
+          ]
+        },
+        "badger:buildable_structure": {
+          "nbt_file": "wof_upgrade_large",
+          "build_time": 20,
+          "construction_start_trigger": "on_construction_start",
+          "construction_end_trigger": "on_construction_end",
+          "buildable_placed_player_trigger": "on_building_unlock_gather_uncommon"
+  
+        },
+   "badger:nbt_parts":{
+          "locator": "badger:locator_swappable_icon",
+          "block": "block_deco_xp_ore"
+        },
+        "badger:buildable_destruction": {
+          "particle_effect": "badger:fx_destruction_stone_small"
+        },
+        "badger:action_tickets": {
+          "action_tickets": {
+            "cc": 0,
+            "rc": 0
+          }
+        },
+        "badger:tags": {
+          "tags": [
+            "buildable",
+            "buildable_combat",
+            "buildable_structure",
+            "donotattack",
+            "unlock_gather_uncommon",
+            "player_upgrade",
+            "gather_resource_passive"
+          ]
+        },
+        "badger:offline_traits": {
+          "offline_disabled_components": [
+            "badger:culture"
+          ],
+          "construction_disabled_components": [
+            "badger:culture",
+            "badger:rewards"
+          ]
+        },
+        "badger:interactable": {
+          "interactions": [
+            {
+              "name": "interaction_zone",
+              "range": 7,
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly",
+              "input_layout_override": "overlay_gameplay_interaction"
+            }
+          ]
+        },
+        "badger:template": [
+          "badger:template_upgrade_xp",
+          "badger:template_structure_player"
+        ]
+      }
+    }
+  }
