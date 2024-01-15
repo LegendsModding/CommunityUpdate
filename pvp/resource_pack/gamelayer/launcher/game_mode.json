@@ -2,15 +2,15 @@
   "game_modes": [
     {
       "parent": "conquest",
-      "behavior_pack": "c233c5fb-c48a-4842-920d-ca8da624b932",
-      "resource_pack": "e78fe0ea-7b1a-4920-b1b1-8d36621bd97b",
+      "behavior_pack": "4a740ff7-97f6-4532-a48a-8dde1123065c",
+      "resource_pack": "b9d3b63c-4e5f-4ecf-9b52-4229934793fb",
       "lobby_session_template_name": "BadgerLobby",
       "game_session_template_name": "BadgerGame",
       "loading_tip_set": "pvp",
       "requires_online_premium": true,
       "name": "lcu_pvp",
       "telemetry_name": "lcu_pvp",
-      "lobby_title": "Legends Community PVP",
+      "lobby_title": "Legends Community PVP Update",
       "invite_panel_text": "hbui.inviteReceivedItem.invite.pvp",
       "host_warning_string": "hbui.inviteReceived.hostWarningContentPvp",
       "ui_style": "pvp",
@@ -25,7 +25,7 @@
   ],
   "myths_hub_host_list": [
     {
-      "name": "lcu_pvp"
+      "name": "myth_test"
     }
   ]
 }

@@ -8,21 +8,21 @@
             0
         ],
         "name": "pack.name",
-        "uuid": "e78fe0ea-7b1a-4920-b1b1-8d36621bd97b",
+        "uuid": "4a740ff7-97f6-4532-a48a-8dde1123065c",
         "version": [
+            1,
             0,
-            0,
-            1
+            0
         ]
     },
     "modules": [
         {
             "type": "data",
-            "uuid": "0aac4b6b-bdce-4d43-bf68-e673b60c5ec3",
+            "uuid": "bbdcf700-3e27-4217-82ad-fa951237b1de",
             "version": [
+                1,
                 0,
-                0,
-                1
+                0
             ]
         }
     ]
