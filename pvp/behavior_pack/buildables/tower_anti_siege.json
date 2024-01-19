@@ -1,0 +1,202 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_allay_killer",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        //replace icon
+        "icon": "tower_anti_siege",
+        "tooltip_title": "Test Tower",
+        "tactical_description": "structures.tower.anti.siege.tactical_description",
+        "tooltip_description": "structures.tower.anti.siege.description",
+        "buildable_category": "utility",
+        "sort_order": 1600
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "allay_killer",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_tower_anti_siege"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_anti_seige"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 75
+          },
+          {
+            "item": "stone",
+            "amount": 75
+          },
+          {
+            "item": "coal",
+            "amount": 60
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:health": {
+        "max_health": 200
+      },
+      "badger:zone_visualization": {
+        "group": "mason_and_carpenter"
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:culture": {
+        "base_culture_a": 275
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:targeting"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "tower",
+          "defense-target",
+          "antiSiegeTower",
+          "tier1PlayerStructure"
+        ]
+      },
+      "badger:targeting": {
+        "update_targeting_every_tick": true,
+        "targeting_priorities": [
+          {
+            "name": "anti_siege_projectile_attack",
+            "include_tags": [
+              "gather"
+            ],
+            "shape": {
+              "type": "wedge",
+              "aperture_angle": 360,
+              "radius": 17,
+              "thickness": 64,
+              "rotation": 0,
+              "position": [
+                0.0,
+                1.0,
+                0.0
+              ]
+            },
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "anti_siege_attack"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "anti_siege_attack",
+            //Will want to make new things for these possibly
+            "trigger": "on_projectile_intercept",
+            "on_hit_target_trigger": "on_intercepted",
+            "range": {
+              "max_range": 25
+            },
+            "state_machine": {
+              "cooldown_time": 0.5,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "center_on_target": true,
+              "shape": {
+                "type": "sphere",
+                "radius": 5,
+                "position": [
+                  0.0,
+                  -1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [
+                  "gather"
+                ],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 1,
+                "damage_types": []
+              }
+            }
+          }
+        ]
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 100,
+        "defense_multiplier": {
+          "key": "anti_siege_tower",
+          "value": 1.05
+        }
+      },
+      "badger:buildable_snap_point": {},
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 3,
+            "delay": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:village_influence": {
+        "amount": 5
+      },
+      "badger:template": [
+        "badger:template_tower_with_foundation",
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_player"
+      ]
+    }
+  }
+}
