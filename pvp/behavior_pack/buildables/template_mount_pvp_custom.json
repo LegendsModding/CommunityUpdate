@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+	  "description": {
+		"identifier": "badger:template_mount",
+		"runtime_identifier": "badger:badger_mob",
+		"is_summonable": true
+	  },
+	  "mushroom_data": {
+		"function": "Player",
+		"type": "Structure"
+	  },
+	  "components": {
+		"badger:unlockable_buffs": {
+			"buffs": [
+			  {
+				"resource": "buff_player_movement_speed",
+				"has_unlock": true,
+				"buff_id": "badger:buff_player_movement_speed"
+			  },
+			  {
+				"resource": "buff_player_jump_height",
+				"has_unlock": true,
+				"buff_id": "badger:buff_player_jump_height"
+			  }
+			]
+		},
+		"badger:difficulty_modifier_knockback_resistance": {
+			"custom_game_settings": [
+			  {
+				"setting_name": "world_knockback_resistance_player",
+				"numeric_modifier_type": "post_divide"
+			  }
+			]
+		  },
+		  "badger:difficulty_modifier_gravity": {
+			"custom_game_settings": [
+			  {
+				"setting_name": "world_gravity_global",
+				"numeric_modifier_type": "post_multiply"
+			  }
+			]
+		  },
+		  "badger:difficulty_modifier_jump_gravity": {
+			"custom_game_settings": [
+			  {
+				"setting_name": "world_gravity_global",
+				"numeric_modifier_type": "post_multiply"
+			  }
+			]
+		  },
+		  "badger:difficulty_modifier_jump_height": {
+			"custom_game_settings": [
+			  {
+				"setting_name": "world_gravity_global",
+				"numeric_modifier_type": "post_divide"
+			  }
+			]
+		  },
+		  "badger:difficulty_modifier_fall_damage": {
+			"custom_game_settings": [
+			  {
+				"setting_name": "world_gravity_fall_damage",
+				"numeric_modifier_type": "post_multiply"
+			  }
+			]
+		  },
+		  "badger:difficulty_modifier_fall_damage_distance": {
+			"custom_game_settings": [
+			  {
+				"setting_name": "world_gravity_fall_distance",
+				"numeric_modifier_type": "post_multiply"
+			  }
+			]
+		  },
+		"badger:template": {
+		  "parent": "badger:template_mount",
+		  "game_mode": "conquest_custom"
+		}
+	  }
+	}
+  }

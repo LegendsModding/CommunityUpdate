@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_difficulty_modifiers_player_structures",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:difficulty_modifier_max_health": {
+        "difficulties": {
+          "Peaceful": {
+            "post_multiply": 1.5
+          },
+          "Easy": {
+            "post_multiply": 1.0
+          },
+          "Normal": {
+            "post_multiply": 1.0
+          },
+          "Hard": {
+            "post_multiply": 1.0
+          }
+        },
+        "custom_game_settings": [
+          {
+            "setting_name": "tools_modifiers_structure_health",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_build_speed": {
+        "custom_game_settings": [
+          {
+            "setting_name": "tools_modifiers_structure_construction_speed",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_damage": {
+        "custom_game_settings": [
+          {
+            "setting_name": "tools_modifiers_structure_damage",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_animal",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.7,
+        "height": 1.9
+      },
+      "badger:interacts_with_blocks": {},
+      "badger:reports_hit_reaction": {},
+      "badger:movement": {
+        "move_speed": 2.5
+      },
+      "badger:physics": {
+        "buoyancy": 10,
+        "gravity": -60
+      },
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 1.6,
+        "interpolation_speed": 4
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:suppress_target_action": {
+        "max_time": 2
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 10.0,
+        "fall_distance": 10,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "mob",
+          "animal",
+          "luredirect"
+        ]
+      },
+      "badger:health": {
+        "max_health": 15
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.5
+      },
+      "badger:fall_damage": {
+        "min_damage_distance": 10,
+        "min_damage": 2
+      },
+      "badger:resist_status": {
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:pop_capped": {},
+      "badger:spawn_tracking": {},
+      "badger:damage_receiver_material": {
+        "material": "mob"
+      },
+      "badger:lured": {
+        "default_configuration": {
+          "leash_range": 20.0,
+          "return_range": 10.0,
+          "arrive_range": 5.0,
+          "attack_move_range": 20.0
+        },
+        "configurations": [
+          {
+            "config_id": "hero",
+            "leash_range": 15.0,
+            "return_range": 5.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 9.0
+          },
+          {
+            "config_id": "force_move",
+            "leash_range": 600.0,
+            "return_range": 0.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 0.0,
+            "on_lured_buffs": [
+              "badger:buff_directed"
+            ],
+            "tutorial_treat_as_direct": true,
+            "remove_lured_buffs_on_engagement": true,
+            "recallable": true
+          },
+          {
+            "config_id": "charge",
+            "leash_range": 600.0,
+            "return_range": 15.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 15.0,
+            "on_lured_buffs": [
+              "badger:buff_directed"
+            ],
+            "tutorial_treat_as_direct": true,
+            "remove_lured_buffs_on_engagement": true,
+            "recallable": true
+          },
+          {
+            "config_id": "quick_attack",
+            "leash_range": 600.0,
+            "return_range": 15.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 15.0,
+            "on_lured_buffs": [
+              "badger:buff_directed"
+            ],
+            "tutorial_treat_as_direct": true,
+            "remove_lured_buffs_on_engagement": true,
+            "recallable": true
+          },
+          {
+            "config_id": "hero_lure_stop",
+            "leash_range": 15.0,
+            "return_range": 5.0,
+            "arrive_range": 5.0,
+            "attack_move_range": 0.0
+          }
+        ]
+      },
+      "badger:destroy_on_village_destruction": {
+        "ignore": true
+      },
+      "badger:dynamic_scale_interpolate": {
+        "interpolate_time": 1
+      },
+      "badger:difficulty_modifier_gravity": {
+        "custom_game_settings": [
+          {
+            "setting_name": "world_gravity_global",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_jump_gravity": {
+        "custom_game_settings": [
+          {
+            "setting_name": "world_gravity_global",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_jump_height": {
+        "custom_game_settings": [
+          {
+            "setting_name": "world_gravity_global",
+            "numeric_modifier_type": "post_divide"
+          }
+        ]
+      },
+      "badger:unit_direct_tags" : {
+        "tags": [
+          "unit_direct_mob"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "alliance_rule_filter": "friendly",
+            "exclude_tags": [],
+            "include_tags": [
+              "player"
+            ],
+            "input_layout_override": "overlay_gameplay_animal_interaction_hold",
+            "name": "interaction_zone",
+            "range": 2.1,
+            "interaction_priority": -1,
+            "restricted_interact_angle": 90,
+            "only_restrict_angle_while_luring": true
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_creeper",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "custom_tech_tree_spawner_creeper",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:spawner_creeper",
+        "game_mode": "lcu_pvp"
+      }
+    }
+  }
+}

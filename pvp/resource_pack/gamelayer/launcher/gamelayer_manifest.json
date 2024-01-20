@@ -1,0 +1,200 @@
+{
+  "gamelayer_services": [
+    {
+      "service": "ecs_saveload",
+      "scope": "server"
+    },
+    {
+      "service": "world_feature_tracking",
+      "scope": "server"
+    },
+    {
+      "service": "world_stream",
+      "scope": "level"
+    },
+    {
+      "service": "game_mode",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "settings",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "entity_buffer",
+      "scope": "server"
+    },
+    {
+      "service": "world_generation",
+      "scope": "level"
+    },
+    {
+      "service": "world_placement",
+      "scope": "server"
+    },
+    {
+      "service": "map_client",
+      "scope": "client"
+    },
+    {
+      "service": "map_reveal",
+      "scope": "level"
+    },
+    {
+      "service": "village",
+      "scope": "level"
+    },
+    {
+      "service": "netherrack_spreading",
+      "scope": "server"
+    },
+    {
+      "service": "app_arguments",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "hud",
+      "scope": "client"
+    },
+    {
+      "service": "asset_viewer",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "debug_renderer",
+      "scope": "launcher"
+    },
+    {
+      "service": "camera",
+      "scope": "client"
+    },
+    {
+      "service": "cinematics",
+      "scope": "level"
+    },
+    {
+      "service": "build_logic",
+      "scope": "server"
+    },
+    {
+      "service": "deck",
+      "scope": "server"
+    },
+    {
+      "service": "invasion",
+      "scope": "server"
+    },
+    {
+      "service": "bsharp",
+      "scope": "server"
+    },
+    {
+      "service": "sdf_shapes",
+      "scope": "level"
+    },
+    {
+      "service": "geology",
+      "scope": "server"
+    },
+    {
+      "service": "developer_settings",
+      "scope": "launcher"
+    },
+    {
+      "service": "downloaded_assets",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "gameplay_input_layout",
+      "scope": "client"
+    },
+    {
+      "service": "badger_multiplayer",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "ui",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "end_credits",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "loading",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "badger_synced_game_start",
+      "scope": "server"
+    },
+    {
+      "service": "badger_slash_commands",
+      "scope": "client"
+    },
+    {
+      "service": "tutorial_data",
+      "scope": "client"
+    },
+    {
+      "service": "tutorial_exit_transition",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "structure_block",
+      "scope": "level"
+    },
+    {
+      "service": "texture",
+      "scope": "level"
+    },
+    {
+      "service": "river_points_placement",
+      "scope": "level"
+    },
+    {
+      "service": "sky",
+      "scope": "client"
+    },
+    {
+      "service": "map_string_verification",
+      "scope": "level"
+    },
+    {
+      "service": "base_response",
+      "scope": "server"
+    },
+    {
+      "service": "synced_game_start_client",
+      "scope": "client"
+    },
+    {
+      "service": "front_end_fmvs",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "server_map",
+      "scope": "server"
+    },
+    {
+      "service": "custom_game_rules",
+      "scope": "launcher_persistent"
+    },
+    {
+      "service": "biome_detection",
+      "scope": "client"
+    },
+    {
+      "service": "level_data_tracking",
+      "scope": "server"
+    },
+    {
+      "service": "custom_game_settings",
+      "scope": "server"
+	},
+	{
+        "service": "objectives",
+        "scope": "level"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "character_preview_screens": [
+    "/badger/pvp",
+    "/badger/campaign",
+    "/badger/characterSelect"
+  ],
+
+  "hero_select_scenes": [
+    "hero_00",
+    "hero_01",
+    "hero_02",
+    "hero_03",
+    "hero_04",
+    "hero_05",
+    "hero_06",
+    "hero_07",
+    "hero_08",
+    "hero_09"
+  ],
+
+  "lost_legends_card_art": [
+    {
+      "focus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_focus.png",
+      "unfocus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_unfocus.png",
+      "start_date": "2022-01-01",
+      "end_date": "2022-01-02"
+    }
+  ],
+
+  "marketplace_card_art": [
+    {
+      "focus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_focus.png",
+      "unfocus_filename": "/textures-hbui/main_menu/MM_card_marketplace_custom_example_unfocus.png",
+      "start_date": "2022-01-01",
+      "end_date": "2022-01-02"
+    }
+  ],
+
+  "input_remapping": [
+    {
+      "id": "hud",
+      "keys": [
+        "key.mapScreen",
+        "key.songbookScreen",
+        "key.cycleHotbarPrevious",
+        "key.cycleHotbarNext",
+        "key.toolbarCategory1",
+        "key.toolbarCategory2",
+        "key.toolbarCategory3",
+        "key.toolbarCategory4",
+        "key.hotbar.1",
+        "key.hotbar.2",
+        "key.hotbar.3",
+        "key.hotbar.4",
+        "key.hotbar.5",
+        "key.hotbar.6",
+        "key.hotbar.7",
+        "key.hotbar.8",
+        "key.hotbar.9",
+        "key.forward",
+        "key.left",
+        "key.back",
+        "key.right",
+        "key.toggleSprint",
+        "key.jump",
+        "key.heroAbility",
+        "key.heroLure",
+        "key.heroDirect"
+      ]
+    },
+    {
+      "id": "generalInteraction",
+      "keys": [
+        "key.bsharpInteract"
+      ]
+    },
+    {
+      "id": "spawnerInteraction",
+      "keys": [
+        "key.activateSpawner",
+        "key.deconstruct",
+        "key.refund",
+        "key.recallMob"
+      ]
+    },
+    {
+      "id": "redStoneLauncherInteraction",
+      "keys": [
+        "key.cancelAiming",
+        "key.confirmTarget"
+      ]
+    },
+    {
+      "id": "build",
+      "keys": [
+        "key.build",
+        "key.action",
+        "key.rotatePreviewClockwise",
+        "key.rotatePreviewCounterclockwise",
+        "key.ping.buildpreview.statement",
+        "key.ping.buildpreview.request",
+        "key.ping.buildpreview.yes",
+        "key.ping.buildpreview.no"  
+      ]
+    },
+    {
+      "id": "battle",
+      "keys": [
+        "key.battleView",
+        "key.forceMove",
+        "key.attackMove",
+        "key.typeSelectCycleHotbarPrevious",
+        "key.typeSelectCycleHotbarNext",
+        "key.typeSelectCategory1",
+        "key.typeSelectCategory2",
+        "key.typeSelectCategory4",
+        "key.typeSelectCategory6"
+      ]
+    }
+  ],
+  "new_content_modal_items": [
+    {
+      "id": "WitchesHutsCauldrons",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/news_witch.jpg",
+      "how_to_access_description": "newCampaign"
+    },
+    {
+      "id": "mountFrog",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/news_frog.jpg",
+      "how_to_access_description": "newCampaign"
+    },
+    {
+      "id": "piglinAirChopper",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/news_piglin_structure.jpg",
+      "how_to_access_description": "newCampaign"
+    },
+    {
+      "id": "piglinDisruptor",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/news_piglin_unit.jpg",
+      "how_to_access_description": "newCampaign"
+    },
+    {
+      "id": "tuning",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/news_tuning.jpg",
+      "how_to_access_description": "allModes"
+    },
+    {
+      "id": "typeSelect",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/news_type_select.jpg",
+      "how_to_access_description": "allModes"
+    },
+    {
+      "id": "moreCustomSettings",
+      "content_type": "feature",
+      "image": "/textures-hbui/main_menu/news/more_custom_game_options.jpg",
+      "how_to_access_description": "customSetting"
+    }
+  ]
+}

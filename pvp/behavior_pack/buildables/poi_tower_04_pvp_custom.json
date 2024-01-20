@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_tower_04",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "custom_tech_tree_stun_tower",
+            "amount": 1
+          },
+          {
+            "item": "unlock_host_towers",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:poi_tower_04",
+        "game_mode": "lcu_pvp"
+      }
+    }
+  }
+}

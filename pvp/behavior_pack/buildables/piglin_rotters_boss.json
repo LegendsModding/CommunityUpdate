@@ -1,0 +1,838 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_rotters_boss",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Boss"
+    },
+    "components": {
+      "badger:difficulty_modifier_max_health": {
+        "difficulties": {
+          "Peaceful": {
+            "post_multiply": 0.3
+          },
+          "Easy": {
+            "post_multiply": 1.0
+          },
+          "Normal": {
+            "post_multiply": 1.1
+          },
+          "Hard": {
+            "post_multiply": 1.25
+          }
+        },
+        "custom_game_settings": [
+          {
+            "setting_name": "piglin_modifiers_boss_health",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:aabb": {
+        "width": 4.01,
+        "height": 8.0
+      },
+      "badger:loot": {
+        "table": "boss_piglin_loot"
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Boss"
+      },
+      "badger:entity_collision": {},
+      "badger:reports_hit_reaction": {},
+      "badger:world_collision": {
+        "has_collision": true,
+        "auto_step": 2.1,
+        "interpolation_speed": 7.5
+      },
+      "badger:collision_weight": {
+        "weight": 100000
+      },
+      "badger:physics": {},
+      "badger:movement": {
+        "move_speed": 7.5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 50
+      },
+      "badger:leash": {
+        "leash_range": 30,
+        "return_range": 5
+      },
+      "badger:tags": {
+        "tags": [
+          "boss",
+          "disruptor",
+          "piglin",
+          "mob",
+          "rottersBoss"
+        ]
+      },
+      "badger:health": {
+        "max_health": 15000
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 10.0,
+        "fall_distance": 3.1,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "boss_solid"
+        ],
+        "exclude_tags": []
+      },
+      "badger:global_var_registry_kill": {
+        "category": "knight",
+        "value": 0
+      },
+      "badger:damage_receiver": {
+        "damage_resistances": {
+          "explosion": 2.0,
+          "ranged": 0.5,
+          "melee": 0.25,
+          "lava": 12.0,
+          "player": 0.025
+        },
+        "shape": {
+          "type": "cylinder",
+          "radius": 3.0,
+          "height": 7.0,
+          "direction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 40,
+          "sc": 20,
+          "rc": 40
+        }
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "rotters_undead_explosive",
+            "min_range": 0,
+            "max_range": 7.5,
+            "required_target_count": 5,
+            "include_tags": [
+              "undead"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "explosive_attack"
+            ]
+          },
+          {
+            "name": "rotters_default_explosive",
+            "min_range": 0,
+            "max_range": 7.5,
+            "required_target_count": 8,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "explosive_attack"
+            ]
+          },
+          {
+            "name": "rotters_rsl_counter",
+            "min_range": 50,
+            "max_range": 150,
+            "include_tags": [
+              "redStoneLauncher"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spit_attack"
+            ]
+          },
+          {
+            "name": "rotters_primary",
+            "min_range": 15,
+            "max_range": 150,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spit_attack"
+            ]
+          },
+          {
+            "name": "rotters_primary_2",
+            "min_range": 15,
+            "max_range": 150,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spit_attack_escalate_1"
+            ]
+          },
+          {
+            "name": "rotters_primary_3",
+            "min_range": 15,
+            "max_range": 150,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spit_attack_escalate_2"
+            ]
+          },
+          {
+            "name": "rotters_default_melee",
+            "min_range": 0,
+            "max_range": 7.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "rotters_boss_target_puke_attack",
+            "min_range": 0,
+            "max_range": 20,
+            "required_target_count": 0,
+            "include_tags": [
+              "rotters_boss_target"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "puke_attack"
+            ]
+          },
+          {
+            "name": "rotters_default_puke_attack",
+            "min_range": 0,
+            "max_range": 20,
+            "required_target_count": 0,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "puke_attack"
+            ]
+          },
+          {
+            "name": "approach",
+            "min_range": 0.0,
+            "max_range": 20.0,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "approach"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "spit_attack",
+            "activation_trigger": "on_spit_attack",
+            "on_hit_target_trigger": "on_rotters_boss_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "min_range": 10,
+              "max_range": 200.0
+            },
+            "state_machine": {
+              "wind_up": 2,
+              "wind_down": 5.5,
+              "cooldown_time": 30,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_rotters_boss_spit",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  7.0,
+                  12.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [
+                  "redStoneLauncher"
+                ],
+                "exclude_tags": [
+                  "player",
+                  "mob",
+                  "piglin",
+                  "buildable_combat",
+                  "boss"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "spore",
+                  "crush"
+                ]
+              },
+              "should_lead": false,
+              "knockback": {
+                "angle": 45,
+                "force": 10
+              }
+            }
+          },
+          {
+            "name": "spit_attack_escalate_1",
+            "trigger": "on_spit_attack_escalate_1",
+            "on_hit_target_trigger": "on_rotters_boss_ranged_attack_hit",
+            "predictive_windup": true,
+            "starts_disabled": true,
+            "range": {
+              "min_range": 10,
+              "max_range": 200.0
+            },
+            "state_machine": {
+              "wind_up": 2,
+              "wind_down": 5.5,
+              "cooldown_time": 25,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_rotters_boss_spit",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  7.0,
+                  12.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [
+                  "redStoneLauncher"
+                ],
+                "exclude_tags": [
+                  "player",
+                  "mob",
+                  "piglin",
+                  "buildable_combat",
+                  "boss"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "spore",
+                  "crush"
+                ]
+              },
+              "should_lead": false,
+              "knockback": {
+                "angle": 45,
+                "force": 10
+              }
+            }
+          },
+          {
+            "name": "spit_attack_escalate_2",
+            "trigger": "on_spit_attack_escalate_2",
+            "on_hit_target_trigger": "on_rotters_boss_ranged_attack_hit",
+            "predictive_windup": true,
+            "starts_disabled": true,
+            "range": {
+              "min_range": 10,
+              "max_range": 200.0
+            },
+            "state_machine": {
+              "wind_up": 2,
+              "wind_down": 5.5,
+              "cooldown_time": 20,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_rotters_boss_spit",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  7.0,
+                  12.0
+                ]
+              ],
+              "collision": {
+                "include_tags": [
+                  "redStoneLauncher"
+                ],
+                "exclude_tags": [
+                  "player",
+                  "mob",
+                  "piglin",
+                  "buildable_combat",
+                  "boss"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "spore",
+                  "crush"
+                ]
+              },
+              "should_lead": false,
+              "knockback": {
+                "angle": 45,
+                "force": 10
+              }
+            }
+          },
+          {
+            "name": "explosive_attack",
+            "activation_trigger": "on_explosive_attack",
+            "on_hit_target_trigger": "on_rotters_boss_aoe_attack_hit",
+            "predictive_windup": false,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 7.5
+            },
+            "state_machine": {
+              "wind_up": 4,
+              "wind_down": 3.2,
+              "cooldown_time": 20,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 15.0,
+                "thickness": 8,
+                "rotation": 0,
+                "position": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 70,
+                "damage_types": [
+                  "explosion"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 35
+              },
+              "falloff": {
+                "min_angle": 10,
+                "min_radius": 8,
+                "max_radius": 15
+              } /* , Remove as a way to improve effectiveness against zombies without blowing effectiveness against other units out of proportion
+              "apply_status": {
+                "stunned": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              } */
+            }
+          },
+          {
+            "name": "melee_attack",
+            "on_hit_target_trigger": "on_rotters_boss_melee_attack_hit",
+            "activation_trigger": "on_melee_attack",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 1.2,
+              "wind_down": 1.57,
+              "cooldown_time": 5,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 12,
+                "thickness": 7,
+                "rotation": 0,
+                "position": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 25,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 30
+              },
+              "falloff": {
+                "min_radius": 2.5,
+                "max_radius": 5,
+                "min_damage": 10,
+                "min_angle": 10
+              }
+            }
+          },
+          {
+            "name": "puke_attack",
+            "on_hit_target_trigger": "on_rotters_boss_ranged_attack_hit",
+            "activation_trigger": "on_puke_attack",
+            "predictive_windup": true,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "transfer_activation": [
+              "puke_attack_b",
+              "puke_attack_c"
+            ],
+            "state_machine": {
+              "wind_up": 2.0,
+              "wind_down": 4.25,
+              "cooldown_time": 5,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 0,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 15,
+                "damage_types": [
+                  "spore"
+                ]
+              }
+            }
+          },
+          {
+            "name": "puke_attack_b",
+            "on_hit_target_trigger": "on_rotters_boss_ranged_attack_hit",
+            "activation_trigger": "on_puke_attack_b",
+            "predictive_windup": true,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 3.0,
+              "wind_down": 3.25,
+              "cooldown_time": 5,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 0,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 15,
+                "damage_types": [
+                  "spore"
+                ]
+              }
+            }
+          },
+          {
+            "name": "puke_attack_c",
+            "on_hit_target_trigger": "on_rotters_boss_ranged_attack_hit",
+            "activation_trigger": "on_puke_attack_c",
+            "predictive_windup": true,
+            "starts_disabled": false,
+            "range": {
+              "max_range": 5
+            },
+            "state_machine": {
+              "wind_up": 4.0,
+              "wind_down": 2.25,
+              "cooldown_time": 5,
+              "pre_activation_sync_time": 0.1,
+              "deactivates_on_cooldown": true
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 10.0,
+                "thickness": 8,
+                "rotation": 0,
+                "position": [
+                  0,
+                  4,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 15,
+                "damage_types": [
+                  "spore"
+                ]
+              }
+            }
+          },
+          {
+            "name": "approach",
+            "range": {
+              "max_range": 0.0,
+              "min_range": 1.0
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 7
+        },
+        "timer": {
+          "interval": 1
+        },
+        "damage_effects": {
+          "damage": 0,
+          "damage_types": [],
+          "include_tags": [
+            "piglin_tier1"
+          ],
+          "exclude_tags": [
+            "boss"
+          ],
+          "apply_status": {
+            "feared": {
+              "chance": 1.0,
+              "strength": 0.25
+            }
+          },
+          "alliance_rule_filter": "friendly"
+        }
+      },
+      "badger:cinematic_death": {
+        "cine_id": [
+          "hrd03_c05_obs_boss_death"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "medium",
+        "filter_tagsets": [
+          {
+            "include_tags": [
+              "base_assault"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglin_rotters_boss",
+        "label": "faction.piglin.obstacle.boss.name"
+      },
+      "badger:objective_health_bar": {
+        "max_visible_range": 155,
+        "priority": 2,
+        "type": "boss"
+      },
+      "badger:spawn_tracking": {},
+      "badger:knockback_resistance": {
+        "affected_scale": 0
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": false,
+          "time": 5.0,
+          "resistance_persist_time": 30
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "wet": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:entity_leap": {
+        "targeting": {
+          "min_range": 0,
+          "max_range": 1000,
+          "min_height": 0,
+          "max_height": 200,
+          "max_target_dist_to_destination": 50,
+          "max_target_height_to_destination": 50,
+          "height_selection_bias": 0.5
+        },
+        "durations": {
+          "prep": 0.5,
+          "upward": 6.17,
+          "hover": 0.25,
+          "downward": 3.57,
+          "recovery": 0.1
+        },
+        "force_jump_threshold_offset_y": -10
+      },
+      "badger:music_emitter_states": [
+        "obstacle_boss_jumped0",
+        "obstacle_boss_jumped1",
+        "obstacle_boss_jumped2"
+      ],
+      "badger:template": [
+        "badger:component_difficulty_modifiers_piglin_bosses"
+      ]
+    }
+  }
+}

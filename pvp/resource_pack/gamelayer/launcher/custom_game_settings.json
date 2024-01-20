@@ -1,0 +1,3233 @@
+{
+    "custom_game_settingsallmodeslcu_pvp": {
+        "custom_settings_screen_categories": [
+            "world",
+            "resources",
+            "player",
+            "tools",
+            "piglin"
+        ],
+        "custom_settings": {
+            "world": {
+                "01_world_terrain": [
+                    {
+                        "id": "world_world_seed",
+                        "value_type": "string",
+                        "value": "",
+                        "backend_type": "customgame",
+                        "ui_type": "textfield",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "save_last_used_value": false,
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "world_world_size",
+                        "value_type": "float",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.7,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_world_mirror",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    }
+                ],
+                "02_world_gravity": [
+                    {
+                        "id": "world_gravity_global",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_gravity_fall_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_gravity_fall_distance",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "03_world_knockback": [
+                    {
+                        "id": "world_knockback_force_player",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_knockback_resistance_player",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_knockback_resistance_mob",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_knockback_resistance_piglin",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "04_world_resource_density": [
+                    {
+                        "id": "world_resource_density_iron",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_resource_density_coal",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_resource_density_diamond",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_resource_density_redstone",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_resource_density_tower_blast",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_resource_density_tower_frost",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_resource_density_tower_stun",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "05_world_hazards_buffs": [
+                    {
+                        "id": "world_hazards_water_is_lava",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "world_hazards_hazard_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_hazards_hazard_density",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_hazards_buff_density",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "06_world_mobs": [
+                    {
+                        "id": "world_mobs_roaming_piglin_density",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 1,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_mobs_mob_density",
+                        "value_type": "float",
+                        "value": 0.5,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 1,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "world_mobs_llama_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 30.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "07_world_day_night": [
+                    {
+                        "id": "world_day_night_cycle",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.world_day_night_cycle.1",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.world_day_night_cycle.2",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.world_day_night_cycle.3",
+                                "option_value": 2
+                            }
+                        ]
+                    }
+                ]
+            },
+            "resources": {
+                "01_resources_starting_resources": [
+                    {
+                        "id": "resources_starting_wood",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_stone",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_iron",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_coal",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_diamond",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_redstone",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_lapis",
+                        "value_type": "int",
+                        "value": 50,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_lapis",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_prismarine",
+                        "value_type": "int",
+                        "value": 200,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_prismarine",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_gold",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_allay_build",
+                        "value_type": "int",
+                        "value": 5,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_allay_build",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_allay_gather",
+                        "value_type": "int",
+                        "value": 5,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_allay_gather",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_tower_core_blast",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_tower_core_frost",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_tower_core_stun",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_starting_flames",
+                        "value_type": "int",
+                        "value": 40,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "slider_step_increment": 20,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 20,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 100,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "02_resources_max_resources": [
+                    {
+                        "id": "resources_max_wood",
+                        "value_type": "int",
+                        "value": 1000,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_wood",
+                        "value_type": "int",
+                        "value": 5000,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_stone",
+                        "value_type": "int",
+                        "value": 1000,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_stone",
+                        "value_type": "int",
+                        "value": 5000,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_iron",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_iron",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_coal",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_coal",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_diamond",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_diamond",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_redstone",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_redstone",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_lapis",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_prismarine",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_max_gold",
+                        "value_type": "int",
+                        "value": 250,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_step_increment": 100,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 9999,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "03_resources_chests": [
+                    {
+                        "id": "resources_chest_allay_density",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_chest_allay_yield",
+                        "value_type": "int",
+                        "value": 2,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "allmodes",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.resources_chest_allay_yield.1",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_allay_yield.2",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_allay_yield.3",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_allay_yield.4",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_allay_yield.5",
+                                "option_value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "resources_chest_village_yield",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.1",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.2",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.3",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.4",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.5",
+                                "option_value": 4
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.6",
+                                "option_value": 5
+                            },
+                            {
+                                "option_label": "customsettings.option.resources_chest_village_yield.7",
+                                "option_value": 6
+                            }
+                        ]
+                    }
+                ],
+                "04_resources_miscellaneous": [
+                    {
+                        "id": "resources_misc_lose_on_death",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 100,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "player": {
+                "01_player_modifiers": [
+                    {
+                        "id": "player_modfiers_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "player_modfiers_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "player_modfiers_regeneration",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "02_player_bonuses": [
+                    {
+                        "id": "player_bonuses_speed",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "player_bonuses_jump",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "player_bonuses_invulnerability",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    }
+                ]
+            },
+            "tools": {
+                "01_tools_modifiers": [
+                    {
+                        "id": "tools_modifiers_hq_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_mob_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_mob_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_mob_cost",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_structure_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_structure_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_structure_cost",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_structure_construction_speed",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_structure_auto_buffed",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_modifiers_hq_zone_immunity",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 30,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_lcu_pvp_escalation_1",
+                        "value_type": "int",
+                        "value": 40,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 120,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_lcu_pvp_escalation_2",
+                        "value_type": "int",
+                        "value": 10,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 60,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_modifiers_lcu_pvp_escalation_3",
+                        "value_type": "int",
+                        "value": 10,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 60,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "02_tools_mounts": [
+                    {
+                        "id": "tools_mounts_unlock_all",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_mounts_beetle",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_mounts_bird",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_mounts_frog",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_mounts_tiger",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    }
+                ],
+                "03_tools_witches_warriors": [
+                    {
+                        "id": "tools_tech_tree_witch_hut_placement",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement.4",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement.3",
+                                "option_value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_tech_tree_witch_hut_placement_lcu_pvp",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement_lcu_pvp.4",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement_lcu_pvp.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_witch_hut_placement_lcu_pvp.2",
+                                "option_value": 2
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_tech_tree_witch_hut_activation_time",
+                        "value_type": "int",
+                        "value": 5,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 60,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_tech_tree_witch_hut_activation_variance",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 60,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_tech_tree_witch_hut_activation_duration",
+                        "value_type": "int",
+                        "value": 5,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "lcu_pvp",
+                        "slider_step_increment": 1,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 30,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_tech_tree_warrior_spawner_placement",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_placement.4",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_placement.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_placement.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_placement.3",
+                                "option_value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "id": "tools_tech_tree_warrior_spawner_count",
+                        "value_type": "int",
+                        "value": 15,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_count.1",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_count.2",
+                                "option_value": 7
+                            },
+                            {
+                                "option_label": "customsettings.option.tools_tech_tree_warrior_spawner_count.3",
+                                "option_value": 15
+                            }
+                        ]
+                    }
+                ],
+                "04_tools_tech_tree": [
+                    {
+                        "id": "tools_tech_tree_unlock_all",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_wall",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_stair",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_gate",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_arrow_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_carpenter",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_wellhouse",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_mason",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_scatter_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_protector_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_freeze_trap",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_redstone_launcher",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_kaboomery",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_battle_drum",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spyglass",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_cauldron",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_blast_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_frost_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_stun_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_wood_golem",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_stone_golem",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_grindstone_golem",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_mossy_golem",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_zombie",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_skeleton",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_creeper",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_warrior",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_first_stone",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_first_diorite",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_first_brick",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_spawner_first_oak",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_lapis_flag",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_hub",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "lcu_pvp",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_poi_tower",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_first_golem",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_gather_iron_small",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_gather_coal_small",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_gather_diamond_small",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_gather_redstone_small",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_clear_netherrack",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_allay_storage_small",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_abundant_allay",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_spawn_mobs_medium",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_spawn_mobs_large",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_increase_rally",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "allmodes",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_shared_village_chest",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_carpentry_expert",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    },
+                    {
+                        "id": "tools_tech_tree_improvement_mason_expert",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "switch",
+                        "game_mode_type": "campaignonly",
+                        "enable_requirements": [],
+                        "options": []
+                    }
+                ]
+            },
+            "piglin": {
+                "01_piglin_modifiers": [
+                    {
+                        "id": "piglin_modifiers_unit_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_modifiers_unit_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_modifiers_structure_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_modifiers_structure_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "allmodes",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_modifiers_boss_health",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_modifiers_boss_damage",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.1,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "02_piglin_invasion": [
+                    {
+                        "id": "piglin_invasion_aggression",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "lcu_pvp",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_aggression_level.3",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_aggression_level.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_aggression_level.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_aggression_level.4",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_aggression_level.5",
+                                "option_value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_pacing",
+                        "value_type": "int",
+                        "value": 2,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_pacing.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_pacing.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_pacing.3",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_pacing.4",
+                                "option_value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_activity_level",
+                        "value_type": "int",
+                        "value": 2,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_activity_level.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_activity_level.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_activity_level.3",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_activity_level.4",
+                                "option_value": 4
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_activity_level.5",
+                                "option_value": 5
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_village_attack_strength",
+                        "value_type": "int",
+                        "value": 0,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_village_attack_strength.1",
+                                "option_value": 0
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_village_attack_strength.2",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_village_attack_strength.3",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_village_attack_strength.4",
+                                "option_value": 3
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_village_attack_autoresolve_strength",
+                        "value_type": "float",
+                        "value": 1.0,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": true,
+                        "slider_step_increment": 10,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 0.0,
+                                "option_value_type": "float"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5.0,
+                                "option_value_type": "float"
+                            }
+                        ]
+                    }
+                ],
+                "03_piglin_invasion_attack_horde": [
+                    {
+                        "id": "piglin_invasion_horde_attack_personality",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.3",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.4",
+                                "option_value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_attack_bases_small",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_attack_bases_medium",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_attack_bases_large",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_attack_bases_outpost",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "04_piglin_invasion_defend_horde": [
+                    {
+                        "id": "piglin_invasion_horde_defend_personality",
+                        "value_type": "int",
+                        "value": 2,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.3",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.4",
+                                "option_value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_defend_bases_small",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_defend_bases_medium",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_defend_bases_large",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_defend_bases_outpost",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ],
+                "05_piglin_invasion_obstacle_horde": [
+                    {
+                        "id": "piglin_invasion_horde_obstacle_personality",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "dropdown",
+                        "game_mode_type": "campaignonly",
+                        "is_editable": true,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.1",
+                                "option_value": 1
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.2",
+                                "option_value": 2
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.3",
+                                "option_value": 3
+                            },
+                            {
+                                "option_label": "customsettings.option.piglin_invasion_horde_personality.4",
+                                "option_value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_obstacle_bases_small",
+                        "value_type": "int",
+                        "value": 3,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_obstacle_bases_medium",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_obstacle_bases_large",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 5,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    },
+                    {
+                        "id": "piglin_invasion_horde_obstacle_bases_outpost",
+                        "value_type": "int",
+                        "value": 1,
+                        "backend_type": "customgame",
+                        "ui_type": "slider",
+                        "game_mode_type": "campaignonly",
+                        "slider_convert_to_percent": false,
+                        "slider_step_increment": 1,
+                        "is_editable": false,
+                        "enable_requirements": [],
+                        "options": [
+                            {
+                                "option_label": "min",
+                                "option_value": 1,
+                                "option_value_type": "int"
+                            },
+                            {
+                                "option_label": "max",
+                                "option_value": 10,
+                                "option_value_type": "int"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

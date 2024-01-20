@@ -1,0 +1,1035 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "runtime_identifier": "badger:badger_mob",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Player",
+      "function": "Player",
+      "type": "Player"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 0.95,
+        "length": 0.95,
+        "height": 3.0
+      },
+      "badger:spawn_tracking": {},
+      "badger:reports_hit_reaction": {},
+      "badger:movement": {
+        "move_speed": 12.0
+      },
+      "badger:health": {
+        "max_health": 100
+      },
+      "badger:health_regeneration": {
+        "attack_cooldown_seconds": 5.0,
+        "regen_cooldown_seconds": 1,
+        "health_regen_amount": 2,
+        "alliance_rule": "enemy",
+        "regen_while_suspended": false,
+        "tag_filter": {
+          "include_tags": [],
+          "exclude_tags": []
+        }
+      },
+      "badger:physics": {
+        "gravity": -60
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Melee"
+      },
+      "badger:entity_collision": {},
+      "badger:world_collision": {
+        "auto_step": 1.1,
+        "interpolation_speed": 24,
+        "interpolate_from_height": false
+      },
+      "badger:collision_weight": {
+        "weight": 3.0
+      },
+      "badger:tags": {
+        "tags": [
+          "player",
+          "mob",
+          "rotters_boss_target"
+        ]
+      },
+      "badger:loot": {
+        "table": "player_loot"
+      },
+      "badger:map_icon_revealed": {
+        "teammates_only": true
+      },
+      "badger:player": {},
+      "badger:fast_traveller": {
+        "outgoing_alliance_rule_filter": "can_fast_travel",
+        "outgoing_tag_filter": {
+          "include_tags": [
+            "luredirect"
+          ],
+          "exclude_tags": []
+        }
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "ranged": 0.75,
+          "lava": 1.5,
+          "heal": 2.0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 8,
+          "sc": 8,
+          "rc": 4,
+          "ht": 1,
+          "ct": 4
+        }
+      },
+      "badger:rider": {
+        "include_tags": [
+          "mount"
+        ],
+        "alliance_rule_filter": "friendly"
+      },
+      "badger:jump": {
+        "initial_height": 3.0,
+        "hold_velocity": {
+          "start": 0.0,
+          "end": 0.0
+        },
+        "hold_duration": 0.1
+      },
+      "badger:delayed_jump": {
+        "delay_time": 0.5
+      },
+      "badger:interactor": {},
+      "badger:waypoint_marker_visibility": {
+        "min_range_alliance": 0.0,
+        "max_range_alliance": 15.0,
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 30.0,
+        "compass_max_range": "short",
+        "filter_tagsets": [
+          {
+            "include_tags": [],
+            "exclude_tags": []
+          },
+          {
+            "include_tags": [
+              "village_attack",
+              "base_assault"
+            ],
+            "exclude_tags": []
+          }
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_player",
+        "alliance_rule_filter": "enemy",
+        "label": "",
+        "world_position_offset": [
+          0,
+          4,
+          0
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "sword_attack",
+            "on_hit_target_trigger": "on_hero_sword_melee_attack_hit",
+            "reports_state": "combat",
+            "transfer_activation": [
+              "sword_knockback",
+              "sword_structure",
+              "sword_villager",
+              "sword_rooted_cut",
+              "sword_illager",
+              "sword_animals",
+              "sword_gather"
+            ],
+            "on_hit_trigger": "hero_sword_attack_hit",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 190,
+                "radius": 4.0,
+                "thickness": 2.5,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "tier1PlayerStructure",
+                  "tier2PlayerStructure",
+                  "tier3PlayerStructure",
+                  "attached_buildable",
+                  "gather",
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 10,
+                "damage_types": [
+                  "player"
+                ]
+              },
+              "count_limit": 5
+            }
+          },
+          {
+            "name": "sword_knockback",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 190,
+                "radius": 4.0,
+                "thickness": 2.5,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable_combat",
+                  "attached_buildable",
+                  "gather",
+                  "large",
+                  "boss",
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0.001,
+                "damage_types": [
+                  "player"
+                ]
+              },
+              "knockback": {
+                "angle": 40,
+                "force": 12
+              },
+              "apply_status": {
+                "engaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "count_limit": 12
+            }
+          },
+          // {
+          //   "name": "sword_mob_deflect",
+          //   "triggers_material_events": {
+          //     "presentation_trigger": "on_sword_deflect",
+          //     "materials_to_trigger_presentation": [
+          //       "hit_material_block",
+          //       "hit_material_structure"
+          //     ]
+          //   },
+          //   "state_machine": {
+          //     "wind_up": 0.1,
+          //     "wind_down": 0.3
+          //   },
+          //   "shape_area_damage": {
+          //     "shape": {
+          //       "type": "wedge",
+          //       "aperture_angle": 90,
+          //       "radius": 2.5,
+          //       "thickness": 1,
+          //       "position": [
+          //         0.0,
+          //         2.0,
+          //         0.5
+          //       ]
+          //     },
+          //     "requires_los": true,
+          //     "collision": {
+          //       "include_tags": [
+          //         "large"
+          //       ],
+          //       "exclude_tags": [
+          //         "player",
+          //         "gather"
+          //       ],
+          //       "alliance_rule_filter": "any_team"
+          //     },
+          //     "count_limit": 1
+          //   }
+          // },
+          // {
+          //   "name": "sword_boss_deflect",
+          //   "triggers_material_events": {
+          //     "presentation_trigger": "on_sword_deflect",
+          //     "materials_to_trigger_presentation": [
+          //       "hit_material_block",
+          //       "hit_material_structure"
+          //     ]
+          //   },
+          //   "state_machine": {
+          //     "wind_up": 0.1,
+          //     "wind_down": 0.3
+          //   },
+          //   "shape_area_damage": {
+          //     "shape": {
+          //       "type": "wedge",
+          //       "aperture_angle": 90,
+          //       "radius": 2.5,
+          //       "thickness": 1,
+          //       "position": [
+          //         0.0,
+          //         2.0,
+          //         0.5
+          //       ]
+          //     },
+          //     "requires_los": true,
+          //     "collision": {
+          //       "include_tags": [
+          //         "boss"
+          //       ],
+          //       "exclude_tags": [
+          //         "player",
+          //         "gather"
+          //       ],
+          //       "alliance_rule_filter": "any_team"
+          //     },
+          //     "count_limit": 1
+          //   }
+          // },
+          {
+            "name": "sword_structure",
+            "triggers_material_events": {
+              "presentation_trigger": "on_sword_deflect",
+              "materials_to_trigger_presentation": [
+                "hit_material_block",
+                "hit_material_structure"
+              ]
+            },
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 2.5,
+                "thickness": 1,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "tier1PlayerStructure",
+                  "tier2PlayerStructure",
+                  "tier3PlayerStructure",
+                  "gather",
+                  "siege_projectile",
+                  "portal_hurtbox",
+                  "player"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "count_limit": 1
+            }
+          },
+          {
+            "name": "sword_villager",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 190,
+                "radius": 4.0,
+                "thickness": 2.5,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [
+                  "villager"
+                ],
+                "exclude_tags": [
+                  "buildable_combat",
+                  "attached_buildable",
+                  "gather",
+                  "player"
+                ],
+                "alliance_rule_filter": "friendly"
+              },
+              "knockback": {
+                "angle": 12,
+                "force": 5
+              },
+              "count_limit": 3
+            }
+          },
+          {
+            "name": "sword_illager",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 190,
+                "radius": 4.0,
+                "thickness": 2.5,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [
+                  "illager"
+                ],
+                "exclude_tags": [
+                  "buildable_combat",
+                  "attached_buildable",
+                  "gather",
+                  "player"
+                ],
+                "alliance_rule_filter": "friendly"
+              },
+              "knockback": {
+                "angle": 12,
+                "force": 5
+              },
+              "count_limit": 3
+            }
+          },
+          {
+            "name": "sword_animals",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 190,
+                "radius": 4.0,
+                "thickness": 2.5,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [
+                  "animal"
+                ],
+                "exclude_tags": [
+                  "buildable_combat",
+                  "attached_buildable",
+                  "gather",
+                  "player",
+                  "poi_mount",
+                  "large_mob"
+                ],
+                "alliance_rule_filter": "friendly"
+              },
+              "damage": {
+                "damage_amount": 1,
+                "damage_types": [
+                  "player"
+                ]
+              },
+              "knockback": {
+                "angle": 12,
+                "force": 5
+              },
+              "apply_status": {
+                "feared": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "count_limit": 3
+            }
+          },
+          {
+            "name": "sword_rooted_cut",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 190,
+                "radius": 4.0,
+                "thickness": 2.5,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.5
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [
+                  "mob"
+                ],
+                "exclude_tags": [
+                  "buildable_combat",
+                  "attached_buildable",
+                  "gather",
+                  "player"
+                ],
+                "alliance_rule_filter": "friendly"
+              },
+              "apply_status": {
+                "rooted_cut": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "count_limit": 10
+            }
+          },
+          {
+            "name": "sword_gather",
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.3
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "wedge",
+                "aperture_angle": 90,
+                "radius": 2.5,
+                "thickness": 1,
+                "position": [
+                  0.0,
+                  2.0,
+                  0.5
+                ]
+              },
+              "damage": {
+                "damage_amount": 3,
+                "damage_types": [
+                  "player"
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [
+                  "gather"
+                ],
+                "exclude_tags": [
+                  "mob"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "count_limit": 3
+            }
+          },
+          {
+            "name": "direct",
+            "trigger": "on_direct",
+            "state_machine": {
+              "wind_down": 0.067
+            },
+            "spawner": {
+              "type": "badger:placeable_quick_attack_move"
+            },
+            "lure_coordinator": {
+              "affect_formation": true
+            }
+          },
+          {
+            "name": "force_move",
+            "trigger": "on_advanced_direct_force_all",
+            "state_machine": {
+              "wind_down": 0.067
+            },
+            "spawner": {
+              "type": "badger:placeable_force_move"
+            },
+            "lure_coordinator": {
+              "affect_formation": true,
+              "prefer_existing_followers": false
+            }
+          },
+          {
+            "name": "force_move_single",
+            "trigger": "on_advanced_direct_force_single",
+            "state_machine": {
+              "wind_down": 0.067
+            },
+            "spawner": {
+              "type": "badger:placeable_force_move_single"
+            },
+            "lure_coordinator": {
+              "affect_formation": true,
+              "prefer_existing_followers": false
+            }
+          },
+          {
+            "name": "attack_move",
+            "trigger": "on_advanced_direct_charge_all",
+            "state_machine": {
+              "wind_down": 0.067
+            },
+            "spawner": {
+              "type": "badger:placeable_attack_move"
+            },
+            "lure_coordinator": {
+              "affect_formation": true,
+              "prefer_existing_followers": false
+            }
+          },
+          {
+            "name": "attack_move_single",
+            "trigger": "on_advanced_direct_charge_single",
+            "state_machine": {
+              "wind_down": 0.067
+            },
+            "spawner": {
+              "type": "badger:placeable_attack_move_single"
+            },
+            "lure_coordinator": {
+              "affect_formation": true,
+              "prefer_existing_followers": false
+            }
+          },
+          {
+            "name": "lure_instant_all_trigger",
+            "trigger": "on_lure",
+            "state_machine": {
+              "wind_down": 0.067
+            },
+            "spawner": {
+              "type": "badger:mob_lure_instant_trigger",
+              "is_parented": true,
+              "is_unique_child": true
+            },
+            "lure_coordinator": {
+              "prefer_existing_followers": false,
+              "is_trigger": true
+            }
+          },
+          {
+            "name": "lure_instant_stop",
+            "trigger": "on_lure_stop",
+            "state_machine": {
+              "activation_time": 0.0,
+              "wind_down": 0.5
+            },
+            "spawner": {
+              "type": "badger:mob_lure_instant_stop",
+              "is_parented": false,
+              "is_unique_child": false
+            },
+            "lure_coordinator": {
+              "affect_formation": true,
+              "is_trigger": true
+            }
+          }
+        ]
+      },
+      "badger:influencer_coordinator": {
+        "formation_aspect_ratio": 2.0,
+        "formation_jitter": 0.25,
+        "formation_separation": 2.0,
+        "max_followers_resource": "lure_cap",
+        "create_follow_path": true,
+        "trigger_formation_update_radius": 4.0
+      },
+      "badger:village_influence": {
+        "amount": 15
+      },
+      "badger:show_debug_health": {},
+      "badger:interacts_with_blocks": {},
+      "badger:loot_collector": {
+        "radius": 23,
+        "collect_time": 0.5,
+        "offset": [
+          0.0,
+          2,
+          0.0
+        ],
+        "alliance_rule_filter": "collect_inventory_items"
+      },
+      //NOTE: badger:resist_status should ALSO be updated on the template_mount and individual mounts that have unique resistance
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "bard_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "frozen": {
+          "resisted": false,
+          "time": 2.5,
+          "resistance_persist_time": 0
+        },
+        "potion": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:inventory": {
+        "drop_percentage": 0.34,
+        "drop_force": 12.5
+      },
+      "badger:unittype_selector": {},
+      "badger:reset_heartbeat_in_range": {
+        "range": 300.0
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "player",
+            "value": "enabled"
+          }
+        ]
+      },
+      "badger:fast_travel": {
+        "windup_time": 4.0,
+        "cooldown_time": 3.0
+      },
+      "badger:damage_source_telemetry_tracker": {},
+      "badger:pop_cap_anchor": {
+        "min_pop_cap": 50,
+        "min_pop_cap_range": 500,
+        "alliance_rule_filter": "enemy",
+        "greedy": true
+      },
+      "badger:tracks_health_change": {},
+      "badger:auto_teleport": {
+        "auto_teleport_distance": 125,
+        "auto_teleport_offset_behind_camera": 10,
+        "auto_teleport_tag_filter": {
+          "include_tags": [
+            "mob"
+          ],
+          "exclude_tags": []
+        }
+      },
+      "badger:aimable": {
+        "starting_range": 10,
+        "min_range": 0,
+        "max_range": 75.0,
+        "aim_speed": 0.6,
+        "gamepad_aim_speed": 0.8,
+        "uses_move_stick": false,
+        "reticle_inherits_movement": true
+      },
+      "badger:advanced_direct_reticle": {
+        "reticle_entity_id": "badger:placeable_advanced_direct_reticle",
+        "reticle_radius": 3.5
+      },
+      "badger:quick_direct_aim": {
+        "distance": 20
+      },
+      "badger:state_reporting": {
+        "states": [
+          {
+            "tag": "exploring", // default
+            "report_duration": 20
+          },
+          {
+            "tag": "resourcing",
+            "report_duration": 20
+          },
+          {
+            "tag": "building",
+            "report_duration": 20
+          },
+          {
+            "tag": "combat",
+            "report_duration": 20
+          }
+        ]
+      },
+      "badger:status_effect_telemetry_tracking": {
+        "track": [
+          {
+            "telemetry_id": "SpeedWheatDuration",
+            "status_effect_applied_name": "player_speed"
+          },
+          {
+            "telemetry_id": "BounceMushroomDuration",
+            "status_effect_applied_name": "player_jump"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_max_health": {
+        "custom_game_settings": [
+          {
+            "setting_name": "player_modfiers_health",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_damage": {
+        "custom_game_settings": [
+          {
+            "setting_name": "player_modfiers_damage",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_knockback": {
+        "custom_game_settings": [
+          {
+            "setting_name": "world_knockback_force_player",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_resistance": {
+        "damage_types": [
+          {
+            "name": "melee",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.5
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.25
+              },
+              "hard": {
+                "post_multiply": 1.5
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "blunt",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.5
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.25
+              },
+              "hard": {
+                "post_multiply": 1.5
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "ranged",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.5
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.25
+              },
+              "hard": {
+                "post_multiply": 1.5
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "spore",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.5
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.25
+              },
+              "hard": {
+                "post_multiply": 1.5
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "fire",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.5
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.25
+              },
+              "hard": {
+                "post_multiply": 1.5
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "hazard",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.5
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.15
+              },
+              "hard": {
+                "post_multiply": 1.3
+              }
+            },
+            "custom_game_settings": [
+              {
+                "setting_name": "world_hazards_hazard_damage",
+                "numeric_modifier_type": "post_multiply"
+              }
+            ],
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "lava",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 1.0
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.25
+              },
+              "hard": {
+                "post_multiply": 2.5
+              }
+            },
+            "custom_game_settings": [
+              {
+                "setting_name": "world_hazards_hazard_damage",
+                "numeric_modifier_type": "post_multiply"
+              }
+            ],
+            "append_resistance_to_entities": true
+          }
+        ],
+        "custom_game_settings": [
+          {
+            "setting_name": "player_bonuses_invulnerability",
+            "numeric_modifier_type": "post_subtract"
+          }
+        ]
+      },
+      "badger:resource_cost_multiplier": {
+        "spawning_cost_multiplier": 1,
+        "building_cost_multiplier": 1
+      },
+      "badger:difficulty_modifier_building_cost": {
+        "custom_game_settings": [
+          {
+            "setting_name": "tools_modifiers_structure_cost",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_spawning_cost": {
+        "custom_game_settings": [
+          {
+            "setting_name": "tools_modifiers_mob_cost",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      },
+      "badger:difficulty_modifier_health_regeneration": {
+        "custom_game_settings": [
+          {
+            "setting_name": "player_modfiers_regeneration",
+            "numeric_modifier_type": "post_multiply"
+          }
+        ]
+      }
+    }
+  }
+}

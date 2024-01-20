@@ -1,0 +1,176 @@
+{
+  "application_features": [
+    {
+      "feature": "SkipVanillaSpecificFeatures",
+      "value": true
+    },
+    {
+      "feature": "SkipVanillaWorldGenFeatures",
+      "value": true
+    },
+    {
+      "feature": "SurfaceClearHeight",
+      "value": 50
+    },
+    {
+      "feature": "SeaLevelOverride",
+      "value": 20
+    },
+    {
+      "feature": "BaseGroundLevel",
+      "value": 20
+    },
+    {
+      "feature": "gamelayer_hitch_ms_limit",
+      "value": 5000
+    },
+    {
+      "feature": "disable_shore_ocean_tagged",
+      "value": false
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_ElevationNoiseLevels",
+      "value": 16
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_ElevationNoiseLevelMinimum",
+      "value": 10
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_ElevationFrequencyScalar",
+      "value": 1.0
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_ElevationAmplitudeScalar",
+      "value": 1.0
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_DepthNoiseScalar",
+      "value": 1.0
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_BiomeSmoothingLevels",
+      "value": 0
+    },
+    {
+      "feature": "WorldGenElevationViaLayers_ElevationSmoothingLevels",
+      "value": 0
+    },
+    {
+      "feature": "WorldGenElevationAlgorithm",
+      "value": 3
+    },
+    {
+      "feature": "WorldGen_DisableFeatures",
+      "value": false
+    },
+    // {
+    //   "feature": "WorldGen_FeaturePlacementEarlyOut",
+    //   "value": true
+    // },
+    {
+      "feature": "WorldGen_RunBothElevationAlgorithms_UsefulForLogging",
+      "value": false
+    },
+    {
+      "feature": "WorldGen_LogChunkX",
+      "value": 0
+    },
+    {
+      "feature": "WorldGen_LogChunkZ",
+      "value": 0
+    },
+    {
+      "feature": "DeferPlayerInit",
+      "value": false
+    },
+    {
+      "feature": "WorldGenHeightVariableRivers",
+      "value": false
+    },
+    {
+      "feature": "WorldGen_FeaturePlacementTimeLimitMs",
+      "value": 50
+    },
+    {
+      "feature":"Weather_rain_noise_scale",
+      "value": 0.0001
+    },
+    {
+      "feature":"Weather_rain_transition_speed",
+      "value": 0.0001
+    },
+    {
+      "feature":"Weather_rain_manual_mode",
+      "value":false
+    },
+    {
+      "feature": "WorldGen_layerImages",
+      "value": true
+    },
+    {
+      "feature": "UseWorldGen1TerrainAlgorithm",
+      "value": false
+    },
+    {
+      "feature": "WorldGen_SpreadWetness",
+      "value": true
+    },
+    {
+      "feature": "DecorationNoiseWidth",
+      "value": 241
+    },
+    {
+      "feature": "DecorationNoiseHeight",
+      "value": 179
+    },
+    {
+      "feature": "DecorationNoiseScale",
+      "value": 30
+    },
+    {
+      "feature": "MultiPassBiomeDecoration",
+      "value": true
+    },
+    {
+      "feature": "PrecomputedNoiseTerrain",
+      "value": false
+    },
+    {
+      "feature": "MinimumSurfaceDepth",
+      "value": 60
+    },
+    {
+      "feature": "WorldGen_Debug_TileSize",
+      "value": 128
+    },
+    {
+      "feature": "WorldGen_Debug_SaveToFile",
+      "value": true
+    },
+    {
+      "feature": "InflightChunksPerWorker",
+      "value": 2
+    },
+    {
+      "feature": "InflightChunksBaseAmount",
+      "value": 20
+    },
+    {
+      "feature": "WorldGen_windyRivers",
+      "value": true
+    },
+    {
+      "feature": "WorldGen_SmoothTerrain",
+      "value": true
+    },
+    {
+      "feature": "WorldGen_useFirstGenericFill",
+      "value": false
+    },
+    {
+      "feature": "mirror_mode_half_biome_pixels",
+      "value": true
+    }
+  ]
+}
