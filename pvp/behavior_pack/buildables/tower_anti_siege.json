@@ -14,7 +14,7 @@
       "badger:buildable_presentation": {
         //replace icon
         "icon": "tower_anti_siege",
-        "tooltip_title": "Allay Suppressor",
+        "tooltip_title": "Test Tower",
         "tactical_description": "structures.tower.anti.siege.tactical_description",
         "tooltip_description": "structures.tower.anti.siege.description",
         "buildable_category": "utility",
@@ -34,15 +34,15 @@
         "recipe": [
           {
             "item": "wood",
-            "amount": 100
+            "amount": 75
           },
           {
             "item": "stone",
-            "amount": 100
+            "amount": 75
           },
           {
-            "item": "xp_common",
-            "amount": 10
+            "item": "coal",
+            "amount": 60
           }
         ],
         "ticket_cost": [

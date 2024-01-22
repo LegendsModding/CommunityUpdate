@@ -4,12 +4,9 @@
       "parent": "conquest",
       "behavior_pack": "4a740ff7-97f6-4532-a48a-8dde1123065c",
       "resource_pack": "b9d3b63c-4e5f-4ecf-9b52-4229934793fb",
-      "override_default_difficulty": "Custom",
       "lobby_session_template_name": "BadgerLobby",
       "game_session_template_name": "BadgerGame",
       "loading_tip_set": "pvp",
-      "max_players": 8,
-      "player_teams": 2,
       "requires_online_premium": true,
       "name": "lcu_pvp",
       "telemetry_name": "lcu_pvp",
@@ -23,9 +20,7 @@
       "end_of_match_enter_sound": "BAE_pvp_endOfMatch_enter",
       "end_of_match_exit_sound": "BAE_pvp_endOfMatch_exit",
       "level_name": "Badger PvP",
-      "lobby_name": "PvP Lobby",
-      "lobby_chat_new_message": "lobby lol conquest_custom new",
-      "rich_presence_name": "lcu_pvp"
+      "lobby_name": "PvP Lobby"
     }
   ],
   "myths_hub_host_list": [

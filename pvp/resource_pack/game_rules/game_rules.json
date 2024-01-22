@@ -1,0 +1,36 @@
+{
+	"badger:template": {
+		"game_mode": "lcu_pvp",
+		"parent": "game_rules"
+	},
+	"defaults": {
+		"allowislands": false,
+		"autosaveenabled": true,
+		"bsharpenabled": true,
+		"campaignactsenabled": true,
+		"campaignobjectivehealthbars": false,
+		"creativemodedefault": false,
+		"difficultymodeenabled": false,
+		"dodaylightcycle": true,
+		"dofogofwar": true,
+		"doplayersinvincible": false,
+		"doweathercycle": true,
+		"enablecinematicdeaths": true,
+		"enableunlocks": true,
+		"entitystreamingenabled": true,
+		"exclusiveluredunits": true,
+		//"generator_type": "flat",
+		"mapenabled": true,
+		"onboardingenabledcampaign": false,
+		"onboardingenabledpvp": false,
+		"popcapenabled": false,
+		"precachestructures": true,
+		"randomstartingteam": false,
+		"saveonquitenabled": true,
+		"skip_lobby_creation": false,
+		"teamcolors": true,
+		"use_flatlands_level_id": false,
+		"useactiontelemetry": false,
+		"worldsizeaxischunks": 400
+	}
+}
