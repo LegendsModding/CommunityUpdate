@@ -12,16 +12,15 @@
     },
     "components": {
       "badger:buildable_presentation": {
-        //replace icon
-        "icon": "tower_anti_siege",
-        "tooltip_title": "Test Tower",
-        "tactical_description": "structures.tower.anti.siege.tactical_description",
-        "tooltip_description": "structures.tower.anti.siege.description",
+        "icon": "tower_allay_killer",
+        "tooltip_title": "structure.tower.allay.killer.title",
+        "tactical_description": "structures.tower.allay.killer.tactical_description",
+        "tooltip_description": "structures.tower.allay.killer.description",
         "buildable_category": "utility",
         "sort_order": 1600
       },
       "badger:buildable_structure": {
-        "nbt_file": "allay_killer",
+        "nbt_file": "tower_allay_killer",
         "build_time": 20,
         "construction_start_trigger": "on_construction_start",
         "construction_end_trigger": "on_construction_end",
@@ -41,8 +40,8 @@
             "amount": 75
           },
           {
-            "item": "coal",
-            "amount": 60
+            "item": "xp_common",
+            "amount": 10
           }
         ],
         "ticket_cost": [

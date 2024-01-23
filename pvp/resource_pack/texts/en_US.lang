@@ -1,3 +1,6 @@
 pack.name=lcu_pvp
 pack.description=Legends Community Update - PVP Mode
 lcu_pvp.title=Legends Community PVP Update
+structure.tower.allay.killer.title=Allay Suppressor
+structures.tower.allay.killer.tactical_description=Creates a area where your enemy are unable to gather recorces.
+structures.tower.allay.killer.description=kills all enemy gather allays in area. Has a health of 200.

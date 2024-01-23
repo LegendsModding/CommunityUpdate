@@ -9,7 +9,7 @@
 		"bsharpenabled": true,
 		"campaignactsenabled": true,
 		"campaignobjectivehealthbars": false,
-		"creativemodedefault": false,
+		"creativemodedefault": true,
 		"difficultymodeenabled": false,
 		"dodaylightcycle": true,
 		"dofogofwar": true,

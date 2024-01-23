@@ -10,8 +10,8 @@
         "resource": "lure_cap",
         "type": "team",
         "category": "unlock",
-        "default_amount": 10,
-        "starting_cap": 10,
+        "default_amount": 30,
+        "starting_cap": 30,
         "telemetry_track": true
       },
       {
