@@ -41,7 +41,7 @@
           },
           {
             "item": "xp_common",
-            "amount": 10
+            "amount": 20
           }
         ],
         "ticket_cost": [
@@ -105,7 +105,7 @@
             "shape": {
               "type": "wedge",
               "aperture_angle": 360,
-              "radius": 17,
+              "radius": 58,
               "thickness": 64,
               "rotation": 0,
               "position": [
@@ -130,7 +130,7 @@
             "trigger": "on_projectile_intercept",
             "on_hit_target_trigger": "on_intercepted",
             "range": {
-              "max_range": 25
+              "max_range": 30
             },
             "state_machine": {
               "cooldown_time": 0.5,
@@ -155,7 +155,7 @@
                 "alliance_rule_filter": "enemy"
               },
               "damage": {
-                "damage_amount": 1,
+                "damage_amount": 3,
                 "damage_types": []
               }
             }

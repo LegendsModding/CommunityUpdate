@@ -1,0 +1,94 @@
+{
+  "badger:resource_mapper": {
+    "materials": [
+      {
+        "blocktypetag": "gatherable_no_resources_wood",
+        "name": "no_resources_wood_no_surface_clear",
+        "resource": "wood",
+        "multiplier": 0.0,
+        "base_gather_seconds_per_block": 0.2
+      },
+      {
+        "blocktypetag": "gatherable_no_resources_stone",
+        "name": "no_resources_stone_no_surface_clear",
+        "resource": "stone",
+        "multiplier": 0.0,
+        "base_gather_seconds_per_block": 0.2
+      },
+      {
+        "blocktypetag": "gatherable_denether",
+        "name": "nether",
+        "resource": "denether",
+        "multiplier": 0,
+        "base_gather_seconds_per_block": 0.01
+      },
+      {
+        "blocktypetag": "gatherable_stone",
+        "name": "stone",
+        "resource": "stone",
+        "multiplier": 4.0,
+        "base_gather_seconds_per_block": 0.8
+      },
+      {
+        "blocktypetag": "gatherable_stone_sml",
+        "name": "gatherable_stone_sml",
+        "resource": "stone",
+        "multiplier": 4.0,
+        "base_gather_seconds_per_block": 0.8
+      },
+      {
+        "blocktypetag": "gatherable_wood",
+        "name": "wood",
+        "resource": "wood",
+        "multiplier": 1.7,
+        "base_gather_seconds_per_block": 0.4
+      },
+      {
+        "blocktypetag": "gatherable_wood_sml",
+        "name": "foliage",
+        "resource": "wood",
+        "multiplier": 1.7,
+        "base_gather_seconds_per_block": 0.4
+      },
+      {
+        "blocktypetag": "gatherable_iron",
+        "name": "iron",
+        "resource": "iron",
+        "multiplier": 2.0,
+        "base_gather_seconds_per_block": 2.0
+      },
+      {
+        "blocktypetag": "gatherable_gold",
+        "name": "gold",
+        "resource": "gold",
+        "multiplier": 1.25,
+        "base_gather_seconds_per_block": 0.8
+      },
+      {
+        "blocktypetag": "gatherable_coal",
+        "name": "coal",
+        "resource": "coal",
+        "multiplier": 5,
+        "base_gather_seconds_per_block": 5
+      },
+      {
+        "blocktypetag": "gatherable_redstone",
+        "name": "redstone",
+        "resource": "redstone",
+        "multiplier": 5,
+        "base_gather_seconds_per_block": 5
+      },
+      {
+        "blocktypetag": "gatherable_diamond",
+        "name": "diamond",
+        "resource": "diamond",
+        "multiplier": 5,
+        "base_gather_seconds_per_block": 5
+      }
+    ],
+    "badger:template": {
+      "parent": "badger:resource_mapper",
+      "game_mode": "lcu_pvp"
+    }
+  }
+}

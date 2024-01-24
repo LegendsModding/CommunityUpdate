@@ -11,8 +11,6 @@
       "name": "lcu_pvp",
       "telemetry_name": "lcu_pvp",
       "lobby_title": "Legends Community PVP Update",
-      "invite_panel_text": "hbui.inviteReceivedItem.invite.pvp",
-      "host_warning_string": "hbui.inviteReceived.hostWarningContentPvp",
       "ui_style": "pvp",
       "generate_match_guid": true,
       "reports_telemetry": true,

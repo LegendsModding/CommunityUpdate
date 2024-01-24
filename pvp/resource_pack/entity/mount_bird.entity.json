@@ -1,0 +1,245 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_molang_to_fmod": [
+        {
+          "fmod": "liquid_types",
+          "molang": "variable.terrain_type"
+        }
+      ],
+      "badger:block_source_info": {},
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mount_beetle"
+      },
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2,
+        "position_interpolation_steps": 2.75,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 4.5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "mount_beetle"
+      },
+      "badger:point_lights": {
+        "lights": [
+          {
+            "color": [
+              1,
+              1,
+              0.5
+            ],
+            "enabled": true,
+            "falloff_power": 2.5,
+            "intensity": "query.fbm_noise(4, 1.0, 40, 1.0)",
+            "locator": "loc_fx_lantern",
+            "offset": [
+              0,
+              0.5,
+              0
+            ],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_mount_beetle_dx_hurt",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
+        },
+        "intense_knockback": {
+          "audio": "BAE_mount_beetle_dx_knockback_intense",
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 0,
+            "strength": 35
+          }
+        },
+        "normal_hit": {
+          "audio": "BAE_mount_beetle_dx_hurt",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
+        },
+        "normal_knockback": {
+          "audio": "BAE_mount_beetle_dx_knockback_normal",
+          "rumble": {
+            "duration": 0.2,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 25
+          }
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mount_beetle_swim_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mount_beetle_swim_liquid_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mount_beetle_knockback_land"
+        },
+        "sfx_fall_loop_stop": {
+          "audio": "BAE_mount_beetle_fall_loop_stop"
+        },
+        "sprint_start": {
+          "audio": "BAE_mount_beetle_sprint_start"
+        },
+        "sprint_stop": {
+          "audio": "BAE_mount_beetle_sprint_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mount_beetle_dx_hurt",
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
+        },
+        "weak_knockback": {
+          "rumble": {
+            "duration": 0.15,
+            "override": true,
+            "priority": 3,
+            "range": 0,
+            "strength": 20
+          }
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mount_beetle",
+        "limit": 16
+      },
+      "badger:speed_data_to_fmod": {
+        "fmod_speed_param": "mount_speed",
+        "fmod_velocity_y_param": "mount_vel_y_beetle",
+        "max_speed": 15,
+        "min_speed": 0
+      },
+      "badger:template": [
+        "badger:template_status_effects_mount"
+      ]
+    },
+    "description": {
+      "animations": {
+        "audio": "controller.animation.mount_beetle.audio",
+        "burst": "animation.mount_beetle.burst",
+        "burst_windup": "animation.mount_beetle.burst_windup",
+        "cine_idle_beetle_vanilla": "animation.mount_beetle.cine_idle_beetle_vanilla",
+        "climb_a": "animation.mount_beetle.climb_a",
+        "default": "controller.animation.mount_beetle.default",
+        "descend_a": "animation.mount_beetle.descend_a",
+        "descend_land": "animation.mount_beetle.descend_land",
+        "fe_anim": "controller.animation.mount_beetle.fe_anim",
+        "fe_anim_alt": "controller.animation.mount_beetle.fe_anim_alt",
+        "fe_idle_a": "animation.mount_beetle.fe_idle_a",
+        "fe_new_skin_a": "animation.mount_beetle.fe_new_skin_a",
+        "fe_select_a": "animation.mount_beetle.fe_select_a",
+        "frontend": "controller.animation.mount_beetle.frontend",
+        "fxcontroller": "controller.animation.mount_beetle.fxcontroller",
+        "hit_react": "controller.animation.mount_beetle.hit_react",
+        "hit_react_b": "animation.animal_beetle.hit_react_b",
+        "idle_a": "animation.mount_beetle.idle_a",
+        "idle_select_a": "animation.mount_beetle.idle_select_a",
+        "idles": "controller.animation.mount_beetle.idles",
+        "jump_down": "animation.mount_beetle.jump_down",
+        "jump_end": "animation.mount_beetle.jump_end",
+        "jump_enter": "animation.mount_beetle.jump_enter",
+        "jump_glide": "animation.mount_beetle.jump_glide",
+        "jump_up": "animation.mount_beetle.jump_up",
+        "knockback_a": "animation.mount_beetle.knockback_a",
+        "locomotion": "controller.animation.mount_beetle.locomotion",
+        "run_a": "animation.mount_beetle.run_a",
+        "run_b": "animation.mount_beetle.run_b",
+        "run_c": "animation.mount_beetle.run_c",
+        "stop_a": "animation.mount_beetle.stop_a",
+        "swim_a": "animation.mount_beetle.swim_a",
+        "swim_idle_a": "animation.mount_beetle.swim_idle_a"
+      },
+      "enable_attachables": false,
+      "face_poses": [
+        "Neutral",
+        "Neutral Blink"
+      ],
+      "geometry": {
+        "default": "geometry.mount_beetle"
+      },
+      "identifier": "badger:mob_test_spa",
+      "materials": {
+        "mat_mount_beetle": "mat_mount_beetle",
+        "mat_mount_beetle_de": "mat_mount_beetle_de",
+        "mat_mount_beetle_de_face": "mat_mount_beetle_de_face",
+        "mat_mount_beetle_face": "mat_mount_beetle_face",
+        "mat_mount_beetle_lg_01": "mat_mount_beetle_lg_01",
+        "mat_mount_beetle_lg_01_face": "mat_mount_beetle_lg_01_face"
+      },
+      "particle_effects": {
+        "fx_fire": "badger:fx_mount_beetle_fire",
+        "fx_land": "badger:fx_mount_beetle_land"
+      },
+      "render_controllers": [
+        "controller.render.mount_beetle"
+      ],
+      "scripts": {
+        "animate": [
+          {
+            "default": "1"
+          },
+          {
+            "audio": "1"
+          },
+          {
+            "fxcontroller": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "beetle_fly": "BAE_mount_beetle_fly",
+        "beetle_fly_stop": "BAE_mount_beetle_fly_stop",
+        "burst": "BAE_mount_beetle_burst",
+        "climb": "BAE_mount_beetle_climb",
+        "climb_stop": "BAE_mount_beetle_climb_stop",
+        "dx_acquire": "BAE_mount_beetle_dx_acquire",
+        "dx_idle": "BAE_mount_beetle_dx_idle",
+        "fall_loop": "BAE_mount_beetle_fall_loop",
+        "fall_loop_stop": "BAE_mount_beetle_fall_loop_stop",
+        "flap_slow": "BAE_mount_beetle_flap_slow",
+        "flutter": "BAE_mount_beetle_flutter",
+        "jump": "BAE_mount_beetle_jump",
+        "land": "BAE_mount_beetle_land",
+        "run": "BAE_mount_beetle_run_loop",
+        "run_stop": "BAE_mount_beetle_run_stop",
+        "swim_os": "BAE_mount_beetle_swim_oneshot"
+      },
+      "textures": {
+        "default": "textures/entity/tex_mount_beetle_d"
+      }
+    }
+  }
+}
