@@ -1,0 +1,41 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_fx_spider_poison": {
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_block_creeper_acid_bubbles",
+            "range": "near",
+            "probability": 0.7,
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "effect": "badger:fx_block_creeper_acid_fizz",
+            "range": "near",
+            "probability": 0.7,
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          },
+          {
+            "effect": "badger:fx_block_creeper_acid_steam",
+            "range": "near",
+            "probability": 0.7,
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_piglin_frost_boss"
+      },
+      "badger:face_animation": {
+        "anim_columns": 4,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 5,
+        "position_interpolation_steps": 3
+      },
+      "badger:invasion_icon": {
+        "icon_color": [0.737,0.22,0.769,1]
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:music_2d_emitter": {
+        "max_distance": 50,
+        "music_states":  [
+          {
+            "audio_parameters":  [
+              {
+                "music_boss_engaged": 4
+              }
+            ],
+            "state_name": "frost_boss_jumped2"
+          },
+          {
+            "audio_parameters":  [
+              {
+                "music_boss_engaged": 3
+              }
+            ],
+            "state_name": "frost_boss_jumped1"
+          },
+          {
+            "audio_parameters":  [
+              {
+                "music_boss_engaged": 2
+              }
+            ],
+            "state_name": "frost_boss_jumped0"
+          }
+        ],
+        "on_enter_bae": "",
+        "priority": -1
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [0.105,0.682,0.509],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": "query.fbm_noise(3, 1.0, 20.0, 1.0)",
+            "locator": "loc_fx_light",
+            "offset": [0,0,0],
+            "radius": 5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_piglin_frost_boss_dx_damage"
+        },
+        "normal_hit": {
+          "audio": "BAE_piglin_frost_boss_dx_damage"
+        },
+        "on_explosive_attack": {
+          "rumble": {
+            "duration": 0.5,
+            "override": true,
+            "priority": 2,
+            "range": 20,
+            "strength": 40
+          }
+        },
+        "on_initialized": {
+          "audio": "BAE_combat_proximity_boss"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": ""
+        },
+        "on_melee_attack": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 15,
+            "strength": 40
+          }
+        },
+        "on_puke_attack": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 30
+          }
+        },
+        "on_puke_attack_b": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 30
+          }
+        },
+        "on_puke_attack_c": {
+          "rumble": {
+            "duration": 0.25,
+            "override": true,
+            "priority": 2,
+            "range": 10,
+            "strength": 30
+          }
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_sfx_knockback_piglin_land"
+        },
+        "on_throwable_launched": {
+          "audio": "BAE_sfx_knockback_piglin_attack"
+        },
+        "sfx_jump_launch_a_stop": {
+          "audio": "BAE_piglin_frost_boss_jump_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_piglin_frost_boss_dx_damage"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_frost_boss",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects_boss"],
+      "badger:terrain_type_molang": {
+      }
+    },
+    "description": {
+      "animations": {
+        "death_nis": "animation.piglin_frost_boss_death.death_nis",
+        "default": "controller.animation.piglin_frost_boss.default",
+        "explosive_attack": "animation.piglin_frost_boss.explosive_attack",
+        "explosive_attack_windup": "animation.piglin_frost_boss.explosive_attack_windup",
+        "fxcontroller": "controller.animation.piglin_frost_boss.fxcontroller",
+        "idle_a": "animation.piglin_frost_boss.idle_a",
+        "idle_b": "animation.piglin_frost_boss.idle_b",
+        "intro": "animation.piglin_frost_boss_intro.intro",
+        "jump_land_a": "animation.piglin_frost_boss.jump_land_a",
+        "jump_launch_a": "animation.piglin_frost_boss.jump_launch_a",
+        "melee_attack_a": "animation.piglin_frost_boss.melee_attack_a",
+        "melee_attack_windup": "animation.piglin_frost_boss.melee_attack_windup",
+        "puke_attack_a": "animation.piglin_frost_boss.puke_attack_a",
+        "puke_attack_b": "animation.piglin_frost_boss.puke_attack_b",
+        "puke_attack_c": "animation.piglin_frost_boss.puke_attack_c",
+        "puke_attack_windup": "animation.piglin_frost_boss.puke_attack_windup",
+        "spit_attack": "animation.piglin_frost_boss.spit_attack",
+        "spit_attack_windup": "animation.piglin_frost_boss.spit_attack_windup",
+        "stop_d": "animation.piglin_frost_boss.stop_d",
+        "stun_a": "animation.piglin_frost_boss.stun_a",
+        "walk_b": "animation.piglin_frost_boss.walk_b"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Eyes Wide","Mouth Open"],
+      "geometry": {
+        "default": "geometry.piglin_frost_boss"
+      },
+      "identifier": "badger:piglin_frost_boss",
+      "materials": {
+        "mat_fx_spore_healed_512": "mat_fx_spore_healed_512",
+        "mat_piglin_frost_boss": "mat_piglin_frost_boss",
+        "mat_piglin_frost_boss_face": "mat_piglin_frost_boss_face"
+      },
+      "particle_effects": {
+        "fx_back_boil": "badger:fx_piglin_frost_boss_cine_liquid",
+        "fx_burp": "badger:fx_piglin_frost_boss_final_burp",
+        "fx_butt_parts": "badger:fx_frost_boss_launch_parts",
+        "fx_drull": "badger:fx_piglin_frost_boss_cine_drip",
+        "fx_explode": "badger:fx_piglin_frost_boss_explosion",
+        "fx_land_puff": "badger:fx_frost_boss_land_puff",
+        "fx_land_trail": "badger:fx_frost_boss_land_trail",
+        "fx_launch_liquid": "badger:fx_frost_boss_launch_liquid",
+        "fx_liquid": "badger:fx_frost_boss_land_liquid",
+        "fx_melee_parts": "badger:fx_piglin_frost_boss_melee_attack_parts",
+        "fx_melee_parts02": "badger:fx_piglin_frost_boss_melee_attack_parts",
+        "fx_melee_smoke": "badger:fx_piglin_frost_boss_melee_attack_smoke",
+        "fx_melee_smoke02": "badger:fx_piglin_frost_boss_melee_attack_smoke02",
+        "fx_pre_explode": "badger:fx_piglin_frost_boss_pre_explosion_liquid",
+        "fx_pre_explode_cine": "badger:fx_piglin_frost_boss_pre_explosion_cine",
+        "fx_puke": "badger:fx_piglin_frost_boss_puke",
+        "fx_puke_cine": "badger:fx_piglin_frost_boss_cine_puke",
+        "fx_puke_drip": "badger:fx_piglin_frost_boss_puke_drip",
+        "fx_puke_drip02": "badger:fx_piglin_frost_boss_puke_drip02",
+        "fx_puke_flares": "badger:fx_piglin_frost_boss_puke_flares",
+        "fx_frost_death": "badger:fx_piglin_frost_boss_death",
+        "fx_spores": "badger:fx_piglin_frost_boss_spores",
+        "fx_step": "badger:fx_piglin_frost_boss_step",
+        "fx_thrust": "badger:fx_frost_boss_launch_thrust",
+        "fx_trail": "badger:fx_frost_boss_launch_trail",
+        "fx_walk_parts": "badger:fx_piglin_frost_boss_walk_parts",
+        "fx_wind": "badger:fx_frost_boss_launch_wind"
+      },
+      "render_controllers": ["controller.render.piglin_frost_boss"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "fxcontroller": "1"
+          }
+        ],
+        "initialize": ["variable.geo_cheeks_vis = 0;","variable.geo_lips_vis = 0;"]
+      },
+      "sound_effects": {
+        "attack_melee": "BAE_piglin_frost_boss_attack_melee",
+        "attack_spit": "BAE_piglin_frost_boss_attack_spit",
+        "big_jump_land": "BAE_piglin_frost_boss_big_jump_land",
+        "boss_vomit": "BAE_piglin_frost_boss_vomit",
+        "chest_beat": "BAE_piglin_frost_boss_chest_beat",
+        "combat_proximity_boss_stop": "BAE_combat_proximity_boss_stop",
+        "dx_attack_explosive": "BAE_piglin_frost_boss_dx_attack_explosive",
+        "dx_attack_explosive_windup": "BAE_piglin_frost_boss_dx_attack_explosive_windup",
+        "dx_attack_melee": "BAE_piglin_frost_boss_dx_attack_melee",
+        "dx_attack_melee_windup": "BAE_piglin_frost_boss_dx_attack_melee_windup",
+        "dx_attack_spit": "BAE_piglin_frost_boss_dx_attack_spit",
+        "dx_attack_spit_windup": "BAE_piglin_frost_boss_dx_attack_spit_windup",
+        "dx_attack_vomit": "BAE_piglin_frost_boss_dx_attack_vomit",
+        "dx_attack_vomit_windup": "BAE_piglin_frost_boss_dx_attack_vomit_windup",
+        "dx_attack_vomit_wipe": "BAE_piglin_frost_boss_dx_attack_vomit_wipe",
+        "dx_breathe_in": "BAE_piglin_frost_boss_dx_breathe_in",
+        "dx_breathe_out": "BAE_piglin_frost_boss_dx_breathe_out",
+        "dx_death": "BAE_piglin_frost_boss_dx_death",
+        "dx_flop": "BAE_piglin_frost_boss_dx_flop",
+        "dx_hurt": "BAE_piglin_frost_boss_dx_damage",
+        "dx_idle_a": "BAE_piglin_frost_boss_dx_idle_a",
+        "dx_idle_b_hunch": "BAE_piglin_frost_boss_dx_idle_b_hunch",
+        "dx_idle_b_roar": "BAE_piglin_frost_boss_dx_idle_b_roar",
+        "dx_jump_land": "BAE_piglin_frost_boss_dx_jump_land",
+        "dx_roar_short": "BAE_piglin_frost_boss_dx_roar_short",
+        "dx_run": "BAE_piglin_frost_boss_dx_run",
+        "dx_snorts": "BAE_piglin_frost_boss_dx_snorts",
+        "dx_stun": "BAE_piglin_frost_boss_dx_stun",
+        "dx_swell": "BAE_piglin_frost_boss_dx_swell",
+        "falling": "BAE_piglin_frost_boss_falling",
+        "flop": "BAE_piglin_frost_boss_flop",
+        "flop_land": "BAE_piglin_frost_boss_flop_land",
+        "footstep_arm": "BAE_piglin_frost_boss_footstep_arm",
+        "footstep_arm_land": "BAE_piglin_frost_boss_footstep_arm_land",
+        "footstep_jump": "BAE_piglin_frost_boss_footstep_jump",
+        "footstep_land": "BAE_piglin_frost_boss_footstep_land",
+        "footstep_step": "BAE_piglin_frost_boss_footstep_step",
+        "headshake_idle": "BAE_piglin_frost_boss_headshake_idle",
+        "hunch_balloon": "BAE_piglin_frost_boss_idle_b_hunch_balloon",
+        "jump_land_hard": "BAE_piglin_frost_boss_jump_land_hard",
+        "jump_land_soft": "BAE_piglin_frost_boss_jump_land_soft",
+        "launch": "BAE_piglin_frost_boss_launch",
+        "sfx_knockback_piglin_attack": "BAE_sfx_knockback_piglin_attack",
+        "spores_buildup": "BAE_piglin_frost_boss_attack_spores_buildup",
+        "spores_explode": "BAE_piglin_frost_boss_attack_spores_explode",
+        "spores_idle": "BAE_piglin_frost_boss_spores_idle",
+        "spores_loop": "BAE_piglin_frost_boss_attack_spores_loop",
+        "vomit_stop": "BAE_piglin_frost_boss_vomit_stop"
+      },
+      "textures": {
+        "default": "textures/entity/tex_piglin_frost_boss_d"
+      }
+    }
+  }
+}

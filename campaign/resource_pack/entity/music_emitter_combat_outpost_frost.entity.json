@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_emitter_combat_outpost_frost",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority" : 15,
+        "max_distance" : 150.0,
+        "on_enter_bae" : "",
+        "music_states" :[
+          {
+            "state_name": "default",
+            "audio_parameters": [
+                {"music_state" : 2.0},
+                {"combat_intensity" : 0.0}
+             ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "badger:in_game_ui": {
+    // "format_version": "1.0.0",
+    "resource_items": [
+      "wood",
+      "stone",
+      "iron",
+      "coal",
+      "redstone",
+      "diamond",
+      "gold",
+      "xp_common",
+      "emerald"
+    ],
+    // Suppress UI messages for these items getting unlocked; B# already handles them.
+    "unlock_notification_denylist_items": [
+      "poi_tower_01_resource",
+      "poi_tower_02_resource",
+      "poi_tower_04_resource",
+      "poi_tower_05_resource"
+    ],
+    "max_hotbar_size": 8,
+    "show_interactable_building": true,
+    // Order of toolbar_items must match order of songbook_categories
+    "toolbar_items": [
+      {
+        // resourcing
+        "toolbar_id": "resourcing",
+        "initial_hotbar_items": [
+          "badger:terraform_gather_surface_wood",
+          "badger:terraform_gather_surface_stone"
+        ]
+      },
+      {
+        // combat
+        "toolbar_id": "mobs",
+        "initial_hotbar_items": []
+      },
+      {
+        // structure
+        "toolbar_id": "utility",
+        "initial_hotbar_items": []
+      },
+      {
+        // village
+        "toolbar_id": "village",
+        "initial_hotbar_items": []
+      }
+    ],
+    "unit_direct_toolbar_items": [
+      {
+        // melee
+        "toolbar_id": "unit_direct_frontline_category",
+        "initial_hotbar_items": [
+          "unit_direct_mob",
+          "unit_direct_frontline",
+          "unit_direct_stone_golem",
+          "unit_direct_zombie",
+          "unit_direct_vindicator",
+          "unit_direct_fallen_warrior",
+          "unit_direct_drill_golem"
+        ]
+      },
+      {
+        // ranged
+        "toolbar_id": "unit_direct_ranged_category",
+        "initial_hotbar_items": [
+          "unit_direct_mob",
+          "unit_direct_ranged",
+          "unit_direct_wood_golem",
+          "unit_direct_skeleton",
+          "unit_direct_spider",
+          "unit_direct_witch",
+          "unit_direct_sniper"
+        ]
+      },
+      {
+        // special
+        "toolbar_id": "unit_direct_special_category",
+        "initial_hotbar_items": [
+          "unit_direct_mob",
+          "unit_direct_special",
+          "unit_direct_cavalry_golem",
+          "unit_direct_creeper",
+          "unit_direct_carrier_golem"
+      ]
+      },
+      {
+        // support
+        "toolbar_id": "unit_direct_support_group_category",
+        "initial_hotbar_items": [
+          "unit_direct_mob",
+          "unit_direct_support_group",
+          "unit_direct_support",
+          "unit_direct_shield_golem"
+        ]
+      }
+    ],
+    "compass_ranges": [
+      {
+        "compass_range_id": "zero",
+        "compass_range_value": 0.0
+      },
+      {
+        "compass_range_id": "close",
+        "compass_range_value": 50.0
+      },
+      {
+        "compass_range_id": "short",
+        "compass_range_value": 250.0
+      },
+      {
+        "compass_range_id": "medium",
+        "compass_range_value": 750.0
+      },
+      {
+        "compass_range_id": "medium-long",
+        "compass_range_value": 1000.0
+      },
+      {
+        "compass_range_id": "long",
+        "compass_range_value": 1500.0
+      },
+      {
+        "compass_range_id": "infinite",
+        "compass_range_value": -1.0
+      },
+      {
+        "compass_range_id": "beta",
+        "compass_range_value": 180.0
+      },
+      {
+        "compass_range_id": "poiQuestionMark",
+        "compass_range_value": 192
+      }
+    ],
+    // gamepad: dpad up, down, left, right
+    // keyboard: 1, 2, 3 ,4
+    "songbook_categories": [
+      "resourcing",
+      "mobs",
+      "utility",
+      "village"
+    ],
+    "unit_direct_categories": [
+      "unit_direct_frontline_category",
+      "unit_direct_ranged_category",
+      "unit_direct_special_category",
+      "unit_direct_support_group_category"
+    ],
+    "show_locked_recipes": false,
+    "toolbar_category_index_start": 0,
+    "respawn_post_delay_time": 3,
+    "respawn_pre_screen_delay_time": 1.5,
+    // initial hud elements that are visible at start of game, only affects hud if onboarding is on
+    // all available hud elements: hud_hearts, hud_toolbar, hud_hotbar, hud_quickslot, hud_spawner_bar_flames, hud_spawner_bar_spawners, hud_spawner_bar_build_allays
+    // hud_spawner_bar_gather_allays, hud_map, hud_face_buttons, hud_resource_bar_core, hud_resource_bar_other, hud_compass, songbook, hud_objective_health_bars, 
+    // hud_global_timer, hud_lives_counter
+    "hud_initial_visible_elements": [
+      "hud_hearts",
+      "hud_toolbar",
+      "hud_hotbar",
+      "hud_quickslot",
+      "hud_spawner_bar_flames",
+      "hud_spawner_bar_spawners",
+      "hud_spawner_bar_build_allays",
+      "hud_spawner_bar_gather_allays",
+      "hud_map",
+      "hud_face_buttons",
+      "hud_resource_bar_core",
+      "hud_resource_bar_other",
+      "hud_objective_health_bars",
+      "hud_global_timer",
+      "songbook"
+    ],
+    // List of HUD elements that should not fade out when in the specified mode
+    // The names of the elements are listed in the comment about "hud_initial_visible_elements"
+    "build_preview_hud_elements_not_faded": [
+      "hud_toolbar",
+      "hud_hotbar",
+      "hud_quickslot",
+      "hud_spawner_bar_build_allays",
+      "hud_spawner_bar_gather_allays",
+      "hud_resource_bar_core"
+    ],
+    "advanced_direct_hud_elements_not_faded": [
+      "hud_toolbar",
+      "hud_hotbar",
+      "hud_quickslot",
+      "hud_hearts",
+      "hud_spawner_bar_spawners",
+      "hud_spawner_bar_spawners",
+      "hud_spawner_bar_flames",
+      "hud_face_buttons"
+    ],
+    "redstone_launcher_hud_elements_not_faded": [
+      "hud_compass",
+      "hud_objective_health_bars"
+    ],
+    "end_of_match_chat_message_templates": [
+      "end_of_match.chat.message1",
+      "end_of_match.chat.message2",
+      "end_of_match.chat.message3",
+      "end_of_match.chat.message4",
+      "end_of_match.chat.message5"
+    ],
+    "fade_out_hotbar_tooltip_timer": 5,
+    "fade_out_biome_message_timer": 5,
+    "recipe_hotbar_bypass": [
+      "badger:unlock_gather_uncommon"
+    ],
+    "objective_updated_message": "objective_updated_notif",
+	"health_bar_display" : {
+		"count": 1,
+		"duration": 5.0,
+		"max_range": 50.0,
+		"rules": [
+			{
+				"y_position": 0.5,
+				"include_tags": [
+					"buildable"
+				],
+				"exclude_tags": [
+					"wall",
+					"boneWall",
+					"portal_piglin",
+					"noHealthBar"
+				],
+				"alliance_rule_filter": "enemy"
+			},
+			{
+				"y_position": 0.5,
+				"alliance_rule_filter": "enemy",
+				"include_tags": [
+					"pigGateOuter",
+					"pigGateInner"
+				]
+			}
+		]
+	},
+	"health_bar_banner_view" : [
+		{
+			"y_position": 2.0,
+			"alliance_rule_filter": "enemy",
+			"include_tags": [
+				"boss"
+			]
+		},
+		{
+			"y_position": 0.5,
+			"alliance_rule_filter": "enemy",
+			"include_tags": [
+				"buildable"
+			],
+			"exclude_tags": [
+				"wall",
+				"boneWall",
+				"noHealthBar",
+				"playerBridge",
+				"bridge"
+			]
+		},
+		{
+			"y_position": 0.5,
+			"alliance_rule_filter": "enemy",
+			"include_tags": [
+				"pigGateOuter",
+				"pigGateInner"
+			]
+		},
+		{
+			"y_position": 0.5,
+			"banner_view_only": true,
+			"alliance_rule_filter": "same_team",
+			"include_tags": [
+				"buildable"
+			],
+			"exclude_tags": [
+				"wall",
+				"fountain",
+				"donotattack",
+				"playerBridge",
+				"bridge"
+			]
+		}
+	]
+  }
+}

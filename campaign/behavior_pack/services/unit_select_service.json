@@ -1,0 +1,184 @@
+{
+  "badger:unit_select_service": {
+    "reset_unit_on_category_change": true,
+    "wrap_horizontal": true,
+    "wrap_vertical": true,
+    "skip_locked_entries": true,
+    "categories": [
+      {
+        "category_tag": "unit_direct_mob",
+        "visual_placement": "right_of_center",
+        "unlock": [],
+        "units": []
+      },
+      {
+        "category_tag": "unit_direct_frontline",
+        "visual_placement": "left_of_center",
+        "unlock": [],
+        "units": [
+          {
+            "unit_tag": "unit_direct_stone_golem",
+            "visual_placement": "above_category",
+            "unlock": []
+          },
+          {
+            "unit_tag": "unit_direct_zombie",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_zombie",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_vindicator",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_vindicator",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_fallen_warrior",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_fallen_warrior",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_drill_golem",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_drill_golem",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category_tag": "unit_direct_ranged",
+        "visual_placement": "left_of_center",
+        "unlock": [],
+        "units": [
+          {
+            "unit_tag": "unit_direct_wood_golem",
+            "visual_placement": "above_category",
+            "unlock": []
+          },
+          {
+            "unit_tag": "unit_direct_skeleton",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_skeleton",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_spider",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_spider",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_witch",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_witch",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_sniper",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_sniper",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category_tag": "unit_direct_special",
+        "visual_placement": "right_of_center",
+        "unlock": [],
+        "units": [
+          {
+            "unit_tag": "unit_direct_cavalry_golem",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_golemcavalry",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_creeper",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_creeper",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_carrier_golem",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_carrier_golem",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category_tag": "unit_direct_support_group",
+        "visual_placement": "right_of_center",
+        "unlock": [],
+        "units": [
+          {
+            "unit_tag": "unit_direct_support",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_support",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_shield_golem",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_shield_golem",
+                "amount": 1
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

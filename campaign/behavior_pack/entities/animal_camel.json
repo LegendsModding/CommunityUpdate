@@ -1,0 +1,163 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "components": {
+      "badger:aabb": {
+        "height": 2.16177871704,
+        "length": 1.4,
+        "width": 1.4
+      },
+      "badger:collision_weight": {
+        "weight": 150
+      },
+      "badger:conditionally_solid_blocks": {
+        "exclude_tags": [],
+        "include_tags": [
+          "barrier_waterfall"
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder"
+      },
+      "badger:entity_collision": {},
+      "badger:health": {
+        "max_health": 150
+      },
+      "badger:heartbeat": {
+        "min_expire_time": 240
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "alliance_rule_filter": "friendly",
+            "exclude_tags": [],
+            "include_tags": [
+              "player"
+            ],
+            "input_layout_override": "overlay_gameplay_mount_interaction_hold",
+            "name": "interaction_zone",
+            "range": 2
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.0
+      },
+      "badger:movement": {
+        "air_control_factor": 0.0,
+        "move_speed": 3.5
+      },
+      "badger:offline_traits": {
+        "disabled_by_health_components": [
+          "badger:interactable"
+        ]
+      },
+      "badger:physics": {
+        "friction": 0.04,
+        "gravity": -30
+      },
+      "badger:tags": {
+        "tags": [
+          "animal_camel",
+          "poi_mount",
+          "neutral",
+          "luredirect",
+          "poi_mount_camel",
+          "poi_mount_07",
+          "animal",
+          "mob"
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "apply_status_to_owner": {
+              "feared": {
+                "chance": 1.0,
+                "strength": 1.0
+              }
+            },
+            "name": "evade",
+            "range": {
+              "max_range": 15,
+              "min_range": 10
+            },
+            "state_machine": {
+              "cooldown_time": 0.5,
+              "deactivates_on_cooldown": true
+            }
+          },
+          {
+            "name": "player_cheer",
+            "range": {
+              "max_range": 1
+            },
+            "state_machine": {
+              "cooldown_time": 5.0,
+              "deactivates_on_cooldown": true,
+              "wind_up": 1.68
+            }
+          }
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "actions": [
+              "pat_pat"
+            ],
+            "alliance_rule_filter": "friendly",
+            "exclude_tags": [],
+            "include_tags": [
+              "player"
+            ],
+            "max_range": 15,
+            "name": "pat_pat"
+          },
+          {
+            "actions": [
+              "evade"
+            ],
+            "alliance_rule_filter": "enemy",
+            "exclude_tags": [],
+            "include_tags": [
+              "piglin"
+            ],
+            "max_range": 15,
+            "name": "animal_camel_piglin_evade"
+          },
+          {
+            "action_tickets": {
+              "sc": 4
+            },
+            "actions": [
+              "player_cheer"
+            ],
+            "alliance_rule_filter": "friendly",
+            "exclude_tags": [],
+            "include_tags": [
+              "player"
+            ],
+            "max_range": 10,
+            "name": "cheer_player"
+          }
+        ]
+      },
+      "badger:template": "badger:template_animal",
+      "badger:wander": {
+        "wander_frequency": 0.4,
+        "wander_radius": 8
+      },
+      "badger:world_collision": {
+        "auto_step": 4,
+        "has_collision": true,
+        "interpolation_speed": 4
+      }
+    },
+    "description": {
+      "identifier": "badger:animal_camel",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    }
+  }
+}

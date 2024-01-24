@@ -1,0 +1,90 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:component_difficulty_modifiers_mob_spider",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:template": [
+        "badger:component_difficulty_modifiers_player"
+      ],
+      // peaceful = Storied; easy = Fabled; normal = Mythic; hard = Legendary      
+      "badger:difficulty_modifier_resistance": {
+        "damage_types": [
+          {
+            "name": "hazard",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 1.0
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.1
+              },
+              "hard": {
+                "post_multiply": 1.25
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "ranged",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.75
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.3
+              },
+              "hard": {
+                "post_multiply": 1.6
+              }
+            },
+            "append_resistance_to_entities": true
+          },
+          {
+            "name": "spore",
+            "difficulties": {
+              "peaceful": {
+                "post_multiply": 0.8
+              },
+              "easy": {
+                "post_multiply": 1.0
+              },
+              "normal": {
+                "post_multiply": 1.3
+              },
+              "hard": {
+                "post_multiply": 1.6
+              }
+            },
+            "append_resistance_to_entities": true
+          }
+        ]
+      },
+      "badger:difficulty_modifier_knockback_resistance": {
+        "difficulties": {
+          "peaceful": {
+            "post_multiply": 0.5
+          },
+          "easy": {
+            "post_multiply": 1.0
+          },
+          "normal": {
+            "post_multiply": 1.0
+          },
+          "hard": {
+            "post_multiply": 1.0
+          }
+        }
+      }
+    }
+  }
+}

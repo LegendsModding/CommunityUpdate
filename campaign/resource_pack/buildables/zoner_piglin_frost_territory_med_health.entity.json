@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_piglin_frost_territory_med_health"
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_portal_piglin",
+        "badger:template_portal_piglin_attack"
+      ]
+    }
+  }
+}

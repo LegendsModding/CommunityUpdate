@@ -1,0 +1,108 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_controller_roaming_vanilla_node",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_spawner_controller_roaming_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "roaming_piglin_spawner_controller",
+          "spawner_controller_roaming_vanilla_node"
+        ]
+      },
+      "badger:buildable_controller_spawner": {
+        //Biome has higher priority over static, so if its valid static does not get evaluated
+        "biome": [
+          {
+            "biome_set": [
+              "brokenlands",
+              "drylands"
+            ],
+            "spawn": [
+              "badger:spawner_world_creeper"
+            ]
+          },
+          {
+            "biome_set": [
+              "brokenlands",
+              "drylands"
+            ],
+            "spawn": [
+              "badger:spawner_world_creeper",
+              "badger:spawner_world_creeper"
+            ]
+          },
+          {
+            "biome_set": [
+              "brokenlands",
+              "drylands"
+            ],
+            "spawn": [
+              "badger:spawner_world_creeper",
+              "badger:spawner_world_creeper",
+              "badger:spawner_world_creeper"
+            ]
+          }
+        ],
+        "static": [
+          {
+            "spawn": [
+              "badger:spawner_world_zombie"
+            ],
+            "weight": 15
+          },
+          {
+            "spawn": [
+              "badger:spawner_world_skeleton"
+            ],
+            "weight": 15
+          },
+          {
+            "spawn": [
+              "badger:spawner_world_zombie",
+              "badger:spawner_world_skeleton"
+            ],
+            "weight": 10
+          },
+          {
+            "spawn": [
+              "badger:spawner_world_zombie",
+              "badger:spawner_world_zombie"
+            ],
+            "weight": 10
+          },
+          {
+            "spawn": [
+              "badger:spawner_world_skeleton",
+              "badger:spawner_world_skeleton"
+            ],
+            "weight": 10
+          },
+          {
+            "spawn": [
+              "badger:spawner_world_zombie",
+              "badger:spawner_world_zombie",
+              "badger:spawner_world_skeleton"
+            ],
+            "weight": 5
+          },
+          {
+            "spawn": [
+              "badger:spawner_world_zombie",
+              "badger:spawner_world_skeleton",
+              "badger:spawner_world_skeleton"
+            ],
+            "weight": 5
+          }
+        ],
+        "ticks_between_checks": 32
+      }
+    }
+  }
+}

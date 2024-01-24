@@ -1,0 +1,447 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_poi_tower_1_poi_towers_poi_tower_01",
+      "map_data": "badger:poi_tower_faction_01",
+      "village_data": "badger:poi_tower_village_01",
+      "placement_name": "poi_tower_1",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "tags": [
+        "poi_towers",
+        "poi_tower_01"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_tower_01_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 25,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  25,
+                  50
+                ],
+                "distance_to_zero_score": 0,
+                "tag_parent": "forest_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "forest_2"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  25,
+                  50
+                ],
+                "distance_to_zero_score": 0,
+                "tag_parent": "grasslands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "grasslands_2"
+              }
+            ],
+            "weight": 2
+            // "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0,
+            "do_not_scale_distance": true
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [0, 220],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_poi_tower_2_poi_towers_poi_tower_02",
+      "map_data": "badger:poi_tower_faction_02",
+      "village_data": "badger:poi_tower_village_02",
+      "placement_name": "poi_tower_2",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "frostlands",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "tags": [
+        "poi_towers",
+        "poi_tower_02"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_tower_01_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 25,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  25,
+                  50
+                ],
+                "distance_to_zero_score": 0,
+                "tag_parent": "frostlands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  25,
+                  50
+                ],
+                "distance_to_zero_score": [0, 10],
+                "tag_parent": "skeleton_alliance"
+              }
+            ]
+            // "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0,
+            "do_not_scale_distance": true
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [0, 220],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_poi_tower_4_poi_towers_poi_tower_04",
+      "map_data": "badger:poi_tower_faction_04",
+      "village_data": "badger:poi_tower_village_04",
+      "placement_name": "poi_tower_4",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "tags": [
+        "poi_towers",
+        "poi_tower_04"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_tower_01_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 25,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "brokenlands_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "brokenlands_2"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  25,
+                  50
+                ],
+                "distance_to_zero_score": 0,
+                "tag_parent": "wetlands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "wetlands_2"
+              }
+            ],
+            "weight": 2
+            // "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0,
+            "do_not_scale_distance": true
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [0, 220],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_poi_tower_5_poi_towers_poi_tower_05",
+      "map_data": "badger:poi_tower_faction_05",
+      "village_data": "badger:poi_tower_village_05",
+      "placement_name": "poi_tower_5",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "tags": [
+        "poi_towers",
+        "poi_tower_05"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_tower_05_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 25,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  24
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_2"
+              }
+            ],
+            "weight": 2
+            // "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0,
+            "do_not_scale_distance": true
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [0, 220],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    }
+  ]
+}

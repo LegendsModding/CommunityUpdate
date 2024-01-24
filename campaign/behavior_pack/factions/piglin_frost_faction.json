@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_frost_faction"
+    },
+    "components": {
+      "badger:faction": {
+        "id": "faction.pig.frost",
+        "name": "The Frozen",
+        "description": "Dey cold tho",
+        "icon": "ui_map_biomelegend_piglin",
+        "color": [ 0.09, 0.56, 0.42, 1.0 ],
+        "health_bar_color": [ 0.74, 0.22, 0.77, 1.0 ],
+        "known": true,
+        "appearance_name": "frost",
+        "appearance_index": 4
+      },
+      "badger:campaign_team": {
+        "team_tag": "piglin_team"
+      },
+      "badger:template": "badger:template_faction_piglin"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_frost_base_medium_3",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:template": "badger:music_combat_frost_base_medium_template"
+    }
+  }
+}

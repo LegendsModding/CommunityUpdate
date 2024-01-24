@@ -1,0 +1,315 @@
+{
+  "settings": {
+    "seconds_per_played_faction_card": 0.25
+  },
+  "factions": [
+    {
+      "unique_card_id": "badger_piglin_starting_base_dbb_faction_required",
+      "map_data": "badger:dbb_faction_piglin",
+      "village_data": "badger:piglin_dbb",
+      "placement_name": "piglin_starting_base_dbb",
+      "placement_type": "base",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "act1_a": {
+          "count": 0,
+          "invasion": 1
+        },
+        "act1_b": {
+          "count": 0,
+          "invasion": 1
+        },
+        "act1_c": {
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_act1_first_skirmish": {
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_act1_second_skirmish": {
+          "count": 0,
+          "invasion": 1
+        },
+        "large": {
+          "count": 0,
+          "invasion": 1
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_dbb_large_act1_ob",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "faction_required"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 6,
+        "starting_pixels": 1
+      },
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              15,
+              150
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              130
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wellOfFate",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              180
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              10,
+              200
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "base",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_roaming_faction_roamingOld",
+      "map_data": "badger:piglin_roaming_faction",
+      "village_data": "badger:piglin_roaming",
+      "placement_name": "roaming_faction",
+      "placement_type": "base",
+      "add_to_poi_graph": true,
+      "prevent_cluster": true,
+      "initial_villages": {
+        "large": {
+          "count": 0,
+          "invasion": 0
+        },
+        "medium": {
+          "count": 0,
+          "invasion": 0
+        },
+        "small": {
+          "count": 0,
+          "invasion": 0
+        }
+      },
+      "tags": [
+        "roamingOld"
+      ]
+    },
+    {
+      "unique_card_id": "badger_invasion_obstacle_faction_required",
+      "map_data": "badger:piglin_obstacle_faction",
+      "village_data": "badger:piglin_obstacle",
+      "placement_name": "invasion_obstacle",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "large": {
+          "archetype": "badger:piglin_obstacle_large",
+          "count": 0,
+          "invasion": 3
+        },
+        "medium": {
+          "archetype": "badger:piglin_obstacle_medium",
+          "count": 0,
+          "invasion": 2
+        },
+        "small": {
+          "archetype": "badger:piglin_obstacle_small",
+          "count": 0,
+          "invasion": 1
+        }
+      }
+    },
+    {
+      "unique_card_id": "badger_invasion_frost_faction_required",
+      "map_data": "badger:piglin_frost_faction",
+      "village_data": "badger:piglin_frost",
+      "placement_name": "invasion_frost",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "large": {
+          "archetype": "badger:piglin_frost_large",
+          "count": 0,
+          "invasion": 3
+        },
+        "medium": {
+          "archetype": "badger:piglin_frost_medium",
+          "count": 0,
+          "invasion": 2
+        },
+        "small": {
+          "archetype": "badger:piglin_frost_small",
+          "count": 0,
+          "invasion": 1
+        }
+      }
+    },
+    {
+      "unique_card_id": "badger_invasion_attack_faction_required",
+      "map_data": "badger:piglin_attack_faction",
+      "village_data": "badger:piglin_attack",
+      "placement_name": "invasion_attack",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "large": {
+          "archetype": "badger:piglin_attack_large",
+          "count": 0,
+          "invasion": 3
+        },
+        "medium": {
+          "archetype": "badger:piglin_attack_medium",
+          "count": 0,
+          "invasion": 2
+        },
+        "small": {
+          "archetype": "badger:piglin_attack_small",
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_occupying_zombie_mob_alliance": {
+          "archetype": "badger:piglin_attack_small",
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_occupying_skeleton_mob_alliance": {
+          "archetype": "badger:piglin_attack_small",
+          "count": 0,
+          "invasion": 1
+        }
+      }
+    },
+    {
+      "unique_card_id": "badger_final_base_faction_required",
+      "map_data": "badger:piglin_final_faction",
+      "village_data": "badger:piglin_final",
+      "placement_name": "final_base",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "initial_villages": {
+        "large": {
+          "count": 0,
+          "invasion": 1
+        }
+      },
+      "tags": [
+        "faction_required"
+      ]
+    },
+    {
+      "unique_card_id": "badger_invasion_defend_faction_required",
+      "map_data": "badger:piglin_defend_faction",
+      "village_data": "badger:piglin_defend",
+      "placement_name": "invasion_defend",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "large": {
+          "archetype": "badger:piglin_defend_large",
+          "count": 0,
+          "invasion": 3
+        },
+        "medium": {
+          "archetype": "badger:piglin_defend_medium",
+          "count": 0,
+          "invasion": 2
+        },
+        "small": {
+          "archetype": "badger:piglin_defend_small",
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_occupying_creeper_mob_alliance": {
+          "archetype": "badger:piglin_defend_small",
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_occupying_spider_mob_alliance": {
+          "archetype": "badger:piglin_defend_small",
+          "count": 0,
+          "invasion": 1
+        }
+      }
+    },
+    {
+      "unique_card_id": "badger_wof_pigling_faction_required",
+      "map_data": "badger:wof_faction_piglin",
+      "village_data": "badger:piglin_wof",
+      "placement_name": "wof_pigling",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 0
+        }
+      }
+    },
+    {
+      "unique_card_id": "badger_teleport_target_faction_required",
+      "map_data": "badger:teleport_target_faction",
+      "village_data": "badger:teleport_target",
+      "placement_name": "teleport_target",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "small": {
+          "count": 0
+        }
+      }
+    }
+  ]
+}

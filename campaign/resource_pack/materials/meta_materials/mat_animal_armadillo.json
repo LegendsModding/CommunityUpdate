@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "mat_animal_armadillo:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/tex_animal_armadillo_d",
+            "coeffMap": "textures/entity/tex_animal_armadillo_mr",
+            "normalMap": "textures/entity/tex_animal_armadillo_n"
+        }
+    }
+}

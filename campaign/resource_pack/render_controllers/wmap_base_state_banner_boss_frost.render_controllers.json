@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_base_state_banner_boss_frost": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_base_state_banner_boss_frost": "MetaMaterial.mat_wmap_base_state_banner_boss_frost"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

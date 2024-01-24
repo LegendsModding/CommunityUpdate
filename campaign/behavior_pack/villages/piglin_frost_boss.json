@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:piglin_frost_boss",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20,
+                "waypoint_max_range": 20,
+                "compass_max_range": "medium",
+                "filter_tagsets": [
+                    {
+                        "include_tags": [],
+                        "exclude_tags": ["base_assault", "village_attack"]
+                    }
+                ]
+            },
+            "badger:waypoint_marker": {
+                "path": "waypoint_piglinbase_frost_large",
+                "label": "messages.map_marker_ping.selected.piglin.frost.boss",
+                "world_position_offset": [0, 3, 0]
+            },
+            "badger:village_zone": {
+                "expansion_distance": 180.0,
+                "zone_jitter_min": 0.0,
+                "zone_jitter_max": 7.0,
+                "is_zone_jitter_bell_curve": false,
+                "zone_spacing": 16.0,
+                "water_search_resolution": 20.0,
+                "is_hexagonal_grid_enabled": true,
+                "minimum_loz_connection_width": 8.0
+            },
+            "badger:template": "badger:piglin_frost"
+        }
+    }
+}

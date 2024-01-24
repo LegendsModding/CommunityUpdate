@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_burn_tower",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1,
+        "length": 1,
+        "width": 1
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

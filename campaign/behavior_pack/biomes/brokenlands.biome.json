@@ -1,0 +1,215 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "animal" : {},
+         "badger:overworld_height" : {
+            "height_params" : {
+               "average_height" : 45,
+               "texture_heights": [30, 128]
+            },
+            "noise_params" : [ 1.360, 0.08500000000000001 ]
+         },
+         "badger:rivers" : {
+            "cell_range" : [ 0, 2 ],
+            "point_chance" : 0.50,
+            "river_biome" : "brokenlands_river",
+            "river_border_width" : 12,
+            "river_width" : 4
+         },
+         "badger:sub_biomes" : {
+            "borders" : [
+               {
+                  "allowlist" : [
+                     "grasslands",
+                     "fateful_land_campaign",
+                     "fateful_land_pvp",
+                     "fateful_land_border",
+                     "burnt_grass"
+                  ],
+                  "biome" : "burnt_grass",
+                  "width" : 4
+               },
+               {
+                  "allowlist" : [
+                     "forest",
+                     "forest_hills",
+                     "jungle",
+                     "jungle_hills",
+                     "burnt_grass_trees"
+                  ],
+                  "biome" : "burnt_grass_trees",
+                  "width" : 4
+               },
+               {
+                  "allowlist" : [ "wetlands", "burnt_grass_wetlands" ],
+                  "biome" : "burnt_grass_wetlands",
+                  "width" : 4
+               },
+               {
+                  "allowlist" : [ "mountain_parent_valleys", "burnt_grass_hills" ],
+                  "biome" : "burnt_grass_hills",
+                  "width" : 8
+               },
+               {
+                  "allowlist" : [
+                     "frostlands",
+                     "frostlands_hills",
+                     "frostlands_springs",
+                     "frozen_ground"
+                  ],
+                  "biome" : "frozen_ground",
+                  "width" : 8
+               }
+            ],
+            "scatter_biomes" : [
+               {
+                  "biome" : "brokenlands_valleys",
+                  "offSetZ" : 10.0,
+                  "scaleX" : 0.10,
+                  "scaleY" : 0.10,
+                  "threshold" : 0.60
+               },
+               {
+                  "biome" : "desert",
+                  "offSetZ" : 15.0,
+                  "scaleX" : 0.650,
+                  "scaleY" : 0.650,
+                  "threshold" : 0.80
+               },
+               {
+                  "biome" : "brokenlands_valleys_fossil",
+                  "offSetZ" : 10.0,
+                  "scaleX" : 0.080,
+                  "scaleY" : 0.080,
+                  "threshold" : 0.850
+               },
+               {
+                  "biome" : "brokenlands_sanddune",
+                  "offSetZ" : 5.0,
+                  "scaleX" : 0.650,
+                  "scaleY" : 0.650,
+                  "threshold" : 0.80
+               },
+               {
+                  "biome" : "brokenlands_tarpits",
+                  "offSetZ" : 200.0,
+                  "scaleX" : 0.80,
+                  "scaleY" : 0.80,
+                  "threshold" : 0.60
+               }
+            ]
+         },
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.50,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#BBD669"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.0,
+                  "grass_overlay_noise_scale" : 0.0,
+                  "grass_overlay_surface_color" : "#000000"
+               }
+            },
+            "map" : {
+               "biome_banner" : "map_screen/banners/legend_banner_biome_brokenlands.png",
+               "biome_display_name" : "brokenlands",
+               "common_resources": ["coal"],
+               "common_resource_icon" : "/icons/resources/resource_coal.png",
+               "map_color" : "#916d2f",
+               "map_color_odd" : "#916d2f",
+               "map_pattern_index" : 2
+            },
+            "particulates" : {
+               "nether_spores" : 0.0,
+               "sparkles" : 0.0
+            },
+            "rain" : {
+               "downfall" : 0.0,
+               "lower_limit": 1.0,
+               "rain_to_snow_height" : 120,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit": 1.0
+            },
+            "water" : {
+               "water_blur_distance" : 7.0,
+               "water_color_blend_distance" : 0.0,
+               "water_depths_color" : "#000000",
+               "water_surface_color" : "#31C3E8",
+               "water_surface_transparency" : 0.3000000119209290
+            }
+         },
+         "brokenlands" : {},
+         "brokenlands_plateau" : {},
+         "brokenlands_plateau_rock" : {},
+         "hot_and_dry" : {},
+         "minecraft:surface_parameters" : {
+            "foundation_material" : "badger:block_sand_d1",
+            "ordered_surface" : {
+               "stacks" : [
+                  {
+                     "height_range" : [ 0, 999 ],
+                     "layers" : [
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_cliffdirt_04" ]
+                           ],
+                           "depth_range" : [ 8 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_cliffdirt_03" ]
+                           ],
+                           "depth_range" : [ 3 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_cliffdirt_02" ]
+                           ],
+                           "depth_range" : [ 3 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_cliffdirt_01" ]
+                           ],
+                           "depth_range" : [ 3 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_sand" ]
+                           ],
+                           "depth_range" : [ 6 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_sand_d1" ]
+                           ],
+                           "depth_range" : [ 3 ]
+                        },
+                        {
+                           "blocks_weighted" : [
+                              [ "badger:block_sand_red" ]
+                           ],
+                           "depth_range" : [ 3 ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            "sea_floor_depth" : 4,
+            "sea_floor_material" : "badger:block_sand",
+            "sea_material" : "badger:block_water"
+         },
+         "monster" : {},
+         "overworld" : {},
+         "resource_coal" : {}
+      },
+      "description" : {
+         "identifier" : "brokenlands"
+      }
+   }
+}

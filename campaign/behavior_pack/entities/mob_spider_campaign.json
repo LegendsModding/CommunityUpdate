@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_spider",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Special"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:mob_spider",
+        "game_mode": "lcu_campaign"
+      },
+      "badger:conflict_config": {
+        "invulnerable_behavior": "badger:behavior_spider_caged"
+      },
+      "badger:destroy_on_village_destruction": {
+        "ignore": true
+      },
+      "badger:lured": {
+        "resource_requirement": "unlock_spider_rally"
+      }
+    }
+  }
+}

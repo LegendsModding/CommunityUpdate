@@ -1,0 +1,26 @@
+{
+	"name": "override_sky_frost_sunmoon",
+	"imgui_category": "frostBase/SunMoon",
+	"imgui_prefix": "frost_sm",
+	"is_override": true,
+	"sky_color": "curve.frost_sm_sky_color",
+	"sky_horizon_color": "curve.frost_sm_sky_horizon_color",
+	"cloud_color": "curve.frost_sm_cloud_color",
+	"cloud_shadows": "curve.frost_sm_cloud_shadows",
+	"ambient_color": "curve.frost_sm_ambient_color",
+	"direct_color": "curve.frost_sm_direct_color",
+	"fog_color": "curve.frost_sm_fog_color",
+	"atmosphere_params": "curve.frost_sm_atmosphere_params",
+	"horizon_params": "curve.frost_sm_horizon_params",
+	"fog_params": "curve.frost_sm_fog_params",
+		"objects": [
+		{
+			"name": "sun",
+			"color_a": "curve.frost_sm_sun_color"
+		},
+		{
+			"name": "moon",
+			"color_a": "curve.frost_sm_moon_color"
+		}
+	]
+}

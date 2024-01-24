@@ -1,0 +1,4232 @@
+{
+   /* Priority values (see TextPacket::DisplayPriority in C++)
+        -3 = CHAT (ie. message log -- middle left)
+        -2 = HIDDEN
+        0 = low (top left)
+        1 = medium (top left)
+        2 = high (center screen)
+        3 = compass (ie. biome names - used only in C++)
+        4 = tutorial (bottom right)
+        5 = error (center screen)
+        6 = onboarding (middle right)
+        7 = songbook (attached to songbook icon top left)
+        8 = map (attached to map icon top left)
+  */
+
+  /*
+        ==== REQUIRED ====
+        "message",
+        "priority",
+        ==== OPTIONAL ====
+        "display_time",
+        "title",
+        "icon_path", ******** NEED TO SPECIFY .png or .gif ***********
+        "looping",
+        "is_alert",
+        "is_celebratory",
+        "persist"
+  */
+
+  /*
+        ==== Notification Sequences ====
+        "name_of_sequence": [
+          {
+            "id": "name_of_hud_message",
+            "type": 0 (notification) / 1 (animation) / 2 (subtitle),
+            "duration": 10 (seconds)
+          },
+        ]
+  */
+
+  "badger:hud_text_messages": {
+    "message_timeouts": [
+      5.0, // low
+      10.0, // medium
+      10.0, // high
+      10.0, // compass
+      10.0, // tutorial
+      5.0, // error
+      10.0, // onboarding
+      5.0, // songbook
+      5.0 // map
+    ],
+    "messages": {
+      // ======================= PLAYER ==========================
+      "player_died": {
+        "message": "message.player.died",
+        "tts_message": "message.player.died",
+        "priority": -3
+      },
+      "build_preview_ping_0": {
+        "message": "messages.build_preview_ping.0",
+        "tts_message": "tts.messages.build_preview_ping.0",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_1": {
+        "message": "messages.build_preview_ping.1",
+        "tts_message": "tts.messages.build_preview_ping.1",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_2": {
+        "message": "messages.build_preview_ping.2",
+        "tts_message": "tts.messages.build_preview_ping.2",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_3": {
+        "message": "messages.build_preview_ping.3",
+        "tts_message": "tts.messages.build_preview_ping.3",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_4": {
+        "message": "messages.build_preview_ping.4",
+        "tts_message": "tts.messages.build_preview_ping.4",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_5": {
+        "message": "messages.build_preview_ping.5",
+        "tts_message": "tts.messages.build_preview_ping.5",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_1": {
+        "message": "messages.build_preview_ping_request.1",
+        "tts_message": "tts.messages.build_preview_ping_request.1",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_2": {
+        "message": "messages.build_preview_ping_request.2",
+        "tts_message": "tts.messages.build_preview_ping_request.2",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_3": {
+        "message": "messages.build_preview_ping_request.3",
+        "tts_message": "tts.messages.build_preview_ping_request.3",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_4": {
+        "message": "messages.build_preview_ping_request.4",
+        "tts_message": "tts.messages.build_preview_ping_request.4",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_5": {
+        "message": "messages.build_preview_ping_request.5",
+        "tts_message": "tts.messages.build_preview_ping_request.5",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_6": {
+        "message": "messages.build_preview_ping_request.6",
+        "tts_message": "tts.messages.build_preview_ping_request.6",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_coal": {
+        "message": "messages.build_preview_ping_request.coal",
+        "tts_message": "tts.messages.build_preview_ping_request.coal",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_denether": {
+        "message": "messages.build_preview_ping_request.denether",
+        "tts_message": "tts.messages.build_preview_ping_request.denether",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_diamond": {
+        "message": "messages.build_preview_ping_request.diamond",
+        "tts_message": "tts.messages.build_preview_ping_request.diamond",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_iron": {
+        "message": "messages.build_preview_ping_request.iron",
+        "tts_message": "tts.messages.build_preview_ping_request.iron",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_redstone": {
+        "message": "messages.build_preview_ping_request.redstone",
+        "tts_message": "tts.messages.build_preview_ping_request.redstone",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_stone": {
+        "message": "messages.build_preview_ping_request.stone",
+        "tts_message": "tts.messages.build_preview_ping_request.stone",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_request_wood": {
+        "message": "messages.build_preview_ping_request.wood",
+        "tts_message": "tts.messages.build_preview_ping_request.wood",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_1": {
+        "message": "messages.build_preview_ping_statement.1",
+        "tts_message": "tts.messages.build_preview_ping_statement.1",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_2": {
+        "message": "messages.build_preview_ping_statement.2",
+        "tts_message": "tts.messages.build_preview_ping_statement.2",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_3": {
+        "message": "messages.build_preview_ping_statement.3",
+        "tts_message": "tts.messages.build_preview_ping_statement.3",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_4": {
+        "message": "messages.build_preview_ping_statement.4",
+        "tts_message": "tts.messages.build_preview_ping_statement.4",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_5": {
+        "message": "messages.build_preview_ping_statement.5",
+        "tts_message": "tts.messages.build_preview_ping_statement.5",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_6": {
+        "message": "messages.build_preview_ping_statement.6",
+        "tts_message": "tts.messages.build_preview_ping_statement.6",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_coal": {
+        "message": "messages.build_preview_ping_statement.coal",
+        "tts_message": "tts.messages.build_preview_ping_statement.coal",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_denether": {
+        "message": "messages.build_preview_ping_statement.denether",
+        "tts_message": "tts.messages.build_preview_ping_statement.denether",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_diamond": {
+        "message": "messages.build_preview_ping_statement.diamond",
+        "tts_message": "tts.messages.build_preview_ping_statement.diamond",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_iron": {
+        "message": "messages.build_preview_ping_statement.iron",
+        "tts_message": "tts.messages.build_preview_ping_statement.iron",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_redstone": {
+        "message": "messages.build_preview_ping_statement.redstone",
+        "tts_message": "tts.messages.build_preview_ping_statement.redstone",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_stone": {
+        "message": "messages.build_preview_ping_statement.stone",
+        "tts_message": "tts.messages.build_preview_ping_statement.stone",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_statement_wood": {
+        "message": "messages.build_preview_ping_statement.wood",
+        "tts_message": "tts.messages.build_preview_ping_statement.wood",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_yes": {
+        "message": "messages.build_preview_ping_yes",
+        "tts_message": "tts.messages.build_preview_ping_yes",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping_yes"
+      },
+      "build_preview_ping_no": {
+        "message": "messages.build_preview_ping_no",
+        "tts_message": "tts.messages.build_preview_ping_no",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping_no"
+      },
+      "build_preview_ping_gather_wood": {
+        "message": "messages.build_preview_ping.wood",
+        "tts_message": "tts.messages.build_preview_ping.wood",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_stone": {
+        "message": "messages.build_preview_ping.stone",
+        "tts_message": "tts.messages.build_preview_ping.stone",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_iron": {
+        "message": "messages.build_preview_ping.iron",
+        "tts_message": "tts.messages.build_preview_ping.iron",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_coal": {
+        "message": "messages.build_preview_ping.coal",
+        "tts_message": "tts.messages.build_preview_ping.coal",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_redstone": {
+        "message": "messages.build_preview_ping.redstone",
+        "tts_message": "tts.messages.build_preview_ping.redstone",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_diamond": {
+        "message": "messages.build_preview_ping.diamond",
+        "tts_message": "tts.messages.build_preview_ping.diamond",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_gold": {
+        "message": "messages.build_preview_ping.gold",
+        "tts_message": "tts.messages.build_preview_ping.gold",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_structure_count_approaching_limit": {
+        "message": "message.build_limit.warning",
+        "tts_message": "message.build_limit.warning",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "build_preview_ping_gather_denether": {
+        "message": "messages.build_preview_ping.denether",
+        "tts_message": "tts.messages.build_preview_ping.denether",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_basic": {
+        "message": "messages.map_marker_ping.basic",
+        "tts_message": "messages.map_marker_ping.basic",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_biome": {
+        "message": "messages.map_marker_ping.biome",
+        "tts_message": "messages.map_marker_ping.biome",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_attack_basic": {
+        "message": "messages.map_marker_ping.attack.basic",
+        "tts_message": "messages.map_marker_ping.attack.basic",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_attack_biome": {
+        "message": "messages.map_marker_ping.attack.biome",
+        "tts_message": "messages.map_marker_ping.attack.biome",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_defend_basic": {
+        "message": "messages.map_marker_ping.defend.basic",
+        "tts_message": "messages.map_marker_ping.defend.basic",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_defend_biome": {
+        "message": "messages.map_marker_ping.defend.biome",
+        "tts_message": "messages.map_marker_ping.defend.biome",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_basic": {
+        "message": "messages.map_marker_ping.gather.basic",
+        "tts_message": "messages.map_marker_ping.gather.basic",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_basic_0": {
+        "message": "messages.map_marker_ping.gather.basic.0",
+        "tts_message": "messages.map_marker_ping.gather.basic.0",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_basic_1": {
+        "message": "messages.map_marker_ping.gather.basic.1",
+        "tts_message": "messages.map_marker_ping.gather.basic.1",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_basic_2": {
+        "message": "messages.map_marker_ping.gather.basic.2",
+        "tts_message": "messages.map_marker_ping.gather.basic.2",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_biome": {
+        "message": "messages.map_marker_ping.gather.biome",
+        "tts_message": "messages.map_marker_ping.gather.biome",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_biome_0": {
+        "message": "messages.map_marker_ping.gather.biome.0",
+        "tts_message": "messages.map_marker_ping.gather.biome.0",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_biome_1": {
+        "message": "messages.map_marker_ping.gather.biome.1",
+        "tts_message": "messages.map_marker_ping.gather.biome.1",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_biome_2": {
+        "message": "messages.map_marker_ping.gather.biome.2",
+        "tts_message": "messages.map_marker_ping.gather.biome.2",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_gather_biome_3": {
+        "message": "messages.map_marker_ping.gather.biome.3",
+        "tts_message": "messages.map_marker_ping.gather.biome.3",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_selected_generic": {
+        "message": "messages.map_marker_ping.selected.generic",
+        "tts_message": "messages.map_marker_ping.selected.generic",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_selected_player": {
+        "message": "messages.map_marker_ping.selected.player",
+        "tts_message": "messages.map_marker_ping.selected.player",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      "map_marker_ping_selected_player_waypoint": {
+        "message": "messages.map_marker_ping.selected.player_waypoint",
+        "tts_message": "messages.map_marker_ping.selected.player_waypoint",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_ping"
+      },
+      // ======================= RECIPE UNLOCKS ==========================
+      "resource_discovered": {
+        "message": "messages.resource_discovered.description",
+        "title": "messages.resource_discovered.title",
+        "priority": 2,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "unlock_recipe": {
+        "message": "messages.recipe_unlocked.description",
+        "icon_path": "messages/notif_small_lute.png",
+        "priority": 7,
+        "display_time": 4.0,
+        "audio_event": "BAE_ui_hud_songbook_update"
+      },
+      // =========================== LORE DISCOVERY ===================================
+      "lore_discovered": {
+        "message": "messages.lore_discovered.description",
+        "priority": 7,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_songbook_update"
+      },
+      "lore_piglin_horn": {
+        "message": "Piglin Horn",
+        "icon_path": "resources/resource_unlock_journal_piglin_invasion.png",
+        "priority": 7,
+        "display_time": 5.0,
+        "in_sequence": true,
+        "audio_event": "BAE_ui_hud_songbook_update"
+      },
+      // ============================ CANNOT SPAWN ======================================
+      "spawn_cost_required_1": {
+        "message": "messages.spawn_cost_required_1",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "spawn_cost_required_2": {
+        "message": "messages.spawn_cost_required_2",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "spawn_cost_required_3": {
+        "message": "messages.spawn_cost_required_3",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "spawn_ticket_required": {
+        "message": "messages.spawn_ticket_required",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ============================ RECALLED NO MOBS ==================================
+      "no_mobs_recalled": {
+        "message": "messages.no_mobs_recalled",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ============================ REFUND NO MOBS ==================================
+      "no_mobs_refunded": {
+        "message": "messages.no_mobs_refunded",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ============================ INTERACTION FAIL ================================== (firsts and towers)
+      "interact_cost_required": {
+        "message": "messages.interact_cost_required",
+        "priority": 5,
+        "display_time": 4.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "interact_unlock_required": {
+        "message": "messages.interact_unlock_required",
+        "priority": 5,
+        "display_time": 4.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "deconstruct_cost_required": { // NOTE this currently isn't supported by the interaction display, so I left all the costs X RESOURCES strings in there until we can fix it
+        "message": "messages.deconstruct_cost_required",
+        "priority": 5,
+        "display_time": 4.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "deconstruct_unlock_required": {
+        "message": "messages.deconstruct_unlock_required",
+        "priority": 5,
+        "display_time": 4.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // =========================== SPECIAL RESOURCE UNLOCK ============================
+      "unlock_quest_mount_01": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_01",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_tiger_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "unlock_quest_mount_03": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_03",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_beetle_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "unlock_quest_mount_04": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_04",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_bird_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "unlock_quest_mount_06": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_06",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_mount_06_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_tower_01_resource": {
+        "message": "messages.resource_discovered.custom.poi_tower_01_resource",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_tower_01_title",
+        "icon_path": "messages/notif_poi_tower_01_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_tower_02_resource": {
+        "message": "messages.resource_discovered.custom.poi_tower_02_resource",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_tower_02_title",
+        "icon_path": "messages/notif_poi_tower_02_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_tower_04_resource": {
+        "message": "messages.resource_discovered.custom.poi_tower_04_resource",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_tower_04_title",
+        "icon_path": "messages/notif_poi_tower_04_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_tower_05_resource": {
+        "message": "messages.resource_discovered.custom.poi_tower_05_resource",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_tower_05_title",
+        "icon_path": "messages/notif_poi_tower_05_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_01_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_ally_01.body",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_ally_01.title",
+        "icon_path": "messages/notif_poi_golem_02_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_01_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_ally_01.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "poi_ally_02_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_ally_02.body",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_ally_02.title",
+        "icon_path": "messages/notif_poi_golem_04_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_02_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_ally_02.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "poi_ally_04_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_ally_04.body",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_ally_04.title",
+        "icon_path": "messages/notif_poi_golem_01_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_04_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_ally_04.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "poi_ally_05_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_ally_05.body",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_ally_05.title",
+        "icon_path": "messages/notif_poi_golem_03_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_05_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_ally_05.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_06_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_ally_06.body",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_ally_06.title",
+        "icon_path": "messages/notif_poi_golem_06_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_06_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_ally_06.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_legend_dragon_red_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_legend_dragon_red.dragon",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_legend_dragon_red.title",
+        "icon_path": "messages/notif_poi_legend_dragon_red_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_legend_dragon_red_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_legend_dragon_red.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      //
+      // ======================= PIGLIN ==========================
+      "piglin_base_nonsmall_first_encounter": {
+        "message": "piglin.base_first_nonsmall_encounter",
+        "priority": 2,
+        "display_time": 10.0,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_biggest_banner_neg",
+        "is_alert": true
+      },
+      "piglin_base_dbb_no_outpost": {
+        "message": "piglin.base.dbb.no.outpost",
+        "priority": 2,
+        "display_time": 10.0,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_biggest_banner_neg",
+        "is_alert": true
+      },
+      // ====== ATTACK =======
+      "piglin_attack_escalation1": {
+        "message": "faction.piglin_attack_faction.messages.escalation1",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_attack_escalation2": {
+        "message": "faction.piglin_attack_faction.messages.escalation2",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_attack_escalation3": {
+        "message": "faction.piglin_attack_faction.messages.escalation3",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_attack_portal_destroyed": {
+        "message": "faction.piglin_attack_faction.messages.portalDestroyed",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      // ====== DEFEND =======
+      "piglin_defend_escalation1": {
+        "message": "faction.piglin.defend.escalation.message.001",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_defend_escalation2": {
+        "message": "faction.piglin.defend.escalation.message.002",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_defend_escalation3": {
+        "message": "faction.piglin.defend.escalation.message.003",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_defend_mass_rebuild": {
+        "message": "faction.piglin.defend.massrebuildtactic",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      // ====== OBSTACLE =======
+      "piglin_obstacle_escalation1": {
+        "message": "faction.piglin.obstacle.escalation.message.001",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_obstacle_escalation2": {
+        "message": "faction.piglin.obstacle.escalation.message.002",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_obstacle_escalation3": {
+        "message": "faction.piglin.obstacle.escalation.message.003",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      // ====== FROST =======
+      "piglin_frost_escalation1": {
+        "message": "faction.piglin.frost.escalation.message.001",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_frost_escalation2": {
+        "message": "faction.piglin.frost.escalation.message.002",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_frost_escalation3": {
+        "message": "faction.piglin.frost.escalation.message.003",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      // ====== DBB =======
+      "dbb_piglin_attack_escalation1": {
+        "message": "faction.piglin_attack_faction.messages.escalation1",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "dbb_piglin_attack_escalation2": {
+        "message": "faction.piglin_attack_faction.messages.escalation2",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "dbb_piglin_attack_escalation3": {
+        "message": "faction.piglin_attack_faction.messages.escalation3",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "dbb_piglin_attack_portal_destroyed": {
+        "message": "faction.piglin_attack_faction.messages.portalDestroyed",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      // ====== FINAL FORTRESS =======
+      "piglin_finalFortress_escalation1": {
+        "message": "faction.piglin.defend.escalation.message.001",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_escalation2": {
+        "message": "faction.piglin.defend.escalation.message.002",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_escalation3": {
+        "message": "faction.piglin.defend.escalation.message.003",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_mass_rebuild": {
+        "message": "faction.piglin.defend.massrebuildtactic",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_phase2": {
+        "message": "Phase 2 escalation triggered - key structure destroyed",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_phase3": {
+        "message": "Phase 3 escalation triggered - bridge built",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_phase4": {
+        "message": "Phase 4 escalation triggered - wall breached built",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_boss_dead": {
+        "message": "The Final Boss is DEAD!",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "piglin_finalFortress_overworld_saved": {
+        "message": "CONGRATULATIONS - The overworld is saved!",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "piglin_finalFortress_forboding_msg": {
+        "message": "But at what cost...",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      "piglin_finalFortress_bridge_attack_incoming": {
+        "message": "bridge attack squad incoming!",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      // ======================= MOB ALLIANCE ==========================
+      "mob_join_fight_zombie": {
+        "message": "mob.alliance.zombie.help.message",
+        "priority": 0,
+        "display_time": 20.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "mob_join_fight_skeleton": {
+        "message": "mob.alliance.skeleton.help.message",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "mob_join_fight_spider": {
+        "message": "mob.alliance.spider.help.message",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "mob_join_fight_creeper": {
+        "message": "mob.alliance.creeper.help.message",
+        "priority": 0,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "mobAlliance_damaged_friendly_zombie": {
+        "message": "mob.alliance.zombie.damaged.friendly",
+        "priority": 1,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "mobAlliance_damaged_friendly_skeleton": {
+        "message": "mob.alliance.skeleton.damaged.friendly",
+        "priority": 1,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "mobAlliance_damaged_friendly_creeper": {
+        "message": "mob.alliance.creeper.damaged.friendly",
+        "priority": 1,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "mobAlliance_damaged_friendly_spider": {
+        "message": "mob.alliance.spider.damaged.friendly",
+        "priority": 1,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "teach_about_allegiance_structure": {
+        "message": "mob.alliance.teach.about.allegiance.structure",
+        "priority": 1,
+        "display_time": 25.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ======================= POI ==========================
+      // ====== POI ALLY 1 =======
+      "poiAlly1_approached": {
+        //happens in Act 3
+        "message": "poi.ally.01.message.approached",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly1_bodyproximity": {
+        //happens in Act 3
+        "message": "poi.ally.01.message.bodyproximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly1_completed": {
+        //happens in Act 3
+        "message": "poi.ally.01.message.completed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      // ====== POI ALLY 2 =======
+      "poiAlly2_approached": {
+        "message": "poi.ally.02.message.approached",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly2_bodyproximity": {
+        "message": "poi.ally.02.message.bodyproximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly2_completed": {
+        "message": "poi.ally.02.message.completed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      // ====== POI ALLY 4 =======
+      "poiAlly4_approached": {
+        "message": "poi.ally.04.message.approached",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly4_bodyproximity": {
+        "message": "poi.ally.04.message.bodyproximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly4_completed": {
+        "message": "poi.ally.04.message.completed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      // ====== POI ALLY 5 =======
+      "poiAlly5_approached": {
+        "message": "poi.ally.05.message.approached",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly5_bodyproximity": {
+        "message": "poi.ally.05.message.bodyproximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly5_completed": {
+        "message": "poi.ally.05.message.completed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "generic_ally_left_behind": {
+        "message": "poi.ally.left.behind.generic",
+        "priority": 6,
+        "display_time": 8.0,
+        "audio_event": "BAE_ui_hud_small_banner_neg"
+      },
+      // ======================= TOWERS ==========================
+      // ====== TOWER 1 (BLAST) =======
+      "poiTower1_proximity": {
+        //happens in Act 3
+        "message": "poi.tower_village_01.act4_proximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower1_deconstructed": {
+        //happens in Act 3
+        "message": "poi.tower_village_01.act4_deconstructed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower1_investigate": {
+        //happens in Act 1 if you keep pressing collect
+        "message": "poi.tower_village_01.act4_investigate",
+        "priority": 5,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ====== TOWER 2 (Frost) =======
+      "poiTower2_proximity": {
+        "message": "poi.tower_village_02.act4_proximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower2_deconstructed": {
+        "message": "poi.tower_village_02.act4_deconstructed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower2_investigate": {
+        "message": "poi.tower_village_02.act4_investigate",
+        "priority": 5,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ====== TOWER 4 (STUN) =======
+      "poiTower4_proximity": {
+        "message": "poi.tower_village_04.act4_proximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower4_deconstructed": {
+        "message": "poi.tower_village_04.act4_deconstructed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower4_investigate": {
+        "message": "poi.tower_village_04.act4_investigate",
+        "priority": 5,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ====== TOWER 5 (BURN) =======
+      "poiTower5_proximity": {
+        "message": "poi.tower_village_05.act4_proximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower5_deconstructed": {
+        "message": "poi.tower_village_05.act4_deconstructed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower5_investigate": {
+        "message": "poi.tower_village_05.act4_investigate",
+        "priority": 5,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ======================= MOUNTS ==========================
+      // ====== MOUNT 1 (TIGER) =======
+      "mount1_intro": {
+        //happens in Act 3
+        "message": "poi.mount.01.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount1_outro": {
+        //happens in Act 3
+        "message": "poi.mount.01.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ====== MOUNT 3 (BEETLE) =======
+      "mount3_intro": {
+        "message": "poi.mount.03.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount3_outro": {
+        "message": "poi.mount.03.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ====== MOUNT 4 (BIRD) =======
+      "mount4_intro": {
+        "message": "poi.mount.04.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount4_outro": {
+        "message": "poi.mount.04.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ====== MOUNT 6 (???) =======
+      "mount6_intro": {
+        "message": "poi.mount.06.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount6_outro": {
+        "message": "poi.mount.06.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount_already_mounted": {
+        "message": "mount.already.mounted",
+        "priority": 5,
+        "display_time": 3.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ======================= VILLAGE FAST TRAVEL ==========================
+      "village_unlock_fast_travel": {
+        //Allay chest rewards (should probably have a better name!)
+        "message": "messages.village_discovered.description",
+        "priority": 6, //Changed to side notification as text was too long and its past text lock
+        "display_time": 8.0,
+        "title": "messages.village_discovered.title",
+        "icon_path": "messages/notif_icon_success.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ======================= VILLAGE CHEST ==========================
+      "village_chest_first_announce": {
+        "message": "reward.village.chest.firstAnnounce.description",
+        "title": "reward.village.chest.firstAnnounce.title",
+        "display_time": 6.0,
+        "priority": 6,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_restock": {
+        "message": "reward.village.chest.ready",
+        "priority": -2,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "village_chest_cannot_open_piglin_occupied": {
+        "message": "reward.village.chest.cannot_open.piglin_occupied",
+        "priority": 5,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "village_chest_cannot_open_empty": {
+        "message": "reward.village.chest.cannot_open.empty",
+        "priority": 5,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "village_chest_cannot_open_no_space": {
+        "message": "reward.village.chest.cannot_open.no_space",
+        "priority": 5,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "village_chest_rewards": {
+        "message": "reward.village.chest.collect",
+        "priority": 6,
+        "display_time": 6.0,
+        "title": "reward.village.chest.collect.title",
+        "icon_path": "resources/resource_unlock_journal_fate_bank.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_tutorial": {
+        "message": "reward.village.chest.collect.tutorial",
+        "priority": 6,
+        "display_time": 6.0,
+        "title": "reward.village.chest.collect.tutorial.title",
+        "icon_path": "resources/resource_unlock_journal_fate_bank.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_tutorial_excess": {
+        "message": "reward.village.chest.collect.tutorial.excess",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_with_excess": {
+        "message": "reward.village.chest.collect_with_excess",
+        "priority": 6,
+        "display_time": 6.0,
+        "title": "reward.village.chest.collect.title",
+        "icon_path": "resources/resource_unlock_journal_fate_bank.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_single": {
+        "message": "reward.village.chest.collect_single",
+        "priority": 6,
+        "display_time": 6.0,
+        "title": "reward.village.chest.collect.title",
+        "icon_path": "resources/resource_unlock_journal_fate_bank.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_single_with_excess": {
+        "message": "reward.village.chest.collect_single_with_excess",
+        "priority": 6,
+        "display_time": 6.0,
+        "title": "reward.village.chest.collect.title",
+        "icon_path": "resources/resource_unlock_journal_fate_bank.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_2": {
+        //Allay chest rewards (should probably have a better name!)
+        "message": "reward.chest.items_2",
+        "priority": 2,
+        "display_time": 6.0,
+        "title": "reward.chest.item.title",
+        "icon_path": "resources/resource_unlock_journal_treasure_chest.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_4": {
+        "message": "reward.chest.items_4",
+        "priority": 2,
+        "display_time": 6.0,
+        "title": "reward.chest.item.title",
+        "icon_path": "resources/resource_unlock_journal_treasure_chest.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_chest_rewards_6": {
+        "message": "reward.chest.items_6",
+        "priority": 2,
+        "display_time": 6.0,
+        "title": "reward.chest.item.title",
+        "icon_path": "resources/resource_unlock_journal_treasure_chest.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ======================= PIGLIN CRATE ==========================
+      "piglin_crate_keyRequired": {
+        "message": "poi.piglin_crate.need_key",
+        "priority": 5,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      "piglin_crate_reward_2": {
+        "message": "reward.poi_piglin_crate.items_2",
+        "priority": 2,
+        "display_time": 6.0,
+        "title": "reward.poi_piglin_crate.items.title",
+        "icon_path": "resources/resource_unlock_journal_piglin_crate.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "piglin_crate_reward_4": {
+        "message": "reward.poi_piglin_crate.items_4",
+        "priority": 2,
+        "display_time": 6.0,
+        "title": "reward.poi_piglin_crate.items.title",
+        "icon_path": "resources/resource_unlock_journal_piglin_crate.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "piglin_crate_reward_6": {
+        "message": "reward.poi_piglin_crate.items_6",
+        "priority": 2,
+        "display_time": 6.0,
+        "title": "reward.poi_piglin_crate.items.title",
+        "icon_path": "resources/resource_unlock_journal_piglin_crate.png",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ====== SPAWNER DESTROYED =======
+      "spawner_destroyed_friendly_cavGolem": {
+        "message": "pvp.spawner_destroyed.cavalrygolem.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_cavGolem": {
+        "message": "pvp.spawner_destroyed.cavalrygolem.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_creeper": {
+        "message": "pvp.spawner_destroyed.creeper.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_creeper": {
+        "message": "pvp.spawner_destroyed.creeper.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_spider": {
+        "message": "pvp.spawner_destroyed.spider.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_spider": {
+        "message": "pvp.spawner_destroyed.spider.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_skeleton": {
+        "message": "pvp.spawner_destroyed.skeleton.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_skeleton": {
+        "message": "pvp.spawner_destroyed.skeleton.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_stoneGolem": {
+        "message": "pvp.spawner_destroyed.stonegolem.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_stoneGolem": {
+        "message": "pvp.spawner_destroyed.stonegolem.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_woodGolem": {
+        "message": "pvp.spawner_destroyed.woodgolem.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_woodGolem": {
+        "message": "pvp.spawner_destroyed.woodgolem.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_zombie": {
+        "message": "pvp.spawner_destroyed.zombie.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_zombie": {
+        "message": "pvp.spawner_destroyed.zombie.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      // ====== XP UPGRADE =======
+      "resourceCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.fatebank.friendly",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "resourceCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.fatebank.enemy",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "allayCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.allaytreehouse.friendly",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "allayCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.allaytreehouse.enemy",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "lureCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.houseofflags.friendly",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "lureCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.houseofflags.enemy",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "playerSpawnerCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.flameofallegiance.friendly",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "playerSpawnerCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.flameofallegiance.enemy",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "spawnerCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.spawnsmith.friendly",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "spawnerCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.spawnsmith.enemy",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "lureType_unlocked_friendly": {
+        "message": "pvp.xp_upgrade.bannershop.friendly",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "lureType_unlocked_enemy": {
+        "message": "pvp.xp_upgrade.bannershop.enemy",
+        "priority": 1,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      // ====== HQ DAMAGE =======
+      "hqHealth_damaged_any_friendly": {
+        "message": "pvp.hq_damaged.any.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_light_friendly": {
+        "message": "pvp.hq_damaged.light.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_light_enemy": {
+        "message": "pvp.hq_damaged.light.enemy",
+        "priority": -2
+      },
+      "hqHealth_damaged_medium_friendly": {
+        "message": "pvp.hq_damaged.medium.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_medium_enemy": {
+        "message": "pvp.hq_damaged.medium.enemy",
+        "priority": -2
+      },
+      "hqHealth_damaged_heavy_friendly": {
+        "message": "pvp.hq_damaged.heavy.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_heavy_enemy": {
+        "message": "pvp.hq_damaged.heavy.enemy",
+        "priority": -2
+      },
+      "hqHealth_damaged_extraHeavy_friendly": {
+        "message": "pvp.hq_damaged.extraheavy.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_extraHeavy_enemy": {
+        "message": "pvp.hq_damaged.extraheavy.enemy",
+        "priority": -2
+      },
+      "structure_damaged_any_friendly": {
+        "message": "pvp.structure_damaged.any.friendly",
+        "priority": -2
+      },
+      "structure_damaged_any_enemy": {
+        "message": "pvp.structure_damaged.any.enemy",
+        "priority": -2
+      },
+      // ======================= CAMPAIGN DEBUG ==========================
+      "campaign_act1A_start": {
+        "message": "Campaign Act 1A - Start",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "campaign_act1B_start": {
+        "message": "Campaign Act 1B - Start",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "campaign_act2_start": {
+        "message": "Campaign Act 2 - Start",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "campaign_act3A_start": {
+        "message": "Campaign Act 3A - Start",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "campaign_act3B_start": {
+        "message": "Campaign Act 3B - Start",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "campaign_epilogue_start": {
+        "message": "Campaign Epilogue - Start",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "damage_nearest_piglin_base": {
+        "message": "Damaging Nearest Pigin Base - Looking for base",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "nearest_piglin_base_success": {
+        "message": "Found Nearby Piglin Base",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "nearest_piglin_base_failed": {
+        "message": "No Piglin Base Nearby",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "destroy_nearest_piglin_base": {
+        "message": "Destroying Nearest Pigin Base - Looking for base",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "destroy_piglin_faction": {
+        "message": "[DEBUG] Destroying specified Piglin Faction bases",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "obliterate_piglin_faction": {
+        "message": "[DEBUG] Obliterating specified Piglin Faction",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "destroy_piglin_faction_failed": {
+        "message": "[DEBUG] No bases were found for specified Piglin Faction",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      "campaign_unsupported_debug": {
+        "message": "Unsupported debug act transition attempted - start a new campaign and try again",
+        "priority": -3,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_chat_log"
+      },
+      // ======================= VILLAGE ATTACK ==========================
+      // ========= Notifications received at village when these happen =========
+      "village_attack_begin_attack_horde": {
+        "message": "invasion.village_attack_begin",
+        "priority": 2,
+        "display_time": 12.0,
+        "title": "invasion.village_attack_begin.title.attack_faction",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_begin_defend_horde": {
+        "message": "invasion.village_attack_begin",
+        "priority": 2,
+        "display_time": 12.0,
+        "title": "invasion.village_attack_begin.title.defend_faction",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_begin_obstacle_horde": {
+        "message": "invasion.village_attack_begin",
+        "priority": 2,
+        "display_time": 12.0,
+        "title": "invasion.village_attack_begin.title.obstacle_faction",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_begin_frost_horde": {
+        "message": "invasion.village_attack_begin",
+        "priority": 2,
+        "display_time": 12.0,
+        "title": "invasion.village_attack_begin.title.frost_faction",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_abandon": {
+        "message": "invasion.village_attack_abandon",
+        "priority": 6,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_clear_all_piglins": {
+        "message": "invasion.village_attack_overtime",
+        "priority": 6,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_overtime.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_creepers_defended": {
+        "message": "invasion.village_attack_creepers_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_creepers_defended.title",
+        "icon_path": "messages/notif_mob_creeper.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_attack_skeletons_defended": {
+        "message": "invasion.village_attack_skeletons_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_skeletons_defended.title",
+        "icon_path": "messages/notif_mob_skeleton.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_attack_spiders_defended": {
+        "message": "invasion.village_attack_spiders_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_spiders_defended.title",
+        "icon_path": "messages/notif_mob_spider.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_attack_zombies_defended": {
+        "message": "invasion.village_attack_zombies_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_zombies_defended.title",
+        "icon_path": "messages/notif_mob_zombie.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_attack_villagers_defended": {
+        "message": "invasion.village_attack_villagers_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_villagers_defended.title",
+        "icon_path": "messages/notif_icon_success.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_attack_player_outpost_defended": {
+        "message": "invasion.village_attack_player_outpost_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_player_outpost_defended.title",
+        "icon_path": "messages/notif_icon_success.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      // ========= Notifications for when a village is occupied - note player will usually not be there =========
+      "village_attack_occupation_begin_creepers": {
+        "message": "invasion.village_occupation_begin_creepers",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_creepers.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_occupation_begin_skeletons": {
+        "message": "invasion.village_occupation_begin_skeletons",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_skeletons.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_occupation_begin_spiders": {
+        "message": "invasion.village_occupation_begin_spiders",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_spiders.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_occupation_begin_zombies": {
+        "message": "invasion.village_occupation_begin_zombies",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_zombies.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_occupation_begin_villagers": {
+        "message": "invasion.village_occupation_begin_villagers",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_villagers.title",
+        "icon_path": "messages/notif_icon_problem.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      // ========= Notifications within villages =========
+      // Occupation begin message
+      "village_attack_occupation_free_creepers": {
+        "message": "invasion.village_occupation_free_creepers",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_creepers.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_free_skeletons": {
+        "message": "invasion.village_occupation_free_skeletons",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_skeletons.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_free_spiders": {
+        "message": "invasion.village_occupation_free_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_spiders.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_free_zombies": {
+        "message": "invasion.village_occupation_free_zombies",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_zombies.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_free_villagers": {
+        "message": "invasion.village_occupation_free_villagers",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_villagers.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // Abandon warnings for leaving too early
+      "village_attack_occupation_abandon_creepers": {
+        "message": "invasion.village_occupation_abandon_creepers",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_abandon_skeletons": {
+        "message": "invasion.village_occupation_abandon_skeletons",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_abandon_spiders": {
+        "message": "invasion.village_occupation_abandon_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_abandon_zombies": {
+        "message": "invasion.village_occupation_abandon_zombies",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_abandon_villagers": {
+        "message": "invasion.village_occupation_abandon_villagers",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // Reminders to repair the fountain
+      "village_attack_occupation_end_repair_remaining_creepers": {
+        "message": "invasion.village_occupation_end_repair_remaining_creepers",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_creepers.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_repair_remaining_skeletons": {
+        "message": "invasion.village_occupation_end_repair_remaining_skeletons",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_skeletons.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_repair_remaining_spiders": {
+        "message": "invasion.village_occupation_end_repair_remaining_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_spiders.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_repair_remaining_zombies": {
+        "message": "invasion.village_occupation_end_repair_remaining_zombies",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_zombies.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_repair_remaining_villagers": {
+        "message": "invasion.village_occupation_end_repair_remaining_villagers",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_villagers.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_reminder_creepers": {
+        "message": "invasion.village_occupation_repair_reminder_creepers",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // Nudge to let players know to repair houses in homesteads to spawn units
+      "village_attack_occupation_repair_reminder_homestead_houses": {
+        "message": "invasion.village_occupation_repair_reminder_homestead_houses",
+        "priority": 6,
+        "display_time": 8.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_reminder_skeletons": {
+        "message": "invasion.village_occupation_repair_reminder_skeletons",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_reminder_spiders": {
+        "message": "invasion.village_occupation_repair_reminder_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_reminder_zombies": {
+        "message": "invasion.village_occupation_repair_reminder_zombies",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_reminder_villagers": {
+        "message": "invasion.village_occupation_repair_reminder_villagers",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_creepers": {
+        "message": "invasion.village_occupation_repair_message_creepers",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_skeletons": {
+        "message": "invasion.village_occupation_repair_message_skeletons",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_spiders": {
+        "message": "invasion.village_occupation_repair_message_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_zombies": {
+        "message": "invasion.village_occupation_repair_message_zombies",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_villagers": {
+        "message": "invasion.village_occupation_repair_message_villagers",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // Victory celebrations for clearing an occupation
+      "village_attack_occupation_end_creepers": {
+        "message": "invasion.village_occupation_end_creepers",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_creepers.title",
+        "icon_path": "messages/notif_mob_creeper.gif",
+        "is_celebratory": true
+      },
+      "village_occupation_free_creepers_reminder": {
+        "message": "invasion.village_occupation_free_creepers_reminder",
+        "priority": 6,
+        "display_time": 10,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_skeletons": {
+        "message": "invasion.village_occupation_end_skeletons",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_skeletons.title",
+        "icon_path": "messages/notif_mob_skeleton.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_occupation_free_skeletons_reminder": {
+        "message": "invasion.village_occupation_free_skeletons_reminder",
+        "priority": 6,
+        "display_time": 10,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_spiders": {
+        "message": "invasion.village_occupation_end_spiders",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_spiders.title",
+        "icon_path": "messages/notif_mob_spider.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_occupation_free_spiders_reminder": {
+        "message": "invasion.village_occupation_free_spiders_reminder",
+        "priority": 6,
+        "display_time": 10,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_zombies": {
+        "message": "invasion.village_occupation_end_zombies",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_zombies.title",
+        "icon_path": "messages/notif_mob_zombie.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_occupation_free_zombies_reminder": {
+        "message": "invasion.village_occupation_free_zombies_reminder",
+        "priority": 6,
+        "display_time": 10,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_villagers": {
+        "message": "invasion.village_occupation_end_villagers",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_villagers.title",
+        "icon_path": "messages/notif_icon_success.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ======================= INVASION ==========================
+      // ========= Dawn/Dusk Notifications =========
+      "invasion_intentions_drawn": {
+        "message": "invasion.intentions.drawn.body",
+        "priority": 2,
+        "display_time": 8.0,
+        "title": "invasion.intentions.drawn.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_actions_executed": {
+        "message": "invasion.intentions.executed.body",
+        "priority": 2,
+        "display_time": 8.0,
+        "title": "invasion.intentions.executed.title",
+        "icon_path": "messages/notif_piglin_night.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      // ========= Horde Arrival Notifications =========
+      "invasion_horde_all_entered": {
+        //For new flow where all the hordes enter at once
+        "message": "invasion.notif.allhorde_entered",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif.allhorde_entered.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_horde_all_first_night": {
+        //Play a message on the first night
+        "message": "invasion.notif.allhorde_first_night",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif.allhorde_first_night.title",
+        "icon_path": "messages/notif_piglin_night.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      // ========= Example Sequences added by UI, will be referencing some of them in sequences =========
+      "invasion_check_map_arrived": {
+        "message": "invasion.notif.check_map.arrived",
+        "priority": 8,
+        "display_time": 5.0,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_map_update"
+      },
+      "invasion_check_map_consequences": {
+        "message": "invasion.notif.check_map.consequences",
+        "priority": 8,
+        "display_time": 5.0,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_map_update"
+      },
+      "invasion_check_map_set_strategy": {
+        "message": "invasion.notif.check_map.set_strategy",
+        "priority": 8,
+        "display_time": 6.0,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_map_update"
+      },
+      "objective_updated_notif": {
+        "message": "objective.notif.check_map",
+        "priority": 8,
+        "display_time": 6.0,
+        "icon_path": "messages/notif_objective_checkmark.png",
+        "audio_event": "BAE_ui_hud_objectives_update"
+      },
+      // ========= Piglin Invasion Actions - whenever they upgrade bases/claim areas, etc =========
+      "invasion_claimed_area_attack": {
+        //claimed area notifications
+        "message": "invasion.notif.claimed_area.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_attack_faction.name",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_claimed_area_defend": {
+        "message": "invasion.notif.claimed_area.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_defend_faction.name",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_claimed_area_obstacle": {
+        "message": "invasion.notif.claimed_area.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_obstacle_faction.name",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_claimed_area_frost": {
+        "message": "invasion.notif.claimed_area.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_frost_faction.name",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_base_attack": {
+        //new base notifications
+        "message": "invasion.notif.new_base.attack_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_attack_faction.name",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_base_defend": {
+        "message": "invasion.notif.new_base.defend_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_defend_faction.name",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_base_obstacle": {
+        "message": "invasion.notif.new_base.obstacle_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_obstacle_faction.name",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_base_frost": {
+        "message": "invasion.notif.new_base.frost_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_frost_faction.name",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_outpost_attack": {
+        //new outpost notifications
+        "message": "invasion.notif.new_outpost.attack_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_attack_faction.name",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_outpost_defend": {
+        "message": "invasion.notif.new_outpost.defend_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_defend_faction.name",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_outpost_obstacle": {
+        "message": "invasion.notif.new_outpost.obstacle_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_obstacle_faction.name",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_new_outpost_frost": {
+        "message": "invasion.notif.new_outpost.frost_faction",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_frost_faction.name",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_oops_attack": {
+        //oops notifications, lower priority
+        "message": "invasion.notif.oops.attack_faction",
+        "priority": 6,
+        "display_time": 3.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_oops_defend": {
+        "message": "invasion.notif.oops.defend_faction",
+        "priority": 6,
+        "display_time": 3.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_oops_obstacle": {
+        "message": "invasion.notif.oops.obstacle_faction",
+        "priority": 6,
+        "display_time": 3.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_oops_frost": {
+        "message": "invasion.notif.oops.frost_faction",
+        "priority": 6,
+        "display_time": 3.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_upgrade_base_attack": {
+        //upgrade notifications
+        "message": "invasion.notif.upgrade_base.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_attack_faction.name",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_upgrade_base_defend": {
+        "message": "invasion.notif.upgrade_base.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_defend_faction.name",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_upgrade_base_obstacle": {
+        "message": "invasion.notif.upgrade_base.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_obstacle_faction.name",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "invasion_upgrade_base_frost": {
+        "message": "invasion.notif.upgrade_base.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "faction.piglin_frost_faction.name",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      // ========= HUD Notifications related to outpost / base destruction =========
+      "invasion_outpost_base_destroyed_attack": {
+        "message": "invasion.notif.outpost_base_destroyed.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_outpost_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "audio_event": "BAE_ui_invasion_outpost_base_destroyed",
+        "is_celebratory": true
+      },
+      "act1_outpost_base_destroyed": {
+        "message": "onboarding.three.piglin.congratulatory.banner.nudge",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.notif_outpost_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_alert_01.png",
+        "is_celebratory": true
+      },
+      "invasion_outpost_base_destroyed_defend": {
+        "message": "invasion.notif.outpost_base_destroyed.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_outpost_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "audio_event": "BAE_ui_invasion_outpost_base_destroyed",
+        "is_celebratory": true
+      },
+      "invasion_outpost_base_destroyed_obstacle": {
+        "message": "invasion.notif.outpost_base_destroyed.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_outpost_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "audio_event": "BAE_ui_invasion_outpost_base_destroyed",
+        "is_celebratory": true
+      },
+      "invasion_outpost_base_destroyed_frost": {
+        "message": "invasion.notif.outpost_base_destroyed.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_outpost_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "audio_event": "BAE_ui_invasion_outpost_base_destroyed",
+        "is_celebratory": true
+      },
+      "invasion_small_base_destroyed_attack": {
+        "message": "invasion.notif.small_base_destroyed.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_small_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_small_base_destroyed_defend": {
+        "message": "invasion.notif.small_base_destroyed.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_small_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_small_base_destroyed_obstacle": {
+        "message": "invasion.notif.small_base_destroyed.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_small_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_small_base_destroyed_frost": {
+        "message": "invasion.notif.small_base_destroyed.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_small_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_medium_base_destroyed_attack": {
+        "message": "invasion.notif.medium_base_destroyed.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_medium_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_medium_base_destroyed_defend": {
+        "message": "invasion.notif.medium_base_destroyed.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_medium_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_medium_base_destroyed_obstacle": {
+        "message": "invasion.notif.medium_base_destroyed.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_medium_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_medium_base_destroyed_frost": {
+        "message": "invasion.notif.medium_base_destroyed.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_medium_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_large_base_destroyed_attack": {
+        "message": "invasion.notif.large_base_destroyed.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_large_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_large_base_destroyed_defend": {
+        "message": "invasion.notif.large_base_destroyed.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_large_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_large_base_destroyed_obstacle": {
+        "message": "invasion.notif.large_base_destroyed.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_large_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_large_base_destroyed_frost": {
+        "message": "invasion.notif.large_base_destroyed.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_large_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_boss_base_destroyed_attack": {
+        "message": "invasion.notif.boss_base_destroyed.attack",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_boss_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_horderunners.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_boss_base_destroyed_defend": {
+        "message": "invasion.notif.boss_base_destroyed.defend",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_boss_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_unbreakables.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_boss_base_destroyed_obstacle": {
+        "message": "invasion.notif.boss_base_destroyed.obstacle",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_boss_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_rotters.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      "invasion_boss_base_destroyed_frost": {
+        "message": "invasion.notif.boss_base_destroyed.frost",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "invasion.notif_boss_base_destroyed.title",
+        "icon_path": "messages/notif_piglin_boss_frost.png",
+        "audio_event": "BAE_ui_hud_biggest_banner_pos",
+        "is_celebratory": true
+      },
+      // ========= Nudges for Occupied villages/homesteads =========
+      "invasion_village_destroyed_nudge": {
+        //Nudge that prompts player to reclaim lost villages
+        "message": "invasion.village_destroyed_nudge",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_mob_alliance_destroyed_nudge": {
+        //Nudge that prompts player to reclaim lost Mob alliances
+        "message": "invasion.mob_alliance_destroyed_nudge",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // ========= Base Difficulty Warnings =========
+      "invasion_base_difficulty_level_attack": {
+        //difficulty warning messages
+        "message": "invasion.notif.base_difficulty",
+        "priority": 6,
+        "display_time": 5.0,
+        "title": "faction.piglin_attack_faction.name",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_base_difficulty_level_defend": {
+        "message": "invasion.notif.base_difficulty",
+        "priority": 6,
+        "display_time": 5.0,
+        "title": "faction.piglin_defend_faction.name",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_base_difficulty_level_obstacle": {
+        "message": "invasion.notif.base_difficulty",
+        "priority": 6,
+        "display_time": 5.0,
+        "title": "faction.piglin_obstacle_faction.name",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "invasion_base_difficulty_level_frost": {
+        "message": "invasion.notif.base_difficulty",
+        "priority": 6,
+        "display_time": 5.0,
+        "title": "faction.piglin_frost_faction.name",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      // ======================= RESOURCE GATHER ==========================
+      "resource_gather_complete": {
+        "message": "buildables.status.gatherComplete",
+        "priority": -2
+      },
+      "resource_gather_none": {
+        "message": "buildables.status.noResources",
+        "priority": -2
+      },
+      "resource_gather_gatherCapped": {
+        "message": "buildables.status.gatherCapped",
+        "priority": -2
+      },
+      "resource_gather_resourceCapped": {
+        "message": "buildables.status.resourceCapped",
+        "priority": -2
+      },
+      "resource_gather_allayReturned": {
+        "message": "buildables.status.gatherAllayReturnedHome",
+        "priority": -2
+      },
+      // ======================= CREATIVE MODE ==========================
+      "creative_mode_enabled": {
+        "message": "messages.creative.enabled",
+        "priority": -2
+      },
+      "creative_mode_disabled": {
+        "message": "messages.creative.disabled",
+        "priority": -2
+      },
+      // ======================= AUTODECONSTUCT SYSTEM ==========================
+      "autodeconstruction_warning": {
+        "message": "buildables.autodeconstruction.warning",
+        "priority": -2
+      },
+      "autodeconstruction_triggered": {
+        "message": "buildables.autodeconstruction.triggered",
+        "priority": -2
+      },
+      // ======================= TELEMETRY TEST ==========================
+      "telemetry_test": {
+        "message": "Hello World!",
+        "priority": 0,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      // =========================== PVP ============================
+      "pvp_objectiveB_description": {
+        "message": "pvp.objectiveB.description",
+        "priority": 1,
+        "display_time": 15.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "pvp_objectiveA_description": {
+        "message": "pvp.objectiveA.description",
+        "priority": 1,
+        "display_time": 3.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "pvp_autotimer_warning": {
+        "message": "pvp.autotimer_warning",
+        "priority": 2,
+        "display_time": 6.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "pvp_teamTwo_HQ_placed_description": {
+        "message": "pvp.teamTwo_HQ_placed.description",
+        "priority": 1,
+        "display_time": 2.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "pvp_teamOne_HQ_placed_description": {
+        "message": "pvp.teamOne_HQ_placed.description",
+        "priority": 1,
+        "display_time": 2.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "pvp_team_lost": {
+        "message": "pvp.team.lost",
+        "priority": 2
+      },
+      "pvp_team_win": {
+        "message": "pvp.team.won",
+        "priority": 2
+      },
+      "placeholder_pvp_strong_piglin_wave": {
+        "message": "Oh no! The piglins are preparing a devestating attack soon.",
+        "priority": 2,
+        "display_time": 7
+      },
+      "pvp_open_map_notification": {
+        "title": "pvp.onb.hq.start.match.world.map.title",
+        "message": "pvp.onb.hq.start.match.world.map.message",
+        "priority": 6,
+        "display_time": 8.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "pvp_open_map_visual": {
+        "message": "pvp.onb.hq.start.match.world.map.icon.message",
+        "priority": 8,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_map_update"
+      },
+      "pvp_late_game_damage_increase": {
+        "title": "pvp.mob.damage.increase.title",
+        "message": "pvp.mob.damage.increase.message",
+        "priority": 6,
+        "display_time": 8.0,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      // =========================== ONBOARDING ============================
+      //lute
+      "onboarding_lute_nudge": {
+        "title": "onboarding.lute.title",
+        "message": "onboarding.lute.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_lute_intro_vo": {
+        "message": "Host VO: This wonderous Lute will allow you to direct Allays through the power of music. Go on and grab it!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_lute_reminder_vo": {
+        "message": "Host VO: Don't delay, go on and grab the lute! You need it for your upcoming trials.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_lute_completed_vo": {
+        "message": "Host VO: Give those strings a few plucks! You can now direct Allays to gather resources or build structures.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //spawner menu
+      "onboarding_player_spawn_menu_nudge": {
+        "title": "onboarding.hero.spawn.menu.title",
+        "message": "onboarding.hero.spawn.menu.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //gathering menu
+      "onboarding_gathering_menu_nudge": {
+        "title": "onboarding.gathering.menu.title",
+        "message": "onboarding.gathering.menu.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_gathering_intro_vo": {
+        "message": "Host VO: You'll need wood and stone to build things. Use a Gather Wood and Gather Stone melody to direct your Gather Allays.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_gathering_reminder_vo": {
+        "message": "Host VO: You'll need resources. Make sure to use your gather allays to gather them.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_gathering_completed_vo": {
+        "message": "Host VO: Now it's time to put those resources to use. I wonder what wonderous things you can build.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //leave well of fate area
+      "onboarding_leave_well_of_fate_area": {
+        "title": "Leave Well of Fate Area",
+        "message": "Leave the Well of Fate area. Press the #3 to access the Buildings Hotbar and build an Extendable Platform to go over the wall surrounding the Well of Fate area.",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //movement onboarding
+      "onboarding_move_to_action_nudge": {
+        "title": "onboarding.move.to.action.title",
+        "message": "onboarding.move.to.action.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_second_move_to_action_nudge": {
+        "title": "onboarding.second.move.to.action.title",
+        "message": "onboarding.second.move.to.action.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //resourcing onboarding
+      "onboarding_wood_resourcing_nudge": {
+        "title": "onboarding.wood.resourcing.title",
+        "message": "onboarding.wood.resourcing.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+
+      "onboarding_stone_resourcing_nudge": {
+        "title": "onboarding.stone.resourcing.title",
+        "message": "onboarding.stone.resourcing.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //climb plateau
+      "onboarding_climb_plateau_nudge": {
+        "title": "onboarding.climb.plateau.title",
+        "message": "onboarding.climb.plateau.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_climb_plateau_fail_safe_no_success_for_a_long_time": {
+        "title": "onboarding.climb.plateau.fail.safe.no_success.for.a.long.time.title",
+        "message": "onboarding.climb.plateau.fail.safe.no_success.for.a.long.time.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_climb_plateau_intro_vo": {
+        "message": "Host VO: We have another tool for you but first you need to climb the southern plateau. I wonder if the Extendable Platform can get you up there?",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_climb_plateau_reminder_vo": {
+        "message": "Host VO: You've unlocked melodies to build new structures. The extendable platform can be used as stairs get you up there!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_climb_plateau_completed_vo": {
+        "message": "Host VO: You did it!",
+        "priority": 2,
+        "display_time": 5
+      },
+      //Village chest onboarding
+      "onboarding_village_chest_nudge": {
+        "title": "onboarding.village.chest.title",
+        "message": "onboarding.village.chest.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_village_chest_intro_vo": {
+        "message": "placeholder_village_chest_intro_vo",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_village_chest_reminder_vo": {
+        "message": "placeholder_village_chest_reminder_vo",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_village_chest_completed_vo": {
+        "message": "placeholder_village_chest_completed_vo",
+        "priority": 2,
+        "display_time": 5
+      },
+      //spawner onboarding
+      "onboarding_hero_spawn_nudge": {
+        "title": "onboarding.hero.spawn.title",
+        "message": "onboarding.hero.spawn.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_hero_spawn_intro_vo": {
+        "message": "Host VO: You can summon allies by building Golem Spawners. Why don't you try building one?",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_hero_spawn_reminder_vo": {
+        "message": "Host VO: You'll need allies to fight against your upcoming trials. Why not build a Golem Spawner",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_hero_spawn_completed_vo": {
+        "message": "Host VO: Hmmmmmm something is wrong......",
+        "priority": 2,
+        "display_time": 5
+      },
+      //flame
+      "onboarding_flame_nudge": {
+        "title": "onboarding.flame.title",
+        "message": "onboarding.flame.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_flame_intro_vo": {
+        "message": "Host VO: Oh right! You need the Lantern of Creation to breathe life into the golems with Flames! Go grab it!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_flame_reminder_vo": {
+        "message": "Host VO: Your allies won't come to life unless you have Flames of Allegiance! Go grab the Lantern of Creation to get them.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_flame_completed_vo": {
+        "message": "Host VO: Bingo! Now you can go bring them to life.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //spawnerInteract
+      "onboarding_spawner_interact_nudge": {
+        "title": "onboarding.spawner.interact.title",
+        "message": "onboarding.spawner.interact.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_spawner_interact_intro_vo": {
+        "message": "Host VO: Now head to the spawner you built and use the Flames you just recieved to bring some Golems to life!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_spawner_interact_reminder_vo": {
+        "message": "Host VO: Don't be shy! Head over to the spawner you built and inject some Flames to create some Golems!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_spawner_interact_completed_vo": {
+        "message": "Host VO: Aren't they cute!? Don't let their looks fool you, they are tough fighters.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //second golem spawn onboarding
+      "onboarding_hero_spawn_second_golem_nudge": {
+        "title": "onboarding.hero.spawn.second.golem.title",
+        "message": "onboarding.hero.spawn.second.golem.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //recalling
+      "onboarding_mob_recall": {
+        "title": "onboarding.mob.recall.title",
+        "message": "onboarding.mob.recall.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //banner
+      "onboarding_banner_nudge": {
+        "title": "onboarding.banner.title",
+        "message": "onboarding.banner.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_banner_intro_vo": {
+        "message": "Host VO: Now that you have your allies around you, you'll need a way to direct them around the battlefield. Grab this Banner of Command and we'll show you how.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_banner_reminder_vo": {
+        "message": "Host VO: Don't be afraid of command, grab the Banner and we'll show you how to lead your Golem allies!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_banner_completed_vo": {
+        "message": "Host VO: Perfect! Now let's teach you how to have your Allies follow you into battle.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //hero lure onboarding
+      "onboarding_hero_lure_nudge": {
+        "title": "onboarding.hero.lure.title",
+        "message": "onboarding.hero.lure.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_herolure_intro_vo": {
+        "message": "Host VO: Use the Banner of Command to indicate that you want your Golem Allies to follow you. Lead them to blue archway.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_herolure_reminder_vo": {
+        "message": "Host VO: Make sure you're close enough for your Golem Allies to see your commands. Get them to the blue archway.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_herolure_completed_vo": {
+        "message": "Host VO: There you go! You now know how to get your allies to follow you.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //hero unlure onboarding
+      "onboarding_hero_unlure_nudge": {
+        "title": "onboarding.hero.unlure.title",
+        "message": "onboarding.hero.unlure.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_herounlure_intro_vo": {
+        "message": "Host VO: Sometimes you won't want your allies to follow you. Why don't you try telling them to stop following you?",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_herounlure_reminder_vo": {
+        "message": "Host VO: Tell your allies to hold their position so they don't follow you!",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_herounlure_completed_vo": {
+        "message": "Host VO: Perfect! They'll hold tight there until you tell them to go elsewhere",
+        "priority": 2,
+        "display_time": 5
+      },
+      //hero rallying part two onboarding
+      "onboarding_hero_rallying_part_two_nudge": {
+        "title": "onboarding.hero.lure.part.two.title",
+        "message": "onboarding.hero.lure.part.two.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_rallying_part_two_intro_vo": {
+        "message": "[TO BE VO]Rallying Part Two Intro VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_rallying_part_two_reminder_vo": {
+        "message": "[TO BE VO]Rallying Part Two Reminder VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_rallying_part_two_completed_vo": {
+        "message": "[TO BE VO]Rallying Part Two Completed VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //deconstruct
+      "onboarding_deconstruct_nudge": {
+        "title": "onboarding.deconstruct.title",
+        "message": "onboarding.deconstruct.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_deconstruct_intro_vo": {
+        "message": "Host VO: Now that you've built stairs and spawners, we'll teach you how to reclaim those resources. Approach the stairs you built and deconstruct them.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_deconstruct_reminder_vo": {
+        "message": "Host VO: Those stairs can be reclaimed for the wood it cost to make them. Why don't you approach them and take the wood back?",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_deconstruct_completed_vo": {
+        "message": "Host VO: Deconstructing things can be really helpful if you make a mistake or don't need a structure anymore.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //bridge
+      "onboarding_bridge_nudge": {
+        "title": "onboarding.bridge.title",
+        "message": "onboarding.bridge.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_bridge_intro_vo": {
+        "message": "[TO BE VO]Bridge Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_bridge_reminder_vo": {
+        "message": "[TO BE VO]Bridge Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_bridge_completed_vo": {
+        "message": "[TO BE VO]Bridge Onboarding Completed VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //mob combat
+      "onboarding_mob_combat_nudge": {
+        "title": "onboarding.mob.combat.title",
+        "message": "onboarding.mob.combat.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_mob_combat_intro_vo": {
+        "message": "Host VO: We've created some Golems of our own. They are attacking a blue archway. We need you to take your Golem and go defeat them and their spawners.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_mob_combat_reminder_vo": {
+        "message": "Host VO: Head towards the Blue Archway and destroy the enemy golems. Get your mobs to follow you.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_mob_combat_completed_vo": {
+        "message": "Host VO: You've done it! You've exceeded all expectations and we feel you're ready to lead your army.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //combat
+      "onboarding_combat_nudge": {
+        "title": "onboarding.combat.title",
+        "message": "onboarding.combat.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_combat_intro_vo": {
+        "message": "Host VO: We've created some Golems of our own. They are attacking a blue archway to the north. We need you to take your Golem and go defeat them and their spawners.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_combat_reminder_vo": {
+        "message": "Host VO: Head towards the Blue Archway and destroy the enemy golems. Get your mobs to follow you.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_combat_completed_vo": {
+        "message": "Host VO: You've done it! You've exceeded all expectations and we feel you're ready to lead your army.",
+        "priority": 2,
+        "display_time": 5
+      },
+      //denether
+      "onboarding_denether_nudge": {
+        "title": "onboarding.denether.title",
+        "message": "onboarding.denether.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_denether_intro_vo": {
+        "message": "[TO BE VO]Denether Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_denether_reminder_vo": {
+        "message": "[TO BE VO]Denether Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_denether_completed_vo": {
+        "message": "[TO BE VO]Denether Onboarding Completed VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //recipeBook
+      "onboarding_recipe_book_nudge": {
+        "title": "onboarding.recipe.book.title",
+        "message": "onboarding.recipe.book.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_recipe_book_intro_vo": {
+        "message": "[TO BE VO]Recipe Book Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_recipe_book_reminder_vo": {
+        "message": "[TO BE VO]Recipe Book Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_recipe_book_completed_vo": {
+        "message": "[TO BE VO]Recipe Book Onboarding Completed VO - But how will the hero defend this structure with only a gate?",
+        "priority": 2,
+        "display_time": 5
+      },
+      //defenses
+      "onboarding_defenses_nudge": {
+        "title": "onboarding.defenses.title",
+        "message": "onboarding.defenses.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_defenses_intro_vo": {
+        "message": "[TO BE VO]Defenses Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 6
+      },
+      "placeholder_defenses_reminder_vo": {
+        "message": "[TO BE VO]Defenses Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 6
+      },
+      "placeholder_defenses_completed_vo": {
+        "message": "[TO BE VO]Defenses Onboarding Completed VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //teleport
+      "onboarding_teleport_nudge": {
+        "title": "onboarding.teleport.title",
+        "message": "onboarding.teleport.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_teleport_skip": {
+        "title": "onboarding.skip.title",
+        "message": "onboarding.skip.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_teleport_intro_vo": {
+        "message": "Host VO: Come back to where we are. When you're ready to start your journey, you can interact with our Well to warp to where you're needed.",
+        "priority": 2,
+        "display_time": 6
+      },
+      "placeholder_teleport_reminder_vo": {
+        "message": "Host VO: Take all the time you need. Interact with our Well to start your journey",
+        "priority": 2,
+        "display_time": 6
+      },
+      "placeholder_teleport_completed_vo": {
+        "message": "Host VO: Good luck Hero!",
+        "priority": 2,
+        "display_time": 5
+      },
+      //ACT 1 ONBOARDING
+      //leave well of fate
+      "onboarding_leave_well_of_fate_nudge": {
+        "title": "onboarding.leave.well.of.fate.title",
+        "message": "onboarding.leave.well.of.fate.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_leave_well_of_fate_intro_vo": {
+        "message": "[TO BE VO]Leave Well of Fate Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_leave_well_of_fate_reminder_vo": {
+        "message": "[TO BE VO]Leave Well of Fate Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_leave_well_of_fate_complete_vo": {
+        "message": "[TO BE VO]Leave Well of Fate Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //find village under attack
+      "onboarding_find_village_under_attack_nudge": {
+        "title": "onboarding.find.village.under.attack.title",
+        "message": "onboarding.find.village.under.attack.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_find_village_under_attack_reminder_vo": {
+        "message": "[TO BE VO]Find Village Under Attack Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_find_village_under_attack_complete_vo": {
+        "message": "[TO BE VO]Find VIllage Under Attack Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //first village under attack
+      "onboarding_first_village_under_attack_nudge": {
+        "title": "onboarding.first.village.under.attack.title",
+        "message": "onboarding.first.village.under.attack.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_first_village_under_attack_intro_vo": {
+        "message": "[TO BE VO]First Village Under Attack Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_first_village_under_attack_reminder_vo": {
+        "message": "[TO BE VO]First Village Under Attack Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_first_village_under_attack_complete_vo": {
+        "message": "[TO BE VO]First VIllage Under Attack Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      "placeholder_first_village_under_attack_piglin_reminder_vo": {
+        "message": "[TO BE VO]First Village Under Attack - Kill All Piglins - Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_first_village_under_attack_cages_reminder_vo": {
+        "message": "[TO BE VO]First Village Under Attack - Open All Cages - ",
+        "priority": 2,
+        "display_time": 5
+      },
+      //repair fountain
+      "onboarding_repair_fountain_nudge": {
+        "title": "onboarding.repair.village.title",
+        "message": "onboarding.repair.village.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_carpenter_rework_wait_for_heals_nudge": {
+        "title": "onboarding.carpenter.rework.wait.for.heals.title",
+        "message": "onboarding.carpenter.rework.wait.for.heals.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_carpenter_rework_deconstruct_nudge": {
+        "title": "onboarding.carpenter.rework.deconstruct.title",
+        "message": "onboarding.carpenter.rework.deconstruct.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_carpenter_rework_resources_nudge": {
+        "title": "onboarding.carpenter.rework.resources.title",
+        "message": "onboarding.carpenter.rework.resources.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //find second village
+      "onboarding_find_second_village_nudge": {
+        "title": "onboarding.find.second.village.title",
+        "message": "onboarding.find.second.village.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_find_second_village_intro_vo": {
+        "message": "[TO BE VO]Find Second Village Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_find_second_village_reminder_vo": {
+        "message": "[TO BE VO]Find Second Village Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_find_second_village_complete_vo": {
+        "message": "[TO BE VO]Find Second Village Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //free second village
+      "onboarding_free_second_village_nudge": {
+        "title": "onboarding.free.second.village.title",
+        "message": "onboarding.free.second.village.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_free_second_village_heal_fountain": {
+        "title": "onboarding.free.second.village.heal.fountain.title",
+        "message": "onboarding.free.second.village.heal.fountain.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_free_second_village_intro_vo": {
+        "message": "[TO BE VO]Free Second Village Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_free_second_village_reminder_vo": {
+        "message": "[TO BE VO]Free Second Village Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_free_second_village_complete_vo": {
+        "message": "[TO BE VO]Free Second Village Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //Village chest
+      "onboarding_open_village_chest_nudge": {
+        "title": "onboarding.open.village.chest.title",
+        "message": "onboarding.open.village.chest.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_open_village_chest_return_to_village_nudge": {
+        "title": "onboarding.open.village.chest.title",
+        "message": "onboarding.open.village.chest.return.to.village.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_onboarding_open_village_chest_intro_vo": {
+        "message": "[TO BE VO]Open Village Chest Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_onboarding_open_village_chest_reminder_vo": {
+        "message": "[TO BE VO]Open Village Chest Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_onboarding_open_village_chest_complete_vo": {
+        "message": "[TO BE VO]Open Village Chest Onboarding Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //build defenses in second village
+      "onboarding_build_defenses_in_second_village_nudge": {
+        "title": "onboarding.build.defenses.in.second.village.title",
+        "message": "onboarding.build.defenses.in.village.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_build_defenses_in_second_village_intro_vo": {
+        "message": "[TO BE VO]Build Defenses In Second Village Onboarding Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_build_defenses_in_second_village_reminder_vo": {
+        "message": "[TO BE VO]Build Defenses In Second Village Onboarding Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_build_defenses_in_second_village_complete_vo": {
+        "message": "[TO BE VO]Build Defenses In Second Village Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //first skirmish
+      "onboarding_first_skirmish_nudge": {
+        "title": "onboarding.first.skirmish.title",
+        "message": "onboarding.first.skirmish.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_first_skirmish_abandoned_nudge": {
+        "title": "onboarding.first.skirmish.abandoned.title",
+        "message": "onboarding.first.skirmish.abandoned.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_first_skirmish_repiar_nudge": {
+        "title": "onboarding.first.skirmish.repair.title",
+        "message": "onboarding.first.skirmish.repair.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_first_skirmish_intro_vo": {
+        "message": "[TO BE VO]First Skirmish Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_first_skirmish_reminder_vo": {
+        "message": "[TO BE VO]First Skirmish Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_first_skirmish_complete_vo": {
+        "message": "[TO BE VO]First Skirmish Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //three piglin camps
+      "onboarding_three_piglin_camps_nudge_3": {
+        "title": "onboarding.three.piglin.camps.3.title",
+        "message": "onboarding.three.piglin.camps.3.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_nudge_2": {
+        "title": "onboarding.three.piglin.camps.2.title",
+        "message": "onboarding.three.piglin.camps.2.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_nudge_2_bannerview": {
+        "title": "onboarding.three.piglin.camps.2.title",
+        "message": "onboarding.three.piglin.camps.2.bannerview.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_nudge_1": {
+        "title": "onboarding.three.piglin.camps.1.title",
+        "message": "onboarding.three.piglin.camps.1.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_nudge_1_bannerview": {
+        "title": "onboarding.three.piglin.camps.1.title",
+        "message": "onboarding.three.piglin.camps.1.bannerview.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_nether": {
+        "title": "onboarding.three.piglin.nether.title",
+        "message": "onboarding.three.piglin.nether.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_lava": {
+        "title": "onboarding.three.piglin.lava.title",
+        "message": "onboarding.three.piglin.lava.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_lava_gates_destroyed": {
+        "title": "onboarding.three.piglin.lava.title",
+        "message": "onboarding.three.piglin.lava.gates.destroyed.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_lava_ramp_built": {
+        "title": "onboarding.three.piglin.lava.title",
+        "message": "onboarding.three.piglin.lava.ramp.built.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_three_piglin_camps_towers": {
+        "title": "onboarding.three.piglin.towers.title",
+        "message": "onboarding.three.piglin.towers.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_bannerview_one_mob": {
+        "title": "onboarding.bannerview.onemob.title",
+        "message": "onboarding.bannerview.onemob.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_bannerview_multiple_mobs": {
+        "title": "onboarding.bannerview.multiplemobs.title",
+        "message": "onboarding.bannerview.multiplemobs.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_bannerview_typeselect": {
+        "title": "onboarding.bannerview.typeselect.title",
+        "message": "onboarding.bannerview.typeselect.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_bannerview_charge_focus": {
+        "title": "onboarding.bannerview.charge.focus.title",
+        "message": "onboarding.bannerview.charge.focus.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_three_piglin_camps_intro_vo": {
+        "message": "[TO BE VO]Three Piglin Camps Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_three_piglin_camps_reminder_vo": {
+        "message": "[TO BE VO]Three Piglin Camps Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_three_piglin_camps_first_destroyed_vo": {
+        "message": "[TO BE VO]Three Piglin Camps - First Camp Destroyed VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_three_piglin_camps_second_destroyed_vo": {
+        "message": "[TO BE VO]Three Piglin Camps - Second Camp Destroyed VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_three_piglin_camps_complete_vo": {
+        "message": "[TO BE VO]Three Piglin Camps Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //second skirmish
+      "onboarding_second_skirmish_nudge": {
+        "title": "onboarding.second.skirmish.title",
+        "message": "onboarding.second.skirmish.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_second_skirmish_arrived_nudge": {
+        "title": "onboarding.second.skirmish.arrived.title",
+        "message": "onboarding.second.skirmish.arrived.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_second_skirmish_intro_vo": {
+        "message": "[TO BE VO]Second Skirmish Intro VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_second_skirmish_reminder_vo": {
+        "message": "[TO BE VO]Second Skirmish Reminder VO",
+        "priority": 2,
+        "display_time": 8
+      },
+      "placeholder_second_skirmish_complete_vo": {
+        "message": "[TO BE VO]Second Skirmish Complete VO",
+        "priority": 2,
+        "display_time": 5
+      },
+      //world map onboarding
+      "onboarding_world_map_nudge": {
+        "title": "onboarding.world.map.title",
+        "message": "onboarding.world.map.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //compass hud onboarding
+      "onboarding_compass_hud_nudge": {
+        "title": "onboarding.compass.hud.title",
+        "message": "onboarding.compass.hud.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //destroy piglin base onboarding
+      "onboarding_destroy_piglin_base_nudge": {
+        "title": "onboarding.destroy.piglin.base.title",
+        "message": "onboarding.destroy.piglin.base.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //spawn reminder
+      "onboarding_spawn_reminder_nudge": {
+        "title": "onboarding.spawn.reminder.title",
+        "message": "onboarding.spawn.reminder.nudge",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //hero direct onboarding
+      "onboarding_hero_direct_nudge": {
+        "title": "onboarding.hero.direct.title",
+        "message": "onboarding.hero.direct.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "placeholder_hero_direct_intro_vo": {
+        "message": "Host VO: You can also tell your Allies to head towards a direction with your Banner of Command. Why don't you get them to run to the Red Platform?",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_hero_direct_reminder_vo": {
+        "message": "Host VO: Use you Banner Direct to get your allies to the Red Platform. They're looking to your for direction.",
+        "priority": 2,
+        "display_time": 10
+      },
+      "placeholder_hero_direct_completed_vo": {
+        "message": "Host VO: See that wasn't so hard!",
+        "priority": 2,
+        "display_time": 5
+      },
+      //resource drop onboarding
+      "onboarding_resource_drop_nudge": {
+        "title": "onboarding.resource.drop.title",
+        "message": "onboarding.resource.drop.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //loot reminder onboarding
+      "onboarding_loot_reminder": {
+        "title": "onboarding.loot.reminder.title",
+        "message": "onboarding.loot.reminder.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //well of fate onboarding
+      "onboarding_return_to_well_of_fate_nudge": {
+        "title": "onboarding.return.to.well.of.fate.title",
+        "message": "onboarding.return.to.well.of.fate.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_at_well_of_fate_nudge": {
+        "title": "onboarding.at.well.of.fate.title",
+        "message": "onboarding.at.well.of.fate.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_build_iron_upgrade_nudge": {
+        "title": "onboarding.build.iron.upgrade.title",
+        "message": "onboarding.build.iron.upgrade.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //find and destroy second base
+      "onboarding_find_and_destroy_second_piglin_base": {
+        "title": "onboarding.find.and.destroy.second.base.title",
+        "message": "onboarding.find.and.destroy.second.base.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_find_and_destroye_dbb": {
+        "title": "onboarding.find.and.destroy.dbb.base.title",
+        "message": "onboarding.find.and.destroy.dbb.base.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_build_outpost_dbb": {
+        "title": "onboarding.build.outpost.dbb.title",
+        "message": "onboarding.build.outpost.dbb.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_destroy_dbb_after_outpost_built": {
+        "title": "onboarding.destroy.dbb.after.outpost.built.title",
+        "message": "onboarding.destroy.dbb.after.outpost.built.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_destroy_dbb_no_outpost_built": {
+        "title": "onboarding.destroy.dbb.no.outpost.built.title",
+        "message": "onboarding.destroy.dbb.no.outpost.built.nudge",
+        "priority": 6,
+        "display_time": 20,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      //===== Act1 failure states =====
+      "onboarding_act1_first_skirmish_village_fountain_damaged": {
+        "message": "onboarding.act1.first.skirmish.village.fountain.damaged",
+        "priority": 2,
+        "display_time": 10.0,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_biggest_banner_neg",
+        "is_alert": true
+      },
+      "onboarding_act1_player_ran_out_of_lapis": {
+        "message": "onboarding.act1.player.ran.out.of.lapis",
+        "priority": 2,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "onboarding_mobAlliance_lure_unlocked": {
+        "title": "onboarding.mob.alliance.lure.unlocked.title",
+        "message": "onboarding.mob.alliance.lure.unlocked.nudge",
+        "priority": 6,
+        "display_time": 10.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_village_destroyed": {
+        "title": "onboarding.village.destroyed.title",
+        "message": "onboarding.village.destroyed.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_act2_upgrading": {
+        "title": "onboarding.act2.upgrading.title",
+        "message": "onboarding.act2.upgrading.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_village_rewards": {
+        "title": "onboarding.village.rewards.title",
+        "message": "onboarding.village.rewards.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_mob_occupation": {
+        "title": "onboarding.mob.occupation.title",
+        "message": "onboarding.mob.occupation.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_mob_allegiance_lost": {
+        "title": "onboarding.mob.allegiance.lost.title",
+        "message": "onboarding.mob.allegiance.lost.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_village_attack_planned_regular": {
+        "title": "onboarding.village.attack.planned.regular.title",
+        "message": "onboarding.village.attack.planned.regular.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_village_attack_planned_mob_alliance": {
+        "title": "onboarding.village.attack.planned.mob.alliance.title",
+        "message": "onboarding.village.attack.planned.mob.alliance.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_village_attack_planned_player_outpost": {
+        "title": "onboarding.village.attack.planned.player.outpost.title",
+        "message": "onboarding.village.attack.planned.player.outpost.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_village_attack_advanced_direct": {
+        "title": "onboarding.village.attack.advanced_direct.title",
+        "message": "onboarding.village.attack.advanced_direct.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_map_resources": {
+        "title": "onboarding.map.resources.title",
+        "message": "onboarding.map.resources.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "onboarding_map_objectives": {
+        "title": "onboarding.map.objectives.title",
+        "message": "onboarding.map.objectives.nudge",
+        "priority": 6,
+        "display_time": 15,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "piglin_base_wof_boss_objective": {
+        "title": "faction.piglin_wof_faction.message_title",
+        "message": "faction.piglin_wof_faction.message_text",
+        "priority": 6,
+        "display_time": 20.0,
+        "persist": true,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      }
+    },
+    // id: If notification, must match message name from above data,
+    // type: 0 = notification, 1 = animation, 2 = subtitle
+    // duration: Time in seconds to display notif or play animation
+    // If no duration provided for notification, display_time from message data will be used
+    "hud_event_sequences": {
+      "resource_first_discovered": [
+        // works
+        {
+          "id": "resource_discovered",
+          "type": 0
+        },
+        {
+          "id": "resource_reveal",
+          "type": 1,
+          "duration": 3
+        },
+        {
+          "id": "unlock_recipe",
+          "type": 0
+        }
+      ],
+      "poiAlly1_unlock_sequence": [
+        // works
+        {
+          "id": "poi_ally_01_unlock",
+          "type": 0
+        },
+        {
+          "id": "poi_ally_01_unlock_bonus",
+          "type": 0
+        }
+      ],
+      "poiAlly2_unlock_sequence": [
+        // works
+        {
+          "id": "poi_ally_02_unlock",
+          "type": 0
+        },
+        {
+          "id": "poi_ally_02_unlock_bonus",
+          "type": 0
+        }
+      ],
+      "poiAlly4_unlock_sequence": [
+        // works
+        {
+          "id": "poi_ally_04_unlock",
+          "type": 0
+        },
+        {
+          "id": "poi_ally_04_unlock_bonus",
+          "type": 0
+        }
+      ],
+      "poiAlly5_unlock_sequence": [
+        // works
+        {
+          "id": "poi_ally_05_unlock",
+          "type": 0
+        },
+        {
+          "id": "poi_ally_05_unlock_bonus",
+          "type": 0
+        }
+      ],
+      "invasion_intentions_drawn_sequence": [
+        // When Piglins arrive, announce then prompt to look at map
+        {
+          "id": "invasion_intentions_drawn",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "invasion_check_map_set_strategy",
+          "type": 0
+        }
+      ],
+      "invasion_actions_executed_sequence": [
+        // When Piglins arrive, announce then prompt to look at map
+        {
+          "id": "invasion_actions_executed",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "invasion_check_map_consequences",
+          "type": 0
+        }
+      ],
+      "invasion_horde_all_first_night_sequence": [
+        // works
+        {
+          "id": "invasion_horde_all_first_night",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "invasion_check_map_arrived",
+          "type": 0
+        }
+      ],
+      "invasion_outpost_base_destroyed_attack_sequence": [
+        //Invasion sequences //invasion_reward_outpost_attack //invasion_reward_outpost_obstacle //invasion_reward_outpost_frost
+        {
+          "id": "invasion_outpost_base_destroyed_attack",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "act1_outpost_base_destroyed_sequence": [ //Invasion sequences //invasion_reward_outpost_attack //invasion_reward_outpost_obstacle //invasion_reward_outpost_frost
+        {
+          "id": "act1_outpost_base_destroyed",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 10
+        }
+      ],
+      "invasion_outpost_base_destroyed_defend_sequence": [
+        {
+          "id": "invasion_outpost_base_destroyed_defend",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_outpost_base_destroyed_obstacle_sequence": [
+        {
+          "id": "invasion_outpost_base_destroyed_obstacle",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_outpost_base_destroyed_frost_sequence": [
+        {
+          "id": "invasion_outpost_base_destroyed_frost",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_small_base_destroyed_attack_sequence": [
+        //Invasion sequences - small bases
+        {
+          "id": "invasion_small_base_destroyed_attack",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_small_base_destroyed_defend_sequence": [
+        {
+          "id": "invasion_small_base_destroyed_defend",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_small_base_destroyed_obstacle_sequence": [
+        {
+          "id": "invasion_small_base_destroyed_obstacle",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_small_base_destroyed_frost_sequence": [
+        {
+          "id": "invasion_small_base_destroyed_frost",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_medium_base_destroyed_attack_sequence": [
+        //Invasion sequences - medium bases
+        {
+          "id": "invasion_medium_base_destroyed_attack",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_medium_base_destroyed_defend_sequence": [
+        {
+          "id": "invasion_medium_base_destroyed_defend",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_medium_base_destroyed_obstacle_sequence": [
+        {
+          "id": "invasion_medium_base_destroyed_obstacle",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_medium_base_destroyed_frost_sequence": [
+        {
+          "id": "invasion_medium_base_destroyed_frost",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_large_base_destroyed_attack_sequence": [
+        //Invasion sequences - large bases
+        {
+          "id": "invasion_large_base_destroyed_attack",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_large_base_destroyed_defend_sequence": [
+        {
+          "id": "invasion_large_base_destroyed_defend",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_large_base_destroyed_obstacle_sequence": [
+        {
+          "id": "invasion_large_base_destroyed_obstacle",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_large_base_destroyed_frost_sequence": [
+        {
+          "id": "invasion_large_base_destroyed_frost",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_boss_base_destroyed_attack_sequence": [
+        //Invasion sequences - boss bases
+        {
+          "id": "invasion_boss_base_destroyed_attack",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_boss_base_destroyed_defend_sequence": [
+        {
+          "id": "invasion_boss_base_destroyed_defend",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_boss_base_destroyed_obstacle_sequence": [
+        {
+          "id": "invasion_boss_base_destroyed_obstacle",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      "invasion_boss_base_destroyed_frost_sequence": [
+        {
+          "id": "invasion_boss_base_destroyed_frost",
+          "type": 0,
+          "duration": 5
+        },
+        {
+          "id": "resource_reward",
+          "type": 1,
+          "duration": 5
+        }
+      ],
+      // ======================= VILLAGE ATTACK ==========================
+      "village_attack_overtime_begin_sequence": [
+        {
+          "id": "COL_024_village_clear_piglins",
+          "type": 2,
+          "duration": 5
+        },
+        {
+          "id": "village_attack_clear_all_piglins",
+          "type": 0
+        }
+      ],
+      // ======================= VILLAGE OCCUPATION ==========================
+      "village_attack_occupation_end_creepers_sequence": [
+        {
+          "id": "village_attack_occupation_end_creepers",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "village_occupation_free_creepers_reminder",
+          "type": 0,
+          "duration": 10
+        }
+      ],
+      "village_attack_occupation_end_skeletons_sequence": [
+        {
+          "id": "village_attack_occupation_end_skeletons",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "village_occupation_free_skeletons_reminder",
+          "type": 0,
+          "duration": 10
+        }
+      ],
+      "village_attack_occupation_end_spiders_sequence": [
+        {
+          "id": "village_attack_occupation_end_spiders",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "village_occupation_free_spiders_reminder",
+          "type": 0,
+          "duration": 10
+        }
+      ],
+      "village_attack_occupation_end_zombie_sequence": [
+        {
+          "id": "village_attack_occupation_end_zombies",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "village_occupation_free_zombies_reminder",
+          "type": 0,
+          "duration": 10
+        }
+      ],
+      "village_attack_occupation_end_villagers_sequence": [
+        {
+          "id": "village_attack_occupation_end_villagers",
+          "type": 0,
+          "duration": 10
+        }
+      ]
+    }
+  }
+}

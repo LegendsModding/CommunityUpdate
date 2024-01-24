@@ -1,0 +1,177 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:poi_tower_05",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:buildable_presentation": {
+                "icon": "poi_tower_05",
+                "tooltip_title": "structures.tower.poi.05.name",
+                "tactical_description": "structures.tower.poi.05.tactical_description",
+                "tooltip_description": "structures.tower.poi.05.description",
+                "buildable_category": "",
+                "sort_order": 3181
+            },
+            "badger:buildable_requirement": {
+                "recipe": [
+                    {
+                        "item": "poi_tower_05_resource",
+                        "amount": 1
+                    }
+                ],
+                "ticket_cost": [
+                    {
+                        "ticket": "build",
+                        "amount": 1
+                    }
+                ],
+                "invalid_blocks": [],
+                "invalid_block_tags": [
+                    "water",
+                    "lava",
+                    "netherrack",
+                    "gatherable_denether",
+                    "piglin_base_not_buildable",
+                    "barrier",
+                    "world_hazard"
+                ]
+            },
+            "badger:rewards": {
+                "reward": [
+                    {
+                        "item": "ui_tracking_poi_tower_05",
+                        "amount": 1
+                    }
+                ]
+            },
+            "badger:buildable_structure": {
+                "nbt_file": "poi_tower_05",
+                "build_time": 10,
+                "construction_start_trigger": "on_construction_start",
+                "construction_end_trigger": "on_construction_end",
+                "buildable_placed_player_trigger": "on_building_poi_tower_05"
+            },
+            "badger:offline_traits": {
+                "offline_disabled_components": [
+                    "badger:culture"
+                ],
+                "construction_disabled_components": [
+                    "badger:culture"
+                ]
+            },
+            "badger:culture": {
+                "base_culture_a": 1400
+            },
+            "badger:map_controller": {
+                "initial_key_values": [
+                    {
+                        "key": "buildable",
+                        "value": "poi_tower_05"
+                    },
+                    {
+                        "key": "visibility",
+                        "value": "hidden"
+                    }
+                ]
+            },
+            "badger:health": {
+                "max_health": 600000000
+            },
+            "badger:action_tickets": {
+                "action_tickets": {
+                    "cc": 26,
+                    "rc": 26
+                }
+            },
+            "badger:buildable_destruction": {
+                "particle_effect": "badger:fx_destruction_stone_medium"
+            },
+            "badger:tags": {
+                "tags": [
+                    "buildable",
+                    "buildable_combat",
+                    "buildable_structure",
+                    "structure",
+                    "tower",
+                    "poi_tower_05",
+                    "burnTower",
+                    "tier3PlayerStructure",
+                    "poi_tower"
+                ]
+            },
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 0.0,
+                "waypoint_max_range": 0.0,
+                "compass_max_range": "short"
+            },
+            "badger:waypoint_marker": {
+                "path": "waypoint_poi_tower_05",
+                "label": "poi.tower_village_05.name",
+                "world_position_offset": [
+                    0,
+                    5,
+                    0
+                ],
+                "priority": 0
+            },
+            "badger:invasion_defense_value": {
+                "defense_value": 1000,
+                "defense_multiplier": {
+                    "key": "frost_tower",
+                    "value": 1.1
+                }
+            },
+            "badger:interactable": {
+                "interactions": [
+                    {
+                        "name": "interaction_zone",
+                        "range": 8.0,
+                        "delay": 1,
+                        "include_tags": [
+                            "player"
+                        ],
+                        "exclude_tags": [],
+                        "alliance_rule_filter": "friendly",
+                        "input_layout_override": "overlay_gameplay_interaction_poi_tower"
+                    }
+                ]
+            },
+            "badger:telemetry_category": {
+                "category_name": "Player Structure"
+            },
+            "badger:village_influence": {
+                "amount": 20
+            },
+            "badger:deconstruction": {
+                "deconstruct_time_percent": 1,
+                "resource_refund_percent": 1,
+                "isIndestructable": false,
+                "unlock": [
+                    {
+                        "item": "unlock_poi_tower_resource",
+                        "amount": 1
+                    }
+                ],
+                "resource_cost": [
+                    {
+                        "item": "gold",
+                        "amount": 100
+                    },
+                    {
+                        "item": "diamond",
+                        "amount": 25
+                    }
+                ],
+                "ticket_cost": []
+            },
+            "badger:template": [
+                "badger:template_poi_tower",
+                "badger:component_generate_ruins_default",
+                "badger:template_structure_stone_player"
+            ]
+        }
+    }
+}

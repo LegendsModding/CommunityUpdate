@@ -1,0 +1,60 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_disruptor": {
+      "arrays": {
+        "geometries": {
+          "Array.geo": ["Geometry.attack","Geometry.defend","Geometry.obstacle","Geometry.frost","Geometry.second_skin"]
+        }
+      },
+      "geometry": "Array.geo[variable.model_chooser]",
+      "materials":  [
+        {
+          "mat_piglin_disruptor_obstacle": "MetaMaterial.mat_piglin_disruptor_obstacle"
+        },
+        {
+          "mat_piglin_disruptor_obstacle_face": "MetaMaterial.mat_piglin_disruptor_obstacle_face"
+        },
+        {
+          "mat_piglin_disruptor_frost": "MetaMaterial.mat_piglin_disruptor_frost"
+        },
+        {
+          "mat_piglin_disruptor_frost_face": "MetaMaterial.mat_piglin_disruptor_frost_face"
+        },
+        {
+          "mat_piglin_disruptor_attack": "MetaMaterial.mat_piglin_disruptor_attack"
+        },
+        {
+          "mat_piglin_disruptor_attack_face": "MetaMaterial.mat_piglin_disruptor_attack_face"
+        },
+        {
+          "mat_piglin_disruptor_defend_face": "MetaMaterial.mat_piglin_disruptor_defend_face"
+        },
+        {
+          "mat_piglin_disruptor_defend": "MetaMaterial.mat_piglin_disruptor_defend"
+        },
+        {
+          "mat_fx_frozen_128": "MetaMaterial.mat_fx_frozen_128"
+        }
+      ]
+    },
+    "controller.render.piglin_disruptor.second_skin": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_128","MetaMaterial.mat_fx_frozen_128"]
+        }
+      },
+      "geometry": "Geometry.second_skin",
+      "materials":  [
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

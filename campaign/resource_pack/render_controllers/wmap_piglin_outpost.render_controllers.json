@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_piglin_outpost": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_wmap_piglin_outpost_attack","MetaMaterial.mat_wmap_piglin_outpost_defend","MetaMaterial.mat_wmap_piglin_outpost_obstacle","MetaMaterial.mat_wmap_piglin_outpost_frost"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_piglin_outpost_attack": "Array.materials[variable.horde]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

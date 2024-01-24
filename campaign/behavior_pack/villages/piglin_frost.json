@@ -1,0 +1,105 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_frost",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:village": {
+        "name": "Piglin Frost"
+      },
+      "badger:village_district_path": {
+        "path_blocks": [],
+        "path_width": 6,
+        "path_noise_scale_factor": 0.0,
+        "path_noise_amplitude": 0.0,
+        "diagonal_path_degree_tolerance": 60,
+        "can_place_bridge_for_height_changes": true,
+        "height_change_needs_bridge": 1,
+        "prevent_buildable_placement": false,
+        "can_plan_under_buildables": true,
+        "can_place_under_buildables": false,
+        "can_reuse_existing_paths": true
+      },
+      "badger:village_bridge": {
+        "bridge_id": "badger:chunk_piglin_bridge",
+        "bridge_cost_per_meter": 0,
+        "bridge_horizontal_distance_min": 1.0,
+        "bridge_horizontal_distance_max": 50.0,
+        "bridge_vertical_distance_max": 10,
+        "diagonal_bridge_degree_tolerance": 50
+      },
+      "badger:village_building_placement": {
+      },
+      "badger:village_hanging_decoration_placement": {
+        "minimum_edge_width": 3.0,
+        "minimum_height_delta": 3.0
+      },
+      "badger:village_wall": {
+        "wall_offset": 3.0
+      },
+      "badger:village_zone": {
+        "expansion_distance": 250.0,
+        "zone_jitter_min": 0.0,
+        "zone_jitter_max": 7.0,
+        "is_zone_jitter_bell_curve_enabled": false,
+        "zone_spacing": 16.0,
+        "water_search_resolution": 20.0,
+        "is_hexagonal_grid_enabled": true
+      },
+      "badger:village_zone_scoring": {
+        "close_to_easing": "linear",
+        "far_from_easing": "linear",
+        "direction_easing": "linear",
+        "close_to_wall_easing": "linear",
+        "spacing_easing": "linear",
+        "close_to_weight": 1.9,
+        "far_from_weight": 1.0,
+        "direction_weight": 0.5,
+        "close_to_wall_weight": 0.8,
+        "random_weight": 0.2,
+        "elevation_weight": 0.0,
+        "distance_from_weight": 1.0
+      },
+      "badger:village_height_change": {
+        "clamp_size": 3.0
+      },
+      "badger:village_weathering": {
+        "is_overhanging_edge": true,
+        "position_noise_scale": 0.6,
+        "wave_depth_max": 5,
+        "wave_depth_min": 0.3,
+        "wave_period_scale": 0.8,
+        "wave_noise_scale": 0.2,
+        "gradient_passes": [
+          {
+            "gradient_depths": [6.0, 4.0, 3.0, 0.8],
+            "gradient_weight_heights": [0.2, 0.4, 0.7, 0.9],
+            "gradient_2d_noise_scale": 2.8,
+            "gradient_3d_noise_scale": 0.5,
+            "gradient_affected_by_wave": true
+          },
+          {
+            "gradient_depths": [3.0, 0.8],
+            "gradient_weight_heights": [0.1, 0.3],
+            "gradient_2d_noise_scale": 1.8,
+            "gradient_3d_noise_scale": 0.2,
+            "gradient_affected_by_wave": false
+          },
+          {
+            "gradient_depths": [3.0, 2.0],
+            "gradient_weight_heights": [0.1, 0.2],
+            "gradient_2d_noise_scale": 1.8,
+            "gradient_3d_noise_scale": 0.2,
+            "gradient_affected_by_wave": false
+          }
+        ]
+      },
+      "badger:village_bounds_trigger_volume_size": {
+				"padding": 30
+			},
+      "badger:template": "badger:template_village_piglin"
+    }
+  }
+}

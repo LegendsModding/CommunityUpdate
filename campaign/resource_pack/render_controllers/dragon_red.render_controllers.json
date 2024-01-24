@@ -1,0 +1,26 @@
+{
+  "render_controllers": {
+    "controller.render.dragon_red": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_256","MetaMaterial.mat_fx_frozen_256","MetaMaterial.mat_fx_spore_damaged_256","MetaMaterial.mat_fx_cauldron_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_dragon_red": "MetaMaterial.mat_dragon_red"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

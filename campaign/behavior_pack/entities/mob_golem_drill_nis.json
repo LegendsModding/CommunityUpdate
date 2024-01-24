@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_drill_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:entity_collision": {},
+      "badger:aabb": {
+        "height": 4.54689147949,
+        "length": 1.26938148499,
+        "width": 2.06250244141
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "mob_golem_drill_nis",
+          "poi_golem_body"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 4,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_poi_golem_interaction_hold"
+          }
+        ]
+      },
+      "badger:bsharp_interact_cost": {
+        "resource_cost": [
+          {
+            "item": "gold",
+            "amount": 100
+          },
+          {
+            "item": "coal",
+            "amount": 125
+          }
+        ],
+        "unlock": {
+          "item": "unlock_poi_golem_resource",
+          "amount": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:prop_piglin_goldmine",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_requirement": {
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "prop_piglin_goldmine",
+        "build_time": 60,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "prop_piglin_defend_goldmine",
+          "faction.pig.attack": "prop_piglin_attack_goldmine",
+          "faction.pig.dbb": "prop_piglin_attack_goldmine",
+          "faction.pig.wof": "prop_piglin_attack_goldmine",
+          "faction.pig.obstacle": "prop_piglin_obstacle_goldmine",
+          "faction.pig.frost": "prop_piglin_frost_goldmine"
+        }
+      },
+      "badger:buildable_foundation": {
+        "nbt_file": "prop_piglin_goldmine_foundation",
+        "offset": 3,
+        "faction_variations": {
+          "faction.pig.defend": "prop_piglin_defend_goldmine_foundation",
+          "faction.pig.attack": "prop_piglin_attack_goldmine_foundation",
+          "faction.pig.obstacle": "prop_piglin_obstacle_goldmine_foundation",
+          "faction.pig.dbb": "prop_piglin_attack_goldmine_foundation",
+          "faction.pig.frost": "prop_piglin_frost_goldmine_foundation"
+          
+        } 
+      },
+      "badger:health": {
+        "max_health": 50
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+            [
+                0,
+                5,
+                -2
+            ]
+        ]
+    },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_small"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:template_structure_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "pigGoldMine",
+          "piglin"
+        ]
+      },
+      "badger:loot": {
+        "table": "piglin_goldmine"
+      }
+    }
+  }
+}

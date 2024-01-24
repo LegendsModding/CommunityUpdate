@@ -1,0 +1,99 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {
+      },
+      "badger:map_icon_offset": {
+        "test": 0,
+        "x": 0,
+        "y": 30,
+        "z": -2
+      },
+      "badger:presentation_event": {
+        "attack_offset": {
+          "script": "attack_offset"
+        },
+        "boss_attack": {
+          "script": "boss_attack"
+        },
+        "boss_defend": {
+          "script": "boss_defend"
+        },
+        "boss_obstacle": {
+          "script": "boss_obstacle"
+        },
+        "boss_frost": {
+          "script": "boss_frost"
+        },
+        "horde_attack": {
+          "script": "attack"
+        },
+        "horde_defend": {
+          "script": "defend"
+        },
+        "horde_obstacle": {
+          "script": "obstacle"
+        },
+        "horde_frost": {
+          "script": "frost"
+        },
+        "on_attack": {
+          "script": "on_attack"
+        },
+        "on_new": {
+          "script": "on_new"
+        },
+        "on_oops": {
+          "script": "on_oops"
+        },
+        "on_upgrade": {
+          "script": "on_upgrade"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_base_state_banner"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "event_scripts": {
+        "attack": "variable.banner_state = 7;",
+        "boss_attack": "variable.banner_state = 4;",
+        "boss_defend": "variable.banner_state = 5;",
+        "boss_obstacle": "variable.banner_state = 6;",
+        "boss_frost": "variable.banner_state = 10;",
+        "defend": "variable.banner_state = 8;",
+        "obstacle": "variable.banner_state = 9;",
+        "frost": "variable.banner_state = 11;",
+        "on_attack": "variable.banner_state = 2;",
+        "on_new": "variable.banner_state = 1;",
+        "on_oops": "variable.banner_state = 3;",
+        "on_upgrade": "variable.banner_state = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_base_state_banner"
+      },
+      "identifier": "badger:wmap_base_state_banner",
+      "materials": {
+        "mat_wmap_base_state_banner_attack": "mat_wmap_base_state_banner_attack",
+        "mat_wmap_base_state_banner_boss_attack": "mat_wmap_base_state_banner_boss_attack",
+        "mat_wmap_base_state_banner_boss_defend": "mat_wmap_base_state_banner_boss_defend",
+        "mat_wmap_base_state_banner_boss_obstacle": "mat_wmap_base_state_banner_boss_obstacle",
+        "mat_wmap_base_state_banner_boss_frost": "mat_wmap_base_state_banner_boss_frost",
+        "mat_wmap_base_state_banner_chevron": "mat_wmap_base_state_banner_chevron",
+        "mat_wmap_base_state_banner_defend": "mat_wmap_base_state_banner_defend",
+        "mat_wmap_base_state_banner_exclamation": "mat_wmap_base_state_banner_exclamation",
+        "mat_wmap_base_state_banner_obstacle": "mat_wmap_base_state_banner_obstacle",
+        "mat_wmap_base_state_banner_frost": "mat_wmap_base_state_banner_frost",
+        "mat_wmap_base_state_banner_sword": "mat_wmap_base_state_banner_sword",
+        "mat_wmap_base_state_banner_x": "mat_wmap_base_state_banner_x"
+      },
+      "render_controllers": ["controller.render.wmap_base_state_banner"],
+      "scripts": {
+        "initialize": ["variable.banner_state = 0;","variable.map_offset_x = -8;"]
+      }
+    }
+  }
+}

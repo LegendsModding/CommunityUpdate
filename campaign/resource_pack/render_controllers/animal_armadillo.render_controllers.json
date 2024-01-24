@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_armadillo": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_armadillo": "MetaMaterial.mat_animal_armadillo"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

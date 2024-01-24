@@ -1,0 +1,74 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_engineer": {
+      "arrays": {
+        "geometries": {
+          "Array.geo": ["Geometry.attack","Geometry.defend","Geometry.obstacle","Geometry.frost","Geometry.second_skin"]
+        }
+      },
+      "geometry": "Array.geo[variable.model_chooser]",
+      "materials":  [
+        {
+          "mat_piglin_engineer_defend": "MetaMaterial.mat_piglin_engineer_defend"
+        },
+        {
+          "mat_piglin_engineer_defend_face": "MetaMaterial.mat_piglin_engineer_defend_face"
+        },
+        {
+          "mat_piglin_engineer_attack": "MetaMaterial.mat_piglin_engineer_attack"
+        },
+        {
+          "mat_piglin_engineer_attack_face": "MetaMaterial.mat_piglin_engineer_attack_face"
+        },
+        {
+          "mat_piglin_engineer_obstacle": "MetaMaterial.mat_piglin_engineer_obstacle"
+        },
+        {
+          "mat_piglin_engineer_obstacle_face": "MetaMaterial.mat_piglin_engineer_obstacle_face"
+        },
+        {
+          "mat_piglin_engineer_frost": "MetaMaterial.mat_piglin_engineer_frost"
+        },
+        {
+          "mat_piglin_engineer_frost_face": "MetaMaterial.mat_piglin_engineer_frost_face"
+        },
+        {
+          "mat_fx_frozen_128": "MetaMaterial.mat_fx_frozen_128"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "attack_grenade": "variable.attack_grenade_vis"
+        },
+        {
+          "defend_grenade": "variable.defend_grenade_vis"
+        },
+        {
+          "obstacle_grenade": "variable.obstacle_grenade_vis"
+        },
+        {
+          "frost_grenade": "variable.frost_grenade_vis"
+        }
+      ]
+    },
+    "controller.render.piglin_engineer.second_skin": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_128","MetaMaterial.mat_fx_frozen_128"]
+        }
+      },
+      "geometry": "Geometry.second_skin",
+      "materials":  [
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

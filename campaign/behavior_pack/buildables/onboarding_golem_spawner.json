@@ -1,0 +1,110 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:onboarding_golem_spawner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:music_emitter_states": [
+        "default"
+      ],
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_piglin_attack_barracks_fighter",
+        "build_time": 1,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "spawner_piglin_defend_barracks_fighter",
+          "faction.pig.attack": "spawner_piglin_attack_barracks_fighter",
+          "faction.pig.dbb": "spawner_piglin_attack_barracks_fighter",
+          "faction.pig.obstacle": "spawner_piglin_obstacle_barracks_fighter",
+          "faction.pig.frost": "spawner_piglin_frost_barracks_fighter"
+        }
+      },
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "unlock_spawner_golemwood",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:piglin_runt",
+            "percentage": 1
+          }
+        ],
+        "has_spawn_cost": false,
+        "spawn_delay": 1.5,
+        "cap": 2,
+        "batch": 1,
+        "rate": 5,
+        "offset": [
+          0.0,
+          2.0,
+          3.0
+        ],
+        "spawning_trigger": "on_barracks_spawn",
+        "max_radius": 2,
+        "disable_wander": true,
+        "enable_recall": true
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "barracks",
+          "onboarding_golem_spawner",
+          "piglinStructure",
+          "piglin"
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "onboarding_golems"
+        ]
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_medium"
+      },
+      "badger:health": {
+        "max_health": 40
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 18,
+          "rc": 18
+        }
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            -0.5, 
+            2.5, 
+            -1.0
+          ]
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.5,
+          "player": 0.0
+        }
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_deconstruction_default",
+        "badger:component_health_generation_default"
+      ]
+    }
+  }
+}

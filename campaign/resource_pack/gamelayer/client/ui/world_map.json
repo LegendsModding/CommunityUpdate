@@ -1,0 +1,107 @@
+{
+  "map_id": "badger:wmap_map",
+  "player_icon_id": "badger:wmap_hero_ranger",
+  "teammate_icon_id": "badger:wmap_teammate",
+  "cursor_icon_id": "badger:wmap_cursor",
+  "selected_cursor_icon_id": "badger:wmap_cursor_selected",
+  "base_invasion_event": "create_base",
+  "village_damage_event": "village_damaged",
+  "village_attack_event": "attack_village",
+  "oops_invasion_event": "oops",
+  "fog_of_war_ramp": "textures/shared/tex_shared_map_gradient",
+  "biome_atlas_texture": "textures/ui/tex_ui_map_atlas_biomes.png",
+  "scale": 30.0,
+  "lights": [
+    {
+      "color": [1,0.7,0.4],
+      "falloff_power": 3,
+      "intensity": 20,
+      "offset": [0.2,0.25,0.2],
+      "radius": 1
+    }
+  ],
+  // the map's world-space location in relation to the player 
+  // it cannot be too far away or else it will affect the world streaming
+  "offset": [
+    0.0,
+    32.0,
+    0.0
+  ],
+  // (x,y,z) offset of camera from map
+  // the distance from the map controls how zoomed-in the map is and
+  // the z offset controls how much of an angle the map is shown at
+  "camera_offset": [
+    0.0,
+    0.58,
+    0.48
+  ],
+  "zoom_interp_time": 0.25,
+  "zoom_resolutions": [
+    {
+      // Zoomed-in view (closeup)
+      "cursor_max_speed": 1.0,
+      "cursor_acceleration": 5.0,
+      "cursor_drag": 8.5,
+      "cursor_max_pull": 70.0,
+      "cursor_min_pull": 60.0,
+      "cursor_select_break_delay": 0.0,
+      "cursor_select_radius": 12.0,
+      "cursor_select_radius_fast_travel": 15.0,
+      "resolution": 1024,
+
+      // controls how far the camera can pan
+      "min_camera_pan_x": -0.45,
+      "max_camera_pan_x": 0.5,
+      "min_camera_pan_z": -0.48,
+      "max_camera_pan_z": 0.52
+    },
+    {
+      // Zoomed-out view (full map)
+      "cursor_max_speed": 0.8,
+      "cursor_acceleration": 5.0,
+      "cursor_drag": 8.5,
+      "cursor_max_pull": 100.0,
+      "cursor_min_pull": 60.0,
+      "cursor_select_break_delay": 0.0,
+      "cursor_select_radius": 35.0,
+      "cursor_select_radius_fast_travel": 45.0,
+      "resolution": 256,
+
+      // if min == max, the camera will not move, which is what
+      // we want for the zoomed-out view
+      "min_camera_pan_x": 0.014,
+      "max_camera_pan_x": 0.014,
+      "min_camera_pan_z": 0.02,
+      "max_camera_pan_z": 0.02
+    }
+  ],
+
+  // For ultra-widescreen: This is the aspect ratio where the full
+  // width of the map is visible even when zoomed in. Used for
+  // interpolating the zoomed-in pan values towards the zoomed-out
+  // pan values when the screen is wider than 16:9.
+  "no_pan_aspect": 5.64,
+
+  // controls how close to the edge of the screen the cursor gets
+  // before the camera starts to pan
+  "cursor_pan_min_x": -1.45,
+  "cursor_pan_max_x": 1.04,
+  "cursor_pan_min_y": -0.75,
+  "cursor_pan_max_y": 0.75,
+
+  // cursor min/max controls how close to the edge of the screen the
+  // cursor is allowed to get (e.g. keep it inside the map border)
+  "cursor_min_x": -1.71,
+  "cursor_max_x": 1.71,
+  "cursor_min_y": -0.93,
+  "cursor_max_y": 0.93,
+
+  "camera_pan_edge_speed": 0.2,
+  "zoom_default": -1,
+  "zoom_saves": true,
+  "focus_preference": "LocalPlayer",
+  "map_seen_duration": 5.0,
+
+  "icon_switch_zooming_in": 1.0,
+  "icon_switch_zooming_out": 0.0
+}

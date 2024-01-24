@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_world_spider_conflict",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "campaign_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "conflict_mob_spawner",
+          "spawner_world_spider",
+          "mob_world_spawner"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_spider",
+            "percentage": 1
+          }
+        ],
+        "cap": 1,
+        "batch": 1,
+        "rate": 300,
+        "max_radius": 20
+      },
+      "badger:spawner_rules": {
+        "distance_rule": {
+          "distance_data": {
+            "max_distance": 200.0,
+            "alliance_rule": "friendly",
+            "tag_filter": {
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": []
+            }
+          },
+          "village_distance_data": [
+            {
+              "min_distance": 100,
+              "max_distance": 10000,
+              "horde_names": [
+                "faction.pig.attack",
+                "faction.pig.defend",
+                "faction.pig.obstacle",
+                "faction.pig.frost"
+              ],
+              "is_destroyed": false
+            }
+          ]
+        },
+        "bsharp_rule": {
+          "variable": "gv_world_spawner_spider_conflict",
+          "value": 0
+        }
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "roaming_mob",
+          "world_mob"
+        ]
+      }
+    }
+  }
+}

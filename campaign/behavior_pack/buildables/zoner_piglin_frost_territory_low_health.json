@@ -1,0 +1,43 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:zoner_piglin_frost_territory_low_health",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Military",
+            "type": "Piglin"
+        },
+        "components": {
+            "badger:waypoint_marker": {
+                "path": "waypoint_piglinbase_frost_small",
+                "label": "messages.map_marker_ping.selected.piglin.frost.small",
+                "world_position_offset": [
+                    0,
+                    3,
+                    0
+                ]
+            },
+            "badger:tags": {
+                "tags": [
+                    "buildable",
+                    "buildable_combat",
+                    "buildable_structure",
+                    "portal_piglin_large",
+                    "portal_piglin",
+                    "piglinStructure",
+                    "portalAudioTag",
+                    "UnendingFactionPortal",
+                    "cine_portal_large",
+                    "piglin"
+                ]
+            },
+            "badger:template": [
+                "badger:template_portal_piglin_low",
+                "badger:template_piglin_frost_territory"
+            ]
+        }
+    }
+}

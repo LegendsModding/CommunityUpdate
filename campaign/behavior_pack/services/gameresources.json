@@ -1,0 +1,2185 @@
+{
+  "badger:game_resources_service": {
+    "game_resources": [
+      {//This is used to gate access to witches
+        "resource": "witch_access_unlocked",
+        "category": "unlock",
+        "default_amount": 0,
+        "starting_cap": 1,
+        "show_in_ui": false
+      },
+      { //This is required as a separate resource, otherwise it overlaps with UI if its tied to say a journal entry resource
+        "resource": "witch_tutorial_unlocked",
+        "category": "unlock",
+        "default_amount": 0,
+        "starting_cap": 1,
+        "show_in_ui": false
+      },
+      {//Resource to unlock the cauldron
+        "resource": "unlock_cauldron",
+        "category": "unlock",
+        "default_amount": 0,
+        "starting_cap": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "fountain",
+        "category": "unlock",
+        "default_amount": 1,
+        "starting_cap": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "lure_cap",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 25,
+        "starting_cap": 25
+      },
+      {
+        "resource": "lure_type",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      {
+        "resource": "lure_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      {
+        "resource": "direct_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      {
+        "resource": "advanced_direct_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      {
+        "resource": "battle_view_unlock",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 1
+      },
+      {
+        "resource": "gather_uncommon_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_uncommon_resource_passive",//granted by Large WoF rare resource improvements. The amount of this resource is multiplied by the passive drip.
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_coal",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_coal_passive",//granted by Large WoF rare resource improvements. The amount of this resource is multiplied by the passive drip.
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_stone",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_wood",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_redstone",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_redstone_passive",//granted by Large WoF rare resource improvements. The amount of this resource is multiplied by the passive drip.
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_rare_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gather_rare_resource_passive",//granted by Large WoF rare resource improvements. The amount of this resource is multiplied by the passive drip.
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "clear_nether_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_redstone_launcher",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_poi_golem_resource", //this one is used for rallying
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_poi_golem_upgrade", //this resource is for the building itself, its hidden until interacting with the golem
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_poi_tower_upgrade", //this resource is for the building itself, its hidden until interacting with the tower
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      //POI Golems
+      {
+        "resource": "unlock_battle_view_fallen_warrior",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_carrier_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_drill_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_shield_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_sniper",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_poi_tower_resource",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "upgrade_carpenter",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "upgrade_mason",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_redstone_tech",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_iron_tech",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_diamond_tech",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_coal_tech",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_firsts_spawners",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_linked_village_chest",
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //core resources
+      {
+        "resource": "wood",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 1000,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      {
+        "resource": "stone",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 1000,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      {
+        "resource": "iron",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 0,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      {
+        "resource": "coal",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 0,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      {
+        "resource": "gold",
+        "type": "team",
+        "archetype_name": "badger:item_gold",
+        "stack_size": 1,
+        "default_amount": 0,
+        "starting_cap": 250,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      {
+        "resource": "diamond",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 0,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      {
+        "resource": "redstone",
+        "type": "team",
+        "default_amount": 0,
+        "starting_cap": 0,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      // PvP building limiter resources
+      {
+        "resource": "built_max_pop_cap",
+        "type": "team",
+        "default_amount": 3,
+        "show_in_ui": false,
+        "telemetry_track": false
+      },
+      //Mob Drops
+      //rare
+      {
+        "resource": "piglin_key",
+        "type": "team",
+        "archetype_name": "badger:item_piglin_crate_key",
+        "default_amount": 0,
+        "starting_cap": 5,
+        "stack_size": 5,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      //Common
+      {
+        "resource": "emerald",
+        "type": "team",
+        "archetype_name": "badger:item_lapis_lazuli",
+        "default_amount": 0,
+        "starting_cap": 250,
+        "stack_size": 5,
+        "has_hud_depleted_notification": true,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      //XP Drops
+      //Common
+      {
+        "resource": "xp_common",
+        "type": "team",
+        "archetype_name": "badger:item_prismarine",
+        "default_amount": 0,
+        "starting_cap": 250,
+        "stack_size": 1,
+        "telemetry_track": true,
+        "journal_category": "resources"
+      },
+      //POI Tower resources
+      {
+        "resource": "poi_tower_01_resource",
+        "type": "team",
+        "has_hud_notification": true,
+				"telemetry_track": true,
+				"journal_category": "resources"
+      },
+      {
+        "resource": "poi_tower_02_resource",
+        "type": "team",
+        "has_hud_notification": true,
+				"telemetry_track": true,
+				"journal_category": "resources"
+      },
+      {
+        "resource": "poi_tower_04_resource",
+        "type": "team",
+        "has_hud_notification": true,
+				"telemetry_track": true,
+				"journal_category": "resources"
+      },
+      {
+        "resource": "poi_tower_05_resource",
+        "type": "team",
+        "has_hud_notification": true,
+				"telemetry_track": true,
+				"journal_category": "resources"
+      },
+      //Trebuchet Unlock
+      {
+        "resource": "unlock_spawner_trebuchet",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      //Quest Rewards
+      //Horse unlock
+      {
+        "resource": "unlock_quest_mount_00",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      //Tiger unlock
+      {
+        "resource": "unlock_quest_mount_01",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      //Giant Beetle Unlock
+      {
+        "resource": "unlock_quest_mount_03",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      //Terror Bird Unlock
+      {
+        "resource": "unlock_quest_mount_04",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      //Giant Frog Unlock
+      {
+        "resource": "unlock_quest_mount_06",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      //Camel Unlock
+      {
+        "resource": "unlock_quest_mount_07",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      // Creeper
+      {
+        "resource": "unlock_creeper_crown",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_player_spawner_creeper",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_creeper",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_creeper",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_creeper_pvp",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_creeper_rally",
+        "category": "unlock",
+        "show_in_ui": false,
+        "telemetry_track": true
+      },
+      // Skeleton
+      {
+        "resource": "unlock_player_spawner_skeleton",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_skeleton",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_skeleton",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_skeleton_pvp",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_skeleton_rally",
+        "category": "unlock",
+        "show_in_ui": false,
+        "telemetry_track": true
+      },
+      //Spider
+      {
+        "resource": "unlock_player_spawner_spider",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_spider",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_spider",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_spider_pvp",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spider_rally",
+        "category": "unlock",
+        "show_in_ui": false,
+        "telemetry_track": true
+      },
+      // Zombie
+      {
+        "resource": "unlock_player_spawner_zombie",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_zombie",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_zombie",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_zombie_pvp",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_zombie_thing",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_zombie_rally",
+        "category": "unlock",
+        "show_in_ui": false,
+        "telemetry_track": true
+      },
+      {
+        "resource": "unlock_player_spawner_wolf",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_wolf",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      //Support Golem
+      {
+        "resource": "unlock_player_spawner_support",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_support",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_support",
+        "category": "unlock",
+        "default_amount": 0, //remove when campaign granting is finished
+        "show_in_ui": false
+      },
+      //Wood Golem
+      {
+        "resource": "unlock_player_spawner_golemwood",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_golemwood",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //Stone Golem
+      {
+        "resource": "unlock_player_spawner_golemstone",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_golemstone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //Cavalry Golem
+      {
+        "resource": "unlock_spawner_golemcavalry",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_player_spawner_golemcavalry",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_golemcavalry",
+        "category": "unlock",
+        "default_amount": 0, //remove when campaign granting is finished
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_allegiance_structure",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_vindicator",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_vindicator",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_witch",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_village_flag",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_allay_gather_and_build",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_prismarine_upgrades",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_remaining_wof_upgrades",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_advanced_wof_upgrades1",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_advanced_wof_upgrades2",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_witch",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      //Unlock UI Visibility
+      {
+        "resource": "unlock_hotbar_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_hearts_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_bar_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_face_buttons_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_resource_bar_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_compass_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_map_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_recipe_book_visibility",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      //Unlock Tutorial Tip
+      {
+        "resource": "unlock_onboarding_hotbar_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_gatheredresources_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_sharedresources_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herospawn_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_piglins_spawned",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herolure_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_lookatmap_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_compass_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herodirect_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_leave_well_of_fate",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_find_village_under_attack",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_first_village_under_attack",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_repair_fountain",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_find_second_village",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_free_second_village",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_build_defenses_in_second_village",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_first_skirmish",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_three_piglin_camps",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_wof_upgrade",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_second_skirmish",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_destroy_dbb",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_unitrps_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_piglinresources_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_welloffate_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_firstnight_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_denether_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_fasttravel_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_outpost_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_buff_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_piglininvasion_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_villageattackplanned_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_villagedestroyed_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_act2upgrading_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_villagerewards_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_moboccupation_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_placedspawner_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_moballegiancelost_tut",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_bypass_onboarding",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      //Unlock onboarding complete
+      {
+        "resource": "unlock_onboarding_hotbar_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_gatheredresources_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herospawn_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herospawnsecondgolem_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herolure_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herounlure_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_lookatmap_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_compass_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_herodirect_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_unitrps_completed",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_piglinresources_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_blocking_in_resource",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_act0_started",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_act0_melee_tut_start",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_act1_started",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_act1_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_mob_homesteads",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_act1_melee_tut_start",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_welloffate_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_reminder_herospawn_complete",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_lootremindercomplete",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_onboarding_songbook_complete",
+        "category": "unlock",
+        "default_amount": 1,
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      // Culture Village Rewards
+      {
+        "resource": "flint",
+        "type": "team",
+        "archetype_name": "badger:resource_culture1_t0",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "gunpowder",
+        "type": "team",
+        "archetype_name": "badger:resource_culture1_t1",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "tnt",
+        "type": "team",
+        "archetype_name": "badger:resourceDrop_culture1",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "pollen",
+        "type": "team",
+        "archetype_name": "badger:resource_culture2_t0",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "seed",
+        "type": "team",
+        "archetype_name": "badger:resource_culture2_t1",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "flower",
+        "type": "team",
+        "archetype_name": "badger:resource_culture2_t2",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "music_note",
+        "type": "team",
+        "archetype_name": "badger:resource_culture3_t0",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "cowbell",
+        "type": "team",
+        "archetype_name": "badger:resource_culture3_t1",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "cymbal",
+        "type": "team",
+        "archetype_name": "badger:resource_culture3_t2",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "crystal",
+        "type": "team",
+        "archetype_name": "badger:resource_culture4_t0",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "lense",
+        "type": "team",
+        "archetype_name": "badger:resource_culture4_t1",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "prism",
+        "type": "team",
+        "archetype_name": "badger:resource_culture4_t2",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "snowflake",
+        "type": "team",
+        "archetype_name": "badger:resource_culture5_t0",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "snowball",
+        "type": "team",
+        "archetype_name": "badger:resource_culture5_t1",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ice_nugget",
+        "type": "team",
+        "archetype_name": "badger:resource_culture5_t2",
+        "stack_size": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "spawner_cap",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      // Temp Resource for Denether
+      {
+        "resource": "denether",
+        "type": "team",
+        "starting_cap": 99999,
+        "show_in_ui": false
+      },
+      // Journal Items
+      {
+        "resource": "unlock_journal_well_of_fate",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_host_knowledge",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_host_action",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_host_foresight",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_allay",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_horse",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_plank_golem",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_cobblestone_golem",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_world_map",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "tools"
+      },
+      {
+        "resource": "unlock_journal_lute",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "tools"
+      },
+      {
+        "resource": "unlock_journal_banner",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "tools"
+      },
+      {
+        "resource": "unlock_journal_lantern",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "tools"
+      },
+      {
+        "resource": "unlock_journal_fate_bank",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false,
+        "journal_category": "tools"
+      },
+      {
+        "resource": "unlock_journal_treasure_chest",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_cavalry_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_support_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mob_creeper",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mob_zombie",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mob_skeleton",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mob_spider",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {//added for WITCH DLC
+        "resource": "unlock_journal_mob_witch",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_structure_witch",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mount_tiger",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mount_beetle",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mount_bird",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mount_06",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      //Camel
+      {
+        "resource": "unlock_journal_mount_camel",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_village",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_vindicator",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_ally_fallen_warrior",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_ally_spawner",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_ally_drill",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_ally_shield",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_ally_sniper",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_tower_blast",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_tower_stun",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_tower_frost",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_tower_burn",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_buff_speed_weed",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_buff_bouncy_mushroom",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_buff_regen_stone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_hazard_redthorn",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_hazard_tar_pit",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_hazard_mud_pit",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_hazard_venom_vines",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_hazard_geyser",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_horde_attack_faction",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_obstacle_faction",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_frost_faction",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_defend_faction",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_attack_boss",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_obstacle_boss",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_frost_boss",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_horde_defend_boss",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_great_hog",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_invasion",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_crate",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_runt",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_grunter",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_bruiser",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_disruptor",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_engineer",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_grenadier",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_medic",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_seeker",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_pigmadilo",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_warboar",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_lavalauncher",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_unit_portalguard",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      //////////////////
+      {
+        "resource": "unlock_journal_piglin_structure_air_chopper",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_nether_spreader",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_piglin_thrower",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_lava_coil",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_lava_tower",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_shield_tower",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_knockback_tower",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_arrow_tower",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_barracks",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_super_nether_spreader",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_range_extender",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      {
+        "resource": "unlock_journal_piglin_structure_regenerator",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "piglins"
+      },
+      //UI Tracking - Upgrades & WoF
+      {
+        "resource": "ui_tracking_gather_uncommon",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_uncommon_medium",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_uncommon_large",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_rare",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_rare_medium",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_rare_large",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_coal",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_coal_medium",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_coal_large",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_redstone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_redstone_medium",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_gather_redstone_large",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_clear_nether",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_pylon",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_allay_cap",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_lure_cap",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_spawner_cap",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_spawner_cap_large",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_starting_cap",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_support_and_cavalry_golems",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_first_golems",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_host_towers",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_linked_village_chests",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_carpenter_regen",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_increase_mason_rate",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //UI Tracking - Structures
+      {
+        "resource": "ui_tracking_lapis_flag",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_mason",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_carpenter",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spyglass",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_battle_drums",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_kaboomery",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_redstone_launcher",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //UI Tracking - Mobs and Towers
+      {
+        "resource": "ui_tracking_poi_tower_01",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_tower_02",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_tower_04",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_tower_05",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_ally_01",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_ally_02",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_ally_04",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_ally_05",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_ally_06",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      //UI Tracking - Spawners
+      {
+        "resource": "ui_tracking_spawner_warrior",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_witch",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_first_stone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_first_diorite",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_first_brick",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_first_oak",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_creeper",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_skeleton",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_spider",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_zombie",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_golem_plank",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_golem_cobblestone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_golem_grindstone",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_golem_mossy",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      }
+    ]
+  }
+}

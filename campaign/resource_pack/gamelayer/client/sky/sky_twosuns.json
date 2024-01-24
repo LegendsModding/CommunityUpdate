@@ -1,0 +1,119 @@
+{
+	"name": "sky_twosuns",
+	"imgui_category": "TwoSuns",
+	"imgui_prefix": "twosuns",
+	"number_of_suns": 2,
+	"sky_color": "curve.twosuns_sky_color",
+	"sky_horizon_color": "curve.twosuns_sky_horizon_color",
+	"cloud_color": "curve.twosuns_cloud_color",
+	"cloud_shadows": "curve.twosuns_cloud_shadows",
+	"ambient_color": "curve.twosuns_ambient_color",
+	"direct_color": "curve.twosuns_direct_color",
+	"emissive_scale": "curve.twosuns_emissive_scale",
+	"particle_light": "curve.twosuns_particle_light",
+	"particle_emissive_scale": "curve.twosuns_particle_emissive_scale",
+	"fog_color": "curve.twosuns_fog_color",
+	"light_probe": "twosuns",
+	"sparkle_params": "curve.twosuns_sparkle_params",
+	"ambient_sparkle_params": "curve.twosuns_ambient_sparkle",
+	"atmosphere_params": "curve.twosuns_atmosphere_params",
+	"horizon_params": "curve.twosuns_horizon_params",
+	"fog_params": "curve.twosuns_fog_params",
+	"post_params": "curve.twosuns_post_params",
+	"objects": [
+		{
+			"name": "sky",
+			"geometry": "prefab.screenquad",
+			"material": "mat_badger_skyclear",
+			"height": 100.0,
+			"scale": 1.0,
+			"sort_index": 0
+		},
+		{
+			"name": "sun_a",
+			"geometry": "prefab.sun",
+			"material": "mat_badger_sun",
+			"color_a": "curve.twosuns_sun_color",
+			"position": "curve.sun_position",
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 2,
+			"light_source": true,
+			"light_ray_caster": true
+		},
+		{
+			"name": "sun_b",
+			"geometry": "prefab.sun",
+			"material": "mat_badger_sun",
+			"color_a": "curve.twosuns_moon_color",
+			"position": "curve.moon_position",
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 3,
+			"light_source": true,
+			"light_ray_caster": true
+		},
+		{
+			"name": "clouds",
+			"geometry": "prefab.clouds",
+			"material": "mat_badger_clouds",
+			"height": 128.0,
+			"scale": 1.0,
+			"sort_index": -1
+		}
+	],
+	"biome_overrides": [
+		{
+			"override_name": "override_sky_attack_twosuns",
+			"biomes": [
+				{"identifier": "nether_horderunner"},
+				{"identifier": "lava_moat_horderunner"}
+			]
+		},
+		{
+			"override_name": "override_sky_defend_twosuns",
+			"biomes": [
+				{"identifier": "nether_piglin"},
+				{"identifier": "lava_moat"}
+			]
+		},
+		{
+			"override_name": "override_sky_obstacle_twosuns",
+			"biomes": [
+				{"identifier": "nether_rotters"},
+				{"identifier": "nether_rotters_upper"}
+			]
+		},
+		/* BOAR TODO
+		{
+			"override_name": "override_sky_frost_twosuns",
+			"biomes": [
+				{"identifier": "nether_rotters"},
+				{"identifier": "nether_rotters_upper"}
+			]
+		},
+		*/
+		{
+			"override_name": "override_sky_forest",
+			"biomes": [
+				{"identifier": "forest"},
+				{"identifier": "forest_autumn"},
+				{"identifier": "forest_clamp_lower"},
+				{"identifier": "forest_hills"},
+				{"identifier": "forest_river"},
+				{"identifier": "mud_pit"},
+				{"identifier": "mud_pit_border"}
+			]
+		},
+		{
+			"override_name": "override_sky_wetlands",
+			"biomes": [
+				{"identifier": "wetlands"},
+				{"identifier": "wetlands_beach"},
+				{"identifier": "wetlands_hills"},
+				{"identifier": "wetlands_river"}
+			]
+		}
+	],
+	"weather_override": "override_sky_weather_twosuns"
+}

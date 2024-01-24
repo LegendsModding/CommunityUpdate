@@ -1,0 +1,354 @@
+{
+  "zones_cards": [
+    {
+      "unique_card_id": "addPoiZones",
+      "cost": 0,
+      "tags": [
+        "addPoiZones"
+      ],
+      "number_of_zones": 1
+    }
+  ],
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_poiTower01",
+      "cost": 0,
+      "tags": [
+        "poiTower01"
+      ],
+      "buildable": "badger:poi_tower_01"
+    },
+    {
+      "unique_card_id": "badger_poiTower01Pvp",
+      "cost": 0,
+      "tags": [
+        "poiTower01Pvp"
+      ],
+      "buildable": "badger:poi_tower_01_pvp_wild"
+    },
+    {
+      "unique_card_id": "badger_poiTower02",
+      "cost": 0,
+      "tags": [
+        "poiTower02"
+      ],
+      "buildable": "badger:poi_tower_02"
+    },
+    {
+      "unique_card_id": "badger_poiTower02Pvp",
+      "cost": 0,
+      "tags": [
+        "poiTower02Pvp"
+      ],
+      "buildable": "badger:poi_tower_02_pvp_wild"
+    },
+    {
+      "unique_card_id": "badger_poiTower04",
+      "cost": 0,
+      "tags": [
+        "poiTower04"
+      ],
+      "buildable": "badger:poi_tower_04"
+    },
+    {
+      "unique_card_id": "badger_poiTower04Pvp",
+      "cost": 0,
+      "tags": [
+        "poiTower04Pvp"
+      ],
+      "buildable": "badger:poi_tower_04_pvp_wild"
+    },
+    {
+      "unique_card_id": "badger_poiTower05",
+      "cost": 0,
+      "tags": [
+        "poiTower05"
+      ],
+      "buildable": "badger:poi_tower_05"
+    },
+    {
+      "unique_card_id": "badger_poiTower05Pvp",
+      "cost": 0,
+      "tags": [
+        "poiTower05Pvp"
+      ],
+      "buildable": "badger:poi_tower_05_pvp_wild"
+    },
+    {
+      "unique_card_id": "badger_poiLegendDragonRed",
+      "cost": 0,
+      "tags": [
+        "poiLegendDragonRed"
+      ],
+      "buildable": "badger:poi_legend_dragon_red"
+    },
+    {
+      "unique_card_id": "badger_poiUnnaturalLandmark01",
+      "cost": 0,
+      "tags": [
+        "poiUnnaturalLandmark01"
+      ],
+      "buildable": "badger:poi_unnatural_landmark_01_base"
+    },
+    {
+      "unique_card_id": "badger_poiAlly01",
+      "cost": 0,
+      "tags": [
+        "poiAlly01"
+      ],
+      "buildable": "badger:poi_fallen_warrior_body"
+    },
+    {
+      "unique_card_id": "badger_poiAlly01Piece01",
+      "cost": 0,
+      "tags": [
+        "poiAlly01Piece01"
+      ],
+      "buildable": "badger:poi_fallen_warrior_limb_001"
+    },
+    {
+      "unique_card_id": "badger_poiAlly01Piece02",
+      "cost": 0,
+      "tags": [
+        "poiAlly01Piece02"
+      ],
+      "buildable": "badger:poi_fallen_warrior_limb_002"
+    },
+    {
+      "unique_card_id": "badger_poiAlly02",
+      "cost": 0,
+      "tags": [
+        "poiAlly02"
+      ],
+      "buildable": "badger:poi_ally_02"
+    },
+    {
+      "unique_card_id": "badger_poiAlly02PieceBase",
+      "cost": 0,
+      "tags": [
+        "poiAlly02PieceBase"
+      ],
+      "buildable": "badger:poi_ally_02_piece_01_base"
+    },
+    {
+      "unique_card_id": "badger_poiAlly04",
+      "cost": 0,
+      "tags": [
+        "poiAlly04"
+      ],
+      "buildable": "badger:poi_ally_04"
+    },
+    {
+      "unique_card_id": "badger_poiAlly05",
+      "cost": 0,
+      "tags": [
+        "poiAlly05"
+      ],
+      "buildable": "badger:poi_ally_05"
+    },
+    {
+      "unique_card_id": "badger_poiAlly06",
+      "cost": 0,
+      "tags": [
+        "poiAlly06"
+      ],
+      "buildable": "badger:poi_ally_06"
+    },
+    {
+      "unique_card_id": "badger_poiAlly06PieceBase",
+      "cost": 0,
+      "tags": [
+        "poiAlly06PieceBase"
+      ],
+      "buildable": "badger:poi_ally_06_piece_01_base"
+    },
+    {
+      "unique_card_id": "badger_poiMount01Center",
+      "cost": 0,
+      "tags": [
+        "poiMount01Center"
+      ],
+      "buildable": "badger:poi_mount_01_tiger_home"
+    },
+    {
+      "unique_card_id": "badger_poiMount03Center",
+      "cost": 0,
+      "tags": [
+        "poiMount03Center"
+      ],
+      "buildable": "badger:poi_mount_03_beetle_home"
+    },
+    {
+      "unique_card_id": "badger_poiMount04Center",
+      "cost": 0,
+      "tags": [
+        "poiMount04Center"
+      ],
+      "buildable": "badger:poi_mount_04_bird_home"
+    },
+    {
+      "unique_card_id": "badger_poiMount06Center",
+      "cost": 0,
+      "tags": [
+        "poiMount06Center"
+      ],
+      "buildable": "badger:poi_mount_06_home"
+    },
+    {
+      "unique_card_id": "badger_poiMount07Center",
+      "cost": 0,
+      "tags": [
+        "poiMount07Center"
+      ],
+      "buildable": "badger:poi_mount_07_camel_home"
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_layerAroundAlly02PieceTag",
+      "cost": 0,
+      "tags": [
+        "layerAroundAlly02PieceTag"
+      ],
+      "zone_tag": "layerAroundAlly02Piece"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_layerAroundAlly06PieceTag",
+      "cost": 0,
+      "tags": [
+        "layerAroundAlly06PieceTag"
+      ],
+      "zone_tag": "layerAroundAlly06Piece"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_emptyLayerAroundPoiMountTag",
+      "cost": 0,
+      "tags": [
+        "emptyLayerAroundPoiMountTag"
+      ],
+      "zone_tag": "emptyLayerAroundPoiMount"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_ally01EmptyLayerTag",
+      "cost": 0,
+      "tags": [
+        "ally01EmptyLayerTag"
+      ],
+      "zone_tag": "ally01EmptyLayer"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_ally01Piece01LayerTag",
+      "cost": 0,
+      "tags": [
+        "ally01Piece01LayerTag"
+      ],
+      "zone_tag": "ally01Piece01Layer"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_ally01Piece02LayerTag",
+      "cost": 0,
+      "tags": [
+        "ally01Piece02LayerTag"
+      ],
+      "zone_tag": "ally01Piece02Layer"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_cageZones",
+      "cost": 0,
+      "tags": [
+        "cageZones"
+      ],
+      "zone_tag": "cageZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_cageCloseToCenterZone",
+      "cost": 0,
+      "tags": [
+        "cageCloseToCenterZone"
+      ],
+      "zone_tag": "cageCloseToCenterZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_mobAllianceBuildingsZone",
+      "cost": 0,
+      "tags": [
+        "mobAllianceBuildingsZone"
+      ],
+      "zone_tag": "mobAllianceBuildingsZone"
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_layerAroundAlly02Piece",
+      "cost": 0,
+      "tags": [
+        "layerAroundAlly02Piece"
+      ],
+      "zone_filter": "layerAroundAlly02Piece",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_layerAroundAlly06Piece",
+      "cost": 0,
+      "tags": [
+        "layerAroundAlly06Piece"
+      ],
+      "zone_filter": "layerAroundAlly06Piece",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_ally01EmptyLayer",
+      "cost": 0,
+      "tags": [
+        "ally01EmptyLayer"
+      ],
+      "zone_filter": "ally01EmptyLayer",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_ally01Piece01Layer",
+      "cost": 0,
+      "tags": [
+        "ally01Piece01Layer"
+      ],
+      "zone_filter": "ally01Piece01Layer",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_ally01Piece02Layer",
+      "cost": 0,
+      "tags": [
+        "ally01Piece02Layer"
+      ],
+      "zone_filter": "ally01Piece02Layer",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_cageZones",
+      "cost": 0,
+      "tags": [
+        "cageZones"
+      ],
+      "zone_filter": "cageZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_cageCloseToCenterZone",
+      "cost": 0,
+      "tags": [
+        "cageCloseToCenterZone"
+      ],
+      "zone_filter": "cageCloseToCenterZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_mobAllianceBuildingsZone",
+      "cost": 0,
+      "tags": [
+        "mobAllianceBuildingsZone"
+      ],
+      "zone_filter": "mobAllianceBuildingsZone",
+      "exclude": false
+    }
+  ]
+}

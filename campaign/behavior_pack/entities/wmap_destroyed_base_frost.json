@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_destroyed_base_frost",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 0.468750114441,
+        "length": 0.656250076294,
+        "width": 0.609375
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "format_version": "1.15.0",
+    "badger:decoration": {
+        "deco_cactus_single": {
+            "geometry": "geometry.block_deco_cactus_single_geo",
+            "shadow": true,
+            "up": "world",
+            "forward": "surface"
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_lava_coil",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_tower_with_foundation",
+        "badger:template_structure_piglin"
+      ],
+      "badger:buildable_structure": {
+        "nbt_file": "lava_coils",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "lava_coils",
+          "faction.pig.attack": "lava_coils",
+          "faction.pig.obstacle": "lava_coils",
+          "faction.pig.wof": "lava_coils",
+          "faction.pig.dbb": "lava_coils",
+          "faction.pig.frost": "lava_coils"
+        }
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.125,
+          "pound": 0.7,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "dart": 1.9,
+          "melee": 0.15,
+          "fire": 0.5,
+          "chop": 0.255,
+          "player": 0.05,
+          "creeper": 1.14,
+          "slam": 0.85,
+          "smash": 1.05
+        }
+      },
+      "badger:generate_ruins": {
+        "max": 4,
+        "min": -1
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_piglin_lava_coils"
+      },
+      "badger:health": {
+        "max_health": 300
+      },
+      "badger:sub_objective_health_bar": {},
+      "badger:loot": {
+        "table": "common_structure"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            1, 
+            3, 
+            -1
+          ],
+          [
+            1, 
+            14, 
+            -1
+          ]
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20,
+        "waypoint_max_range": 20,
+        "compass_max_range": "short",
+        "filter_tagsets": [
+            {
+                "include_tags": [
+                    "base_assault"
+                ],
+                "exclude_tags": []
+            }
+        ]
+    },
+    "badger:waypoint_marker": {
+        "path": "waypoint_piglin_lavacoil",
+        "label": "",
+        "world_position_offset": [
+            0,
+            3,
+            0
+        ]
+    },
+      "badger:buildable_requirement": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "tower",
+          "piglin",
+          "piglinStructure",
+          "pigCrystal",
+          "pigTower"
+        ]
+      }
+    }
+  }
+}

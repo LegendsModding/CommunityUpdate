@@ -1,0 +1,139 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:gate_piglin",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "gate_piglin_defend",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "gate_piglin_defend",
+          "faction.pig.obstacle": "gate_piglin_obstacle",
+          "faction.pig.dbb": "gate_piglin_defend",
+          "faction.pig.frost": "gate_piglin_frost"
+        }
+      },
+      "badger:generate_ruins": {
+        "max": 4,
+        "min": 0
+      },
+      "badger:health": {
+        "max_health": 350
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.125,
+          "act1_pound": 0.7,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "act1_dart": 1.9,
+          "melee": 0.15,
+          "fire": 0.5,
+          "chop": 0.255,
+          "player": 0.1,
+          "potion": 0.4,
+          "creeper": 1.14,
+          "smash": 1.05
+        }
+      },
+      "badger:loot": {
+        "table": "piglin_gate"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_gate_piglin"
+      },
+      "badger:show_debug_health": {},
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            6, 
+            3, 
+            0
+          ],
+          [
+            -6, 
+            3, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "wall",
+          "pigGate",
+          "piglinStructure",
+          "pigGateOuter",
+          "piglin",
+          "generic_piglin_gate"
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "max_range": 2.5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "open_gate"
+            ]
+          },
+          {
+            "max_range": 2.5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "open_gate"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "open_gate",
+            "badger:gate_action": {
+              "gate_closed_file": "gate_door_piglin_closed",
+              "gate_open_file": "gate_door_piglin_open",
+              "close_gate_cool_down_time": 0.5
+            },
+            "proximity_toggle": {
+              "toggle": "off",
+              "count": 1,
+              "distance": 13,
+              "include_tags": [],
+              "exclude_tags": [
+                "buildable_combat"
+              ],
+              "alliance_rule_filter": "enemy"
+            }
+          }
+        ]
+      },
+      "badger:template": [
+        "badger:template_gate",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

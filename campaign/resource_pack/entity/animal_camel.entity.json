@@ -1,0 +1,130 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 5,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.6
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_camel_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_camel_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_medium"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_animal_camel_swim_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_animal_camel_swim_liquid_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_camel_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_camel",
+        "limit": 64
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.animal_camel.default",
+        "06_cheer_a": "animation.animal_camel.06_cheer_a",
+        "06_climb_a": "animation.animal_camel.06_climb_a",
+        "06_death": "animation.animal_camel.06_death",
+        "06_feed_a": "animation.animal_camel.06_feed_a",
+        "06_feed_react": "animation.animal_camel.06_feed_react",
+        "06_hitreact_a": "animation.animal_camel.06_hitreact_a",
+        "06_idle_a": "animation.animal_camel.06_idle_a",
+        "06_idle_b": "animation.animal_camel.06_idle_b",
+        "06_idle_c": "animation.animal_camel.06_idle_c",
+        "06_knockback_a": "animation.animal_camel.06_knockback_a",
+        "06_run_a": "animation.animal_camel.06_run_a",
+        "06_run_d": "animation.animal_camel.06_run_d",
+        "06_spawn_a": "animation.animal_camel.06_spawn_a",
+        "06_spit_a": "animation.animal_camel.06_spit_a",
+        "06_sprint_a": "animation.animal_camel.06_sprint_a",
+        "06_stop_a": "animation.animal_camel.06_stop_a",
+        "06_stun_a": "animation.animal_camel.06_stun_a",
+        "06_swim_a": "animation.animal_camel.06_swim_a",
+        "06_swim_idle_a": "animation.animal_camel.06_swim_idle_a",
+        "hit_react": "controller.animation.animal_camel.hit_react",
+        "idles": "controller.animation.animal_camel.idles",
+        "locomotion": "controller.animation.animal_camel.locomotion"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Narrow","Bulge High","Bulge Low"],
+      "geometry": {
+        "default": "geometry.animal_camel"
+      },
+      "identifier": "badger:animal_camel",
+      "materials": {
+        "mat_animal_camel": "mat_animal_camel",
+        "mat_animal_camel_face": "mat_animal_camel_face",
+        "mat_fx_frost_128": "mat_fx_frost_128",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_generic_buff_128": "mat_fx_generic_buff_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_slime_128": "mat_fx_slime_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128"
+      },
+      "particle_effects": {
+        "fx_bite": "badger:fx_animal_camel_bite_drops",
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_animal_camel_death",
+        "fx_death_jump": "badger:fx_animal_camel_death_jump",
+        "fx_jump_land": "badger:fx_animal_camel_jump_dust",
+        "fx_leap": "badger:fx_animal_camel_jump",
+        "fx_spit": "badger:fx_mount_camel_spit"
+      },
+      "render_controllers": ["controller.render.animal_camel"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "attack_tongue_swipe": "BAE_animal_camel_attack_tongue_swipe",
+        "bodyfall": "BAE_animal_camel_bodyfall",
+        "death_poof": "BAE_animal_death_poof_medium",
+        "dx_attack": "BAE_animal_camel_dx_attack",
+        "dx_cheer": "BAE_animal_camel_dx_cheer",
+        "dx_death": "BAE_animal_camel_dx_death",
+        "dx_feed_react": "BAE_animal_camel_dx_feed_react",
+        "dx_hurt": "BAE_animal_camel_dx_hurt",
+        "dx_idle": "BAE_animal_camel_dx_idle",
+        "dx_jump": "BAE_animal_camel_dx_jump",
+        "dx_stun": "BAE_animal_camel_dx_stun",
+        "footsteps": "BAE_animal_camel_footsteps",
+        "footsteps_idle": "BAE_animal_camel_footsteps_idle",
+        "jump": "BAE_animal_camel_jump",
+        "land": "BAE_animal_camel_land",
+        "land_short": "BAE_animal_camel_land_short",
+        "run_loop": "BAE_animal_camel_run_loop",
+        "run_loop_stop": "BAE_animal_camel_run_loop_stop",
+        "spit": "BAE_animal_camel_spit",
+        "swim_idle_kick": "BAE_animal_camel_swim_idle_kick",
+        "swim_os": "BAE_animal_camel_swim_oneshot",
+        "tongue_out": "BAE_animal_camel_tongue_out",
+        "tongue_swipe": "BAE_animal_camel_tongue_swipe"
+      }
+    }
+  }
+}

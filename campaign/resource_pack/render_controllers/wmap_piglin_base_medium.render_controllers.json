@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_piglin_base_medium": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_wmap_piglin_base_medium_attack","MetaMaterial.mat_wmap_piglin_base_medium_defend","MetaMaterial.mat_wmap_piglin_base_medium_obstacle","MetaMaterial.mat_wmap_piglin_base_medium_frost"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_piglin_base_medium_attack": "Array.materials[variable.horde]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

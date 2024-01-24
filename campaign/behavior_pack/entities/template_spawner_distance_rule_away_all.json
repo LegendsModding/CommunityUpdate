@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_spawner_distance_rule_away_all",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:spawner_rules": {
+        "distance_rule": {
+          "village_distance_data": [
+            {
+              "min_distance": 350,
+              "max_distance": 5000,
+              "horde_names": [
+                "faction.cul.001",
+                "faction.cul.002",
+                "faction.player.well",
+                "faction.mob.alliance.creeper",
+                "faction.mob.alliance.skeleton",
+                "faction.mob.alliance.spider",
+                "faction.mob.alliance.zombie"
+              ],
+              "is_destroyed": false
+            },
+            {
+              "min_distance": 100,
+              "max_distance": 500,
+              "horde_names": [
+                "faction.pig.attack",
+                "faction.pig.defend",
+                "faction.pig.obstacle",
+                "faction.pig.frost"
+              ],
+              "is_destroyed": false,
+              "destruction_spawn_delay": 300
+            }
+          ]
+        }
+      }
+    }
+  }
+}

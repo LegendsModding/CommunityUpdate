@@ -1,0 +1,191 @@
+{
+  "format_version": "1.0",
+  "badger:dynamics": {
+    "dynamic.hero.hero_braids": {
+      "acceleration_interpoland_reduction": 1.5,
+      "bones": ["joint_head_braid1_m","joint_head_braid2_m","joint_head_braid3_m","joint_head_braid4_m"],
+      "bounce": {
+        "root": 0.2,
+        "tail": 0.15
+      },
+      "collision_planes": ["loc_cape_horse_collider","loc_cape_collider"],
+      "delta_time_coefficient": 0.5,
+      "force": {
+        "x": 0.0,
+        "y": -980.0,
+        "z": 0.0
+      },
+      "force_tail": {
+        "x": 0.0,
+        "y": -300.0,
+        "z": 0.0
+      },
+      "initial_mount": "badger:mount_horse",
+      "nodes":  [
+        {
+          "x": 32.4526138,
+          "y": -0.0138349086,
+          "z": 5.58118174e-14
+        },
+        {
+          "x": 25.0,
+          "y": 0.00515591912,
+          "z": 1.15177846e-13
+        },
+        {
+          "x": 25.0,
+          "y": 0.00515591912,
+          "z": 2.48404623e-13
+        },
+        {
+          "x": 18.75,
+          "y": 0.00386693911,
+          "z": 3.81980444e-13
+        }
+      ],
+      "parent": "joint_head_braid0_m",
+      "stiffness": {
+        "root": 0.1,
+        "tail": 0.1
+      }
+    },
+    "dynamic.hero.hero_cape": {
+      "acceleration_interpoland_reduction": 1.5,
+      "bones": ["joint_ranger_cape2_m","joint_ranger_cape3_m","joint_ranger_cape4_m","joint_ranger_cape5_m","joint_ranger_cape6_m","joint_ranger_cape7_m"],
+      "bounce": {
+        "root": 0.2,
+        "tail": 0.2
+      },
+      "collision_planes": ["loc_cape_collider","badger:mount_horse|loc_cape_horse_collider","badger:mount_bird|loc_cape_bird_collider","badger:mount_tiger|loc_cape_tiger_collider","badger:mount_06|loc_cape_06_collider"],
+      "delta_time_coefficient": 0.5,
+      "force": {
+        "x": 0.0,
+        "y": -900.0,
+        "z": 0.0
+      },
+      "force_tail": {
+        "x": 0.0,
+        "y": -100.0,
+        "z": 0.0
+      },
+      "initial_mount": "badger:mount_horse",
+      "nodes":  [
+        {
+          "x": 0.0,
+          "y": -20.8190002441,
+          "z": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": -20.8080005646,
+          "z": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": -20.9370002747,
+          "z": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": -20.7329998016,
+          "z": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": -20.9130001068,
+          "z": 0.0
+        },
+        {
+          "x": 0.0,
+          "y": -18.7070007324,
+          "z": 0.0
+        }
+      ],
+      "parent": "joint_ranger_cape1_m",
+      "stiffness": {
+        "root": 0.1,
+        "tail": 0.15
+      }
+    },
+    "dynamic.hero.hero_headdress": {
+      "acceleration_interpoland_reduction": 1.5,
+      "bones": ["joint_head_ribbons1_m"],
+      "bounce": {
+        "root": 0.2,
+        "tail": 0.2
+      },
+      "delta_time_coefficient": 0.5,
+      "force": {
+        "x": 0.0,
+        "y": -980.0,
+        "z": 0.0
+      },
+      "force_tail": {
+        "x": 0.0,
+        "y": -980.0,
+        "z": 0.0
+      },
+      "initial_mount": "badger:mount_horse",
+      "nodes":  [
+        {
+          "x": 99.5352631,
+          "y": -5.1167326,
+          "z": -2.80144641e-13
+        }
+      ],
+      "parent": "joint_head_ribbons0_m",
+      "stiffness": {
+        "root": 0.1,
+        "tail": 0.15
+      }
+    },
+    "dynamic.hero.hero_ponytail": {
+      "acceleration_interpoland_reduction": 1.5,
+      "bones": ["joint_rabbit_braid1_m","joint_rabbit_braid2_m","joint_rabbit_braid3_m","joint_rabbit_braid4_m"],
+      "bounce": {
+        "root": 0.2,
+        "tail": 0.15
+      },
+      "collision_planes": ["loc_cape_collider"],
+      "delta_time_coefficient": 0.5,
+      "force": {
+        "x": 0.0,
+        "y": -7000.0,
+        "z": 0.0
+      },
+      "force_tail": {
+        "x": 0.0,
+        "y": -3000.0,
+        "z": 0.0
+      },
+      "initial_mount": "badger:mount_horse",
+      "nodes":  [
+        {
+          "x": 31.2499313,
+          "y": 0.339834183,
+          "z": 4.29210365e-14
+        },
+        {
+          "x": 24.9999428,
+          "y": 0.277796149,
+          "z": 1.15056754e-13
+        },
+        {
+          "x": 24.9999428,
+          "y": 0.277796149,
+          "z": 2.48283517e-13
+        },
+        {
+          "x": 18.749958,
+          "y": 0.208346158,
+          "z": 3.81889615e-13
+        }
+      ],
+      "parent": "joint_rabbit_braid0_m",
+      "stiffness": {
+        "root": 0.1,
+        "tail": 0.1
+      }
+    }
+  }
+}

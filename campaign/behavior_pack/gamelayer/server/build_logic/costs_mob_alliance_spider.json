@@ -1,0 +1,335 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_spiderVillageCenter",
+      "cost": 0,
+      "tags": [
+        "spiderVillageCenter"
+      ],
+      "buildable": "badger:mob_alliance_spider_central_flame"
+    },
+    {
+      "unique_card_id": "badger_spiderMobAllianceHouse01",
+      "cost": 0,
+      "tags": [
+        "spiderMobAllianceHouse01"
+      ],
+      "buildable": "badger:poi_mob_alliance_spider_home_01"
+    },
+    {
+      "unique_card_id": "badger_spiderMobAllianceHouse02",
+      "cost": 0,
+      "tags": [
+        "spiderMobAllianceHouse02"
+      ],
+      "buildable": "badger:poi_mob_alliance_spider_home_02"
+    },
+    {
+      "unique_card_id": "badger_spiderMobAllianceHouse03",
+      "cost": 0,
+      "tags": [
+        "spiderMobAllianceHouse03"
+      ],
+      "buildable": "badger:poi_mob_alliance_spider_home_03"
+    },
+    {
+      "unique_card_id": "badger_spiderMobAllianceDeco01",
+      "cost": 0,
+      "tags": [
+        "spiderMobAllianceDeco01"
+      ],
+      "buildable": "badger:poi_mob_alliance_spider_deco_01"
+    },
+    {
+      "unique_card_id": "badger_spiderMobAllianceDeco02",
+      "cost": 0,
+      "tags": [
+        "spiderMobAllianceDeco02"
+      ],
+      "buildable": "badger:poi_mob_alliance_spider_deco_02"
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_spiderCenterDeadZone",
+      "cost": 0,
+      "tags": [
+        "spiderCenterDeadZone"
+      ],
+      "zone_tag": "spiderCenterDeadZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderTotemOnlyZone",
+      "cost": 0,
+      "tags": [
+        "spiderTotemOnlyZone"
+      ],
+      "zone_tag": "spiderTotemOnlyZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderHouseZone",
+      "cost": 0,
+      "tags": [
+        "spiderHouseZone"
+      ],
+      "zone_tag": "spiderHouseZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderDecoZone",
+      "cost": 0,
+      "tags": [
+        "spiderDecoZone"
+      ],
+      "zone_tag": "spiderDecoZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderCageZones",
+      "cost": 0,
+      "tags": [
+        "spiderCageZones"
+      ],
+      "zone_tag": "spiderCageZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderCageCloseToCenterZone",
+      "cost": 0,
+      "tags": [
+        "spiderCageCloseToCenterZone"
+      ],
+      "zone_tag": "spiderCageCloseToCenterZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderNorthDistrict"
+      ],
+      "zone_tag": "spiderNorthDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderSouthDistrict"
+      ],
+      "zone_tag": "spiderSouthDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderEastDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderEastDistrict"
+      ],
+      "zone_tag": "spiderEastDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderWestDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderWestDistrict"
+      ],
+      "zone_tag": "spiderWestDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderNorthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderNorthDistrictDeco"
+      ],
+      "zone_tag": "spiderNorthDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderSouthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderSouthDistrictDeco"
+      ],
+      "zone_tag": "spiderSouthDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderEastDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderEastDistrictDeco"
+      ],
+      "zone_tag": "spiderEastDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderWestDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderWestDistrictDeco"
+      ],
+      "zone_tag": "spiderWestDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_spiderViewpointZone",
+      "cost": 0,
+      "tags": [
+        "spiderViewpointZone"
+      ],
+      "zone_tag": "spiderViewpointZone"
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_spiderCenterDeadZone",
+      "cost": 0,
+      "tags": [
+        "spiderCenterDeadZone"
+      ],
+      "zone_filter": "spiderCenterDeadZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_spiderTotemOnlyZone",
+      "cost": 0,
+      "tags": [
+        "spiderTotemOnlyZone"
+      ],
+      "zone_filter": "spiderTotemOnlyZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_spiderHouseZone",
+      "cost": 0,
+      "tags": [
+        "spiderHouseZone"
+      ],
+      "zone_filter": "spiderHouseZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_spiderDecoZone",
+      "cost": 0,
+      "tags": [
+        "spiderDecoZone"
+      ],
+      "zone_filter": "spiderDecoZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_spiderCageZones",
+      "cost": 0,
+      "tags": [
+        "spiderCageZones"
+      ],
+      "zone_filter": "spiderCageZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_spiderViewpointZone",
+      "cost": 0,
+      "tags": [
+        "spiderViewpointZone"
+      ],
+      "zone_filter": "spiderViewpointZone",
+      "exclude": false
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_spiderNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderNorthDistrict"
+      ],
+      "district": "spiderNorthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_spiderSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderSouthDistrict"
+      ],
+      "district": "spiderSouthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_spiderEastDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderEastDistrict"
+      ],
+      "district": "spiderEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_spiderWestDistrict",
+      "cost": 0,
+      "tags": [
+        "spiderWestDistrict"
+      ],
+      "district": "spiderWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_spiderNorthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderNorthDistrictDeco"
+      ],
+      "district": "spiderNorthDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_spiderSouthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderSouthDistrictDeco"
+      ],
+      "district": "spiderSouthDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_spiderEastDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderEastDistrictDeco"
+      ],
+      "district": "spiderEastDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_spiderWestDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "spiderWestDistrictDeco"
+      ],
+      "district": "spiderWestDistrictDeco"
+    }
+  ],
+  "placement_preference_cards": [
+    {
+      "unique_card_id": "spiderconnectToPath",
+      "cost": 0,
+      "tags": [
+        "spiderconnectToPath"
+      ],
+      "placement_preference": "connect_to_path"
+    },
+    {
+      "unique_card_id": "facing_buildables_spider_center",
+      "cost": 0,
+      "tags": [
+        "facing_buildables_spider_center"
+      ],
+      "placement_preference": "facing_buildable",
+      "buildable": "mob_alliance_spider_central_flame"
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "spider_district_path",
+      "cost": 0,
+      "tags": [
+        "spider_district_path"
+      ],
+      "is_district_path": true
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "spiderInitialOccupationViewpoint",
+      "cost": 0,
+      "tags": [
+        "spiderInitialOccupationViewpoint"
+      ],
+      "tag": "spiderInitialOccupationViewpoint"
+    }
+  ]
+}

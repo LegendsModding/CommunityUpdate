@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_piglin_frost_territory_low_health"
+    },
+    "components": {
+      "badger:invasion_icon": {
+        "icon_color": [
+          0.737,
+          0.22,
+          0.769,
+          1.0
+        ]
+      },
+      "badger:template": [
+        "badger:template_portal_piglin",
+        "badger:template_portal_piglin_attack"
+      ]
+    }
+  }
+}

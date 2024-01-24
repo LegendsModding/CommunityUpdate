@@ -1,0 +1,159 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 3,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.5
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,1,1],
+            "enabled": true,
+            "falloff_power": 1.5,
+            "intensity": "query.fbm_noise(8, 1.0, v.candle_light_out, 1.0)",
+            "locator": "loc_fx_light",
+            "offset": [0,0.4,0],
+            "radius": 1.6
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "normal_hit": {
+          "audio": "BAE_mob_golem_drill_dx_hurt"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_golem_drill_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_golem_drill_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_golem_drill_spawn"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_large"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_large_stop"
+        },
+        "sfx_idle_interrupt": {
+          "audio": "BAE_mob_golem_drill_move_body_stop"
+        },
+        "sfx_winddown_body_interrupt": {
+          "audio": "BAE_mob_golem_drill_winddown_body_stop"
+        },
+        "sfx_windup_body_interrupt": {
+          "audio": "BAE_mob_golem_drill_windup_body_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mob_golem_drill_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_drill",
+        "limit": 64
+      },
+      "badger:rig_operations": ["rigops_actions.mob_golem_drill_candle_light"],
+      "badger:template": ["badger:template_mob","badger:template_status_effects_large"]
+    },
+    "description": {
+      "animations": {
+        "attack_melee": "animation.mob_golem_drill.attack_melee",
+        "cheer_a": "animation.mob_golem_drill.cheer_a",
+        "death_a": "animation.mob_golem_drill.death_a",
+        "default": "controller.animation.mob_golem_drill.default",
+        "fxcontroller": "controller.animation.mob_golem_drill.fxcontroller",
+        "hit_reaction": "controller.animation.mob_golem_drill.hit_reaction",
+        "hitreact_a": "animation.mob_golem_drill.hitreact_a",
+        "idle_a": "animation.mob_golem_drill.idle_a",
+        "locomotion": "controller.animation.mob_golem_drill.locomotion",
+        "spawn_a": "animation.mob_golem_drill.spawn_a",
+        "spawner_ability_a": "animation.mob_golem_drill.spawner_ability_a",
+        "spawner_ability_loop_a": "animation.mob_golem_drill.spawner_ability_loop_a",
+        "spawner_ability_winddown_a": "animation.mob_golem_drill.spawner_ability_winddown_a",
+        "sprint_a": "animation.mob_golem_drill.sprint_a",
+        "stop_c": "animation.mob_golem_drill.stop_c",
+        "stun_a": "animation.mob_golem_drill.stun_a",
+        "swim_a": "animation.mob_golem_drill.swim_a",
+        "swim_idle": "animation.mob_golem_drill.swim_idle",
+        "walk_c": "animation.mob_golem_drill.walk_c"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_drill"
+      },
+      "identifier": "badger:mob_golem_drill",
+      "materials": {
+        "mat_fx_cauldron_256": "mat_fx_cauldron_256",
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_fx_heal_256": "mat_fx_heal_256",
+        "mat_fx_spore_damaged_256": "mat_fx_spore_damaged_256",
+        "mat_mob_golem_drill": "mat_mob_golem_drill"
+      },
+      "particle_effects": {
+        "fx_active_fire": "badger:fx_golem_drill_active_fire",
+        "fx_corpse_removal_large": "badger:fx_shared_corpse_remove_large",
+        "fx_corpse_removal_med": "badger:fx_shared_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_med",
+        "fx_face_fire": "badger:fx_golem_drill_fire",
+        "fx_melee": "badger:fx_golem_drill_attack_melee",
+        "fx_spawn_dust": "badger:fx_shared_spawn_large",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_large_sparkle",
+        "fx_sprint": "badger:fx_golem_drill_sprint_dust",
+        "fx_step": "badger:fx_golem_drill_step"
+      },
+      "render_controllers": ["controller.render.mob_golem_drill"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "fxcontroller": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;","variable.candle_light = 1;","v.candle_light_out = 1;"]
+      },
+      "sound_effects": {
+        "attack_slam": "BAE_mob_golem_drill_attack_slam",
+        "cheer": "BAE_mob_golem_drill_cheer",
+        "death_bodyfall": "BAE_mob_golem_drill_death_bodyfall",
+        "death_flame": "BAE_mob_golem_drill_death_flame",
+        "death_poof_large": "BAE_mob_death_poof_large",
+        "dx_attack_slam": "BAE_mob_golem_drill_dx_attack_slam",
+        "dx_attack_windup": "BAE_mob_golem_drill_dx_attack_windup",
+        "dx_cheer": "BAE_mob_golem_drill_dx_cheer",
+        "dx_death": "BAE_mob_golem_drill_dx_death",
+        "dx_hurt": "BAE_mob_golem_drill_dx_hurt",
+        "dx_idle": "BAE_mob_golem_drill_dx_idle",
+        "dx_idle_sprint": "BAE_mob_golem_drill_dx_idle_sprint",
+        "flame": "BAE_mob_golem_drill_flame",
+        "flame_spawner": "BAE_mob_golem_drill_flame_spawner",
+        "flame_spawner_stop": "BAE_mob_golem_drill_flame_spawner_stop",
+        "flame_stop": "BAE_mob_golem_drill_flame_stop",
+        "footstep_arm": "BAE_mob_golem_drill_footstep_arm",
+        "footstep_leg_gold": "BAE_mob_golem_drill_footstep_leg_gold",
+        "footstep_leg_stone": "BAE_mob_golem_drill_footstep_leg_stone",
+        "move_body": "BAE_mob_golem_drill_move_body",
+        "shake": "BAE_mob_golem_drill_shake",
+        "swim": "BAE_mob_golem_drill_swim",
+        "winddown_body": "BAE_mob_golem_drill_winddown_body",
+        "winddown_flame": "BAE_mob_golem_drill_winddown_flame",
+        "windup_body": "BAE_mob_golem_drill_windup_body",
+        "windup_flame": "BAE_mob_golem_drill_windup_flame"
+      }
+    }
+  }
+}

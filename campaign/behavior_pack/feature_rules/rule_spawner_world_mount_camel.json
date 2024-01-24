@@ -1,0 +1,43 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+      "description": {
+        "identifier": "badger:rule_spawner_world_mount_camel",
+        "places_feature": "badger:feature_spawner_world_mount_camel"
+      },
+      "conditions": {
+        "enabled": true,
+        "placement_pass": 5,
+        "minecraft:biome_filter": [
+          {
+            "any_of": [
+              {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "desert"
+              }
+            ]
+          }
+        ]
+      },
+      "distribution": {
+        "iterations": "1",
+        "scatter_chance": "query.get_game_rule_value('roaming_mounts') == true ? 0.85 : 0",
+        "x": {
+          "distribution": "uniform",
+          "extent": [
+            4,
+            12
+          ]
+        },
+        "y": "query.heightmap(variable.worldx, variable.worldz)",
+        "z": {
+          "distribution": "uniform",
+          "extent": [
+            4,
+            12
+          ]
+        }
+      }
+    }
+  }

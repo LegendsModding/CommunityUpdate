@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:ai_entity_frost_defensive_large",
+      "runtime_identifier": "badger:ai"
+    },
+    "components": {
+      "badger:influence_map_ai" : {
+        "map_resolution" : 5,
+        "map_decay" : 0.01,
+        "perception_radius": 260,
+        "query_name": "default"
+    },
+    "badger:template": "badger:ai_entity_frost_defensive"
+    }
+  }
+}

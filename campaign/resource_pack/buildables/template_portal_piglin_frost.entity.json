@@ -1,0 +1,330 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:template_portal_piglin_frost"
+    },
+    "components": {
+      "badger:presentation_event": {
+        "on_damage_applied_to_structure_1": {
+          "particles": [
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs05",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_05",
+              "bind_to_actor": true,
+              "enabled": true
+            }
+          ]
+        },
+        "on_damage_applied_to_structure_5": {
+          "particles": [
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs05",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_05",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_frame_lightning01",
+              "locator": "loc_fx_pillar_01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_frame_lightning12",
+              "locator": "loc_fx_pillar_02",
+              "bind_to_actor": true,
+              "enabled": true
+            }
+          ]
+        },
+        "on_damage_applied_to_structure_7": {
+          "particles": [
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_stairs05",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_switch_smoke",
+              "locator": "loc_fx_back_stairs04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_01",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_02",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_pillar",
+              "locator": "loc_fx_pillar_05",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_frame_lightning09",
+              "locator": "loc_fx_pillar_03",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_frame_lightning10",
+              "locator": "loc_fx_pillar_04",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_damage_frame_lightning11",
+              "locator": "loc_fx_pillar_05",
+              "bind_to_actor": true,
+              "enabled": true
+            },
+            {
+              "effect": "badger:fx_zoner_piglin_full_frame_lightning",
+              "locator": "loc_fx_main",
+              "bind_to_actor": true,
+              "enabled": true
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_mob_spider"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_mob_spider"
+      },
+      "identifier": "badger:wmap_mob_spider",
+      "materials": {
+        "default": "entity_model",
+        "wmap_mob_spider": "wmap_mob_spider"
+      },
+      "render_controllers": ["controller.render.wmap_mob_spider"]
+    }
+  }
+}

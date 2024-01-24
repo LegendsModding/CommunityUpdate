@@ -1,0 +1,44 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spawner_piglin_faction_medic_frost",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": false
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 1,
+          "height": 1
+        },
+        "badger:campaign_team": {
+          "team_tag": "piglin_team"
+        },
+        "badger:tags": {
+          "tags": [
+            "spawner_piglin_faction_medic_frost",
+            "roaming_piglin_spawner"
+          ]
+        },
+        "badger:buildable_spawner": {
+          "types": [
+            {
+              "type": "badger:piglin_medic_roaming",
+              "percentage": 1
+            }
+          ],
+          "cap": 1,
+          "batch": 1,
+          "rate": 600,
+          "max_radius": 2
+        },
+        "badger:spawner_rules": {
+          "bsharp_rule": {
+            "variable": "disable_spawner_piglin_faction_frost_medic",
+            "value": 1
+          }
+        },
+        "badger:template": "badger:template_spawner_piglin_roaming"
+      }
+    }
+  }

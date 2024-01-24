@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_destroyed_base_frost"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_destroyed_base_frost"
+      },
+      "identifier": "badger:wmap_destroyed_base_frost",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_destroyed_base_frost": "mat_wmap_destroyed_base_frost"
+      },
+      "render_controllers": ["controller.render.wmap_destroyed_base_frost"]
+    }
+  }
+}

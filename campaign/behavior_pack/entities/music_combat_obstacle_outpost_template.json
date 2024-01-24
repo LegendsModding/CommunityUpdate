@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:music_combat_obstacle_outpost_template",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+          "width": 0.7,
+          "height": 1.9
+      },
+      "badger:tags": {
+        "tags": [
+            "music_entity"
+        ]
+      },
+      "badger:spawn_tracking": {},
+      "badger:music_emitter_states": [
+        "initial_generic",
+        "phase1_generic",
+        "phase2_generic",
+        "phase3_generic",
+        "phase4_generic",
+        "initial_dbb",
+        "phase1_dbb",
+        "phase2_dbb",
+        "phase3_dbb",
+        "phase4_dbb",
+        "initial_attack",
+        "phase1_attack",
+        "phase2_attack",
+        "phase3_attack",
+        "phase4_attack",
+        "initial_defense",
+        "phase1_defense",
+        "phase2_defense",
+        "phase3_defense",
+        "phase4_defense",
+        "initial_obstacle",
+        "phase1_obstacle",
+        "phase2_obstacle",
+        "phase3_obstacle",
+        "phase4_obstacle",
+        "initial_frost",
+        "phase1_frost",
+        "phase2_frost",
+        "phase3_frost",
+        "phase4_frost"
+      ]
+    }
+  }
+}

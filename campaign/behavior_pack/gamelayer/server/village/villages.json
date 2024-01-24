@@ -1,0 +1,237 @@
+{
+  "tick_budget": {
+    "PC" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    },
+    "Switch" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    },
+    "PS4" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    },
+    "PS5" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    },
+    "Xbox Series" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    },
+    "Xbox One" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    },
+    "Unknown" : {
+      "building_time_budget_in_ms": 1.0,
+      "planning_time_budget_in_ms": 2.0
+    }
+  },
+  "village_map": {
+    "terrain_sampling_fill_step_distance": 64,
+    "block_query_step_distance": 3
+  },
+  "resource_removal": {
+    "world_request_type": "village_resource_removal",
+    "max_zones_cleared_per_tick": 5,
+    "entity_destroy_by_default": false,
+    "entity_destruction_tags": {
+      "include_any": [
+        "animal",
+        "spawner_animal",
+        "spawner_locator_animal",
+        "treasure_chest_interact",
+        "mount_01_food",
+        "mount_03_food",
+        "mount_04_food",
+        "mount_06_food",
+        "mount_07_food",
+        "mob_world_spawner"
+      ],
+      "exclude_any": [
+      ]
+    }
+  },
+  "village_building": {
+    "approximate_block_budget_per_tick": 10000,
+    "build_from_path_max_range_in_blocks": 100
+  },
+  "navigation_map_settings": {
+    "crossable_edge_minimum_length": 4.0,
+    "path_padding_width": 16.0,
+    "path_destination_arrival_distance": 2.0
+  },
+  "planning_influence_map_settings": {
+    "decay": 0.10,
+    "resolution": 15.0,
+    "initial_influence": 100.0
+  },
+  "alliance_influence_map_settings": {
+    "decay": 0.03,
+    "resolution": 15.0
+  },
+  "placement_preference_settings": {
+    "buildable_tag_for_spacing": "buildable"
+  },
+  "village_heart_destruction_settings": {
+    "world_request_type": "village_heart_destruction",
+    "tag_for_village_heart_destruction_opt_out": "base_destruction_opt_out"
+  },
+  "wall_settings": {
+    "max_number_of_gate_placement_attempts": 10,
+    "minimum_segment_length": 2.0,
+    "remove_wall_on_placement_failure": true
+  },
+  "moat_settings": {
+    "noise_levels": 2
+  },
+  "village_sizes": [
+    {
+      "size": "small",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "medium",
+      "ui_key": "piglin.base_size.medium",
+      "pips": 2
+    },
+    {
+      "size": "large",
+      "ui_key": "piglin.base_size.large",
+      "pips": 3
+    },
+    {
+      "size": "boss",
+      "ui_key": "piglin.base_size.large",
+      "pips": 3
+    },
+    {
+      "size": "vanguardA",
+      "ui_key": "piglin.base_size.vanguardA",
+      "pips": 1
+    },
+    {
+      "size": "vanguardB",
+      "ui_key": "piglin.base_size.vanguardB",
+      "pips": 1
+    },
+    {
+      "size": "frontlineA",
+      "ui_key": "piglin.base_size.frontlineA",
+      "pips": 1
+    },
+    {
+      "size": "frontlineB",
+      "ui_key": "piglin.base_size.frontlineB",
+      "pips": 1
+    },
+    {
+      "size": "villageAttackA",
+      "ui_key": "piglin.base_size.villageAttackA",
+      "pips": 1
+    },
+    {
+      "size": "villageAttackB",
+      "ui_key": "piglin.base_size.villageAttackB",
+      "pips": 1
+    },
+    {
+      "size": "frontlineC",
+      "ui_key": "piglin.base_size.frontlineC",
+      "pips": 1
+    },
+    {
+      "size": "frontlineD",
+      "ui_key": "piglin.base_size.frontlineD",
+      "pips": 1
+    },
+    {
+      "size": "fobSmall",
+      "ui_key": "piglin.base_size.fobSmall",
+      "pips": 1
+    },
+    {
+      "size": "fobMedium",
+      "ui_key": "piglin.base_size.fobMedium",
+      "pips": 2
+    },
+    {
+      "size": "fobLarge",
+      "ui_key": "piglin.base_size.fobLarge",
+      "pips": 3
+    },
+    {
+      "size": "darkBeacon",
+      "ui_key": "piglin.base_size.darkBeacon",
+      "pips": 1
+    },
+    {
+      "size": "act1_a",
+      "ui_key": "piglin.base_size.act1",
+      "pips": 1
+    },
+    {
+      "size": "act1_b",
+      "ui_key": "piglin.base_size.act1",
+      "pips": 1
+    },
+    {
+      "size": "act1_c",
+      "ui_key": "piglin.base_size.act1",
+      "pips": 1
+    },
+    {
+      "size": "wofBase",
+      "ui_key": "piglin.base_size.wofBase",
+      "pips": 1
+    },
+    {
+      "size": "piglin_occupying_zombie_mob_alliance",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "piglin_occupying_creeper_mob_alliance",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "piglin_occupying_skeleton_mob_alliance",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "piglin_occupying_spider_mob_alliance",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "piglin_act1_first_skirmish",
+      "ui_key": "",
+      "pips": 1
+    },
+    {
+      "size": "piglin_act1_second_skirmish",
+      "ui_key": "",
+      "pips": 1
+    },
+    {
+      "size": "piglin_act1_non_portal_attack_base",
+      "ui_key": "",
+      "pips": 1
+    },
+    {
+      "size": "player_outpost",
+      "ui_key": "",
+      "pips": 0
+    },
+    {
+      "size": "debug",
+      "ui_key": "",
+      "pips": 0
+    }
+  ]
+}

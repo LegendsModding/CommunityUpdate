@@ -1,0 +1,527 @@
+{
+  "world_request_type": "invasion",
+  "simulation_world_request_type": "invasion_simulation",
+  "default_attack_window_duration": 300,
+  "default_abandon_duration": 300,
+  "default_attack_border_distance": 150,
+  "invasion_phase_tod_names": {
+    "intention_phase": "invasion_phase_intention",
+    "execution_phase": "invasion_phase_execution",
+    "resolve_phase": "invasion_phase_resolve"
+  },
+  "horde_card_library": [
+    {
+      "unique_card_id": "serious_card_99",
+      "debug_name": "Horde Card: Attack Faction",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "serious_card_100",
+      "debug_name": "Horde Card: Attack Faction",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "serious_card_101",
+      "debug_name": "Horde Card: Attack Faction",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack",
+      "debug_name": "Horde Card: Attack Faction",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend",
+      "debug_name": "Horde Card: Defend Faction",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle",
+      "debug_name": "Horde Card: Obstacle Faction",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost",
+      "debug_name": "Horde Card: Frost Faction",
+      "faction": "faction.pig.frost",
+      "tags": []
+    }
+  ],
+  "invasion_card_library": [
+    {
+      "unique_card_id": "serious_card_200",
+      "debug_name": "AttackFaction: Build Defensive Outpost",
+      "action": "serious_action",
+      "fallback": "serious_action",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "serious_card_201",
+      "debug_name": "AttackFaction: Build Defensive Outpost",
+      "action": "serious_action",
+      "fallback": "serious_action",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "serious_card_202",
+      "debug_name": "AttackFaction: Build Defensive Outpost",
+      "action": "serious_action",
+      "fallback": "serious_action",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "serious_card_203",
+      "debug_name": "AttackFaction: Build Defensive Outpost",
+      "action": "serious_action",
+      "fallback": "serious_action",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "serious_card_204",
+      "debug_name": "AttackFaction: Build Defensive Outpost",
+      "action": "serious_action",
+      "fallback": "serious_action",
+      "faction": "some_faction",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_build_defensive_outpost",
+      "debug_name": "AttackFaction: Build Defensive Outpost",
+      "action": "build_defensive_outpost",
+      "fallback": "build_defensive_outpost",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_build_offensive_outpost",
+      "debug_name": "AttackFaction: Build Offensive Outpost",
+      "action": "build_offensive_outpost",
+      "fallback": "attack_village_v2_double",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_attack_village",
+      "debug_name": "AttackFaction: Attack Village",
+      "action": "attack_village",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_attack_mob_alliance",
+      "debug_name": "AttackFaction: Attack Mob Alliance",
+      "action": "attack_mob_alliance",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_attack_village_double",
+      "debug_name": "AttackFaction: Attack Village Double",
+      "action": "attack_village_double",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_attack_village_v2_double",
+      "debug_name": "AttackFaction: Attack Village V2 Double",
+      "action": "attack_village_v2_double",
+      "fallback": "attack_village_v2",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_build_near_base",
+      "debug_name": "AttackFaction: Build Near Base",
+      "action": "build_near_base",
+      "fallback": "attack_village",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_build_new_outpost",
+      "debug_name": "AttackFaction: Build New Outpost",
+      "action": "build_new_outpost",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_build_far_base",
+      "debug_name": "AttackFaction: Build Far Base",
+      "action": "build_far_base",
+      "fallback": "attack_village",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_upgrade_base",
+      "debug_name": "AttackFaction: Upgrade Base",
+      "action": "upgrade_base",
+      "fallback": "build_near_base",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_oops",
+      "debug_name": "AttackFaction: Oops!",
+      "action": "oops",
+      "fallback": "oops",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_attack_village_v2",
+      "debug_name": "AttackFaction: Attack Village V2",
+      "action": "attack_village_v2",
+      "fallback": "build_far_base",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.attack_claim_area",
+      "debug_name": "AttackFaction: Claim Area",
+      "action": "claim_area",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.attack",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_build_defensive_outpost",
+      "debug_name": "DefendFaction: Build Defensive Outpost",
+      "action": "build_defensive_outpost",
+      "fallback": "build_defensive_outpost",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_build_defensive_outpost_triple",
+      "debug_name": "DefendFaction: Build Defensive Outpost Triple",
+      "action": "build_defensive_outpost_triple",
+      "fallback": "build_defensive_outpost",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_build_offensive_outpost",
+      "debug_name": "DefendFaction: Build Offensive Outpost",
+      "action": "build_offensive_outpost",
+      "fallback": "build_offensive_outpost",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_attack_village",
+      "debug_name": "DefendFaction: Attack Village",
+      "action": "attack_village",
+      "fallback": "build_near_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_attack_mob_alliance",
+      "debug_name": "DefendFaction: Attack Mob Alliance",
+      "action": "attack_mob_alliance",
+      "fallback": "build_near_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_build_near_base",
+      "debug_name": "DefendFaction: Build Near Base",
+      "action": "build_near_base",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_build_new_outpost",
+      "debug_name": "DefendFaction: Build New Outpost",
+      "action": "build_new_outpost",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_build_far_base",
+      "debug_name": "DefendFaction: Build Far Base",
+      "action": "build_far_base",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_upgrade_base",
+      "debug_name": "DefendFaction: Upgrade Base",
+      "action": "upgrade_base",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_upgrade_base_double",
+      "debug_name": "DefendFaction: Upgrade Base Double",
+      "action": "upgrade_base_double",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_oops",
+      "debug_name": "DefendFaction: Oops!",
+      "action": "oops",
+      "fallback": "oops",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_attack_village_v2",
+      "debug_name": "DefendFaction: Attack Village V2",
+      "action": "attack_village_v2",
+      "fallback": "build_far_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.defend_claim_area",
+      "debug_name": "DefendFaction: Claim Area",
+      "action": "claim_area",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.defend",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_defensive_outpost",
+      "debug_name": "ObstacleFaction: Build Defensive Outpost",
+      "action": "build_defensive_outpost",
+      "fallback": "build_defensive_outpost",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_offensive_outpost",
+      "debug_name": "ObstacleFaction: Build Offensive Outpost",
+      "action": "build_offensive_outpost",
+      "fallback": "build_offensive_outpost",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_offensive_outpost_double",
+      "debug_name": "ObstacleFaction: Build Offensive Outpost Double",
+      "action": "build_offensive_outpost_double",
+      "fallback": "build_offensive_outpost_double",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_attack_village",
+      "debug_name": "ObstacleFaction: Attack Village",
+      "action": "attack_village",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_attack_mob_alliance",
+      "debug_name": "ObstacleFaction: Attack Mob Alliance",
+      "action": "attack_mob_alliance",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_near_base",
+      "debug_name": "ObstacleFaction: Build Near Base",
+      "action": "build_near_base",
+      "fallback": "attack_village",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_new_outpost",
+      "debug_name": "ObstacleFaction: Build New Outpost",
+      "action": "build_new_outpost",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_far_base",
+      "debug_name": "ObstacleFaction: Build Far Base",
+      "action": "build_far_base",
+      "fallback": "attack_village",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_build_near_base_double",
+      "debug_name": "ObstacleFaction: Build Near Base Double",
+      "action": "build_near_base_double",
+      "fallback": "attack_village",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_upgrade_base",
+      "debug_name": "ObstacleFaction: Upgrade Base",
+      "action": "upgrade_base",
+      "fallback": "build_near_base",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_oops",
+      "debug_name": "ObstacleFaction: Oops!",
+      "action": "oops",
+      "fallback": "oops",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_attack_village_v2",
+      "debug_name": "ObstacleFaction: Attack Village V2",
+      "action": "attack_village_v2",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.obstacle_claim_area",
+      "debug_name": "ObstacleFaction: Claim Area",
+      "action": "claim_area",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.obstacle",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_defensive_outpost",
+      "debug_name": "FrostFaction: Build Defensive Outpost",
+      "action": "build_defensive_outpost",
+      "fallback": "build_defensive_outpost",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_offensive_outpost",
+      "debug_name": "FrostFaction: Build Offensive Outpost",
+      "action": "build_offensive_outpost",
+      "fallback": "build_offensive_outpost",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_offensive_outpost_double",
+      "debug_name": "FrostFaction: Build Offensive Outpost Double",
+      "action": "build_offensive_outpost_double",
+      "fallback": "build_offensive_outpost_double",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_attack_village",
+      "debug_name": "FrostFaction: Attack Village",
+      "action": "attack_village",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_attack_mob_alliance",
+      "debug_name": "FrostFaction: Attack Mob Alliance",
+      "action": "attack_mob_alliance",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_near_base",
+      "debug_name": "FrostFaction: Build Near Base",
+      "action": "build_near_base",
+      "fallback": "attack_village",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_new_outpost",
+      "debug_name": "FrostFaction: Build New Outpost",
+      "action": "build_new_outpost",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_far_base",
+      "debug_name": "FrostFaction: Build Far Base",
+      "action": "build_far_base",
+      "fallback": "attack_village",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_build_near_base_double",
+      "debug_name": "FrostFaction: Build Near Base Double",
+      "action": "build_near_base_double",
+      "fallback": "attack_village",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_upgrade_base",
+      "debug_name": "FrostFaction: Upgrade Base",
+      "action": "upgrade_base",
+      "fallback": "build_near_base",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_oops",
+      "debug_name": "FrostFaction: Oops!",
+      "action": "oops",
+      "fallback": "oops",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_attack_village_v2",
+      "debug_name": "FrostFaction: Attack Village V2",
+      "action": "attack_village_v2",
+      "fallback": "build_new_outpost",
+      "faction": "faction.pig.frost",
+      "tags": []
+    },
+    {
+      "unique_card_id": "faction.pig.frost_claim_area",
+      "debug_name": "FrostFaction: Claim Area",
+      "action": "claim_area",
+      "fallback": "upgrade_base",
+      "faction": "faction.pig.frost",
+      "tags": []
+    }
+  ],
+  "ui_events": {
+    "valid_events": [
+      "create_base",
+      "upgrade_base",
+      "deploy_vanguard",
+      "build_outpost",
+      "oops",
+      "village_damaged"
+    ],
+    "damage_event": "village_damaged",
+    "upgraded_event": "upgrade_base",
+    "oops_event": "oops"
+  }
+}

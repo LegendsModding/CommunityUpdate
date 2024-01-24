@@ -1,0 +1,26 @@
+{
+    "id": "poi_legend_dragon_red_biome",
+    "textures": [
+      {
+        "texture": "poi_legends/heightmap_poi_legend_dragon_red",
+        "channels": {
+          "r": "blend",
+          "g": "terrain_height",
+          "b": "biome"
+        }
+      }
+    ],
+    "additional_data": {
+      "height_range": [
+        30,
+        50
+      ],
+      "village_texture_stamp": true
+    },
+    "biome_map": [
+      {
+        "biome": "desert",
+        "value": 255
+      }
+    ]
+  }

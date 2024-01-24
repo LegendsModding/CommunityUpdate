@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_animal_camel_face:base_entity_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mount_camel_face_d",
+      "coeffMap": "textures/entity/tex_mount_camel_face_mr",
+      "normalMap": "textures/entity/tex_mount_camel_face_n"
+    }
+  }
+}

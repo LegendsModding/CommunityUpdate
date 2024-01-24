@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_base_state_banner": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_wmap_base_state_banner_chevron","MetaMaterial.mat_wmap_base_state_banner_exclamation","MetaMaterial.mat_wmap_base_state_banner_sword","MetaMaterial.mat_wmap_base_state_banner_x","MetaMaterial.mat_wmap_base_state_banner_boss_attack","MetaMaterial.mat_wmap_base_state_banner_boss_defend","MetaMaterial.mat_wmap_base_state_banner_boss_obstacle","MetaMaterial.mat_wmap_base_state_banner_boss_frost","MetaMaterial.mat_wmap_base_state_banner_attack","MetaMaterial.mat_wmap_base_state_banner_defend","MetaMaterial.mat_wmap_base_state_banner_obstacle","MetaMaterial.mat_wmap_base_state_banner_frost"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_base_state_banner_chevron": "Array.materials[variable.banner_state]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

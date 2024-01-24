@@ -1,0 +1,173 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:audio_molang_to_fmod":  [
+        {
+          "fmod": "mount_speed",
+          "max": 13,
+          "min": 0,
+          "molang": "query.speed"
+        },
+        {
+          "fmod": "mount_vel_y",
+          "molang": "query.velocity_y"
+        }
+      ],
+      "badger:block_source_info": {
+      },
+      "badger:decoration_collider_request": {
+        "name": "badger:decoration_collider_mount_horse"
+      },
+      "badger:face_animation": {
+        "anim_columns": 5,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 4.5
+      },
+      "badger:mount_molang": {
+        "mount_variable": "mount_camel"
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_mount_camel_dx_hurt"
+        },
+        "intense_knockback": {
+          "audio": "BAE_mount_camel_dx_knockback_intense"
+        },
+        "normal_hit": {
+          "audio": "BAE_mount_camel_dx_hurt"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mount_camel_dx_knockback_normal"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mount_camel_swim_liquid"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mount_camel_swim_liquid_stop"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mount_camel_knockback_land"
+        },
+        "sprint_start": {
+          "audio": "BAE_mount_camel_sprint_start"
+        },
+        "sprint_stop": {
+          "audio": "BAE_mount_camel_sprint_stop"
+        },
+        "weak_hit": {
+          "audio": "BAE_mount_camel_dx_hurt"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mount_camel",
+        "limit": 64
+      },
+      "badger:speed_data_to_fmod": {
+        "fmod_speed_param": "mount_speed",
+        "fmod_velocity_y_param": "mount_vel_y",
+        "max_speed": 13,
+        "min_speed": 0
+      },
+      "badger:template": ["badger:template_status_effects_mount"]
+    },
+    "description": {
+      "animations": {
+        "audio": "controller.animation.mount_camel.audio",
+        "default": "controller.animation.mount_camel.default",
+        "fe_anim": "controller.animation.mount_camel.fe_anim",
+        "06_cheer_a": "animation.mount_camel.06_cheer_a",
+        "06_climb_a": "animation.mount_camel.06_climb_a",
+        "06_death": "animation.mount_camel.06_death",
+        "06_doublejump_up": "animation.mount_camel.06_doublejump_up",
+        "06_fe_idle_a": "animation.mount_camel.06_fe_idle_a",
+        "06_idle_a": "animation.mount_camel.06_idle_a",
+        "06_idle_b": "animation.mount_camel.06_idle_b",
+        "06_idle_c": "animation.mount_camel.06_idle_c",
+        "06_jump_down": "animation.mount_camel.06_jump_down",
+        "06_jump_end": "animation.mount_camel.06_jump_end",
+        "06_jump_enter": "animation.mount_camel.06_jump_enter",
+        "06_jump_up": "animation.mount_camel.06_jump_up",
+        "06_run_a": "animation.mount_camel.06_run_a",
+        "06_run_b": "animation.mount_camel.06_run_b",
+        "06_run_c": "animation.mount_camel.06_run_c",
+        "06_run_d": "animation.mount_camel.06_run_d",
+        "06_spit_a": "animation.mount_camel.06_spit_a",
+        "06_stop_b": "animation.mount_camel.06_stop_b",
+        "knockback_a": "animation.mount_camel.knockback_a",
+        "locomotion": "controller.animation.mount_camel.loco",
+        "run_ascending": "animation.mount_camel.run_ascending",
+        "stop_a": "animation.mount_camel.stop_a",
+        "swim_a": "animation.mount_camel.swim_a",
+        "swim_idle_a": "animation.mount_camel.swim_idle_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Narrow","Bulge High","Bulge Low"],
+      "geometry": {
+        "default": "geometry.mount_camel"
+      },
+      "identifier": "badger:mount_camel",
+      "materials": {
+        "mat_mount_camel": "mat_mount_camel",
+        "mat_mount_camel_face": "mat_mount_camel_face",
+        "mat_xray_entity": "mat_xray_entity"
+      },
+      "particle_effects": {
+        "double_jump": "badger:fx_mount_land_daisy_smoke",
+        "double_jump_02": "badger:fx_mount_camel_double_jump_ring",
+        "fx_jump_land": "badger:fx_mount_camel_land",
+        "fx_lick": "badger:fx_mount_camel_lick",
+        "fx_spit": "badger:fx_mount_camel_spit",
+        "jump_land_daisy": "badger:fx_mount_land_daisy"
+      },
+      "render_controllers": ["controller.render.mount_camel","controller.render.xray"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "audio": "1"
+          }
+        ],
+        "initialize": ["variable.geo_spit_vis = 0;"]
+      },
+      "sound_effects": {
+        "attack_tongue_swipe": "BAE_mount_camel_attack_tongue_swipe",
+        "bodyfall": "BAE_mount_camel_bodyfall",
+        "double_jump": "BAE_mount_camel_double_jump",
+        "dx_attack": "BAE_mount_camel_dx_attack",
+        "dx_cheer": "BAE_mount_camel_dx_cheer",
+        "dx_death": "BAE_mount_camel_dx_death",
+        "dx_idle": "BAE_mount_camel_dx_idle",
+        "dx_jump": "BAE_mount_camel_dx_jump",
+        "dx_land": "BAE_mount_camel_dx_land",
+        "dx_stop": "BAE_mount_camel_dx_stop",
+        "fall_loop": "BAE_mount_camel_fall_loop",
+        "fall_loop_stop": "BAE_mount_camel_fall_loop_stop",
+        "footsteps": "BAE_mount_camel_footsteps",
+        "footsteps_idle": "BAE_mount_camel_footsteps_idle",
+        "jump": "BAE_mount_camel_jump",
+        "land": "BAE_mount_camel_land",
+        "land_short": "BAE_mount_camel_land_short",
+        "run_loop": "BAE_mount_camel_run_loop",
+        "run_loop_stop": "BAE_mount_camel_run_loop_stop",
+        "spit": "BAE_mount_camel_spit",
+        "stop_a": "BAE_mount_camel_stop_a",
+        "swim_idle_kick": "BAE_mount_camel_swim_idle_kick",
+        "swim_os": "BAE_mount_camel_swim_oneshot",
+        "tongue_out": "BAE_mount_camel_tongue_out",
+        "tongue_swipe": "BAE_mount_camel_tongue_swipe"
+      }
+    }
+  }
+}

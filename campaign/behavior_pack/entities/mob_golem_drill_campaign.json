@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_drill",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ally Unit"
+    },
+    "components": {
+      "badger:lured": {
+        "resource_requirement": "unlock_poi_golem_resource"
+      },
+      "badger:template": {
+        "parent": "badger:mob_golem_drill",
+        "game_mode": "campaign"
+      }
+    }
+  }
+}

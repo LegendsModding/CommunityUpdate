@@ -1,0 +1,8 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_deco_cactus_single": {
+            "decoration": "deco_cactus_single"
+        }
+    }
+}

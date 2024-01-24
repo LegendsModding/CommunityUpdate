@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_drill_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_drill": "MetaMaterial.mat_mob_golem_drill"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_cube": "variable.geo_cube_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

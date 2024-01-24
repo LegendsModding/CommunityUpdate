@@ -1,0 +1,21 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description":{
+      "identifier": "badger:piglin_frost"
+    },
+    "components": {
+      "badger:presentation_event":{
+        "on_piglin_horn":{
+          "rumble":{
+            "duration": 0.0,
+            "strength": 35,
+            "priority": 2,
+            "override": true,
+            "range": 50
+          }
+        }
+      }
+    }
+  }
+}

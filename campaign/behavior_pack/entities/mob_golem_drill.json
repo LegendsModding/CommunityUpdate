@@ -1,0 +1,425 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_drill",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ally Unit"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.65,
+        "height": 4.5
+      },
+      "capped_spawner": {
+        "cap_type": "drill_reinforcements",
+        "individual_cap": 21,
+        "toggled_actions": [
+          "spawn_golem",
+          "spawn_golem_ranged",
+          "spawn_golem_cavalry"
+        ]
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:movement": {
+        "move_speed": 4,
+        "air_control_factor": 0.5
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:collision_weight": {
+        "weight": 300
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 15.0,
+        "fall_distance": 10,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "drill_golem",
+          "mob",
+          "luredirect",
+          "special",
+          "frontline",
+          "poi_golem"
+        ]
+      },
+      "badger:unit_direct_tags" : {
+        "tags": [
+          "unit_direct_mob",
+          "unit_direct_special",
+          "unit_direct_drill_golem"
+        ]
+      },
+      "badger:health": {
+        "max_health": 600
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short"
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "mob",
+            "value": "mob_golem_drill"
+          },
+          {
+            "key": "visibility",
+            "value": "revealed"
+          }
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_mob_golem_drill",
+        "alliance_rule_filter": "friendly",
+        "label": "poi.ally.06.name",
+        "world_position_offset": [
+          0,
+          7,
+          0
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob spawning
+          {
+            "name": "ally_drill_cavalry_spawn",
+            "max_range": 35,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "spawn_golem"
+            ]
+          },
+          //Potion Targeting
+          {
+            "name": "ally_drill_potion_enemy_attack",
+            "max_range": 18,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 3,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "potion_attack_melee"
+            ]
+          },
+          //Melee attack
+          {
+            "name": "ally_drill_enemy_attack",
+            "max_range": 18,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 3,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "attack_melee"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "ranged": 0.5,
+          "explosion": 2,
+          "hazard": 0.5,
+          "potion": 1.5
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 8,
+          "sc": 4,
+          "rc": 8,
+          "ht": 1,
+          "ct": 5
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "spawn_golem",
+            "transfer_activation": [
+              "spawn_golem_ranged",
+              "spawn_golem_cavalry"
+            ],
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 10.0,
+              "wind_down": 4.365,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 9.5
+            },
+            "spawner": {
+              "type": "badger:spawner_golem_drill_transform",
+			        "cap_children_to_owner": true
+            }
+          },
+          {
+            "name": "spawn_golem_ranged",
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 10.0,
+              "wind_down": 4.365,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 9.5
+            },
+            "spawner": {
+              "type": "badger:spawner_golem_drill_transform_ranged",
+              "cap_children_to_owner": true
+            }
+          },
+          {
+            "name": "spawn_golem_cavalry",
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 10.0,
+              "wind_down": 4.365,
+              "cooldown_time": 5,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 9.5
+            },
+            "spawner": {
+              "type": "badger:spawner_golem_drill_transform_cavalry",
+              "cap_children_to_owner": true
+            }
+          },
+          {
+            "name": "attack_melee",
+            "trigger": "on_attack_melee",
+            "on_hit_target_trigger": "on_golem_drill_melee_attack_hit",
+            "range": {
+              "max_range": 2.0
+            },
+            "state_machine": {
+              "wind_up": 1.7,
+              "wind_down": 0.966,
+              "cooldown_time": 1.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {
+              "time_window": 0.5
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "cylinder",
+                "aperture_angle": 20,
+                "radius": 5.5,
+                "thickness": 1.0,
+                "position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "height": 2.0
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "melee"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 47,
+                "force": 21,
+                "falloff": {
+                  "min_radius": 0
+                }
+              }
+            }
+          },
+          {
+            "name": "drill_approach",
+            "range": {
+              "max_range": 2
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.2,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "timer": {
+          "interval": 3,
+		  "jitter": [-1,0,1]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "large_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.0
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "frozen": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned_no_vfx": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 2.5,
+          "resistance_persist_time": 0
+        },
+        "bard_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:auto_despawn": {
+        "distance": 400
+      },
+      "badger:telemetry_category": {
+        "category_name": "POI Golem"
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:village_influence": {
+        "amount": 20
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_poi_mob",
+        "badger:component_leash_on_stop_default",
+        "badger:component_becomes_lost_poi_golem",
+        "badger:component_difficulty_modifiers_mob_first_diorite"
+      ]
+    }
+  }
+}

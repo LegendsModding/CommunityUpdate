@@ -27,6 +27,7 @@
     "campaignobjectivehealthbars": true,
     "exclusiveluredunits": true,
     "enableunlocks": true,
+    "allowislands": true,
     "allowteamswitching": false
   },
   "badger:template": {

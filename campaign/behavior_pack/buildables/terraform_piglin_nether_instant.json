@@ -1,0 +1,74 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_piglin_nether_instant",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Siegecraft",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "",
+        "buildable_category": ""
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:component_offline_construction_default",
+        "badger:template_structure_piglin"
+      ],
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "terraform_piglin_nether",
+        "build_time": 20,
+        "faction_variations": {
+          "faction.pig.defend": "terraform_piglin_defend_nether",
+          "faction.pig.obstacle": "terraform_piglin_obstacle_nether",
+          "faction.pig.wof": "terraform_piglin_attack_nether",
+          "faction.pig.attack": "terraform_piglin_attack_nether",
+          "faction.pig.dbb": "terraform_piglin_attack_nether",
+          "faction.pig.frost": "terraform_piglin_frost_nether"
+        }
+      },
+      "badger:buildable_foundation": {
+        "nbt_file": "terraform_piglin_nether_foundation",
+        "offset": -1
+      },
+      "badger:health": {
+        "max_health": 150
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_small"
+      },
+      "badger:loot": {
+        "table": "piglin_nether_spreader"
+      },
+      "badger:netherrack_spreading": {
+        "denether_spreader_distance": 2
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "pigSpreader",
+          "roamingSpreader",
+          "piglin"
+        ]
+      }
+    }
+  }
+}

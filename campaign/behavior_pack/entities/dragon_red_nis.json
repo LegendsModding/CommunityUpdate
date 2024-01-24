@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:dragon_red_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:entity_collision": {},
+      "badger:aabb": {
+        "height": 4.54689147949,
+        "length": 1.26938148499,
+        "width": 2.06250244141
+      },
+      "badger:tags": {
+        "tags": [
+          "block",
+          "dragon_red_nis",
+          "poi_legend_dragon_red"
+        ]
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 4,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_poi_legend_dragon_interaction_hold"
+          }
+        ]
+      },
+      "badger:bsharp_interact_cost": {
+        "resource_cost": [
+          {
+            "item": "gold",
+            "amount": 1
+          }
+        ],
+        "unlock": {
+          "item": "unlock_poi_legend_dragon_red_resource",
+          "amount": 1
+        }
+      }
+    }
+  }
+}

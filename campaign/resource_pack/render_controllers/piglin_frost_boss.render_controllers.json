@@ -1,0 +1,31 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_frost_boss": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_frost_boss": "MetaMaterial.mat_piglin_frost_boss"
+        },
+        {
+          "mat_piglin_frost_boss_face": "MetaMaterial.mat_piglin_frost_boss_face"
+        },
+        {
+          "mat_fx_spore_healed_512": "MetaMaterial.mat_fx_spore_healed_512"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_cheeks": "variable.geo_cheeks_vis"
+        },
+        {
+          "geo_lips": "variable.geo_lips_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ],
+      "textures": ["Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

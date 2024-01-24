@@ -1,0 +1,101 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_controller_roaming_piglin_general_world_night",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_spawner_controller_roaming_piglin",
+        "badger:template_spawner_distance_rule_away_all"
+      ],
+      "badger:tags": {
+        "tags": [
+          "spawner_controller_roaming_piglin_general_world_night",
+          "roaming_piglin_spawner_controller"
+        ]
+      },
+      "badger:buildable_controller_spawner": {
+        "global_active": [
+          {
+            "horde_name": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_grunter",
+              "badger:spawner_piglin_faction_medic_attack",
+              "badger:spawner_piglin_faction_medic_attack"
+            ],
+            "times": "night"
+          },
+          {
+            "horde_name": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_faction_medic_defend",
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_engineer"
+            ],
+            "times": "night"
+          },
+          {
+            "horde_name": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_faction_medic_obstacle",
+              "badger:spawner_piglin_faction_pack_grunter",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          },
+          {
+            "horde_name": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          }
+        ],
+        "claimed_area": [
+          {
+            "claimed_by": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_grunter",
+              "badger:spawner_piglin_faction_medic_attack",
+              "badger:spawner_piglin_faction_medic_attack"
+            ],
+            "times": "night"
+          },
+          {
+            "claimed_by": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_faction_medic_defend",
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_engineer"
+            ],
+            "times": "night"
+          },
+          {
+            "claimed_by": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_faction_medic_obstacle",
+              "badger:spawner_piglin_faction_pack_grunter",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          },
+          {
+            "claimed_by": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_faction_pack_runt",
+              "badger:spawner_piglin_faction_pack_grunter"
+            ],
+            "times": "night"
+          }
+        ],
+        "ticks_between_checks": 32
+      }
+    }
+  }
+}

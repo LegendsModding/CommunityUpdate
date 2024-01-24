@@ -1,0 +1,151 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.66
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_piglin_medic_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_medic_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_medic_knockback_land"
+        },
+        "sfx_attack_interrupt": {
+          "audio": "BAE_piglin_medic_aoe_sweep_stop"
+        },
+        "sfx_scared_stop": {
+          "audio": "BAE_piglin_medic_dx_scared_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_medic",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
+      "badger:threat_source": {
+        "base_value": 2,
+        "spawn_value": 2,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_fast": "animation.piglin_medic.additive_tumble_fast",
+        "additive_tumble_slow": "animation.piglin_medic.additive_tumble_slow",
+        "aoe_sweep": "animation.piglin_medic.aoe_sweep",
+        "climb_a": "animation.piglin_medic.climb_a",
+        "death_a": "animation.piglin_medic.death_a",
+        "default": "controller.animation.piglin_medic.default",
+        "fxcontroller": "controller.animation.piglin_medic.fxcontroller",
+        "hitreact": "controller.animation.piglin_medic.hitreact",
+        "hitreact_a": "animation.piglin_medic.hitreact_a",
+        "idle_a": "animation.piglin_medic.idle_a",
+        "idle_b": "animation.piglin_medic.idle_b",
+        "idle_c": "animation.piglin_medic.idle_c",
+        "idle_d": "animation.piglin_medic.idle_d",
+        "idles": "controller.animation.piglin_medic.idles",
+        "knockback_a": "animation.piglin_medic.knockback_a",
+        "knockback_land": "animation.piglin_medic.knockback_land",
+        "locomotion": "controller.animation.piglin_medic.locomotion",
+        "scared_run": "animation.piglin_medic.scared_run",
+        "spawn_a": "animation.piglin_medic.spawn_a",
+        "stun_a": "animation.piglin_medic.stun_a",
+        "swim_a": "animation.piglin_medic.swim_a",
+        "swim_idle": "animation.piglin_medic.swim_idle",
+        "walk_a": "animation.piglin_medic.walk_a",
+        "walk_e": "animation.piglin_medic.walk_e"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "attack": "geometry.piglin_medic_attack",
+        "defend": "geometry.piglin_medic_defend",
+        "obstacle": "geometry.piglin_medic_obstacle",
+        "frost": "geometry.piglin_medic_frost",
+        "second_skin": "geometry.piglin_medic_second_skin"
+      },
+      "identifier": "badger:piglin_medic",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
+        "mat_piglin_medic_attack": "mat_piglin_medic_attack",
+        "mat_piglin_medic_attack_face": "mat_piglin_medic_attack_face",
+        "mat_piglin_medic_defend": "mat_piglin_medic_defend",
+        "mat_piglin_medic_defend_face": "mat_piglin_medic_defend_face",
+        "mat_piglin_medic_obstacle": "mat_piglin_medic_obstacle",
+        "mat_piglin_medic_obstacle_face": "mat_piglin_medic_obstacle_face",
+        "mat_piglin_medic_frost": "mat_piglin_medic_frost",
+        "mat_piglin_medic_frost_face": "mat_piglin_medic_frost_face"
+      },
+      "particle_effects": {
+        "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_smoke_base": "badger:fx_medic_smoke_base",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust",
+        "fx_sweep": "badger:fx_medic_aoe_sweep"
+      },
+      "render_controllers": ["controller.render.piglin_medic","controller.render.piglin_medic.second_skin"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "fxcontroller": "1"
+          },
+          {
+            "hitreact": "1"
+          }
+        ],
+        "initialize": ["variable.attack_used = 0;","variable.end_run = 0;","variable.second_skin_vis = 0;","variable.model_chooser = 0;"]
+      },
+      "sound_effects": {
+        "aoe_gas": "BAE_piglin_medic_aoe_gas",
+        "aoe_gas_stop": "BAE_piglin_medic_aoe_gas_stop",
+        "attack": "BAE_piglin_medic_aoe_sweep",
+        "attack_stop": "BAE_piglin_medic_aoe_sweep_stop",
+        "bodyfall": "BAE_piglin_medic_bodyfall",
+        "dx_attack": "BAE_piglin_medic_dx_attack",
+        "dx_damage": "BAE_piglin_medic_dx_damage",
+        "dx_death": "BAE_piglin_medic_dx_death",
+        "dx_idle": "BAE_piglin_medic_dx_idle",
+        "dx_scared": "BAE_piglin_medic_dx_scared",
+        "dx_snort_misc": "BAE_piglin_medic_dx_snort_misc",
+        "footstep_run": "BAE_piglin_medic_footstep_run",
+        "footstep_walk": "BAE_piglin_medic_footstep_walk",
+        "idle_move": "BAE_piglin_medic_idle_move",
+        "idle_tank_punch": "BAE_piglin_medic_idle_tank_punch",
+        "idle_tank_shake": "BAE_piglin_medic_idle_tank_shake",
+        "jump": "BAE_piglin_medic_jump",
+        "jump_land": "BAE_piglin_medic_jump_land",
+        "piglin_death_poof_small": "BAE_piglin_death_poof_small",
+        "spawn": "BAE_piglin_medic_spawn",
+        "swim_arm_double": "BAE_piglin_medic_swim_arm_double",
+        "swim_arm_single": "BAE_piglin_medic_swim_arm_single"
+      },
+      "textures": {
+        "default": "textures/entity/piglin_medic/tex_piglin_medic_d"
+      }
+    }
+  }
+}

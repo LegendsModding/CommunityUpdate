@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.mount_camel": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mount_camel": "MetaMaterial.mat_mount_camel"
+        },
+        {
+          "mat_mount_camel_face": "MetaMaterial.mat_mount_camel_face"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_spit": "variable.geo_spit_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

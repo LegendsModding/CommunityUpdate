@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_burn_tower": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_burn_tower": "MetaMaterial.mat_wmap_burn_tower"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "code:place_scattered": {
+    "description": {
+      "identifier": "badger:feature_desert_cactus_single_scatter"
+    },
+    "places_feature": "badger:feature_desert_cactus_single",
+    "x": {
+      "extent": [
+        -5,
+        5
+      ],
+      "distribution": "gaussian"
+    },
+    "z": {
+      "extent": [
+        -5,
+        5
+      ],
+      "distribution": "gaussian"
+    },
+    "iterations": "math.random(1,2)",
+    "scatter_chance": "math.random(10,20)",
+    "project_input_to_floor": false,
+    "y": {
+      "extent": [
+        -2.0,
+        2.0
+      ],
+      "distribution": "gaussian"
+    }
+  }
+}

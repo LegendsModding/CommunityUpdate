@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_piglin_bridge_post",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:buildable_requirement": {
+        "recipe": [],
+        "invalid_blocks": [],
+        "multistep_ground_intersect_depth": 8
+      },
+      "badger:buildable_presentation": {
+        "icon": "",
+        "buildable_category": "",
+        "segment_offset": -4
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:template_stairs_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "bridge",
+          "piglin_bridge",
+          "donotattack",
+          "piglin"
+        ]
+      },
+      "badger:destroy_on_village_destruction": {
+        "ignore": true
+      },
+      "badger:buildable_snap_point": {},
+
+      "badger:buildable_structure": {
+
+        "nbt_file": "chunk_piglin_defend_bridge_post",
+
+        "build_time": 0,
+
+        "construction_start_trigger": "on_construction_start",
+
+        "construction_end_trigger": "on_construction_end",
+
+        "faction_variations": {
+
+          "faction.pig.defend": "chunk_piglin_defend_bridge_post",
+
+          "faction.pig.dbb": "chunk_piglin_defend_bridge_post",
+
+          "faction.pig.wof": "chunk_piglin_defend_bridge_post",
+
+          "faction.pig.obstacle": "chunk_piglin_obstacle_bridge_post",
+
+          "faction.pig.frost": "chunk_piglin_frost_bridge_post"
+
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.dragon_red_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_dragon_red": "MetaMaterial.mat_dragon_red"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_cube": "variable.geo_cube_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

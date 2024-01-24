@@ -1,0 +1,80 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:poi_tower_05"
+        },
+        "components": {
+            "badger:interaction_presentation": {
+              "trigger_specific_events": true,
+              "trigger_generic_events": false
+            },
+            "badger:template": "badger:template_structure",
+            "badger:presentation_event": {
+                "on_construction_start": {
+                    "audio": "BAE_structure_placement_wof_large",
+                    "particles": [
+                        {
+                            "effect": "badger:fx_placement_11x11",
+                            "enabled": true,
+                            "bind_to_actor": false
+                        }
+                    ]
+                },
+                "on_construction_end": {
+                    "audio": "BAE_poi_tower_05_idle"
+                },
+                "on_building_deconstructed": {
+                    "audio": "BAE_poi_tower_05_deconstructed"
+                },
+                "on_building_destroyed": {
+                    "audio": "BAE_poi_tower_05_dmg_destroyed"
+                },
+                "on_damage_applied_to_structure_0": {
+                    "audio": "BAE_poi_tower_05_dmg_stage0"
+                },
+                "on_damage_applied_to_structure_1": {
+                    "audio": "BAE_poi_tower_05_dmg_stage0"
+                },
+                "on_damage_applied_to_structure_2": {
+                    "audio": "BAE_poi_tower_05_dmg_stage1"
+                },
+                "on_damage_applied_to_structure_3": {
+                    "audio": "BAE_poi_tower_05_dmg_stage2"
+                },
+                "on_healing_applied_to_structure_0": {
+                    "audio": "BAE_carpenter_heal_full"
+                },
+                "on_healing_applied_to_structure_1": {
+                    "audio": "BAE_carpenter_heal_stage1"
+                },
+                "on_healing_applied_to_structure_2": {
+                    "audio": "BAE_carpenter_heal_stage2"
+                }
+            },
+            "badger:area_overlays": {
+                "circles": [
+                    {
+                        "layer": "overlay",
+                        "type": "tower",
+                        "views": [
+                            "placement"
+                        ],
+                        "filter_team": true,
+                        "size": 40
+                    }
+                ]
+            },
+            "badger:hud_message_interaction_failed": {
+                "unlock_cost_failed_message": {
+                    "hud_message_id": "deconstruct_unlock_required",
+                    "hud_message_args": ["structures.unlock.poi.tower.name", "poi.tower_village_05.name"]
+                },
+                "resource_cost_failed_message": {
+                    "hud_message_id": "deconstruct_cost_required",
+                    "hud_message_args": ["100", "resources.gold.name", "key.item.gold", "25", "resources.diamond.name", "key.item.diamond", "poi.tower_village_05.name"]
+                }
+            }
+        }
+    }
+}

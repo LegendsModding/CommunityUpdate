@@ -1,0 +1,64 @@
+{
+    "objectives": [
+    {
+        "name" : "objectives.defeatBastion",
+        "priority": 1,
+        "amount_required": 1,
+        "is_primary": true
+    },
+    {
+        "name" : "objectives.defeatHunt",
+        "priority": 2,
+        "amount_required": 1,
+        "is_primary": true
+    },
+    {
+        "name" : "objectives.defeatSpore",
+        "priority": 3,
+        "amount_required": 1,
+        "is_primary": true
+    },
+    {
+        "name" : "objectives.defeatFrost",
+        "priority": 3,
+        "amount_required": 1,
+        "is_primary": true
+    },
+    {
+        "name" : "objectives.villagesSafe",
+        "priority": 4,
+        "amount_required": 5
+    },
+    {
+        "name" : "objectives.witchesUnlocked",
+        "priority": 5,
+        "amount_required": 1
+    },
+    {
+        "name" : "objectives.alliancesSafe",
+        "priority": 6,
+        "amount_required": 4
+    },
+    {
+        "name" : "objectives.mountsUnlocked",
+        "priority": 7,
+        "amount_required": 5
+    },
+    {
+        "name" : "objectives.firstsAwoken",
+        "priority": 8,
+        "amount_required": 5
+    },
+    {
+        "name" : "objectives.towersUnlocked",
+        "priority": 9,
+        "amount_required": 4
+    },
+    {
+        "name" : "objectives.saveWorld",
+        "priority": 10,
+        "amount_required": 1,
+        "is_primary": true
+    }
+    ]
+}

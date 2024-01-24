@@ -1,0 +1,1100 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_addPortalAct1",
+      "cost": 0,
+      "tags": [
+        "addPortalAct1"
+      ],
+      "buildable": "badger:zoner_piglin_attack_territory_low_health"
+    },
+    {
+      "unique_card_id": "badger_addPortalDarkBeacon",
+      "cost": 0,
+      "tags": [
+        "addPortalDarkBeacon"
+      ],
+      "buildable": "badger:zoner_piglin_territory_dark_beacon"
+    },
+    {
+      "unique_card_id": "badger_piglinTower",
+      "cost": 0,
+      "tags": [
+        "piglinTower"
+      ],
+      "buildable": "badger:tower_piglin_arrow"
+    },
+    {
+      "unique_card_id": "badger_piglinSporeFan",
+      "cost": 0,
+      "tags": [
+        "piglinSporeFan"
+      ],
+      "buildable": "badger:tower_piglin_spore_fan"
+    },
+    {
+      "unique_card_id": "badger_piglinVillageAttackSpawnLocation",
+      "cost": 0,
+      "tags": [
+        "piglinVillageAttackSpawnLocation"
+      ],
+      "buildable": "badger:piglin_village_attack_spawn_location"
+    },
+    {
+      "unique_card_id": "badger_superGoldmine",
+      "cost": 0,
+      "tags": [
+        "superGoldmine"
+      ],
+      "buildable": "badger:piglin_super_goldmine"
+    },
+    {
+      "unique_card_id": "badger_obstacleRallypoint",
+      "cost": 0,
+      "tags": [
+        "obstacleRallypoint"
+      ],
+      "buildable": "badger:prop_piglin_obstacle_rally_point"
+    },
+    {
+      "unique_card_id": "badger_frostRallypoint",
+      "cost": 0,
+      "tags": [
+        "frostRallypoint"
+      ],
+      "buildable": "badger:prop_piglin_frost_rally_point"
+    },
+    {
+      "unique_card_id": "badger_dbbRallyPoint",
+      "cost": 0,
+      "tags": [
+        "dbbRallyPoint"
+      ],
+      "buildable": "badger:prop_piglin_dbb_rally_point"
+    },
+    {
+      "unique_card_id": "badger_piglinKnockbackTower",
+      "cost": 0,
+      "tags": [
+        "piglinKnockbackTower"
+      ],
+      "buildable": "badger:tower_piglin_knockback"
+    },
+    {
+      "unique_card_id": "badger_pigThrowerTower",
+      "cost": 0,
+      "tags": [
+        "pigThrowerTower"
+      ],
+      "buildable": "badger:tower_piglin_thrower"
+    },
+    {
+      "unique_card_id": "badger_pigThrowerTower2",
+      "cost": 0,
+      "tags": [
+        "pigThrowerTower2"
+      ],
+      "buildable": "badger:tower_piglin_thrower_2"
+    },
+    {
+      "unique_card_id": "badger_pigThrowerTower3",
+      "cost": 0,
+      "tags": [
+        "pigThrowerTower3"
+      ],
+      "buildable": "badger:tower_piglin_thrower_3"
+    },
+    {
+      "unique_card_id": "badger_lavaSprayerTower",
+      "cost": 0,
+      "tags": [
+        "lavaSprayerTower"
+      ],
+      "buildable": "badger:tower_piglin_lava_thrower"
+    },
+    {
+      "unique_card_id": "badger_sporeFanTower",
+      "cost": 0,
+      "tags": [
+        "sporeFanTower"
+      ],
+      "buildable": "badger:tower_piglin_spore_fan"
+    },
+    {
+      "unique_card_id": "badger_piglinShieldTower",
+      "cost": 0,
+      "tags": [
+        "piglinShieldTower"
+      ],
+      "buildable": "badger:tower_piglin_shield"
+    },
+    {
+      "unique_card_id": "badger_addFighterBarracks",
+      "cost": 0,
+      "tags": [
+        "addFighterBarracks"
+      ],
+      "buildable": "badger:spawner_piglin_barracks_fighter"
+    },
+    {
+      "unique_card_id": "badger_addDisruptorBarracks",
+      "cost": 0,
+      "tags": [
+        "addDisruptorBarracks"
+      ],
+      "buildable": "badger:spawner_piglin_barracks_disruptor"
+    },
+    {
+      "unique_card_id": "badger_addSpecialistBarracks",
+      "cost": 0,
+      "tags": [
+        "addSpecialistBarracks"
+      ],
+      "buildable": "badger:spawner_piglin_barracks_specialist"
+    },
+    {
+      "unique_card_id": "badger_addSiegerBarracks",
+      "cost": 0,
+      "tags": [
+        "addSiegerBarracks"
+      ],
+      "buildable": "badger:spawner_piglin_barracks_sieger"
+    },
+    {
+      "unique_card_id": "badger_addPvPBarracks",
+      "cost": 0,
+      "tags": [
+        "addPvPBarracks"
+      ],
+      "buildable": "badger:spawner_piglin_barracks_fighter"
+    },
+    {
+      "unique_card_id": "badger_soloPigGate",
+      "cost": 0,
+      "buildable": "badger:gate_piglin",
+      "tags": [
+        "soloPigGate"
+      ]
+    },
+    {
+      "unique_card_id": "badger_goldMine",
+      "cost": 0,
+      "buildable": "badger:prop_piglin_goldmine",
+      "tags": [
+        "goldMine"
+      ]
+    },
+    {
+      "unique_card_id": "badger_netherSpreader",
+      "cost": 0,
+      "buildable": "badger:terraform_piglin_nether",
+      "tags": [
+        "netherSpreader"
+      ]
+    },
+    {
+      "unique_card_id": "badger_superNetherSpreaderFear",
+      "cost": 0,
+      "buildable": "badger:piglin_super_nether_spreader",
+      "tags": [
+        "superNetherSpreaderFear"
+      ]
+    },
+    {
+      "unique_card_id": "badger_netherSpreaderInstant",
+      "cost": 0,
+      "buildable": "badger:terraform_piglin_nether_instant",
+      "tags": [
+        "netherSpreaderInstant"
+      ]
+    },
+    {
+      "unique_card_id": "badger_piglinCrate",
+      "cost": 0,
+      "buildable": "badger:poi_loot_piglin_crate",
+      "tags": [
+        "piglinCrate"
+      ]
+    },
+    {
+      "unique_card_id": "badger_rangeExtender",
+      "cost": 0,
+      "buildable": "badger:zoner_piglin_increased_range_missiles",
+      "tags": [
+        "rangeExtender"
+      ]
+    },
+    {
+      "unique_card_id": "badger_buildingRegenerator",
+      "cost": 0,
+      "buildable": "badger:zoner_piglin_regen_structures",
+      "tags": [
+        "buildingRegenerator"
+      ]
+    },
+    {
+      "unique_card_id": "badger_invisibleGrunterSpawner",
+      "cost": 0,
+      "buildable": "badger:spawner_piglin_invisible_grunter",
+      "tags": [
+        "invisibleGrunterSpawner"
+      ]
+    },
+    {
+      "unique_card_id": "badger_invisibleRuntSpawner",
+      "cost": 0,
+      "buildable": "badger:spawner_piglin_invisible_runt",
+      "tags": [
+        "invisibleRuntSpawner"
+      ]
+    },
+    {
+      "unique_card_id": "badger_invisibleWarboarSpawner",
+      "cost": 0,
+      "buildable": "badger:spawner_piglin_invisible_warboar",
+      "tags": [
+        "invisibleWarboarSpawner"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerDarkBeaconAllySkeleton",
+      "cost": 0,
+      "buildable": "badger:spawner_db_ally_skeleton",
+      "tags": [
+        "spawnerDarkBeaconAllySkeleton"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerDarkBeaconAllyZombie",
+      "cost": 0,
+      "buildable": "badger:spawner_db_ally_zombie",
+      "tags": [
+        "spawnerDarkBeaconAllyZombie"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerDarkBeaconAllyCreeper",
+      "cost": 0,
+      "buildable": "badger:spawner_db_ally_creeper",
+      "tags": [
+        "spawnerDarkBeaconAllyCreeper"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerDarkBeaconAllySpider",
+      "cost": 0,
+      "buildable": "badger:spawner_db_ally_spider",
+      "tags": [
+        "spawnerDarkBeaconAllySpider"
+      ]
+    },
+    {
+      "unique_card_id": "badger_darkBeaconPlayerTeleportLocation",
+      "cost": 0,
+      "buildable": "badger:dark_beacon_player_teleport_location",
+      "tags": [
+        "darkBeaconPlayerTeleportLocation"
+      ]
+    },
+    {
+      "unique_card_id": "badger_cineStageAct1",
+      "cost": 0,
+      "buildable": "badger:cine_stage_act1_peeping",
+      "tags": [
+        "cineStageAct1"
+      ]
+    },
+    {
+      "unique_card_id": "badger_piglinRallyingPoint",
+      "cost": 0,
+      "buildable": "badger:piglin_rallying_point",
+      "tags": [
+        "piglinRallyingPoint"
+      ]
+    },
+    {
+      "unique_card_id": "badger_mobCage",
+      "cost": 0,
+      "buildable": "badger:mob_alliance_mob_cage",
+      "tags": [
+        "mobCage"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerRoamingPiglinDefendFaction",
+      "cost": 0,
+      "buildable": "badger:spawner_roaming_piglins_defend_faction",
+      "tags": [
+        "spawnerRoamingPiglinDefendFaction"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerRoamingPiglinAttackFaction",
+      "cost": 0,
+      "buildable": "badger:spawner_roaming_piglins_attack_faction",
+      "tags": [
+        "spawnerRoamingPiglinAttackFaction"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerRoamingPiglinObstacleFaction",
+      "cost": 0,
+      "buildable": "badger:spawner_roaming_piglins_obstacle_faction",
+      "tags": [
+        "spawnerRoamingPiglinObstacleFaction"
+      ]
+    },
+    {
+      "unique_card_id": "badger_spawnerRoamingPiglinFrostFaction",
+      "cost": 0,
+      "buildable": "badger:spawner_roaming_piglins_frost_faction",
+      "tags": [
+        "spawnerRoamingPiglinFrostFaction"
+      ]
+    },
+    {
+      "unique_card_id": "badger_basePiglinCrystal",
+      "cost": 0,
+      "buildable": "badger:piglin_lava_coil",
+      "tags": [
+        "basePiglinCrystal"
+      ]
+    }
+  ],
+  "walls_cards": [
+    {
+      "unique_card_id": "darkBeaconWallsInner",
+      "cost": 0,
+      "tags": [
+        "darkBeaconWallsInner"
+      ],
+      "wall_buildable": "badger:wall_piglin_inner_001",
+      "path_entrance": "badger:gate_piglin_inner",
+      "embedded_buildables": []
+    },
+    {
+      "unique_card_id": "act1LavaCampWalls",
+      "cost": 0,
+      "tags": [
+        "act1LavaCampWalls"
+      ],
+      "wall_buildable": "badger:wall_piglin_inner_001",
+      "path_entrance": "badger:gate_piglin_inner",
+      "embedded_buildables": []
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_act1LavaCampCenterZones",
+      "cost": 0,
+      "tags": [
+        "act1LavaCampCenterZones"
+      ],
+      "zone_filter": "act1LavaCampCenterZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_act1TowerCampCenterZones",
+      "cost": 0,
+      "tags": [
+        "act1TowerCampCenterZones"
+      ],
+      "zone_filter": "act1TowerCampCenterZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_act1TowerCampEdgeZones",
+      "cost": 0,
+      "tags": [
+        "act1TowerCampEdgeZones"
+      ],
+      "zone_filter": "act1TowerCampEdgeZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_act1LavaCampPathZone",
+      "cost": 0,
+      "tags": [
+        "act1LavaCampPathZone"
+      ],
+      "zone_filter": "act1LavaCampPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_dbbBridgeConnect",
+      "cost": 0,
+      "tags": [
+        "dbbBridgeConnect"
+      ],
+      "zone_filter": "dbbBridgeConnect",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_dbbBridgeConnect1",
+      "cost": 0,
+      "tags": [
+        "dbbBridgeConnect1"
+      ],
+      "zone_filter": "dbbBridgeConnect1",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_dbbBridgeConnect2",
+      "cost": 0,
+      "tags": [
+        "dbbBridgeConnect2"
+      ],
+      "zone_filter": "dbbBridgeConnect2",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northElement",
+      "cost": 0,
+      "tags": [
+        "northElement"
+      ],
+      "zone_filter": "northElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_eastElement",
+      "cost": 0,
+      "tags": [
+        "eastElement"
+      ],
+      "zone_filter": "eastElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southElement",
+      "cost": 0,
+      "tags": [
+        "southElement"
+      ],
+      "zone_filter": "southElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_westElement",
+      "cost": 0,
+      "tags": [
+        "westElement"
+      ],
+      "zone_filter": "westElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northEastElement",
+      "cost": 0,
+      "tags": [
+        "northEastElement"
+      ],
+      "zone_filter": "northEastElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southEastElement",
+      "cost": 0,
+      "tags": [
+        "southEastElement"
+      ],
+      "zone_filter": "southEastElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northWestElement",
+      "cost": 0,
+      "tags": [
+        "northWestElement"
+      ],
+      "zone_filter": "northWestElement",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southWestElement",
+      "cost": 0,
+      "tags": [
+        "southWestElement"
+      ],
+      "zone_filter": "southWestElement",
+      "exclude": false
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_act1LavaCampCenterZones",
+      "cost": 0,
+      "tags": [
+        "act1LavaCampCenterZones"
+      ],
+      "zone_tag": "act1LavaCampCenterZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_act1TowerCampCenterZones",
+      "cost": 0,
+      "tags": [
+        "act1TowerCampCenterZones"
+      ],
+      "zone_tag": "act1TowerCampCenterZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_act1TowerCampEdgeZones",
+      "cost": 0,
+      "tags": [
+        "act1TowerCampEdgeZones"
+      ],
+      "zone_tag": "act1TowerCampEdgeZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_act1LavaCampPathZone",
+      "cost": 0,
+      "tags": [
+        "act1LavaCampPathZone"
+      ],
+      "zone_tag": "act1LavaCampPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_dbbBridgeConnect",
+      "cost": 0,
+      "tags": [
+        "dbbBridgeConnect"
+      ],
+      "zone_tag": "dbbBridgeConnect"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_dbbBridgeConnect1",
+      "cost": 0,
+      "tags": [
+        "dbbBridgeConnect1"
+      ],
+      "zone_tag": "dbbBridgeConnect1"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_dbbBridgeConnect2",
+      "cost": 0,
+      "tags": [
+        "dbbBridgeConnect2"
+      ],
+      "zone_tag": "dbbBridgeConnect2"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northElement",
+      "cost": 0,
+      "tags": [
+        "northElement"
+      ],
+      "zone_tag": "northElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_eastElement",
+      "cost": 0,
+      "tags": [
+        "eastElement"
+      ],
+      "zone_tag": "eastElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southElement",
+      "cost": 0,
+      "tags": [
+        "southElement"
+      ],
+      "zone_tag": "southElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_westElement",
+      "cost": 0,
+      "tags": [
+        "westElement"
+      ],
+      "zone_tag": "westElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northEastElement",
+      "cost": 0,
+      "tags": [
+        "northEastElement"
+      ],
+      "zone_tag": "northEastElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southEastElement",
+      "cost": 0,
+      "tags": [
+        "southEastElement"
+      ],
+      "zone_tag": "southEastElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northWestElement",
+      "cost": 0,
+      "tags": [
+        "northWestElement"
+      ],
+      "zone_tag": "northWestElement"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southWestElement",
+      "cost": 0,
+      "tags": [
+        "southWestElement"
+      ],
+      "zone_tag": "southWestElement"
+    }
+  ],
+  "zone_height_change_cards": [
+    {
+      "unique_card_id": "act1camp9height",
+      "cost": 0,
+      "tags": [
+        "act1camp9height"
+      ],
+      "biome": "nether_horderunner",
+      "zone_height_change": 9,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "act1camp3height",
+      "cost": 0,
+      "tags": [
+        "act1camp3height"
+      ],
+      "biome": "nether_horderunner",
+      "zone_height_change": 2,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "dbb7Height",
+      "cost": 0,
+      "tags": [
+        "dbb7Height"
+      ],
+      "biome": "nether_piglin_dbb",
+      "zone_height_change": 7,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "dbb9Height",
+      "cost": 0,
+      "tags": [
+        "dbb9Height"
+      ],
+      "biome": "nether_piglin_dbb",
+      "zone_height_change": 9,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "dbb5Height",
+      "cost": 0,
+      "tags": [
+        "dbb5Height"
+      ],
+      "biome": "nether_piglin_dbb",
+      "zone_height_change": 5,
+      "zone_height_control": "height_control_centered"
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "pvpBarracks",
+      "cost": 0,
+      "tags": [
+        "pvpBarracks"
+      ],
+      "tag": "pvpBarracks"
+    },
+    {
+      "unique_card_id": "aiExempt",
+      "cost": 0,
+      "tags": [
+        "aiExempt"
+      ],
+      "tag": "aiExempt"
+    },
+    {
+      "unique_card_id": "hasControlGroup",
+      "cost": 0,
+      "tags": [
+        "hasControlGroup"
+      ],
+      "tag": "hasControlGroup"
+    },
+    {
+      "unique_card_id": "aiAssigned",
+      "cost": 0,
+      "tags": [
+        "aiAssigned"
+      ],
+      "tag": "aiAssigned"
+    },
+    {
+      "unique_card_id": "primaryRallyPoint",
+      "cost": 0,
+      "tags": [
+        "primaryRallyPoint"
+      ],
+      "tag": "primaryRallyPoint"
+    },
+    {
+      "unique_card_id": "bossSpawnStructure",
+      "cost": 0,
+      "tags": [
+        "bossSpawnStructure"
+      ],
+      "tag": "bossSpawnStructure"
+    },
+    {
+      "unique_card_id": "subStructure",
+      "cost": 0,
+      "tags": [
+        "subStructure"
+      ],
+      "tag": "subStructure"
+    },
+    {
+      "unique_card_id": "heartBuildable",
+      "cost": 0,
+      "tags": [
+        "heartBuildable"
+      ],
+      "tag": "heartBuildable"
+    },
+    {
+      "unique_card_id": "specialistBarracks",
+      "cost": 0,
+      "tags": [
+        "specialistBarracks"
+      ],
+      "tag": "specialistBarracks"
+    },
+    {
+      "unique_card_id": "dbbOffensiveRally",
+      "cost": 0,
+      "tags": [
+        "dbbOffensiveRally"
+      ],
+      "tag": "dbbOffensiveRally"
+    },
+    {
+      "unique_card_id": "dbbDefensiveRally",
+      "cost": 0,
+      "tags": [
+        "dbbDefensiveRally"
+      ],
+      "tag": "dbbDefensiveRally"
+    },
+    {
+      "unique_card_id": "dbbSiegeRally",
+      "cost": 0,
+      "tags": [
+        "dbbSiegeRally"
+      ],
+      "tag": "dbbSiegeRally"
+    },
+    {
+      "unique_card_id": "doNotDivideRally",
+      "cost": 0,
+      "tags": ["doNotDivideRally"],
+      "tag": "doNotDivideRally"
+    },
+    {
+      "unique_card_id": "pigCrateOutpostL2",
+      "cost": 0,
+      "tags": [
+        "pigCrateOutpostL2"
+      ],
+      "tag": "pigCrateOutpostL2"
+    },
+    {
+      "unique_card_id": "pigCrateOutpostL3",
+      "cost": 0,
+      "tags": [
+        "pigCrateOutpostL3"
+      ],
+      "tag": "pigCrateOutpostL3"
+    }
+  ],
+  "entity_clearing_cards": [
+    {
+      "unique_card_id": "clearPiglinInvisibleSpawners",
+      "cost": 0,
+      "tags": [
+        "clearPiglinInvisibleSpawners"
+      ],
+      "entity_include_tag_set": [
+        "piglinInvisibleSpawner"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearPiglins",
+      "cost": 0,
+      "tags": [
+        "clearPiglins"
+      ],
+      "entity_include_tag_set": [
+        "night_roaming_piglin"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearAnimalSpawners",
+      "cost": 0,
+      "tags": [
+        "clearAnimalSpawners"
+      ],
+      "entity_include_tag_set": [
+        "spawner_animal"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearAnimals",
+      "cost": 0,
+      "tags": [
+        "clearAnimals"
+      ],
+      "entity_include_tag_set": [
+        "animal"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearLootPiglinCrate",
+      "cost": 0,
+      "tags": [
+        "clearLootPiglinCrate"
+      ],
+      "entity_include_tag_set": [
+        "piglin_crate_interact"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearWorldMobSpawners",
+      "cost": 0,
+      "tags": [
+        "clearWorldMobSpawners"
+      ],
+      "entity_include_tag_set": [
+        "mob_world_spawner"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearVillagers",
+      "cost": 0,
+      "tags": [
+        "clearVillagers"
+      ],
+      "entity_include_tag_set": [
+        "villager",
+        "illager"
+      ],
+      "entity_exclude_tag_set": []
+    },
+    {
+      "unique_card_id": "clearAlliedMobs",
+      "cost": 0,
+      "tags": [
+        "clearAlliedMobs"
+      ],
+      "entity_include_tag_set": [
+        "allied_mob"
+      ],
+      "entity_exclude_tag_set": []
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "dbb_district_path",
+      "cost": 0,
+      "tags": [
+        "dbb_district_path"
+      ],
+      "is_district_path": true
+    }
+  ],
+  "moat_cards": [
+    {
+      "unique_card_id": "act1LavaPool",
+      "cost": 0,
+      "tags": [
+        "act1LavaPool"
+      ],
+      "biome": "lava_moat",
+      "distance_in_zones": 0,
+      "filling_depth": 5
+    },
+    {
+      "unique_card_id": "act1LavaCampMoat",
+      "cost": 0,
+      "tags": [
+        "act1LavaCampMoat"
+      ],
+      "biome": "lava_moat",
+      "distance_in_zones": 1,
+      "filling_depth": 5
+    },
+    {
+      "unique_card_id": "act1SecondSkirmishMoat",
+      "cost": 0,
+      "tags": [
+        "act1SecondSkirmishMoat"
+      ],
+      "biome": "lava_moat",
+      "distance_in_zones": 1,
+      "filling_depth": 5
+    },
+    {
+      "unique_card_id": "DBBMoat",
+      "cost": 0,
+      "biome": "lava_moat",
+      "filling_depth": 5,
+      "distance_in_zones": 1,
+      "tags": [
+        "DBBMoat"
+      ],
+      "edge_biome": "nether_piglin_dbb_lava_border",
+      "edge_width_in_blocks": 1,
+      "width_in_blocks": 25
+    },
+    {
+      "unique_card_id": "DBBMoat2",
+      "cost": 0,
+      "biome": "lava_moat",
+      "filling_depth": 5,
+      "block_filling": "block_lava",
+      "distance_in_zones": 0,
+      "tags": [
+        "DBBMoat2"
+      ],
+      "edge_biome": "nether_piglin_dbb_lava_border",
+      "edge_width_in_blocks": 1
+    }
+  ],
+  "appearance_override_cards": [
+    {
+      "unique_card_id": "appearance_override_attack_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_attack_horde"
+      ],
+      "horde": "faction.pig.attack"
+    },
+    {
+      "unique_card_id": "appearance_override_defend_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_defend_horde"
+      ],
+      "horde": "faction.pig.defend"
+    },
+    {
+      "unique_card_id": "appearance_override_obstacle_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_obstacle_horde"
+      ],
+      "horde": "faction.pig.obstacle"
+    },
+    {
+      "unique_card_id": "appearance_override_frost_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_frost_horde"
+      ],
+      "horde": "faction.pig.frost"
+    },
+    {
+      "unique_card_id": "appearance_override_dbb_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_dbb_horde"
+      ],
+      "horde": "faction.pig.dbb"
+    },
+    {
+      "unique_card_id": "appearance_override_final_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_final_horde"
+      ],
+      "horde": "faction.pig.final"
+    },
+    {
+      "unique_card_id": "appearance_override_wof_horde",
+      "cost": 0,
+      "tags": [
+        "appearance_override_wof_horde"
+      ],
+      "horde": "faction.pig.wof"
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_piglinNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinNorthDistrict"
+      ],
+      "district": "piglinNorthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinEastDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinEastDistrict"
+      ],
+      "district": "piglinEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinSouthDistrict"
+      ],
+      "district": "piglinSouthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinWestDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinWestDistrict"
+      ],
+      "district": "piglinWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinNorthEastDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinNorthEastDistrict"
+      ],
+      "district": "piglinNorthEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinSouthEastDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinSouthEastDistrict"
+      ],
+      "district": "piglinSouthEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinNorthWestDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinNorthWestDistrict"
+      ],
+      "district": "piglinNorthWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_piglinSouthWestDistrict",
+      "cost": 0,
+      "tags": [
+        "piglinSouthWestDistrict"
+      ],
+      "district": "piglinSouthWestDistrict"
+    }
+  ]
+}

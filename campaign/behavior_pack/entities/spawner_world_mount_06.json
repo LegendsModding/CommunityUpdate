@@ -1,0 +1,81 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spawner_world_mount_06",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": false
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 1,
+          "height": 1
+        },
+        "badger:campaign_team": {
+          "team_tag": "campaign_team"
+        },
+        "badger:tags": {
+          "tags": [
+            "spawner_world_mount_06",
+            "world_mount_spawner"
+          ]
+        },
+        "badger:map_controller": {
+          "initial_key_values": [
+            {
+              "key": "world_spawner",
+              "value": "mount_06"
+            },
+            {
+              "key": "visibility",
+              "value": "hidden"
+            }
+          ]
+        },
+        "badger:buildable_spawner": {
+          "types": [
+            {
+              "type": "badger:animal_06",
+              "percentage": 1
+            }
+          ],
+          "cap": 1,
+          "batch": 1,
+          "rate": 60,
+          "max_radius": 5
+        },
+        "badger:spawn_tracking": {},
+        "badger:spawner_rules": {
+          "distance_rule": {
+            "distance_data": {
+              "max_distance": 200.0,
+              "alliance_rule": "friendly",
+              "tag_filter": {
+                "include_tags": [
+                  "player"
+                ],
+                "exclude_tags": []
+              }
+            },
+            "village_distance_data": [
+              {
+                "min_distance": 300,
+                "max_distance": 5000,
+                "horde_names": [
+                  "faction.pig.attack",
+                  "faction.pig.defend",
+                  "faction.pig.obstacle",
+                  "faction.pig.frost"
+                ],
+                "is_destroyed": false
+              }
+            ]
+          },
+          "bsharp_rule": {
+            "variable": "disable_world_mount_06_spawner",
+            "value": 1
+          }
+        }
+      }
+    }
+  }

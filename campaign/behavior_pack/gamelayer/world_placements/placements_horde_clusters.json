@@ -1,0 +1,645 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_attack_cluster_cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "attack_cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 5,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              64,
+              88
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_attack_sub-cluster_sub-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "attack_sub-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "sub-cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "attack_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_defend_cluster_cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_green",
+      "placement_name": "defend_cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 5,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              139,
+              152
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              64,
+              88
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_defend_sub-cluster_sub-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "defend_sub-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "sub-cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "defend_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_obstacle_cluster_cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_blue",
+      "placement_name": "obstacle_cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 5,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              139,
+              152
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              64,
+              88
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_obstacle_sub-cluster_sub-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "obstacle_sub-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "sub-cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "obstacle_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_frost_cluster_cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_blue",
+      "placement_name": "frost_cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 5,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              139,
+              202
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              64,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 50,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_frost_sub-cluster_sub-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "frost_sub-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "sub-cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              60
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "frost_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              60
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_attack_sub-cluster_extra-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "attack_extra-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "extra-cluster",
+        "campaign",
+        "attack"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "attack_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_defend_sub-cluster_extra-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "defend_extra-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "extra-cluster",
+        "campaign",
+        "defend"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "defend_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_obstacle_sub-cluster_extra-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "obstacle_extra-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "extra-cluster",
+        "campaign",
+        "obstacle"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "obstacle_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_frost_sub-cluster_extra-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "frost_extra-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "extra-cluster",
+        "campaign",
+        "frost"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 30,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              120
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "frost_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              60
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    }
+  ]
+}

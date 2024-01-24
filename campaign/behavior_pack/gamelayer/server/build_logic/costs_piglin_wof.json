@@ -1,0 +1,1129 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_cineFinalbossStage",
+      "cost": 0,
+      "tags": [
+        "cineFinalbossStage"
+      ],
+      "buildable": "badger:cine_finalboss_stage"
+    },
+    {
+      "unique_card_id": "badger_wofVindicatorSpawner",
+      "cost": 0,
+      "tags": [
+        "wofVindicatorSpawner"
+      ],
+      "buildable": "badger:spawner_fb_ally_vindicator"
+    }
+  ],
+  "placement_preference_cards": [
+    {
+      "unique_card_id": "wofWallCircleSineWave",
+      "cost": 0,
+      "tags": [
+        "wofWallCircleSineWave"
+      ],
+      "placement_preference": "circle_sine_wave",
+      "amplitude": 0.45,
+      "frequency": 25
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_wofPathStartZone",
+      "cost": 0,
+      "tags": [
+        "wofPathStartZone"
+      ],
+      "zone_filter": "wofPathStartZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_wofDeadZone",
+      "cost": 0,
+      "tags": [
+        "wofDeadZone"
+      ],
+      "zone_filter": "wofDeadZone",
+      "exclude": true
+    },
+    {
+      "unique_card_id": "zone_filter_cards_innerTVzone",
+      "cost": 0,
+      "tags": [
+        "innerTVzone"
+      ],
+      "zone_filter": "innerTVzone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_innerWallZone",
+      "cost": 0,
+      "tags": [
+        "innerWallZone"
+      ],
+      "zone_filter": "innerWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_centerWallZone",
+      "cost": 0,
+      "tags": [
+        "centerWallZone"
+      ],
+      "zone_filter": "centerWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_innerZoneA",
+      "cost": 0,
+      "tags": [
+        "innerZoneA"
+      ],
+      "zone_filter": "innerZoneA",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_innerZoneB",
+      "cost": 0,
+      "tags": [
+        "innerZoneB"
+      ],
+      "zone_filter": "innerZoneB",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_innerZoneC",
+      "cost": 0,
+      "tags": [
+        "innerZoneC"
+      ],
+      "zone_filter": "innerZoneC",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_centerZones",
+      "cost": 0,
+      "tags": [
+        "centerZones"
+      ],
+      "zone_filter": "centerZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_centerZoneA",
+      "cost": 0,
+      "tags": [
+        "centerZoneA"
+      ],
+      "zone_filter": "centerZoneA",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_centerZoneB",
+      "cost": 0,
+      "tags": [
+        "centerZoneB"
+      ],
+      "zone_filter": "centerZoneB",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_centerZoneC",
+      "cost": 0,
+      "tags": [
+        "centerZoneC"
+      ],
+      "zone_filter": "centerZoneC",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtCenter",
+      "cost": 0,
+      "tags": [
+        "districtCenter"
+      ],
+      "zone_filter": "districtCenter",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtMid",
+      "cost": 0,
+      "tags": [
+        "districtMid"
+      ],
+      "zone_filter": "districtMid",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtFar",
+      "cost": 0,
+      "tags": [
+        "districtFar"
+      ],
+      "zone_filter": "districtFar",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northDistrictOuterWallZone",
+      "cost": 0,
+      "tags": [
+        "northDistrictOuterWallZone"
+      ],
+      "zone_filter": "northDistrictOuterWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northDistrictInnerWallZone",
+      "cost": 0,
+      "tags": [
+        "northDistrictInnerWallZone"
+      ],
+      "zone_filter": "northDistrictInnerWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_eastDistrictWallZone",
+      "cost": 0,
+      "tags": [
+        "eastDistrictWallZone"
+      ],
+      "zone_filter": "eastDistrictWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southInnerWallZone",
+      "cost": 0,
+      "tags": [
+        "southInnerWallZone"
+      ],
+      "zone_filter": "southInnerWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southOuterWallZone",
+      "cost": 0,
+      "tags": [
+        "southOuterWallZone"
+      ],
+      "zone_filter": "southOuterWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_westDistrictWallZone",
+      "cost": 0,
+      "tags": [
+        "westDistrictWallZone"
+      ],
+      "zone_filter": "westDistrictWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northWestPathZone",
+      "cost": 0,
+      "tags": [
+        "northWestPathZone"
+      ],
+      "zone_filter": "northWestPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northPathZone",
+      "cost": 0,
+      "tags": [
+        "northPathZone"
+      ],
+      "zone_filter": "northPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_northEastPathZone",
+      "cost": 0,
+      "tags": [
+        "northEastPathZone"
+      ],
+      "zone_filter": "northEastPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southEastPathZone",
+      "cost": 0,
+      "tags": [
+        "southEastPathZone"
+      ],
+      "zone_filter": "southEastPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southPathZone",
+      "cost": 0,
+      "tags": [
+        "southPathZone"
+      ],
+      "zone_filter": "southPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_southWestPathZone",
+      "cost": 0,
+      "tags": [
+        "southWestPathZone"
+      ],
+      "zone_filter": "southWestPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_eastPathZone",
+      "cost": 0,
+      "tags": [
+        "eastPathZone"
+      ],
+      "zone_filter": "eastPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_westPathZone",
+      "cost": 0,
+      "tags": [
+        "westPathZone"
+      ],
+      "zone_filter": "westPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_wofOuterPathZone",
+      "cost": 0,
+      "tags": [
+        "wofOuterPathZone"
+      ],
+      "zone_filter": "wofOuterPathZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_wofVindicatorZone",
+      "cost": 0,
+      "tags": [
+        "wofVindicatorZone"
+      ],
+      "zone_filter": "wofVindicatorZone",
+      "exclude": false
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_wofPathStartZone",
+      "cost": 0,
+      "tags": [
+        "wofPathStartZone"
+      ],
+      "zone_tag": "wofPathStartZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_wofDeadZone",
+      "cost": 0,
+      "tags": [
+        "wofDeadZone"
+      ],
+      "zone_tag": "wofDeadZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_innerTVzone",
+      "cost": 0,
+      "tags": [
+        "innerTVzone"
+      ],
+      "zone_tag": "innerTVzone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_innerWallZone",
+      "cost": 0,
+      "tags": [
+        "innerWallZone"
+      ],
+      "zone_tag": "innerWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_centerWallZone",
+      "cost": 0,
+      "tags": [
+        "centerWallZone"
+      ],
+      "zone_tag": "centerWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_innerZoneA",
+      "cost": 0,
+      "tags": [
+        "innerZoneA"
+      ],
+      "zone_tag": "innerZoneA"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_innerZoneB",
+      "cost": 0,
+      "tags": [
+        "innerZoneB"
+      ],
+      "zone_tag": "innerZoneB"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_innerZoneC",
+      "cost": 0,
+      "tags": [
+        "innerZoneC"
+      ],
+      "zone_tag": "innerZoneC"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_centerZones",
+      "cost": 0,
+      "tags": [
+        "centerZones"
+      ],
+      "zone_tag": "centerZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_centerZoneA",
+      "cost": 0,
+      "tags": [
+        "centerZoneA"
+      ],
+      "zone_tag": "centerZoneA"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_centerZoneB",
+      "cost": 0,
+      "tags": [
+        "centerZoneB"
+      ],
+      "zone_tag": "centerZoneB"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_centerZoneC",
+      "cost": 0,
+      "tags": [
+        "centerZoneC"
+      ],
+      "zone_tag": "centerZoneC"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtCenter",
+      "cost": 0,
+      "tags": [
+        "districtCenter"
+      ],
+      "zone_tag": "districtCenter"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtMid",
+      "cost": 0,
+      "tags": [
+        "districtMid"
+      ],
+      "zone_tag": "districtMid"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtFar",
+      "cost": 0,
+      "tags": [
+        "districtFar"
+      ],
+      "zone_tag": "districtFar"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northDistrictOuterWallZone",
+      "cost": 0,
+      "tags": [
+        "northDistrictOuterWallZone"
+      ],
+      "zone_tag": "northDistrictOuterWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northDistrictInnerWallZone",
+      "cost": 0,
+      "tags": [
+        "northDistrictInnerWallZone"
+      ],
+      "zone_tag": "northDistrictInnerWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_eastDistrictWallZone",
+      "cost": 0,
+      "tags": [
+        "eastDistrictWallZone"
+      ],
+      "zone_tag": "eastDistrictWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southInnerWallZone",
+      "cost": 0,
+      "tags": [
+        "southInnerWallZone"
+      ],
+      "zone_tag": "southInnerWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southOuterWallZone",
+      "cost": 0,
+      "tags": [
+        "southOuterWallZone"
+      ],
+      "zone_tag": "southOuterWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_westDistrictWallZone",
+      "cost": 0,
+      "tags": [
+        "westDistrictWallZone"
+      ],
+      "zone_tag": "westDistrictWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northWestPathZone",
+      "cost": 0,
+      "tags": [
+        "northWestPathZone"
+      ],
+      "zone_tag": "northWestPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northPathZone",
+      "cost": 0,
+      "tags": [
+        "northPathZone"
+      ],
+      "zone_tag": "northPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_northEastPathZone",
+      "cost": 0,
+      "tags": [
+        "northEastPathZone"
+      ],
+      "zone_tag": "northEastPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southWestPathZone",
+      "cost": 0,
+      "tags": [
+        "southWestPathZone"
+      ],
+      "zone_tag": "southWestPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southPathZone",
+      "cost": 0,
+      "tags": [
+        "southPathZone"
+      ],
+      "zone_tag": "southPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_southEastPathZone",
+      "cost": 0,
+      "tags": [
+        "southEastPathZone"
+      ],
+      "zone_tag": "southEastPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_eastPathZone",
+      "cost": 0,
+      "tags": [
+        "eastPathZone"
+      ],
+      "zone_tag": "eastPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_westPathZone",
+      "cost": 0,
+      "tags": [
+        "westPathZone"
+      ],
+      "zone_tag": "westPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_wofOuterPathZone",
+      "cost": 0,
+      "tags": [
+        "wofOuterPathZone"
+      ],
+      "zone_tag": "wofOuterPathZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_wofVindicatorZone",
+      "cost": 0,
+      "tags": [
+        "wofVindicatorZone"
+      ],
+      "zone_tag": "wofVindicatorZone"
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "obstacleBarracksFighter",
+      "cost": 0,
+      "tags": [
+        "obstacleBarracksFighter"
+      ],
+      "tag": "obstacleBarracksFighter"
+    },
+    {
+      "unique_card_id": "obstacleBarracksSieger",
+      "cost": 0,
+      "tags": [
+        "obstacleBarracksSieger"
+      ],
+      "tag": "obstacleBarracksSieger"
+    },
+    {
+      "unique_card_id": "obstacleBarracksDisruptor",
+      "cost": 0,
+      "tags": [
+        "obstacleBarracksDisruptor"
+      ],
+      "tag": "obstacleBarracksDisruptor"
+    },
+    {
+      "unique_card_id": "attackBarracksFighter",
+      "cost": 0,
+      "tags": [
+        "attackBarracksFighter"
+      ],
+      "tag": "attackBarracksFighter"
+    },
+    {
+      "unique_card_id": "attackBarracksSieger",
+      "cost": 0,
+      "tags": [
+        "attackBarracksSieger"
+      ],
+      "tag": "attackBarracksSieger"
+    },
+    {
+      "unique_card_id": "attackBarracksDisruptor",
+      "cost": 0,
+      "tags": [
+        "attackBarracksDisruptor"
+      ],
+      "tag": "attackBarracksDisruptor"
+    },
+    {
+      "unique_card_id": "defendBarracksFighter",
+      "cost": 0,
+      "tags": [
+        "defendBarracksFighter"
+      ],
+      "tag": "defendBarracksFighter"
+    },
+    {                    
+      "unique_card_id": "defendBarracksSieger",
+      "cost": 0,
+      "tags": [
+        "defendBarracksSieger"
+        
+      ],
+      "tag": "defendBarracksSieger"
+    }, 
+    {
+      "unique_card_id": "defendBarracksDisruptor",
+      "cost": 0,
+      "tags": [
+        "defendBarracksDisruptor"
+      ],
+      "tag": "defendBarracksDisruptor"
+    },
+    {
+      "unique_card_id": "innerWallsPhase4Tag",
+      "cost": 0,
+      "tags": [
+        "innerWallsPhase4Tag"
+      ],
+      "tag": "innerWallsPhase4Tag"
+    },
+    {
+      "unique_card_id": "stinkyBarrelsDETag",
+      "cost": 0,
+      "tags": [
+        "stinkyBarrelsDETag"
+      ],
+      "tag": "stinkyBarrelsDETag"
+    },
+    {
+      "unique_card_id": "siegeTowersDETag",
+      "cost": 0,
+      "tags": [
+        "siegeTowersDETag"
+      ],
+      "tag": "siegeTowersDETag"
+    },
+    {
+      "unique_card_id": "sporeCannonsDETag",
+      "cost": 0,
+      "tags": [
+        "sporeCannonsDETag"
+      ],
+      "tag": "sporeCannonsDETag"
+    },
+    {
+      "unique_card_id": "peppaPyroDETag",
+      "cost": 0,
+      "tags": [
+        "peppaPyroDETag"
+      ],
+      "tag": "peppaPyroDETag"
+    },
+    {
+      "unique_card_id": "magmaFoundationDETag",
+      "cost": 0,
+      "tags": [
+        "magmaFoundationDETag"
+      ],
+      "tag": "magmaFoundationDETag"
+    },
+    {
+      "unique_card_id": "magmaFungiDETag",
+      "cost": 0,
+      "tags": [
+        "magmaFungiDETag"
+      ],
+      "tag": "magmaFungiDETag"
+    },
+    {
+      "unique_card_id": "sporeShieldDETag",
+      "cost": 0,
+      "tags": [
+        "sporeShieldDETag"
+      ],
+      "tag": "sporeShieldDETag"
+    },
+    {
+      "unique_card_id": "magmaShieldDETag",
+      "cost": 0,
+      "tags": [
+        "magmaShieldDETag"
+      ],
+      "tag": "magmaShieldDETag"
+    },
+    {
+      "unique_card_id": "theWallDETag",
+      "cost": 0,
+      "tags": [
+        "theWallDETag"
+      ],
+      "tag": "theWallDETag"
+    },
+    {
+      "unique_card_id": "northLocatorTag",
+      "cost": 0,
+      "tags": [
+        "northLocatorTag"
+      ],
+      "tag": "northLocatorTag"
+    },
+    {
+      "unique_card_id": "eastLocatorTag",
+      "cost": 0,
+      "tags": [
+        "eastLocatorTag"
+      ],
+      "tag": "eastLocatorTag"
+    },
+    {
+      "unique_card_id": "southLocatorTag",
+      "cost": 0,
+      "tags": [
+        "southLocatorTag"
+      ],
+      "tag": "southLocatorTag"
+    },
+    {
+      "unique_card_id": "westLocatorTag",
+      "cost": 0,
+      "tags": [
+        "westLocatorTag"
+      ],
+      "tag": "westLocatorTag"
+    },
+    {
+      "unique_card_id": "northEastLocatorTag",
+      "cost": 0,
+      "tags": [
+        "northEastLocatorTag"
+      ],
+      "tag": "northEastLocatorTag"
+    },
+    {
+      "unique_card_id": "southEastLocatorTag",
+      "cost": 0,
+      "tags": [
+        "southEastLocatorTag"
+      ],
+      "tag": "southEastLocatorTag"
+    },
+    {
+      "unique_card_id": "southWestLocatorTag",
+      "cost": 0,
+      "tags": [
+        "southWestLocatorTag"
+      ],
+      "tag": "southWestLocatorTag"
+    },
+    {
+      "unique_card_id": "northWestLocatorTag",
+      "cost": 0,
+      "tags": [
+        "northWestLocatorTag"
+      ],
+      "tag": "northWestLocatorTag"
+    },
+    {
+      "unique_card_id": "wofBastionBuilding",
+      "cost": 0,
+      "tags": [
+        "wofBastionBuilding"
+      ],
+      "tag": "wofBastionBuilding"
+    },
+    {
+      "unique_card_id": "wofRingBuilding",
+      "cost": 0,
+      "tags": [
+        "wofRingBuilding"
+      ],
+      "tag": "wofRingBuilding"
+    },
+    {
+      "unique_card_id": "wofNorthBastion",
+      "cost": 0,
+      "tags": [
+        "wofNorthBastion"
+      ],
+      "tag": "wofNorthBastion"
+    },
+    {
+      "unique_card_id": "wofEastBastion",
+      "cost": 0,
+      "tags": [
+        "wofEastBastion"
+      ],
+      "tag": "wofEastBastion"
+    },
+    {
+      "unique_card_id": "wofWestBastion",
+      "cost": 0,
+      "tags": [
+        "wofWestBastion"
+      ],
+      "tag": "wofWestBastion"
+    },
+    {
+      "unique_card_id": "wofSouthBastion",
+      "cost": 0,
+      "tags": [
+        "wofSouthBastion"
+      ],
+      "tag": "wofSouthBastion"
+    },
+    {
+      "unique_card_id": "wofNorthWestBastion",
+      "cost": 0,
+      "tags": [
+        "wofNorthWestBastion"
+      ],
+      "tag": "wofNorthWestBastion"
+    },
+    {
+      "unique_card_id": "wofNorthEastBastion",
+      "cost": 0,
+      "tags": [
+        "wofNorthEastBastion"
+      ],
+      "tag": "wofNorthEastBastion"
+    },
+    {
+      "unique_card_id": "wofSouthWestBastion",
+      "cost": 0,
+      "tags": [
+        "wofSouthWestBastion"
+      ],
+      "tag": "wofSouthWestBastion"
+    },
+    {
+      "unique_card_id": "wofSouthEastBastion",
+      "cost": 0,
+      "tags": [
+        "wofSouthEastBastion"
+      ],
+      "tag": "wofSouthEastBastion"
+    },
+    {
+      "unique_card_id": "wallZoneN",
+      "cost": 0,
+      "tags": [
+        "wallZoneN"
+      ],
+      "tag": "wallZoneN"
+    },
+    {
+      "unique_card_id": "wallZoneE",
+      "cost": 0,
+      "tags": [
+        "wallZoneE"
+      ],
+      "tag": "wallZoneE"
+    },
+    {
+      "unique_card_id": "wallZoneS",
+      "cost": 0,
+      "tags": [
+        "wallZoneS"
+      ],
+      "tag": "wallZoneS"
+    },
+    {
+      "unique_card_id": "wallZoneW",
+      "cost": 0,
+      "tags": [
+        "wallZoneW"
+      ],
+      "tag": "wallZoneW"
+    },
+    {
+      "unique_card_id": "finalDefendRallyNorth",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallyNorth"
+      ],
+      "tag": "finalDefendRallyNorth"
+    },
+    {
+      "unique_card_id": "finalDefendRallySouth",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallySouth"
+      ],
+      "tag": "finalDefendRallySouth"
+    },
+    {
+      "unique_card_id": "finalDefendRallyWest",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallyWest"
+      ],
+      "tag": "finalDefendRallyWest"
+    },
+    {
+      "unique_card_id": "finalDefendRallyEast",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallyEast"
+      ],
+      "tag": "finalDefendRallyEast"
+    },
+    {
+      "unique_card_id": "finalDefendRallyNorthEast",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallyNorthEast"
+      ],
+      "tag": "finalDefendRallyNorthEast"
+    },
+    {
+      "unique_card_id": "finalDefendRallyNorthWest",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallyNorthWest"
+      ],
+      "tag": "finalDefendRallyNorthWest"
+    },
+    {
+      "unique_card_id": "finalDefendRallySouthWest",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallySouthWest"
+      ],
+      "tag": "finalDefendRallySouthWest"
+    },
+    {
+      "unique_card_id": "finalDefendRallySouthEast",
+      "cost": 0,
+      "tags": [
+        "finalDefendRallySouthEast"
+      ],
+      "tag": "finalDefendRallySouthEast"
+    },
+    {
+      "unique_card_id": "finalSiegeRallyCenterA",
+      "cost": 0,
+      "tags": [
+        "finalSiegeRallyCenterA"
+      ],
+      "tag": "finalSiegeRallyCenterA"
+    },
+    {
+      "unique_card_id": "finalSiegeRallyCenterB",
+      "cost": 0,
+      "tags": [
+        "finalSiegeRallyCenterB"
+      ],
+      "tag": "finalSiegeRallyCenterB"
+    },
+    {
+      "unique_card_id": "finalSiegeRallyCenterC",
+      "cost": 0,
+      "tags": [
+        "finalSiegeRallyCenterC"
+      ],
+      "tag": "finalSiegeRallyCenterC"
+    },
+    {
+      "unique_card_id": "finalDefendAIBarracks",
+      "cost": 0,
+      "tags": [
+        "finalDefendAIBarracks"
+      ],
+      "tag": "finalDefendAIBarracks"
+    },
+    {
+      "unique_card_id": "finalSiegeAIBarracks",
+      "cost": 0,
+      "tags": [
+        "finalSiegeAIBarracks"
+      ],
+      "tag": "finalSiegeAIBarracks"
+    },
+    {
+      "unique_card_id": "finalAttackAIBarracks",
+      "cost": 0,
+      "tags": [
+        "finalAttackAIBarracks"
+      ],
+      "tag": "finalAttackAIBarracks"
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_wofNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "wofNorthDistrict"
+      ],
+      "district": "wofNorthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofEastDistrict",
+      "cost": 0,
+      "tags": [
+        "wofEastDistrict"
+      ],
+      "district": "wofEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "wofSouthDistrict"
+      ],
+      "district": "wofSouthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofWestDistrict",
+      "cost": 0,
+      "tags": [
+        "wofWestDistrict"
+      ],
+      "district": "wofWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofNorthEastDistrict",
+      "cost": 0,
+      "tags": [
+        "wofNorthEastDistrict"
+      ],
+      "district": "wofNorthEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofNorthWestDistrict",
+      "cost": 0,
+      "tags": [
+        "wofNorthWestDistrict"
+      ],
+      "district": "wofNorthWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofSouthEastDistrict",
+      "cost": 0,
+      "tags": [
+        "wofSouthEastDistrict"
+      ],
+      "district": "wofSouthEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_wofSouthWestDistrict",
+      "cost": 0,
+      "tags": [
+        "wofSouthWestDistrict"
+      ],
+      "district": "wofSouthWestDistrict"
+    }
+  ],
+  "walls_cards": [
+    {
+      "unique_card_id": "wofWalls",
+      "cost": 0,
+      "tags": [
+        "wofWalls"
+      ],
+      "wall_buildable": "badger:chunk_piglin_wall_001",
+      "path_entrance": "badger:gate_piglin",
+      "embedded_buildables": []
+    },
+    {
+      "unique_card_id": "wofWallsDefend",
+      "cost": 0,
+      "tags": [
+        "wofWallsDefend"
+      ],
+      "wall_buildable": "badger:chunk_piglin_wall_001",
+      "path_entrance": "badger:gate_piglin",
+      "embedded_buildables": [
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin"
+      ]
+    },
+    {
+      "unique_card_id": "wofWallsObstacle",
+      "cost": 0,
+      "tags": [
+        "wofWallsObstacle"
+      ],
+      "wall_buildable": "badger:chunk_piglin_wall_001",
+      "path_entrance": "badger:gate_piglin",
+      "embedded_buildables": [
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin"
+      ]
+    }
+  ],
+  "moat_cards": [
+    {
+      "unique_card_id": "finalBossZoneMoat",
+      "cost": 0,
+      "tags": [
+        "finalBossZoneMoat"
+      ],
+      "biome": "lava_moat",
+      "distance_in_zones": 0,
+      "filling_depth": 5,
+      "bridges": []
+    }
+  ]
+}

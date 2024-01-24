@@ -1,0 +1,72 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {
+      },
+      "badger:map_icon_offset": {
+        "x": 0,
+        "y": 17,
+        "z": 0
+      },
+      "badger:presentation_event": {
+        "horde_attack": {
+          "script": "attack"
+        },
+        "horde_defend": {
+          "script": "defend"
+        },
+        "horde_obstacle": {
+          "script": "obstacle"
+        },
+        "horde_frost": {
+          "script": "frost"
+        },
+        "pip1": {
+          "script": "pip01"
+        },
+        "pip2": {
+          "script": "pip02"
+        },
+        "pip3": {
+          "script": "pip03"
+        },
+        "pip4": {
+          "script": "pip04"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_pip_piglin",
+        "limit": 64
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "event_scripts": {
+        "attack": "variable.pip_state = 0;",
+        "defend": "variable.pip_state = 1;",
+        "obstacle": "variable.pip_state = 2;",
+        "frost": "variable.pip_state = 3;",
+        "pip01": "variable.pip01_geo_vis = 1;",
+        "pip02": "variable.pip02_geo_vis = 1;",
+        "pip03": "variable.pip03_geo_vis = 1;",
+        "pip04": "variable.pip04_geo_vis = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_pip_piglin"
+      },
+      "identifier": "badger:wmap_pip_piglin",
+      "materials": {
+        "mat_wmap_pip_piglin_attack": "mat_wmap_pip_piglin_attack",
+        "mat_wmap_pip_piglin_defend": "mat_wmap_pip_piglin_defend",
+        "mat_wmap_pip_piglin_obstacle": "mat_wmap_pip_piglin_obstacle",
+        "mat_wmap_pip_piglin_frost": "mat_wmap_pip_piglin_frost"
+      },
+      "render_controllers": ["controller.render.wmap_pip_piglin"],
+      "scripts": {
+        "initialize": ["variable.pip_state = 0;","variable.pip01_geo_vis = 0;","variable.pip02_geo_vis = 0;","variable.pip03_geo_vis = 0;","variable.pip04_geo_vis = 0;"]
+      }
+    }
+  }
+}

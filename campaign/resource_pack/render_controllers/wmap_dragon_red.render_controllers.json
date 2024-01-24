@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_dragon_red": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "wmap_dragon_red": "MetaMaterial.wmap_dragon_red"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

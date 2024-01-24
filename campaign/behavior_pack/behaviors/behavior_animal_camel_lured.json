@@ -1,0 +1,143 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:behavior_animal_camel_lured",
+        "runtime_identifier": "badger:behavior"
+      },
+      "components": {
+        "badger:targeting": {
+          "targeting_priorities": [
+            {
+              "max_range": 8,
+              "action_tickets": {
+                "cc": 1
+              },
+              "include_tags": [
+                "mount_07_food"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly",
+              "actions": [
+                "feed"
+              ]
+            },
+            {
+              "max_range": 8,
+              "action_tickets": {
+                "cc": 1
+              },
+              "include_tags": [
+                "enemy"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "gust"
+              ]
+            },
+            {
+              "max_range": 8,
+              "action_tickets": {
+                "cc": 1
+              },
+              "include_tags": [
+                "piglin"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "gust"
+              ]
+            }
+          ]
+        },
+        "badger:target_actions": {
+          "actions": [
+            {
+              "name": "feed",
+              "trigger": "on_feed",
+              "range": {
+                "min_range": 0.5,
+                "max_range": 1.2
+              },
+              "state_machine": {
+                "wind_up": 2.0,
+                "wind_down": 9.5,
+                "cooldown_time": 1.5,
+                "deactivates_on_cooldown": false
+              },
+              "shape_area_damage": {
+                "shape": {
+                  "type": "sphere",
+                  "radius": 3,
+                  "position": [
+                    0.0,
+                    1.0,
+                    0.5
+                  ]
+                },
+                "collision": {
+                  "include_tags": [
+                    "mount_07_food"
+                  ],
+                  "exclude_tags": [],
+                  "alliance_rule_filter": "friendly"
+                },
+                "damage": {
+                  "damage_amount": 3,
+                  "damage_types": [
+                    "crush"
+                  ]
+                }
+              }
+            },
+            {
+              "name": "gust",
+              "trigger": "on_gust",
+              "range": {
+                "min_range": 0.25,
+                "max_range": 4.0
+              },
+              "state_machine": {
+                "wind_up": 1.0,
+                "wind_down": 0.5,
+                "activation_time": 1.5,
+                "cooldown_time": 3.1,
+                "deactivates_on_cooldown": false
+              },
+              "shape_area_damage": {
+                "shape": {
+                  "type": "wedge",
+                  "aperture_angle": 45,
+                  "radius": 15.0,
+                  "thickness": 4.0,
+                  "position": [
+                    0.0,
+                    1.0,
+                    0.0
+                  ]
+                },
+                "collision": {
+                  "include_tags": [],
+                  "exclude_tags": [],
+                  "alliance_rule_filter": "enemy"
+                },
+                "damage": {
+                  "damage_amount": 0,
+                  "damage_types": []
+                },
+                "knockback": {
+                  "angle": 35,
+                  "force": 18
+                }
+              }
+            }
+          ]
+        },
+        "badger:behavior_offline_traits": {
+          "traits_phase": "DISABLED"
+        }
+      }
+    }
+  }

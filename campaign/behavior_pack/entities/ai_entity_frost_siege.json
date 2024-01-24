@@ -1,0 +1,87 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:ai_entity_frost_siege",
+        "runtime_identifier": "badger:ai"
+      },
+      "components": {
+        "badger:influence_map_ai": {
+          "map_resolution": 5,
+          "map_decay": 0.02,
+          "perception_radius": 350,
+          "query_name": "default"
+      },
+      "badger:damage_influence_source": {
+          "sensors": [
+            {
+              "inflictor_or_receiver_position": "inflictor",
+              "damage_type_filter": {
+                "include_all": [],
+                "exclude_any": []
+              },
+              "damage_receiver_filter": {
+                "include_tags": ["piglin"],
+                "exclude_tags": ["portal_piglin"],
+                "alliance_rule_filter" : "friendly"
+              },
+              "multiplier" : 10,
+              "propagation_decay": 0.02
+            }
+          ]
+        },
+      "badger:buildable_creation_influence_source": {
+          "sensors": [
+              {
+                  "building_start_or_complete": "start",
+                  "damage_receiver_filter": {
+                      "include_tags": ["redStoneLauncher"],
+                      "exclude_tags": [],
+                      "alliance_rule_filter": "enemy"
+                  },
+                  "multiplier": 50,
+                  "propagation_decay": 0.02
+              },
+              {
+                  "building_start_or_complete": "complete",
+                  "damage_receiver_filter": {
+                      "include_tags": ["spawner"],
+                      "exclude_tags": [],
+                      "alliance_rule_filter": "enemy"
+                  },
+                  "multiplier": 20,
+                  "propagation_decay": 0.02
+              },
+              {
+                  "building_start_or_complete": "start",
+                  "damage_receiver_filter": {
+                      "include_tags": ["buff_platform"],
+                      "exclude_tags": [],
+                      "alliance_rule_filter": "enemy"
+                  },
+                  "multiplier": 50,
+                  "propagation_decay": 0.02
+              },
+              {
+                  "building_start_or_complete": "complete",
+                  "damage_receiver_filter": {
+                      "include_tags": ["buildable"],
+                      "exclude_tags": ["buff_platform", "spawner", "redStoneLauncher"],
+                      "alliance_rule_filter": "enemy"
+                  },
+                  "multiplier": 15,
+                  "propagation_decay": 0.02
+              }
+          ]
+      },
+        "badger:tags": {
+          "tags": [
+            "scriptedAi",
+            "piglin",
+            "frostAi",
+            "frostSiegeAi"
+          ]
+        }
+      }
+    }
+  }

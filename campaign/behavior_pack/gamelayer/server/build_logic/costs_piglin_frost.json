@@ -1,0 +1,1722 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_frostPortalSmall",
+      "cost": 0,
+      "tags": [
+        "frostPortalSmall"
+      ],
+      "buildable": "badger:zoner_piglin_frost_territory_low_health"
+    },
+    {
+      "unique_card_id": "badger_occupationfrostPortalSmall",
+      "cost": 0,
+      "tags": [
+        "occupationfrostPortalSmall"
+      ],
+      "buildable": "badger:occupation_zoner_piglin_frost_territory_low_health"
+    },
+    {
+      "unique_card_id": "badger_frostPortalMedium",
+      "cost": 0,
+      "tags": [
+        "frostPortalMedium"
+      ],
+      "buildable": "badger:zoner_piglin_frost_territory_med_health"
+    },
+    {
+      "unique_card_id": "badger_frostPortalLarge",
+      "cost": 0,
+      "tags": [
+        "frostPortalLarge"
+      ],
+      "buildable": "badger:zoner_piglin_frost_territory_high_health"
+    }
+  ],
+  "zone_height_change_cards": [
+    {
+      "unique_card_id": "Flatten",
+      "cost": 0,
+      "tags": [
+        "Flatten"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 0,
+      "zone_height_control": "height_control_lowest"
+    },
+    {
+      "unique_card_id": "2Height",
+      "cost": 0,
+      "tags": [
+        "2Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 2,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "3Height",
+      "cost": 0,
+      "tags": [
+        "3Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 3,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "4Height",
+      "cost": 0,
+      "tags": [
+        "4Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 4,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "5Height",
+      "cost": 0,
+      "tags": [
+        "5Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 5,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "6Height",
+      "cost": 0,
+      "tags": [
+        "6Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 6,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "7Height",
+      "cost": 0,
+      "tags": [
+        "7Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 7,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "8Height",
+      "cost": 0,
+      "tags": [
+        "8Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 8,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "9Height",
+      "cost": 0,
+      "tags": [
+        "9Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 9,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "10Height",
+      "cost": 0,
+      "tags": [
+        "10Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 10,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "11Height",
+      "cost": 0,
+      "tags": [
+        "11Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 11,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "12Height",
+      "cost": 0,
+      "tags": [
+        "12Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 12,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "13Height",
+      "cost": 0,
+      "tags": [
+        "13Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 13,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "14Height",
+      "cost": 0,
+      "tags": [
+        "14Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 14,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "15Height",
+      "cost": 0,
+      "tags": [
+        "15Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 15,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "16Height",
+      "cost": 0,
+      "tags": [
+        "16Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 16,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "17Height",
+      "cost": 0,
+      "tags": [
+        "17Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 17,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "18Height",
+      "cost": 0,
+      "tags": [
+        "18Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 18,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "19Height",
+      "cost": 0,
+      "tags": [
+        "19Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 19,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "20Height",
+      "cost": 0,
+      "tags": [
+        "20Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 20,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "21Height",
+      "cost": 0,
+      "tags": [
+        "21Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 21,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "22Height",
+      "cost": 0,
+      "tags": [
+        "22Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 22,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "23Height",
+      "cost": 0,
+      "tags": [
+        "23Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 23,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "24Height",
+      "cost": 0,
+      "tags": [
+        "24Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 24,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "26Height",
+      "cost": 0,
+      "tags": [
+        "26Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 26,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "28Height",
+      "cost": 0,
+      "tags": [
+        "28Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 28,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "29Height",
+      "cost": 0,
+      "tags": [
+        "29Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 29,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "30Height",
+      "cost": 0,
+      "tags": [
+        "30Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 30,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "32Height",
+      "cost": 0,
+      "tags": [
+        "32Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 32,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "34Height",
+      "cost": 0,
+      "tags": [
+        "34Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 34,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "36Height",
+      "cost": 0,
+      "tags": [
+        "36Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 36,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "38Height",
+      "cost": 0,
+      "tags": [
+        "38Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 38,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "40Height",
+      "cost": 0,
+      "tags": [
+        "40Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 40,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "42Height",
+      "cost": 0,
+      "tags": [
+        "42Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 42,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "44Height",
+      "cost": 0,
+      "tags": [
+        "44Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 44,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "46Height",
+      "cost": 0,
+      "tags": [
+        "46Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 46,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "48Height",
+      "cost": 0,
+      "tags": [
+        "48Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 48,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "50Height",
+      "cost": 0,
+      "tags": [
+        "50Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 50,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "52Height",
+      "cost": 0,
+      "tags": [
+        "52Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 52,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "54Height",
+      "cost": 0,
+      "tags": [
+        "54Height"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 54,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "8UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "8UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 8,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "7UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "7UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 7,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "6UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "6UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 6,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "5UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "5UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 5,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "4UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "4UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 4,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "3UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "3UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 3,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "2UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "2UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 2,
+      "zone_height_control": "height_control_centered"
+    },
+    {
+      "unique_card_id": "1UpRelativeToCentre",
+      "cost": 0,
+      "tags": [
+        "1UpRelativeToCentre"
+      ],
+      "biome": "nether_rotters_upper",
+      "zone_height_change": 1,
+      "zone_height_control": "height_control_centered"
+    }
+  ],
+  "walls_cards": [
+    {
+      "unique_card_id": "wallNoTowersNoGates",
+      "cost": 0,
+      "tags": [
+        "wallNoTowersNoGates"
+      ],
+      "wall_buildable": "badger:chunk_piglin_wall_001",
+      "path_entrance": "badger:gate_piglin",
+      "embedded_buildables": []
+    },
+    {
+      "unique_card_id": "wallNoTowers3Gates",
+      "cost": 0,
+      "tags": [
+        "wallNoTowers3Gates"
+      ],
+      "wall_buildable": "badger:chunk_piglin_wall_001",
+      "path_entrance": "badger:gate_piglin",
+      "embedded_buildables": [
+        "badger:gate_piglin",
+        "badger:gate_piglin",
+        "badger:gate_piglin"
+      ]
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "frostKeepRallies",
+      "cost": 0,
+      "tags": [
+        "frostKeepRallies"
+      ],
+      "tag": "frostKeepRallies"
+    },
+    {
+      "unique_card_id": "frostGuardRally",
+      "cost": 0,
+      "tags": [
+        "frostGuardRally"
+      ],
+      "tag": "frostGuardRally"
+    },
+    {
+      "unique_card_id": "frostAssaultRally",
+      "cost": 0,
+      "tags": [
+        "frostAssaultRally"
+      ],
+      "tag": "frostAssaultRally"
+    },
+    {
+      "unique_card_id": "frostSiegeRally",
+      "cost": 0,
+      "tags": [
+        "frostSiegeRally"
+      ],
+      "tag": "frostSiegeRally"
+    },
+    {
+      "unique_card_id": "frostSiegeBarracks",
+      "cost": 0,
+      "tags": [
+        "frostSiegeBarracks"
+      ],
+      "tag": "frostSiegeBarracks"
+    },
+    {
+      "unique_card_id": "frostAssaultBarracks",
+      "cost": 0,
+      "tags": [
+        "frostAssaultBarracks"
+      ],
+      "tag": "frostAssaultBarracks"
+    },
+    {
+      "unique_card_id": "frostGuardBarracks",
+      "cost": 0,
+      "tags": [
+        "frostGuardBarracks"
+      ],
+      "tag": "frostGuardBarracks"
+    },
+    {
+      "unique_card_id": "frost_raiding_party_cage",
+      "cost": 0,
+      "tags": [
+        "frost_raiding_party_cage"
+      ],
+      "tag": "frost_raiding_party_cage"
+    },
+    {
+      "unique_card_id": "frostBossRally1",
+      "cost": 0,
+      "tags": [
+        "frostBossRally1"
+      ],
+      "tag": "frostBossRally1"
+    },
+    {
+      "unique_card_id": "frostBossRally2",
+      "cost": 0,
+      "tags": [
+        "frostBossRally2"
+      ],
+      "tag": "frostBossRally2"
+    },
+    {
+      "unique_card_id": "frostBossRally3",
+      "cost": 0,
+      "tags": [
+        "frostBossRally3"
+      ],
+      "tag": "frostBossRally3"
+    },
+    {
+      "unique_card_id": "frostPortalRally",
+      "cost": 0,
+      "tags": [
+        "frostPortalRally"
+      ],
+      "tag": "frostPortalRally"
+    },
+    {
+      "unique_card_id": "frostInOutpost",
+      "cost": 0,
+      "tags": [
+        "frostInOutpost"
+      ],
+      "tag": "frostInOutpost"
+    },
+    {
+      "unique_card_id": "frostComposition1",
+      "cost": 0,
+      "tags": [
+        "frostComposition1"
+      ],
+      "tag": "frostComposition1"
+    },
+    {
+      "unique_card_id": "frostComposition2",
+      "cost": 0,
+      "tags": [
+        "frostComposition2"
+      ],
+      "tag": "frostComposition2"
+    },
+    {
+      "unique_card_id": "frostComposition3",
+      "cost": 0,
+      "tags": [
+        "frostComposition3"
+      ],
+      "tag": "frostComposition3"
+    },
+    {
+      "unique_card_id": "frostComposition4",
+      "cost": 0,
+      "tags": [
+        "frostComposition4"
+      ],
+      "tag": "frostComposition4"
+    },
+    {
+      "unique_card_id": "frostComposition5",
+      "cost": 0,
+      "tags": [
+        "frostComposition5"
+      ],
+      "tag": "frostComposition5"
+    },
+    {
+      "unique_card_id": "frostBridge1",
+      "cost": 0,
+      "tags": [
+        "frostBridge1"
+      ],
+      "tag": "frostBridge1"
+    },
+    {
+      "unique_card_id": "frostBridge2",
+      "cost": 0,
+      "tags": [
+        "frostBridge2"
+      ],
+      "tag": "frostBridge2"
+    },
+    {
+      "unique_card_id": "frostBridge3",
+      "cost": 0,
+      "tags": [
+        "frostBridge3"
+      ],
+      "tag": "frostBridge3"
+    },
+    {
+      "unique_card_id": "frostBridge4",
+      "cost": 0,
+      "tags": [
+        "frostBridge4"
+      ],
+      "tag": "frostBridge4"
+    },
+    {
+      "unique_card_id": "frostBridge5",
+      "cost": 0,
+      "tags": [
+        "frostBridge5"
+      ],
+      "tag": "frostBridge5"
+    },
+    {
+      "unique_card_id": "frostBridge6",
+      "cost": 0,
+      "tags": [
+        "frostBridge6"
+      ],
+      "tag": "frostBridge6"
+    },
+    {
+      "unique_card_id": "frostAttackRallyPoint",
+      "cost": 0,
+      "tags": [
+        "frostAttackRallyPoint"
+      ],
+      "tag": "frostAttackRallyPoint"
+    },
+    {
+      "unique_card_id": "frostDefendRallyPoint",
+      "cost": 0,
+      "tags": [
+        "frostDefendRallyPoint"
+      ],
+      "tag": "frostDefendRallyPoint"
+    },
+    {
+      "unique_card_id": "frostSiegeRallyPoint",
+      "cost": 0,
+      "tags": [
+        "frostSiegeRallyPoint"
+      ],
+      "tag": "frostSiegeRallyPoint"
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_frostInsideOutpost",
+      "cost": 0,
+      "tags": [
+        "frostInsideOutpost"
+      ],
+      "zone_filter": "frostInsideOutpost",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostLavaCoilZone",
+      "cost": 0,
+      "tags": [
+        "frostLavaCoilZone"
+      ],
+      "zone_filter": "frostLavaCoilZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostWaterfallTop",
+      "cost": 0,
+      "tags": [
+        "frostWaterfallTop"
+      ],
+      "zone_filter": "frostWaterfallTop",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostWaterfallMid",
+      "cost": 0,
+      "tags": [
+        "frostWaterfallMid"
+      ],
+      "zone_filter": "frostWaterfallMid",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostWaterfallBot",
+      "cost": 0,
+      "tags": [
+        "frostWaterfallBot"
+      ],
+      "zone_filter": "frostWaterfallBot",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostOutpost1",
+      "cost": 0,
+      "tags": [
+        "frostOutpost1"
+      ],
+      "zone_filter": "frostOutpost1",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostOutpost2",
+      "cost": 0,
+      "tags": [
+        "frostOutpost2"
+      ],
+      "zone_filter": "frostOutpost2",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBridge1",
+      "cost": 0,
+      "tags": [
+        "frostBridge1"
+      ],
+      "zone_filter": "frostBridge1",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBridge2",
+      "cost": 0,
+      "tags": [
+        "frostBridge2"
+      ],
+      "zone_filter": "frostBridge2",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBridge3",
+      "cost": 0,
+      "tags": [
+        "frostBridge3"
+      ],
+      "zone_filter": "frostBridge3",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBridge4",
+      "cost": 0,
+      "tags": [
+        "frostBridge4"
+      ],
+      "zone_filter": "frostBridge4",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBridge5",
+      "cost": 0,
+      "tags": [
+        "frostBridge5"
+      ],
+      "zone_filter": "frostBridge5",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBridge6",
+      "cost": 0,
+      "tags": [
+        "frostBridge6"
+      ],
+      "zone_filter": "frostBridge6",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostCompositionZone1",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone1"
+      ],
+      "zone_filter": "frostCompositionZone1",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostCompositionZone2",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone2"
+      ],
+      "zone_filter": "frostCompositionZone2",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostCompositionZone3",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone3"
+      ],
+      "zone_filter": "frostCompositionZone3",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostCompositionZone4",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone4"
+      ],
+      "zone_filter": "frostCompositionZone4",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostCompositionZone5",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone5"
+      ],
+      "zone_filter": "frostCompositionZone5",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostKeepPlateau",
+      "cost": 0,
+      "tags": [
+        "frostKeepPlateau"
+      ],
+      "zone_filter": "frostKeepPlateau",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostOutpost3",
+      "cost": 0,
+      "tags": [
+        "frostOutpost3"
+      ],
+      "zone_filter": "frostOutpost3",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrictWallZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrictWallZone"
+      ],
+      "zone_filter": "frostDistrictWallZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict1BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict1BridgeZone"
+      ],
+      "zone_filter": "frostDistrict1BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict2BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict2BridgeZone"
+      ],
+      "zone_filter": "frostDistrict2BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict3BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict3BridgeZone"
+      ],
+      "zone_filter": "frostDistrict3BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict4BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict4BridgeZone"
+      ],
+      "zone_filter": "frostDistrict4BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict5BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict5BridgeZone"
+      ],
+      "zone_filter": "frostDistrict5BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict6BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict6BridgeZone"
+      ],
+      "zone_filter": "frostDistrict6BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict7BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict7BridgeZone"
+      ],
+      "zone_filter": "frostDistrict7BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDistrict8BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict8BridgeZone"
+      ],
+      "zone_filter": "frostDistrict8BridgeZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBossFirstPlatform",
+      "cost": 0,
+      "tags": [
+        "frostBossFirstPlatform"
+      ],
+      "zone_filter": "frostBossFirstPlatform",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_plateauCenter",
+      "cost": 0,
+      "tags": [
+        "plateauCenter"
+      ],
+      "zone_filter": "plateauCenter",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBossSecondPlatform",
+      "cost": 0,
+      "tags": [
+        "frostBossSecondPlatform"
+      ],
+      "zone_filter": "frostBossSecondPlatform",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBossThirdPlatform",
+      "cost": 0,
+      "tags": [
+        "frostBossThirdPlatform"
+      ],
+      "zone_filter": "frostBossThirdPlatform",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostBossArena",
+      "cost": 0,
+      "tags": [
+        "frostBossArena"
+      ],
+      "zone_filter": "frostBossArena",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostOutsideBossArena",
+      "cost": 0,
+      "tags": [
+        "frostOutsideBossArena"
+      ],
+      "zone_filter": "frostBossArena",
+      "exclude": true
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostSmallSpire",
+      "cost": 0,
+      "tags": [
+        "frostSmallSpire"
+      ],
+      "zone_filter": "frostSmallSpire",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostPlatform",
+      "cost": 0,
+      "tags": [
+        "frostPlatform"
+      ],
+      "zone_filter": "frostPlatform",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostInsideKeep",
+      "cost": 0,
+      "tags": [
+        "frostInsideKeep"
+      ],
+      "zone_filter": "frostInsideKeep",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostInsideKeepBuildings",
+      "cost": 0,
+      "tags": [
+        "frostInsideKeepBuildings"
+      ],
+      "zone_filter": "frostInsideKeepBuildings",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostNotInsideKeep",
+      "cost": 0,
+      "tags": [
+        "frostNotInsideKeep"
+      ],
+      "zone_filter": "frostInsideKeep",
+      "exclude": true
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostSmallBottomZone",
+      "cost": 0,
+      "tags": [
+        "frostSmallBottomZone"
+      ],
+      "zone_filter": "frostSmallBottomZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostDeadZone",
+      "cost": 0,
+      "tags": [
+        "frostDeadZone"
+      ],
+      "zone_filter": "frostDeadZone",
+      "exclude": true
+    },
+    {
+      "unique_card_id": "zone_filter_cards_frostValidZone",
+      "cost": 0,
+      "tags": [
+        "frostValidZone"
+      ],
+      "zone_filter": "frostValidZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_keepZone",
+      "cost": 0,
+      "tags": [
+        "keepZone"
+      ],
+      "zone_filter": "keepZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_groundZone",
+      "cost": 0,
+      "tags": [
+        "groundZone"
+      ],
+      "zone_filter": "groundZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_dropZone",
+      "cost": 0,
+      "tags": [
+        "dropZone"
+      ],
+      "zone_filter": "dropZone",
+      "exclude": false
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_frostInsideOutpost",
+      "cost": 0,
+      "tags": [
+        "frostInsideOutpost"
+      ],
+      "zone_tag": "frostInsideOutpost"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostLavaCoilZone",
+      "cost": 0,
+      "tags": [
+        "frostLavaCoilZone"
+      ],
+      "zone_tag": "frostLavaCoilZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostWaterfallTop",
+      "cost": 0,
+      "tags": [
+        "frostWaterfallTop"
+      ],
+      "zone_tag": "frostWaterfallTop"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostWaterfallMid",
+      "cost": 0,
+      "tags": [
+        "frostWaterfallMid"
+      ],
+      "zone_tag": "frostWaterfallMid"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostWaterfallBot",
+      "cost": 0,
+      "tags": [
+        "frostWaterfallBot"
+      ],
+      "zone_tag": "frostWaterfallBot"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostOutpost1",
+      "cost": 0,
+      "tags": [
+        "frostOutpost1"
+      ],
+      "zone_tag": "frostOutpost1"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCompositionZone1",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone1"
+      ],
+      "zone_tag": "frostCompositionZone1"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCompositionZone2",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone2"
+      ],
+      "zone_tag": "frostCompositionZone2"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCompositionZone3",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone3"
+      ],
+      "zone_tag": "frostCompositionZone3"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCompositionZone4",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone4"
+      ],
+      "zone_tag": "frostCompositionZone4"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCompositionZone5",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone5"
+      ],
+      "zone_tag": "frostCompositionZone5"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCompositionZone6",
+      "cost": 0,
+      "tags": [
+        "frostCompositionZone6"
+      ],
+      "zone_tag": "frostCompositionZone6"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostOutpost2",
+      "cost": 0,
+      "tags": [
+        "frostOutpost2"
+      ],
+      "zone_tag": "frostOutpost2"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostOutpost3",
+      "cost": 0,
+      "tags": [
+        "frostOutpost3"
+      ],
+      "zone_tag": "frostOutpost3"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBridge1",
+      "cost": 0,
+      "tags": [
+        "frostBridge1"
+      ],
+      "zone_tag": "frostBridge1"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBridge2",
+      "cost": 0,
+      "tags": [
+        "frostBridge2"
+      ],
+      "zone_tag": "frostBridge2"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBridge3",
+      "cost": 0,
+      "tags": [
+        "frostBridge3"
+      ],
+      "zone_tag": "frostBridge3"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBridge4",
+      "cost": 0,
+      "tags": [
+        "frostBridge4"
+      ],
+      "zone_tag": "frostBridge4"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBridge5",
+      "cost": 0,
+      "tags": [
+        "frostBridge5"
+      ],
+      "zone_tag": "frostBridge5"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBridge6",
+      "cost": 0,
+      "tags": [
+        "frostBridge6"
+      ],
+      "zone_tag": "frostBridge6"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostKeepPlateau",
+      "cost": 0,
+      "tags": [
+        "frostKeepPlateau"
+      ],
+      "zone_tag": "frostKeepPlateau"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrictWallZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrictWallZone"
+      ],
+      "zone_tag": "frostDistrictWallZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBossFirstPlatform",
+      "cost": 0,
+      "tags": [
+        "frostBossFirstPlatform"
+      ],
+      "zone_tag": "frostBossFirstPlatform"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBossSecondPlatform",
+      "cost": 0,
+      "tags": [
+        "frostBossSecondPlatform"
+      ],
+      "zone_tag": "frostBossSecondPlatform"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBossThirdPlatform",
+      "cost": 0,
+      "tags": [
+        "frostBossThirdPlatform"
+      ],
+      "zone_tag": "frostBossThirdPlatform"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_plateauCenter",
+      "cost": 0,
+      "tags": [
+        "plateauCenter"
+      ],
+      "zone_tag": "plateauCenter"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostBossArena",
+      "cost": 0,
+      "tags": [
+        "frostBossArena"
+      ],
+      "zone_tag": "frostBossArena"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict1BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict1BridgeZone"
+      ],
+      "zone_tag": "frostDistrict1BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict2BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict2BridgeZone"
+      ],
+      "zone_tag": "frostDistrict2BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict3BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict3BridgeZone"
+      ],
+      "zone_tag": "frostDistrict3BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict4BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict4BridgeZone"
+      ],
+      "zone_tag": "frostDistrict4BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict5BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict5BridgeZone"
+      ],
+      "zone_tag": "frostDistrict5BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict6BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict6BridgeZone"
+      ],
+      "zone_tag": "frostDistrict6BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict7BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict7BridgeZone"
+      ],
+      "zone_tag": "frostDistrict7BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDistrict8BridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostDistrict8BridgeZone"
+      ],
+      "zone_tag": "frostDistrict8BridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostCentralBridgeZone",
+      "cost": 0,
+      "tags": [
+        "frostCentralBridgeZone"
+      ],
+      "zone_tag": "frostCentralBridgeZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostSmallSpire",
+      "cost": 0,
+      "tags": [
+        "frostSmallSpire"
+      ],
+      "zone_tag": "frostSmallSpire"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostPlatform",
+      "cost": 0,
+      "tags": [
+        "frostPlatform"
+      ],
+      "zone_tag": "frostPlatform"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostInsideKeep",
+      "cost": 0,
+      "tags": [
+        "frostInsideKeep"
+      ],
+      "zone_tag": "frostInsideKeep"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostInsideKeepBuildings",
+      "cost": 0,
+      "tags": [
+        "frostInsideKeepBuildings"
+      ],
+      "zone_tag": "frostInsideKeepBuildings"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostSmallBottomZone",
+      "cost": 0,
+      "tags": [
+        "frostSmallBottomZone"
+      ],
+      "zone_tag": "frostSmallBottomZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostDeadZone",
+      "cost": 0,
+      "tags": [
+        "frostDeadZone"
+      ],
+      "zone_tag": "frostDeadZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_frostValidZone",
+      "cost": 0,
+      "tags": [
+        "frostValidZone"
+      ],
+      "zone_tag": "frostValidZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_keepZone",
+      "cost": 0,
+      "tags": [
+        "keepZone"
+      ],
+      "zone_tag": "keepZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_groundZone",
+      "cost": 0,
+      "tags": [
+        "groundZone"
+      ],
+      "zone_tag": "groundZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_dropZone",
+      "cost": 0,
+      "tags": [
+        "dropZone"
+      ],
+      "zone_tag": "dropZone"
+    }
+  ],
+  "zones_cards": [
+    {
+      "unique_card_id": "frostSmallSpireZone",
+      "cost": 0,
+      "number_of_zones": 2,
+      "tags": [
+        "frostSmallSpireZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostSmallLowPlatformZone",
+      "cost": 0,
+      "number_of_zones": 5,
+      "tags": [
+        "frostSmallLowPlatformZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostMediumPlatform",
+      "cost": 0,
+      "number_of_zones": 8,
+      "tags": [
+        "frostMediumPlatform"
+      ]
+    },
+    {
+      "unique_card_id": "frostSmallMidPlatformZone",
+      "cost": 0,
+      "number_of_zones": 6,
+      "tags": [
+        "frostSmallMidPlatformZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostCenterZone",
+      "cost": 0,
+      "number_of_zones": 15,
+      "tags": [
+        "frostCenterZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostBossCenterZone",
+      "cost": 0,
+      "number_of_zones": 27,
+      "tags": [
+        "frostBossCenterZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostBossThirdZone",
+      "cost": 0,
+      "number_of_zones": 25,
+      "tags": [
+        "frostBossThirdZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostBossSecondZone",
+      "cost": 0,
+      "number_of_zones": 3,
+      "tags": [
+        "frostBossSecondZone"
+      ]
+    },
+    {
+      "unique_card_id": "frostBossFirstZone",
+      "cost": 0,
+      "number_of_zones": 3,
+      "tags": [
+        "frostBossFirstZone"
+      ]
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "frost_district_path",
+      "cost": 0,
+      "tags": [
+        "frost_district_path"
+      ],
+      "is_district_path": true
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_frostBossDistrict1",
+      "cost": 0,
+      "tags": [
+        "frostBossDistrict1"
+      ],
+      "district": "frostBossDistrict1"
+    },
+    {
+      "unique_card_id": "district_cards_frostBossDistrict2",
+      "cost": 0,
+      "tags": [
+        "frostBossDistrict2"
+      ],
+      "district": "frostBossDistrict2"
+    },
+    {
+      "unique_card_id": "district_cards_frostBossDistrict3",
+      "cost": 0,
+      "tags": [
+        "frostBossDistrict3"
+      ],
+      "district": "frostBossDistrict3"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict1",
+      "cost": 0,
+      "tags": [
+        "frostDistrict1"
+      ],
+      "district": "frostDistrict1"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict2",
+      "cost": 0,
+      "tags": [
+        "frostDistrict2"
+      ],
+      "district": "frostDistrict2"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict3",
+      "cost": 0,
+      "tags": [
+        "frostDistrict3"
+      ],
+      "district": "frostDistrict3"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict4",
+      "cost": 0,
+      "tags": [
+        "frostDistrict4"
+      ],
+      "district": "frostDistrict4"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict5",
+      "cost": 0,
+      "tags": [
+        "frostDistrict5"
+      ],
+      "district": "frostDistrict5"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict6",
+      "cost": 0,
+      "tags": [
+        "frostDistrict6"
+      ],
+      "district": "frostDistrict6"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict7",
+      "cost": 0,
+      "tags": [
+        "frostDistrict7"
+      ],
+      "district": "frostDistrict7"
+    },
+    {
+      "unique_card_id": "district_cards_frostDistrict8",
+      "cost": 0,
+      "tags": [
+        "frostDistrict8"
+      ],
+      "district": "frostDistrict8"
+    }
+  ]
+}

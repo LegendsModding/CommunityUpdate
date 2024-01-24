@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_golem_drill_transform_cavalry",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Golem",
+      "function": "Campaign"
+    },
+    "components": {
+      "badger:removal_time": {
+        "time": 6
+      },
+      "badger:tags": {
+        "tags": [
+          "golem_drill_transform",
+          "donotattack"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_golem_cavalry",
+            "percentage": 1
+          }
+        ],
+        "cap": 4,
+        "batch": 7,
+        "rate": 1,
+        "max_radius": 5,
+        "enable_recall": true
+      }
+    }
+  }
+}

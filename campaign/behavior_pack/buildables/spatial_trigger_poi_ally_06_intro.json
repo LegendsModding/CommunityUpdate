@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spatial_trigger_poi_ally_06_intro",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 20.0,
+        "height": 80.0
+      },
+      "badger:trigger_criteria": {
+        "filters": [
+          {
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_ally_1_poi_deck",
+      "map_data": "badger:poi_ally_01_faction",
+      "village_data": "badger:poi_ally_01_village",
+      "placement_name": "ally_1",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_deck"
+      ],
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 20,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_ally_giantgolem_home_biome",
+          "manual_height": false,
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  30,
+                  50
+                ],
+                "distance_to_zero_score": [0, 20],
+                "tag_parent": "grasslands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "grasslands_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_ally_2_poi_deck",
+      "map_data": "badger:poi_ally_02_faction",
+      "village_data": "badger:poi_ally_02_village",
+      "placement_name": "ally_2",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_deck"
+      ],
+      "biome": {
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 20,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_ally_carriergolem_home_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_ally_4_poi_deck",
+      "map_data": "badger:poi_ally_04_faction",
+      "village_data": "badger:poi_ally_04_village",
+      "placement_name": "ally_4",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_deck"
+      ],
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 20,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_ally_shieldgolem_home_biome",
+          "manual_height": false,
+          "manual_height_range": [
+            24,
+            25
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  30,
+                  50
+                ],
+                "distance_to_zero_score": [0, 20],
+                "tag_parent": "drylands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "drylands_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_ally_5_poi_deck",
+      "map_data": "badger:poi_ally_05_faction",
+      "village_data": "badger:poi_ally_05_village",
+      "placement_name": "ally_5",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_deck"
+      ],
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_ally_rangedgolem_home_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            43,
+            45
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "biome": {
+        "biome": "brokenlands",
+        "total_pixels": 20,
+        "starting_pixels": 9,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "brokenlands_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "brokenlands_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_ally_6_poi_deck",
+      "map_data": "badger:poi_ally_06_faction",
+      "village_data": "badger:poi_ally_06_village",
+      "placement_name": "ally_6",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_deck"
+      ],
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_ally_drillgolem_home_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            43,
+            45
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "biome": {
+        "biome": "jungle",
+        "total_pixels": 4,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "jungle_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "jungle_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 15,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        }
+      ]
+    }
+  ]
+}

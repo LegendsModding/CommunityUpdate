@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:music_combat_frost_base_boss_1",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+          "width": 0.7,
+          "height": 1.9
+      },
+      "badger:tags": {
+        "tags": [
+            "music_entity"
+        ]
+      },
+      "badger:spawn_tracking": {},
+      "badger:music_emitter_states": [
+        "initial",
+        "phase1",
+        "phase2",
+        "phase3",
+        "phase4",
+        "phase5"
+      ]
+    }
+  }
+}

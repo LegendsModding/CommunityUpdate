@@ -1,0 +1,98 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.proj_burn_block"
+      },
+      "identifier": "badger:proj_poi_burn_tower",
+      "materials": {
+        "mat_proj_freeze_block": "mat_proj_burn_block"
+      },
+      "render_controllers": [
+        "controller.render.proj_burn_block"
+      ]
+    },
+    "components": {
+      "badger:audio_update_FMOD_projectile_velocity": {},
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_poi_tower_05_projectile",
+          "particles": [
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_start_flares",
+              "locator": "loc_fx_center",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_trail",
+              "locator": "loc_fx_center",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_wind",
+              "locator": "loc_fx_center",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_trail_fire",
+              "locator": "loc_fx_corner01",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_trail_fire",
+              "locator": "loc_fx_corner02",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_trail_fire",
+              "locator": "loc_fx_corner03",
+              "enabled": true,
+              "bind_to_actor": true
+            },
+            {
+              "effect": "badger:fx_proj_poi_burn_tower_trail_fire",
+              "locator": "loc_fx_corner04",
+              "enabled": true,
+              "bind_to_actor": true
+            }
+          ]
+        },
+        "on_death": {
+          "audio": "BAE_poi_tower_05_projectile_stop"
+        },
+        "on_entity_hit": {
+          "audio": "BAE_poi_tower_05_projectile_impact_entity",
+          "particles": "badger:fx_proj_poi_burn_tower_impact",
+          "rumble": {
+            "duration": 0.35,
+            "strength": 45,
+            "priority": 2,
+            "override": true,
+            "range": 30.0
+          }
+        },
+        "on_world_hit": {
+          "audio": "BAE_poi_tower_05_projectile_impact_world",
+          "particles": "badger:fx_proj_poi_burn_tower_impact",
+          "rumble": {
+            "duration": 0.35,
+            "strength": 45,
+            "priority": 2,
+            "override": true,
+            "range": 30.0
+          }
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:proj_burn_block"
+      }
+    }
+  }
+}

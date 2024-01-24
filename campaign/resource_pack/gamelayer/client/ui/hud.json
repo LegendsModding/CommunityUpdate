@@ -1,0 +1,32 @@
+{
+  "format_version": "1.0.0",
+
+  "economy_ticket_categories": ["build", "gather", "spawn", "spawner"],
+
+  // gamepad: dpad up, down, left, right
+  // keyboard: 1, 2, 3 ,4
+  "journal_categories": ["resources", "tools", "piglins", "overworld"],
+
+  "allegiance_unlocks": [
+    "unlock_quest_mount_01",
+
+    "unlock_quest_mount_03",
+
+    "unlock_quest_mount_04",
+
+    "unlock_quest_mount_05",
+
+    "unlock_quest_mount_06"
+  ],
+
+  "button_hold_min_percent": -1.0,
+
+  "button_hold_min_elapsed": 0.1,
+
+  "button_hold_min_threshold": 0.0,
+  "hotbar_onboarding_category_check": "mobs",
+
+  "vo_screen_cues": [],
+
+  "interaction_input_mapping_keys": ["key.bsharpInteract", "key.deconstruct", "key.activate_spawner"]
+}

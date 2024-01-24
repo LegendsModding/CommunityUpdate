@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0", 
+  "mat_wmap_destroyed_base_frost:entity_world_map": {
+    "pass": "opaqueonbottom",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_destroyed_base_frost_d", 
+      "coeffMap": "textures/entity/tex_wmap_destroyed_base_frost_mr", 
+      "emissiveMap": "textures/entity/tex_wmap_destroyed_base_frost_e"
+    }
+  }
+}

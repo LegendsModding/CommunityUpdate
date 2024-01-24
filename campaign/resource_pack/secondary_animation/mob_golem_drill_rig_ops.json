@@ -1,0 +1,20 @@
+{
+  "format_version": "1.0",
+  "badger:rig_operations": {
+    "rigops_actions.mob_golem_drill_candle_light": {
+      "rig": "badger:mob_golem_drill",
+      "enabled": "variable.candle_light",
+      "operations": [
+        {
+          "type": "lerp",
+          "input": "j.joint_shoulder_r.translation.y",
+          "domain_a": -50,
+          "domain_b": 125,
+          "output": "v.candle_light_out",
+          "range_a": 35,
+          "range_b": 1000
+        }
+      ]
+    }
+  }
+}

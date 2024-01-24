@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_frost_fob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:village": {
+        "name": "Piglin Frost FOB"
+      },
+      "badger:village_zone": {
+        "expansion_distance": 75,
+        "zone_jitter_min": 0.0,
+        "zone_jitter_max": 7.0,
+        "is_zone_jitter_bell_curve_enabled": false,
+        "zone_spacing": 16.0,
+        "water_search_resolution": 20.0,
+        "is_hexagonal_grid_enabled": true,
+        "minimum_loz_connection_width": 8.0
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_piglinattack_frost",
+        "priority": 5
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "zero",
+        "filter_tagsets": [
+          {
+            "include_tags":["village_attack"],
+            "exclude_tags":[]
+          }
+        ]
+      },
+      "badger:template": "badger:piglin_frost"
+    }
+  }
+}

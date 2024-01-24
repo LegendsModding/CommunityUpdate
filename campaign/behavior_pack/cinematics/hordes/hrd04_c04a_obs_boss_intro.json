@@ -1,0 +1,4959 @@
+{
+   "audio_snapshot" : "snapshot:/cinematic/STATE_cinematic_nis_piglin_portal",
+   "cine_id" : "hrd04_c04a_obs_boss_intro",
+   "clips" : [
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s05",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 52,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.3899999856948853, 0.5749999880790710 ],
+            "P2" : [ 0.5649999976158142, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s05",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s05_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s05_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 4,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 968,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s01",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 224,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 80.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s01",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 90,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s02",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 230,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.3899999856948853, 0.5749999880790710 ],
+            "P2" : [ 0.5649999976158142, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s02",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s02_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 314,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s03",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 284,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s03",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 544,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : false,
+         "blend_in" : 0,
+         "camera_id" : "s10",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 204,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s10",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s10_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s10_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1445,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s04",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 140,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.3899999856948853, 0.5749999880790710 ],
+            "P2" : [ 0.5649999976158142, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "s04",
+         "near_plane" : 0.02500000037252903,
+         "pan_end_transform" : {
+            "locator_name" : "s04_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s04_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 828,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : true
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s09",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 137,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s09",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1308,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s08",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 81,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s08",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1227,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "blend_from" : true,
+         "blend_in" : 0,
+         "camera_id" : "s06",
+         "clip_type" : "camera_clip",
+         "dd_camera" : true,
+         "dd_grid_rays" : true,
+         "dd_world_grid" : true,
+         "do_debug_draw" : false,
+         "duration" : 207,
+         "ease" : "linear",
+         "enabled" : true,
+         "field_of_view" : 70.0,
+         "ignore_camera_shake" : false,
+         "locked_for_edit" : false,
+         "name" : "s06",
+         "near_plane" : 0.02500000037252903,
+         "priority" : 5,
+         "row_index" : 11,
+         "spawn_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "start_time" : 1020,
+         "wants_attach_to" : false,
+         "wants_fov_change" : false,
+         "wants_look_at" : false,
+         "wants_obstruction_detection" : false,
+         "wants_pan" : false
+      },
+      {
+         "camera_id" : "s03",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 267,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s03_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s03_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 544,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s03",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 17,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4849997758865356, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.3",
+         "pan_end_transform" : {
+            "locator_name" : "s03_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s03_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 811,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s08",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 81,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s08_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s08_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1227,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 65,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.1",
+         "pan_end_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1042,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 25,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.2",
+         "pan_end_transform" : {
+            "locator_name" : "s06_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1130,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 22,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "0.1",
+         "pan_end_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_0",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1020,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 23,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s06_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1107,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 124,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "3.3",
+         "pan_end_transform" : {
+            "locator_name" : "s02_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 420,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 41,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.3",
+         "pan_end_transform" : {
+            "locator_name" : "s02_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 379,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s09",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 31,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.3",
+         "pan_end_transform" : {
+            "locator_name" : "s09_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s09_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1404,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 122,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.1b",
+         "pan_end_transform" : {
+            "locator_name" : "s04_1b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s04_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 828,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s04",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 18,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1b.2",
+         "pan_end_transform" : {
+            "locator_name" : "s04_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s04_1b",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 950,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s06",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 39,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "2.3",
+         "pan_end_transform" : {
+            "locator_name" : "s06_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s06_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1155,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s09",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 22,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4449999928474426, 0.05000000074505806 ],
+            "P2" : [ 0.5500000119209290, 0.9499999880790710 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s09_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s09_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 1308,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s01",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 224,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 90,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_pan",
+         "do_debug_draw" : false,
+         "duration" : 65,
+         "enabled" : true,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "1.2",
+         "pan_end_transform" : {
+            "locator_name" : "s02_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "pan_start_transform" : {
+            "locator_name" : "s02_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "row_index" : 12,
+         "start_time" : 314,
+         "use_transform_orientation" : true,
+         "use_transform_position" : true
+      },
+      {
+         "archetype" : "badger:piglin_frost_boss",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1558,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "entity_owner_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "boss",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 21,
+         "skip_spawn_state" : false,
+         "snap_to_ground" : false,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 91,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "boss_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "faction_selector" : {
+            "id" : "faction.pig.frost",
+            "mode" : "by_name"
+         }
+      },
+      {
+         "archetype" : "badger:piglin_grunter_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1367,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "entity_owner_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "Runt3",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 43,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : false,
+         "spawn_tags" : null,
+         "start_time" : 91,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "runt3_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "faction_selector" : {
+            "id" : "faction.pig.frost",
+            "mode" : "by_name"
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 14,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 45,
+         "should_pathfind" : true,
+         "start_time" : 807,
+         "transform" : {
+            "locator_name" : "runtX_rotation",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "intro",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "boss:intro",
+         "row_index" : 22,
+         "start_time" : 359,
+         "trigger_parents" : false
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 182,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 27,
+         "should_pathfind" : false,
+         "start_time" : 209,
+         "transform" : {
+            "locator_name" : "pig01_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype" : "badger:piglin_grunter_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1559,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "entity_owner_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "Grunt2",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 30,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 90,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "pig02_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "faction_selector" : {
+            "id" : "faction.pig.frost",
+            "mode" : "by_name"
+         }
+      },
+      {
+         "archetype" : "badger:piglin_grenadier",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1367,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "entity_owner_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "Grenadier",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 35,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : false,
+         "spawn_tags" : null,
+         "start_time" : 90,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "runt1_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "faction_selector" : {
+            "id" : "faction.pig.frost",
+            "mode" : "by_name"
+         }
+      },
+      {
+         "archetype" : "badger:piglin_grunter_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1367,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "entity_owner_id" : "0",
+         "locked_for_edit" : false,
+         "name" : "Runt2",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 39,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : false,
+         "spawn_tags" : null,
+         "start_time" : 90,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "runt2_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "faction_selector" : {
+            "id" : "faction.pig.frost",
+            "mode" : "by_name"
+         }
+      },
+      {
+         "angle" : 40.0,
+         "clip_type" : "knockback",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "filter" : "any_team",
+         "force" : 20.0,
+         "locked_for_edit" : false,
+         "name" : "",
+         "range" : 10.0,
+         "row_index" : 34,
+         "start_time" : 821,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "knockback",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "do_debug_draw" : false,
+         "duration" : 1367,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 44,
+         "start_time" : 91
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "do_debug_draw" : false,
+         "duration" : 1367,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 36,
+         "start_time" : 90
+      },
+      {
+         "clip_type" : "cinematic_mode",
+         "do_debug_draw" : false,
+         "duration" : 1367,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 40,
+         "start_time" : 90
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "forward_transform" : {
+            "locator_name" : "runtX_rotation",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 45,
+         "start_time" : 373
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "forward_transform" : {
+            "locator_name" : "runtX_rotation",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 37,
+         "start_time" : 384
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "forward_transform" : {
+            "locator_name" : "runtX_rotation",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 41,
+         "start_time" : 362
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 13,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 37,
+         "should_pathfind" : true,
+         "start_time" : 807,
+         "transform" : {
+            "locator_name" : "runtX_rotation",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 14,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 41,
+         "should_pathfind" : true,
+         "start_time" : 807,
+         "transform" : {
+            "locator_name" : "runtX_rotation",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "burn_walk_a",
+         "blend_in_time" : 0.2000000029802322,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "p1:jumpturn",
+         "row_index" : 28,
+         "start_time" : 471,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "take_large_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "r1:takelargeb",
+         "row_index" : 41,
+         "start_time" : 753,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "take_large_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "take_medium_a",
+         "row_index" : 41,
+         "start_time" : 495,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "cine_intro_warrun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "r2:cheer",
+         "row_index" : 45,
+         "start_time" : 414,
+         "trigger_parents" : false
+      },
+      {
+         "camera_id" : "s02",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 48,
+         "enabled" : true,
+         "fov_end" : 0.7853981852531433,
+         "fov_start" : 1.221730589866638,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.4899998903274536, 0.02000011876225471 ],
+            "P2" : [ 0.5200000405311584, 1.014999985694885 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "f70.f45",
+         "row_index" : 13,
+         "start_time" : 379
+      },
+      {
+         "camera_id" : "s05",
+         "clip_type" : "camera_fov_change",
+         "do_debug_draw" : false,
+         "duration" : 7,
+         "enabled" : true,
+         "fov_end" : 1.221730589866638,
+         "fov_start" : 1.396263480186462,
+         "interpolation_curve" : {
+            "P0" : [ 0.0, 0.0 ],
+            "P1" : [ 0.0, 0.0 ],
+            "P2" : [ 1.0, 1.0 ],
+            "P3" : [ 1.0, 1.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "f80.f70",
+         "row_index" : 13,
+         "start_time" : 968
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 161,
+         "enabled" : true,
+         "frequency" : 5.0,
+         "intensity" : 0.3000000119209290,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.4400001764297485, 0.5199998021125793 ],
+               "P2" : [ 0.5599998831748962, 0.9950000047683716 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.8999999761581421,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.5300002098083496, 0.4450002312660217 ],
+               "P2" : [ 0.5599998831748962, 0.4349998235702515 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.1000000014901161
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 15,
+         "start_time" : 1227
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 130,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 46,
+         "should_pathfind" : false,
+         "start_time" : 397,
+         "transform" : {
+            "locator_name" : "runt3_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 23,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "forward_transform" : {
+            "locator_name" : "pig02_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 31,
+         "start_time" : 1150
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 51,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 27,
+         "should_pathfind" : false,
+         "start_time" : 483,
+         "transform" : {
+            "locator_name" : "pig01_4",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 111,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 42,
+         "should_pathfind" : false,
+         "start_time" : 384,
+         "transform" : {
+            "locator_name" : "runt2_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 34,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 367
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 192,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1458
+      },
+      {
+         "animation" : "cine_intro_warrun_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "r2:cheer",
+         "row_index" : 41,
+         "start_time" : 400,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "cheer_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 31,
+         "start_time" : 1435,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 868,
+         "enabled" : true,
+         "frequency" : 1.0,
+         "intensity" : 0.3000000119209290,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 15,
+         "start_time" : 359
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 66,
+         "enabled" : true,
+         "frequency" : 5.0,
+         "intensity" : 0.1000000014901161,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.6900004148483276, 0.024999950081110 ],
+               "P2" : [ 0.2750003337860107, 0.9849997758865356 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.6999999880790710,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.4400002956390381, 0.7749999761581421 ],
+               "P2" : [ 0.2550001144409180, 0.009999910369515419 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 17,
+         "start_time" : 318
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 127,
+         "enabled" : true,
+         "frequency" : 5.0,
+         "intensity" : 0.50,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.7700003385543823, 0.03499995917081833 ],
+               "P2" : [ 0.9149998426437378, 0.3600002527236938 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.3000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.1300004422664642, 0.6250001192092896 ],
+               "P2" : [ 0.03499999642372131, 0.004999914206564426 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 17,
+         "start_time" : 733
+      },
+      {
+         "clip_type" : "camera_shake",
+         "do_debug_draw" : false,
+         "duration" : 173,
+         "enabled" : true,
+         "frequency" : 5.0,
+         "intensity" : 0.50,
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.7700003385543823, 0.03499995917081833 ],
+               "P2" : [ 0.9149998426437378, 0.3600002527236938 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.3000000119209290,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.1300004422664642, 0.6250001192092896 ],
+               "P2" : [ 0.03499999642372131, 0.004999914206564426 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.3000000119209290
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 16,
+         "start_time" : 492
+      },
+      {
+         "archetype" : "badger:piglin_grunter_nis",
+         "clip_type" : "spawn_entity_clip",
+         "despawn" : true,
+         "do_debug_draw" : false,
+         "duration" : 1619,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "entity_owner_id" : "",
+         "locked_for_edit" : false,
+         "name" : "Grunt",
+         "remove_physics" : false,
+         "role" : "",
+         "row_index" : 26,
+         "skip_spawn_state" : true,
+         "snap_to_ground" : true,
+         "spawn_client_only" : true,
+         "spawn_tags" : null,
+         "start_time" : 30,
+         "team" : "piglin_team",
+         "transform" : {
+            "locator_name" : "pig01_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "faction_selector" : {
+            "id" : "faction.pig.frost",
+            "mode" : "by_name"
+         }
+      },
+      {
+         "animation" : "walk_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "walk_a",
+         "row_index" : 28,
+         "start_time" : 209,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "idle_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "r1:cheer",
+         "row_index" : 37,
+         "start_time" : 427,
+         "trigger_parents" : false
+      },
+      {
+         "alliance_rule" : "any_team",
+         "behaviour" : "",
+         "behaviour_radius" : 20.0,
+         "clear_actors" : false,
+         "clear_players" : true,
+         "clip_type" : "crowd_clearing",
+         "disable_spawners" : true,
+         "do_debug_draw" : false,
+         "duration" : 1578,
+         "enabled" : true,
+         "exclude_tags" : null,
+         "include_tags" : null,
+         "locked_for_edit" : false,
+         "look_at_radius" : 20.0,
+         "name" : "CC - Portal",
+         "navigate_radius" : 20.0,
+         "radius" : 10.0,
+         "restore_teleported_entities" : false,
+         "row_index" : 4,
+         "start_time" : 72,
+         "team" : "piglin_team",
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "idle_b",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "idle_b",
+         "row_index" : 37,
+         "start_time" : 527,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "knockback_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "knockback_a",
+         "row_index" : 42,
+         "start_time" : 969,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "take_medium_b",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "idle_b",
+         "row_index" : 45,
+         "start_time" : 522,
+         "trigger_parents" : false
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_frost_boss_cine_electric",
+         "locked_for_edit" : false,
+         "name" : "fx_electric01",
+         "row_index" : 48,
+         "start_time" : 373,
+         "transform" : {
+            "locator_name" : "loc_fx_01",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_frost_boss_cine_portal",
+         "locked_for_edit" : false,
+         "name" : "fx_cine_portal",
+         "row_index" : 47,
+         "start_time" : 372,
+         "transform" : {
+            "locator_name" : "loc_fx_01",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 12,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 757,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 815,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 714,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 791,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 838,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 845,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 747,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 774,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 3,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 727,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 696,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 807,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 830,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 734,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 366,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 384,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 3,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 397,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 417,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 404,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 12,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 427,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 444,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 461,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 485,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 475,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 508,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 500,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 515,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 532,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 8,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 550,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 3,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 563,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 583,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 570,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 12,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 593,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 610,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 627,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 651,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 641,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 674,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 4,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 0, 255, 255 ],
+               "falloff_power" : 1.0,
+               "intensity" : 30.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 50,
+         "start_time" : 666,
+         "transform" : {
+            "locator_name" : "lit_portalStrobe",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_frost_boss_cine_hit_parts",
+         "locked_for_edit" : false,
+         "name" : "fx_parts_left",
+         "row_index" : 49,
+         "start_time" : 694,
+         "transform" : {
+            "locator_name" : "loc_fx_02",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "spawn_vfx",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "identifier" : "badger:fx_piglin_frost_boss_cine_hit_parts",
+         "locked_for_edit" : false,
+         "name" : "fx_parts_right",
+         "row_index" : 51,
+         "start_time" : 741,
+         "transform" : {
+            "locator_name" : "loc_fx_03",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 79,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 401
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 29,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "eyes wide",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 480
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 36,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 509
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 32,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 545
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 51,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 577
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 65,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "eyes wide",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 628
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 82,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 693
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 52,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 775
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 63,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "eyes wide",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 827
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 9,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 943
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 23,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1380
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 71,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "eyes wide",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1021
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 74,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1131
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 22,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1403
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 12,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 27,
+         "should_pathfind" : false,
+         "start_time" : 471,
+         "transform" : {
+            "locator_name" : "pig01_3",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 23,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "forward_transform" : {
+            "locator_name" : "pig02_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 31,
+         "start_time" : 821
+      },
+      {
+         "clip_type" : "rotate_entity",
+         "do_debug_draw" : false,
+         "duration" : 1,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "forward_transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "locked_for_edit" : false,
+         "look_at_id" : "boss",
+         "name" : "",
+         "row_index" : 27,
+         "start_time" : 391
+      },
+      {
+         "animation" : "idle_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "p2",
+         "row_index" : 31,
+         "start_time" : 134,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "walk_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "walk_a",
+         "row_index" : 42,
+         "start_time" : 807,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "knockback_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt3",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "knockback_a",
+         "row_index" : 46,
+         "start_time" : 821,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "knockback_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "knockback_a",
+         "row_index" : 42,
+         "start_time" : 890,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "idle_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "p1:idle",
+         "row_index" : 27,
+         "start_time" : 188,
+         "trigger_parents" : false
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1558,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_boss_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 193, 19, 205, 255 ],
+               "falloff_power" : 0.50,
+               "intensity" : 4.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 5.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "boss2",
+         "row_index" : 55,
+         "start_time" : 91,
+         "transform" : {
+            "locator_name" : "lit_boss_2",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1559,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_sporeRunt",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 3, 255, 255 ],
+               "falloff_power" : 0.3000000119209290,
+               "intensity" : 3.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 3.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "sporeRunt",
+         "row_index" : 57,
+         "start_time" : 90,
+         "transform" : {
+            "locator_name" : "lit_sporeRunt",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1559,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_skyglobal",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 38, 199, 255, 255 ],
+               "falloff_power" : 0.50,
+               "intensity" : 1.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 40.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "skyGlobal",
+         "row_index" : 53,
+         "start_time" : 90,
+         "transform" : {
+            "locator_name" : "lit_skyglobal",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1559,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_boss_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 158, 242, 41, 255 ],
+               "falloff_power" : 0.50,
+               "intensity" : 5.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 7.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "boss3",
+         "row_index" : 56,
+         "start_time" : 90,
+         "transform" : {
+            "locator_name" : "lit_boss_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1559,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_boss_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 158, 242, 41, 255 ],
+               "falloff_power" : 1.50,
+               "intensity" : 5.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 10.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "boss1",
+         "row_index" : 54,
+         "start_time" : 90,
+         "transform" : {
+            "locator_name" : "lit_boss_1",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "knockback_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "knockback_a",
+         "row_index" : 42,
+         "start_time" : 821,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "knockback_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "runt1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "knockback_a",
+         "row_index" : 38,
+         "start_time" : 821,
+         "trigger_parents" : false
+      },
+      {
+         "animation" : "take_large_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.0,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 31,
+         "start_time" : 1248,
+         "trigger_parents" : false
+      },
+      {
+         "Day" : true,
+         "Night" : true,
+         "Sunrise" : false,
+         "Sunset" : false,
+         "clip_type" : "point_light",
+         "do_debug_draw" : false,
+         "duration" : 1559,
+         "enabled" : true,
+         "end_transform" : {
+            "locator_name" : "lit_portalConst",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         },
+         "intensity_curve" : {
+            "blend_in" : {
+               "P0" : [ 0.0, 0.0 ],
+               "P1" : [ 0.750, 0.250 ],
+               "P2" : [ 0.250, 0.750 ],
+               "P3" : [ 1.0, 1.0 ]
+            },
+            "blend_in_duration" : 0.2000000029802322,
+            "blend_out" : {
+               "P0" : [ 0.0, 1.0 ],
+               "P1" : [ 0.750, 0.750 ],
+               "P2" : [ 0.250, 0.250 ],
+               "P3" : [ 1.0, 0.0 ]
+            },
+            "blend_out_duration" : 0.2000000029802322
+         },
+         "lights" : [
+            {
+               "color" : [ 254, 3, 255, 255 ],
+               "falloff_power" : 0.3000000119209290,
+               "intensity" : 7.0,
+               "offset" : [ 0.0, 0.0, 0.0 ],
+               "radius" : 20.0
+            }
+         ],
+         "locked_for_edit" : false,
+         "name" : "port.constant",
+         "row_index" : 52,
+         "start_time" : 90,
+         "transform" : {
+            "locator_name" : "lit_portalConst",
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "animation" : "cine_intro_jumpturn_a",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "p1:jumpturn",
+         "row_index" : 28,
+         "start_time" : 392,
+         "trigger_parents" : false
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter",
+         "clip_type" : "face_animation",
+         "color" : [ 0.8000000119209290, 0.1599999964237213, 0.4077423214912415, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 388,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "face_expression" : "wide eyes",
+         "locked_for_edit" : false,
+         "name" : "wideeyes",
+         "row_index" : 34,
+         "start_time" : 1261
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter_nis",
+         "clip_type" : "face_animation",
+         "color" : [ 0.8000000119209290, 0.1599999964237213, 0.7793551683425903, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 161,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "blink",
+         "row_index" : 29,
+         "start_time" : 30
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter_nis",
+         "clip_type" : "face_animation",
+         "color" : [ 0.8000000119209290, 0.1599999964237213, 0.7793551683425903, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 23,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "neutral",
+         "row_index" : 29,
+         "start_time" : 191
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter",
+         "clip_type" : "face_animation",
+         "color" : [ 0.8000000119209290, 0.1599999964237213, 0.6554840207099915, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 25,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "neutral",
+         "row_index" : 34,
+         "start_time" : 1221
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter",
+         "clip_type" : "face_animation",
+         "color" : [ 0.8000000119209290, 0.1599999964237213, 0.5316131711006165, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 10,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "blink",
+         "row_index" : 34,
+         "start_time" : 1246
+      },
+      {
+         "archetype_hint" : "badger:piglin_grunter",
+         "clip_type" : "face_animation",
+         "color" : [ 0.8000000119209290, 0.1599999964237213, 0.4077423214912415, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 5,
+         "enabled" : true,
+         "entity_id" : "pig2",
+         "face_expression" : "shocked",
+         "locked_for_edit" : false,
+         "name" : "shocked",
+         "row_index" : 34,
+         "start_time" : 1256
+      },
+      {
+         "audio_event_on_skip" : "BAE_cine_hrd04_c04a_stop",
+         "audio_event_on_start" : "BAE_cine_hrd04_c04a",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 1735,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 2,
+         "start_time" : 0
+      },
+      {
+         "audio_event_on_skip" : "",
+         "audio_event_on_start" : "BAE_test_clap_2d",
+         "audio_event_on_stop" : "",
+         "clip_type" : "audio_clip",
+         "do_debug_draw" : false,
+         "duration" : 2,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "CLAPPER - AUDIO",
+         "row_index" : 3,
+         "start_time" : 91
+      },
+      {
+         "avoidance_lookahead" : 10.0,
+         "clip_type" : "navigate_to",
+         "do_debug_draw" : false,
+         "duration" : 6,
+         "enabled" : true,
+         "entity_id" : "local_player",
+         "locked_for_edit" : false,
+         "name" : "Turn the Local_Player Towards Source NIS",
+         "row_index" : 15,
+         "should_pathfind" : true,
+         "start_time" : 0,
+         "transform" : {
+            "rotation" : [ 0.0, 0.0, 0.0 ],
+            "translation" : [ 0.0, 0.0, 0.0 ]
+         }
+      },
+      {
+         "clip_type" : "screen_text",
+         "do_debug_draw" : false,
+         "duration" : 1739,
+         "enabled" : false,
+         "locked_for_edit" : false,
+         "name" : "[ Keep Disabled ] Cinematic Candidates Descriptor :: 0:Boss",
+         "row_index" : 0,
+         "start_time" : 0,
+         "text" : ""
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: OUT NIS 1sec ]",
+         "rate" : 0.1000000014901161,
+         "row_index" : 10,
+         "start_time" : 1679,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : true
+      },
+      {
+         "clip_type" : "transition_clip",
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : true,
+         "locked_for_edit" : false,
+         "name" : "[ Transition Cam :: IN NIS 1sec ]",
+         "rate" : 0.2000000029802322,
+         "row_index" : 10,
+         "start_time" : 0,
+         "time_to_reach_rate" : 0.3000000119209290,
+         "transition_out" : false
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 150,
+         "enabled" : true,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis 1sec In - 1sec Out",
+         "out_duration" : 60,
+         "row_index" : 9,
+         "start_time" : 1589,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "do_debug_draw" : false,
+         "duration" : 150,
+         "enabled" : true,
+         "in_duration" : 60,
+         "locked_for_edit" : false,
+         "name" : "[FTB] Nis 1sec In - 1sec Out",
+         "out_duration" : 60,
+         "row_index" : 9,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 1589,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 1649,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 1679,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE OUT Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 90,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 30,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF] On Black",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 60,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "fade_to_black",
+         "color" : [ 0.8000000119209290, 0.7793548107147217, 0.1599999964237213, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 60,
+         "enabled" : false,
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "[REF]FADE In Duration",
+         "out_duration" : 0,
+         "row_index" : 8,
+         "start_time" : 0,
+         "toggle_state" : "none"
+      },
+      {
+         "broadcast" : false,
+         "clip_type" : "hud_visibility_clip",
+         "color" : [ 9.999999974752427e-07, 0.0, 0.0, 1.0 ],
+         "do_debug_draw" : false,
+         "duration" : 1739,
+         "enabled" : true,
+         "hud_visibility" : "hidden",
+         "in_duration" : 0,
+         "locked_for_edit" : false,
+         "name" : "HIDE HUD - Hidden for NISs",
+         "out_duration" : 0,
+         "row_index" : 1,
+         "start_time" : 0,
+         "toggle_state" : ""
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 44,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 899
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 42,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 952
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 9,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 890
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 39,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1092
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 27,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 994
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 33,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "neutral blink",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1425
+      },
+      {
+         "archetype_hint" : "badger:piglin_frost_boss",
+         "clip_type" : "face_animation",
+         "do_debug_draw" : false,
+         "duration" : 175,
+         "enabled" : true,
+         "entity_id" : "boss",
+         "face_expression" : "mouth open",
+         "locked_for_edit" : false,
+         "name" : "",
+         "row_index" : 23,
+         "start_time" : 1205
+      },
+      {
+         "animation" : "idle_c",
+         "blend_in_time" : 0.0,
+         "blend_time" : 0.2000000029802322,
+         "clip_type" : "play_animation",
+         "do_debug_draw" : false,
+         "duration" : 0,
+         "enabled" : true,
+         "entity_id" : "pig1",
+         "is_additive" : false,
+         "locked_for_edit" : false,
+         "name" : "p1:idle",
+         "row_index" : 27,
+         "start_time" : 30,
+         "trigger_parents" : false
+      }
+   ],
+   "extra_cast" : null,
+   "extra_entity_ids" : null,
+   "extra_world_requests" : null,
+   "interrupts_vo_sequences" : true,
+   "locators" : [
+      {
+         "attach_to_id" : "",
+         "locator_name" : "boss_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.0, 10.0, -14.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "knockback",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.50, 10.0, 0.6000000238418579 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_boss_1",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 4.300000190734863, 11.0, 13.69999980926514 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_boss_2",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.700000047683716, 14.0, 11.30000019073486 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_boss_3",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.1000000014901161, 17.10000038146973, 12.10000038146973 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_portalConst",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 1.100000023841858, 18.29999923706055, -0.3000000119209290 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_portalStrobe",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 0.0, 16.0, -0.8000000119209290 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_skyglobal",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 9.600000381469727, 20.50, 15.10000038146973 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "lit_sporeRunt",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 4.900000095367432, 17.39999961853027, 2.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "loc_fx_01",
+         "rotation" : [ -90.0, 0.0, -0.0 ],
+         "translation" : [ 0.2000000029802322, 15.30000019073486, -4.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "loc_fx_02",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ -5.50, 15.19999980926514, -2.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "loc_fx_03",
+         "rotation" : [ 0.0, 0.0, 0.0 ],
+         "translation" : [ 5.099999904632568, 16.89999961853027, -0.6999999880790710 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "pig01_1",
+         "rotation" : [ 0.0, 29.0, 0.0 ],
+         "translation" : [ -6.099999904632568, 10.10000038146973, 0.1000000014901161 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "pig01_2",
+         "rotation" : [ 0.0, -170.0, -0.0 ],
+         "translation" : [ 1.600000023841858, 10.10000038146973, -3.50 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "pig01_3",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -2.700000047683716, 10.39999961853027, -1.700000047683716 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "pig01_4",
+         "rotation" : [ 0.0, 90.0, 0.0 ],
+         "translation" : [ -12.30000019073486, 6.50, -0.4000000059604645 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "pig02_1",
+         "rotation" : [ 0.0, 5.0, 0.0 ],
+         "translation" : [ 6.599999904632568, 16.60000038146973, 2.299999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "pig02_2",
+         "rotation" : [ 0.0, 45.0, 0.0 ],
+         "translation" : [ 5.900000095367432, 16.20000076293945, 2.700000047683716 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "runt1_1",
+         "rotation" : [ 0.0, -63.0, -0.0 ],
+         "translation" : [ 4.50, 10.19999980926514, 8.399999618530273 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "runt2_1",
+         "rotation" : [ 0.0, 17.0, 0.0 ],
+         "translation" : [ -1.50, 10.19999980926514, 7.599999904632568 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "runt2_2",
+         "rotation" : [ 0.0, 17.0, 0.0 ],
+         "translation" : [ -2.50, 10.19999980926514, 2.799999952316284 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "runt3_1",
+         "rotation" : [ 0.0, 37.0, 0.0 ],
+         "translation" : [ -2.900000095367432, 9.399999618530273, 9.800000190734863 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "runt3_2",
+         "rotation" : [ 0.0, 37.0, 0.0 ],
+         "translation" : [ -2.900000095367432, 10.19999980926514, 5.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "runtX_rotation",
+         "rotation" : [ 0.0, -180.0, -0.0 ],
+         "translation" : [ 0.0, 10.39999961853027, 19.29999923706055 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_1",
+         "rotation" : [ -20.0, 35.0, 0.0 ],
+         "translation" : [ -7.215299129486084, 9.904861450195312, 2.931421756744385 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s01_2",
+         "rotation" : [ -19.0, 35.0, 4.0 ],
+         "translation" : [ -7.153879165649414, 10.08191680908203, 2.843697547912598 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s02_1",
+         "rotation" : [ -3.0, -24.0, 1.0 ],
+         "translation" : [ 2.513332128524780, 10.11026000976562, 12.53746509552002 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s02_2",
+         "rotation" : [ -4.0, -24.0, -3.0 ],
+         "translation" : [ 2.495105743408203, 10.17443084716797, 12.49652671813965 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s02_3",
+         "rotation" : [ -13.0, -11.0, 5.0 ],
+         "translation" : [ 2.495105743408203, 10.17443084716797, 12.49652671813965 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s03_1",
+         "rotation" : [ -15.0, -0.0, 2.0 ],
+         "translation" : [ 0.0, 11.0, 3.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s03_2",
+         "rotation" : [ -15.0, 0.0, -2.0 ],
+         "translation" : [ 0.0, 11.0, 6.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s03_3",
+         "rotation" : [ -31.0, -0.0, -2.0 ],
+         "translation" : [ 0.0, 11.0, 6.0 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s04_1",
+         "rotation" : [ -16.0, 1.0, -2.0 ],
+         "translation" : [ 0.8514499664306641, 11.46977233886719, 16.39913177490234 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s04_1b",
+         "rotation" : [ -16.0, 1.0, 2.0 ],
+         "translation" : [ 0.8514499664306641, 11.46977233886719, 16.39913177490234 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s04_2",
+         "rotation" : [ -35.0, -12.0, -0.0 ],
+         "translation" : [ 0.8514499664306641, 11.46977233886719, 16.39913177490234 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s04_2b",
+         "rotation" : [ 35.0, -13.0, -0.0 ],
+         "translation" : [ 0.7796840667724609, 19.63838958740234, 13.49278354644775 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s05_1",
+         "rotation" : [ 39.0, 95.0, -0.0 ],
+         "translation" : [ -6.445201873779297, 19.87608337402344, 6.479498386383057 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s06_0",
+         "rotation" : [ -17.0, 18.0, 0.0 ],
+         "translation" : [ -1.743707656860352, 11.73943901062012, 13.35051155090332 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s06_1",
+         "rotation" : [ -30.0, 29.0, 0.0 ],
+         "translation" : [ -1.743707656860352, 11.73943901062012, 13.35051155090332 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s06_2",
+         "rotation" : [ -8.0, 39.0, 0.0 ],
+         "translation" : [ -1.743707656860352, 11.73943901062012, 13.35051155090332 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s06_3",
+         "rotation" : [ -26.0, 19.0, 0.0 ],
+         "translation" : [ -1.743707656860352, 11.73943901062012, 13.35051155090332 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s07_1",
+         "rotation" : [ 22.0, -141.0, 0.0 ],
+         "translation" : [ 5.577938079833984, 17.48827743530273, 0.6189737319946289 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s07_2",
+         "rotation" : [ 22.0, -141.0, 0.0 ],
+         "translation" : [ 5.342267990112305, 17.33329391479492, 0.9137153625488281 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s08_1",
+         "rotation" : [ 5.0, 23.0, -0.0 ],
+         "translation" : [ 5.365101814270020, 17.04122924804688, 4.544331550598145 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s08_2",
+         "rotation" : [ 5.0, 23.0, 1.0 ],
+         "translation" : [ 5.506248474121094, 17.01018524169922, 4.214756965637207 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s09_1",
+         "rotation" : [ -30.0, 25.0, 0.0 ],
+         "translation" : [ -2.104387283325195, 10.98063850402832, 14.39152050018311 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s09_2",
+         "rotation" : [ -33.0, 24.0, 0.0 ],
+         "translation" : [ -1.790493011474609, 11.41032409667969, 13.72747993469238 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s09_3",
+         "rotation" : [ -46.0, 26.0, 0.0 ],
+         "translation" : [ -1.790493011474609, 11.41032409667969, 13.72747993469238 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s10_1",
+         "rotation" : [ -10.0, 1.0, 4.0 ],
+         "translation" : [ 0.56628417968750, 14.05966186523438, 16.64886474609375 ]
+      },
+      {
+         "attach_to_id" : "",
+         "locator_name" : "s10_2",
+         "rotation" : [ -17.0, -17.0, -10.0 ],
+         "translation" : [ 3.0, 14.0, 15.06433105468750 ]
+      }
+   ],
+   "max_distance" : -1.0,
+   "proximity_range" : 200.0,
+   "requires_watcher" : false,
+   "sharing_policy" : "proximity",
+   "skip_condition_variable" : "",
+   "skip_to_cinematic" : "default_skip_cinematic",
+   "skippable" : true,
+   "stage" : "",
+   "version" : 9,
+   "wants_skip_queue" : true
+}

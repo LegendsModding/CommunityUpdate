@@ -1,0 +1,450 @@
+{
+  "minecraft:client_entity": {
+    "components": {
+      "badger:animation_variation": {
+        "data":  [
+          {
+            "intervals": [4],
+            "molang_index_name": "structure_placed"
+          }
+        ]
+      },
+      "badger:face_animation": {
+        "anim_columns": 9,
+        "anim_rows": 3,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:keep_alive_timer": {
+        "time": 4.5
+      },
+      "badger:presentation_event": {
+        "allay_attach": {
+          "attachment": {
+            "item": "badger:allay_celebration",
+            "location": "right_foot"
+          }
+        },
+        "allay_lute_interact_attach": {
+          "attachment": {
+            "item": "badger:allay_celebration",
+            "location": "left_foot"
+          }
+        },
+        "celebration_stop": {
+          "audio": "BAE_hero_allay_celebration_stop"
+        },
+        "cine_charge_windup": {
+          "animation": {
+            "animation": "charge_windup"
+          }
+        },
+        "cine_creeper_ally": {
+          "animation": {
+            "animation": "cine_creeper_ally"
+          }
+        },
+        "cine_idle_a": {
+          "animation": {
+            "animation": "idle_a"
+          }
+        },
+        "cine_rearback": {
+          "animation": {
+            "animation": "cine_rearback"
+          }
+        },
+        "cine_walk_a": {
+          "animation": {
+            "animation": "walk_a"
+          }
+        },
+        "flag_attach_placeable_direct": {
+          "attachment": {
+            "item": "badger:item_banner",
+            "location": "right_hand"
+          },
+          "script": "on_placeable_direct"
+        },
+        "flag_attach_placeable_lure": {
+          "attachment": {
+            "item": "badger:item_banner",
+            "location": "right_hand"
+          },
+          "script": "on_placeable_lure"
+        },
+        "flag_attach_trigger_direct": {
+          "attachment": {
+            "item": "badger:item_banner",
+            "location": "right_hand"
+          },
+          "script": "direct_trigger"
+        },
+        "flag_attach_trigger_lure": {
+          "attachment": {
+            "item": "badger:item_banner",
+            "location": "right_hand"
+          },
+          "script": "lure_trigger"
+        },
+        "flag_attach_trigger_stop_lure": {
+          "attachment": {
+            "item": "badger:item_banner",
+            "location": "right_hand"
+          },
+          "script": "stop_lure_trigger"
+        },
+        "lute_attach": {
+          "attachment": {
+            "item": "badger:item_lute",
+            "location": "center"
+          },
+          "audio": "BAE_hero_lute_equip"
+        },
+        "on_build_preview_exit": {
+          "audio": "BAE_hero_lute_unequip"
+        },
+        "on_direct": {
+          "script": "direct_trigger"
+        },
+        "on_lure": {
+          "script": "lure_trigger",
+          "spawn_entity": ["badger:mob_lure_instant_visual"]
+        },
+        "on_stop_lure": {
+          "script": "stop_lure_trigger"
+        },
+        "remove_center_attachment": {
+          "attachment": {
+            "location": "center"
+          }
+        },
+        "remove_leftfoot_attachment": {
+          "attachment": {
+            "location": "left_foot"
+          }
+        },
+        "remove_rightfoot_attachment": {
+          "attachment": {
+            "location": "right_foot"
+          }
+        },
+        "remove_righthand_attachment": {
+          "attachment": {
+            "location": "right_hand"
+          }
+        },
+        "sfx_patpat_stop": {
+          "audio": "BAE_hero_patpat_heart_stop"
+        },
+        "slowed_piglin_bramble_start": {
+          "audio": "BAE_hero_status_rooted_bramble_start"
+        },
+        "slowed_piglin_bramble_stop": {
+          "audio": "BAE_hero_status_rooted_bramble_stop"
+        },
+        "slowed_thorns_start": {
+          "audio": "BAE_hero_status_rooted_thorns_start"
+        },
+        "slowed_thorns_stop": {
+          "audio": "BAE_hero_status_rooted_thorns_stop"
+        },
+        "sword_attach": {
+          "attachment": {
+            "item": "badger:item_sword_hero",
+            "location": "right_hand"
+          }
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:hero_ranger_bg_01",
+        "limit": 64
+      },
+      "badger:rig_operations": ["rigops_actions.hero","rigops.hero.headdress","rigops_actions_deflect.hero"],
+      "badger:template": ["badger:template_status_effects_hero"],
+      "badger:variable_propagation": {
+        "badger:mount_06": ["isattacking","in_knockback","is_dead","isjumping","isonground","is_swimming","direct_state","structure_placed","lure_state","is_mount_swap"],
+        "badger:mount_beetle": ["isattacking","in_knockback","is_dead","isjumping","isonground","is_swimming","direct_state","structure_placed","lure_state","is_mount_swap","isgliding"],
+        "badger:mount_bird": ["isattacking","in_knockback","is_dead","isjumping","isonground","is_swimming","direct_state","structure_placed","lure_state","is_mount_swap","isgliding"],
+        "badger:mount_camel": ["isattacking","isjumping","isonground","is_swimming","direct_state","structure_placed","lure_state","in_knockback","is_dead","is_mount_swap"],
+        "badger:mount_horse": ["isattacking","isjumping","isonground","is_swimming","direct_state","structure_placed","lure_state","in_knockback","is_dead","is_mount_swap"],
+        "badger:mount_tiger": ["isattacking","in_knockback","is_dead","isjumping","isonground","is_swimming","direct_state","structure_placed","lure_state","is_mount_swap"]
+      },
+      "badger:verlet_dynamics": ["dynamic.hero.hero_cape","dynamic.hero.hero_headdress","dynamic.hero.hero_braids","dynamic.hero.hero_ponytail"]
+    },
+    "description": {
+      "animations": {
+        "action_patpat": "animation.hero_combat.action_patpat",
+        "action_placeable_direct": "animation.hero_combat.action_placeable_direct",
+        "action_placeable_lure": "animation.hero_combat.action_placeable_lure",
+        "action_play_lute_long": "animation.hero_combat.action_play_lute_long",
+        "action_play_lute_short": "animation.hero_combat.action_play_lute_short",
+        "action_stop_lure": "animation.hero_combat.action_stop_lure",
+        "action_trigger_direct": "animation.hero_combat.action_trigger_direct",
+        "action_trigger_lure": "animation.hero_combat.action_trigger_lure",
+        "actions": "controller.animation.hero.actions",
+        "beelte_swim_idle_a": "animation.hero_beetle_anim.beelte_swim_idle_a",
+        "beetle_autostep_up": "animation.hero_beetle_anim.beetle_autostep_up",
+        "beetle_burst": "animation.hero_beetle_anim.beetle_burst",
+        "beetle_burst_windup": "animation.hero_beetle_anim.beetle_burst_windup",
+        "beetle_climb": "animation.hero_beetle_anim.beetle_climb",
+        "beetle_descend": "animation.hero_beetle_anim.beetle_descend",
+        "beetle_descend_land": "animation.hero_beetle_anim.beetle_descend_land",
+        "beetle_idle_a": "animation.hero_beetle_anim.beetle_idle_a",
+        "beetle_jump_down": "animation.hero_beetle_anim.beetle_jump_down",
+        "beetle_jump_end": "animation.hero_beetle_anim.beetle_jump_end",
+        "beetle_jump_enter": "animation.hero_beetle_anim.beetle_jump_enter",
+        "beetle_jump_up": "animation.hero_beetle_anim.beetle_jump_up",
+        "beetle_locomotion": "controller.animation.hero.beetle_locomotion",
+        "beetle_run_a": "animation.hero_beetle_anim.beetle_run_a",
+        "beetle_run_b": "animation.hero_beetle_anim.beetle_run_b",
+        "beetle_run_c": "animation.hero_beetle_anim.beetle_run_c",
+        "beetle_stop_a": "animation.hero_beetle_anim.beetle_stop_a",
+        "beetle_swim_a": "animation.hero_beetle_anim.beetle_swim_a",
+        "bird_glide_a": "animation.hero_bird_anim.bird_glide_a",
+        "bird_gust_attack": "animation.hero_bird_anim.bird_gust_attack",
+        "bird_idle_a": "animation.hero_bird_anim.bird_idle_a",
+        "bird_jog_a": "animation.hero_bird_anim.bird_jog_a",
+        "bird_jog_stop_a": "animation.hero_bird_anim.bird_jog_stop_a",
+        "bird_jump_ascending": "animation.hero_bird_anim.bird_jump_ascending",
+        "bird_jump_descending": "animation.hero_bird_anim.bird_jump_descending",
+        "bird_jump_idle_end": "animation.hero_bird_anim.bird_jump_idle_end",
+        "bird_jump_start": "animation.hero_bird_anim.bird_jump_start",
+        "bird_locomotion": "controller.animation.hero.bird_locomotion",
+        "bird_run_a": "animation.hero_bird_anim.bird_run_a",
+        "bird_run_tilt": "animation.hero_bird_anim.bird_run_tilt",
+        "bird_stop_a": "animation.hero_bird_anim.bird_stop_a",
+        "bird_swim_a": "animation.hero_bird_anim.swim_a",
+        "bird_tilt_up": "animation.hero_bird_anim.bird_tilt_up",
+        "bird_walk_a": "animation.hero_bird_anim.bird_walk_a",
+        "celebration": "controller.animation.hero.celebration",
+        "champion_frontend": "controller.animation.hero.champion_frontend",
+        "champion_frontend_alt": "controller.animation.hero.champion_frontend_alt",
+        "charge_attack": "animation.hero.charge_attack",
+        "charge_windup": "animation.hero.charge_windup",
+        "cheer_s02": "animation.hero_nis_s02_s04.cheer_s02",
+        "cheer_s03": "animation.hero_nis_s02_s04.cheer_s03",
+        "cheer_s04": "animation.hero_nis_s02_s04.cheer_s04",
+        "cine_additive_cheer_a": "animation.hero_cine_anim.cine_additive_cheer_a",
+        "cine_additive_defiant_a": "animation.hero_cine_anim.cine_additive_defiant_a",
+        "cine_additive_half_look_up": "animation.hero_cine_anim.cine_additive_half_look_up",
+        "cine_additive_inquisitive_a": "animation.hero_cine_anim.cine_additive_inquisitive_a",
+        "cine_additive_look_up": "animation.hero_cine_anim.cine_additive_look_up",
+        "cine_additive_take_a": "animation.hero_cine_anim.cine_additive_take_a",
+        "cine_creeper_ally": "animation.hero_cine_anim.cine_creeper_ally",
+        "cine_idle_a_additive": "animation.hero_cine_anim.cine_idle_a_additive",
+        "cine_idle_beetle_vanilla": "animation.hero_beetle_anim.cine_idle_beetle_vanilla",
+        "cine_idle_bird_vanilla": "animation.hero_bird_anim.cine_idle_bird_vanilla",
+        "cine_idle_mounted_vanilla": "animation.hero_cine_anim.cine_idle_mounted_vanilla",
+        "cine_idle_tiger_vanilla": "animation.hero_tiger_anim.cine_idle_tiger_vanilla",
+        "cine_pvp_intro_hero_a": "animation.cine_pvp_hero_intro_a.cine_pvp_intro_hero_a",
+        "cine_pvp_intro_hero_b": "animation.cine_pvp_hero_intro_b.cine_pvp_intro_hero_b",
+        "cine_pvp_intro_hero_c": "animation.cine_pvp_hero_intro_c.cine_pvp_intro_hero_c",
+        "cine_pvp_intro_hero_d": "animation.cine_pvp_hero_intro_d.cine_pvp_intro_hero_d",
+        "cine_rearback": "animation.hero_cine_anim.cine_rearback",
+        "cine_victory_hero": "animation.hero_cine_anim.cine_victory_hero",
+        "combat_deflect_additive": "animation.hero_combat.combat_deflect_additive",
+        "combat_deflected_a": "animation.hero_combat.combat_deflected_a",
+        "combat_deflected_end": "animation.hero_combat.combat_deflected_end",
+        "combat_sword_antic_a": "animation.hero_combat.combat_sword_antic_a",
+        "combat_sword_antic_b": "animation.hero_combat.combat_sword_antic_b",
+        "combat_sword_antic_end_a": "animation.hero_combat.combat_sword_antic_end_a",
+        "combat_sword_antic_end_b": "animation.hero_combat.combat_sword_antic_end_b",
+        "combat_sword_antic_swing_a": "animation.hero_combat.combat_sword_antic_swing_a",
+        "combat_sword_antic_swing_b": "animation.hero_combat.combat_sword_antic_swing_b",
+        "death_a": "animation.hero.death_a",
+        "default": "controller.animation.hero.default",
+        "fe_champion_idle": "animation.hero_fe.fe_champion_idle",
+        "fe_champion_new_skin_a": "animation.hero_fe.fe_champion_new_skin_a",
+        "fe_champion_select": "animation.hero_fe.fe_champion_select",
+        "fe_guardian_idle": "animation.hero_fe.fe_guardian_idle",
+        "fe_guardian_new_skin_a": "animation.hero_fe.fe_guardian_new_skin_a",
+        "fe_guardian_select": "animation.hero_fe.fe_guardian_select",
+        "fe_magus_idle": "animation.hero_fe.fe_magus_idle",
+        "fe_magus_new_skin_a": "animation.hero_fe.fe_magus_new_skin_a",
+        "fe_magus_select": "animation.hero_fe.fe_magus_select",
+        "fe_rabbit_idle": "animation.hero_fe.fe_rabbit_idle",
+        "fe_rabbit_select": "animation.hero_fe.fe_rabbit_select",
+        "fe_ranger_idle": "animation.hero_fe.fe_ranger_idle",
+        "fe_ranger_new_skin_a": "animation.hero_fe.fe_ranger_new_skin_a",
+        "fe_ranger_select": "animation.hero_fe.fe_ranger_select",
+        "fe_warrior_idle": "animation.hero_fe.fe_warrior_idle",
+        "fe_warrior_new_skin_a": "animation.hero_fe.fe_warrior_new_skin_a",
+        "frog_cheer_a": "animation.hero_frog_anim.frog_cheer_a",
+        "frog_climb_a": "animation.hero_frog_anim.frog_climb_a",
+        "frog_death_a": "animation.hero_frog_anim.frog_death_a",
+        "frog_doublejump_up": "animation.hero_frog_anim.frog_doublejump_up",
+        "frog_idle_a": "animation.hero_frog_anim.frog_idle_a",
+        "frog_jump_down": "animation.hero_frog_anim.frog_jump_down",
+        "frog_jump_end": "animation.hero_frog_anim.frog_jump_end",
+        "frog_jump_enter": "animation.hero_frog_anim.frog_jump_enter",
+        "frog_jump_up": "animation.hero_frog_anim.frog_jump_up",
+        "frog_locomotion": "controller.animation.hero.frog_locomotion",
+        "frog_run_a": "animation.hero_frog_anim.frog_run_a",
+        "frog_run_ascending": "animation.hero_frog_anim.frog_run_ascending",
+        "frog_run_b": "animation.hero_frog_anim.frog_run_b",
+        "frog_run_c": "animation.hero_frog_anim.frog_run_c",
+        "frog_run_d": "animation.hero_frog_anim.frog_run_d",
+        "frog_spit_a": "animation.hero_frog_anim.frog_spit_a",
+        "frog_stop_a": "animation.hero_frog_anim.frog_stop_a",
+        "frog_stop_b": "animation.hero_frog_anim.frog_stop_b",
+        "frog_swim_a": "animation.hero_frog_anim.frog_swim_a",
+        "frog_swim_idle_a": "animation.hero_frog_anim.frog_swim_idle_a",
+        "guardian_frontend": "controller.animation.hero.guardian_frontend",
+        "guardian_frontend_alt": "controller.animation.hero.guardian_frontend_alt",
+        "hero_00_nis_mst06_c06b": "animation.hero_00_nis_victory.hero_00_nis_mst06_c06b",
+        "hero_01_nis_mst06_c06b": "animation.hero_01_nis_victory.hero_01_nis_mst06_c06b",
+        "hero_02_nis_mst06_c06b": "animation.hero_02_nis_victory.hero_02_nis_mst06_c06b",
+        "hero_nis_mst06_c06b": "animation.hero_nis_victory.hero_nis_mst06_c06b",
+        "hit_react": "controller.animation.hero.hit_react",
+        "hit_react_additive_legs_a": "animation.hero_combat.hit_react_additive_legs_a",
+        "hit_reaction_a": "animation.hero_combat.hit_reaction_a",
+        "hit_reaction_b": "animation.hero_combat.hit_reaction_b",
+        "hit_reaction_c": "animation.hero_combat.hit_reaction_c",
+        "horse_ascend_tilt": "animation.hero.horse_ascend_tilt",
+        "horse_descend_tilt": "animation.hero.horse_descend_tilt",
+        "horse_locomotion": "controller.animation.hero.horse_locomotion",
+        "idle_a": "animation.hero.idle_a",
+        "jog_a": "animation.hero.jog_a",
+        "jump_ascending_a": "animation.hero.jump_ascending_a",
+        "jump_descending_a": "animation.hero.jump_descending_a",
+        "jump_enter_a": "animation.hero.jump_enter_a",
+        "jump_land_a": "animation.hero.jump_land_a",
+        "knockback_body": "animation.hero_tiger_anim.knockback_body",
+        "knockback_fall_loop_a": "animation.hero_combat.knockback_fall_loop_a",
+        "knockback_headarms": "animation.hero_tiger_anim.knockback_headarms",
+        "knockback_legs_additive": "animation.hero_combat.knockback_legs_additive",
+        "lute_interaction_loop": "animation.hero_combat.lute_interaction_loop",
+        "lute_interaction_put_away": "animation.hero_combat.lute_interaction_put_away",
+        "lute_interaction_take_out": "animation.hero_combat.lute_interaction_take_out",
+        "magus_frontend": "controller.animation.hero.magus_frontend",
+        "magus_frontend_alt": "controller.animation.hero.magus_frontend_alt",
+        "mount_beetle": "controller.animation.hero.mount_beetle",
+        "mount_bird": "controller.animation.hero.mount_bird",
+        "mount_frog": "controller.animation.hero.mount_frog",
+        "mount_swap_horse": "animation.hero.mount_swap_horse",
+        "mount_tiger": "controller.animation.hero.mount_tiger",
+        "mount_tilt": "controller.animation.hero.mount_tilt",
+        "mounted": "controller.animation.hero.mounted",
+        "mounted_idle_a": "animation.hero.mounted_idle_a",
+        "mounted_run_a": "animation.hero.mounted_run_a",
+        "mounted_trot_a": "animation.hero.mounted_trot_a",
+        "mounted_walk_a": "animation.hero.mounted_walk_a",
+        "mst03_c00_hero_a": "animation.mst03_c00_hero_a.mst03_c00_hero_a",
+        "mst03_c00_hero_b": "animation.mst03_c00_hero_b.mst03_c00_hero_b",
+        "mst03_c00_hero_c": "animation.mst03_c00_hero_c.mst03_c00_hero_c",
+        "mst03_c00_hero_d": "animation.mst03_c00_hero_d.mst03_c00_hero_d",
+        "mst03_c00_opening_hero": "animation.mst03_c00_opening_hero.mst03_c00_opening_hero",
+        "mst03_c00_opening_hero_lastshot": "animation.mst03_c00_opening_hero.mst03_c00_opening_hero_lastshot",
+        "nis_victory_11": "animation.hero_nis.nis_victory_11",
+        "nis_victory_3_1_a": "animation.hero_nis.nis_victory_3_1_a",
+        "nis_victory_9": "animation.hero_nis.nis_victory_9",
+        "rabbit_frontend": "controller.animation.hero.rabbit_frontend",
+        "ranger_frontend": "controller.animation.hero.ranger_frontend",
+        "ranger_frontend_alt": "controller.animation.hero.ranger_frontend_alt",
+        "reaction_cheer_a": "animation.hero_nis.reaction_cheer_a",
+        "run_a": "animation.hero.run_a",
+        "run_ascending": "animation.hero.run_ascending",
+        "start_a": "animation.hero.start_a",
+        "stop_a": "animation.hero.stop_a",
+        "stop_mounted_a": "animation.hero.stop_mounted_a",
+        "swim_a": "animation.hero.swim_a",
+        "swim_idle": "animation.hero_bird_anim.swim_idle",
+        "swim_idle_a": "animation.hero.swim_idle_a",
+        "take_out_lute": "animation.hero_combat.take_out_lute",
+        "tiger_climb_additive": "animation.hero_tiger_anim.tiger_climb_additive",
+        "tiger_climb_additive_down": "animation.hero_tiger_anim.tiger_climb_additive_down",
+        "tiger_climb_addtitive_b": "animation.hero_tiger_anim.tiger_climb_addtitive_b",
+        "tiger_death_a": "animation.hero_tiger_anim.tiger_death_a",
+        "tiger_idle_b": "animation.hero_tiger_anim.tiger_idle_b",
+        "tiger_jump_down": "animation.hero_tiger_anim.tiger_jump_down",
+        "tiger_jump_end": "animation.hero_tiger_anim.tiger_jump_end",
+        "tiger_jump_enter": "animation.hero_tiger_anim.tiger_jump_enter",
+        "tiger_jump_loop": "animation.hero_tiger_anim.tiger_jump_loop",
+        "tiger_jump_up": "animation.hero_tiger_anim.tiger_jump_up",
+        "tiger_locomotion": "controller.animation.hero.tiger_locomotion",
+        "tiger_roar": "animation.hero_tiger_anim.tiger_roar",
+        "tiger_run_a": "animation.hero_tiger_anim.tiger_run_a",
+        "tiger_run_b": "animation.hero_tiger_anim.tiger_run_b",
+        "tiger_run_c": "animation.hero_tiger_anim.tiger_run_c",
+        "tiger_start": "animation.hero_tiger_anim.tiger_start",
+        "tiger_stop": "animation.hero_tiger_anim.tiger_stop",
+        "tiger_stop_b": "animation.hero_tiger_anim.tiger_stop_b",
+        "tiger_swim_a": "animation.hero_tiger_anim.tiger_swim_a",
+        "tiger_swimidle_a": "animation.hero_tiger_anim.tiger_swimidle_a",
+        "unmounted": "controller.animation.hero.unmounted",
+        "walk_a": "animation.hero.walk_a",
+        "warrior_frontend": "controller.animation.hero.warrior_frontend",
+        "warrior_frontend_alt": "controller.animation.hero.warrior_frontend_alt"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "direct_trigger": "variable.direct_state = 1;",
+        "lure_trigger": "variable.lure_state = 1;",
+        "stop_lure_trigger": "variable.stop_lure_state = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard","Worried","Incredulous","Smile Lookleft","Smile Lookright","Happy Eyes","Happy Smirk","Blush Eyesclosed","Angry Shout"],
+      "geometry": {
+        "default": "geometry.hero_ranger_bg_01"
+      },
+      "identifier": "badger:hero_ranger_bg_01",
+      "materials": {
+        "mat_hero_magus": "mat_hero_magus",
+        "mat_hero_magus_face": "mat_hero_magus_face",
+        "mat_hero_ranger": "mat_hero_ranger",
+        "mat_hero_ranger_bg_01": "mat_hero_ranger_bg_01",
+        "mat_hero_ranger_bg_01_face": "mat_hero_ranger_bg_01_face",
+        "mat_hero_ranger_face": "mat_hero_ranger_face"
+      },
+      "particle_effects": {
+        "fx_lute_notes": "badger:fx_hero_lute_notes",
+        "fx_mount_swap": "badger:fx_hero_mount_swap",
+        "fx_patpat_hero_hearts": "badger:fx_hero_patpat_hearts",
+        "fx_swipe": "badger:fx_hero_sword_swipe_01",
+        "fx_swipe02": "badger:fx_hero_sword_swipe_02",
+        "fx_sword_sparks": "badger:fx_hero_sword_sparks"
+      },
+      "render_controllers": ["controller.render.hero_ranger_bg_01"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          },
+          {
+            "celebration": "1"
+          },
+          {
+            "actions": "1"
+          },
+          {
+            "mount_tilt": "1"
+          }
+        ],
+        "initialize": ["variable.attack_used = 0;","variable.is_swimming = 0;","variable.direct_state = 0;","variable.knockback = 0;","variable.hero_ponytail = 1;","variable.hero_headdress = 1;"]
+      },
+      "sound_effects": {
+        "death_music_stinger": "BAE_mus_stinger_hero_death",
+        "direct": "BAE_hero_direct",
+        "direct_placed": "BAE_hero_direct_placed",
+        "lure": "BAE_hero_lure",
+        "lure_placed": "BAE_hero_lure_placed",
+        "patpat_sfx": "BAE_hero_patpat_heart",
+        "step": "BAE_hero_step_stone",
+        "sword_attack": "BAE_hero_sword_attack",
+        "sword_attack_deflect": "BAE_hero_sword_attack_deflect",
+        "sword_attack_miss": "BAE_hero_sword_attack_miss"
+      },
+      "trail_effects": {
+        "fx_sword_h_a": "badger:trail_hero_sword_swing_h_a"
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

@@ -1,0 +1,50 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_grunter_nis": {
+      "arrays": {
+        "geometries": {
+          "Array.geo": ["Geometry.attack","Geometry.defend","Geometry.obstacle","Geometry.frost"]
+        }
+      },
+      "geometry": "Array.geo[variable.model_chooser]",
+      "materials":  [
+        {
+          "mat_piglin_grunter_attack": "MetaMaterial.mat_piglin_grunter_attack"
+        },
+        {
+          "mat_piglin_grunter_obstacle": "MetaMaterial.mat_piglin_grunter_obstacle"
+        },
+        {
+          "mat_piglin_grunter_obstacle_face": "MetaMaterial.mat_piglin_grunter_obstacle_face"
+        },
+        {
+          "mat_piglin_grunter_frost": "MetaMaterial.mat_piglin_grunter_frost"
+        },
+        {
+          "mat_piglin_grunter_frost_face": "MetaMaterial.mat_piglin_grunter_frost_face"
+        },
+        {
+          "mat_piglin_grunter_attack_face": "MetaMaterial.mat_piglin_grunter_attack_face"
+        },
+        {
+          "mat_piglin_grunter_defend": "MetaMaterial.mat_piglin_grunter_defend"
+        },
+        {
+          "mat_piglin_grunter_defend_face": "MetaMaterial.mat_piglin_grunter_defend_face"
+        },
+        {
+          "mat_fx_frozen_128": "MetaMaterial.mat_fx_frozen_128"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "rod_geo": "variable.rod_geo_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,410 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_drill.default": {
+      "initial_state": "init",
+      "states": {
+        "attack_melee": {
+          "animations":  [
+            {
+              "attack_melee": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "variable.interrupted"
+            }
+          ]
+        },
+        "celebrate": {
+          "animations":  [
+            {
+              "cheer_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "!variable.celebration"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "flame_stop",
+              "enabled": true
+            },
+            {
+              "effect": "flame_spawner_stop",
+              "enabled": true
+            },
+            {
+              "effect": "dx_death",
+              "enabled": true
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": "!variable.is_swimming"
+            },
+            {
+              "swim_idle": "variable.is_swimming"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;","@s sfx_idle_interrupt"],
+          "sound_effects":  [
+            {
+              "effect": "flame_spawner_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "attack_melee": "(variable.attack_melee || variable.potion_attack_melee)"
+            },
+            {
+              "spawner_ability": "variable.spawn_golem_ranged"
+            },
+            {
+              "spawner_ability": "variable.spawn_golem_cavalry"
+            },
+            {
+              "spawner_ability": "variable.spawn_golem"
+            },
+            {
+              "celebrate": "variable.celebration"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "move": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "stop": "((query.speed <= 0) && (variable.is_swimming == 0))"
+            },
+            {
+              "idle": "((query.speed <= 0) && variable.is_swimming)"
+            },
+            {
+              "celebrate": "variable.celebration"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn_golem": {
+          "animations":  [
+            {
+              "spawner_ability_loop_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.attack_used = 0;","variable.ability_active = variable.interrupted;","@Ssfx_winddown_body_interrupt;"],
+          "transitions":  [
+            {
+              "spawner_winddown": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "variable.interrupted"
+            }
+          ]
+        },
+        "spawner_ability": {
+          "animations":  [
+            {
+              "spawner_ability_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.ability_active = variable.interrupted;","@Ssfx_windup_body_interrupt;"],
+          "sound_effects":  [
+            {
+              "effect": "flame_stop",
+              "enabled": true
+            },
+            {
+              "effect": "flame_spawner",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "spawn_golem": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "variable.interrupted"
+            }
+          ]
+        },
+        "spawner_winddown": {
+          "animations":  [
+            {
+              "spawner_ability_winddown_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.ability_active = variable.interrupted;","@s sfx_windup_body_interrupt"],
+          "sound_effects":  [
+            {
+              "effect": "flame",
+              "enabled": true
+            },
+            {
+              "effect": "flame_spawner_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(query.any_animation_finished || variable.interrupted)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "attack_melee": "(variable.attack_melee || variable.potion_attack_melee)"
+            },
+            {
+              "spawner_ability": "(variable.spawn_golem_ranged || variable.spawn_golem_cavalry)"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(variable.is_stunned == 0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_drill.fxcontroller": {
+      "initial_state": "initial",
+      "states": {
+        "initial": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "particle_effects":  [
+            {
+              "effect": "fx_face_fire",
+              "enabled": true,
+              "locator": "loc_fx_light"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_drill.hit_reaction": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "hit_react": "(query.in_knockback || variable.intense_hit)"
+            }
+          ]
+        },
+        "hit_react": {
+          "animations":  [
+            {
+              "hitreact_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(!query.in_knockback && query.any_animation_finished)"
+            },
+            {
+              "in_knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "in_knockback": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "landing": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_drill.locomotion": {
+      "initial_state": "walk",
+      "states": {
+        "sprint": {
+          "animations":  [
+            {
+              "sprint_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 6))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 6))"
+            },
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 6))"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 6))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

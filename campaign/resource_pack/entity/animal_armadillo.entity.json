@@ -1,0 +1,70 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2,
+        "position_interpolation_steps": 2
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_armadillo"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_rabbit_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_rabbit_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_rabbit_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_armadillo",
+        "limit": 256
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.animal_armadillo.default",
+        "hit_reaction": "controller.animation.animal_armadillo.hit_reaction",
+        "idle_a": "animation.animal_armadillo.idle_a",
+        "climb_a": "animation.animal_armadillo.climb_a",
+        "swim_idle_a": "animation.animal_armadillo.swim_idle_a",
+        "death_a": "animation.animal_armadillo.death_a",
+        "sprint_a": "animation.animal_armadillo.sprint_a",
+        "hit_react_a": "animation.animal_armadillo.hit_react_a",
+        "idles": "controller.animation.animal_armadillo.idles",
+        "locomotion": "controller.animation.animal_armadillo.locomotion",
+        "walk_a": "animation.animal_armadillo.walk_a"
+      },
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.animal_armadillo"
+      },
+      "identifier": "badger:animal_armadillo",
+      "materials": {
+        "mat_animal_armadillo": "mat_animal_armadillo"
+      },
+      "render_controllers": ["controller.render.animal_armadillo"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

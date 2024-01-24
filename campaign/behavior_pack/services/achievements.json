@@ -1,0 +1,1368 @@
+{
+    "badger:game_achievements_service": {
+        // these events aren't tied to a specfic player when they occur, so they count against all the players INDIVIDUALLY. (eg. player must be actively connected)
+        "global_events": ["CampaignProgressUpdate", "WellOfFateStateChange", "MobAllianceLiberated", "BossKilled", "KillPiglinUnit", "KillPiglinStructure", "KeyActionCompleted", "PoiTowerGroupPlacement", "BaseDestroyedUnderTime", "PlayerConnected"],
+        "game_achievements": [
+            {
+                "id": 1,
+                "debug_name": "Complete Act 1",
+                "conditions": [
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "1B"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "debug_name": "Became the Hunted",
+                "conditions": [
+                    {
+                        "event": "BossKilled",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "bossNameString",
+                                "value": "AttackBoss"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "debug_name": "Broken",
+                "conditions": [
+                    {
+                        "event": "BossKilled",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "bossNameString",
+                                "value": "DefendBoss"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "debug_name": "More Than It Could Chew",
+                "conditions": [
+                    {
+                        "event": "BossKilled",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "bossNameString",
+                                "value": "ObstacleBoss"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "debug_name": "Complete Act 3",
+                "conditions": [
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "3"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 6,
+                "debug_name": "Ride All Mounts",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "MountChanged",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "MountNew",
+                                "value": "badger:mount_bird"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "MountChanged",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "MountNew",
+                                "value": "badger:mount_beetle"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "MountChanged",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "MountNew",
+                                "value": "badger:mount_tiger"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "debug_name": "Build all WoF items",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_allay_cap_gather_build"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_carpenter_regen"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_lure_cap"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_mason_rate"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_spawner_cap"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_starting_cap"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_clear_nether"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_gather_coal"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_gather_rare"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_redstone"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_gather_uncommon"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_linked_village_chests"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_poi_tower"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:unlock_poi_golem"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "WellOfFateStateChange",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "UpgradeType",
+                                "value": "badger:increase_spawner_cap_medium"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "debug_name": "Play a game of Co-op",
+                "conditions": [
+                    {
+                        "event": "PlayerConnected",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "GameMode",
+                                "value": "Campaign"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "NumActivePlayers",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "debug_name": "I Can See My Village From Here",
+                "track_progress": true,
+                "track_progress_as_percent": true,
+                "conditions": [
+                    {
+                        "event": "BounceMushroomDuration",
+                        "progress": 1200,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "debug_name": "Is that all you got...",
+                "conditions": [
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "1A"
+                            },
+                            {
+                                "type": "number_equals",
+                                "property": "GameModeDifficulty",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "1B"
+                            },
+                            {
+                                "type": "number_equals",
+                                "property": "GameModeDifficulty",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "2"
+                            },
+                            {
+                                "type": "number_equals",
+                                "property": "GameModeDifficulty",
+                                "value": 4
+                            }
+                        ]
+                    },
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "3"
+                            },
+                            {
+                                "type": "number_equals",
+                                "property": "GameModeDifficulty",
+                                "value": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 11,
+                "debug_name": "Bulldozer",
+                "conditions": [
+                  {
+                    "event": "BaseDestroyedUnderTime",
+                    "progress": 1,
+                    "properties": [
+                      {
+                        //BBI-TODO: (JRougeau) update this to check base lifetime timer when tech is in
+                        "type": "number_less_than",
+                        "property": "Duration",
+                        "value": 420
+                      }
+                    ]
+                  }
+                ]
+            },
+            {
+                "id": 12,
+                "debug_name": "Wheeeeeeeeeee!",
+                "conditions": [
+                    {
+                        "event": "PlayerTimeGlided",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 30
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 13,
+                "debug_name": "Resource Reinforcements",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "PoiLootCollected",
+                        "progress": 5,
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Subcategory",
+                                "value": "poi_treasure_chest"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "debug_name": "First Blood",
+                "conditions": [
+                    {
+                        "event": "PlayerKilledPlayer",
+                        "progress": 1,
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "GameMode",
+                                "value": "PVP_Public"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "debug_name": "Soothe the Scars",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "ResourceOrderBlocksReplaced",
+                        "progress": 20000,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "badger:terraform_gather_surface_denether"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "debug_name": "No Time for Swine",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "KillPiglinUnit",
+                        "progress": 1000,
+                        "progress_property": "PiglinUnitKillCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "PiglinUnitKillCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "debug_name": "Are these Made of Hay?",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "KillPiglinStructure",
+                        "progress": 250,
+                        "progress_property": "PiglinStructureKillCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "PiglinStructureKillCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+               "id": 18,
+               "debug_name": "Nailbiter",
+               "conditions": [
+                    {
+                        "event": "ReportCloseMatchEndPvp",
+                        "properties": [
+                            {
+                                "type": "bool_equals",
+                                "property": "IsWinner",
+                                "value": true
+                            }
+                        ]
+                    }
+               ]
+            },
+            {
+                "id": 19,
+                "debug_name": "Ridin' the Grain Train",
+                "track_progress": true,
+                "track_progress_as_percent": true,
+                "conditions": [
+                    {
+                        "event": "SpeedWheatDuration",
+                        "progress": 120,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "debug_name": "Exciteable New Friends",
+                "conditions": [
+                    {
+                        "event": "MobAllianceLiberated",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "mobAllianceString",
+                                "value": "creeper"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 21,
+                "debug_name": "Unnatural Aim",
+                "conditions": [
+                    {
+                        "event": "MobAllianceLiberated",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "mobAllianceString",
+                                "value": "skeleton"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 22,
+                "debug_name": "They REALLY like that flower",
+                "conditions": [
+                    {
+                        "event": "MobAllianceLiberated",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "mobAllianceString",
+                                "value": "zombie"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 23,
+                "debug_name": "Impressive Gifts 2",
+                "conditions": [
+                    {
+                        "event": "Funnel",
+                        "properties": [
+                            {
+                                "type": "number_equals", //number_equals
+                                "property": "StepNumCurrent",
+                                "value": 16
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 24,
+                "debug_name": "Bringing Out The Big Blocks",
+                "conditions": [
+                    {
+                        "event": "PoiTowerGroupPlacement",
+                        "progress": 1,
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "id": 25,
+                "debug_name": "Collect All the Firsts",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "KeyActionCompleted",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Action",
+                                "value": "poi_ally_01"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "KeyActionCompleted",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Action",
+                                "value": "poi_ally_02"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "KeyActionCompleted",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Action",
+                                "value": "poi_ally_04"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "KeyActionCompleted",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Action",
+                                "value": "poi_ally_05"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "KeyActionCompleted",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Action",
+                                "value": "poi_ally_06"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 26,
+                "debug_name": "Bounty of the Overworld", //may revisit to be more comprehensive, would require use of LISTENFOR_ResourceChanged
+                "conditions": [
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 1000,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "wood"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 1000,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "stone"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 125,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "diamond"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 125,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "iron"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 125,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "coal"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    },
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 125,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "redstone"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 27,
+                "debug_name": "Feed the Flames",
+                "conditions": [
+                    {
+                        "event": "LapisCollectedPvp",
+                        "progress": 2400, //ballpark estimate provided by Kyle, may have to adjust
+                        "progress_property": "LapisCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "LapisCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 28,
+                "debug_name": "Banner Expert",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "BannerOrderGiven",
+                        "progress": 25,
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Type",
+                                "value": "direct" 
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsAdvanced",
+                                "value": true
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "Total",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 29,
+                "debug_name": "One Boom at a Time",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "BannerOrderGiven",
+                        "progress": 10,
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Type",
+                                "value": "direct"
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsAdvanced",
+                                "value": true
+                            },
+                            {
+                                "type": "number_equals",
+                                "property": "MaxFollowerCount",
+                                "value": 1
+                            },
+                            { 
+                                "type": "number_equals",
+                                "property": "badger:mob_creeper",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 30,
+                "debug_name": "Full Force",
+                "conditions": [
+                    {
+                        "event": "BannerOrderGiven",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Type",
+                                "value": "direct"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "Total",
+                                "value": 79
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 31,
+                "debug_name": "Petting Zoo",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "badger"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "black_cat"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "chicken"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "fox"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "llama"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "marmot"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "ocelot"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "pig"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "rabbit"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "sea_turtle"
+                            }
+                        ]
+                    },
+                    {
+                        "event": "AnimalPatPat",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "animalNameString",
+                                "value": "wolf"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 32,
+                "debug_name": "Witchy Business",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "WitchesSpawned",
+                        "progress": 50,
+                        "progress_property": "WitchesSpawnedCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "WitchesSpawnedCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 33,
+                "debug_name": "Cauldron Connoisseur",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "CauldronBuilt",
+                        "progress": 10,
+                        "progress_property": "CauldronBuiltCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "CauldronBuiltCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 34,
+                "debug_name": "Not a Fan",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "FanDestroy",
+                        "progress": 10,
+                        "progress_property": "FanDestroyCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "FanDestroyCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 35,
+                "debug_name": "Quiet the Clanging",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "DisruptorKill",
+                        "progress": 10,
+                        "progress_property": "DisruptorKillCount",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "DisruptorKillCount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 36,
+                "debug_name": "Amphibian",
+                "track_progress": true,
+                "track_progress_as_percent": false,
+                "conditions": [
+                    {
+                        "event": "FrogSwim",
+                        "progress": 600,
+                        "progress_property": "FrogSwimTime",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "FrogSwimTime",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 37,
+                "debug_name": "The Best Defense is... No Defense.",
+                "conditions": [
+                     {
+                         "event": "NoWallGame",
+                         "properties": [
+                             {
+                                "type": "bool_equals",
+                                "property": "IsWinner",
+                                "value": true
+                            }
+                         ]
+                     },
+                     {
+                        "event": "PlayerConnected",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "NumActivePlayers",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 38,
+                "debug_name": "Head Start",
+                "conditions": [
+                     {
+                         "event": "HighResourceGame",
+                         "properties": [
+                             {
+                                "type": "bool_equals",
+                                "property": "IsWinner",
+                                "value": true
+                            }
+                         ]
+                     },
+                     {
+                        "event": "PlayerConnected",
+                        "properties": [
+                            {
+                                "type": "number_greater_than",
+                                "property": "NumActivePlayers",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 39,
+                "debug_name": "When Pig(lins) Fly",
+                "conditions": [
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "2"
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsHighKnockbackGame",
+                                "value": true
+                            }
+                        ]
+                    },
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "3"
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsHighKnockbackGame",
+                                "value": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 40,
+                "debug_name": "Elytra Envy",
+                "conditions": [
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "2"
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsLowGravGame",
+                                "value": true
+                            }
+                        ]
+                    },
+                    {
+                        "event": "CampaignProgressUpdate",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "JustCompletedAct",
+                                "value": "3"
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsLowGravGame",
+                                "value": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            // example achievements
+            {
+                "id": 90001,
+                "debug_name": "Direct creepers 10 times",
+                "conditions": [
+                    {
+                        "event": "BannerOrderGiven",
+                        "progress": 10,
+                        "progress_property": "badger:mob_creeper",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Type",
+                                "value": "direct"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "badger:mob_creeper",
+                                "value": 15
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 90002,
+                "debug_name": "Lure an army of 10 creepers",
+                "conditions": [
+                    {
+                        "event": "BannerOrderGiven",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Type",
+                                "value": "lure"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "badger:mob_creeper",
+                                "value": 9
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 90003,
+                "debug_name": "Direct a zombie specifically",
+                "conditions": [
+                    {
+                        "event": "BannerOrderGiven",
+                        "progress": 1,
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Type",
+                                "value": "direct"
+                            },
+                            {
+                                "type": "bool_equals",
+                                "property": "IsMobSpecific",
+                                "value": true
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "badger:mob_zombie",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 90004,
+                "debug_name": "Zombie Horde",
+                "conditions": [
+                    {
+                        // needs telemetry GameEvent
+                        "event": "ZombiesOnTeam",
+                        "progress": 80,
+                        "progress_property": "stat",
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "id": 90005,
+                "debug_name": "Creeper Commander",
+                "conditions": [
+                    {
+                        //stubbed in TowerBuilt game event until proper one is made. This currently tracks arrow towers built
+                        "event": "TowerBuilt",
+                        "progress": 5,
+                        "properties": []
+                    }
+                ]
+            },
+            {
+                "id": 90006,
+                "debug_name": "Collecting Lots of Wood",
+                "conditions": [
+                    {
+                        "event": "ResourceGathered",
+                        "progress": 1487,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "wood"
+                            },
+                            {
+                                "type": "number_greater_than",
+                                "property": "TelemetryStatAmount",
+                                "value": 0
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": 90007,
+                "debug_name": "Terraforming Demo",
+                "conditions": [
+                    {
+                        "event": "ResourceOrderBlocksReplaced",
+                        "progress": 10000,
+                        "progress_property": "TelemetryStatAmount",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Name",
+                                "value": "badger:terraform_gather_surface_denether"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_piglin_frost_territory",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Territory",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_portal_frost"
+      },
+      "badger:cinematic_death": {
+        "cine_id": [
+          "hrd04_c06_obs_portaldestruction_v1"
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_piglin_frost_territory",
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "build_time": 0
+      },
+      "badger:buildable_foundation": {
+        "nbt_file": "zoner_piglin_frost_territory_foundation",
+        "offset": 6
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "portal_piglin_large",
+          "portal_piglin",
+          "piglinStructure",
+          "portalAudioTag",
+          "UnendingFactionPortal",
+          "cine_portal_large",
+          "piglin"
+        ]
+      },
+      "badger:template": "badger:template_portal_piglin"
+    }
+  }
+}

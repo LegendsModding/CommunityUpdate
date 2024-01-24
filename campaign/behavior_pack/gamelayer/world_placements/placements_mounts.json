@@ -1,0 +1,428 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_mount_1_poi_deck",
+      "map_data": "badger:poi_mount_01_faction",
+      "village_data": "badger:poi_mount_01_village",
+      "placement_name": "mount_1",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_01"
+      ],
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_01_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            27,
+            30
+          ]
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  30,
+                  50
+                ],
+                "distance_to_zero_score": 0,
+                "tag_parent": "drylands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "drylands_2"
+              }
+            ],
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 0,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_3_poi_deck",
+      "map_data": "badger:poi_mount_03_faction",
+      "village_data": "badger:poi_mount_03_village",
+      "placement_name": "mount_3",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_03"
+      ],
+      "biome": {
+        "biome": "jungle",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_03_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "jungle_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "jungle_2"
+              }
+            ],
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 0,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_4_poi_deck",
+      "map_data": "badger:poi_mount_04_faction",
+      "village_data": "badger:poi_mount_04_village",
+      "placement_name": "mount_4",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_04"
+      ],
+      "biome": {
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_04_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            31,
+            36
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  20
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_2"
+              }
+            ],
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 0,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_mount_6_poi_deck",
+      "map_data": "badger:poi_mount_06_faction",
+      "village_data": "badger:poi_mount_06_village",
+      "placement_name": "mount_6",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_06"
+      ],
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 20,
+        "starting_pixels": 5,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_06_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            23
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+          {
+            "distance": {
+              "one_of": [
+                {
+                  "chunk_distance_from_parent": [
+                    30,
+                    50
+                  ],
+                  "distance_to_zero_score": 0,
+                  "tag_parent": "wetlands_1_village"
+                },
+                {
+                  "chunk_distance_from_parent": [
+                    0,
+                    20
+                  ],
+                  "distance_to_zero_score": 30,
+                  "tag_parent": "wetlands_2"
+                }
+              ],
+              "weight": 2
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "village",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "poi",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 40,
+              "distance_to_zero_score": 0,
+              "tag_parent": "wellOfFate",
+              "weight": 1
+            }
+          }
+        ]
+    },
+    {
+      "unique_card_id": "badger_mount_7_poi_deck",
+      "map_data": "badger:poi_mount_camel_faction",
+      "village_data": "badger:poi_mount_07_village",
+      "placement_name": "mount_7",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_07"
+      ],
+      "biome": {
+        "biome": "desert",
+        "total_pixels": 3,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_camel_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            23
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+          {
+            "distance": {
+              "one_of": [
+                {
+                  "chunk_distance_from_parent": [
+                    30,
+                    50
+                  ],
+                  "distance_to_zero_score": 0,
+                  "tag_parent": "brokenlands_1"
+                },
+                {
+                  "chunk_distance_from_parent": [
+                    0,
+                    20
+                  ],
+                  "distance_to_zero_score": 30,
+                  "tag_parent": "brokenlands_2"
+                }
+              ],
+              "weight": 2
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "village",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "poi",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 10,
+              "distance_to_zero_score": 0,
+              "tag_parent": "wellOfFate",
+              "weight": 2
+            }
+          }
+        ]
+    }
+  ]
+}

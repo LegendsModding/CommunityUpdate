@@ -1,0 +1,21 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_invasion_recap_attack_success_spider_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:map3_tooltip_extended": {
+                "description": "tooltip.invasion.recap.attack_success",
+                "icon": "/map_screen/notif_mob_spider.gif",
+                "priority": 4
+            },
+            "badger:map3_tooltip_audio": {
+                "event_id": "BAE_TODO",
+                "event_type": "Music"
+            }
+        }
+    }
+}

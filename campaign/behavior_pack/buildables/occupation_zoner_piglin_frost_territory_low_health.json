@@ -1,0 +1,24 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:occupation_zoner_piglin_frost_territory_low_health",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Military",
+            "type": "Piglin"
+        },
+        "components": {
+            "badger:objective_health_bar": {
+              "max_visible_range": 295,
+              "priority": 1,
+              "type": "portal"
+            },
+            "badger:template": [
+                "badger:zoner_piglin_frost_territory_low_health"
+            ]
+        }
+    }
+}

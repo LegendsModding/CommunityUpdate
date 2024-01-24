@@ -1,0 +1,11 @@
+{
+  "format_version": "1.15.0", 
+  "badger:decoration": {
+    "deco_mounted_horn_frost": {
+      "geometry": "geometry.block_deco_mounted_horn_frost_geo", 
+      "shadow": true, 
+      "up": "world", 
+      "forward": "surface"
+    }
+  }
+}

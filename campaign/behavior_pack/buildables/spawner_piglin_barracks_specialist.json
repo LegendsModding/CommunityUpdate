@@ -1,0 +1,80 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:spawner_piglin_barracks_specialist",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "function": "Spawner",
+            "type": "Piglin"
+        },
+        "components": {
+            "badger:music_emitter_states": [
+                "default"
+            ],
+            //leaving art files the same as the disruptor one for now
+            "badger:buildable_structure": {
+                "nbt_file": "spawner_piglin_defend_barracks_disruptor",
+                "build_time": 20,
+                "construction_start_trigger": "on_construction_start",
+                "construction_end_trigger": "on_construction_end",
+                "faction_variations": {
+                    "faction.pig.defend": "spawner_piglin_defend_barracks_disruptor",
+                    "faction.pig.attack": "spawner_piglin_attack_barracks_disruptor",
+                    "faction.pig.dbb": "spawner_piglin_attack_barracks_disruptor",
+                    "faction.pig.obstacle": "spawner_piglin_obstacle_barracks_disruptor",
+                    "faction.pig.frost": "spawner_piglin_frost_barracks_disruptor"
+                }
+            },
+            "badger:buildable_spawner": {
+                "types": [
+                    {
+                        "type": "badger:piglin_disruptor",
+                        "percentage": 1
+                    }
+                ],
+                "spawn_delay": 1.5,
+                "cap": 0,
+                "rate": 5,
+                "offset": [
+                    0.0,
+                    2.0,
+                    3.0
+                ],
+                "batch": 3,
+                "spawning_trigger": "on_barracks_spawn"
+            },
+            "badger:scriptable_buildable_spawner": {},
+            "badger:buildable_foundation": {
+                "nbt_file": "spawner_piglin_defend_barracks_disruptor_foundation",
+                "offset": 5,
+                "place_instant_block_by_block": true,
+                "faction_variations": {
+                    "faction.pig.defend": "spawner_piglin_defend_barracks_disruptor_foundation",
+                    "faction.pig.attack": "spawner_piglin_attack_barracks_disruptor_foundation",
+                    "faction.pig.obstacle": "spawner_piglin_obstacle_barracks_disruptor_foundation",
+                    "faction.pig.dbb": "spawner_piglin_attack_barracks_disruptor_foundation",
+                    "faction.pig.frost": "spawner_piglin_frost_barracks_disruptor_foundation"
+                }
+            },
+            "badger:tags": {
+                "tags": [
+                    "buildable",
+                    "buildable_combat",
+                    "buildable_structure",
+                    "barracks",
+                    "spawner_piglin_barracks_specialist",
+                    "specialistBarracks",
+                    "piglinStructure",
+                    "piglin"
+                ]
+            },
+            "badger:template": [
+                "badger:template_barracks",
+                "badger:template_structure_piglin"
+            ]
+        }
+    }
+}

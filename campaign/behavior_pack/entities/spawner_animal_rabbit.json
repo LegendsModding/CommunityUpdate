@@ -1,0 +1,68 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_animal_rabbit",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:animal_rabbit",
+            "percentage": 1
+          }
+        ],
+        "cap": 2,
+        "batch": 1,
+        "rate": 6,
+        "max_radius": 100,
+        "min_radius": 10
+      },
+      "badger:tags": {
+        "tags": [
+          "spawner_animal"
+        ]
+      },
+      "badger:spawner_rules": {
+
+          "bsharp_rule": {
+            "variable": "gv_started_act_3_a",
+            "value": 1
+        },
+
+        "distance_rule": {
+          "village_distance_data": [
+            {
+              "min_distance": 1,
+              "max_distance": 10000,
+              "horde_names": [
+                "faction.player.well"
+              ],
+              "is_destroyed": false
+            },
+            {
+              "min_distance": 300,
+              "max_distance": 10000,
+              "horde_names": [
+                "faction.pig.attack",
+                "faction.pig.defend",
+                "faction.pig.obstacle",
+                "faction.pig.frost"
+              ],
+              "is_destroyed": false
+            }
+          ]
+        }
+      }
+    }
+  }
+}

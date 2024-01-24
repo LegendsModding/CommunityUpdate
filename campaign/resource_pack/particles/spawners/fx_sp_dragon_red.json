@@ -1,0 +1,54 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_sp_dragon_red",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : -1.0,
+            "suspend_distance" : 200.0
+         },
+         "expiration_mode" : "immediate"
+      },
+      "events" : {
+         "support" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_stat_rooted_support",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_mesh" : {
+            "facing_camera_mode" : "rotate_y",
+            "flipbook" : {
+               "layout" : {
+                  "frame_end" : 0
+               },
+               "time_integration" : {
+                  "frames_per_second" : 0.0,
+                  "mode" : "fps"
+               }
+            },
+            "geometry" : "geometry.item_dragon_red",
+            "material_source" : "model"
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_instant" : {
+            "num_particles" : 1.0
+         },
+         "minecraft:emitter_shape_point" : {
+            "direction" : [ 0.0, 1.0, 0.0 ]
+         },
+         "minecraft:particle_appearance_tinting" : {
+            "base_color" : [ 1.0, 1.0, 1.0, 0.25 ]
+         },
+         "minecraft:particle_initial_speed" : 0.0,
+         "minecraft:particle_lifetime_expression" : {}
+      }
+   }
+}

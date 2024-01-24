@@ -1,0 +1,97 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:tower_piglin_arrow",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:buildable_requirement": {},
+      "badger:telemetry_category": {
+        "category_name": "Piglin Structure"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "tower_piglin_arrow_defend",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "tower_piglin_arrow_defend",
+          "faction.pig.attack": "tower_piglin_arrow_attack",
+          "faction.pig.obstacle": "tower_piglin_arrow_obstacle",
+          "faction.pig.wof": "tower_piglin_arrow_attack",
+          "faction.pig.dbb": "tower_piglin_arrow_attack",
+          "faction.pig.frost": "tower_piglin_arrow_frost"
+        }
+      },
+      "badger:generate_ruins": {
+        "max": 4,
+        "min": -1
+      },
+      "badger:health": {
+        "max_health": 175
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.125,
+          "act1_pound": 0.7,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "act1_dart": 1.9,
+          "melee": 0.15,
+          "fire": 0.5,
+          "chop": 0.255,
+          "player": 0.1,
+          "potion": 0.4,
+          "creeper": 1.0,
+          "slam": 0.85,
+          "smash": 1.05
+        }
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_tower"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "buffable-pigs_nest",
+          "pigTower",
+          "piglinStructure",
+          "pigTowerOuter",
+          "piglin",
+          "pigArrowTower"
+        ]
+      },
+      "badger:loot": {
+        "table": "piglin_tower"
+      },
+      "badger:template": [
+        "badger:template_tower_with_foundation",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

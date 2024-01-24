@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0", 
+  "minecraft:block": {
+    "description": {
+      "material": "badger_wood", 
+      "identifier": "badger:block_deco_banner_frost_small"
+    }, 
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "empty",
+        "directional_texture": false,
+        "directional_shape": true
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+      "badger:block_type": {
+        "tags": [
+          "deco_nether",
+          "piglin_base_not_buildable"
+        ]
+      }
+    }
+  }
+}

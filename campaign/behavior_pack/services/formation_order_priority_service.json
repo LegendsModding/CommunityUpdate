@@ -1,0 +1,107 @@
+{
+    "badger:formation_order_priority_service": {
+      "priorities": [
+        {
+          "include_tags": [
+            "animal"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "buff_giant",
+            "animal"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "stone_golem"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "cavalry_golem"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "wood golem"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "buff_giant",
+            "golem"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "zombie"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "creeper"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "spider"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "skeleton"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "buff_giant",
+            "allied_mob"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "vindicator"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "buff_giant",
+            "vindicator"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "poi_golem"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "buff_giant",
+            "poi_golem"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "dragon"
+          ],
+          "exclude_tags": []
+        }
+      ]
+    }
+  }

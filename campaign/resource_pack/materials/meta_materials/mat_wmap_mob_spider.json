@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "wmap_mob_spider:entity_world_map": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_wmap_mob_spider_d",
+            "coeffMap": "textures/entity/tex_wmap_mob_spider_mr",
+      "normalMap": "textures/entity/tex_wmap_mob_spider_n"
+        }
+    }
+}

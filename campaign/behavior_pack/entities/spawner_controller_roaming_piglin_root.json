@@ -1,0 +1,91 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_controller_roaming_piglin_root",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:spawner_rules": {
+        "distance_rule": {
+          "village_bounds_distance_data": [
+            {
+              "horde_names": [
+                "faction.pig.attack",
+                "faction.pig.obstacle"
+              ],
+              "max_distance": 5000,          // enable this spawner by default (within 5000 blocks of a village) ...
+              "is_destroyed": false,         // ... that is alive ...
+              "destruction_spawn_delay": 300, // ... at least 15 seconds ago ...
+              "min_distance": 65             // ... but not if it's too near (65 blocks) - note, tuned for worst case scenario with the attack horde whose footprint is about as large as its bounds.
+            },
+            {
+              "horde_names": [
+                "faction.pig.defend",
+                "faction.pig.frost"
+              ],
+              "max_distance": 5000,          
+              "is_destroyed": false,        
+              "destruction_spawn_delay": 300, 
+              "min_distance": 40             // defend horde is tuned a bit closer, their footprint is smaller than bounds, so this was creating too many deadspots. Ben did like having a bit more buffer for this horde, so it is still a bit further.
+            },
+            {
+              "horde_names": [ 
+                "faction.cul.001",
+                "faction.cul.002",
+                "faction.player.well",
+                "faction.mob.alliance.creeper",
+                "faction.mob.alliance.skeleton",
+                "faction.mob.alliance.zombie"
+              ],
+              "max_distance": 5000,
+              "is_destroyed": false,
+              "destruction_spawn_delay": 300,
+              "min_distance": 120             // villages and homesteads have a larger buffer around them to prevent accidental 
+            }
+          ]
+        }
+      },
+      "badger:template": [
+        "badger:template_conflict_coordinator",
+        "badger:template_spawner_controller_roaming_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "roaming_piglin_spawner_controller",
+          "roaming_piglin_spawner_controller_root"
+        ]
+      },
+      "badger:buildable_controller_spawner": {
+        "generic_BSharp": [
+          //Tier 1 Spawns
+          {
+            "variable_name" : "gv_invasion_phase_counter",
+				    "valid_value_set" : [0,1,2],
+            "spawn": [
+              "badger:spawner_controller_roaming_piglin_tier_1_node"
+            ]
+          },
+          //Tier 2 Spawns
+          {
+            "variable_name" : "gv_invasion_phase_counter",
+				    "valid_value_set" : [3,4],
+            "spawn": [
+              "badger:spawner_controller_roaming_piglin_tier_2_root"
+            ]
+          },
+          //Tier 3 Spawns
+          {
+            "variable_name" : "gv_invasion_phase_counter",
+				    "valid_value_set" : [5,6],
+            "spawn": [
+              "badger:spawner_controller_roaming_piglin_tier_3_root"
+            ]
+          }
+        ],
+        "ticks_between_checks": 32
+      }
+    }
+  }
+}

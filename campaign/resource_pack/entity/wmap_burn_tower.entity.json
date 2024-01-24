@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_burn_tower"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_burn_tower"
+      },
+      "identifier": "badger:wmap_burn_tower",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_burn_tower": "mat_wmap_burn_tower"
+      },
+      "render_controllers": ["controller.render.wmap_burn_tower"]
+    }
+  }
+}

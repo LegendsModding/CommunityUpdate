@@ -1,0 +1,20 @@
+{
+  "id": "piglin_all_ob_prestamp_spider",
+  "textures": [
+    {
+      "texture": "piglin/piglin_all_ob_prestamp_hard_blend",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+
+  "biome_map": [
+    {
+      "biome": "forest",
+      "value": 255
+    }
+  ]
+}

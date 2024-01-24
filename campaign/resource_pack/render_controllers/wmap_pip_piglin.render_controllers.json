@@ -1,0 +1,32 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_pip_piglin": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_wmap_pip_piglin_attack","MetaMaterial.mat_wmap_pip_piglin_defend","MetaMaterial.mat_wmap_pip_piglin_obstacle", "MetaMaterial.mat_wmap_pip_piglin_frost"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_pip_piglin_attack": "Array.materials[variable.pip_state]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "pip01_geo": "variable.pip01_geo_vis"
+        },
+        {
+          "pip02_geo": "variable.pip02_geo_vis"
+        },
+        {
+          "pip03_geo": "variable.pip03_geo_vis"
+        },
+        {
+          "pip04_geo": "variable.pip04_geo_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

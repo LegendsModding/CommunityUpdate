@@ -1,0 +1,50 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_block_spider_acid_fizz",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_spin_bubbles_acid" ]
+         },
+         "optimizations" : {
+            "suspend_distance" : 50.0
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.15, 0.15 ],
+            "initial_scale" : [ 1.0, 1.1 ],
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 6,
+                  "frame_end" : 5,
+                  "frame_iteration" : "row",
+                  "row_index" : [ 2, 3 ],
+                  "rows_count" : 4
+               }
+            }
+         },
+         "badger:particle_noise_motion" : {
+            "radius" : 0.5,
+            "speed" : 0.4
+         },
+         "minecraft:emitter_rate_variable" : {
+            "max_particles" : 5.0,
+            "spawn_rate" : "math.lerp(0.3, 0.6, query.emitter_random_2)"
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, 1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.5, 0.3, 0.5 ]
+         },
+         "minecraft:particle_initial_speed" : "math.random(0.2,0.4)",
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "math.random(1.1,2.0)"
+         },
+         "minecraft:particle_motion_dynamic" : {
+            "linear_acceleration" : [ 0.0, 0.5, 0.0 ]
+         }
+      }
+   }
+}

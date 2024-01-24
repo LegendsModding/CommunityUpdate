@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:occupation_zoner_piglin_frost_territory_low_health"
+    },
+    "components": {
+      "badger:template": [
+        "badger:zoner_piglin_frost_territory_low_health"
+      ]
+    }
+  }
+}

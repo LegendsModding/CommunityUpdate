@@ -1,0 +1,261 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 8,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:keep_alive_timer": {
+        "time": 2,
+        "time_if_refunded": 0.07
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,1,0.5],
+            "enabled": "variable.fx_enb_light",
+            "falloff_power": "variable.fx_light_falloff",
+            "intensity": "variable.fx_enb_light",
+            "locator": "loc_fx_light",
+            "offset": [0,0,0],
+            "radius": 7.5
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "cine_charge_a": {
+          "animation": {
+            "animation": "charge_a"
+          }
+        },
+        "cine_charge_tell_a": {
+          "animation": {
+            "animation": "charge_tell_a"
+          }
+        },
+        "cine_cheer_a": {
+          "animation": {
+            "animation": "cheer_a"
+          }
+        },
+        "cine_cheer_b": {
+          "animation": {
+            "animation": "cheer_b"
+          }
+        },
+        "cine_cheer_c": {
+          "animation": {
+            "animation": "cheer_c"
+          }
+        },
+        "cine_death_a": {
+          "animation": {
+            "animation": "death_a"
+          }
+        },
+        "cine_explode_a": {
+          "animation": {
+            "animation": "explode_a"
+          }
+        },
+        "cine_hit_reaction_a": {
+          "animation": {
+            "animation": "hitreaction_a"
+          }
+        },
+        "cine_idle_a": {
+          "animation": {
+            "animation": "idle_a"
+          }
+        },
+        "cine_idle_b": {
+          "animation": {
+            "animation": "idle_b"
+          }
+        },
+        "cine_idle_breathe": {
+          "animation": {
+            "animation": "idle_breathe"
+          }
+        },
+        "cine_run_a": {
+          "animation": {
+            "animation": "run_a"
+          }
+        },
+        "intense_hit": {
+          "audio": "BAE_dragon_red_dx_rps_notifies_intense_hit"
+        },
+        "intense_knockback": {
+          "audio": "BAE_dragon_red_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_dragon_red_dx_knockback_normal"
+        },
+        "on_explode": {
+          "attachment": {
+            "location": "general1"
+          },
+          "script": "death"
+        },
+        "on_hearts": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_hearts",
+            "enabled": true,
+            "locator": "loc_fx_stat_head"
+          }
+        },
+        "on_hero_directed": {
+          "audio": "BAE_dragon_red_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_dragon_red_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_medium"
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        },
+        "on_melee_attack_a": {
+          "script": "melee_attack_a"
+        },
+        "on_melee_attack_b": {
+          "script": "melee_attack_b"
+        },
+        "on_refund": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_refund_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_dragon_red_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:dragon_red",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"],
+      "badger:terrain_type_molang": {
+      }
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_fast": "animation.dragon_red.additive_tumble_fast",
+        "additive_tumble_slow": "animation.dragon_red.additive_tumble_slow",
+        "behavior_chat_a": "animation.dragon_red.idle_a",
+        "behavior_happy_a": "animation.dragon_red.idle_a",
+        "behavior_scared_a": "animation.dragon_red.idle_a",
+        "behavior_walk_happy_a": "animation.dragon_red.walk_a",
+        "behavior_walk_happy_b": "animation.dragon_red.walk_a",
+        "behavior_walk_scared_a": "animation.dragon_red.walk_a",
+        "bespoke_behaviors": "controller.animation.dragon_red.bespoke_behaviors",
+        "charge_a": "animation.dragon_red.idle_a",
+        "charge_b": "animation.dragon_red.idle_a",
+        "charge_tell_a": "animation.dragon_red.idle_a",
+        "cheer_a": "animation.dragon_red.cheer_a",
+        "cheer_b": "animation.dragon_red.cheer_a",
+        "cheer_c": "animation.dragon_red.cheer_a",
+        "climb_a": "animation.dragon_red.climb_a",
+        "core": "controller.animation.dragon_red.core",
+        "death_a": "animation.dragon_red.death_a",
+        "death_b": "animation.dragon_red.death_a",
+        "explode_a": "animation.dragon_red.idle_a",
+        "hitreact": "controller.animation.dragon_red.hitreact",
+        "hitreaction_a": "animation.dragon_red.hitreaction_a",
+        "idle": "controller.animation.dragon_red.idle",
+        "idle_a": "animation.dragon_red.idle_a",
+        "idle_b": "animation.dragon_red.idle_a",
+        "idle_breathe": "animation.dragon_red.idle_a",
+        "knockback_a": "animation.dragon_red.knockback_a",
+        "knockback_landing_a": "animation.dragon_red.knockback_landing_a",
+        "locomotion": "controller.animation.dragon_red.locomotion",
+        "run_a": "animation.dragon_red.run_a",
+        "run_b": "animation.dragon_red.run_a",
+        "spawn_a": "animation.dragon_red.spawn_a",
+        "stop_a": "animation.dragon_red.stop_a",
+        "stop_b": "animation.dragon_red.stop_a",
+        "stun_a": "animation.dragon_red.stun_a",
+        "swim_a": "animation.dragon_red.swim_a",
+        "swim_idle_a": "animation.dragon_red.swim_idle_a",
+        "swim_stop_a": "animation.dragon_red.stop_a",
+        "walk_a_giant": "animation.dragon_red_giant.walk_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enemy_spotted": "variable.enemy_spotted = 1;",
+        "hero_spotted": "variable.hero_spotted = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Curious","Run Away","Scared","Hard Blink","PreExplode"],
+      "geometry": {
+        "default": "geometry.dragon_red"
+      },
+      "identifier": "badger:dragon_red",
+      "materials": {
+        "mat_fx_cauldron_64": "mat_fx_cauldron_64",
+        "mat_fx_frozen_64": "mat_fx_frozen_64",
+        "mat_fx_heal_64": "mat_fx_heal_64",
+        "mat_fx_spore_damaged_64": "mat_fx_spore_damaged_64",
+        "mat_dragon_red": "mat_dragon_red",
+        "mat_dragon_red_face": "mat_dragon_red_face"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_explode": "badger:fx_creeper_explosion",
+        "fx_spawn": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_small_sparkle"
+      },
+      "render_controllers": ["controller.render.dragon_red"],
+      "scripts": {
+        "animate":  [
+          {
+            "hitreact": "1"
+          },
+          {
+            "core": "1"
+          }
+        ],
+        "initialize": ["variable.hide_geo_vis = 1;","variable.fx_enb_light = 0;","variable.fx_light_falloff = 0;","variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "bodyfall": "BAE_dragon_red_bodyfall",
+        "death_poof_medium": "BAE_mob_death_poof_medium",
+        "dx_attack_pre": "BAE_dragon_red_dx_attack_pre",
+        "dx_charge_tell": "BAE_dragon_red_dx_charge_tell",
+        "dx_chatting": "BAE_dragon_red_dx_chatting",
+        "dx_chatting_headshake": "BAE_dragon_red_dx_chatting_headshake",
+        "dx_death": "BAE_dragon_red_dx_death",
+        "dx_happy": "BAE_dragon_red_dx_happy",
+        "dx_hurt": "BAE_dragon_red_dx_hurt",
+        "dx_idle": "BAE_dragon_red_dx_idle",
+        "dx_idle_sprint": "BAE_dragon_red_dx_idle_sprint",
+        "dx_reaction_alert": "BAE_dragon_red_dx_reaction_alert",
+        "dx_reaction_hit": "BAE_dragon_red_dx_reaction_hit",
+        "dx_reaction_scared": "BAE_dragon_red_dx_reaction_scared",
+        "dx_reaction_yes": "BAE_dragon_red_dx_reaction_yes",
+        "dx_scared": "BAE_dragon_red_dx_scared",
+        "dx_spotted_enemy": "BAE_dragon_red_dx_spotted_enemy",
+        "explode": "BAE_dragon_red_explode",
+        "footstep_land": "BAE_dragon_red_footstep_land",
+        "headswell": "BAE_dragon_red_headswell",
+        "hop": "BAE_dragon_red_hop",
+        "jump": "BAE_dragon_red_jump",
+        "step": "BAE_dragon_red_footstep"
+      }
+    }
+  }
+}

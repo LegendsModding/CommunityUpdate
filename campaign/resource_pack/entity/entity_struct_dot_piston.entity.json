@@ -1,0 +1,58 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:entity_age": {
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.15
+      },
+      "badger:presentation_event": {
+        "on_proj_shoot": {
+          "script": "proj_shoot"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:entity_struct_dot_piston"
+      }
+    },
+    "description": {
+      "animations": {
+        "death_a": "animation.entity_struct_dot_piston.death_a",
+        "default": "controller.animation.entity_struct_dot_piston.default",
+        "idle_a": "animation.entity_struct_dot_piston.idle_a",
+        "loading_a": "animation.entity_struct_dot_piston.loading_a",
+        "spawn_a": "animation.entity_struct_dot_piston.spawn_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "proj_shoot": "variable.shoot = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_dot_piston"
+      },
+      "identifier": "badger:entity_struct_dot_piston",
+      "materials": {
+        "mat_shared_block_entity_player": "mat_shared_block_entity_player"
+      },
+      "particle_effects": {
+        "fx_destruction": "badger:fx_destruction_dot_piston",
+        "fx_frost": "badger:fx_entity_struct_dot_piston_frost"
+      },
+      "render_controllers": ["controller.render.entity_struct_dot_piston"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.shoot = 0;","variable.const_time = 0.5;"]
+      },
+      "sound_effects": {
+        "reload": "BAE_poi_tower_02_reload",
+        "shoot": "BAE_poi_tower_02_shoot"
+      }
+    }
+  }
+}

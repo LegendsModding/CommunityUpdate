@@ -1,0 +1,144 @@
+{
+	"name": "sky_sunmoon",
+	"imgui_category": "SunMoon",
+	"imgui_prefix": "sunmoon",
+	"number_of_suns": 1,
+	"sky_color": "curve.sunmoon_sky_color",
+	"sky_horizon_color": "curve.sunmoon_sky_horizon_color",
+	"cloud_color": "curve.sunmoon_cloud_color",
+	"cloud_shadows": "curve.sunmoon_cloud_shadows",
+	"stars_color": "curve.sunmoon_stars_color",
+	"ambient_color": "curve.sunmoon_ambient_color",
+	"direct_color": "curve.sunmoon_direct_color",
+	"emissive_scale": "curve.sunmoon_emissive_scale",
+	"particle_light": "curve.sunmoon_particle_light",
+	"particle_emissive_scale": "curve.sunmoon_particle_emissive_scale",
+	"fog_color": "curve.sunmoon_fog_color",
+	"light_probe": "sunmoon",
+	"sparkle_params": "curve.sunmoon_sparkle_params",
+	"ambient_sparkle_params": "curve.sunmoon_ambient_sparkle",
+	"atmosphere_params": "curve.sunmoon_atmosphere_params",
+	"horizon_params": "curve.sunmoon_horizon_params",
+	"fog_params": "curve.sunmoon_fog_params",
+	"post_params": "curve.sunmoon_post_params",
+	"objects": [
+		{
+			"name": "sky",
+			"geometry": "prefab.screenquad",
+			"material": "mat_badger_skyclear",
+			"height": 100.0,
+			"scale": 1.0,
+			"sort_index": 0
+		},
+		{
+			"name": "stars",
+			"geometry": "prefab.stars",
+			"material": "mat_badger_stars",
+			"position": "curve.sunmoon_stars_position",
+			"height": 0.0,
+			"scale": 4.0,
+			"sort_index": 2
+		},
+		{
+			"name": "sun",
+			"geometry": "prefab.sun",
+			"material": "mat_badger_sun",
+			"color_a": "curve.sunmoon_sun_color",
+			"position": "curve.sun_position",
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 3,
+			"light_source": true,
+			"light_ray_caster": true
+		},
+		{
+			"name": "moon_mask",
+			"geometry": "prefab.moon",
+			"material": "mat_badger_moon_mask",
+			"color_a": "curve.sunmoon_moon_color",
+			"position": "curve.moon_position",
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 0,
+			"light_source": false
+		},
+		{
+			"name": "moon",
+			"geometry": "prefab.moon",
+			"material": "mat_badger_moon",
+			"color_a": "curve.sunmoon_moon_color",
+			"position": "curve.moon_position",
+			"height": 256.0,
+			"scale": 150.0,
+			"sort_index": 4,
+			"light_source": true
+		},
+		{
+			"name": "clouds",
+			"geometry": "prefab.clouds",
+			"material": "mat_badger_clouds",
+			"height": 128.0,
+			"scale": 1.0,
+			"sort_index": -1
+		}
+	],
+	"biome_overrides": [
+		{
+			"override_name": "override_sky_attack_sunmoon",
+			"biomes": [
+				{"identifier": "nether_horderunner"},
+				{"identifier": "lava_moat_horderunner"}
+			]
+		},
+		{
+			"override_name": "override_sky_defend_sunmoon",
+			"biomes": [
+				{"identifier": "nether_piglin"},
+				{"identifier": "lava_moat"}
+			]
+		},
+		{
+			"override_name": "override_sky_obstacle_sunmoon",
+			"biomes": [
+				{"identifier": "nether_rotters"},
+				{"identifier": "nether_rotters_upper"}
+			]
+		},
+		/*BOAR TODO {
+			"override_name": "override_sky_frost_sunmoon",
+			"biomes": [
+				{"identifier": "nether_rotters"},
+				{"identifier": "nether_rotters_upper"}
+			]
+		}, */
+		{
+			"override_name": "override_sky_horde4_sunmoon",
+			"biomes": [
+				{"identifier": "nether_horde_04"}
+			]
+		},
+		{
+			"override_name": "override_sky_forest",
+			"biomes": [
+				{"identifier": "forest"},
+				{"identifier": "forest_autumn"},
+				{"identifier": "forest_clamp_lower"},
+				{"identifier": "forest_hills"},
+				{"identifier": "forest_river"},
+				{"identifier": "mud_pit"},
+				{"identifier": "mud_pit_border"}
+			]
+		},
+		{
+			"override_name": "override_sky_wetlands",
+			"biomes": [
+				{"identifier": "wetlands"},
+				{"identifier": "wetlands_beach"},
+				{"identifier": "wetlands_hills"},
+				{"identifier": "wetlands_river"}
+			]
+		}
+	],
+	"claimed_area_override": "override_sky_claimed_sunmoon",
+	"weather_override": "override_sky_weather_sunmoon"
+}

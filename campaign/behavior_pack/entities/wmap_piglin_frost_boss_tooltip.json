@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:wmap_piglin_frost_boss_tooltip",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:map3_tooltip": {
+          "title": "faction.piglin.frost.boss.name",
+          "banner": "map_screen/banners/legend_piglin_boss_frost.png",
+          "description": "faction.piglin.frost.boss.description",
+          "priority": 4
+        }
+      }
+    }
+  }
+  

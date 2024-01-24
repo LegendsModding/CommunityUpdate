@@ -1,0 +1,121 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 5,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:presentation_event": {
+        "attach_spear": {
+          "attachment": {
+            "item": "badger:item_spear",
+            "location": "left_hand"
+          }
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_grunter_nis"
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "burn_idle_a": "animation.piglin_grunter.burn_idle_a",
+        "burn_walk_a": "animation.piglin_grunter.burn_walk_a",
+        "cheer_a": "animation.piglin_grunter_nis.cheer_a",
+        "cine_explode": "animation.piglin_grunter_nis.cine_explode",
+        "cine_intro_jumpturn_a": "animation.piglin_grunter_nis.cine_intro_jumpturn_a",
+        "cine_intro_turnlook_a": "animation.piglin_grunter_nis.cine_intro_turnlook_a",
+        "cine_intro_warrun_a": "animation.piglin_grunter_nis.cine_intro_warrun_a",
+        "climb_a": "animation.piglin_grunter.climb_a",
+        "death_a": "animation.piglin_grunter.death_a",
+        "death_b": "animation.piglin_grunter.death_b",
+        "death_c": "animation.piglin_grunter.death_c",
+        "default": "controller.animation.piglin_grunter_nis.default",
+        "float_a": "animation.piglin_grunter_nis.float_a",
+        "float_b": "animation.piglin_grunter_nis.float_b",
+        "fx_controller": "controller.animation.piglin_grunter_nis.fx_controller",
+        "idle_a": "animation.piglin_grunter.idle_a",
+        "idle_b": "animation.piglin_grunter.idle_b",
+        "idle_c": "animation.piglin_grunter.idle_c",
+        "idle_d": "animation.piglin_grunter.idle_d",
+        "knockback_a": "animation.piglin_grunter.knockback_a",
+        "piglin_grunter_nis_flypig_a": "animation.piglin_grunter_nis_flypig_a.piglin_grunter_nis_flypig_a",
+        "piglin_grunter_nis_flypig_b": "animation.piglin_grunter_nis_flypig_b.piglin_grunter_nis_flypig_b",
+        "poke_a": "animation.piglin_grunter_nis.poke_a",
+        "poke_b": "animation.piglin_grunter_nis.poke_b",
+        "range_ability_a": "animation.piglin_grunter.range_ability_a",
+        "range_attack_b": "animation.piglin_grunter.range_attack_b",
+        "range_attack_c": "animation.piglin_grunter.range_attack_c",
+        "ranged_attack_a": "animation.piglin_grunter.ranged_attack_a",
+        "spawn_a": "animation.piglin_grunter.spawn_a",
+        "stun_a": "animation.piglin_grunter.stun_a",
+        "swim_a": "animation.piglin_grunter.swim_a",
+        "swim_idle_a": "animation.piglin_grunter.swim_idle_a",
+        "take_large_a": "animation.piglin_grunter_nis.take_large_a",
+        "take_large_b": "animation.piglin_grunter_nis.take_large_b",
+        "take_left": "animation.piglin_grunter_nis.take_left",
+        "take_medium_a": "animation.piglin_grunter_nis.take_medium_a",
+        "take_medium_b": "animation.piglin_grunter_nis.take_medium_b",
+        "take_right": "animation.piglin_grunter_nis.take_right",
+        "take_small_a": "animation.piglin_grunter_nis.take_small_a",
+        "take_small_b": "animation.piglin_grunter_nis.take_small_b",
+        "walk_a": "animation.piglin_grunter.walk_a",
+        "walk_b": "animation.piglin_grunter.walk_b",
+        "walk_c": "animation.piglin_grunter.walk_c"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Wide Eyes","Shocked","Evil"],
+      "geometry": {
+        "attack": "geometry.piglin_grunter_attack_nis",
+        "defend": "geometry.piglin_grunter_defend_nis",
+        "obstacle": "geometry.piglin_grunter_obstacle_nis",
+        "frost": "geometry.piglin_grunter_frost_nis",
+        "second_skin": "geometry.piglin_grunter_second_skin_nis"
+      },
+      "identifier": "badger:piglin_grunter_nis",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_piglin_grunter_attack": "mat_piglin_grunter_attack",
+        "mat_piglin_grunter_attack_face": "mat_piglin_grunter_attack_face",
+        "mat_piglin_grunter_defend": "mat_piglin_grunter_defend",
+        "mat_piglin_grunter_defend_face": "mat_piglin_grunter_defend_face",
+        "mat_piglin_grunter_obstacle": "mat_piglin_grunter_obstacle",
+        "mat_piglin_grunter_obstacle_face": "mat_piglin_grunter_obstacle_face",
+        "mat_piglin_grunter_frost": "mat_piglin_grunter_frost",
+        "mat_piglin_grunter_frost_face": "mat_piglin_grunter_frost_face"
+      },
+      "particle_effects": {
+        "fx_flame": "badger:fx_piglin_grunter_rod_flame",
+        "fx_float_trail": "badger:fx_final_boss_death_pig_trail"
+      },
+      "render_controllers": ["controller.render.piglin_grunter_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "fx_controller": "1"
+          }
+        ],
+        "initialize": ["variable.rod_geo_vis = 1;","variable.second_skin_vis = 0;"]
+      },
+      "sound_effects": {
+        "alert": "BAE_piglin_grunter_nis_dx_alert",
+        "cheer": "BAE_piglin_grunter_nis_dx_cheer",
+        "idle": "BAE_piglin_grunter_nis_dx_idle",
+        "scared_long": "BAE_piglin_grunter_nis_dx_scared_long",
+        "scared_short": "BAE_piglin_grunter_nis_dx_scared_short",
+        "snort": "BAE_piglin_grunter_nis_dx_snort"
+      }
+    }
+  }
+}

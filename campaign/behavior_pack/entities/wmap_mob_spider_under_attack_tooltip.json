@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_mob_spider_under_attack_tooltip",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:map3_tooltip_audio": {
+        "event_id": "BAE_ui_wmap_invasion_tooltip_action_generic_danger",
+        "event_type": "Music"
+      },
+      "badger:map3_tooltip_extended": {
+        "description": "mob.alliance.spider.under.attack.description",
+        "icon": "/map_screen/wmaplegend_invasion_attack.png",
+        "priority": 4
+      }
+    }
+  }
+}

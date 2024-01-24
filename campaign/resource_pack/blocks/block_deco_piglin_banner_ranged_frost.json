@@ -1,0 +1,9 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_deco_piglin_banner_ranged_frost": {
+      "decoration": "deco_piglin_banner_ranged_frost",
+      "textures": "textures/blocks/tex_block_iron_wrought"
+    }
+  }
+}

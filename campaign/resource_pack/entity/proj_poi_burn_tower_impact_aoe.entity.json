@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:proj_poi_burn_tower_impact_aoe"
+    },
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:proj_archer_tower_arrow"
+      }
+    }
+  }
+}

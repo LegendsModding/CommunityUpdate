@@ -1,0 +1,965 @@
+{
+  "settings": {
+    "seconds_per_played_faction_card": 0.25
+  },
+  "factions": [
+    {
+      "unique_card_id": "badger_slot_invasion_invasionBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "slot_invasion",
+      "placement_type": "slot",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "texture": {
+        "enabled": false,
+        "manual_height": true,
+        "manual_height_range": [
+          21,
+          28
+        ]
+      },
+      "tags": [
+        "invasionBaseSlot"
+      ],
+      "placement_rules": [
+        {
+          "saturate": {
+            "density_per_8x8_chunk_pixel": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_creeperPiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "creeperPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_creeper",
+          "manual_height": true,
+          "manual_height_range": [
+            42,
+            46
+          ]
+        }
+      ],
+      "priority": -1,
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "creeper_alliance",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_spiderPiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "spiderPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_spider",
+          "manual_height": true,
+          "manual_height_range": [
+            42,
+            46
+          ]
+        }
+      ],
+      "priority": -1,
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "spider_alliance",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_skeletonPiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "skeletonPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_skeleton",
+          "manual_height": true,
+          "manual_height_range": [
+            32,
+            34
+          ]
+        }
+      ],
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "skeleton_alliance",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_zombiePiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "zombiePiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_zombie",
+          "manual_height": true,
+          "manual_height_range": [
+            34,
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "zombie_alliance",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_initialCreeperPiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "initialCreeperPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "priority": 2,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_creeper",
+          "manual_height": true,
+          "manual_height_range": [
+            46,
+            50
+          ]
+        }
+      ],
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              14,
+              14
+            ],
+            "tag_parent": "creeper_alliance",
+            "jitter_angle": 1,
+            "initial_direction": 270,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_initialSpiderPiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "initialSpiderPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "priority": 2,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_spider",
+          "manual_height": true,
+          "manual_height_range": [
+            46,
+            50
+          ]
+        }
+      ],
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              14,
+              14
+            ],
+            "tag_parent": "spider_alliance",
+            "jitter_angle": 1,
+            "initial_direction": 270,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_initialSkeletonPiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "initialSkeletonPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "priority":2,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_skeleton",
+          "manual_height": true,
+          "manual_height_range": [
+            32,
+            34
+          ]
+        }
+      ],
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              14,
+              14
+            ],
+            "tag_parent": "skeleton_alliance",
+            "jitter_angle": 1,
+            "initial_direction": 270,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_initialZombiePiglinBaseSlot_mobAllianceBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "initialZombiePiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "priority":2,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp_zombie",
+          "manual_height": true,
+          "manual_height_range": [
+            34,
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "mobAllianceBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              14,
+              14
+            ],
+            "tag_parent": "zombie_alliance",
+            "jitter_angle": 1,
+            "initial_direction": 270,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_villageForestPiglinBaseSlot_villageBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "villageForestPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "villageBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "forest_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_villageFrostlandsPiglinBaseSlot_villageBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "villageFrostlandsPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "villageBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "frostlands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_villageDrylandsPiglinBaseSlot_villageBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "villageDrylandsPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "villageBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "drylands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_villageWetlandsPiglinBaseSlot_villageBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "villageWetlandsPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "villageBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "wetlands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_villageGrasslandsPiglinBaseSlot_villageBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "villageGrasslandsPiglinBaseSlot",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "villageBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              8,
+              9
+            ],
+            "tag_parent": "grasslands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1CampsSlotForest_act1CampsSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1CampsSlotForest",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "act1CampsSlot"
+      ],
+      "priority": 2,
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              20,
+              22
+            ],
+            "tag_parent": "forest_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1CampsSlotFrostlands_act1CampsSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1CampsSlotFrostlands",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "act1CampsSlot"
+      ],
+      "priority": 2,
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              20,
+              22
+            ],
+            "tag_parent": "frostlands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1CampsSlotDrylands_act1CampsSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1CampsSlotDrylands",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "act1CampsSlot"
+      ],
+      "priority": 2,
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              20,
+              22
+            ],
+            "tag_parent": "drylands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1CampsSlotWetlands_act1CampsSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1CampsSlotWetlands",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "act1CampsSlot"
+      ],
+      "priority": 2,
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              20,
+              22
+            ],
+            "tag_parent": "wetlands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1CampsSlotGrasslands_act1CampsSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1CampsSlotGrasslands",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "act1CampsSlot"
+      ],
+      "priority": 2,
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "precise_distance": {
+            "chunk_distance_from_parent": [
+              20,
+              22
+            ],
+            "tag_parent": "grasslands_1_village",
+            "jitter_angle": 1,
+            "do_not_scale_distance": true
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1SecondSkirmishSlotForest_invasionBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1SecondSkirmishSlotForest",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "piglin_all_ob_prestamp",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "invasionBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              28
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              80,
+              100
+            ],
+            "distance_to_zero_score": 8,
+            "tag_parent": "wellOfFate",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_act1DBB_invasionBaseSlot",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "",
+      "placement_name": "act1DBB",
+      "placement_type": "slot",
+      "allow_rivers_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 4
+        }
+      },
+      "texture": {
+        "enabled": false,
+        "manual_height": true,
+        "manual_height_range": [
+          20,
+          22
+        ]
+      },
+      "tags": [
+        "invasionBaseSlot"
+      ],
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              80,
+              100
+            ],
+            "distance_to_zero_score": 8,
+            "tag_parent": "wellOfFate",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "creeper_alliance",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "zombie_alliance",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "skeleton_alliance",
+            "weight": 2
+          }
+        }
+      ]
+    }
+  ]
+}

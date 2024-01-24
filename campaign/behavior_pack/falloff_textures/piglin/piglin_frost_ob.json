@@ -1,0 +1,49 @@
+{
+  "id": "piglin_frost_ob",
+  "textures": [
+    {
+      "texture": "piglin/piglin_frost_outpost_01",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "priority_biomes": [
+      "nether_rotters",
+      "nether_piglin_border_blend",
+      "nether_burnt_border",
+      "nether_burnt_border_inner_edge",
+      "nether_burnt_border_outer_edge"
+    ],
+    "village_texture_stamp": true
+  },
+  "biome_map": [
+    {
+      "biome": "nether_rotters",
+      "value": 255
+    },
+    {
+      "biome": "nether_piglin_border",
+      "value": 155
+    },
+    {
+      "biome": "nether_piglin_border_blend",
+      "value": 55
+    },
+    {
+      "biome": "nether_burnt_border",
+      "value": 100
+    },
+    {
+      "biome": "nether_burnt_border_outer_edge",
+      "value": 200
+    },
+    {
+      "biome": "nether_burnt_border_inner_edge",
+      "value": 220
+    }
+  ]
+}

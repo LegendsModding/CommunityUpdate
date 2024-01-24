@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mount_camel": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mount_camel": "MetaMaterial.mat_wmap_mount_camel"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

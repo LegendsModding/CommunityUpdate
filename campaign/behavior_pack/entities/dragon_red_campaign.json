@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:dragon_red_campaign",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Dragon Unit"
+    },
+    "components": {
+      "badger:lured": {
+        "resource_requirement": "unlock_poi_legend_dragon_red_resource"
+      },
+      "badger:template": {
+        "parent": "badger:dragon_red",
+        "game_mode": "campaign"
+      }
+    }
+  }
+}

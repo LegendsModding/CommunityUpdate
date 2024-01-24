@@ -1,0 +1,127 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:ai_entity_frost_defensive",
+        "runtime_identifier": "badger:ai"
+      },
+      "components": {
+        "badger:influence_map_ai" : {
+          "map_resolution" : 5,
+          "map_decay" : 0.02,
+          "perception_radius": 350,
+          "query_name": "default"
+      },
+      "badger:damage_influence_source": {
+        "sensors": [
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": ["hazard", "lava", "fall_damage", "fire"]
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["piglin", "mob"],
+              "exclude_tags": ["romaing_mob_piglin"],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 15,
+            "propagation_decay": 0.02
+          },
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": ["hazard", "lava", "fall_damage", "fire"]
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["boss"],
+              "exclude_tags": [],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 100,
+            "propagation_decay": 0.02
+          },
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": []
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["barracks"],
+              "exclude_tags": [],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 30,
+            "propagation_decay": 0.02
+          },
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": []
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["portal_piglin"],
+              "exclude_tags": [],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 50,
+            "propagation_decay": 0.02
+          },
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": []
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["pigCrystal"],
+              "exclude_tags": [],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 50,
+            "propagation_decay": 0.02
+          },
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": []
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["pigKnockbackTower"],
+              "exclude_tags": [],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 45,
+            "propagation_decay": 0.02
+          },
+          {
+            "inflictor_or_receiver_position": "inflictor",
+            "damage_type_filter": {
+              "include_all": [],
+              "exclude_any": []
+            },
+            "damage_receiver_filter": {
+              "include_tags": ["piglin", "buildable"],
+              "exclude_tags": ["portal_piglin", "pigCrystal", "barracks", "pigKnockbackTower"],
+              "alliance_rule_filter" : "friendly"
+            },
+            "multiplier" : 25,
+            "propagation_decay": 0.02
+          }
+        ]
+      },
+        "badger:tags": {
+          "tags": [
+            "scriptedAi",
+            "piglin",
+            "frostAi",
+            "frostDefendAi"
+          ]
+        }
+      }
+    }
+  }

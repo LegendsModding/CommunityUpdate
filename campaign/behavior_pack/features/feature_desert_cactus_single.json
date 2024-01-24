@@ -1,0 +1,15 @@
+{
+  "format_version": "1.13.0",
+  "code:place_block": {
+    "description": {
+      "identifier": "badger:feature_desert_cactus_single"
+    },
+    "may_replace": ["minecraft:air"],
+    "enforce_survivability_rules": false,
+    "enforce_placement_rules": false,
+    "may_attach_to": {
+      "bottom": ["badger:block_sand", "badger:block_sand_d1"]
+    },
+    "places_block": "badger:block_deco_cactus_single"
+  }
+}

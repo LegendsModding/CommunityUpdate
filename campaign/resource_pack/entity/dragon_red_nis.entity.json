@@ -1,0 +1,71 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 8,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:dragon_red_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "charge_a": "animation.dragon_red.charge_a",
+        "charge_b": "animation.dragon_red.charge_b",
+        "charge_tell_a": "animation.dragon_red.charge_tell_a",
+        "cheer_a": "animation.dragon_red.cheer_a",
+        "cheer_b": "animation.dragon_red.cheer_b",
+        "cheer_c": "animation.dragon_red.cheer_c",
+        "death_a": "animation.dragon_red.death_a",
+        "death_b": "animation.dragon_red.death_b",
+        "explode_a": "animation.dragon_red.explode_a",
+        "hit_reaction_a": "animation.dragon_red.hit_reaction_a",
+        "hit_reaction_b": "animation.dragon_red.hit_reaction_b",
+        "idle_a": "animation.dragon_red.idle_a",
+        "idle_b": "animation.dragon_red.idle_b",
+        "idle_breathe": "animation.dragon_red.idle_breathe",
+        "knockback_a": "animation.dragon_red.knockback",
+        "dragon_red_nis": "controller.animation.dragon_red_nis.",
+        "run_a": "animation.dragon_red.run_a",
+        "run_b": "animation.dragon_red.run_b",
+        "spawn_a": "animation.dragon_red.spawn_a",
+        "stop_a": "animation.dragon_red.stop_a",
+        "stop_b": "animation.dragon_red.stop_b",
+        "stun_a": "animation.dragon_red.stun_a",
+        "swim_a": "animation.dragon_red.swim_a",
+        "swim_idle_a": "animation.dragon_red.swim_idle_a",
+        "swim_stop_a": "animation.dragon_red.swim_stop_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Curious","Run Away","Scared","Hard Blink","PreExplode"],
+      "geometry": {
+        "default": "geometry.dragon_red_nis"
+      },
+      "identifier": "badger:dragon_red_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_generic_buff_64": "mat_fx_generic_buff_64",
+        "mat_dragon_red": "mat_dragon_red",
+        "mat_dragon_red_face": "mat_dragon_red_face"
+      },
+      "render_controllers": ["controller.render.dragon_red_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "dragon_red_nis": "1"
+          }
+        ],
+        "initialize": ["variable.hide_geo_vis = 1;","variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

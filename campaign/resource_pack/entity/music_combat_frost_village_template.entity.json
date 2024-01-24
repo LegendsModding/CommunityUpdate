@@ -1,0 +1,80 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_frost_village_template",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority": 50,
+        "max_distance": 200.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "incoming",
+            "audio_parameters": [
+              {
+                "music_va_state": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "ending",
+            "audio_parameters": [
+              {
+                "music_va_state": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase0",
+            "audio_parameters": [
+              {
+                "music_va_state": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1",
+            "audio_parameters": [
+              {
+                "music_va_state": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2",
+            "audio_parameters": [
+              {
+                "music_va_state": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3",
+            "audio_parameters": [
+              {
+                "music_va_state": 3.0
+              }
+            ]
+          }
+        ]
+      },
+      "badger:threat_owner": {
+        "influence_distance": 170,
+        "max_threat": 220,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 0.5
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_base_specific_snapshot_frost_village"
+        }
+      }
+    }
+  }
+}

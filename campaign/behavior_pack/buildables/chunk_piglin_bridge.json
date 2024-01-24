@@ -1,0 +1,116 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_piglin_bridge",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 1
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "multistep_ground_intersect_depth": 8
+      },
+      "badger:loot": {
+        "table": "piglin_bridge"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_terraform_stairs_large",
+        "tooltip_title": "structures.chunk_piglin_bridge.name",
+        "tooltip_description": "structures.chunk_piglin_bridge.description",
+        "buildable_category": "",
+        "segment_offset": -4
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "rc": 2
+        }
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:template_stairs_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "bridge",
+          "piglin_bridge",
+          "donotattack",
+          "piglin"
+        ]
+      },
+      "badger:multistep_buildable": {
+        "segments": {
+          "type": "random",
+          "segments": [
+            {
+              "buildable": "badger:chunk_piglin_bridge_section_001",
+              "percentage": 0.4
+            },
+            {
+              "buildable": "badger:chunk_piglin_bridge_section_002",
+              "percentage": 0.3
+            },
+            {
+              "buildable": "badger:chunk_piglin_bridge_section_003",
+              "percentage": 0.3
+            }
+          ]
+        },
+        "mid_segment_count": 15,
+        "placement_cursor_range": 60,
+        "style": "floating",
+        "max_slope": 0.9,
+        "max_segments": 100,
+        "shared_health_group_size": 4,
+
+        "cap_piece_name": "badger:chunk_piglin_bridge_post",
+
+        "cap_piece_flat_name": "badger:chunk_piglin_bridge_end_flat",
+        "cap_piece_horizontal_offset": 1,
+        "cap_piece_at_start": true,
+        "cap_piece_at_end": true,
+        "stepup_name": "badger:chunk_piglin_bridge_stair"
+      },
+      "badger:buildable_snap_point": {
+        "top_snap_offset": -3
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_piglin_defend_bridge_post_flat",
+        "build_time": 0,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "chunk_piglin_defend_bridge_post_flat",
+          "faction.pig.obstacle": "chunk_piglin_obstacle_bridge_post_flat",
+          "faction.pig.dbb": "chunk_piglin_defend_bridge_post_flat",
+          "faction.pig.wof": "chunk_piglin_defend_bridge_post_flat",
+          "faction.pig.frost": "chunk_piglin_frost_bridge_post_flat"
+        }
+      }
+    }
+  }
+}

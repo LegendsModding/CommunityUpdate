@@ -1,0 +1,71 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_seeker": {
+      "arrays": {
+        "geometries": {
+          "Array.geo": ["Geometry.default","Geometry.default","Geometry.obstacle","Geometry.frost"]
+        }
+      },
+      "geometry": "Array.geo[variable.model_chooser]",
+      "materials":  [
+        {
+          "mat_piglin_seeker_attack": "MetaMaterial.mat_piglin_seeker_attack"
+        },
+        {
+          "mat_piglin_seeker_attack_face": "MetaMaterial.mat_piglin_seeker_attack_face"
+        },
+        {
+          "mat_piglin_seeker_obstacle_face": "MetaMaterial.mat_piglin_seeker_obstacle_face"
+        },
+        {
+          "mat_piglin_seeker_obstacle": "MetaMaterial.mat_piglin_seeker_obstacle"
+        },
+        {
+          "mat_piglin_seeker_frost_face": "MetaMaterial.mat_piglin_seeker_frost_face"
+        },
+        {
+          "mat_piglin_seeker_frost": "MetaMaterial.mat_piglin_seeker_frost"
+        },
+        {
+          "mat_fx_frozen_256": "MetaMaterial.mat_fx_frozen_256"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "bomb": "variable.bomb_vis"
+        }
+      ]
+    },
+    "controller.render.piglin_seeker.second_skin": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
+        }
+      },
+      "geometry": "Geometry.second_skin",
+      "materials":  [
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        },
+        {
+          "piglin_seeker_attack": "variable.piglin_seeker_attack_vis"
+        },
+        {
+          "bomb": "variable.bomb_vis"
+        },
+        {
+          "piglin_seeker_obstacle": "variable.piglin_seeker_obstacle_vis"
+        },
+        {
+          "piglin_seeker_frost": "variable.piglin_seeker_frost_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

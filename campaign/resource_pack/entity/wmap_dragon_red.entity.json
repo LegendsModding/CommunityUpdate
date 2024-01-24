@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_dragon_red"
+      },
+      "badger:map3_child_offset": {
+        "x": 0,
+        "y": -10,
+        "z": 0
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_dragon_red"
+      },
+      "identifier": "badger:wmap_dragon_red",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_dragon_red": "mat_wmap_dragon_red"
+      },
+      "render_controllers": ["controller.render.wmap_dragon_red"]
+    }
+  }
+}

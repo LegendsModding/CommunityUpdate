@@ -1,0 +1,18 @@
+{
+  "format_version": "1.15.0",
+  "badger:decoration": {
+    "deco_piglin_banner_disruptor_frost": {
+      "geometry": "geometry.block_deco_piglin_banner_disruptor_frost_geo",
+      "shadow": true,
+      "up": "world",
+      "forward": "surface",
+      "wind_strength": 0.05,
+      "normals_interpolation": 0.0,
+      "collision": {
+        "mode": "instance",
+        "intensity": 0.0
+      },
+      "type": "far"
+    }
+  }
+}

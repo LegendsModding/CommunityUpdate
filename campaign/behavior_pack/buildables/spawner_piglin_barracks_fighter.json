@@ -1,0 +1,95 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_piglin_barracks_fighter",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:music_emitter_states": [
+        "default"
+      ],
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_piglin_defend_barracks_fighter",
+        "build_time": 20,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "spawner_piglin_defend_barracks_fighter",
+          "faction.pig.attack": "spawner_piglin_attack_barracks_fighter",
+          "faction.pig.dbb": "spawner_piglin_attack_barracks_fighter",
+          "faction.pig.obstacle": "spawner_piglin_obstacle_barracks_fighter",
+          "faction.pig.frost": "spawner_piglin_frost_barracks_fighter"
+        }
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:piglin_runt",
+            "percentage": 1
+          }
+        ],
+        "spawn_delay": 1.5,
+        "cap": 40,
+        "rate": 5,
+        "offset": [
+          0.0,
+          2.0,
+          3.0
+        ],
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 1.5,
+          "crush": 1.125,
+          "act1_pound": 0.7,
+          "spore": 0.0,
+          "ranged": 0.05,
+          "act1_dart": 1.9,
+          "melee": 0.15,
+          "fire": 0.5,
+          "chop": 0.255,
+          "player": 0.1,
+          "potion": 0.4,
+          "creeper": 1.14,
+          "smash": 1.05
+        }
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:buildable_foundation": {
+        "nbt_file": "spawner_piglin_defend_barracks_fighter_foundation",
+        "offset": 5,
+        "place_instant_block_by_block": true,
+        "faction_variations": {
+          "faction.pig.defend": "spawner_piglin_defend_barracks_fighter_foundation",
+          "faction.pig.attack": "spawner_piglin_attack_barracks_fighter_foundation",
+          "faction.pig.obstacle": "spawner_piglin_obstacle_barracks_fighter_foundation",
+          "faction.pig.dbb": "spawner_piglin_attack_barracks_fighter_foundation",
+          "faction.pig.frost": "spawner_piglin_frost_barracks_fighter_foundation"
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "barracks",
+          "spawner_piglin_barracks_fighter",
+          "piglinStructure",
+          "piglin"
+        ]
+      },
+      "badger:template": [
+        "badger:template_barracks",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

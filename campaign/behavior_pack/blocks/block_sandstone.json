@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "badger:block_sandstone",
+	  "material": "badger_stone"
+    },
+    "components": {
+      "minecraft:block_shape": {
+        "shape": "cube",
+        "directional_texture": false,
+        "directional_shape": false
+      },
+      "minecraft:destroy_time": {
+        "value": 10
+      },
+
+      "badger:block_type": {
+
+        "tags": [ "stone" ]
+
+      },
+      "badger:block_damage_receiver_material": {
+        "material": "block"
+      },
+      "badger:terrain_type": {
+        "terrain": "sand"
+      }
+    }
+  }
+}

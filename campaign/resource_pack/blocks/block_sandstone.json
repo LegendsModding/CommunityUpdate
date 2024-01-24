@@ -1,0 +1,12 @@
+{
+    "format_version": "1.15.0",
+    "badger:client_block": {
+        "badger:block_sandstone": {
+            "textures": {
+            "down": "textures/blocks/desert/tex_block_sandstone", 
+            "up": "textures/blocks/desert/tex_block_sandstone", 
+            "side": "textures/blocks/desert/tex_block_sandstone"
+          }
+        }
+      }
+    }

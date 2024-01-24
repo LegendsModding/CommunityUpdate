@@ -1,0 +1,287 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spawner_controller_roaming_piglin_vanilla_conflict_tier_1_node",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:template": [
+          "badger:template_spawner_controller_roaming_piglin"
+        ],
+        "badger:tags": {
+          "tags": [
+            "roaming_piglin_spawner_controller",
+            "spawner_controller_roaming_piglin_vanilla_conflict"
+          ]
+        },
+        //NOTE: For sanity I wanted to keep these all in the same file, even though there is a lot of duplicated effort. The repetition is necessary to get the hordes out with the correct colourings.
+        "badger:buildable_controller_spawner": {
+            "claimed_area": [ //NOTE - defend horde have an encounter with engineers which other hordes don't have.
+                 {//Vanilla Conflict Tier 1 Op 1 - skeletons win
+                    "claimed_by": "faction.pig.defend",
+                    "spawn": [
+                        "badger:spawner_world_skeleton_conflict",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                  "weight": 1
+                },
+                { 
+                    //Vanilla Conflict Tier 1 Op 2 - skeletons lose
+                    "claimed_by": "faction.pig.defend",
+                    "spawn": [
+                        "badger:spawner_world_skeleton_conflict",
+                        "badger:spawner_piglin_engineer",
+                        "badger:spawner_piglin_engineer",
+                        "badger:spawner_piglin_engineer",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 2
+                },
+                {
+                    //Vanilla Conflict Tier 1 Op 3 - zombies win
+                    "claimed_by": "faction.pig.defend",
+                    "spawn": [
+                      "badger:spawner_world_zombie_conflict",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_medic",
+                      "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 1
+                  },
+                {
+                    //Vanilla Conflict Tier 1 Op 4 - zombies lose - verified
+                    "claimed_by": "faction.pig.defend",
+                    "spawn": [
+                        "badger:spawner_world_zombie_conflict",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 2
+                },
+                {
+                  //Vanilla Conflict Tier 1 Op 5 - Creepers Win
+                  "claimed_by": "faction.pig.defend",
+                  "spawn": [
+                    "badger:spawner_world_creeper_conflict",
+                    "badger:spawner_piglin_runt_2x",
+                    "badger:spawner_piglin_runt_2x",
+                    "badger:spawner_piglin_medic",
+                    "badger:spawner_piglin_medic"
+                  ],
+                  "weight": 1
+                },
+                {
+                  //Vanilla Conflict Tier 1 Op 6 - Creepers Lose
+                  "claimed_by": "faction.pig.defend",
+                  "spawn": [
+                    "badger:spawner_world_creeper_conflict",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_medic",
+                    "badger:spawner_piglin_medic"
+                  ],
+                  "weight": 2
+                },
+                //NOTE - Originally I was just using a generic static for obstacle and horde, but then they'd appear with the wrong horde markings.
+                {//Vanilla Conflict Tier 1 Op 1 - skeletons win
+                    "claimed_by": "faction.pig.obstacle",
+                    "spawn": [
+                        "badger:spawner_world_skeleton_conflict",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                  "weight": 1
+                },
+                {
+                    //Vanilla Conflict Tier 1 Op 3 - zombies win
+                    "claimed_by": "faction.pig.obstacle",
+                    "spawn": [
+                      "badger:spawner_world_zombie_conflict",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_medic",
+                      "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 1
+                  },
+                {
+                    //Vanilla Conflict Tier 1 Op 4 - zombies lose - verified
+                    "claimed_by": "faction.pig.obstacle",
+                    "spawn": [
+                        "badger:spawner_world_zombie_conflict",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 2
+                },
+                {
+                  //Vanilla Conflict Tier 1 Op 5 - Creepers Win
+                  "claimed_by": "faction.pig.obstacle",
+                  "spawn": [
+                    "badger:spawner_world_creeper_conflict",
+                    "badger:spawner_piglin_runt_2x",
+                    "badger:spawner_piglin_runt_2x",
+                    "badger:spawner_piglin_medic",
+                    "badger:spawner_piglin_medic"
+                  ],
+                  "weight": 1
+                },
+                {
+                  //Vanilla Conflict Tier 1 Op 6 - Creepers Lose
+                  "claimed_by": "faction.pig.obstacle",
+                  "spawn": [
+                    "badger:spawner_world_creeper_conflict",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_medic",
+                    "badger:spawner_piglin_medic"
+                  ],
+                  "weight": 2
+                },
+                {//Vanilla Conflict Tier 1 Op 1 - skeletons win
+                "claimed_by": "faction.pig.frost",
+                "spawn": [
+                    "badger:spawner_world_skeleton_conflict",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x"
+                ],
+              "weight": 1
+            },
+            {
+                //Vanilla Conflict Tier 1 Op 3 - zombies win
+                "claimed_by": "faction.pig.frost",
+                "spawn": [
+                  "badger:spawner_world_zombie_conflict",
+                  "badger:spawner_piglin_runt_2x",
+                  "badger:spawner_piglin_runt_2x",
+                  "badger:spawner_piglin_runt_2x",
+                  "badger:spawner_piglin_runt_2x",
+                  "badger:spawner_piglin_runt_2x"
+                ],
+                "weight": 1
+              },
+            {
+                //Vanilla Conflict Tier 1 Op 4 - zombies lose - verified
+                "claimed_by": "faction.pig.frost",
+                "spawn": [
+                    "badger:spawner_world_zombie_conflict",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x"
+                ],
+                "weight": 2
+            },
+            {
+              //Vanilla Conflict Tier 1 Op 5 - Creepers Win
+              "claimed_by": "faction.pig.frost",
+              "spawn": [
+                "badger:spawner_world_creeper_conflict",
+                "badger:spawner_piglin_runt_2x",
+                "badger:spawner_piglin_runt_2x",
+                "badger:spawner_piglin_runt_2x",
+                "badger:spawner_piglin_runt_2x"
+              ],
+              "weight": 1
+            },
+            {
+              //Vanilla Conflict Tier 1 Op 6 - Creepers Lose
+              "claimed_by": "faction.pig.frost",
+              "spawn": [
+                "badger:spawner_world_creeper_conflict",
+                "badger:spawner_piglin_grunter_2x",
+                "badger:spawner_piglin_grunter_2x",
+                "badger:spawner_piglin_grunter_2x",
+                "badger:spawner_piglin_grunter_2x"
+              ],
+              "weight": 2
+            }
+            ],
+            "static": [
+                {//Vanilla Conflict Tier 1 Op 1 - skeletons win
+                    "spawn": [
+                        "badger:spawner_world_skeleton_conflict",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                  "weight": 1,
+                  "horde_variant":"faction.pig.attack" //helps assign the correct colouration to these piglins
+                },
+                {
+                    //Vanilla Conflict Tier 1 Op 3 - zombies win
+                    "spawn": [
+                      "badger:spawner_world_zombie_conflict",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_runt_2x",
+                      "badger:spawner_piglin_medic",
+                      "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 1,
+                    "horde_variant":"faction.pig.attack"
+                  },
+                {
+                    //Vanilla Conflict Tier 1 Op 4 - zombies lose - verified
+                    "spawn": [
+                        "badger:spawner_world_zombie_conflict",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_grunter_2x",
+                        "badger:spawner_piglin_medic",
+                        "badger:spawner_piglin_medic"
+                    ],
+                    "weight": 2,
+                    "horde_variant":"faction.pig.attack"
+                },
+                {
+                  //Vanilla Conflict Tier 1 Op 5 - Creepers Win
+                  "spawn": [
+                    "badger:spawner_world_creeper_conflict",
+                    "badger:spawner_piglin_runt_2x",
+                    "badger:spawner_piglin_runt_2x",
+                    "badger:spawner_piglin_medic",
+                    "badger:spawner_piglin_medic"
+                  ],
+                  "weight": 1,
+                  "horde_variant":"faction.pig.attack"
+                },
+                {
+                  //Vanilla Conflict Tier 1 Op 6 - Creepers Lose
+                  "spawn": [
+                    "badger:spawner_world_creeper_conflict",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_grunter_2x",
+                    "badger:spawner_piglin_medic",
+                    "badger:spawner_piglin_medic"
+                  ],
+                  "weight": 2,
+                  "horde_variant":"faction.pig.attack"
+                }
+            ],
+          "ticks_between_checks": 32
+        }
+      }
+    }
+  }

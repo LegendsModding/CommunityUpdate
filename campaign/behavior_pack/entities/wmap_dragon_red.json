@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_dragon_red",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.1875,
+        "length": 0.4425,
+        "width": 0.6875
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_legend_dragon_red",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "poi_legend_dragon_red"
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:dragon_red",
+            "percentage": 1
+          }
+        ],
+        "spawn_delay": 0,
+        "cap": 1,
+        "batch": 1,
+        "rate": 5,
+        "offset": [
+          -5,  
+          5.0,
+          5
+        ],
+        "max_height_difference": 5,
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:template": "badger:template_poi",
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "poi",
+          "poi_legend",
+          "poi_legend_dragon_red"
+        ]
+      }
+    }
+  }
+}

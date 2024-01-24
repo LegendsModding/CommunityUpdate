@@ -1,0 +1,67 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map3_child_offset": {
+        "x": 0,
+        "y": 20,
+        "z": 0
+      },
+      "badger:map_entity_3d_icon": {
+      },
+      "badger:presentation_event": {
+        "end_new": {
+          "script": "end_new"
+        },
+        "horde_attack": {
+          "script": "attack"
+        },
+        "horde_defend": {
+          "script": "defend"
+        },
+        "horde_obstacle": {
+          "script": "obstacle"
+        },
+        "horde_frost": {
+          "script": "frost"
+        },
+        "on_new": {
+          "particles":  [
+            {
+              "bind_to_actor": true,
+              "effect": "badger:fx_map_portal_new",
+              "enabled": true,
+              "locator": "loc_fx_main"
+            }
+          ]
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_piglin_base_large",
+        "limit": 64
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "event_scripts": {
+        "attack": "variable.horde = 0;",
+        "defend": "variable.horde = 1;",
+        "end_new": "variable.fx_stop;",
+        "obstacle": "variable.horde = 2;",
+        "frost": "variable.horde = 3;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_piglin_base_large"
+      },
+      "identifier": "badger:wmap_piglin_base_large",
+      "materials": {
+        "mat_wmap_piglin_base_large_attack": "mat_wmap_piglin_base_large_attack",
+        "mat_wmap_piglin_base_large_defend": "mat_wmap_piglin_base_large_defend",
+        "mat_wmap_piglin_base_large_obstacle": "mat_wmap_piglin_base_large_obstacle",
+        "mat_wmap_piglin_base_large_frost": "mat_wmap_piglin_base_large_frost"
+      },
+      "render_controllers": ["controller.render.wmap_piglin_base_large"]
+    }
+  }
+}

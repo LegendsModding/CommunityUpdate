@@ -1,0 +1,26 @@
+{
+	"name": "override_sky_frost_twosuns",
+	"imgui_category": "frostBase/TwoSuns",
+	"imgui_prefix": "frost_ts",
+	"is_override": true,
+	"sky_color": "curve.frost_ts_sky_color",
+	"sky_horizon_color": "curve.frost_ts_sky_horizon_color",
+	"cloud_color": "curve.frost_ts_cloud_color",
+	"cloud_shadows": "curve.frost_ts_cloud_shadows",
+	"ambient_color": "curve.frost_ts_ambient_color",
+	"direct_color": "curve.frost_ts_direct_color",
+	"fog_color": "curve.frost_ts_fog_color",
+	"atmosphere_params": "curve.frost_ts_atmosphere_params",
+	"horizon_params": "curve.frost_ts_horizon_params",
+	"fog_params": "curve.frost_ts_fog_params",
+		"objects": [
+		{
+			"name": "sun_a",
+			"color_a": "curve.frost_ts_sun_color"
+		},
+		{
+			"name": "sun_b",
+			"color_a": "curve.frost_ts_moon_color"
+		}
+	]
+}

@@ -1,0 +1,75 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "badger:overworld_height" : {
+            "height_params" : {
+               "average_height" : 22,
+               "texture_heights": [20, 128],
+               "clamp_heights": [20, 30]
+            },
+            "noise_params" : [ 1.450, 1.250 ]
+         },
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.50,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#7CB85C"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.0,
+                  "grass_overlay_noise_scale" : 0.0,
+                  "grass_overlay_surface_color" : "#000000"
+               }
+            },
+
+            "map" : {
+               "biome_banner" : "map_screen/banners/legend_banner_biome_brokenlands.png",
+               "biome_display_name" : "brokenlands",
+               "common_resources": ["coal"],
+               "common_resource_icon" : "/icons/resources/resource_coal.png",
+               "map_color" : "#916d2f",
+               "map_color_odd" : "#916d2f",
+               "map_pattern_index" : 2
+            },
+            "particulates" : {
+               "nether_spores" : 0.0,
+               "sparkles" : 0.05
+            },
+            "rain" : {
+               "downfall" : 0.0,
+               "lower_limit" : 0.0,
+               "rain_to_snow_height" : 200,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit" : 0.0
+            },
+            "water" : {
+               "water_blur_distance" : 16.0,
+               "water_color_blend_distance" : 6.0,
+               "water_depths_color" : "#008D98",
+               "water_surface_color" : "#00CBCB",
+               "water_surface_transparency" : 1.0
+            }
+         },
+         "minecraft:surface_parameters" : {
+            "default_surface" : {
+               "mid_material" : "badger:block_sand",
+               "top_material" : "minecraft:block_sand_d1"
+            },
+            "foundation_material" : "badger:block_sand_d1",
+            "sea_floor_depth" : 2,
+            "sea_floor_material" : "badger:block_gravel",
+            "sea_material" : "badger:block_water"
+         },
+         "overworld" : {},
+         "desert" : {},
+         "river" : {}
+      },
+      "description" : {
+         "identifier" : "desert_rivers"
+      }
+   }
+}

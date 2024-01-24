@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spatial_trigger_frost_inner",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 45.0,
+        "height": 60.0
+      },
+      "badger:trigger_criteria": {
+        "filters": [
+          {
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "poi_mount_camel_biome",
+    "textures": [
+      {
+        "texture": "poi_mounts/heightmap_poi_mount_camel",
+        "channels": {
+          "r": "blend",
+          "g": "terrain_height",
+          "b": "biome"
+        }
+      }
+    ],
+    "additional_data": {
+      "height_range": [
+        1,
+        4
+      ],
+      "village_texture_stamp": true
+    },
+    "biome_map": [
+      {
+        "biome": "desert",
+        "value": 255
+      }
+    ]
+  }

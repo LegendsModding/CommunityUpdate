@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:chunk_piglin_wall_panel_003",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": []
+      },
+      "badger:health": {
+        "max_health": 250
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.0,
+          "melee": 0.0,
+          "redstone": 4.0,
+          "creeper": 1.5,
+          "potion": 0.0
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "wall",
+          "piglin_wall",
+          "piglin"
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "chunk_piglin_defend_wall_panel_001",
+        "build_time": 0,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "faction_variations": {
+          "faction.pig.defend": "chunk_piglin_defend_wall_panel_003",
+          "faction.pig.attack": "chunk_piglin_defend_wall_panel_003",
+          "faction.pig.obstacle": "chunk_piglin_obstacle_wall_panel_003",
+          "faction.pig.dbb": "chunk_piglin_defend_wall_panel_003",
+          "faction.pig.wof": "chunk_piglin_defend_wall_panel_003",
+          "faction.pig.frost": "chunk_piglin_frost_wall_panel_003"
+        }
+      },
+      "badger:generate_ruins": {
+        "max": 2,
+        "min": -1
+      },
+      "badger:static_entity": {},
+      "badger:template": [
+        "badger:template_piglin_wall",
+        "badger:template_structure_piglin"
+      ]
+    }
+  }
+}

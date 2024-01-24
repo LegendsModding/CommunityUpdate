@@ -1,0 +1,45 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_golem_drill_fire",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_cut_e_flame" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "components" : {
+         "badger:particle_appearance_billboard" : {
+            "size" : [ 0.6, 0.45 ],
+            "initial_scale" : [ 0.75, 1.2 ],
+            "animated_scale" : "0.5 + (query.particle_normalized_age* 0.5)",
+            "facing_camera_mode" : "rotate_xyz",
+            "flipbook" : {
+               "layout" : {
+                  "columns_count" : 9,
+                  "frame_end" : 53,
+                  "rows_count" : 6
+               }
+            },
+            "pivot" : [ 0.0, -0.5 ]
+         },
+         "minecraft:emitter_local_space" : {
+            "transform" : true
+         },
+         "minecraft:emitter_rate_steady" : {
+            "max_particles" : 100.0,
+            "spawn_rate" : 3.0
+         },
+         "minecraft:emitter_shape_box" : {
+            "direction" : [ 0.0, -1.0, 0.0 ],
+            "direction_mode" : "custom",
+            "half_dimensions" : [ 0.1, 0.05, 0.1 ]
+         },
+         "minecraft:particle_lifetime_expression" : {
+            "max_lifetime" : "Math.random(2.0,1.0)"
+         }
+      }
+   }
+}

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_spider": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "wmap_mob_spider": "MetaMaterial.wmap_mob_spider"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

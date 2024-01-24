@@ -1,0 +1,46 @@
+{
+   "format_version" : "1.10.0",
+   "particle_effect" : {
+      "description" : {
+         "identifier" : "badger:fx_golem_drill_attack_melee",
+         "basic_render_parameters" : {
+            "materials_list" : [ "mat_badger_fx_blend_empty" ]
+         },
+         "optimizations" : {
+            "do_not_spawn_distance" : 150.01
+         }
+      },
+      "events" : {
+         "decorations_collision" : {
+            "game_effects" : {
+               "badger:decoration_collider" : {
+                  "decoration_collider_id" : "badger:fx_deco_collider_golem_drill"
+               }
+            }
+         },
+         "impact_parts" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_golem_drill_impact_parts",
+               "type" : "emitter_bound"
+            }
+         },
+         "smoke_Ring" : {
+            "particle_effect" : {
+               "effect" : "badger:fx_golem_drill_smoke_ring",
+               "type" : "emitter_bound"
+            }
+         }
+      },
+      "components" : {
+         "minecraft:emitter_lifetime_events" : {
+            "creation_event" : [ "smoke_Ring" ],
+            "timeline" : {
+               "0.010000" : [ "impact_parts", "decorations_collision" ]
+            }
+         },
+         "minecraft:emitter_lifetime_once" : {
+            "active_time" : 1.0
+         }
+      }
+   }
+}

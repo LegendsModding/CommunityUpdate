@@ -1,0 +1,103 @@
+{
+    "badger:claimed_area_service": {
+        "village_attack_claimed_area_size": 150.0,
+        "hordes_spore_strength": [
+            {
+                "id": "faction.pig.attack",
+                "strength": 1
+            },
+            {
+                "id": "faction.pig.defend",
+                "strength": 1
+            },
+            {
+                "id": "faction.pig.obstacle",
+                "strength": 1
+            },
+            {
+                "id": "faction.pig.frost",
+                "strength": 1
+            },
+            {
+                "id": "faction.pig.wof",
+                "strength": 1
+            }
+        ],
+        "claimed_area_tooltip_map_padding": 25,
+        "claimed_area_legend_discovered": [
+            {
+                "id": "faction.pig.attack",
+                "title": "faction.piglin_attack_faction.name",
+                "banner": "map_screen/banners/legend_banner_horde_attack.png",
+                "discovery_key": "attack_horde_arrived",
+                "description": "faction.piglin_attack_faction.description",
+                "extended_descriptions": [
+                    {
+                        "description": "faction.piglin.claimed_area",
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "id": "faction.pig.defend",
+                "title": "faction.piglin_defend_faction.name",
+                "banner": "map_screen/banners/legend_banner_horde_defend.png",
+                "discovery_key": "defend_horde_arrived",
+                "description": "faction.piglin_defend_faction.description",
+                "extended_descriptions": [
+                    {
+                        "description": "faction.piglin.claimed_area",
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "id": "faction.pig.obstacle",
+                "title": "faction.piglin_obstacle_faction.name",
+                "banner": "map_screen/banners/legend_banner_horde_obstacle.png",
+                "discovery_key": "obstacle_horde_arrived",
+                "description": "faction.piglin_obstacle_faction.description",
+                "extended_descriptions": [
+                    {
+                        "description": "faction.piglin.claimed_area",
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "id": "faction.pig.frost",
+                "title": "faction.piglin_frost_faction.name",
+                "banner": "map_screen/banners/legend_banner_horde_frost.png",
+                "discovery_key": "frost_horde_arrived",
+                "description": "faction.piglin_frost_faction.description",
+                "extended_descriptions": [
+                    {
+                        "description": "faction.piglin.claimed_area",
+                        "priority": 1
+                    }
+                ]
+            },
+            {
+                "id": "faction.pig.wof",
+                "title": "faction.piglin_wof_faction.name",
+                "banner": "map_screen/banners/legend_banner_horde_dbb.png",
+                "description": "faction.piglin_final_faction.description",
+                "extended_descriptions": [
+                    {
+                        "description": "faction.piglin.claimed_area",
+                        "priority": 1
+                    }
+                ]
+            }
+        ],
+        "claimed_area_legend_undiscovered": {
+            "title": "faction.piglin_unknown.name",
+            "banner": "map_screen/banners/legend_banner_horde_dbb.png",
+            "description": "claimed_area_unknown.description"
+        },
+        "base_music_intensity_distance": {
+            "min": 20,
+            "max": 170
+        }
+    }
+}

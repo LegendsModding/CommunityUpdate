@@ -1,0 +1,158 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:point_lights": {
+        "lights":  [
+          {
+            "color": [1,0.6,0.04],
+            "enabled": true,
+            "falloff_power": 2,
+            "intensity": 10,
+            "locator": "loc_fx_light",
+            "offset": [0,0,0.2],
+            "radius": 3
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_piglin_engineer_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_engineer_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_engineer_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_engineer",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
+      "badger:threat_source": {
+        "base_value": 3,
+        "spawn_value": 3,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.piglin_engineer.attack_a",
+        "build_loop_a": "animation.piglin_engineer.build_loop_a",
+        "build_start_a": "animation.piglin_engineer.build_start_a",
+        "build_stop_a": "animation.piglin_engineer.build_stop_a",
+        "cheer_a": "animation.piglin_engineer.cheer_a",
+        "climb_a": "animation.piglin_engineer.climb_a",
+        "climb_b": "animation.piglin_engineer.climb_b",
+        "climb_c": "animation.piglin_engineer.climb_c",
+        "death_a": "animation.piglin_engineer.death_a",
+        "death_b": "animation.piglin_engineer.death_b",
+        "death_c": "animation.piglin_engineer.death_c",
+        "default": "controller.animation.piglin_engineer.default",
+        "hit_react": "animation.piglin_engineer.hit_react",
+        "hit_reaction": "controller.animation.piglin_engineer.hit_reaction",
+        "idle_a": "animation.piglin_engineer.idle_a",
+        "idle_b": "animation.piglin_engineer.idle_b",
+        "idle_c": "animation.piglin_engineer.idle_c",
+        "idles": "controller.animation.piglin_engineer.idles",
+        "knockback_a": "animation.piglin_engineer.knockback_a",
+        "locomotion": "controller.animation.piglin_engineer.locomotion",
+        "scared_run": "animation.piglin_engineer.scared_run",
+        "spawn_a": "animation.piglin_engineer.spawn_a",
+        "stop_a": "animation.piglin_engineer.stop_a",
+        "stop_b": "animation.piglin_engineer.stop_b",
+        "stop_c": "animation.piglin_engineer.stop_c",
+        "stun_a": "animation.piglin_engineer.stun_a",
+        "swim_idle": "animation.piglin_engineer.swim_idle",
+        "swim_locomotion": "animation.piglin_engineer.swim_locomotion",
+        "walk_a": "animation.piglin_engineer.walk_a",
+        "walk_b": "animation.piglin_engineer.walk_b",
+        "walk_c": "animation.piglin_engineer.walk_c"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "attack": "geometry.piglin_engineer_attack",
+        "defend": "geometry.piglin_engineer_defend",
+        "obstacle": "geometry.piglin_engineer_obstacle",
+        "frost": "geometry.piglin_engineer_frost",
+        "second_skin": "geometry.piglin_engineer_second_skin"
+      },
+      "identifier": "badger:piglin_engineer",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
+        "mat_piglin_engineer_attack": "mat_piglin_engineer_attack",
+        "mat_piglin_engineer_attack_face": "mat_piglin_engineer_attack_face",
+        "mat_piglin_engineer_defend": "mat_piglin_engineer_defend",
+        "mat_piglin_engineer_defend_face": "mat_piglin_engineer_defend_face",
+        "mat_piglin_engineer_obstacle": "mat_piglin_engineer_obstacle",
+        "mat_piglin_engineer_obstacle_face": "mat_piglin_engineer_obstacle_face",
+        "mat_piglin_engineer_frost": "mat_piglin_engineer_frost",
+        "mat_piglin_engineer_frost_face": "mat_piglin_engineer_frost_face"
+      },
+      "particle_effects": {
+        "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_med",
+        "fx_secondarysmoke": "badger:fx_piglin_engineer_smoke_puff",
+        "fx_smoke": "badger:fx_piglin_engineer_smoke",
+        "fx_sparks": "badger:fx_piglin_engineer_sparks",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
+      },
+      "render_controllers": ["controller.render.piglin_engineer","controller.render.piglin_engineer.second_skin"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_reaction": "1"
+          }
+        ],
+        "initialize": ["variable.attack_grenade_vis = 0;","variable.obstacle_grenade_vis = 0;","variable.frost_grenade_vis = 0;","variable.defend_grenade_vis = 0;","variable.second_skin_vis = 0;","variable.model_chooser = 0;"]
+      },
+      "sound_effects": {
+        "attack_reload": "BAE_piglin_engineer_attack_reload",
+        "attack_shoot": "BAE_piglin_engineer_attack_shoot",
+        "bodyfall": "BAE_piglin_engineer_bodyfall",
+        "death_poof_small": "BAE_piglin_death_poof_small",
+        "dx_attack": "BAE_piglin_engineer_dx_attack",
+        "dx_attack_b": "BAE_piglin_engineer_dx_attack_b",
+        "dx_damage": "BAE_piglin_engineer_dx_damage",
+        "dx_death": "BAE_piglin_engineer_dx_death",
+        "dx_idle": "BAE_piglin_engineer_dx_idle",
+        "dx_scared": "BAE_piglin_engineer_dx_scared",
+        "dx_snort_misc": "BAE_piglin_engineer_dx_snort_misc",
+        "footstep_land": "BAE_piglin_engineer_footstep_land",
+        "footstep_walk": "BAE_piglin_engineer_footstep_walk",
+        "furnace_backfire": "BAE_piglin_engineer_furnace_backfire",
+        "furnace_loop": "BAE_piglin_engineer_furnace_loop",
+        "furnace_stop": "BAE_piglin_engineer_furnace_stop",
+        "spawn": "BAE_piglin_engineer_spawn",
+        "welder_build": "BAE_piglin_engineer_welder_build",
+        "wrench_build": "BAE_piglin_engineer_wrench_build",
+        "wrench_impact": "BAE_piglin_engineer_wrench_impact"
+      }
+    }
+  }
+}

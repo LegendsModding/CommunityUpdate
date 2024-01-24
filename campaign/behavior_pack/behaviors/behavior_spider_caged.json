@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_spider_caged",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:target_actions": {
+        "actions": []
+      }
+    }
+  }
+}

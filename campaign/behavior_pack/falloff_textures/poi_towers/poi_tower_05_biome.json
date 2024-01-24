@@ -1,0 +1,20 @@
+{
+  "id": "poi_tower_05_biome",
+  "textures": [
+    {
+      "texture": "poi_towers/heightmap_tower_generic",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "not_used"
+      }
+    }
+  ],
+  "additional_data": {
+    "height_range": [
+      -1,
+      1
+    ],
+    "village_texture_stamp": true
+  }
+}

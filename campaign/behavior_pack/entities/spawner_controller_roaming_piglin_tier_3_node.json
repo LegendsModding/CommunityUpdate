@@ -1,0 +1,534 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_controller_roaming_piglin_tier_3_node",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:template": [
+        "badger:template_spawner_controller_roaming_piglin"
+      ],
+      "badger:tags": {
+        "tags": [
+          "roaming_piglin_spawner_controller"
+        ]
+      },
+      "badger:buildable_controller_spawner": {
+        "claimed_area": [
+          {
+            //Attack Faction Tier 3 Claimed Op 1
+            "claimed_by": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_warboar_10x",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic"
+            ],
+            "weight": 1
+          },
+          {
+            //Defend Faction Tier 3 Claimed Op 1
+            "claimed_by": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_2x",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_piglin_engineer",
+              "badger:spawner_piglin_engineer"
+            ],
+            "weight": 1
+          },
+          {
+            //Defend Faction Tier 3 Claimed Op 2
+            "claimed_by": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_piglin_engineer",
+              "badger:spawner_piglin_engineer"
+            ],
+            "weight": 1
+          },
+          {
+            //Obstacle Faction Tier 3 Claimed Op 1
+            "claimed_by": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_2x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier"
+            ],
+            "weight": 1
+          },
+          {
+            //Obstacle Faction Tier 3 Claimed Op 2
+            "claimed_by": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier"
+            ],
+            "weight": 1
+          },
+          {
+            //Frost Faction Tier 3 Claimed Op 1
+            "claimed_by": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_2x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_2x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x"
+            ],
+            "weight": 1
+          },
+          {
+            //Frost Faction Tier 3 Claimed Op 2
+            "claimed_by": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_2x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_2x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Attack Op 1
+            "claimed_by": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Attack Op 2
+            "claimed_by": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Defend Op 1
+            "claimed_by": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Defend Op 2
+            "claimed_by": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Obstacle Op 1
+            "claimed_by": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Obstacle Op 2
+            "claimed_by": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Frost Op 1
+            "claimed_by": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Frost Op 2
+            "claimed_by": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "weight": 1
+          }
+        ],
+        "global_active": [
+          {
+            //Attack Horde Tier 3 Roaming Op 1
+            "horde_name": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_warboar_10x",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Attack Horde Tier 3 Roaming Op 2
+            "horde_name": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_warboar_10x",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Defend Horde Tier 3 Roaming Op 1
+            "horde_name": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_engineer",
+              "badger:spawner_piglin_engineer",
+              "badger:spawner_piglin_engineer",
+              "badger:spawner_piglin_engineer",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_bruiser_2x"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Defend Horde Tier 3 Roaming OP 2
+            "horde_name": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_bruiser_2x",
+              "badger:spawner_bruiser_2x"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Obstacle Horde Tier 3 Roaming Op 1
+            "horde_name": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_seeker_2x",
+              "badger:spawner_piglin_seeker",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Obstacle Horde Tier 3 Roaming Op 2
+            "horde_name": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier_2x",
+              "badger:spawner_piglin_grenadier"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Frost Horde Tier 3 Roaming Op 1
+            "horde_name": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Frost Horde Tier 3 Roaming Op 2
+            "horde_name": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x",
+              "badger:spawner_piglin_grunter_2x"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Attack Op 1
+            "horde_name": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Attack Op 2
+            "horde_name": "faction.pig.attack",
+            "spawn": [
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_warboar",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Defend Op 1
+            "horde_name": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Defend Op 2
+            "horde_name": "faction.pig.defend",
+            "spawn": [
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_bruiser",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Obstacle Op 1
+            "horde_name": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Obstacle Op 2
+            "horde_name": "faction.pig.obstacle",
+            "spawn": [
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_grenadier",
+              "badger:spawner_piglin_medic",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Frost Op 1
+            "horde_name": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_piglin_grunter_3x",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_skeleton_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          },
+          {
+            //Vanilla Conflict Tier 3 Frost Op 2
+            "horde_name": "faction.pig.frost",
+            "spawn": [
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_piglin_runt_5x",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_zombie_conflict",
+              "badger:spawner_world_creeper_conflict"
+            ],
+            "times": "night",
+            "weight": 1
+          }
+        ],
+        "ticks_between_checks": 32
+      }
+    }
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "allowedKeyValuePairs": [
+    {
+      "key": "size",
+      "values": [
+        "small",
+        "medium",
+        "large",
+        "boss",
+        "darkBeacon",
+        "act1_a",
+        "act1_b",
+        "act1_c",
+        "frontlineA",
+        "vanguardA",
+        "fobSmall",
+        "fobMedium",
+        "fobLarge",
+        "wofBase",
+        "piglin_occupying_creeper_mob_alliance",
+        "piglin_occupying_skeleton_mob_alliance",
+        "piglin_occupying_spider_mob_alliance",
+        "piglin_occupying_zombie_mob_alliance",
+        "player_outpost",
+        "piglin_act1_first_skirmish",
+        "piglin_act1_second_skirmish",
+        "piglin_act1_non_portal_attack_base",
+        "debug"
+      ]
+    },
+    {
+      "key": "faction",
+      "values": [
+        "faction.player.well",
+        "faction.player.pvp.hq.blue",
+        "faction.player.pvp.hq.red",
+        "faction.pig.defend",
+        "faction.pig.attack",
+        "faction.pig.obstacle",
+        "faction.pig.frost",
+        "faction.pig.roaming",
+        "faction.pig.final",
+        "faction.pig.dbb",
+        "faction.pig.wof",
+        "faction.cul.001",
+        "faction.mob.alliance.creeper",
+        "faction.mob.alliance.skeleton",
+        "faction.mob.alliance.spider",
+        "faction.mob.alliance.zombie",
+        "faction.mob.alliance.piglin.creeper",
+        "faction.mob.alliance.piglin.skeleton",
+        "faction.mob.alliance.piglin.spider",
+        "faction.mob.alliance.piglin.zombie",
+        "faction.poi.tower_01",
+        "faction.poi.tower_02",
+        "faction.poi.tower_04",
+        "faction.poi.tower_05",
+        "faction.poi.mount.01",
+        "faction.poi.mount.03",
+        "faction.poi.mount.04",
+        "faction.poi.mount.06",
+        "faction.poi.mount.07",
+        "faction.poi.ally.01.faction",
+        "faction.poi.ally.02",
+        "faction.poi.ally.04",
+        "faction.poi.ally.05",
+        "faction.poi.ally.06",
+        "faction.poi.legend.dragon.red",
+        "faction.poi.unnatural.landmark.01",
+        "faction.teleport.faction",
+        "faction.onboarding",
+        "faction.witch.pvp"
+      ]
+    },
+    {
+      "key": "player",
+      "values": ["enabled", "disbaled"]
+    },
+    {
+      "key": "mode",
+      "values": [
+        "default",
+        "normal",
+        "fast_travel",
+        "debug_slot_used",
+        "debug_slot_types",
+        "debug_map_markers"
+      ]
+    },
+    {
+      "key": "zoom",
+      "values": ["0", "1"]
+    },
+    {
+      "key": "state",
+      "values": [
+        "default",
+        "visited",
+        "completed",
+        "unhurt",
+        "damaged",
+        "destroyed",
+        "under_attack",
+        "disabled",
+        "disabled_act1",
+        "damaged_act1"
+      ]
+    },
+    {
+      "key": "act1_village_state",
+      "values": ["default", "damaged", "under_attack", "targeted", "targeted_va_act1"]
+    },
+    {
+      "key": "visibility",
+      "values": ["visible", "hidden", "revealed"]
+    },
+    {
+      "key": "game_rule",
+      "values": ["campaign", "pvp"]
+    },
+    {
+      "key": "fast_travel",
+      "values": ["disabled", "enabled"]
+    },
+    {
+      "key": "can_fast_travel",
+      "values": ["true", "false"]
+    },
+    {
+      "key": "fast_travel_alliance_rule_filter",
+      "values": ["friendly", "enemy", "any_team"]
+    },
+    {
+      "key": "boss",
+      "values": [
+        "defeated",
+        "dark_beacon",
+        "defend_base_boss",
+        "attack_base_boss",
+        "obstacle_base_boss",
+        "frost_base_boss",
+        "final_boss"
+      ]
+    },
+    {
+      "key": "invasion_state",
+      "values": ["enabled", "disabled"]
+    },
+    {
+      "key": "invasion",
+      "values": [
+        "village_invasion_disabled",
+        "village_invasion_enabled",
+        "new_village_invasion",
+        "old_village_invasion",
+        "new_invasion_base",
+        "base_expanded",
+        "base_upgraded"
+      ]
+    },
+    {
+      "key": "invasion_intention",
+      "values": [
+        "attacking",
+        "building",
+        "building_outpost",
+        "claiming",
+        "upgrading",
+        "targeted",
+        "targeted_no_witches",
+        "saved",
+        "boss_occupation"
+      ]
+    },
+    {
+      "key": "invasion_active",
+      "values": [
+        "is_attacking",
+        "is_building",
+        "is_upgrading",
+        "is_under_attack",
+        "is_under_attack_no_witches",
+        "is_occupied",
+        "is_boss_occupation"
+      ]
+    },
+    {
+      "key": "invasion_special",
+      "values": ["is_normal","is_boss"]
+    },
+    {
+      "key": "invasion_attack",
+      "values": ["activated", "abandoned"]
+    },
+    {
+      "key": "invasion_attack_auto_resolve",
+      "values": ["undamaged", "damaged"]
+    },
+    {
+      "key": "invasion_recap",
+      "values": [
+        "attack_failure",
+        "attack_success",
+        "attack_success_act1",
+        "built_offensive_outpost",
+        "built_defensive_outpost",
+        "built_new_base",
+        "upgraded",
+        "oopsed",
+        "claimed_area"
+      ]
+    },
+    {
+      "key": "base_loot",
+      "values": [
+        "iron",
+        "gold",
+        "coal",
+        "diamond",
+        "redstone",
+        "xp_common"
+      ]
+    },
+    {
+      "key": "pvp_under_attack",
+      "values": ["disabled", "enabled"]
+    },
+    {
+      "key": "village_chest_state",
+      "values": ["collected", "uncollected", "full"]
+    },
+    {
+      "key": "village_resource",
+      "type": "string"
+    },
+    {
+      "key": "village_resource_visibility",
+      "values": ["hidden", "visible"]
+    },
+    {
+      "key": "village_level",
+      "type": "int"
+    },
+    {
+      "key": "mob_allegiance",
+      "values": ["disabled", "enabled"]
+    },
+    {
+      "key": "onboarding_map",
+      "values": ["disabled", "enabled"]
+    },
+    {
+      "key": "mount_world_spawner_state",
+      "values": ["disabled", "enabled"]
+    },
+    {
+      "key": "campaign_act",
+      "values": ["disabled", "act_1a", "act_1b", "act_2", "act_3", "epilogue"]
+    },
+    {
+      "key": "buildable",
+      "values": [
+        "poi_tower_01",
+        "poi_tower_02",
+        "poi_tower_04",
+        "poi_tower_05",
+        "pvp_hq",
+        "poi_zoner_well_of_fate",
+        "zoner_village_center_fountain",
+        "zoner_fort_outpost"
+      ]
+    },
+    {
+      "key": "mob",
+      "values": [
+        "mob_fallen_warrior",
+        "mob_golem_carrier",
+        "mob_golem_drill",
+        "mob_golem_shield",
+        "mob_golem_sniper"
+      ]
+    },
+    {
+      "key": "world_spawner",
+      "values": ["tiger_mount", "beetle_mount", "bird_mount", "mount_06", "camel_mount"]
+    },
+    {
+      "key": "debug",
+      "values": [
+        "debug_01", 
+        "debug_02", 
+        "debug_03", 
+        "debug_04",
+        "map_marker_green",
+        "map_marker_blue",
+        "map_marker_red",
+        "map_marker_yellow" 
+      ]
+    },
+    {
+      "key": "is_destroyed",
+      "values": ["true", "hidden"]
+    },
+    {
+      "key": "debug_slot_state",
+      "values": ["slot_enabled", "slot_disabled"]
+    },
+    {
+      "key": "debug_slot_name",
+      "type": "string"
+    },
+    {
+      "key": "debug_jason",
+      "type": "string"
+    },
+    {
+      "key": "dotted_line_target",
+      "type": "int"
+    },
+    {
+      "key": "player_id",
+      "type": "string"
+    },
+    {
+      "key": "team",
+      "type": "string"
+    },
+    {
+      "key": "player_waypoint",
+      "values": ["enabled", "disabled"]
+    },
+    {
+      "key": "team_outlines",
+      "values": ["enabled", "disabled"]
+    },
+    {
+      "key": "pvp_village_ownership",
+      "values": ["team_one", "team_two", "both_teams"]
+    },
+    {
+      "key": "claimed_area",
+      "values": ["true"]
+    },
+    {
+      "key": "claimed_area_radius",
+      "type": "float"
+    },
+    {
+      "key": "attacking_faction",
+      "values": [
+        "faction.pig.attack",
+        "faction.pig.defend",
+        "faction.pig.obstacle",
+        "faction.pig.frost"
+      ]
+    },
+    {
+      "key": "strength",
+      "type": "int"
+    },
+    {
+      "key": "claimed_area_visibility",
+      "values": ["visible", "invisible"]
+    },
+    {
+      "key": "attack_horde_arrived",
+      "values": ["true", "false"]
+    },
+    {
+      "key": "defend_horde_arrived",
+      "values": ["true", "false"]
+    },
+    {
+      "key": "obstacle_horde_arrived",
+      "values": ["true", "false"]
+    },
+    {
+      "key": "frost_horde_arrived",
+      "values": ["true", "false"]
+    },
+    {
+      "key": "blue_marker",
+      "type": "string"
+    },
+    {
+      "key": "player_state",
+      "values": [
+        "exploring",
+        "resourcing",
+        "combat",
+        "building"
+      ]
+    },
+    {
+      "key": "district",
+      "values": [
+        "tower",
+        "tower_attack"
+      ]
+    },
+    {
+      "key": "player_damaged",
+      "values": ["damaged"]
+    },
+    {
+      "key": "marker_type",
+      "values": ["waypoint", "attack", "defend", "gather"]
+    },
+    {
+      "key": "objective",
+      "values": ["active", "success", "failure"]
+    },
+    {
+      "key": "witch_hut_state",
+      "values": ["active", "inactive"]
+    }
+  ]
+}

@@ -1,0 +1,452 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:music_combat_obstacle_occupation_1",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:music_2d_emitter": {
+        "priority": 40,
+        "max_distance": 200.0,
+        "on_enter_bae": "",
+        "music_states": [
+          {
+            "state_name": "initial_generic",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_generic",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_generic",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_generic",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_generic",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "initial_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_dbb",
+            "audio_parameters": [
+              {
+                "music_campaign_beat": 4.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 0.0
+              }
+            ]
+          },
+          {
+            "state_name": "initial_attack",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_attack",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_attack",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_attack",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_attack",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 1.0
+              }
+            ]
+          },
+          {
+            "state_name": "initial_defense",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_defense",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_defense",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_defense",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_defense",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 2.0
+              }
+            ]
+          },
+          {
+            "state_name": "initial_obstacle",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_obstacle",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_obstacle",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_obstacle",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_obstacle",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "initial_frost",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 0.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase1_frost",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 1.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase2_frost",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 2.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase3_frost",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 3.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          },
+          {
+            "state_name": "phase4_frost",
+            "audio_parameters": [
+              {
+                "music_state": 2.0
+              },
+              {
+                "combat_intensity": 4.0
+              },
+              {
+                "music_horde_type": 3.0
+              }
+            ]
+          }
+        ]
+      },      
+      "badger:threat_owner": {
+        "influence_distance": 200,
+        "max_threat": 100,
+        "min_threat": 0,
+        "grow_rate": 1.0,
+        "decay_rate": 1.0
+      },
+      "badger:presentation_event": {
+        "on_initialized": {
+          "audio": "BAE_base_specific_snapshot_obstacle_occupation"
+        }
+      }
+    }
+  }
+}
