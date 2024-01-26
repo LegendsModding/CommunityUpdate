@@ -130,7 +130,7 @@
             "trigger": "on_projectile_intercept",
             "on_hit_target_trigger": "on_intercepted",
             "range": {
-              "max_range": 30
+              "max_range": 58
             },
             "state_machine": {
               "cooldown_time": 0.5,

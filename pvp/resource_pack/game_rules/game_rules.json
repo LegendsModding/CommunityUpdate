@@ -4,13 +4,11 @@
 		"parent": "game_rules"
 	},
 	"defaults": {
+		"randomseedoverride": 2070850612,
 		"allowislands": false,
 		"autosaveenabled": true,
 		"bsharpenabled": true,
-		"campaignactsenabled": true,
-		"campaignobjectivehealthbars": false,
 		"creativemodedefault": true,
-		"difficultymodeenabled": false,
 		"dodaylightcycle": true,
 		"dofogofwar": true,
 		"doplayersinvincible": false,
@@ -21,16 +19,25 @@
 		"exclusiveluredunits": true,
 		//"generator_type": "flat",
 		"mapenabled": true,
-		"onboardingenabledcampaign": false,
 		"onboardingenabledpvp": false,
 		"popcapenabled": false,
 		"precachestructures": true,
 		"randomstartingteam": false,
 		"saveonquitenabled": true,
 		"skip_lobby_creation": false,
+		"teamcompassicons": true,
+		"allowteamswitching": true,
+		"difficultymodeenabled": true,
 		"teamcolors": true,
 		"use_flatlands_level_id": false,
 		"useactiontelemetry": false,
-		"worldsizeaxischunks": 400
+		"worldsizeaxischunks": 400,
+		//"preloadworldchunkradius": 45,
+		"onboardingenabledcampaign": false,
+		"allaymessages": false,
+		"factioncoloricon": false,
+		"pvpobjectivehealthbars": true,
+		"hostquitbanenabled": false,
+		"usepvptutorialscripts": false
 	}
 }

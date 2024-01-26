@@ -187,7 +187,7 @@
       "geometry": {
         "default": "geometry.mount_beetle"
       },
-      "identifier": "badger:mob_test_spa",
+      "identifier": "badger:mount_bird_dev",
       "materials": {
         "mat_mount_beetle": "mat_mount_beetle",
         "mat_mount_beetle_de": "mat_mount_beetle_de",

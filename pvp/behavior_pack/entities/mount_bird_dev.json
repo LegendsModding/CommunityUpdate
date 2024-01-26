@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "badger:mob_test_spa",
+      "identifier": "badger:mount_bird_dev",
       "runtime_identifier": "badger:badger_mob",
       "is_summonable": true
     },
@@ -14,7 +14,7 @@
         "height": 1.8
       },
       "badger:physics": {
-        "gravity": -10,
+        "gravity": -30,
         "friction": 0.1,
         "buoyancy": 30,
         "water_drag": 0,
@@ -58,10 +58,10 @@
         "cooldown_time": 0.0
       },
       "badger:jump": {
-        "initial_height": 150,
+        "initial_height": 300,
         "hold_velocity": {
           "start": 0.01,
-          "end": -60.0
+          "end": 0.0
         },
         "hold_duration": 1.0,
         "jump_from_water": true
