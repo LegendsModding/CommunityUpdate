@@ -42,6 +42,16 @@
             ]
           },
           {
+            "unit_tag": "unit_direct_slime",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_slime",
+                "amount": 1
+              }
+            ]
+          },
+          {
             "unit_tag": "unit_direct_fallen_warrior",
             "visual_placement": "above_category",
             "unlock": [
@@ -52,11 +62,11 @@
             ]
           },
           {
-            "unit_tag": "unit_direct_drill_golem",
+            "unit_tag": "unit_direct_grappler_golem",
             "visual_placement": "above_category",
             "unlock": [
               {
-                "item": "unlock_battle_view_drill_golem",
+                "item": "unlock_battle_view_grappler_golem",
                 "amount": 1
               }
             ]
@@ -112,6 +122,16 @@
                 "amount": 1
               }
             ]
+          },
+          {
+            "unit_tag": "unit_direct_drill_golem",
+            "visual_placement": "above_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_drill_golem",
+                "amount": 1
+              }
+            ]
           }
         ]
       },
@@ -136,6 +156,16 @@
             "unlock": [
               {
                 "item": "unlock_battle_view_creeper",
+                "amount": 1
+              }
+            ]
+          },
+          {
+            "unit_tag": "unit_direct_silverfish",
+            "visual_placement": "below_category",
+            "unlock": [
+              {
+                "item": "unlock_battle_view_silverfish",
                 "amount": 1
               }
             ]

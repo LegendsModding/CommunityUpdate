@@ -1,0 +1,123 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_silverfish",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_silverfish",
+        "tooltip_title": "structures.spawner.silverfish.name",
+        "tactical_description": "structures.spawner_silverfish.tactical_description",
+        "tooltip_description": "structures.spawner.silverfish.description",
+        "buildable_category": "mobs",
+        "sort_order": 1530
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_silverfish",
+        "build_time": 4,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spawner_silverfish"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 25
+          },
+          {
+            "item": "stone",
+            "amount": 25
+          },
+          {
+            "item": "coal",
+            "amount": 5
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ],
+        "unlock": [
+          {
+            "item": "unlock_spawner_silverfish",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_silverfish",
+            "percentage": 1
+          }
+        ],
+        "batch_size_phase": {
+          "continuous_spawn_timeout": 2,
+          "phases": [
+            {
+              "threshold": 10,
+              "batch_size": 2
+            }
+          ]
+        },
+        "cap": -1,
+        "rate": 0,
+        "max_radius": 5,
+        "max_height_difference": 4,
+        "disable_wander": true,
+        "enable_recall": true,
+        "requires_input": true,
+        "has_spawn_cost": true,
+        "disable_pop_cap_culling": true
+      },
+      "badger:text_markup_icon_name": {
+        "name": "key.item.silverfishSpawner"
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "player_buildable",
+          "spawner",
+          "silverfishspawner",
+          "tier2PlayerStructure"
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_spawner_silverfish",
+        "label": "structures.spawner.silverfish.name"
+      },
+      "badger:template": [
+        "badger:template_spawner",
+        "badger:template_structure_player"
+      ],
+      "badger:village_influence": {
+        "amount": 10
+      }
+    }
+  }
+}

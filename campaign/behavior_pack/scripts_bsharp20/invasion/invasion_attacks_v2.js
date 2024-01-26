@@ -40,6 +40,12 @@ const invasionAttackV2Data = {
             [MOB_ALLIANCE_NAME_SPIDER]: {
                 defended: "village_attack_spiders_defended"
             },
+            [MOB_ALLIANCE_NAME_SLIME]: {
+                defended: "village_attack_slimes_defended"
+            },
+            [MOB_ALLIANCE_NAME_SILVERFISH]: {
+                defended: "village_attack_silverfishes_defended"
+            },
             [MOB_ALLIANCE_NAME_ZOMBIE]: {
                 defended: "village_attack_zombies_defended"
             }
@@ -152,6 +158,26 @@ const invasionAttackV2Data = {
                 spawn: {
                     cineId: "mob04_c06_spider_obspawn",
                     centralStructureTag: "mob_alliance_spider_central_flame"
+                }
+            },
+            [MOB_ALLIANCE_NAME_SLIME]: {
+                saved: {
+                    cineId: "mob05_c07_slimes_defended",
+                    centralStructureTag: "mob_alliance_slime_central_flame"
+                },
+                spawn: {
+                    cineId: "mob05_c06_slime_obspawn",
+                    centralStructureTag: "mob_alliance_slime_central_flame"
+                }
+            },
+            [MOB_ALLIANCE_NAME_SILVERFISH]: {
+                saved: {
+                    cineId: "mob05_c07_silverfishes_defended",
+                    centralStructureTag: "mob_alliance_silverfish_central_flame"
+                },
+                spawn: {
+                    cineId: "mob05_c06_silverfish_obspawn",
+                    centralStructureTag: "mob_alliance_silverfish_central_flame"
                 }
             },
             [MOB_ALLIANCE_NAME_ZOMBIE]: {
@@ -1479,6 +1505,12 @@ const StartHeartSequence = (villageId) => {
             break
         case MOB_ALLIANCE_NAME_SPIDER:
             villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_spider_mob"], [])
+            break
+        case MOB_ALLIANCE_NAME_SLIME:
+            villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_slime_mob"], [])
+            break
+        case MOB_ALLIANCE_NAME_SILVERFISH:
+            villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_silverfish_mob"], [])
             break
         case MOB_ALLIANCE_NAME_ZOMBIE:
             villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_zombie_mob"], [])

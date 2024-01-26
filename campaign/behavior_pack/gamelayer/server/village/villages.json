@@ -48,6 +48,8 @@
         "mount_04_food",
         "mount_06_food",
         "mount_07_food",
+        "mount_08_food",
+        "mount_09_food",
         "mob_world_spawner"
       ],
       "exclude_any": [
@@ -205,6 +207,16 @@
     },
     {
       "size": "piglin_occupying_spider_mob_alliance",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "piglin_occupying_slime_mob_alliance",
+      "ui_key": "piglin.base_size.small",
+      "pips": 1
+    },
+    {
+      "size": "piglin_occupying_silverfish_mob_alliance",
       "ui_key": "piglin.base_size.small",
       "pips": 1
     },

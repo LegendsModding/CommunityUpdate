@@ -423,6 +423,178 @@
             }
           }
         ]
+    },
+    {
+      "unique_card_id": "badger_mount_8_poi_deck",
+      "map_data": "badger:poi_mount_lizard_faction",
+      "village_data": "badger:poi_mount_08_village",
+      "placement_name": "mount_8",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_08"
+      ],
+      "biome": {
+        "biome": "desert",
+        "total_pixels": 3,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_lizard_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            23
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+          {
+            "distance": {
+              "one_of": [
+                {
+                  "chunk_distance_from_parent": [
+                    30,
+                    100
+                  ],
+                  "distance_to_zero_score": 0,
+                  "tag_parent": "brokenlands_1"
+                },
+                {
+                  "chunk_distance_from_parent": [
+                    0,
+                    100
+                  ],
+                  "distance_to_zero_score": 30,
+                  "tag_parent": "brokenlands_2"
+                }
+              ],
+              "weight": 2
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "village",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "poi",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 10,
+              "distance_to_zero_score": 0,
+              "tag_parent": "wellOfFate",
+              "weight": 2
+            }
+          }
+        ]
+    },
+    {
+      "unique_card_id": "badger_mount_9_poi_deck",
+      "map_data": "badger:poi_mount_ravager_faction",
+      "village_data": "badger:poi_mount_09_village",
+      "placement_name": "mount_9",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "poi_mount_09"
+      ],
+      "biome": {
+        "biome": "desert",
+        "total_pixels": 3,
+        "starting_pixels": 1,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_mount_ravager_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            20,
+            23
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+          {
+            "distance": {
+              "one_of": [
+                {
+                  "chunk_distance_from_parent": [
+                    30,
+                    100
+                  ],
+                  "distance_to_zero_score": 0,
+                  "tag_parent": "brokenlands_1"
+                },
+                {
+                  "chunk_distance_from_parent": [
+                    0,
+                    80
+                  ],
+                  "distance_to_zero_score": 30,
+                  "tag_parent": "brokenlands_2"
+                }
+              ],
+              "weight": 2
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "village",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 30,
+              "distance_to_zero_score": 10,
+              "tag_parent": "poi",
+              "weight": 3
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": 10,
+              "distance_to_zero_score": 0,
+              "tag_parent": "wellOfFate",
+              "weight": 2
+            }
+          }
+        ]
     }
   ]
 }

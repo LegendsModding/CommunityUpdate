@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_crab": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_crab": "MetaMaterial.mat_animal_crab"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

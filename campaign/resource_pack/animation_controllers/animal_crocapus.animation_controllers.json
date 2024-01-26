@@ -1,0 +1,279 @@
+{
+  "animation_controllers": {
+    "controller.animation.animal_crocapus.default": {
+      "initial_state": "idle",
+      "states": {
+        "climb": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "select_variable": "variable.climbchooser",
+          "transitions":  [
+            {
+              "walk": "(((query.speed > 0) && (query.velocity_y <= 0)) && query.any_animation_finished)"
+            },
+            {
+              "idle": "(((query.speed <= 0) && (query.velocity_y <= 0)) && query.any_animation_finished)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(variable.is_stunned && !query.in_knockback)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idles": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(variable.is_stunned && !query.in_knockback)"
+            },
+            {
+              "climb": "((query.velocity_y > 0) && !variable.is_swimming)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "patpat": "variable.patpat"
+            }
+          ]
+        },
+        "knockback": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "knockback_end": "!query.in_knockback"
+            }
+          ]
+        },
+        "knockback_end": {
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "stun": "(variable.is_stunned && !query.in_knockback)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "patpat": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "idle": "!variable.patpat"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "!variable.is_stunned"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "climb": "((query.velocity_y > 0) && !variable.is_swimming)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(variable.is_stunned && !query.in_knockback)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.animal_crocapus.hit_reaction": {
+      "states": {
+        "enter_exit": {
+          "transitions":  [
+            {
+              "hit_react": "((variable.normal_hit || variable.intense_hit) || query.in_knockback)"
+            }
+          ]
+        },
+        "hit_react": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "in_air": "(query.in_knockback && query.any_animation_finished)"
+            },
+            {
+              "enter_exit": "(!query.in_knockback && query.any_animation_finished)"
+            }
+          ]
+        },
+        "in_air": {
+          "transitions":  [
+            {
+              "landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "landing": {
+          "transitions":  [
+            {
+              "enter_exit": "(query.velocity_y <= 0)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.animal_crocapus.idles": {
+      "initial_state": "on_land",
+      "states": {
+        "in_water": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "on_land": "!variable.is_swimming"
+            }
+          ]
+        },
+        "on_land": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "in_water": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.animal_crocapus.locomotion": {
+      "initial_state": "walk",
+      "states": {
+        "sprint": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 2.5))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 2.5))"
+            },
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 2.5))"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 2.5))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

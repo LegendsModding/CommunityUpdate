@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0", 
+  "mat_item_mob_silverfish:base_entity_static": {
+    "pass": "transparentafterworld",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_item_mob_silverfish_d", 
+      "emissiveMap": "textures/entity/tex_item_mob_silverfish_e"
+    }
+  }
+}

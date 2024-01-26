@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_db_ally_silverfish",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Piglin"
+    },
+    "components": {
+      "badger:scriptable_buildable_spawner": {},
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_silverfish",
+            "percentage": 1
+          }
+        ],
+        "spawn_delay": 0.0,
+        "cap": 0,
+        "rate": 0,
+        "offset": [
+          0.0,
+          2.0,
+          3.0
+        ],
+        "batch": 0,
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:tags": {
+        "tags": [
+          "db_ally_spawner",
+          "spawner_db_ally_silverfish",
+          "donotattack",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure"
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "nbbAlly"
+        ]
+      },
+      "badger:template": "badger:template_spawner_db_ally"
+    }
+  }
+}

@@ -9,8 +9,20 @@
         },
         {
           "include_tags": [
+            "killer_rabbit"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
             "buff_giant",
             "animal"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "silverfish"
           ],
           "exclude_tags": []
         },
@@ -42,6 +54,12 @@
         {
           "include_tags": [
             "zombie"
+          ],
+          "exclude_tags": []
+        },
+        {
+          "include_tags": [
+            "slime"
           ],
           "exclude_tags": []
         },

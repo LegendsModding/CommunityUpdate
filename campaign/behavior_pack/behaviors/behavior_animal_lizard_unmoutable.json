@@ -1,0 +1,61 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:behavior_animal_lizard_unmoutable",
+        "runtime_identifier": "badger:behavior"
+      },
+      "components": {
+        "badger:movement": {
+          "move_speed": 6
+        },
+        "badger:wander": {
+          "wander_frequency": 0.15,
+          "wander_radius": 20
+        },
+        "badger:tags": {
+          "tags": [
+            "animal_lizard",
+            "luredirect",
+            "poi_mount",
+            "neutral",
+            "poi_mount_lizard",
+            "poi_mount_08",
+            "mob"
+          ]
+        },
+        "badger:targeting": {
+          "targeting_priorities": [
+            {
+              "max_range": 8,
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly",
+              "actions": [
+                "player_stop"
+              ]
+            }
+          ]
+        },
+        "badger:damage_receiver": {
+          "auto_generate_shape": "cylinder"
+        },
+        "badger:target_actions": {
+          "actions": [
+            {
+              "name": "player_stop",
+              "range": {
+                "min_range": 0.5,
+                "max_range": 5
+              }
+            }
+          ]
+        },
+        "badger:behavior_offline_traits": {
+          "traits_phase": "DISABLED"
+        }
+      }
+    }
+  }

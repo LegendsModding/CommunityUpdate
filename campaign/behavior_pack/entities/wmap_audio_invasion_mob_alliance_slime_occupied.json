@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_audio_invasion_mob_alliance_slime_occupied",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:map3_tooltip_audio": {
+                "event_id": "map_slimes_occupied",
+                "event_type": "PresentationAction",
+                "selection_time": 2.0,
+                "cooldown_time": 20.0
+            }
+        }
+    }
+}

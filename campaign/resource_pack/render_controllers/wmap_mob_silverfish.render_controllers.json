@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_silverfish": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "wmap_mob_silverfish": "MetaMaterial.wmap_mob_silverfish"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

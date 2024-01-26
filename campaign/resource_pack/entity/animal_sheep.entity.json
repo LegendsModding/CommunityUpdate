@@ -1,0 +1,65 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2,
+        "position_interpolation_steps": 2
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:mount_molang": {
+        "mount_variable": "animal_sheep"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_rabbit_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_rabbit_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_rabbit_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:animal_sheep",
+        "limit": 256
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "default": "controller.animation.animal_sheep.default",
+        "hit_reaction": "controller.animation.animal_sheep.hit_reaction",
+        "idle_a": "animation.animal_sheep.idle_a",
+        "idles": "controller.animation.animal_sheep.idles",
+        "locomotion": "controller.animation.animal_sheep.locomotion",
+        "walk_a": "animation.animal_sheep.walk_a"
+      },
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.animal_sheep"
+      },
+      "identifier": "badger:animal_sheep",
+      "materials": {
+        "mat_animal_sheep": "mat_animal_sheep"
+      },
+      "render_controllers": ["controller.render.animal_sheep"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

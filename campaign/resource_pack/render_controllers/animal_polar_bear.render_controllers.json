@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_polar_bear": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_polar_bear": "MetaMaterial.mat_animal_polar_bear"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

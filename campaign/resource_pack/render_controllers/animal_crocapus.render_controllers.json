@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_crocapus": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_crocapus": "MetaMaterial.mat_animal_crocapus"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

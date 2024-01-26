@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mount_ravager": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mount_ravager": "MetaMaterial.mat_wmap_mount_ravager"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:poi_ally_07_faction"
+        },
+        "components": {
+            "badger:faction": {
+                "id": "faction.poi.ally.07",
+                "name": "poi.ally.07.faction.name",
+                "description": "poi.ally.07.faction.description",
+                "known": true
+            },
+            "badger:campaign_team": {
+                "team_tag": "campaign_team"
+            }
+        }
+    }
+}

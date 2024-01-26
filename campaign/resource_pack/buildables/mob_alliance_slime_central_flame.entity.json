@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "badger:mob_alliance_slime_central_flame"
+        },
+        "components": {
+            "badger:presentation_event": {
+                "on_initialized": {
+                    "audio": "BAE_mob_alliance_slime_central"
+                },
+                "slime_joined_the_battle": {
+                    "audio": "BAE_MUS_Piglin_Combat_Stinger_slime_mob_alliance"
+                },
+                "on_piglin_combat_start": {
+                    "audio": {
+                        "event": "BAE_MUS_Piglin_Combat",
+                        "is_music": true,
+                        "music_type": "combat"
+                    }
+                },
+                "on_piglin_combat_phase1": {
+                    "audio": {
+                        "event": "BAE_MUS_Piglin_Combat_Phase1",
+                        "is_music": true,
+                        "music_type": "combat"
+                    }
+                },
+                "on_piglin_combat_phase2": {
+                    "audio": {
+                        "event": "BAE_MUS_Piglin_Combat_Phase2",
+                        "is_music": true,
+                        "music_type": "combat"
+                    }
+                },
+                "on_piglin_combat_stop": {
+                    "audio": {
+                        "event": "BAE_MUS_Piglin_Combat_Stop",
+                        "is_music": true,
+                        "music_type": "combat"
+                    }
+                },
+                "on_damage_applied_to_structure_1": {
+                    "audio": "BAE_mob_alliance_slime_central_flame_damage_state_1"
+                },
+                "on_damage_applied_to_structure_2": {
+                    "audio": "BAE_mob_alliance_slime_central_flame_damage_state_2"
+                },
+                "on_damage_applied_to_structure_3": {
+                    "audio": "BAE_mob_alliance_slime_central_flame_damage_state_3"
+                }
+            }
+        }
+    }
+}

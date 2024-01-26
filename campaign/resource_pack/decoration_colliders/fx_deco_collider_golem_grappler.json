@@ -1,0 +1,17 @@
+{
+    "format_version": "1.0.0",
+    "badger:decoration_collider": {
+        "identifier": "badger:fx_deco_collider_golem_grappler",
+        "offset": [
+            0.0,
+            0.0,
+            -0.6
+        ],
+        "height": 0.0,
+        "inner_radius": 10.0,
+        "outer_radius": 15.0,
+        "intensity": "1.5 * (Math.sin(Math.pow(variable.collider_normalized_age, 0.8) * 1440.0) * (variable.collider_one_minus_normalized_age * variable.collider_one_minus_normalized_age))",
+        "duration": 3.0,
+        "priority": 2000
+    }
+}

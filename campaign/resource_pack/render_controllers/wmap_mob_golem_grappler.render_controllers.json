@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_golem_grappler": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mob_golem_grappler": "MetaMaterial.mat_wmap_mob_golem_grappler"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

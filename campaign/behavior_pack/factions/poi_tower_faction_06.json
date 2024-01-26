@@ -1,0 +1,19 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_tower_faction_06"
+    },
+    "components": {
+      "badger:faction": {
+        "id": "faction.poi.tower_06",
+        "name": "poi.tower_village_06.name",
+        "description": "poi.tower_village_06.description",
+        "known": true
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      }
+    }
+  }
+}

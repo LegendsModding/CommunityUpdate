@@ -17,7 +17,8 @@
       "poi_tower_01_resource",
       "poi_tower_02_resource",
       "poi_tower_04_resource",
-      "poi_tower_05_resource"
+      "poi_tower_05_resource",
+      "poi_tower_06_resource"
     ],
     "max_hotbar_size": 8,
     "show_interactable_building": true,
@@ -57,8 +58,9 @@
           "unit_direct_stone_golem",
           "unit_direct_zombie",
           "unit_direct_vindicator",
+          "unit_direct_slime",
           "unit_direct_fallen_warrior",
-          "unit_direct_drill_golem"
+          "unit_direct_grappler_golem"
         ]
       },
       {
@@ -71,7 +73,8 @@
           "unit_direct_skeleton",
           "unit_direct_spider",
           "unit_direct_witch",
-          "unit_direct_sniper"
+          "unit_direct_sniper",
+          "unit_direct_drill_golem"
         ]
       },
       {
@@ -82,6 +85,7 @@
           "unit_direct_special",
           "unit_direct_cavalry_golem",
           "unit_direct_creeper",
+          "unit_direct_silverfish",
           "unit_direct_carrier_golem"
       ]
       },

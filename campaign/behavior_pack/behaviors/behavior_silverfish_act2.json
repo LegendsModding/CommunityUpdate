@@ -1,0 +1,379 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:behavior_silverfish_act2",
+      "runtime_identifier": "badger:behavior"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Buildable targeting
+          {
+            "name": "silverfish_buildable_attack",
+            "enable_with_line_of_sight": true,
+            "max_range": 3,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "wall",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          {
+            "name": "silverfish_wall_attack",
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "max_range": 2,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "silverfish_mob_attack_crowd",
+            "max_range": 4,
+            "required_target_count": 10,
+            "action_tickets": {
+              "ct": 1
+            },
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          {
+            "name": "silverfish_mob_attack_group",
+            "max_range": 4,
+            "required_target_count": 5,
+            "action_tickets": {
+              "ct": 1
+            },
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          {
+            "name": "silverfish_mob_attack",
+            "max_range": 1,
+            "action_tickets": {
+              "ct": 1
+            },
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },
+          //General targeting
+          {
+            "name": "silverfish_general_attack",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "pigGoldMine",
+              "wall"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          {
+            "name": "silverfish_goldmine_attack",
+            "max_range": 1,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "pigGoldMine"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "wall"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          {
+            "name": "silverfish_wall_attack_target",
+            "enable_with_line_of_sight": true,
+            "enabled_duration": 2.5,
+            "max_range": 0.6,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "silverfish_special_attack"
+            ]
+          },
+          //Bespoke Targeting
+          {
+            "name": "cheer",
+            "only_when_idle": true,
+            "max_range": 15,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "cheer"
+            ]
+          },
+          {
+            "name": "chat",
+            "only_when_idle": true,
+            "max_range": 13,
+            "required_target_count": 2,
+            "include_tags": [
+              "silverfish"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "chat"
+            ]
+          },
+          {
+            "name": "dance",
+            "only_when_idle": true,
+            "max_range": 30,
+            "include_tags": [
+              "poi"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "dance"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "silverfish_special_attack",
+            "on_hit_target_trigger": "on_silverfish_aoe_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 1.5
+            },
+            "transfer_activation": [
+              "silverfish_feared"
+            ],
+            "state_machine": {
+              "wind_up": 2.3
+            },
+            "interruptible": {
+              "time_window": 2.3,
+              "cooldown_override": 1.0
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 6.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": ["siege_projectile"],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 50,
+                "damage_types": [
+                  "explosion",
+                  "silverfish"
+                ]
+              },
+              "apply_status": {
+                "stunned": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 55,
+                "force": 25
+              },
+              "falloff": {
+                "min_radius": 1.5,
+                "max_radius": 6.0,
+                "min_angle": 25,
+                "min_damage": 10
+              }
+            },
+            "suicide_action": {}
+          },
+          {
+            "name": "silverfish_feared",
+            "on_hit_target_trigger": "on_silverfish_aoe_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 2.63
+            },
+            "interruptible": {
+              "time_window": 2.3,
+              "cooldown_override": 1.0
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 10,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "explosion"
+                ]
+              },
+              "apply_status": {
+                "feared": {
+                  "strength": 1.0
+                }
+              }
+            }
+          },
+          {
+            "name": "silverfish_approach",
+            "range": {
+              "max_range": 1
+            }
+          },
+          {
+            "name": "chat",
+            "trigger": "on_chat",
+            "range": {
+              "max_range": 2
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 7.3,
+              "cooldown_time": 8,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {}
+          },
+          {
+            "name": "cheer",
+            "trigger": "on_cheer",
+            "range": {
+              "min_range": 1,
+              "max_range": 3
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 4.3,
+              "cooldown_time": 45,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {}
+          },
+          {
+            "name": "dance",
+            "range": {
+              "min_range": 10,
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 0,
+              "wind_down": 4.3,
+              "cooldown_time": 60.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {}
+          }
+        ]
+      }
+    }
+  }
+}

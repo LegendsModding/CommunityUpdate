@@ -1,0 +1,32 @@
+{
+    "format_version": "1.13.0",
+    "code:place_nbt": {
+        "description": {
+            "identifier": "badger:feature_spawner_animal_penguin"
+        },
+        "structure_name": "spawner_block_animal_penguin",
+        "placement_range": {
+            "x": [
+                0,
+                3
+            ],
+            "y": [
+                0,
+                3
+            ],
+            "z": [
+                0,
+                3
+            ]
+        },
+        "facing_direction": "random",
+        "constraints": {
+            "block_intersection": {
+                "block_allow_list": [
+                    "minecraft:air"
+                ]
+            },
+            "grounded": {}
+        }
+    }
+}

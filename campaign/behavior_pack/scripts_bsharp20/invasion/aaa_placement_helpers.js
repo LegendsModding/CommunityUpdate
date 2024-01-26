@@ -159,7 +159,7 @@ const _GetHordeClusterPosition = (horde) => {
 // There is only one slot per each mob alliance so this is safe.
 const _GetMobAllianceOccupationBases = () => {
     const occupationBases = []
-    const mobIds = ["creeper", "skeleton", "spider", "zombie"]
+    const mobIds = ["creeper", "skeleton", "spider", "silverfish", "slime", "zombie"]
     for (const mob of mobIds) {
         const occupationBaseSlot = maOccupationVal[mob].baseSlot
         OUTPUT_PlacementStart()

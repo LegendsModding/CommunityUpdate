@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_slime_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.8125,
+        "length": 0.375,
+        "width": 0.34375
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

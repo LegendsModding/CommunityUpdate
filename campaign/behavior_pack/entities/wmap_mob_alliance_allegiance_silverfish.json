@@ -1,0 +1,20 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_mob_alliance_allegiance_silverfish",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": false
+        },
+        "components": {
+            "badger:map3_tooltip_extended": {
+                "description": "tooltip.mob.alliance.allegiance.silverfish",
+                "priority": 2
+            },
+            "badger:map3_tooltip_audio": {
+                "event_id": "BAE_ui_wmap_invasion_tooltip_telegraph_generic_positive",
+                "event_type": "Music"
+            }
+        }
+    }
+}

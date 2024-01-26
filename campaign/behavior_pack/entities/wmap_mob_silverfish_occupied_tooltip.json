@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_mob_silverfish_occupied_tooltip",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:map3_tooltip": {
+        "title": "mob.alliance.silverfish.name",
+        "description": "mob.alliance.silverfish.description",
+        "banner": "map_screen/banners/legend_banner_mob_silverfish_occupied.png",
+        "priority": 4
+      }
+    }
+  }
+}

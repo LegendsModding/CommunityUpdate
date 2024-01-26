@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_mount_ravager:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_mount_ravager_d",
+      "coeffMap": "textures/entity/tex_wmap_mount_ravager_mr",
+      "normalMap": "textures/entity/tex_wmap_mount_ravager_n"
+    }
+  }
+}

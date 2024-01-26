@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:wmap_giant_tower_tooltip_act1",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": true
+      },
+      "components": {
+        "badger:map3_tooltip": {
+          "title": "poi.tower_village_06.name",
+          "description": "poi.tower_village_act1.description",
+          "banner": "map_screen/banners/legend_banner_tower_giant.png"
+        }
+      }
+    }
+  }

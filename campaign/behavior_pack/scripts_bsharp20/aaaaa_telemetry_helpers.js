@@ -20,7 +20,8 @@ const TELEMETRY_SUBCATEGORIES = {
     KNOCKBACK_TOWER: "knockback_tower",
     FREEZE_TOWER: "freeze_tower",
     STUN_TOWER: "stun_tower",
-    BURN_TOWER: "burn_tower"
+    BURN_TOWER: "burn_tower",
+    GIANT_TOWER: "giant_tower"
 }
 
 const TELEMETRY_ACTION_TYPE = {
@@ -84,7 +85,8 @@ const TELEMETRY_KEY_ACTION_COMPLETED_CATEGORIES = {
     POI_ALLY_02: "poi_ally_02",
     POI_ALLY_04: "poi_ally_04",
     POI_ALLY_05: "poi_ally_05",
-    POI_ALLY_06: "poi_ally_06"
+    POI_ALLY_06: "poi_ally_06",
+    POI_ALLY_07: "poi_ally_07"
 }
 
 const TELEMETRY_CAMPAIGN_PROGRESS = {
@@ -364,6 +366,12 @@ const TelemetrySendInvasionAttackConcludedEvent = (attackV2Data, defenseSuccess,
             break
         case MOB_ALLIANCE_NAME_SPIDER:
             attackArea = "spider_mob_alliance"
+            break
+        case MOB_ALLIANCE_NAME_SLIME:
+            attackArea = "slime_mob_alliance"
+            break
+        case MOB_ALLIANCE_NAME_SILVERFISH:
+            attackArea = "silverfish_mob_alliance"
             break
         case MOB_ALLIANCE_NAME_ZOMBIE:
             attackArea = "zombie_mob_alliance"

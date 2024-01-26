@@ -1,0 +1,9 @@
+{
+    "format_version": "1.8.0",
+    "mat_animal_sheep:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/wetlands/tex_animal_sheep_d"
+        }
+    }
+}

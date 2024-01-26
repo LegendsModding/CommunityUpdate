@@ -1,0 +1,83 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:poi_tower_06_buildable",
+            "runtime_identifier": "badger:buildable",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:buildable_structure": {
+                "buildable_placed_player_trigger": "on_building_poi_tower_06_buildable"
+            },
+            "badger:buildable_presentation": {
+                "buildable_category": "utility",
+                "sort_order": 3181
+            },
+            "badger:buildable_requirement": {
+                "recipe": [
+                    {
+                        "item": "stone",
+                        "amount": 125
+                    },
+                    {
+                        "item": "diamond",
+                        "amount": 100
+                    },
+                    {
+                        "item": "poi_tower_06_resource",
+                        "amount": 1
+                    }
+                ],
+                "ticket_cost": [
+                    {
+                        "ticket": "build",
+                        "amount": 1
+                    }
+                ],
+                "invalid_blocks": [],
+                "invalid_block_tags": [
+                    "water",
+                    "lava",
+                    "netherrack",
+                    "gatherable_denether",
+                    "piglin_base_not_buildable",
+                    "barrier",
+                    "world_hazard"
+                ]
+            },
+            "badger:health": {
+                "max_health": 600
+            },
+            "badger:deconstruction": {
+                "deconstruct_time_percent": 1,
+                "resource_refund_percent": 1,
+                "isIndestructable": false,
+                "unlock": [],
+                "resource_cost": [],
+                "ticket_cost": []
+            },
+            "badger:zone_visualization": {
+                "group": "carpenter"
+            },
+            "badger:interactable": {
+                "interactions": [
+                    {
+                        "name": "interaction_zone",
+                        "range": 8.0,
+                        "delay": 1,
+                        "include_tags": [
+                            "player"
+                        ],
+                        "exclude_tags": [],
+                        "alliance_rule_filter": "friendly",
+                        "input_layout_override": "overlay_gameplay_interaction"
+                    }
+                ]
+            },
+            "badger:template": [
+                "badger:poi_tower_06"
+            ]
+        }
+    }
+}

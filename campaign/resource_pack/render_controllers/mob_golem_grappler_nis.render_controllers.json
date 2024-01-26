@@ -1,0 +1,18 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_grappler_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_grappler": "MetaMaterial.mat_mob_golem_grappler"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_cube": "variable.geo_cube_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

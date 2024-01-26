@@ -1,0 +1,59 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_mount_09_ravager_home",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_ravager",
+        "buildable_category": "",
+        "height_offset": -3
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_structure": {
+        "nbt_file": "poi_mount_09_ravager_home",
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:culture": {
+        "base_culture_a": 15
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "poi",
+          "poi_mount_09_ravager_home",
+          "poi_mount_ravager_home"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:animal_ravager",
+            "percentage": 1
+          }
+        ],
+        "spawn_delay": 4,
+        "cap": 4,
+        "batch": 4,
+        "rate": 30,
+        "offset": [
+          -5,  
+          5.0,
+          5
+        ],
+        "max_height_difference": 10,
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:template": "badger:template_poi"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_world_slime_homestead",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "campaign_team"
+      },
+      "badger:tags": {
+        "tags": [
+          "spawner_world_slime",
+          "mob_world_spawner"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_slime",
+            "percentage": 1
+          }
+        ],
+        "cap": 20,
+        "batch": 3,
+        "rate": 10,
+        "max_radius": 75,
+        "min_radius": 40
+      },
+      "badger:spawner_rules": {
+        "bsharp_rule": {
+          "variable": "gv_world_spawner_slime_homestead",
+          "value": 0
+        }
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "world_mob",
+          "homestead_mob"
+        ]
+      }
+    }
+  }
+}

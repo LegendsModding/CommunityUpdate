@@ -1,0 +1,611 @@
+{
+  "animation_controllers": {
+    "controller.animation.mount_lizard.audio": {
+      "initial_state": "idle",
+      "states": {
+        "double_jump": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "fall_loop_stop",
+              "enabled": true
+            },
+            {
+              "effect": "double_jump",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "falling": "((query.isonground != 1) && (query.velocity_y < -0.3))"
+            },
+            {
+              "jump_exit": "query.isonground"
+            }
+          ]
+        },
+        "falling": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "fall_loop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "jump_exit": "query.isonground"
+            },
+            {
+              "double_jump": "((query.isdoublejumping > 0) && (query.isonground != 1))"
+            }
+          ]
+        },
+        "idle": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "run_loop_stop",
+              "enabled": true
+            },
+            {
+              "effect": "water_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "run": "(query.speed > 8)"
+            },
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "swim_enter": "variable.is_swimming"
+            }
+          ]
+        },
+        "jump_enter": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "jump",
+              "enabled": true
+            },
+            {
+              "effect": "run_loop_stop",
+              "enabled": true
+            },
+            {
+              "effect": "water_stop",
+              "enabled": true
+            },
+            {
+              "effect": "dx_jump",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "jump_exit": "query.isonground"
+            },
+            {
+              "falling": "((query.isonground != 1) && (query.velocity_y < -0.3))"
+            },
+            {
+              "double_jump": "((query.isdoublejumping > 0) && (query.isonground != 1))"
+            }
+          ]
+        },
+        "jump_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "land",
+              "enabled": true
+            },
+            {
+              "effect": "fall_loop_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "swim_enter": "variable.is_swimming"
+            }
+          ]
+        },
+        "run": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "water_stop",
+              "enabled": true
+            },
+            {
+              "effect": "run_loop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "swim_enter": "variable.is_swimming"
+            },
+            {
+              "idle": "(query.speed < 8)"
+            }
+          ]
+        },
+        "swim_enter": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "sound_effects":  [
+            {
+              "effect": "run_loop_stop",
+              "enabled": true
+            }
+          ],
+          "transitions":  [
+            {
+              "swim_exit": "(variable.is_swimming == 0)"
+            }
+          ]
+        },
+        "swim_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "((variable.is_swimming == 0) && (query.speed == 0))"
+            },
+            {
+              "run": "((variable.is_swimming == 0) && (query.speed > 0))"
+            },
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_lizard.default": {
+      "initial_state": "idle",
+      "states": {
+        "climb": {
+          "animations":  [
+            {
+              "06_climb_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "run": "(query.any_animation_finished && (query.speed > 0))"
+            },
+            {
+              "stop": "(query.any_animation_finished && (query.speed <= 0))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "doublejump_up": {
+          "animations":  [
+            {
+              "06_doublejump_up": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_down": "(((query.isonground != 1) && query.any_animation_finished) && (query.velocity_y < 0.4))"
+            },
+            {
+              "jump_exit": "query.isonground"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "06_idle_a": "(variable.is_swimming == 0)"
+            },
+            {
+              "swim_idle_a": "variable.is_swimming"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "mount_swap": "variable.is_mount_swap"
+            }
+          ]
+        },
+        "jump_down": {
+          "animations":  [
+            {
+              "06_jump_down": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_exit": "(!variable.is_swimming && query.isonground)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "doublejump_up": "query.isdoublejumping"
+            },
+            {
+              "idle": "(variable.is_swimming || query.isonground)"
+            }
+          ]
+        },
+        "jump_enter": {
+          "animations":  [
+            {
+              "06_jump_enter": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_up": "query.any_animation_finished"
+            },
+            {
+              "jump_exit": "query.isonground"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "doublejump_up": "query.isdoublejumping"
+            }
+          ]
+        },
+        "jump_exit": {
+          "animations":  [
+            {
+              "06_jump_end": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "idle": "((query.any_animation_finished && (query.speed <= 0)) || variable.is_swimming)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            }
+          ]
+        },
+        "jump_up": {
+          "animations":  [
+            {
+              "06_jump_up": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_down": "(((query.isonground != 1) && query.any_animation_finished) && (query.velocity_y < 0.4))"
+            },
+            {
+              "jump_exit": "query.isonground"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "doublejump_up": "query.isdoublejumping"
+            }
+          ]
+        },
+        "knockback": {
+          "animations":  [
+            {
+              "knockback_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "knockback_end": "!query.in_knockback"
+            }
+          ]
+        },
+        "knockback_end": {
+          "animations":  [
+            {
+              "06_jump_end": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "idle": "(query.any_animation_finished && (query.speed <= 0))"
+            },
+            {
+              "climb": "((query.isjumping == 0) && (query.velocity_y > 0))"
+            }
+          ]
+        },
+        "mount_swap": {
+          "animations":  [
+            {
+              "06_cheer_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;","variable.is_mount_swap = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.any_animation_finished && (query.speed <= 0))"
+            },
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "run": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "stop": "((variable.is_swimming == 0) && (query.speed <= 0))"
+            },
+            {
+              "climb": "(!variable.is_swimming && ((query.isjumping == 0) && (query.velocity_y > 0)))"
+            },
+            {
+              "idle": "(variable.is_swimming && (query.speed <= 0))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.any_animation_finished && (query.speed <= 0))"
+            },
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "jump_enter": "((query.isjumping > 0) && (query.isonground != 1))"
+            },
+            {
+              "mount_swap": "variable.is_mount_swap"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_lizard.fe_anim": {
+      "states": {
+        "flourish": {
+          "animations":  [
+            {
+              "06_cheer_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.scene_opened = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.all_animations_finished"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "06_fe_idle_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "flourish": "variable.scene_opened"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mount_lizard.loco": {
+      "states": {
+        "run_a": {
+          "animations":  [
+            {
+              "06_run_a": "(variable.is_swimming == 0)"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run_b": "(((variable.is_swimming == 0) && (query.speed > 4)) && (query.speed <= 5))"
+            },
+            {
+              "run_d": "(((variable.is_swimming == 0) && (query.speed > 0)) && (query.speed <= 4))"
+            },
+            {
+              "run_c": "(((variable.is_swimming == 0) && (query.speed > 5)) && (query.speed <= 8))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "run_b": {
+          "animations":  [
+            {
+              "06_run_b": "(variable.is_swimming == 0)"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run_d": "(((variable.is_swimming == 0) && (query.speed > 0)) && (query.speed <= 4))"
+            },
+            {
+              "run_c": "(((variable.is_swimming == 0) && (query.speed > 5)) && (query.speed <= 8))"
+            },
+            {
+              "run_a": "((variable.is_swimming == 0) && (query.speed > 8))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "run_c": {
+          "animations":  [
+            {
+              "06_run_c": "(variable.is_swimming == 0)"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run_a": "((variable.is_swimming == 0) && (query.speed > 8))"
+            },
+            {
+              "run_b": "(((variable.is_swimming == 0) && (query.speed > 4)) && (query.speed <= 5))"
+            },
+            {
+              "run_d": "(((variable.is_swimming == 0) && (query.speed > 0)) && (query.speed <= 4))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "run_d": {
+          "animations":  [
+            {
+              "06_run_d": "(variable.is_swimming == 0)"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run_c": "(((variable.is_swimming == 0) && (query.speed > 5)) && (query.speed <= 8))"
+            },
+            {
+              "run_b": "(((variable.is_swimming == 0) && (query.speed > 4)) && (query.speed <= 5))"
+            },
+            {
+              "run_a": "((variable.is_swimming == 0) && (query.speed > 8))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "run_a": "((variable.is_swimming == 0) && (query.speed > 8))"
+            },
+            {
+              "run_c": "(((variable.is_swimming == 0) && (query.speed > 5)) && (query.speed <= 8))"
+            },
+            {
+              "run_d": "(((variable.is_swimming == 0) && (query.speed > 0)) && (query.speed <= 4))"
+            },
+            {
+              "run_b": "(((variable.is_swimming == 0) && (query.speed > 4)) && (query.speed <= 5))"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

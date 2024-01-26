@@ -68,6 +68,38 @@
             }
          ]
       },
+      "act1b_slimes_first_time" : {
+         "actions" : [
+            {
+               "action" : "SEQ_205_act1b_slimes_firsttime",
+               "action_type" : "vo_sequence"
+            }
+         ]
+      },
+      "act1b_slimes_met" : {
+         "actions" : [
+            {
+               "action" : "SEQ_206_act1b_slimes_met",
+               "action_type" : "vo_sequence"
+            }
+         ]
+      },
+      "act1b_silverfishes_first_time" : {
+         "actions" : [
+            {
+               "action" : "SEQ_205_act1b_silverfishes_firsttime",
+               "action_type" : "vo_sequence"
+            }
+         ]
+      },
+      "act1b_silverfishes_met" : {
+         "actions" : [
+            {
+               "action" : "SEQ_206_act1b_silverfishes_met",
+               "action_type" : "vo_sequence"
+            }
+         ]
+      },
       "act1b_zombies_first_time" : {
          "actions" : [
             {

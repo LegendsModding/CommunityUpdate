@@ -19,7 +19,7 @@ const poiLegends = {
             playedDiscoveredAct2: "gv_played_discovered_act2_legend_dragon_red"
         },
         tag: {
-            sleepingDragon: "dragon_red_nis",
+            sleepingLegend: "dragon_red_nis",
             cinematicEntity0: "dragon_red",
             legendBuilding: "poi_legend_dragon_red",
             cardTag: "poiLegendDragonRed"
@@ -37,6 +37,47 @@ const poiLegends = {
             buildingTag: "poiLegendDragonRed",
             spatialTrigger: "badger:spatial_trigger_poi_legend_dragon_red_intro",
             presentationAudio: "legend_dragon_red_body_audio"
+        },
+        timeToInteract: 16
+    },
+    poiLegendKillerRabbitVal: {
+        id: "poiLegendKillerRabbitVal",
+        triggerVolumeTag: "poi_legend_killer_rabbit_tv",
+        villageArchetype: "badger:poi_legend_killer_rabbit_village",
+        factionName: "faction.poi.legend.killer_rabbit",
+        journalUnlock: JOURNAL_UNLOCKS.LEGEND_KILLER_RABBIT,
+        buildUnlock: "unlock_poi_legend_killer_rabbit",
+        battleViewUnlock: "unlock_battle_view_killer_rabbit",
+        message: {
+            approached: "poiLegendKillerRabbit_approached",
+            completed: "poiLegendKillerRabbit_completed",
+            unlockSequence: "poiLegendKillerRabbit_unlock_sequence"
+        },
+        global: {
+            allCompleted: "poi_legend_killer_rabbit_completed",
+            keyAction: TELEMETRY_KEY_ACTION_COMPLETED_CATEGORIES.POI_LEGEND_KILLER_RABBIT,
+            playedDiscoveredAct1: "gv_played_discovered_act1_legend_killer_rabbit",
+            playedDiscoveredAct2: "gv_played_discovered_act2_legend_killer_rabbit"
+        },
+        tag: {
+            sleepingLegend: "killer_rabbit_nis",
+            cinematicEntity0: "killer_rabbit",
+            legendBuilding: "poi_legend_killer_rabbit",
+            cardTag: "poiLegendKillerRabbit"
+        },
+        voiceOvers: {
+            killerRabbitProximity: "poi_legend_killer_rabbit_proximity",
+            intro: "poi_legend_killer_rabbit_intro",
+            postCinematic: "poi_legend_killer_rabbit_outro"
+        },
+        cinematic: {
+            outro: "leg02_c01_outro",
+            despawnEvent: "despawn_legend_killer_rabbit_entity"
+        },
+        bc: {
+            buildingTag: "poiLegendKillerRabbit",
+            spatialTrigger: "badger:spatial_trigger_poi_legend_killer_rabbit_intro",
+            presentationAudio: "legend_killer_rabbit_body_audio"
         },
         timeToInteract: 16
     }
@@ -104,10 +145,10 @@ const _PoiLegendTriggerVolumesListeners = (buildingCompleteEntity, villageId, le
 const _PoiLegendHandleInteract = (legendData, playerEntity, interactedEntity) => {
 
     const player = playerEntity
-    const sleepingDragon = QUERY_GetEntitiesWithTags([legendData.tag.legendBuilding])
+    const sleepingLegend = QUERY_GetEntitiesWithTags([legendData.tag.legendBuilding])
 
-    OUTPUT_TriggerPresentationEvent(interactedEntity, "on_legend_dragon_red_interact_confirm")
-    OUTPUT_TriggerCinematic(legendData.cinematic.outro, OPER_Append(sleepingDragon, player))
+    OUTPUT_TriggerPresentationEvent(interactedEntity, "on_legend_interact_confirm")
+    OUTPUT_TriggerCinematic(legendData.cinematic.outro, OPER_Append(sleepingLegend, player))
 
     TelemetrySendKeyActionCompletedEvent(playerEntity, legendData.global.keyAction)
     IncrementGlobal(TELEMETRY_CAMPAIGN_PROGRESS.POI_LEGEND_PROGRESS.globalVariable)
@@ -127,7 +168,7 @@ const _PoiLegendHandleCinematicOutro = (legendId) => {
     const poiLegend = QUERY_GetEntitiesWithTags([legendData.tag.legendBuilding])
     if (!IsCurrentAct(ACTS.EPILOGUE) && !IsCurrentAct(ACTS.ACT_3A)) {
         LISTENFOR_LocalTimer({ //delay the presentation action until afer HUD sequence
-            snippet: "lt_delayed_poi_legend_dragon_red_postcinematic_vo",
+            snippet: "lt_delayed_poi_legend_postcinematic_vo",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
             waitTime: 13, //enough time for Unlock center notification + Bonus Info side panel + lore unlock sequence
             payloadString: legendId
@@ -242,13 +283,13 @@ SNIPPET_SpatialPartitionEntered("spe_poi_trigger_poi_legend_intro", (_triggerEnt
                 IncrementGlobal(poiLegendsVal.global.discoveredLegends)
                 IncrementGlobal(poiLegendsVal.global.foundInAct1)
             }
-        } else if (IsCurrentAct(ACTS.ACT_2) && QUERY_GetTeamResource(TEAM_BLUE, "unlock_poi_legend_dragon_red_resource") > 0) {
+        } else if (IsCurrentAct(ACTS.ACT_2) && QUERY_GetTeamResource(TEAM_BLUE, "unlock_poi_legend_resource") > 0) {
             PlayPresentationActionToClosePlayers(legendData.voiceOvers.intro, intruderEntity)
 
             LISTENFOR_PlayerInteracted({
                 snippet: "pi_poi_legend",
                 ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-                includeTags: [legendData.tag.sleepingDragon],
+                includeTags: [legendData.tag.sleepingLegend],
                 payloadString: payload.string
             })
             Once()
@@ -262,7 +303,7 @@ SNIPPET_SpatialPartitionEntered("spe_poi_trigger_poi_legend_intro", (_triggerEnt
         LISTENFOR_PlayerInteracted({
             snippet: "pi_poi_legend",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            includeTags: [legendData.tag.sleepingDragon],
+            includeTags: [legendData.tag.sleepingLegend],
             payloadString: payload.string
         })
         Once()

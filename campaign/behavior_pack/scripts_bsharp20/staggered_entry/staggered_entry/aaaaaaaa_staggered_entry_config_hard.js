@@ -105,6 +105,18 @@ const HordeEntryConfig_Hard = {
             occupation: {
                 [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_CREEPER))
             }
+        },
+        {
+            mobAlliancePool: [MOB_ALLIANCE_NAME_SLIME],
+            occupation: {
+                [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_SPIDER))
+            }
+        },
+        {
+            mobAlliancePool: [MOB_ALLIANCE_NAME_SILVERFISH],
+            occupation: {
+                [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_SLIME))
+            }
         }
     ]
 }

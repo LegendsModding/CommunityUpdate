@@ -1,0 +1,26 @@
+{
+    "format_version": "1.8.0",
+    "mat_mob_silverfish:base_entity": {
+        "stencilstate": {
+            "enabled": true,
+            "stencilref": 64,
+            "frontface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            },
+            "backface": {
+                "stencilfailop": "keep",
+                "stencildepthfailop": "keep",
+                "stencilpassop": "replace",
+                "stencilfunc": "always"
+            }
+        },
+        "textures": {
+            "diffuseMap": "textures/entity/tex_mob_silverfish_d"
+            //"coeffMap": "textures/entity/tex_mob_silverfish_mr",
+            //"normalMap": "textures/entity/tex_mob_silverfish_n"
+        }
+    }
+}

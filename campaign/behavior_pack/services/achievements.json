@@ -670,6 +670,16 @@
                                 "value": "poi_ally_06"
                             }
                         ]
+                    },
+                    {
+                        "event": "KeyActionCompleted",
+                        "properties": [
+                            {
+                                "type": "string_equals",
+                                "property": "Action",
+                                "value": "poi_ally_07"
+                            }
+                        ]
                     }
                 ]
             },

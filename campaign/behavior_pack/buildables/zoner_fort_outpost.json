@@ -82,7 +82,9 @@
 					"mob_alliance_skeleton_central_flame",
 					"mob_alliance_zombie",
 					"mob_alliance_creeper_central_flame",
-                    "mob_alliance_spider_central_flame"
+                    "mob_alliance_spider_central_flame",
+                    "mob_alliance_slime_central_flame",
+                    "mob_alliance_silverfish_central_flame"
                 ],
 				"override_localization_for_prevent_overlap_tags" : [
 					{

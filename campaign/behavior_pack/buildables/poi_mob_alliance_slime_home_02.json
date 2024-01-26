@@ -1,0 +1,83 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_mob_alliance_slime_home_02",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_structure": {
+        "nbt_file": "poi_mob_alliance_slime_home_02",
+        "build_time": 0.1
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "poi",
+          "slime_mob_alliance_piglin_target",
+          "smaller_slime_mob_alliance_spawner",
+          "mob_alliance_structure"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_slime",
+            "percentage": 1
+          }
+        ],
+        "cap": 1,
+        "batch": 1,
+        "rate": 8,
+        "spawn_delay": 2.0,
+        "offset": [
+          0.0,
+          2.0,
+          -9.0
+        ],
+        "spawning_trigger": "on_barracks_spawn"
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "homestead_mob"
+        ]
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 10,
+          "sc": 0,
+          "rc": 10
+        }
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:health": {
+        "max_health": 100
+      },
+      "badger:template": [
+        "badger:template_poi_mob_alliance"
+      ]
+    }
+  }
+}

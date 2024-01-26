@@ -1,0 +1,37 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_grappler_nis.default": {
+      "initial_state": "default",
+      "states": {
+        "assemble": {
+          "animations":  [
+            {
+              "drill_alive": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default": "(variable.is_assemble == 0)"
+            }
+          ]
+        },
+        "default": {
+          "animations":  [
+            {
+              "disassembled_pose": 1.0
+            }
+          ],
+          "on_entry": ["variable.geo_cube_vis = 0;"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "assemble": "variable.is_assemble"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

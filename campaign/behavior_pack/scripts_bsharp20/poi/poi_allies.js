@@ -234,6 +234,52 @@ const poiAllies = {
             presentationAudio: "drill_golem_body_audio"
         },
         timeToInteract: 16
+    },
+    poiAlly07Val: {
+        id: "poiAlly07Val",
+        respawnId: "ally07",
+        triggerVolumeTag: "poi_ally_07_tv",
+        villageArchetype: "badger:poi_ally_07_village",
+        factionName: "faction.poi.ally.07",
+        journalUnlock: JOURNAL_UNLOCKS.ALLY_GRAPPLER,
+        buildUnlock: "unlock_poi_golem_upgrade",
+        battleViewUnlock: "unlock_battle_view_grappler_golem",
+        message: {
+            approached: "poiAlly7_approached",
+            bodyproximity: "poiAlly7_bodyproximity",
+            completed: "poiAlly7_completed",
+            unlockSequence: "poiAlly7_unlock_sequence"
+        },
+        global: {
+            allCompleted: "poi_ally_07_completed",
+            keyAction: TELEMETRY_KEY_ACTION_COMPLETED_CATEGORIES.POI_ALLY_07,
+            playedDiscoveredAct1: "gv_played_discovered_act1_07",
+            playedDiscoveredAct2: "gv_played_discovered_act2_07"
+        },
+        tag: {
+            brokenBody: "mob_golem_grappler_nis",
+            cinematicEntity0: "mob_golem_grappler_nis",
+            cinematicEntity1: "grapplergolemhead",
+            allyBuilding: "poi_ally_07",
+            bodyVFXTag: "poi_ally_07_body_vfx",
+            cardTag: "poiAlly07"
+        },
+        voiceOvers: {
+            golemProximity: "poi_grappler_proximity",
+            intro: "poi_grappler_intro",
+            postCinematic: "poi_grappler_outro"
+        },
+        cinematic: {
+            outro: "gol07_c01_portal_outro",
+            despawnEvent: "despawn_ally_07_entity"
+        },
+        instanceName: "instance_poi_golem_07_body_vfx_marker",
+        bc: {
+            buildingTag: "ally07Torso",
+            spatialTrigger: "badger:spatial_trigger_poi_ally_07_intro",
+            presentationAudio: "grappler_golem_body_audio"
+        },
+        timeToInteract: 16
     }
 }
 
@@ -583,4 +629,7 @@ SNIPPET_ExternalEvent("ev_unlock_ally_missing_pieces", () => {
     //Ally 06
     OUTPUT_SetGlobalVariable("poi_ally_06_acquired_piece", 1)
     OUTPUT_AddOrRemoveResource(randomPlayer, "unlock_quest_poi_ally_06", 1, false)
+    //Ally 07
+    OUTPUT_SetGlobalVariable("poi_ally_07_acquired_piece", 1)
+    OUTPUT_AddOrRemoveResource(randomPlayer, "unlock_quest_poi_ally_07", 1, false)
 })

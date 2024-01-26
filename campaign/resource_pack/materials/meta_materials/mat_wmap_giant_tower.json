@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_giant_tower:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_giant_tower_d",
+      "coeffMap": "textures/entity/tex_wmap_giant_tower_mr",
+      "normalMap": "textures/entity/tex_wmap_giant_tower_n"
+    }
+  }
+}

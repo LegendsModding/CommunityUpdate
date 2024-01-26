@@ -335,6 +335,8 @@ SNIPPET_BuildingComplete("bc_village_fountain_cs", (fountain) => {
         SpawnEntitiesAt(mountSpawnPosition, "badger:spawner_mount_05", 1, TEAM_BLUE, villageId)
         SpawnEntitiesAt(mountSpawnPosition, "badger:spawner_mount_06", 1, TEAM_BLUE, villageId)
         SpawnEntitiesAt(mountSpawnPosition, "badger:spawner_mount_07", 1, TEAM_BLUE, villageId)
+        SpawnEntitiesAt(mountSpawnPosition, "badger:spawner_mount_08", 1, TEAM_BLUE, villageId)
+        SpawnEntitiesAt(mountSpawnPosition, "badger:spawner_mount_09", 1, TEAM_BLUE, villageId)
         // TODO: this should probably live in a campaign and pvp variant script. this file explicitly knows about another game mode otherwise.
         const vindicatorSpawnPosition = QUERY_GetChildEntitiesWithInstanceName(fountain, "metadata_vindicator_spawn_position")
         SpawnEntitiesAt(vindicatorSpawnPosition, "badger:spawner_vindicator_invisible", 1, TEAM_BLUE, villageId)

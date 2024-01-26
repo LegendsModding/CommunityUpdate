@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:spawner_mount_lizard",
+        "runtime_identifier": "badger:badger_mob",
+        "is_summonable": false
+      },
+      "components": {
+        "badger:aabb": {
+          "width": 1,
+          "height": 1
+        },
+        "badger:buildable_spawner": {
+          "types": [
+            {
+              "type": "badger:animal_lizard",
+              "percentage": 1
+            }
+          ],
+          "spawn_delay": 1,
+          "cap": 1,
+          "batch": 1,
+          "rate": 10,
+          "max_radius": 2,
+          "spawning_trigger": "on_barracks_spawn"
+        },
+        "badger:spawner_add_tags": {
+          "tags": [
+            "fountain_mount"
+          ]
+        },
+        "badger:offline_traits": {
+          "disabled_by_health_components": [
+            "badger:buildable_spawner"
+          ]
+        }
+      }
+    }
+  }
+  

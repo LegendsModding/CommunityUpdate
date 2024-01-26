@@ -1,0 +1,71 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 8,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:killer_rabbit_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "charge_a": "animation.killer_rabbit.charge_a",
+        "charge_b": "animation.killer_rabbit.charge_b",
+        "charge_tell_a": "animation.killer_rabbit.charge_tell_a",
+        "cheer_a": "animation.killer_rabbit.cheer_a",
+        "cheer_b": "animation.killer_rabbit.cheer_b",
+        "cheer_c": "animation.killer_rabbit.cheer_c",
+        "death_a": "animation.killer_rabbit.death_a",
+        "death_b": "animation.killer_rabbit.death_b",
+        "explode_a": "animation.killer_rabbit.explode_a",
+        "hit_reaction_a": "animation.killer_rabbit.hit_reaction_a",
+        "hit_reaction_b": "animation.killer_rabbit.hit_reaction_b",
+        "idle_a": "animation.killer_rabbit.idle_a",
+        "idle_b": "animation.killer_rabbit.idle_b",
+        "idle_breathe": "animation.killer_rabbit.idle_breathe",
+        "knockback_a": "animation.killer_rabbit.knockback",
+        "killer_rabbit_nis": "controller.animation.killer_rabbit_nis.",
+        "run_a": "animation.killer_rabbit.run_a",
+        "run_b": "animation.killer_rabbit.run_b",
+        "spawn_a": "animation.killer_rabbit.spawn_a",
+        "stop_a": "animation.killer_rabbit.stop_a",
+        "stop_b": "animation.killer_rabbit.stop_b",
+        "stun_a": "animation.killer_rabbit.stun_a",
+        "swim_a": "animation.killer_rabbit.swim_a",
+        "swim_idle_a": "animation.killer_rabbit.swim_idle_a",
+        "swim_stop_a": "animation.killer_rabbit.swim_stop_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Curious","Run Away","Scared","Hard Blink","PreExplode"],
+      "geometry": {
+        "default": "geometry.killer_rabbit_nis"
+      },
+      "identifier": "badger:killer_rabbit_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_generic_buff_64": "mat_fx_generic_buff_64",
+        "mat_killer_rabbit": "mat_killer_rabbit",
+        "mat_killer_rabbit_face": "mat_killer_rabbit_face"
+      },
+      "render_controllers": ["controller.render.killer_rabbit_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "killer_rabbit_nis": "1"
+          }
+        ],
+        "initialize": ["variable.hide_geo_vis = 1;","variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

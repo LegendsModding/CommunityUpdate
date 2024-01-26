@@ -133,6 +133,36 @@ const occupationValMobs = {
             repairMessage: "village_attack_occupation_repair_message_spiders"
         }
     },
+    [MOB_ALLIANCE_NAME_SLIME]: {
+        id: "slime",
+        mobArchetype: "badger:mob_slime",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_slimes",
+            beginOccupation: "village_attack_occupation_begin_slimes",
+            abandonOccupation: "village_attack_occupation_abandon_slimes",
+            endOccupationSequence: "village_attack_occupation_end_slimes_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_slimes",
+            repairReminder: "village_attack_occupation_repair_reminder_slimes",
+            repairMessage: "village_attack_occupation_repair_message_slimes"
+        }
+    },
+    [MOB_ALLIANCE_NAME_SILVERFISH]: {
+        id: "silverfish",
+        mobArchetype: "badger:mob_silverfish",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_silverfishes",
+            beginOccupation: "village_attack_occupation_begin_silverfishes",
+            abandonOccupation: "village_attack_occupation_abandon_silverfishes",
+            endOccupationSequence: "village_attack_occupation_end_silverfishes_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_silverfishes",
+            repairReminder: "village_attack_occupation_repair_reminder_silverfishes",
+            repairMessage: "village_attack_occupation_repair_message_silverfishes"
+        }
+    },
     [MOB_ALLIANCE_NAME_ZOMBIE]: {
         id: "zombie",
         mobArchetype: "badger:mob_zombie",

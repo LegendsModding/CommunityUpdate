@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mob_slime": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "wmap_mob_slime": "MetaMaterial.wmap_mob_slime"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_giant_tower": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_giant_tower": "MetaMaterial.mat_wmap_giant_tower"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

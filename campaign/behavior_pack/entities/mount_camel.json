@@ -115,7 +115,7 @@
         "compass_max_range": "short"
       },
       "badger:waypoint_marker": {
-        "path": "temp_waypoint_mount_camel",
+        "path": "waypoint_mount_camel",
         "label": "",
         "world_position_offset": [
             0,

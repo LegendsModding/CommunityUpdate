@@ -58,6 +58,18 @@ const poiAlliesSet = {
         tag: {
             ally: "drill_golem"
         }
+    },
+    ally07: {
+        id: "ally07",
+        allyIdentifier: "badger:mob_golem_grappler",
+        allySpawnPosition: "metadata_spawn_position_ally_07",
+        global: {
+            isAllyDead: "gv_poi_ally_07_dead",
+            allyExitedVillage: "gv_poi_ally_07_exited_village"
+        },
+        tag: {
+            ally: "grappler_golem"
+        }
     }
 }
 

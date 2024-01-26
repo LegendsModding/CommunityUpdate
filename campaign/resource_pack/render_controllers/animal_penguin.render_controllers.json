@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_penguin": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_penguin": "MetaMaterial.mat_animal_penguin"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

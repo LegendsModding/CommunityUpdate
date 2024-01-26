@@ -1,0 +1,88 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:behavior_animal_ravager_village",
+        "runtime_identifier": "badger:behavior"
+      },
+      "components": {
+        "badger:movement": {
+          "move_speed": 6
+        },
+        "badger:wander": {
+          "wander_frequency": 0.15,
+          "wander_radius": 10
+        },
+        "badger:tags": {
+          "tags": [
+            "animal_ravager",
+            "poi_mount",
+            "poi_mount_ravager",
+            "poi_mount_09",
+            "mob"
+          ]
+        },
+        "badger:targeting": {
+          "targeting_priorities": [
+            {
+              "name": "bird_piglin_evade",
+              "max_range": 15,
+              "include_tags": [
+                "piglin"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "enemy",
+              "actions": [
+                "evade"
+              ]
+            },
+            {
+              "max_range": 8,
+              "include_tags": [
+                "player"
+              ],
+              "exclude_tags": [],
+              "alliance_rule_filter": "friendly",
+              "actions": [
+                "player_stop"
+              ]
+            }
+          ]
+        },
+        "badger:damage_receiver": {
+          "auto_generate_shape": "cylinder"
+        },
+        "badger:target_actions": {
+          "actions": [
+            {
+              "name": "evade",
+              "range": {
+                "min_range": 10,
+                "max_range": 15
+              },
+              "state_machine": {
+                "cooldown_time": 0.5,
+                "deactivates_on_cooldown": true
+              },
+              "apply_status_to_owner": {
+                "feared": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            },
+            {
+              "name": "player_stop",
+              "range": {
+                "min_range": 0.5,
+                "max_range": 5
+              }
+            }
+          ]
+        },
+        "badger:behavior_offline_traits": {
+          "traits_phase": "BUILT"
+        }
+      }
+    }
+  }

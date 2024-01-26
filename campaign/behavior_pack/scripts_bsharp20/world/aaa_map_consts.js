@@ -54,6 +54,8 @@ const MAP_BASE_SIZE = {
     OCCUPYING_CREEPER: "piglin_occupying_creeper_mob_alliance",
     OCCUPYING_SKELETON: "piglin_occupying_skeleton_mob_alliance",
     OCCUPYING_SPIDER: "piglin_occupying_spider_mob_alliance",
+    OCCUPYING_SILVERFISH: "piglin_occupying_silverfish_mob_alliance",
+    OCCUPYING_SLIME: "piglin_occupying_slime_mob_alliance",
     OCCUPYING_ZOMBIE: "piglin_occupying_zombie_mob_alliance",
     ACT1_A: "act1_a",
     ACT1_B: "act1_b",
@@ -176,22 +178,29 @@ const MAP_FACTION_IDS = {
     MOB_ALLIANCE_CREEPER: "faction.mob.alliance.creeper",
     MOB_ALLIANCE_SKELETON: "faction.mob.alliance.skeleton",
     MOB_ALLIANCE_SPIDER: "faction.mob.alliance.spider",
+    MOB_ALLIANCE_SLIME: "faction.mob.alliance.slime",
+    MOB_ALLIANCE_SILVERFISH: "faction.mob.alliance.silverfish",
     MOB_ALLIANCE_ZOMBIE: "faction.mob.alliance.zombie",
     TOWER_01: "faction.poi.tower_01",
     TOWER_02: "faction.poi.tower_02",
     TOWER_04: "faction.poi.tower_04",
     TOWER_05: "faction.poi.tower_05",
+    TOWER_06: "faction.poi.tower_06",
     ALLY_01: "faction.poi.ally.01.faction",
     ALLY_02: "faction.poi.ally.02",
     ALLY_04: "faction.poi.ally.04",
     ALLY_05: "faction.poi.ally.05",
     ALLY_06: "faction.poi.ally.06",
+    ALLY_07: "faction.poi.ally.07",
     LEGEND_DRAGON_RED: "faction.poi.legend.dragon.red",
+    LEGEND_KILLER_RABBIT: "faction.poi.legend.killer_rabbit",
     MOUNT_01: "faction.poi.mount.01",
     MOUNT_03: "faction.poi.mount.03",
     MOUNT_04: "faction.poi.mount.04",
     MOUNT_06: "faction.poi.mount.06",
     MOUNT_07: "faction.poi.mount.07",
+    MOUNT_08: "faction.poi.mount.08",
+    MOUNT_09: "faction.poi.mount.09",
     UNNATURAL_LANDMARK_01: "faction.poi.unnatural.landmark.01"
 }
 
@@ -200,6 +209,7 @@ const MAP_BUILDABLE_IDS = {
     TOWER_02: "poi_tower_02",
     TOWER_04: "poi_tower_04",
     TOWER_05: "poi_tower_05",
+    TOWER_06: "poi_tower_06",
     PVP_HQ: "pvp_hq"
 }
 
@@ -209,7 +219,9 @@ const MAP_MOB_IDS = {
     ALLY_04: "mob_golem_shield",
     ALLY_05: "mob_golem_sniper",
     ALLY_06: "mob_golem_drill",
-    LEGEND_DRAGON_RED: "dragon_red"
+    ALLY_07: "mob_golem_grappler",
+    LEGEND_DRAGON_RED: "dragon_red",
+    LEGEND_KILLER_RABBIT: "killer_rabbit"
 }
 
 const MAP_INVASION_STATE = {

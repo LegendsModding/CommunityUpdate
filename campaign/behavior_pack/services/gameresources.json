@@ -151,6 +151,13 @@
         "show_in_ui": false
       },
       {
+        "resource": "unlock_poi_legend_resource", //this one is used for rallying
+        "type": "team",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
         "resource": "unlock_poi_golem_resource", //this one is used for rallying
         "type": "team",
         "category": "unlock",
@@ -182,6 +189,12 @@
       },
       {
         "resource": "unlock_battle_view_drill_golem",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_grappler_golem",
         "category": "unlock",
         "default_amount": 0,
         "show_in_ui": false
@@ -393,6 +406,13 @@
 				"telemetry_track": true,
 				"journal_category": "resources"
       },
+      {
+        "resource": "poi_tower_06_resource",
+        "type": "team",
+        "has_hud_notification": true,
+				"telemetry_track": true,
+				"journal_category": "resources"
+      },
       //Trebuchet Unlock
       {
         "resource": "unlock_spawner_trebuchet",
@@ -400,6 +420,34 @@
         "default_amount": 1,
         "show_in_ui": false
       },
+      //Legends
+      //Red Dragon
+      {
+        "resource": "unlock_dragon_red_spawner",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_poi_legend_dragon_red_resource",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      //Killer Rabbit
+      {
+        "resource": "unlock_killer_rabbit_spawner",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_poi_legend_killer_rabbit_resource",
+        "category": "unlock",
+        "default_amount": 1,
+        "show_in_ui": false
+      },
+      //
       //Quest Rewards
       //Horse unlock
       {
@@ -435,6 +483,18 @@
       //Camel Unlock
       {
         "resource": "unlock_quest_mount_07",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      //Lizard Unlock
+      {
+        "resource": "unlock_quest_mount_08",
+        "category": "unlock",
+        "has_hud_notification": true
+      },
+      //Ravager Unlock
+      {
+        "resource": "unlock_quest_mount_09",
         "category": "unlock",
         "has_hud_notification": true
       },
@@ -520,6 +580,60 @@
       },
       {
         "resource": "unlock_spider_rally",
+        "category": "unlock",
+        "show_in_ui": false,
+        "telemetry_track": true
+      },
+      //Slime
+      {
+        "resource": "unlock_player_spawner_slime",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_slime",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_slime",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_slime_pvp",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_slime_rally",
+        "category": "unlock",
+        "show_in_ui": false,
+        "telemetry_track": true
+      },
+      //Silverfish
+      {
+        "resource": "unlock_player_spawner_silverfish",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_silverfish",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_battle_view_silverfish",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_spawner_silverfish_pvp",
+        "category": "unlock",
+        "show_in_ui": false
+      },
+      {
+        "resource": "unlock_silverfish_rally",
         "category": "unlock",
         "show_in_ui": false,
         "telemetry_track": true
@@ -1411,6 +1525,20 @@
         "show_in_ui": false,
         "journal_category": "overworld"
       },
+      {
+        "resource": "unlock_journal_mob_silverfish",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_mob_slime",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
       {//added for WITCH DLC
         "resource": "unlock_journal_mob_witch",
         "category": "unlock",
@@ -1461,6 +1589,22 @@
         "show_in_ui": false,
         "journal_category": "overworld"
       },
+      //Lizard
+      {
+        "resource": "unlock_journal_mount_lizard",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      //Ravager
+      {
+        "resource": "unlock_journal_mount_ravager",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
       {
         "resource": "unlock_journal_village",
         "category": "unlock",
@@ -1491,6 +1635,13 @@
       },
       {
         "resource": "unlock_journal_ally_drill",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_ally_grappler",
         "category": "unlock",
         "default_amount": 0,
         "show_in_ui": false,
@@ -1533,6 +1684,13 @@
       },
       {
         "resource": "unlock_journal_tower_burn",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false,
+        "journal_category": "overworld"
+      },
+      {
+        "resource": "unlock_journal_tower_giant",
         "category": "unlock",
         "default_amount": 0,
         "show_in_ui": false,
@@ -2066,6 +2224,12 @@
         "show_in_ui": false
       },
       {
+        "resource": "ui_tracking_poi_tower_06",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
         "resource": "ui_tracking_poi_ally_01",
         "category": "unlock",
         "default_amount": 0,
@@ -2091,6 +2255,12 @@
       },
       {
         "resource": "ui_tracking_poi_ally_06",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_poi_ally_07",
         "category": "unlock",
         "default_amount": 0,
         "show_in_ui": false
@@ -2146,6 +2316,18 @@
       },
       {
         "resource": "ui_tracking_spawner_spider",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_slime",
+        "category": "unlock",
+        "default_amount": 0,
+        "show_in_ui": false
+      },
+      {
+        "resource": "ui_tracking_spawner_silverfish",
         "category": "unlock",
         "default_amount": 0,
         "show_in_ui": false

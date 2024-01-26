@@ -1,0 +1,83 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:hud_message_interaction_failed": {
+        "resource_cost_failed_message": {
+          "hud_message_args": ["100","resources.gold.name","key.item.gold","125","resources.coal.name","key.item.coal","poi.ally.06.name"],
+          "hud_message_id": "interact_cost_required"
+        },
+        "unlock_cost_failed_message": {
+          "hud_message_args": ["structures.unlock.poi.golem.name","poi.ally.06.name"],
+          "hud_message_id": "interact_unlock_required"
+        }
+      },
+      "badger:interaction_presentation": {
+        "trigger_generic_events": false,
+        "trigger_specific_events": true
+      },
+      "badger:presentation_event": {
+        "on_assemble": {
+          "script": "assemble"
+        },
+        "on_disassemble": {
+          "script": "disassemble"
+        },
+        "on_initialized": {
+          "audio": "BAE_poi_golem_grappler_piece_attract_body"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_grappler_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "grappler_alive": "animation.mob_golem_grappler_nis.grappler_alive",
+        "grappler_alive_1stfrm": "animation.mob_golem_grappler_nis.grappler_alive_1stfrm",
+        "default": "controller.animation.mob_golem_grappler_nis.default",
+        "disassembled_pose": "animation.mob_golem_grappler_nis.disassembled_pose"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "assemble": "variable.is_assemble = 1;",
+        "disassemble": "variable.is_assemble = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_grappler_nis"
+      },
+      "identifier": "badger:mob_golem_grappler_nis",
+      "materials": {
+        "mat_mob_golem_grappler": "mat_mob_golem_grappler"
+      },
+      "particle_effects": {
+        "fx_beam_center": "badger:fx_cine_grappler_golem_back_rays",
+        "fx_chest_attach": "badger:fx_cine_grappler_golem_attach_head",
+        "fx_feet_impact": "badger:fx_shared_death_smoke_large",
+        "fx_hand_impact": "badger:fx_cine_grappler_golem_limb_dust",
+        "fx_head_activate": "badger:fx_cine_grappler_golem_attach_head",
+        "fx_head_flame": "badger:fx_cine_grappler_golem_flame",
+        "fx_head_flame_start": "badger:fx_cine_grappler_golem_flame_start",
+        "fx_head_windup": "badger:fx_cine_grappler_golem_head_windup",
+        "fx_limb_attach": "badger:fx_cine_grappler_golem_attach",
+        "fx_sparkles_chest": "badger:fx_cine_grappler_golem_body_sparkles",
+        "fx_sparkles_head": "badger:fx_cine_grappler_golem_head_sparkles",
+        "fx_sparkles_limbs": "badger:fx_cine_grappler_golem_limb_sparkles"
+      },
+      "render_controllers": ["controller.render.mob_golem_grappler_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 1;","variable.geo_cube_vis = 0;"]
+      },
+      "sound_effects": {
+        "grappler_alive": "BAE_cine_gol02_c01_grappler_alive"
+      }
+    }
+  }
+}

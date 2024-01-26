@@ -1,0 +1,66 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:poi_tower_06_buildable"
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:area_overlays": {
+        "circles": [
+          {
+            "layer": "overlay",
+            "type": "tower",
+            "views": [
+              "placement"
+            ],
+            "filter_team": true,
+            "size": 40
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_construction_start": {
+          "audio": "BAE_structure_placement_wof_large",
+          "particles": [
+            {
+              "effect": "badger:fx_placement_11x11",
+              "enabled": true,
+              "bind_to_actor": false
+            }
+          ]
+        },
+        "on_construction_end": {
+          "audio": "BAE_poi_tower_06_buildable_idle"
+        },
+        "on_building_deconstructed": {
+            "audio": "BAE_poi_tower_06_deconstructed"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_poi_tower_06_dmg_destroyed"
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_poi_tower_06_dmg_stage0"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_poi_tower_06_dmg_stage0"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_poi_tower_06_dmg_stage1"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_poi_tower_06_dmg_stage2"
+        },
+        "on_healing_applied_to_structure_0": {
+            "audio": "BAE_carpenter_heal_full"
+        },
+        "on_healing_applied_to_structure_1": {
+            "audio": "BAE_carpenter_heal_stage1"
+        },
+        "on_healing_applied_to_structure_2": {
+            "audio": "BAE_carpenter_heal_stage2"
+        }
+      }
+    }
+  }
+}

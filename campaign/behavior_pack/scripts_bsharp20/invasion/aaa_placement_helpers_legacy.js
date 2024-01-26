@@ -282,7 +282,7 @@ const PlaceInvasionClaimedArea = (horde, claimedAreaRadius, numOutposts, placeBa
             }
 
             // Avoid placing them nearby friendy villages
-            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
+            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, claimedAreaRadius + placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
 
             if (!OUTPUT_PlacementExecute()) {
@@ -384,7 +384,7 @@ const PlacePregameCenterClaimedArea = (horde, claimedAreaRadius, numOutposts) =>
             }
 
             // Avoid placing them nearby friendy villages
-            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
+            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, claimedAreaRadius + placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
 
             if (!OUTPUT_PlacementExecute()) {
@@ -478,7 +478,7 @@ const PlacePregameSideClaimedArea = (horde, claimedAreaRadius, numOutposts, cent
             }
 
             // Avoid placing them nearby friendy villages
-            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
+            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, claimedAreaRadius + placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
 
             if (!OUTPUT_PlacementExecute()) {

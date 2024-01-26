@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_wmap_mount_lizard:entity_world_map": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_wmap_mount_lizard_d",
+      "coeffMap": "textures/entity/tex_wmap_mount_lizard_mr",
+      "normalMap": "textures/entity/tex_wmap_mount_lizard_n"
+    }
+  }
+}

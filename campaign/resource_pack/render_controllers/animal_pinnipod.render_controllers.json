@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_pinnipod": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_pinnipod": "MetaMaterial.mat_animal_pinnipod"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

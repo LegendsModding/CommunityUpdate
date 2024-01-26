@@ -107,6 +107,13 @@ const baseLootTables_Hard = {
                 loot: [Resource("gold", 0), Resource("xp_common", 0)]
             }
         ],
+        [BASE_SIZE_PIGLIN_SLIME]: [
+            {
+                name: baseLootVariations.GOLD,
+                weight: 2,
+                loot: [Resource("gold", 0), Resource("xp_common", 0)]
+            }
+        ],
         [BASE_SIZE_MEDIUM]: [
             {
                 name: baseLootVariations.GOLD,
@@ -137,7 +144,7 @@ const baseLootTables_Hard = {
                 loot: [Resource("gold", 0), Resource("xp_common", 0)]
             }
         ],
-        [BASE_SIZE_PIGLIN_ZOMBIE]: [
+        [BASE_SIZE_PIGLIN_SILVERFISH]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,

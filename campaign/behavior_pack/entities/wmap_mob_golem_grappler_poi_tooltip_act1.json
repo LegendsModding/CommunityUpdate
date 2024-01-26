@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_mob_golem_grappler_poi_tooltip_act1",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:map3_tooltip": {
+                "title": "poi.ally.07.faction.name",
+                "description": "poi.ally.act1.description",
+                "banner": "map_screen/banners/legend_banner_poi_grappler.png"
+            }
+        }
+    }
+}

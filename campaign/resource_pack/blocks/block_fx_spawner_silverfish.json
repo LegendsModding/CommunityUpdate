@@ -1,0 +1,21 @@
+{
+  "format_version": "1.15.0",
+  "badger:client_block": {
+    "badger:block_fx_spawner_silverfish": {
+      "particle_spawner": {
+        "effects": [
+          {
+            "effect": "badger:fx_sp_silverfish",
+            "range": "far",
+            "probability": 1.0,
+            "offset": [
+              0.0,
+              -0.50,
+              0.0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

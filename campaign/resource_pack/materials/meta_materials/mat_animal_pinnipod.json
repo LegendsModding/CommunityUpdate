@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_animal_pinnipod:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/frostlands_temp/tex_animal_pinnipod_d",
+            "coeffMap": "textures/entity/frostlands_temp/tex_animal_pinnipod_mr"
+        }
+    }
+}

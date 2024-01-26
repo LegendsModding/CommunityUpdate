@@ -5,7 +5,8 @@ const LocksKeys = {
         ally1: "poi_ally_02_completed",
         ally2: "poi_ally_04_completed_all",
         ally3: "poi_ally_05_completed_all",
-        ally4: "poi_ally_06_completed_all"
+        ally4: "poi_ally_06_completed_all",
+        ally5: "poi_ally_07_completed_all"
     },
     [FACTION_NAME_ATTACK]: {
         [BASE_SIZE_MEDIUM]: {
@@ -112,7 +113,9 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider"
+                    ma3: "unlock_spawner_spider",
+                    ma4: "unlock_spawner_slime",
+                    ma5: "unlock_spawner_silverfish"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -238,7 +241,9 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider"
+                    ma3: "unlock_spawner_spider",
+                    ma4: "unlock_spawner_slime",
+                    ma5: "unlock_spawner_silverfish"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -364,7 +369,9 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider"
+                    ma3: "unlock_spawner_spider",
+                    ma4: "unlock_spawner_slime",
+                    ma5: "unlock_spawner_silverfish"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -490,7 +497,9 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider"
+                    ma3: "unlock_spawner_spider",
+                    ma4: "unlock_spawner_slime",
+                    ma5: "unlock_spawner_silverfish"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -1405,6 +1414,12 @@ const SetupMobCages = (villageId, cageTag, mobArchetype = "", mobAmount = 15) =>
         if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_SPIDER)) {
             possibleVictims.push(MOB_ARCHETYPE.SPIDER)
         }
+        if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_SLIME)) {
+            possibleVictims.push(MOB_ARCHETYPE.SLIME)
+        }
+        if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_SILVERFISH)) {
+            possibleVictims.push(MOB_ARCHETYPE.SILVERFISH)
+        }
         possibleVictims.push(ChooseFromArray(MOB_ARCHETYPE.ANIMALS))
         mobArchetype = possibleVictims[QUERY_RandomNumber(0, possibleVictims.length - 1)]
     }
@@ -1480,6 +1495,12 @@ SNIPPET_EntitySpawned("es_caged_mobs_spawned", (entitySpawned, payload) => {
         case MOB_ARCHETYPE.SPIDER:
             behavior = MOB_BEHAVIOUR_DICTIONARY.spider.caged
             break
+        case MOB_ARCHETYPE.SLIME:
+            behavior = MOB_BEHAVIOUR_DICTIONARY.slime.caged
+            break
+        case MOB_ARCHETYPE.SILVERFISH:
+            behavior = MOB_BEHAVIOUR_DICTIONARY.silverfish.caged
+            break
         case MOB_ARCHETYPE.WITCH:
             behavior = MOB_BEHAVIOUR_DICTIONARY.witch.caged
             break
@@ -1518,6 +1539,10 @@ const HandleFreeingMobsFromCagesAfterDestroyingVillage = (villageId) => {
             mobAllianceData = GetMobAllianceData("creeper")
         } else if (QUERY_HasTags(oneCagedMob, ["skeleton"])) {
             mobAllianceData = GetMobAllianceData("skeleton")
+        } else if (QUERY_HasTags(oneCagedMob, ["slime"])) {
+            mobAllianceData = GetMobAllianceData("slime")
+        } else if (QUERY_HasTags(oneCagedMob, ["silverfish"])) {
+            mobAllianceData = GetMobAllianceData("silverfish")
         } else {
             mobAllianceData = GetMobAllianceData("spider")
         }
@@ -1578,6 +1603,12 @@ SNIPPET_NonPopCappedEntityDestroyed("ed_raiding_party_cage", (cage, payload) => 
             break
         case MOB_ARCHETYPE.SPIDER:
             mobAllianceData = GetMobAllianceData("spider")
+            break
+        case MOB_ARCHETYPE.SILVERFISH:
+            mobAllianceData = GetMobAllianceData("silverfish")
+            break
+        case MOB_ARCHETYPE.SLIME:
+            mobAllianceData = GetMobAllianceData("slime")
             break
         case MOB_ARCHETYPE.WITCH:
             OUTPUT_SetBehavior(closeCagedMobs, MOB_BEHAVIOUR_DICTIONARY.witch.default)

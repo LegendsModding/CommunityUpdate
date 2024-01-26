@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+	  "description": {
+		"identifier": "badger:poi_mount_lizard_faction"
+	  },
+	  "components": {
+		"badger:template": {
+		  "parent": "badger:poi_mount_08_faction",
+		  "game_mode": "lcu_pvp"
+		},
+		"badger:campaign_team": {
+		  "team_tag": "wild_team"
+		}
+	  }
+	}
+  }

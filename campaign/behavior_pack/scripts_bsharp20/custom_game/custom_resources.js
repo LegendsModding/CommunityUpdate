@@ -60,6 +60,10 @@ const customResourcesData = {
         {
             resourceName: "poi_tower_05_resource",
             startingName: "resources_starting_tower_core_burn"
+        },
+        {
+            resourceName: "poi_tower_06_resource",
+            startingName: "resources_starting_tower_core_giant"
         }
     ]
 }

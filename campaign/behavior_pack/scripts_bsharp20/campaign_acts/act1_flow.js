@@ -5738,7 +5738,7 @@ const _TryRunThreeOutpostsPlacementTiers = (baseSize) => {
 
     const friendlyVillages = _GetFirstVillageEntity()
     const otherPiglinOutposts = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), FACTION_NAME_DBB)
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
 
     for (let i = 0; i < mainPlacementTiers.length; i++) {
@@ -5793,7 +5793,7 @@ const _TryRunSecondSkirmishPlacementTiers = () => {
     ]
 
     const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS])
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
     const wof = GetVillageEntityFromFaction(WELL_OF_FATE)
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
 

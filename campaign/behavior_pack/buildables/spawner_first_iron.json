@@ -1,0 +1,132 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_first_iron",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Spawner",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_first_iron",
+        "tooltip_title": "structures.spawner.first.iron.name",
+        "tactical_description": "structures.spawner.first.iron.tactical_description",
+        "tooltip_description": "structures.spawner.first.iron.description",
+        "buildable_category": "",
+        "sort_order": 0
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_spawner_large"
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_first_iron",
+        "build_time": 5,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spawner_first_iron"
+      },
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "unlock_firsts_spawners",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "coal",
+            "amount": 75
+          },
+          {
+            "item": "emerald",
+            "amount": 250
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_golem_grappler",
+            "percentage": 1
+          }
+        ],
+        "cap": -1,
+        "batch": 1,
+        "rate": 0,
+        "max_radius": 5,
+        "max_height_difference": 4,
+        "disable_wander": true,
+        "enable_recall": true,
+        "requires_input": true,
+        "has_spawn_cost": true,
+        "disable_pop_cap_culling": true
+      },
+      "badger:text_markup_icon_name": {
+        "name": "key.item.spawnerFirstiron"
+      },
+      "badger:health": {
+        "max_health": 50
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "player_buildable",
+          "spawner",
+          "firstironspawner",
+          "tier3PlayerStructure"
+        ]
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_spawner_first_iron",
+        "label": ""
+      },
+      "badger:template": [
+        "badger:template_spawner",
+        "badger:template_structure_player"
+      ],
+      "badger:village_influence": {
+        "amount": 10
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 6,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction_spawner",
+            "input_layout_under_construction": "overlay_gameplay_under_construction"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:rendering": {
+        "definition": "badger:entity_struct_poi_grappler_golem_head",
+        "static": true
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.entity_struct_poi_grappler_golem_head"
+      },
+      "identifier": "badger:entity_struct_poi_grappler_golem_head",
+      "materials": {
+        "default": "entity_model",
+        "mat_shared_block_player": "mat_shared_block_player"
+      },
+      "render_controllers": ["controller.render.entity_struct_poi_grappler_golem_head"]
+    }
+  }
+}

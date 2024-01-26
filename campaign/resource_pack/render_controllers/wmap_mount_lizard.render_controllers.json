@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_mount_lizard": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_mount_lizard": "MetaMaterial.mat_wmap_mount_lizard"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

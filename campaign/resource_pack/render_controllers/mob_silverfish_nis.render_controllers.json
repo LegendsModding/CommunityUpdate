@@ -1,0 +1,27 @@
+{
+  "render_controllers": {
+    "controller.render.mob_silverfish_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_silverfish": "MetaMaterial.mat_mob_silverfish"
+        },
+        {
+          "mat_mob_silverfish_face": "MetaMaterial.mat_mob_silverfish_face"
+        },
+        {
+          "mat_fx_generic_buff_64": "MetaMaterial.mat_fx_generic_buff_64"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "hide_geo": "variable.hide_geo_vis"
+        },
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

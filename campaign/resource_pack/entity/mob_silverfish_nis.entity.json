@@ -1,0 +1,71 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 8,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_silverfish_nis"
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "charge_a": "animation.mob_silverfish.charge_a",
+        "charge_b": "animation.mob_silverfish.charge_b",
+        "charge_tell_a": "animation.mob_silverfish.charge_tell_a",
+        "cheer_a": "animation.mob_silverfish.cheer_a",
+        "cheer_b": "animation.mob_silverfish.cheer_b",
+        "cheer_c": "animation.mob_silverfish.cheer_c",
+        "death_a": "animation.mob_silverfish.death_a",
+        "death_b": "animation.mob_silverfish.death_b",
+        "explode_a": "animation.mob_silverfish.explode_a",
+        "hit_reaction_a": "animation.mob_silverfish.hit_reaction_a",
+        "hit_reaction_b": "animation.mob_silverfish.hit_reaction_b",
+        "idle_a": "animation.mob_silverfish.idle_a",
+        "idle_b": "animation.mob_silverfish.idle_b",
+        "idle_breathe": "animation.mob_silverfish.idle_breathe",
+        "knockback_a": "animation.mob_silverfish.knockback",
+        "mob_silverfish_nis": "controller.animation.mob_silverfish_nis.",
+        "run_a": "animation.mob_silverfish.run_a",
+        "run_b": "animation.mob_silverfish.run_b",
+        "spawn_a": "animation.mob_silverfish.spawn_a",
+        "stop_a": "animation.mob_silverfish.stop_a",
+        "stop_b": "animation.mob_silverfish.stop_b",
+        "stun_a": "animation.mob_silverfish.stun_a",
+        "swim_a": "animation.mob_silverfish.swim_a",
+        "swim_idle_a": "animation.mob_silverfish.swim_idle_a",
+        "swim_stop_a": "animation.mob_silverfish.swim_stop_a"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Curious","Run Away","Scared","Hard Blink","PreExplode"],
+      "geometry": {
+        "default": "geometry.mob_silverfish_nis"
+      },
+      "identifier": "badger:mob_silverfish_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_generic_buff_64": "mat_fx_generic_buff_64",
+        "mat_mob_silverfish": "mat_mob_silverfish",
+        "mat_mob_silverfish_face": "mat_mob_silverfish_face"
+      },
+      "render_controllers": ["controller.render.mob_silverfish_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "mob_silverfish_nis": "1"
+          }
+        ],
+        "initialize": ["variable.hide_geo_vis = 1;","variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

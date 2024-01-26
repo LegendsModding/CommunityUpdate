@@ -4,7 +4,7 @@
       "geometry": "Geometry.default",
       "materials":  [
         {
-          "wmap_dragon_red": "MetaMaterial.wmap_dragon_red"
+          "mat_wmap_dragon_red": "MetaMaterial.mat_wmap_dragon_red"
         }
       ]
     }

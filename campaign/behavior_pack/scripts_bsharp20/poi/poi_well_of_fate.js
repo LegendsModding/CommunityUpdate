@@ -36,6 +36,16 @@ const poiWoFVal = {
                 archetype: MOB_ARCHETYPE.SPIDER,
                 amount: 16,
                 behavior: MOB_BEHAVIOUR_DICTIONARY.spider.act2,
+            },
+            {
+                archetype: MOB_ARCHETYPE.SLIME,
+                amount: 16,
+                behavior: MOB_BEHAVIOUR_DICTIONARY.slime.act2,
+            },
+            {
+                archetype: MOB_ARCHETYPE.SILVERFISH,
+                amount: 16,
+                behavior: MOB_BEHAVIOUR_DICTIONARY.silverfish.act2,
             }
         ]
     },

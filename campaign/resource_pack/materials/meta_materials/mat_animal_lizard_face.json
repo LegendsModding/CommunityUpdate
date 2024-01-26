@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "mat_animal_lizard_face:base_entity_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mount_lizard_face_d",
+      "coeffMap": "textures/entity/tex_mount_lizard_face_mr",
+      "normalMap": "textures/entity/tex_mount_lizard_face_n"
+    }
+  }
+}

@@ -347,6 +347,8 @@ const SetMountWorldSpawnerState = (spawnersActive) => {
     OUTPUT_SetGlobalVariable("disable_world_tiger_mount_spawner", gvValue)
     OUTPUT_SetGlobalVariable("disable_world_mount_06_spawner", gvValue)
     OUTPUT_SetGlobalVariable("disable_world_mount_camel_spawner", gvValue)
+    OUTPUT_SetGlobalVariable("disable_world_mount_lizard_spawner", gvValue)
+    OUTPUT_SetGlobalVariable("disable_world_mount_ravager_spawner", gvValue)
 }
 
 const SetSpecificMountWorldSpawnerState = (spawnerActive, mount) => {
@@ -367,6 +369,12 @@ const SetSpecificMountWorldSpawnerState = (spawnerActive, mount) => {
             break
         case MOUNTS.CAMEL:
             OUTPUT_SetGlobalVariable("disable_world_mount_camel_spawner", gvValue)
+            break
+        case MOUNTS.LIZARD:
+            OUTPUT_SetGlobalVariable("disable_world_mount_lizard_spawner", gvValue)
+            break
+        case MOUNTS.RAVAGER:
+            OUTPUT_SetGlobalVariable("disable_world_mount_ravager_spawner", gvValue)
             break
     }
 }

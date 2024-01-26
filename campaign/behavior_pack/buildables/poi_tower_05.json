@@ -120,7 +120,7 @@
             "badger:invasion_defense_value": {
                 "defense_value": 1000,
                 "defense_multiplier": {
-                    "key": "frost_tower",
+                    "key": "burn_tower",
                     "value": 1.1
                 }
             },

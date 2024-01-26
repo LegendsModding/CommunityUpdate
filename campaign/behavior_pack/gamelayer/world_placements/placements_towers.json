@@ -442,6 +442,109 @@
           }
         }
       ]
+    },
+    {
+      "unique_card_id": "badger_poi_tower_6_poi_towers_poi_tower_06",
+      "map_data": "badger:poi_tower_faction_06",
+      "village_data": "badger:poi_tower_village_06",
+      "placement_name": "poi_tower_6",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_geology_nearby": false,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 20,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "tags": [
+        "poi_towers",
+        "poi_tower_06"
+      ],
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "poi_tower_06_biome",
+          "manual_height": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": 25,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 40,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  48
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  48
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_2"
+              }
+            ],
+            "weight": 2
+            // "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1,
+            "mandatory_threshold": 1.0,
+            "do_not_scale_distance": true
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [0, 220],
+            "distance_to_zero_score": 0,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
     }
   ]
 }

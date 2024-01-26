@@ -1,0 +1,335 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_slimeVillageCenter",
+      "cost": 0,
+      "tags": [
+        "slimeVillageCenter"
+      ],
+      "buildable": "badger:mob_alliance_slime_central_flame"
+    },
+    {
+      "unique_card_id": "badger_slimeMobAllianceHouse01",
+      "cost": 0,
+      "tags": [
+        "slimeMobAllianceHouse01"
+      ],
+      "buildable": "badger:poi_mob_alliance_slime_home_01"
+    },
+    {
+      "unique_card_id": "badger_slimeMobAllianceHouse02",
+      "cost": 0,
+      "tags": [
+        "slimeMobAllianceHouse02"
+      ],
+      "buildable": "badger:poi_mob_alliance_slime_home_02"
+    },
+    {
+      "unique_card_id": "badger_slimeMobAllianceHouse03",
+      "cost": 0,
+      "tags": [
+        "slimeMobAllianceHouse03"
+      ],
+      "buildable": "badger:poi_mob_alliance_slime_home_03"
+    },
+    {
+      "unique_card_id": "badger_slimeMobAllianceDeco01",
+      "cost": 0,
+      "tags": [
+        "slimeMobAllianceDeco01"
+      ],
+      "buildable": "badger:poi_mob_alliance_slime_deco_01"
+    },
+    {
+      "unique_card_id": "badger_slimeMobAllianceDeco02",
+      "cost": 0,
+      "tags": [
+        "slimeMobAllianceDeco02"
+      ],
+      "buildable": "badger:poi_mob_alliance_slime_deco_02"
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_slimeCenterDeadZone",
+      "cost": 0,
+      "tags": [
+        "slimeCenterDeadZone"
+      ],
+      "zone_tag": "slimeCenterDeadZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeTotemOnlyZone",
+      "cost": 0,
+      "tags": [
+        "slimeTotemOnlyZone"
+      ],
+      "zone_tag": "slimeTotemOnlyZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeHouseZone",
+      "cost": 0,
+      "tags": [
+        "slimeHouseZone"
+      ],
+      "zone_tag": "slimeHouseZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeDecoZone",
+      "cost": 0,
+      "tags": [
+        "slimeDecoZone"
+      ],
+      "zone_tag": "slimeDecoZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeCageZones",
+      "cost": 0,
+      "tags": [
+        "slimeCageZones"
+      ],
+      "zone_tag": "slimeCageZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeCageCloseToCenterZone",
+      "cost": 0,
+      "tags": [
+        "slimeCageCloseToCenterZone"
+      ],
+      "zone_tag": "slimeCageCloseToCenterZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeNorthDistrict"
+      ],
+      "zone_tag": "slimeNorthDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeSouthDistrict"
+      ],
+      "zone_tag": "slimeSouthDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeEastDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeEastDistrict"
+      ],
+      "zone_tag": "slimeEastDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeWestDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeWestDistrict"
+      ],
+      "zone_tag": "slimeWestDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeNorthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeNorthDistrictDeco"
+      ],
+      "zone_tag": "slimeNorthDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeSouthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeSouthDistrictDeco"
+      ],
+      "zone_tag": "slimeSouthDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeEastDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeEastDistrictDeco"
+      ],
+      "zone_tag": "slimeEastDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeWestDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeWestDistrictDeco"
+      ],
+      "zone_tag": "slimeWestDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_slimeViewpointZone",
+      "cost": 0,
+      "tags": [
+        "slimeViewpointZone"
+      ],
+      "zone_tag": "slimeViewpointZone"
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_slimeCenterDeadZone",
+      "cost": 0,
+      "tags": [
+        "slimeCenterDeadZone"
+      ],
+      "zone_filter": "slimeCenterDeadZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_slimeTotemOnlyZone",
+      "cost": 0,
+      "tags": [
+        "slimeTotemOnlyZone"
+      ],
+      "zone_filter": "slimeTotemOnlyZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_slimeHouseZone",
+      "cost": 0,
+      "tags": [
+        "slimeHouseZone"
+      ],
+      "zone_filter": "slimeHouseZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_slimeDecoZone",
+      "cost": 0,
+      "tags": [
+        "slimeDecoZone"
+      ],
+      "zone_filter": "slimeDecoZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_slimeCageZones",
+      "cost": 0,
+      "tags": [
+        "slimeCageZones"
+      ],
+      "zone_filter": "slimeCageZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_slimeViewpointZone",
+      "cost": 0,
+      "tags": [
+        "slimeViewpointZone"
+      ],
+      "zone_filter": "slimeViewpointZone",
+      "exclude": false
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_slimeNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeNorthDistrict"
+      ],
+      "district": "slimeNorthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_slimeSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeSouthDistrict"
+      ],
+      "district": "slimeSouthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_slimeEastDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeEastDistrict"
+      ],
+      "district": "slimeEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_slimeWestDistrict",
+      "cost": 0,
+      "tags": [
+        "slimeWestDistrict"
+      ],
+      "district": "slimeWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_slimeNorthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeNorthDistrictDeco"
+      ],
+      "district": "slimeNorthDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_slimeSouthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeSouthDistrictDeco"
+      ],
+      "district": "slimeSouthDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_slimeEastDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeEastDistrictDeco"
+      ],
+      "district": "slimeEastDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_slimeWestDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "slimeWestDistrictDeco"
+      ],
+      "district": "slimeWestDistrictDeco"
+    }
+  ],
+  "placement_preference_cards": [
+    {
+      "unique_card_id": "slimeconnectToPath",
+      "cost": 0,
+      "tags": [
+        "slimeconnectToPath"
+      ],
+      "placement_preference": "connect_to_path"
+    },
+    {
+      "unique_card_id": "facing_buildables_slime_center",
+      "cost": 0,
+      "tags": [
+        "facing_buildables_slime_center"
+      ],
+      "placement_preference": "facing_buildable",
+      "buildable": "mob_alliance_slime_central_flame"
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "slime_district_path",
+      "cost": 0,
+      "tags": [
+        "slime_district_path"
+      ],
+      "is_district_path": true
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "slimeInitialOccupationViewpoint",
+      "cost": 0,
+      "tags": [
+        "slimeInitialOccupationViewpoint"
+      ],
+      "tag": "slimeInitialOccupationViewpoint"
+    }
+  ]
+}

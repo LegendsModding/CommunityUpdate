@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_killer_rabbit": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_killer_rabbit": "MetaMaterial.mat_wmap_killer_rabbit"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

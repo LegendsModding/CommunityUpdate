@@ -20,43 +20,43 @@
     },
     {
         "name" : "objectives.defeatFrost",
-        "priority": 3,
+        "priority": 4,
         "amount_required": 1,
         "is_primary": true
     },
     {
         "name" : "objectives.villagesSafe",
-        "priority": 4,
+        "priority": 5,
         "amount_required": 5
     },
     {
         "name" : "objectives.witchesUnlocked",
-        "priority": 5,
+        "priority": 6,
         "amount_required": 1
     },
     {
         "name" : "objectives.alliancesSafe",
-        "priority": 6,
-        "amount_required": 4
+        "priority": 7,
+        "amount_required": 6
     },
     {
         "name" : "objectives.mountsUnlocked",
-        "priority": 7,
-        "amount_required": 5
+        "priority": 8,
+        "amount_required": 7
     },
     {
         "name" : "objectives.firstsAwoken",
-        "priority": 8,
-        "amount_required": 5
+        "priority": 9,
+        "amount_required": 6
     },
     {
         "name" : "objectives.towersUnlocked",
-        "priority": 9,
-        "amount_required": 4
+        "priority": 10,
+        "amount_required": 5
     },
     {
         "name" : "objectives.saveWorld",
-        "priority": 10,
+        "priority": 11,
         "amount_required": 1,
         "is_primary": true
     }

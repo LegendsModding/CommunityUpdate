@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:poi_mount_ravager_faction"
+        },
+        "components": {
+            "badger:faction": {
+                "id": "faction.poi.mount.09",
+                "name": "poi.mount.ravager.faction.name",
+                "description": "poi.mount.ravager.faction.description",
+                "known": true
+            },
+            "badger:campaign_team": {
+                "team_tag": "campaign_team"
+            }
+        }
+    }
+}

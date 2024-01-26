@@ -1,0 +1,44 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "badger:rule_spawner_animal_crocapus",
+            "places_feature": "badger:feature_spawner_animal_crocapus"
+        },
+        "conditions": {
+            "enabled": true,
+            "placement_pass": 5,
+            "minecraft:biome_filter": [
+                {
+                  "any_of": [
+                    {
+                      "test": "has_biome_tag",
+                      "operator": "==",
+                      "value": "frostlands"
+                    }
+                  ]
+                }
+              ]
+        },
+        "distribution": {
+            "iterations": "1",
+            "early_out": "query.water_distance(v.scatteredx, v.scatteredz) <= 1",
+            "scatter_chance": "query.get_game_rule_value('roaming_animals') ? 2 : 0",
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    8
+                ]
+            },
+            "y": "query.heightmap(variable.worldx, variable.worldz)",
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    8
+                ]
+            }
+        }
+    }
+}

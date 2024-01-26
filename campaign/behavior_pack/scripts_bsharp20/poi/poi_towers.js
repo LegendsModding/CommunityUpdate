@@ -114,6 +114,35 @@ const poiTowerVal = {
         voiceOvers: {
             towerProximity: "poi_burn_proximity"
         }
+    },
+    [POI_TOWER_NAME_GIANT]: {
+        id: "tower06",
+        buildingTag: "poi_tower_06",
+        triggerVolumeTag: "tower_06_tv",
+        resource: "poi_tower_06_resource",
+        factionName: POI_TOWER_NAME_GIANT,
+        icon: "badger:wmap_giant_tower",
+        buildingCard: "poiTower06",
+        cinematic: "tow_06_c01_giant_fmv",
+        nightCinematic: "tow_06_c01_giant_night",
+        cinematicVillageTag: "poi_tower_06_cinematic_village",
+        journalUnlock: JOURNAL_UNLOCKS.TOWER_GIANT,
+        telemetry: {
+            name: "poi_tower_giant",
+            subcategory: "giant_tower"
+        },
+        message: {
+            act1Investigate: "poiTower6_investigate",
+            proximity: "poiTower6_proximity",
+            deconstructed: "poiTower6_deconstructed"
+        },
+        global: {
+            revealed: "poi_tower_06_revealed",
+            cinematicPlayed: "gv_giant_tower_cinematic_played"
+        },
+        voiceOvers: {
+            towerProximity: "poi_giant_proximity"
+        }
     }
 }
 
@@ -205,6 +234,13 @@ SNIPPET_InheritsFromGameMode("campaign", () => {
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
         factionName: "faction.poi.tower_05"
     })
+
+    LISTENFOR_VillageDestroyed({
+        snippet: "vd_tower6_destroyed",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: "faction.poi.tower_06"
+    })
+
 })
 
 SNIPPET_VillageDestroyed("vd_tower1_destroyed", (_villageId, _payload) => {
@@ -329,7 +365,7 @@ const _RemoveAllInvestigationInteractionZonesForTower = (towerKey) => {
 
 // Switches interaction state only on towers which are in the wild
 const _SetPOITowersInteractionState = (towerKey, state) => {
-    const allTowers = FILTER_ByFactionName(QUERY_GetEntitiesWithTags(poiTowerVal[towerKey].buildingTag), [POI_TOWER_NAME_KNOCKBACK, POI_TOWER_NAME_STUN, POI_TOWER_NAME_FREEZE, POI_TOWER_NAME_BURN])
+    const allTowers = FILTER_ByFactionName(QUERY_GetEntitiesWithTags(poiTowerVal[towerKey].buildingTag), [POI_TOWER_NAME_KNOCKBACK, POI_TOWER_NAME_STUN, POI_TOWER_NAME_FREEZE, POI_TOWER_NAME_BURN, POI_TOWER_NAME_GIANT])
     ForEachEntities(allTowers, (entity) => {
         OUTPUT_SetInteractionState(entity, state)
     })

@@ -560,6 +560,33 @@
         "is_celebratory": true,
         "audio_event": "BAE_ui_hud_biggest_banner_pos"
       },
+      "unlock_quest_mount_07": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_07",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_mount_07_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "unlock_quest_mount_08": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_08",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_mount_08_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "unlock_quest_mount_09": {
+        "message": "messages.resource_discovered.custom.unlock_quest_mount_09",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.unlock_quest_mount_title",
+        "icon_path": "messages/notif_mount_09_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
       "poi_tower_01_resource": {
         "message": "messages.resource_discovered.custom.poi_tower_01_resource",
         "priority": 2,
@@ -593,6 +620,15 @@
         "display_time": 5.0,
         "title": "messages.resource_discovered.custom.poi_tower_05_title",
         "icon_path": "messages/notif_poi_tower_05_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_tower_06_resource": {
+        "message": "messages.resource_discovered.custom.poi_tower_06_resource",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_tower_06_title",
+        "icon_path": "messages/notif_poi_tower_06_unlock.gif",
         "is_celebratory": true,
         "audio_event": "BAE_ui_hud_biggest_banner_pos"
       },
@@ -676,6 +712,24 @@
         "display_time": 5.0,
         "audio_event": "BAE_ui_hud_biggest_banner_pos"
       },
+      "poi_ally_07_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_ally_07.body",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_ally_07.title",
+        "icon_path": "messages/notif_poi_golem_07_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_ally_07_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_ally_07.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      // Legends
+      // Red Dragon
       "poi_legend_dragon_red_unlock": {
         //POI ally unlock
         "message": "messages.resource_discovered.custom.poi_legend_dragon_red.dragon",
@@ -688,6 +742,23 @@
       },
       "poi_legend_dragon_red_unlock_bonus": {
         "message": "messages.resource_discovered.custom.poi_legend_dragon_red.bonus",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      // Killer Rabbit
+      "poi_legend_killer_rabbit_unlock": {
+        //POI ally unlock
+        "message": "messages.resource_discovered.custom.poi_legend_killer_rabbit.dragon",
+        "priority": 2,
+        "display_time": 5.0,
+        "title": "messages.resource_discovered.custom.poi_legend_killer_rabbit.title",
+        "icon_path": "messages/notif_poi_legend_killer_rabbit_unlock.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_pos"
+      },
+      "poi_legend_killer_rabbit_unlock_bonus": {
+        "message": "messages.resource_discovered.custom.poi_legend_killer_rabbit.bonus",
         "priority": 6,
         "display_time": 5.0,
         "audio_event": "BAE_ui_hud_biggest_banner_pos"
@@ -909,6 +980,18 @@
         "display_time": 40.0,
         "audio_event": "BAE_ui_hud_small_banner_pos"
       },
+      "mob_join_fight_slime": {
+        "message": "mob.alliance.slime.help.message",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "mob_join_fight_silverfish": {
+        "message": "mob.alliance.silverfish.help.message",
+        "priority": 0,
+        "display_time": 40.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
       "mob_join_fight_creeper": {
         "message": "mob.alliance.creeper.help.message",
         "priority": 0,
@@ -935,6 +1018,18 @@
       },
       "mobAlliance_damaged_friendly_spider": {
         "message": "mob.alliance.spider.damaged.friendly",
+        "priority": 1,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "mobAlliance_damaged_friendly_slime": {
+        "message": "mob.alliance.slime.damaged.friendly",
+        "priority": 1,
+        "display_time": 10.0,
+        "audio_event": "BAE_ui_hud_big_banner_neg"
+      },
+      "mobAlliance_damaged_friendly_silverfish": {
+        "message": "mob.alliance.silverfish.damaged.friendly",
         "priority": 1,
         "display_time": 10.0,
         "audio_event": "BAE_ui_hud_big_banner_neg"
@@ -1025,6 +1120,25 @@
         "display_time": 6.0,
         "audio_event": "BAE_ui_hud_small_banner_pos"
       },
+      // ====== POI ALLY 6 =======
+      "poiAlly6_approached": {
+        "message": "poi.ally.06.message.approached",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly6_bodyproximity": {
+        "message": "poi.ally.06.message.bodyproximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiAlly6_completed": {
+        "message": "poi.ally.06.message.completed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
       "generic_ally_left_behind": {
         "message": "poi.ally.left.behind.generic",
         "priority": 6,
@@ -1111,6 +1225,25 @@
         "display_time": 6.0,
         "audio_event": "BAE_ui_hud_error"
       },
+      // ====== TOWER 6 (GIANT) =======
+      "poiTower6_proximity": {
+        "message": "poi.tower_village_06.act4_proximity",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower6_deconstructed": {
+        "message": "poi.tower_village_06.act4_deconstructed",
+        "priority": 6,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_small_banner_pos"
+      },
+      "poiTower6_investigate": {
+        "message": "poi.tower_village_06.act4_investigate",
+        "priority": 5,
+        "display_time": 6.0,
+        "audio_event": "BAE_ui_hud_error"
+      },
       // ======================= MOUNTS ==========================
       // ====== MOUNT 1 (TIGER) =======
       "mount1_intro": {
@@ -1153,7 +1286,7 @@
         "display_time": 5.0,
         "audio_event": "BAE_ui_hud_big_banner_pos"
       },
-      // ====== MOUNT 6 (???) =======
+      // ====== MOUNT 6 (FROG) =======
       "mount6_intro": {
         "message": "poi.mount.06.intro",
         "priority": 6,
@@ -1166,6 +1299,46 @@
         "display_time": 5.0,
         "audio_event": "BAE_ui_hud_big_banner_pos"
       },
+      // ====== MOUNT 7 (CAMEL) =======
+      "mount7_intro": {
+        "message": "poi.mount.07.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount7_outro": {
+        "message": "poi.mount.07.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ====== MOUNT 8 (LIZARD) =======
+      "mount8_intro": {
+        "message": "poi.mount.08.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount8_outro": {
+        "message": "poi.mount.08.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      // ====== MOUNT 9 (RAVAGER) =======
+      "mount9_intro": {
+        "message": "poi.mount.09.intro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "mount9_outro": {
+        "message": "poi.mount.09.outro",
+        "priority": 6,
+        "display_time": 5.0,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      //
       "mount_already_mounted": {
         "message": "mount.already.mounted",
         "priority": 5,
@@ -1352,6 +1525,26 @@
       },
       "spawner_destroyed_enemy_spider": {
         "message": "pvp.spawner_destroyed.spider.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_slime": {
+        "message": "pvp.spawner_destroyed.slime.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_slime": {
+        "message": "pvp.spawner_destroyed.slime.enemy",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_pos"
+      },
+      "spawner_destroyed_friendly_silverfish": {
+        "message": "pvp.spawner_destroyed.silverfish.friendly",
+        "priority": -3,
+        "audio_event": "BAE_ui_hud_chat_neg"
+      },
+      "spawner_destroyed_enemy_silverfish": {
+        "message": "pvp.spawner_destroyed.silverfish.enemy",
         "priority": -3,
         "audio_event": "BAE_ui_hud_chat_pos"
       },
@@ -1664,6 +1857,24 @@
         "is_celebratory": true,
         "audio_event": "BAE_ui_hud_big_banner_pos"
       },
+      "village_attack_slimes_defended": {
+        "message": "invasion.village_attack_slimes_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_slimes_defended.title",
+        "icon_path": "messages/notif_mob_slime.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_attack_silverfishes_defended": {
+        "message": "invasion.village_attack_silverfishes_defended",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_attack_silverfishes_defended.title",
+        "icon_path": "messages/notif_mob_silverfish.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
       "village_attack_zombies_defended": {
         "message": "invasion.village_attack_zombies_defended",
         "priority": 2,
@@ -1719,6 +1930,24 @@
         "is_alert": true,
         "audio_event": "BAE_ui_hud_biggest_banner_neg"
       },
+      "village_attack_occupation_begin_slimes": {
+        "message": "invasion.village_occupation_begin_slimes",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_slimes.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      "village_attack_occupation_begin_silverfishes": {
+        "message": "invasion.village_occupation_begin_silverfishes",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_begin_silverfishes.title",
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "is_alert": true,
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
       "village_attack_occupation_begin_zombies": {
         "message": "invasion.village_occupation_begin_zombies",
         "priority": 2,
@@ -1760,6 +1989,20 @@
         "title": "invasion.village_occupation_free_spiders.title",
         "audio_event": "BAE_ui_hud_tutorial_nudge"
       },
+      "village_attack_occupation_free_slimes": {
+        "message": "invasion.village_occupation_free_slimes",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_slimes.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_free_silverfishes": {
+        "message": "invasion.village_occupation_free_silverfishes",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_free_silverfishes.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
       "village_attack_occupation_free_zombies": {
         "message": "invasion.village_occupation_free_zombies",
         "priority": 6,
@@ -1789,6 +2032,18 @@
       },
       "village_attack_occupation_abandon_spiders": {
         "message": "invasion.village_occupation_abandon_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_abandon_slimes": {
+        "message": "invasion.village_occupation_abandon_slimes",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_abandon_silverfishes": {
+        "message": "invasion.village_occupation_abandon_silverfishes",
         "priority": 6,
         "display_time": 12.0,
         "audio_event": "BAE_ui_hud_tutorial_nudge"
@@ -1825,6 +2080,20 @@
         "priority": 6,
         "display_time": 12.0,
         "title": "invasion.village_occupation_end_repair_remaining_spiders.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_repair_remaining_slimes": {
+        "message": "invasion.village_occupation_end_repair_remaining_slimes",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_slimes.title",
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_repair_remaining_silverfishes": {
+        "message": "invasion.village_occupation_end_repair_remaining_silverfishes",
+        "priority": 6,
+        "display_time": 12.0,
+        "title": "invasion.village_occupation_end_repair_remaining_silverfishes.title",
         "audio_event": "BAE_ui_hud_tutorial_nudge"
       },
       "village_attack_occupation_end_repair_remaining_zombies": {
@@ -1866,6 +2135,18 @@
         "display_time": 12.0,
         "audio_event": "BAE_ui_hud_tutorial_nudge"
       },
+      "village_attack_occupation_repair_reminder_slimes": {
+        "message": "invasion.village_occupation_repair_reminder_slimes",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_reminder_silverfishes": {
+        "message": "invasion.village_occupation_repair_reminder_silverfishes",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
       "village_attack_occupation_repair_reminder_zombies": {
         "message": "invasion.village_occupation_repair_reminder_zombies",
         "priority": 6,
@@ -1892,6 +2173,18 @@
       },
       "village_attack_occupation_repair_message_spiders": {
         "message": "invasion.village_occupation_repair_message_spiders",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_slimes": {
+        "message": "invasion.village_occupation_repair_message_slimes",
+        "priority": 6,
+        "display_time": 12.0,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_repair_message_silverfishes": {
+        "message": "invasion.village_occupation_repair_message_silverfishes",
         "priority": 6,
         "display_time": 12.0,
         "audio_event": "BAE_ui_hud_tutorial_nudge"
@@ -1949,6 +2242,36 @@
       },
       "village_occupation_free_spiders_reminder": {
         "message": "invasion.village_occupation_free_spiders_reminder",
+        "priority": 6,
+        "display_time": 10,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_slimes": {
+        "message": "invasion.village_occupation_end_slimes",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_slimes.title",
+        "icon_path": "messages/notif_mob_slime.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_occupation_free_slimes_reminder": {
+        "message": "invasion.village_occupation_free_slimes_reminder",
+        "priority": 6,
+        "display_time": 10,
+        "audio_event": "BAE_ui_hud_tutorial_nudge"
+      },
+      "village_attack_occupation_end_silverfishes": {
+        "message": "invasion.village_occupation_end_silverfishes",
+        "priority": 2,
+        "display_time": 10.0,
+        "title": "invasion.village_occupation_end_silverfishes.title",
+        "icon_path": "messages/notif_mob_silverfish.gif",
+        "is_celebratory": true,
+        "audio_event": "BAE_ui_hud_big_banner_pos"
+      },
+      "village_occupation_free_silverfishes_reminder": {
+        "message": "invasion.village_occupation_free_silverfishes_reminder",
         "priority": 6,
         "display_time": 10,
         "audio_event": "BAE_ui_hud_tutorial_nudge"
@@ -3866,6 +4189,28 @@
           "type": 0
         }
       ],
+      "poiAlly6_unlock_sequence": [
+        // works
+        {
+          "id": "poi_ally_06_unlock",
+          "type": 0
+        },
+        {
+          "id": "poi_ally_06_unlock_bonus",
+          "type": 0
+        }
+      ],
+      "poiAlly7_unlock_sequence": [
+        // works
+        {
+          "id": "poi_ally_07_unlock",
+          "type": 0
+        },
+        {
+          "id": "poi_ally_07_unlock_bonus",
+          "type": 0
+        }
+      ],
       "invasion_intentions_drawn_sequence": [
         // When Piglins arrive, announce then prompt to look at map
         {
@@ -4204,6 +4549,30 @@
         },
         {
           "id": "village_occupation_free_spiders_reminder",
+          "type": 0,
+          "duration": 10
+        }
+      ],
+      "village_attack_occupation_end_slimes_sequence": [
+        {
+          "id": "village_attack_occupation_end_slimes",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "village_occupation_free_slimes_reminder",
+          "type": 0,
+          "duration": 10
+        }
+      ],
+      "village_attack_occupation_end_silverfishes_sequence": [
+        {
+          "id": "village_attack_occupation_end_silverfishes",
+          "type": 0,
+          "duration": 10
+        },
+        {
+          "id": "village_occupation_free_silverfishes_reminder",
           "type": 0,
           "duration": 10
         }

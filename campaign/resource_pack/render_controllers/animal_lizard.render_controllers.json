@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_lizard": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_lizard": "MetaMaterial.mat_animal_lizard"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

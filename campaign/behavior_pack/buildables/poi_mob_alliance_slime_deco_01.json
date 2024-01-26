@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_mob_alliance_slime_deco_01",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "water"
+        ]
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_structure": {
+        "nbt_file": "poi_mob_alliance_slime_deco_01",
+        "build_time": 0.1
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_generic"
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_prop",
+          "buildable_structure",
+          "donotattack",
+          "poi",       
+          "mob_alliance_structure"
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default"
+      ]
+    }
+  }
+}

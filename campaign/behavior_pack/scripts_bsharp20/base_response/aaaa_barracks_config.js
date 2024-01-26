@@ -14,19 +14,19 @@ const VindicatorBarracksConfig_wofFaction = {
                 batch: 0
             },
             phase_1: {
-                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_zombie"],
+                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_zombie"],
                 cap: 8,
                 rate: 50,
                 batch: 8
             },
             phase_2: {
-                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_zombie"],
+                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_zombie"],
                 cap: 8,
                 rate: 50,
                 batch: 8
             },
             phase_3: {
-                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_zombie"],
+                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_zombie"],
                 cap: 8,
                 rate: 50,
                 batch: 8
@@ -1676,25 +1676,25 @@ const AllyBarracksConfig_DBBFaction = {
     name: BARRACKS_NAME_ALLIES,
     darkBeacon: {
         phase_0: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
             cap: 0,
             rate: 0,
             batch: 0
         },
         phase_1: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
             cap: 6,
             rate: 31,
             batch: 3
         },
         phase_2: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
             cap: 6,
             rate: 31,
             batch: 3
         },
         phase_3: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
             cap: 6,
             rate: 31,
             batch: 3
@@ -1788,6 +1788,68 @@ const AllyBarracksSpiderConfig_DBBFaction = {
         },
         phase_3: {
             loadout: ["badger:mob_spider"],
+            cap: 16,
+            rate: 50,
+            batch: 4
+        }
+    }
+}
+
+//Slime
+const AllyBarracksSlimeConfig_DBBFaction = {
+    name: BARRACKS_NAME_SLIME,
+    darkBeacon: {
+        phase_0: {
+            loadout: ["badger:mob_slime"],
+            cap: 0,
+            rate: 0,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:mob_slime"],
+            cap: 16,
+            rate: 50,
+            batch: 4
+        },
+        phase_2: {
+            loadout: ["badger:mob_slime"],
+            cap: 16,
+            rate: 50,
+            batch: 4
+        },
+        phase_3: {
+            loadout: ["badger:mob_slime"],
+            cap: 16,
+            rate: 50,
+            batch: 4
+        }
+    }
+}
+
+//Silverfish
+const AllyBarracksSilverfishConfig_DBBFaction = {
+    name: BARRACKS_NAME_SILVERFISH,
+    darkBeacon: {
+        phase_0: {
+            loadout: ["badger:mob_silverfish"],
+            cap: 0,
+            rate: 0,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:mob_silverfish"],
+            cap: 16,
+            rate: 50,
+            batch: 4
+        },
+        phase_2: {
+            loadout: ["badger:mob_silverfish"],
+            cap: 16,
+            rate: 50,
+            batch: 4
+        },
+        phase_3: {
+            loadout: ["badger:mob_silverfish"],
             cap: 16,
             rate: 50,
             batch: 4

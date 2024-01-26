@@ -5,8 +5,8 @@ const customTechTreeData = {
     },
     unlockAll: {
         settingName: "tools_tech_tree_unlock_all",
-        unlocks: ["fountain", "unlock_remaining_wof_upgrades", "unlock_iron_tech", "unlock_advanced_wof_upgrades1", "gather_uncommon_resource", "gather_redstone", "gather_rare_resource", "clear_nether_resource", "gather_coal", "unlock_spawner_golemcavalry", "unlock_spawner_support", "unlock_spawner_zombie", "unlock_spawner_skeleton", "unlock_spawner_spider", "unlock_spawner_creeper", "unlock_poi_tower_upgrade", "unlock_poi_golem_upgrade", "unlock_cauldron", "unlock_battle_view_golemcavalry", "unlock_battle_view_support", "unlock_cauldron"],
-        tempResources: ["wood", "stone", "iron", "coal", "redstone", "diamond", "emerald", "xp_common", "gold", "poi_tower_01_resource", "poi_tower_02_resource", "poi_tower_04_resource", "poi_tower_05_resource"]
+        unlocks: ["fountain", "unlock_remaining_wof_upgrades", "unlock_iron_tech", "unlock_advanced_wof_upgrades1", "gather_uncommon_resource", "gather_redstone", "gather_rare_resource", "clear_nether_resource", "gather_coal", "unlock_spawner_golemcavalry", "unlock_spawner_support", "unlock_spawner_zombie", "unlock_spawner_skeleton", "unlock_spawner_spider", "unlock_spawner_slime", "unlock_spawner_silverfish", "unlock_spawner_creeper", "unlock_poi_tower_upgrade", "unlock_poi_golem_upgrade", "unlock_cauldron", "unlock_battle_view_golemcavalry", "unlock_battle_view_support", "unlock_cauldron"],
+        tempResources: ["wood", "stone", "iron", "coal", "redstone", "diamond", "emerald", "xp_common", "gold", "poi_tower_01_resource", "poi_tower_02_resource", "poi_tower_04_resource", "poi_tower_05_resource", "poi_tower_06_resource"]
     },
     techTree: [
         {
@@ -82,6 +82,10 @@ const customTechTreeData = {
             resourceName: "custom_tech_tree_burn_tower"
         },
         {
+            settingName: "tools_tech_tree_giant_tower",
+            resourceName: "custom_tech_tree_giant_tower"
+        },
+        {
             settingName: "tools_tech_tree_spawner_wood_golem",
             resourceName: "custom_tech_tree_spawner_wood_golem"
         },
@@ -112,6 +116,14 @@ const customTechTreeData = {
         {
             settingName: "tools_tech_tree_spawner_spider",
             resourceName: "custom_tech_tree_spawner_spider"
+        },
+        {
+            settingName: "tools_tech_tree_spawner_slime",
+            resourceName: "custom_tech_tree_spawner_slime"
+        },
+        {
+            settingName: "tools_tech_tree_spawner_silverfish",
+            resourceName: "custom_tech_tree_spawner_silverfish"
         },
         {
             settingName: "tools_tech_tree_improvement_poi_tower",

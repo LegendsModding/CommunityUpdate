@@ -121,6 +121,8 @@ const invasionVillageAttackResolveVal = {
         mobAllianceDefense: {
             [MOB_ALLIANCE_NAME_CREEPER]: 2000,
             [MOB_ALLIANCE_NAME_SPIDER]: 2000,
+            [MOB_ALLIANCE_NAME_SLIME]: 2000,
+            [MOB_ALLIANCE_NAME_SILVERFISH]: 2000,
             [MOB_ALLIANCE_NAME_SKELETON]: 2000,
             [MOB_ALLIANCE_NAME_ZOMBIE]: 2000
         },

@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.entity_struct_poi_grappler_golem_head": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_shared_block_player": "MetaMaterial.mat_shared_block_player"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

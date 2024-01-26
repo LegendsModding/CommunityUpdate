@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_animal_crocapus",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1,
+        "height": 1
+      },
+      "badger:campaign_team": {
+        "team_tag": "wild_team"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:animal_crocapus",
+            "percentage": 1
+          }
+        ],
+        "cap": 3,
+        "batch": 2,
+        "rate": 60,
+        "max_radius": 16,
+        "min_radius": 5
+      },
+      "badger:tags": {
+        "tags": [
+          "spawner_animal"
+        ]
+      },
+      "badger:spawner_rules": {
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.mount_lizard": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mount_lizard": "MetaMaterial.mat_mount_lizard"
+        },
+        {
+          "mat_mount_lizard_face": "MetaMaterial.mat_mount_lizard_face"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "geo_spit": "variable.geo_spit_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

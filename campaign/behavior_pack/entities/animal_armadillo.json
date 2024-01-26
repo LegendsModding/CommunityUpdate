@@ -53,7 +53,7 @@
       "badger:targeting": {
         "targeting_priorities": [
           //Pat Pat
-          /*{
+          {
             "name": "pat_pat",
             "max_range": 15,
             "include_tags": [
@@ -64,7 +64,7 @@
             "actions": [
               "pat_pat"
             ]
-          },*/
+          },
           //Animal_Targeting
           {
             "name": "armadillo_piglin_evade",

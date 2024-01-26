@@ -231,6 +231,92 @@ const poiMountsVal = {
         mountIdentifier: "badger:mount_camel",
         animalIdentifier: "badger:animal_camel",
         enabled: 1
+    },
+    mount08: {
+        id: "mount08",
+        triggerVolumeTag: "poi_mount_08_tv",
+        factionName: "faction.poi.mount.08",
+        icon: "badger:wmap_mount_lizard",
+        buildableCenterCard: "poiMount08Center",
+        introCinematic: { day: "mnt02_c01_tiger_intro_fmv", night: "mnt02_c01_tiger_intro_night_fmv" },
+        outroVO: "",
+        unlockResource: "unlock_quest_mount_08",
+        journalUnlock: JOURNAL_UNLOCKS.MOUNT_LIZARD,
+        message: {
+            introAnnounce: "mount8_intro",
+            outroAnnounce: "mount8_outro"
+        },
+        global: {
+            mountUnlocked: "gv_mount_08_unlocked",
+            hasPlayerLuredTheMount: "gv_mount_08_lured",
+            mountLuredTelemetry: "gv_mount_08_lured_telemetry",
+            iconRevealed: "gv_mount_08_icon_revealed",
+            introCinePlayed: "gv_mount_08_intro_cine_played",
+            introVOPlayed: "gv_mount_08_intro_vo_played",
+            telemetryMountEncountered: "gv_mount_08_temeletry_mount_encountered"
+        },
+        tag: {
+            center: "poi_mount_08_lizard_home",
+            poiMount: "poi_mount_08"
+        },
+        behavior: {
+            default: "badger:animal_lizard",
+            lured: "badger:behavior_lizard_lured",
+            nonInteractable: "badger:behavior_animal_lizard_unmoutable",
+            fountain: "badger:behavior_animal_lizard_village"
+        },
+        telemetry: {
+            funnelName: "mount_08_lizard", //if design changes this name must change as well
+            telemetryLureId: TELEMETRY_MOB_ALLIANCE_NAMES.mount08Lure,
+            mountName: "mount_08_lizard",
+            currentStepGV: "gv_mount_08_current_step"
+        },
+        mountIdentifier: "badger:mount_lizard",
+        animalIdentifier: "badger:animal_lizard",
+        enabled: 1
+    },
+    mount09: {
+        id: "mount09",
+        triggerVolumeTag: "poi_mount_09_tv",
+        factionName: "faction.poi.mount.09",
+        icon: "badger:wmap_mount_ravager",
+        buildableCenterCard: "poiMount09Center",
+        introCinematic: { day: "mnt02_c01_tiger_intro_fmv", night: "mnt02_c01_tiger_intro_night_fmv" },
+        outroVO: "",
+        unlockResource: "unlock_quest_mount_09",
+        journalUnlock: JOURNAL_UNLOCKS.MOUNT_RAVAGER,
+        message: {
+            introAnnounce: "mount9_intro",
+            outroAnnounce: "mount9_outro"
+        },
+        global: {
+            mountUnlocked: "gv_mount_09_unlocked",
+            hasPlayerLuredTheMount: "gv_mount_09_lured",
+            mountLuredTelemetry: "gv_mount_09_lured_telemetry",
+            iconRevealed: "gv_mount_09_icon_revealed",
+            introCinePlayed: "gv_mount_09_intro_cine_played",
+            introVOPlayed: "gv_mount_09_intro_vo_played",
+            telemetryMountEncountered: "gv_mount_09_temeletry_mount_encountered"
+        },
+        tag: {
+            center: "poi_mount_09_ravager_home",
+            poiMount: "poi_mount_09"
+        },
+        behavior: {
+            default: "badger:animal_ravager",
+            lured: "badger:behavior_ravager_lured",
+            nonInteractable: "badger:behavior_animal_ravager_unmoutable",
+            fountain: "badger:behavior_animal_ravager_village"
+        },
+        telemetry: {
+            funnelName: "mount_09_ravager", //if design changes this name must change as well
+            telemetryLureId: TELEMETRY_MOB_ALLIANCE_NAMES.mount09Lure,
+            mountName: "mount_09_ravager",
+            currentStepGV: "gv_mount_09_current_step"
+        },
+        mountIdentifier: "badger:mount_ravager",
+        animalIdentifier: "badger:animal_ravager",
+        enabled: 1
     }
 }
 
@@ -296,6 +382,12 @@ const _GetAnimalVersionOfMount = (currentMountIdentifier) => {
         case poiMountsVal.mount07.mountIdentifier:
             animalIdentifier = poiMountsVal.mount07.animalIdentifier
             break
+        case poiMountsVal.mount08.mountIdentifier:
+            animalIdentifier = poiMountsVal.mount08.animalIdentifier
+            break
+        case poiMountsVal.mount09.mountIdentifier:
+            animalIdentifier = poiMountsVal.mount09.animalIdentifier
+            break
     }
 
     return animalIdentifier
@@ -332,6 +424,10 @@ const GetMountDataFromMountEntity = (mount) => {
         mountData = poiMountsVal.mount06
     } else if (QUERY_HasTags(mount, [poiMountsVal.mount07.tag.poiMount])) {
         mountData = poiMountsVal.mount07
+    } else if (QUERY_HasTags(mount, [poiMountsVal.mount08.tag.poiMount])) {
+        mountData = poiMountsVal.mount08
+    } else if (QUERY_HasTags(mount, [poiMountsVal.mount09.tag.poiMount])) {
+        mountData = poiMountsVal.mount09
     } else {
         Logi("No valid mount tag was found!")
         return
@@ -374,6 +470,20 @@ SNIPPET_InheritsFromGameMode("campaign", () => {
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
         factionName: poiMountsVal.mount07.factionName,
         payloadString: poiMountsVal.mount07.id
+    })
+
+    LISTENFOR_VillagePlanned({
+        snippet: "vp_poi_mount",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: poiMountsVal.mount08.factionName,
+        payloadString: poiMountsVal.mount08.id
+    })
+
+    LISTENFOR_VillagePlanned({
+        snippet: "vp_poi_mount",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: poiMountsVal.mount09.factionName,
+        payloadString: poiMountsVal.mount09.id
     })
 
     LISTENFOR_PlayerInteracted({
@@ -441,6 +551,20 @@ SNIPPET_InheritsFromGameMode("editor", () => {
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
         factionName: poiMountsVal.mount07.factionName,
         payloadString: poiMountsVal.mount07.id
+    })
+
+    LISTENFOR_VillagePlanned({
+        snippet: "vp_poi_mount",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: poiMountsVal.mount08.factionName,
+        payloadString: poiMountsVal.mount08.id
+    })
+
+    LISTENFOR_VillagePlanned({
+        snippet: "vp_poi_mount",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: poiMountsVal.mount09.factionName,
+        payloadString: poiMountsVal.mount09.id
     })
 
     LISTENFOR_PlayerInteracted({
@@ -767,4 +891,8 @@ SNIPPET_ExternalEvent("ev_unlock_all_mounts", () => {
     OUTPUT_SetGlobalVariable(poiMountsVal.mount06.global.mountUnlocked, 1)
     OUTPUT_AddOrRemoveResource(randomPlayer, poiMountsVal.mount07.unlockResource, 1, false)
     OUTPUT_SetGlobalVariable(poiMountsVal.mount07.global.mountUnlocked, 1)
+    OUTPUT_AddOrRemoveResource(randomPlayer, poiMountsVal.mount08.unlockResource, 1, false)
+    OUTPUT_SetGlobalVariable(poiMountsVal.mount08.global.mountUnlocked, 1)
+    OUTPUT_AddOrRemoveResource(randomPlayer, poiMountsVal.mount09.unlockResource, 1, false)
+    OUTPUT_SetGlobalVariable(poiMountsVal.mount09.global.mountUnlocked, 1)
 })

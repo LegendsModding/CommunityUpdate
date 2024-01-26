@@ -75,12 +75,36 @@
       "buildable": "badger:poi_tower_05_pvp_wild"
     },
     {
+      "unique_card_id": "badger_poiTower06",
+      "cost": 0,
+      "tags": [
+        "poiTower06"
+      ],
+      "buildable": "badger:poi_tower_06"
+    },
+    {
+      "unique_card_id": "badger_poiTower06Pvp",
+      "cost": 0,
+      "tags": [
+        "poiTower06Pvp"
+      ],
+      "buildable": "badger:poi_tower_06_pvp_wild"
+    },
+    {
       "unique_card_id": "badger_poiLegendDragonRed",
       "cost": 0,
       "tags": [
         "poiLegendDragonRed"
       ],
       "buildable": "badger:poi_legend_dragon_red"
+    },
+    {
+      "unique_card_id": "badger_poiLegendKillerRabbit",
+      "cost": 0,
+      "tags": [
+        "poiLegendKillerRabbit"
+      ],
+      "buildable": "badger:poi_legend_killer_rabbit"
     },
     {
       "unique_card_id": "badger_poiUnnaturalLandmark01",
@@ -163,6 +187,22 @@
       "buildable": "badger:poi_ally_06_piece_01_base"
     },
     {
+      "unique_card_id": "badger_poiAlly07",
+      "cost": 0,
+      "tags": [
+        "poiAlly07"
+      ],
+      "buildable": "badger:poi_ally_07"
+    },
+    {
+      "unique_card_id": "badger_poiAlly07PieceBase",
+      "cost": 0,
+      "tags": [
+        "poiAlly07PieceBase"
+      ],
+      "buildable": "badger:poi_ally_07_piece_01_base"
+    },
+    {
       "unique_card_id": "badger_poiMount01Center",
       "cost": 0,
       "tags": [
@@ -201,6 +241,22 @@
         "poiMount07Center"
       ],
       "buildable": "badger:poi_mount_07_camel_home"
+    },
+    {
+      "unique_card_id": "badger_poiMount08Center",
+      "cost": 0,
+      "tags": [
+        "poiMount08Center"
+      ],
+      "buildable": "badger:poi_mount_08_lizard_home"
+    },
+    {
+      "unique_card_id": "badger_poiMount09Center",
+      "cost": 0,
+      "tags": [
+        "poiMount09Center"
+      ],
+      "buildable": "badger:poi_mount_09_ravager_home"
     }
   ],
   "zone_tag_cards": [
@@ -219,6 +275,14 @@
         "layerAroundAlly06PieceTag"
       ],
       "zone_tag": "layerAroundAlly06Piece"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_layerAroundAlly07PieceTag",
+      "cost": 0,
+      "tags": [
+        "layerAroundAlly07PieceTag"
+      ],
+      "zone_tag": "layerAroundAlly07Piece"
     },
     {
       "unique_card_id": "zone_tag_cards_emptyLayerAroundPoiMountTag",
@@ -294,6 +358,15 @@
         "layerAroundAlly06Piece"
       ],
       "zone_filter": "layerAroundAlly06Piece",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_layerAroundAlly07Piece",
+      "cost": 0,
+      "tags": [
+        "layerAroundAlly07Piece"
+      ],
+      "zone_filter": "layerAroundAlly07Piece",
       "exclude": false
     },
     {

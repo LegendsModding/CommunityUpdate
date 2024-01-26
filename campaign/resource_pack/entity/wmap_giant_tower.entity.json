@@ -1,0 +1,23 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:rendering": {
+        "definition": "badger:wmap_giant_tower"
+      }
+    },
+    "description": {
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.wmap_giant_tower"
+      },
+      "identifier": "badger:wmap_giant_tower",
+      "materials": {
+        "default": "entity_model",
+        "mat_wmap_giant_tower": "mat_wmap_giant_tower"
+      },
+      "render_controllers": ["controller.render.wmap_giant_tower"]
+    }
+  }
+}

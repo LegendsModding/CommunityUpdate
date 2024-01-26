@@ -108,6 +108,13 @@ const baseLootTables_Peaceful = {
                 loot: [Resource("gold", 50), Resource("xp_common", 50)]
             }
         ],
+        [BASE_SIZE_PIGLIN_SLIME]: [
+            {
+                name: baseLootVariations.GOLD,
+                weight: 2,
+                loot: [Resource("gold", 50), Resource("xp_common", 50)]
+            }
+        ],
         [BASE_SIZE_MEDIUM]: [
             {
                 name: baseLootVariations.GOLD,
@@ -138,7 +145,7 @@ const baseLootTables_Peaceful = {
                 loot: [Resource("gold", 50), Resource("xp_common", 50)]
             }
         ],
-        [BASE_SIZE_PIGLIN_ZOMBIE]: [
+        [BASE_SIZE_PIGLIN_SILVERFISH]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,

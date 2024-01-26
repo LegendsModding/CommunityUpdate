@@ -1,0 +1,335 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "badger_silverfishVillageCenter",
+      "cost": 0,
+      "tags": [
+        "silverfishVillageCenter"
+      ],
+      "buildable": "badger:mob_alliance_silverfish_central_flame"
+    },
+    {
+      "unique_card_id": "badger_silverfishMobAllianceHouse01",
+      "cost": 0,
+      "tags": [
+        "silverfishMobAllianceHouse01"
+      ],
+      "buildable": "badger:poi_mob_alliance_silverfish_home_01"
+    },
+    {
+      "unique_card_id": "badger_silverfishMobAllianceHouse02",
+      "cost": 0,
+      "tags": [
+        "silverfishMobAllianceHouse02"
+      ],
+      "buildable": "badger:poi_mob_alliance_silverfish_home_02"
+    },
+    {
+      "unique_card_id": "badger_silverfishMobAllianceHouse03",
+      "cost": 0,
+      "tags": [
+        "silverfishMobAllianceHouse03"
+      ],
+      "buildable": "badger:poi_mob_alliance_silverfish_home_03"
+    },
+    {
+      "unique_card_id": "badger_silverfishMobAllianceDeco01",
+      "cost": 0,
+      "tags": [
+        "silverfishMobAllianceDeco01"
+      ],
+      "buildable": "badger:poi_mob_alliance_silverfish_deco_01"
+    },
+    {
+      "unique_card_id": "badger_silverfishMobAllianceDeco02",
+      "cost": 0,
+      "tags": [
+        "silverfishMobAllianceDeco02"
+      ],
+      "buildable": "badger:poi_mob_alliance_silverfish_deco_02"
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_silverfishCenterDeadZone",
+      "cost": 0,
+      "tags": [
+        "silverfishCenterDeadZone"
+      ],
+      "zone_tag": "silverfishCenterDeadZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishTotemOnlyZone",
+      "cost": 0,
+      "tags": [
+        "silverfishTotemOnlyZone"
+      ],
+      "zone_tag": "silverfishTotemOnlyZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishHouseZone",
+      "cost": 0,
+      "tags": [
+        "silverfishHouseZone"
+      ],
+      "zone_tag": "silverfishHouseZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishDecoZone",
+      "cost": 0,
+      "tags": [
+        "silverfishDecoZone"
+      ],
+      "zone_tag": "silverfishDecoZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishCageZones",
+      "cost": 0,
+      "tags": [
+        "silverfishCageZones"
+      ],
+      "zone_tag": "silverfishCageZones"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishCageCloseToCenterZone",
+      "cost": 0,
+      "tags": [
+        "silverfishCageCloseToCenterZone"
+      ],
+      "zone_tag": "silverfishCageCloseToCenterZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishNorthDistrict"
+      ],
+      "zone_tag": "silverfishNorthDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishSouthDistrict"
+      ],
+      "zone_tag": "silverfishSouthDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishEastDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishEastDistrict"
+      ],
+      "zone_tag": "silverfishEastDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishWestDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishWestDistrict"
+      ],
+      "zone_tag": "silverfishWestDistrict"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishNorthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishNorthDistrictDeco"
+      ],
+      "zone_tag": "silverfishNorthDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishSouthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishSouthDistrictDeco"
+      ],
+      "zone_tag": "silverfishSouthDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishEastDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishEastDistrictDeco"
+      ],
+      "zone_tag": "silverfishEastDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishWestDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishWestDistrictDeco"
+      ],
+      "zone_tag": "silverfishWestDistrictDeco"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_silverfishViewpointZone",
+      "cost": 0,
+      "tags": [
+        "silverfishViewpointZone"
+      ],
+      "zone_tag": "silverfishViewpointZone"
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_silverfishCenterDeadZone",
+      "cost": 0,
+      "tags": [
+        "silverfishCenterDeadZone"
+      ],
+      "zone_filter": "silverfishCenterDeadZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_silverfishTotemOnlyZone",
+      "cost": 0,
+      "tags": [
+        "silverfishTotemOnlyZone"
+      ],
+      "zone_filter": "silverfishTotemOnlyZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_silverfishHouseZone",
+      "cost": 0,
+      "tags": [
+        "silverfishHouseZone"
+      ],
+      "zone_filter": "silverfishHouseZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_silverfishDecoZone",
+      "cost": 0,
+      "tags": [
+        "silverfishDecoZone"
+      ],
+      "zone_filter": "silverfishDecoZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_silverfishCageZones",
+      "cost": 0,
+      "tags": [
+        "silverfishCageZones"
+      ],
+      "zone_filter": "silverfishCageZones",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_silverfishViewpointZone",
+      "cost": 0,
+      "tags": [
+        "silverfishViewpointZone"
+      ],
+      "zone_filter": "silverfishViewpointZone",
+      "exclude": false
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_silverfishNorthDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishNorthDistrict"
+      ],
+      "district": "silverfishNorthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishSouthDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishSouthDistrict"
+      ],
+      "district": "silverfishSouthDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishEastDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishEastDistrict"
+      ],
+      "district": "silverfishEastDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishWestDistrict",
+      "cost": 0,
+      "tags": [
+        "silverfishWestDistrict"
+      ],
+      "district": "silverfishWestDistrict"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishNorthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishNorthDistrictDeco"
+      ],
+      "district": "silverfishNorthDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishSouthDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishSouthDistrictDeco"
+      ],
+      "district": "silverfishSouthDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishEastDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishEastDistrictDeco"
+      ],
+      "district": "silverfishEastDistrictDeco"
+    },
+    {
+      "unique_card_id": "district_cards_silverfishWestDistrictDeco",
+      "cost": 0,
+      "tags": [
+        "silverfishWestDistrictDeco"
+      ],
+      "district": "silverfishWestDistrictDeco"
+    }
+  ],
+  "placement_preference_cards": [
+    {
+      "unique_card_id": "silverfishconnectToPath",
+      "cost": 0,
+      "tags": [
+        "silverfishconnectToPath"
+      ],
+      "placement_preference": "connect_to_path"
+    },
+    {
+      "unique_card_id": "facing_buildables_silverfish_center",
+      "cost": 0,
+      "tags": [
+        "facing_buildables_silverfish_center"
+      ],
+      "placement_preference": "facing_buildable",
+      "buildable": "mob_alliance_silverfish_central_flame"
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "silverfish_district_path",
+      "cost": 0,
+      "tags": [
+        "silverfish_district_path"
+      ],
+      "is_district_path": true
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "silverfishInitialOccupationViewpoint",
+      "cost": 0,
+      "tags": [
+        "silverfishInitialOccupationViewpoint"
+      ],
+      "tag": "silverfishInitialOccupationViewpoint"
+    }
+  ]
+}

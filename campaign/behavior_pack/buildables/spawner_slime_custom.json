@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_slime",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "custom_tech_tree_spawner_slime",
+            "amount": 1
+          },
+          {
+            "item": "unlock_spawner_slime",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:spawner_slime",
+        "game_mode": "campaign_custom"
+      }
+    }
+  }
+}
