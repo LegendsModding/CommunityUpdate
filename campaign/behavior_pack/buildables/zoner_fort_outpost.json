@@ -118,6 +118,14 @@
                     {
 						"tag":"mob_alliance_spider_central_flame",
 						"localizationId":"buildables.placement.overlappingHomesteads"
+					},
+                    {
+						"tag":"mob_alliance_slime_central_flame",
+						"localizationId":"buildables.placement.overlappingHomesteads"
+					},
+                    {
+						"tag":"mob_alliance_silverfish_central_flame",
+						"localizationId":"buildables.placement.overlappingHomesteads"
 					}
 				],
                 "zone": 90,

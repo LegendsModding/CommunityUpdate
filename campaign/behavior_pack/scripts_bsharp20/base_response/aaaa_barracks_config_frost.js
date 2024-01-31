@@ -2,9 +2,9 @@
 /* eslint-disable @typescript-eslint/camelcase */
 
 /*
-~~~~~~~~~~~~~~~~~~~~~~
-~~~~~ DISRUPTORS ~~~~~
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ DISRUPTORS - WARBOARS ~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 const DisruptorBarracksConfig_FrostFaction_Variations = {
     name: BARRACKS_NAME_DISRUPTOR,
@@ -14,18 +14,31 @@ const DisruptorBarracksConfig_FrostFaction_Variations = {
     ==============================
     */
     frontlineA: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
                 loadout: ["badger:piglin_runt"],
-                cap: 3,
-                rate: 8,
-                batch: 2
+                cap: 5,
+                rate: 0,
+                batch: 5
             },
             phase_1: {
                 loadout: ["badger:piglin_runt"],
-                cap: 3,
-                rate: 8,
-                batch: 2
+                cap: 5,
+                rate: 15,
+                batch: 5
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt"],
+                cap: 10,
+                rate: 15,
+                batch: 5
+            },
+            phase_3: {
+                loadout: ["badger:piglin_runt"],
+                cap: 12,
+                rate: 12,
+                batch: 6
             }
         },
         villageVariationA: {
@@ -36,77 +49,78 @@ const DisruptorBarracksConfig_FrostFaction_Variations = {
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_runt"],
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
                 cap: 30,
                 rate: 20,
                 batch: 10
             },
             phase_2: {
-                loadout: ["badger:piglin_runt"],
-                cap: 35,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 40,
                 rate: 20,
-                batch: 11
+                batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_runt"],
-                cap: 40,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 50,
                 rate: 20,
                 batch: 10
             }
         },
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
                 cap: 15,
                 rate: 1,
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 30,
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 35,
+                rate: 20,
+                batch: 7
+            },
+            phase_2: {
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 40,
                 rate: 20,
                 batch: 10
             },
-            phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 35,
-                rate: 20,
-                batch: 13
-            },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 40,
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 50,
                 rate: 20,
                 batch: 10
             }
         },
         villageVariationC: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 15,
                 rate: 1,
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 35,
                 rate: 20,
-                batch: 10
+                batch: 7
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 35,
+                loadout: ["badger:piglin_runt"],
+                cap: 40,
                 rate: 20,
                 batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 40,
+                loadout: ["badger:piglin_runt"],
+                cap: 50,
                 rate: 20,
                 batch: 10
             }
         }
     },
+
     /*
     =======================
     ===== SMALL BASES =====
@@ -116,82 +130,58 @@ const DisruptorBarracksConfig_FrostFaction_Variations = {
         /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 0,
-                batch: 3
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 8,
-                batch: 5
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 8,
-                batch: 5
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
                 rate: 15,
-                batch: 8
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 15,
-                batch: 8
+                batch: 0
             }
         },
-        villageVariationA: {
+        villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_seeker"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 30,
-                batch: 1
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_seeker"],
-                cap: 2,
-                rate: 30,
-                batch: 1
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 40,
+                batch: 2
             },
             phase_2: {
-                loadout: ["badger:piglin_seeker"],
-                cap: 2,
-                rate: 30,
-                batch: 1
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 40,
+                batch: 2
             },
             phase_3: {
-                loadout: ["badger:piglin_seeker"],
-                cap: 2,
-                rate: 30,
-                batch: 1
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 40,
+                batch: 2
             },
             phase_4: {
-                loadout: ["badger:piglin_seeker"],
-                cap: 2,
-                rate: 30,
-                batch: 1
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 40,
+                batch: 2
             }
         }
     },
-    piglin_occupying_zombie_mob_alliance: {
+    piglin_occupying_spider_mob_alliance: {
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_runt"],
-                cap: 25,
-                rate: 30,
-                batch: 25
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 10,
+                rate: 20,
+                batch: 10
             },
             phase_1: {
-                loadout: ["badger:piglin_runt"],
-                cap: 25,
-                rate: 30,
-                batch: 25
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 18,
+                rate: 20,
+                batch: 18
             }
         }
     },
@@ -204,98 +194,100 @@ const DisruptorBarracksConfig_FrostFaction_Variations = {
         /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grenadier"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
+                rate: 1,
+                batch: 0
+            },
+            phase_1: {
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
                 rate: 15,
                 batch: 2
             },
-            phase_1: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 2,
-                rate: 30,
-                batch: 2
-            },
             phase_2: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 2,
-                rate: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 15,
                 batch: 2
             },
             phase_3: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 2,
-                rate: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 12,
                 batch: 2
             },
             phase_4: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 2,
-                rate: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 4,
+                rate: 12,
                 batch: 2
             }
         },
+        /* ----- VARIATION A ----- */
         villageVariationA: {
             phase_0: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_disruptor", "badger:piglin_runt"],
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
                 cap: 0,
-                rate: 15,
-                batch: 13
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_disruptor", "badger:piglin_runt"],
-                cap: 13,
-                rate: 15,
-                batch: 13
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 16,
+                rate: 35,
+                batch: 8
             },
             phase_2: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_disruptor", "badger:piglin_runt"],
-                cap: 13,
-                rate: 15,
-                batch: 13
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 16,
+                rate: 35,
+                batch: 8
             },
             phase_3: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_disruptor", "badger:piglin_runt"],
-                cap: 13,
-                rate: 15,
-                batch: 13
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 16,
+                rate: 35,
+                batch: 8
             },
             phase_4: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_disruptor", "badger:piglin_runt"],
-                cap: 13,
-                rate: 15,
-                batch: 13
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 16,
+                rate: 35,
+                batch: 8
             }
         },
+        /* ----- VARIATION B ----- */
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker", "badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 15,
-                batch: 5
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker", "badger:piglin_grunter"],
-                cap: 5,
-                rate: 15,
-                batch: 5
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 20,
+                batch: 2
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker", "badger:piglin_grunter"],
-                cap: 5,
-                rate: 15,
-                batch: 5
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 20,
+                batch: 2
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker", "badger:piglin_grunter"],
-                cap: 5,
-                rate: 15,
-                batch: 5
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 20,
+                batch: 3
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker", "badger:piglin_grunter"],
-                cap: 5,
-                rate: 15,
-                batch: 5
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 20,
+                batch: 3
             }
         }
     },
@@ -308,114 +300,83 @@ const DisruptorBarracksConfig_FrostFaction_Variations = {
         /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grenadier"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 30,
-                batch: 3
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 3,
-                rate: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 5,
+                rate: 15,
                 batch: 3
             },
             phase_2: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 3,
-                rate: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 5,
+                rate: 12,
                 batch: 3
             },
             phase_3: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 3,
-                rate: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 5,
+                rate: 12,
                 batch: 3
             },
             phase_4: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 3,
-                rate: 15,
+                loadout: ["badger:piglin_runt"],
+                cap: 5,
+                rate: 8,
                 batch: 3
             }
-        },
-        villageVariationA: {
+        }
+    },
+    /*
+    =====================
+    ===== BOSS BASE =====
+    =====================
+    */
+    boss: {
+        /* ----- DEFAULT ----- */
+        villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grenadier"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
                 rate: 15,
                 batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 7,
-                rate: 20,
-                batch: 7
+                loadout: ["badger:piglin_runt"],
+                cap: 10,
+                rate: 4,
+                batch: 5
             },
             phase_2: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 7,
-                rate: 20,
-                batch: 7
+                loadout: ["badger:piglin_runt"],
+                cap: 10,
+                rate: 4,
+                batch: 5
             },
             phase_3: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 7,
-                rate: 20,
-                batch: 7
+                loadout: ["badger:piglin_runt"],
+                cap: 12,
+                rate: 3,
+                batch: 6
             },
             phase_4: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 7,
-                rate: 20,
-                batch: 7
-            }
-        }
-    },
-    /*
-    =======================
-    ====== BOSS BASE ======
-    =======================
-    */
-    boss: {
-        villageVariationDefault: {
-            phase_0: {
-                loadout: ["badger:piglin_grenadier", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
-                cap: 0,
-                rate: 15,
-                batch: 2
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-                cap: 16,
-                rate: 20,
-                batch: 16
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-                cap: 16,
-                rate: 20,
-                batch: 16
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-                cap: 16,
-                rate: 20,
-                batch: 16
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-                cap: 16,
-                rate: 20,
-                batch: 16
+                loadout: ["badger:piglin_runt"],
+                cap: 12,
+                rate: 3,
+                batch: 6
             }
         }
     }
 }
 
 /*
-~~~~~~~~~~~~~~~~~~~~
-~~~~~ FIGHTERS ~~~~~
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ FIGHTERS - RUNTS ~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 const FighterBarracksConfig_FrostFaction_Variations = {
     name: BARRACKS_NAME_FIGHTER,
@@ -425,18 +386,25 @@ const FighterBarracksConfig_FrostFaction_Variations = {
     ==============================
     */
     frontlineA: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 10,
-                rate: 8,
-                batch: 5
+                loadout: ["badger:piglin_runt"],
+                cap: 18,
+                rate: 0,
+                batch: 9
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 10,
-                rate: 8,
-                batch: 5
+                loadout: ["badger:piglin_runt"],
+                cap: 18,
+                rate: 45,
+                batch: 9
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt"],
+                cap: 18,
+                rate: 45,
+                batch: 9
             }
         },
         villageVariationA: {
@@ -447,73 +415,73 @@ const FighterBarracksConfig_FrostFaction_Variations = {
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_runt"],
-                cap: 30,
-                rate: 10,
-                batch: 6
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt",  "badger:piglin_runt"],
+                cap: 14,
+                rate: 40,
+                batch: 7
             },
             phase_2: {
-                loadout: ["badger:piglin_runt"],
-                cap: 35,
-                rate: 10,
-                batch: 11
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt",  "badger:piglin_runt"],
+                cap: 18,
+                rate: 40,
+                batch: 9
             },
             phase_3: {
-                loadout: ["badger:piglin_runt"],
-                cap: 40,
-                rate: 5,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt",  "badger:piglin_runt"],
+                cap: 20,
+                rate: 40,
                 batch: 10
             }
         },
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
                 cap: 15,
                 rate: 1,
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 30,
-                rate: 10,
-                batch: 10
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 14,
+                rate: 40,
+                batch: 7
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 35,
-                rate: 10,
-                batch: 13
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 18,
+                rate: 30,
+                batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 40,
-                rate: 15,
-                batch: 10
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 20,
+                rate: 10,
+                batch: 5
             }
         },
         villageVariationC: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 15,
                 rate: 1,
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 14,
                 rate: 10,
-                batch: 10
+                batch: 7
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 35,
+                loadout: ["badger:piglin_runt"],
+                cap: 18,
                 rate: 10,
                 batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 40,
-                rate: 15,
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
+                rate: 5,
                 batch: 10
             }
         }
@@ -524,116 +492,93 @@ const FighterBarracksConfig_FrostFaction_Variations = {
     =======================
     */
     small: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
                 rate: 0,
-                batch: 3
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
+                batch: 0
             }
         },
         villageVariationA: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 0,
-                batch: 4
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
                 rate: 15,
-                batch: 20
+                batch: 8
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
                 rate: 15,
-                batch: 20
+                batch: 8
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
                 rate: 15,
-                batch: 20
+                batch: 8
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
                 rate: 15,
-                batch: 20
+                batch: 8
             }
         },
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_engineer", "badger:piglin_runt"],
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
                 cap: 0,
-                rate: 0,
-                batch: 3
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_engineer", "badger:piglin_runt"],
-                cap: 10,
-                rate: 20,
-                batch: 10
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 8
             },
             phase_2: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_engineer", "badger:piglin_runt"],
-                cap: 10,
-                rate: 20,
-                batch: 10
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 8
             },
             phase_3: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_engineer", "badger:piglin_runt"],
-                cap: 10,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 15,
                 rate: 15,
-                batch: 10
+                batch: 8
             },
             phase_4: {
-                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_engineer", "badger:piglin_runt"],
-                cap: 12,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 15,
                 rate: 15,
-                batch: 12
+                batch: 8
             }
         }
     },
-    piglin_occupying_zombie_mob_alliance: {
+    piglin_occupying_spider_mob_alliance: {
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_runt"],
-                cap: 25,
-                rate: 30,
-                batch: 25
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_runt"],
-                cap: 25,
-                rate: 30,
-                batch: 25
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 18,
+                rate: 20,
+                batch: 18
             }
         }
     },
@@ -643,100 +588,45 @@ const FighterBarracksConfig_FrostFaction_Variations = {
     ========================
     */
     medium: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
                 rate: 0,
-                batch: 3
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 15,
-                batch: 8
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 15,
-                batch: 8
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 15,
-                batch: 8
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 20,
-                rate: 15,
-                batch: 8
+                batch: 0
             }
         },
         villageVariationA: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 0,
-                batch: 3
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
                 rate: 15,
-                batch: 6
+                batch: 10
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
                 rate: 15,
-                batch: 6
+                batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
                 rate: 15,
-                batch: 6
+                batch: 10
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
                 rate: 15,
-                batch: 6
-            }
-        },
-        villageVariationB: {
-            phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 0,
-                rate: 20,
-                batch: 5
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 14,
-                rate: 30,
-                batch: 7
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 14,
-                rate: 30,
-                batch: 7
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 14,
-                rate: 30,
-                batch: 7
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 14,
-                rate: 30,
-                batch: 7
+                batch: 10
             }
         }
     },
@@ -746,116 +636,92 @@ const FighterBarracksConfig_FrostFaction_Variations = {
     =======================
     */
     large: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 0,
-                batch: 3
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 10,
-                rate: 15,
-                batch: 8
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 10,
-                rate: 15,
-                batch: 8
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 15,
                 rate: 15,
-                batch: 8
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
-            }
-        },
-        villageVariationA: {
-            phase_0: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 0,
-                rate: 0,
-                batch: 3
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 14,
-                rate: 20,
-                batch: 7
+                batch: 15
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 14,
-                rate: 20,
-                batch: 7
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 15
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 14,
-                rate: 20,
-                batch: 7
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 15
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 14,
-                rate: 20,
-                batch: 7
+                loadout: ["badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 15
+            },
+            phase_5: {
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 15,
+                rate: 15,
+                batch: 15
             }
         }
     },
     /*
-    =======================
-    ====== BOSS BASE ======
-    =======================
+    =====================
+    ===== BOSS BASE =====
+    =====================
     */
     boss: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
-                rate: 0,
-                batch: 3
+                rate: 8,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 10,
-                rate: 15,
-                batch: 8
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
+                rate: 3,
+                batch: 4
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 10,
-                rate: 15,
-                batch: 8
+                loadout: ["badger:piglin_runt"],
+                cap: 20,
+                rate: 3,
+                batch: 5
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
+                loadout: ["badger:piglin_runt"],
+                cap: 25,
+                rate: 3,
+                batch: 5
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 15,
-                rate: 15,
-                batch: 8
+                loadout: ["badger:piglin_runt"],
+                cap: 25,
+                rate: 2,
+                batch: 5
             }
         }
     }
 }
 
 /*
-~~~~~~~~~~~~~~~~~~~
-~~~~~ SIEGERS ~~~~~
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~ SIEGERS - GRUNTERS ~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 const SiegerBarracksConfig_FrostFaction_Variations = {
     name: BARRACKS_NAME_SIEGER,
@@ -865,18 +731,31 @@ const SiegerBarracksConfig_FrostFaction_Variations = {
     ==============================
     */
     frontlineA: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_medic"],
-                cap: 10,
-                rate: 8,
-                batch: 5
+                loadout: ["badger:piglin_grunter"],
+                cap: 8,
+                rate: 0,
+                batch: 8
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_medic"],
-                cap: 8,
-                rate: 10,
-                batch: 5
+                loadout: ["badger:piglin_grunter"],
+                cap: 16,
+                rate: 15,
+                batch: 8
+            },
+            phase_2: {
+                loadout: ["badger:piglin_grunter"],
+                cap: 20,
+                rate: 15,
+                batch: 8
+            },
+            phase_3: {
+                loadout: ["badger:piglin_grunter"],
+                cap: 24,
+                rate: 15,
+                batch: 8
             }
         },
         villageVariationA: {
@@ -887,73 +766,73 @@ const SiegerBarracksConfig_FrostFaction_Variations = {
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_runt"],
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
                 cap: 30,
                 rate: 10,
-                batch: 6
+                batch: 15
             },
             phase_2: {
-                loadout: ["badger:piglin_runt"],
-                cap: 35,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 40,
                 rate: 10,
-                batch: 11
+                batch: 15
             },
             phase_3: {
-                loadout: ["badger:piglin_runt"],
-                cap: 40,
-                rate: 5,
-                batch: 10
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 50,
+                rate: 15,
+                batch: 15
             }
         },
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
                 cap: 15,
                 rate: 1,
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 30,
-                rate: 10,
-                batch: 10
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
                 cap: 35,
                 rate: 10,
-                batch: 13
+                batch: 7
+            },
+            phase_2: {
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 40,
+                rate: 10,
+                batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 40,
-                rate: 15,
-                batch: 10
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_runt"],
+                cap: 50,
+                rate: 5,
+                batch: 5
             }
         },
         villageVariationC: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 15,
                 rate: 1,
                 batch: 15
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 30,
+                loadout: ["badger:piglin_runt"],
+                cap: 35,
                 rate: 10,
-                batch: 10
+                batch: 7
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 35,
+                loadout: ["badger:piglin_runt"],
+                cap: 40,
                 rate: 10,
                 batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grenadier"],
-                cap: 40,
-                rate: 15,
+                loadout: ["badger:piglin_runt"],
+                cap: 50,
+                rate: 5,
                 batch: 10
             }
         }
@@ -969,106 +848,50 @@ const SiegerBarracksConfig_FrostFaction_Variations = {
             phase_0: {
                 loadout: ["badger:piglin_grunter"],
                 cap: 0,
-                rate: 8,
-                batch: 5
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 8,
-                batch: 5
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 8,
-                batch: 5
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 8,
-                batch: 5
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 8,
-                batch: 5
-            }
-        },
-        villageVariationA: {
-            phase_0: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
-                cap: 0,
-                rate: 20,
-                batch: 1
-            },
-            phase_1: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
-                cap: 12,
-                rate: 20,
-                batch: 12
-            },
-            phase_2: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
-                cap: 12,
-                rate: 20,
-                batch: 12
-            },
-            phase_3: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
-                cap: 12,
-                rate: 15,
-                batch: 12
-            },
-            phase_4: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
-                cap: 12,
-                rate: 15,
-                batch: 12
+                rate: 30,
+                batch: 0
             }
         },
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
                 cap: 0,
-                rate: 15,
-                batch: 5
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
-                rate: 20,
-                batch: 6
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 16,
+                rate: 40,
+                batch: 9
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
-                rate: 20,
-                batch: 6
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 16,
+                rate: 40,
+                batch: 9
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
-                rate: 20,
-                batch: 12
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 16,
+                rate: 40,
+                batch: 9
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 12,
-                rate: 15,
-                batch: 12
+                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 16,
+                rate: 40,
+                batch: 9
             }
         }
     },
-    piglin_occupying_zombie_mob_alliance: {
+    piglin_occupying_spider_mob_alliance: {
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 28,
-                batch: 8
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 10,
+                rate: 15,
+                batch: 10
             }
         }
     },
@@ -1083,96 +906,40 @@ const SiegerBarracksConfig_FrostFaction_Variations = {
             phase_0: {
                 loadout: ["badger:piglin_grunter"],
                 cap: 0,
-                rate: 0,
-                batch: 4
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 28,
-                batch: 8
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 28,
-                batch: 8
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 28,
-                batch: 8
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grunter"],
-                cap: 16,
-                rate: 28,
-                batch: 8
-            }
-        },
-        villageVariationA: {
-            phase_0: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 0,
-                rate: 8,
-                batch: 8
-            },
-            phase_1: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 4,
-                rate: 40,
-                batch: 2
-            },
-            phase_2: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 4,
-                rate: 40,
-                batch: 2
-            },
-            phase_3: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 4,
-                rate: 40,
-                batch: 2
-            },
-            phase_4: {
-                loadout: ["badger:piglin_grenadier"],
-                cap: 4,
-                rate: 40,
-                batch: 2
+                rate: 30,
+                batch: 0
             }
         },
         villageVariationB: {
             phase_0: {
-                loadout: ["badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_medic"],
+                loadout: ["badger:piglin_runt", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
                 cap: 0,
-                rate: 8,
-                batch: 3
+                rate: 1,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_medic"],
-                cap: 3,
-                rate: 35,
-                batch: 3
+                loadout: ["badger:piglin_runt", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 20,
+                rate: 7,
+                batch: 10
             },
             phase_2: {
-                loadout: ["badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_medic"],
-                cap: 3,
-                rate: 35,
-                batch: 3
+                loadout: ["badger:piglin_runt", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 30,
+                rate: 7,
+                batch: 10
             },
             phase_3: {
-                loadout: ["badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_medic"],
-                cap: 3,
-                rate: 35,
-                batch: 3
+                loadout: ["badger:piglin_runt", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 30,
+                rate: 6,
+                batch: 10
             },
             phase_4: {
-                loadout: ["badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_medic"],
-                cap: 3,
-                rate: 35,
-                batch: 3
+                loadout: ["badger:piglin_runt", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter"],
+                cap: 30,
+                rate: 5,
+                batch: 10
             }
         }
     },
@@ -1187,103 +954,321 @@ const SiegerBarracksConfig_FrostFaction_Variations = {
             phase_0: {
                 loadout: ["badger:piglin_grunter"],
                 cap: 0,
-                rate: 3,
-                batch: 3
+                rate: 1,
+                batch: 0
             },
             phase_1: {
                 loadout: ["badger:piglin_grunter"],
-                cap: 6,
-                rate: 8,
-                batch: 3
+                cap: 18,
+                rate: 15,
+                batch: 9
             },
             phase_2: {
                 loadout: ["badger:piglin_grunter"],
-                cap: 6,
-                rate: 8,
-                batch: 3
+                cap: 18,
+                rate: 15,
+                batch: 9
             },
             phase_3: {
                 loadout: ["badger:piglin_grunter"],
-                cap: 8,
-                rate: 8,
-                batch: 4
+                cap: 18,
+                rate: 15,
+                batch: 9
             },
             phase_4: {
                 loadout: ["badger:piglin_grunter"],
-                cap: 8,
-                rate: 8,
-                batch: 4
+                cap: 18,
+                rate: 15,
+                batch: 9
             }
-        },
-        villageVariationA: {
+        }
+    },
+    /*
+    =====================
+    ===== BOSS BASE =====
+    =====================
+    */
+    boss: {
+        /* ----- DEFAULT ----- */
+        villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
+                loadout: ["badger:piglin_seeker"],
                 cap: 0,
-                rate: 8,
-                batch: 4
+                rate: 30,
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 12,
-                rate: 20,
-                batch: 6
+                loadout: ["badger:piglin_seeker"],
+                cap: 2,
+                rate: 10,
+                batch: 2
             },
             phase_2: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 12,
-                rate: 20,
-                batch: 6
+                loadout: ["badger:piglin_seeker"],
+                cap: 2,
+                rate: 9,
+                batch: 2
             },
             phase_3: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 12,
-                rate: 20,
-                batch: 6
+                loadout: ["badger:piglin_seeker"],
+                cap: 3,
+                rate: 8,
+                batch: 3
             },
             phase_4: {
-                loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_seeker"],
-                cap: 12,
-                rate: 20,
-                batch: 6
+                loadout: ["badger:piglin_seeker"],
+                cap: 3,
+                rate: 8,
+                batch: 3
+            }
+        }
+    }
+}
+
+/*
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~  SPECIALIST  ~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*/
+const SpecialistBarracksConfig_FrostFaction_Variations = {
+    name: BARRACKS_NAME_SPECIALIST,
+    /*
+    ==============================
+    ===== DEFENSIVE OUTPOSTS =====
+    ==============================
+    */
+    frontlineA: {
+        /* ----- DEFAULT ----- */
+        villageVariationDefault: {
+            phase_0: {
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 0,
+                batch: 0
             }
         }
     },
     /*
     =======================
-    ====== BOSS BASE ======
+    ===== SMALL BASES =====
     =======================
     */
-    boss: {
+    small: {
+        /* ----- DEFAULT ----- */
         villageVariationDefault: {
             phase_0: {
-                loadout: ["badger:piglin_grunter"],
+                loadout: ["badger:piglin_runt"],
                 cap: 0,
                 rate: 0,
-                batch: 3
+                batch: 0
             },
             phase_1: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_disruptor"],
-                cap: 7,
-                rate: 20,
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 0,
+                batch: 0
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 0,
+                batch: 0
+            },
+            phase_3: {
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 0,
+                batch: 0
+            },
+            phase_4: {
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 0,
+                batch: 0
+            }
+        },
+        villageVariationA: {
+            phase_0: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 0,
+                rate: 1,
+                batch: 0
+            },
+            phase_1: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 14,
+                rate: 40,
                 batch: 7
             },
             phase_2: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_disruptor"],
-                cap: 7,
-                rate: 20,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 14,
+                rate: 40,
                 batch: 7
             },
             phase_3: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_disruptor"],
-                cap: 7,
-                rate: 15,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 14,
+                rate: 40,
                 batch: 7
             },
             phase_4: {
-                loadout: ["badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_seeker", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_grenadier", "badger:piglin_disruptor"],
-                cap: 7,
-                rate: 15,
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 14,
+                rate: 40,
                 batch: 7
+            }
+        }
+    },
+    /*
+    ========================
+    ===== MEDIUM BASES =====
+    ========================
+    */
+    medium: {
+        /* ----- DEFAULT ----- */
+        villageVariationDefault: {
+            phase_0: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 0,
+                rate: 1,
+                batch: 0
+            },
+            phase_1: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 3,
+                rate: 30,
+                batch: 3
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 3,
+                rate: 30,
+                batch: 3
+            },
+            phase_3: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt"],
+                cap: 6,
+                rate: 25,
+                batch: 2
+            },
+            phase_4: {
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 25,
+                batch: 2
+            }
+        },
+        villageVariationA: {
+            phase_0: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt"],
+                cap: 0,
+                rate: 1,
+                batch: 0
+            },
+            phase_1: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt"],
+                cap: 2,
+                rate: 40,
+                batch: 2
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt"],
+                cap: 2,
+                rate: 40,
+                batch: 2
+            },
+            phase_3: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt"],
+                cap: 2,
+                rate: 40,
+                batch: 2
+            },
+            phase_4: {
+                loadout: ["badger:piglin_runt", "badger:piglin_runt"],
+                cap: 2,
+                rate: 40,
+                batch: 2
+            }
+        }
+    },
+    /*
+    =======================
+    ===== LARGE BASES =====
+    =======================
+    */
+    large: {
+        /* ----- DEFAULT ----- */
+        villageVariationDefault: {
+            phase_0: {
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 1,
+                batch: 0
+            },
+            phase_1: {
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 25,
+                batch: 2
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 20,
+                batch: 2
+            },
+            phase_3: {
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 20,
+                batch: 2
+            },
+            phase_4: {
+                loadout: ["badger:piglin_runt"],
+                cap: 6,
+                rate: 15,
+                batch: 2
+            }
+        }
+    },
+    /*
+    =====================
+    ===== BOSS BASE =====
+    =====================
+    */
+    boss: {
+        /* ----- DEFAULT ----- */
+        villageVariationDefault: {
+            phase_0: {
+                loadout: ["badger:piglin_runt"],
+                cap: 0,
+                rate: 30,
+                batch: 0
+            },
+            phase_1: {
+                loadout: ["badger:piglin_runt"],
+                cap: 2,
+                rate: 12,
+                batch: 1
+            },
+            phase_2: {
+                loadout: ["badger:piglin_runt"],
+                cap: 2,
+                rate: 8,
+                batch: 1
+            },
+            phase_3: {
+                loadout: ["badger:piglin_runt"],
+                cap: 2,
+                rate: 8,
+                batch: 2
+            },
+            phase_4: {
+                loadout: ["badger:piglin_runt"],
+                cap: 2,
+                rate: 8,
+                batch: 2
             }
         }
     }

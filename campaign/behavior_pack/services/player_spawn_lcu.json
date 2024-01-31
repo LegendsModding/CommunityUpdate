@@ -5,7 +5,7 @@
       "parent": "badger:player_spawn_service"
     },
     "player_archetype": "minecraft:player",
-    "default_mount_archetype": "badger:mount_horse",
+    "default_mount_archetype": "badger:mount_camel",
     "player_spawn_world_request_type": "player_spawn",
     "respawn_seconds": 10.0,
     "min_block_radius": 100,

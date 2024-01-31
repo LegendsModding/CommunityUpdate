@@ -1,0 +1,142 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "animal" : {},
+         "badger:overworld_height" : {
+            "height_params" : {
+               "average_height" : 22,
+               "texture_heights": [19, 20]
+            },
+            "noise_params" : [ 0.10, 0.050 ]
+         },
+         "badger:rivers" : {
+            "cell_range" : [ 0, 3 ],
+            "point_chance" : 0.50,
+            "river_biome" : "forest_river",
+            "river_border_width" : 12,
+            "river_width" : 4
+         },
+         "badger:sub_biomes" : {
+            "borders" : [
+               {
+                  "allowlist" : [
+                     "brokenlands",
+                     "brokenlands_sanddune",
+                     "brokenlands_tarpits",
+                     "drylands",
+                     "drylands_enable_hoodoos",
+                     "burnt_grass_trees"
+                  ],
+                  "biome" : "burnt_grass_trees",
+                  "width" : 24
+               },
+               {
+                  "allowlist" : [
+                     "frostlands",
+                     "frostlands_hills",
+                     "frostlands_springs",
+                     "frosty_grass_trees"
+                  ],
+                  "biome" : "frosty_grass_trees",
+                  "width" : 24
+               },
+               {
+                  "allowlist" : [ "jungle", "jungle_hills", "sparse_jungle" ],
+                  "biome" : "sparse_jungle",
+                  "width" : 24
+               }
+            ],
+            "scatter_biomes" : [
+               {
+                  "biome" : "mud_pit",
+                  "offSetZ" : 150.0,
+                  "scaleX" : 0.90,
+                  "scaleY" : 0.90,
+                  "threshold" : 0.8670
+               },
+               {
+                  "biome" : "forest_autumn",
+                  "offSetZ" : 200.0,
+                  "scaleX" : 0.90,
+                  "scaleY" : 0.90,
+                  "threshold" : 0.50
+               },
+               {
+                  "biome" : "cherry_grove",
+                  "offSetZ" : 100.0,
+                  "scaleX" : 0.90,
+                  "scaleY" : 0.90,
+                  "threshold" : 0.50
+               },
+               {
+                  "biome" : "forest_hills",
+                  "offSetZ" : -200.0,
+                  "scaleX" : 0.70,
+                  "scaleY" : 0.70,
+                  "threshold" : 0.20
+               }
+            ]
+         },
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.4000000059604645,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#579945"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.0,
+                  "grass_overlay_noise_scale" : 0.0,
+                  "grass_overlay_surface_color" : "#000000"
+               }
+            },
+            "map" : {
+               "biome_banner" : "map_screen/banners/legend_banner_biome_forest.png",
+               "biome_display_name" : "forest",
+               "common_resources": ["iron", "stone", "wood"],
+               "common_resource_icon" : "/icons/resources/resource_iron.png",
+               "map_color" : "#1D680B",
+               "map_color_odd" : "#1D680B",
+               "map_pattern_index" : 1
+            },
+            "particulates" : {
+               "nether_spores" : 0.0,
+               "sparkles" : 0.0
+            },
+            "rain" : {
+               "downfall" : 25.0,
+               "lower_limit" : 0.4000000059604645,
+               "rain_to_snow_height" : 120,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit" : 1.0
+            },
+            "water" : {
+               "water_blur_distance" : 15.0,
+               "water_color_blend_distance" : 0.0,
+               "water_depths_color" : "#44AFF5",
+               "water_surface_color" : "#3D539C",
+               "water_surface_transparency" : 0.6499999761581421
+            }
+         },
+         "forest" : {},
+         "minecraft:surface_parameters" : {
+            "default_surface" : {
+               "mid_material" : "badger:block_dirt",
+               "top_material" : "minecraft:grass"
+            },
+            "foundation_material" : "badger:block_stone",
+            "sea_floor_depth" : 7,
+            "sea_floor_material" : "badger:block_gravel",
+            "sea_material" : "badger:block_water"
+         },
+         "monster" : {},
+         "overworld" : {}
+      },
+      "description" : {
+         "identifier" : "forest"
+      }
+   }
+}

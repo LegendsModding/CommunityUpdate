@@ -204,7 +204,7 @@ SNIPPET_LocalTimer("lt_grant_loot_rewards", (payload) => {
                     lootTable = lootTableData.rewardTable.frostHorde.large
                     break
                 default:
-                    Logw("Unexpected Size for a Defend Horde base!")
+                    Logw("Unexpected Size for a Frost Horde base!")
                     lootTable = lootTableData.rewardTable.frostHorde.outpost
                     break
             }

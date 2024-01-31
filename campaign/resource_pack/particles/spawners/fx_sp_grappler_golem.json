@@ -2,7 +2,7 @@
    "format_version" : "1.10.0",
    "particle_effect" : {
       "description" : {
-         "identifier" : "badger:fx_sp_drill_golem",
+         "identifier" : "badger:fx_sp_grappler_golem",
          "basic_render_parameters" : {
             "materials_list" : [ "mat_badger_fx_blend_empty" ]
          },
@@ -32,7 +32,7 @@
                   "mode" : "fps"
                }
             },
-            "geometry" : "geometry.item_mob_golem_drill",
+            "geometry" : "geometry.item_mob_golem_grappler",
             "material_source" : "model"
          },
          "minecraft:emitter_local_space" : {

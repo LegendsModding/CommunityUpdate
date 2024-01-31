@@ -64,7 +64,7 @@ const baseLootTables_Peaceful = {
                 loot: [Resource("gold", 50), Resource("xp_common", 50)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SPIDER]: [
+        [BASE_SIZE_PIGLIN_SILVERFISH]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,
@@ -145,7 +145,7 @@ const baseLootTables_Peaceful = {
                 loot: [Resource("gold", 50), Resource("xp_common", 50)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SILVERFISH]: [
+        [BASE_SIZE_PIGLIN_SPIDER]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,

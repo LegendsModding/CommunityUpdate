@@ -32,7 +32,7 @@
               0
             ]
           },
-          "name": "bs_vm_camel",
+          "name": "bs_vm_cow",
           "parent": "root",
           "pivot": [
             0,
@@ -54,7 +54,7 @@
             ]
           },
           "name": "right_leg",
-          "parent": "bs_vm_camel",
+          "parent": "bs_vm_cow",
           "pivot": [
             0.28125,
             -0.025951505843608808,
@@ -75,7 +75,7 @@
             ]
           },
           "name": "left_leg",
-          "parent": "bs_vm_camel",
+          "parent": "bs_vm_cow",
           "pivot": [
             -0.28125,
             -0.025951505843608808,
@@ -96,7 +96,7 @@
             ]
           },
           "name": "big_claw",
-          "parent": "bs_vm_camel",
+          "parent": "bs_vm_cow",
           "pivot": [
             0.734375,
             0.1849859941563911,
@@ -138,7 +138,7 @@
             ]
           },
           "name": "little_claw",
-          "parent": "bs_vm_camel",
+          "parent": "bs_vm_cow",
           "pivot": [
             -0.53125,
             0.005298494156391054,
@@ -174,7 +174,7 @@
       ],
       "meshes": [
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -659,81 +659,81 @@
           ],
           "indices": [
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ]
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -1218,81 +1218,81 @@
           ],
           "indices": [
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ]
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -1777,81 +1777,81 @@
           ],
           "indices": [
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ]
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -2336,81 +2336,81 @@
           ],
           "indices": [
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ]
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -2895,81 +2895,81 @@
           ],
           "indices": [
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ],
             [
-              "bs_vm_camel"
+              "bs_vm_cow"
             ]
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -3528,7 +3528,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -4087,7 +4087,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -4646,7 +4646,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -5205,7 +5205,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -5764,7 +5764,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -6323,7 +6323,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -6882,7 +6882,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -7441,7 +7441,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -8000,7 +8000,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -8559,7 +8559,7 @@
           ]
         },
         {
-          "meta_material": "mat_animal_camel",
+          "meta_material": "mat_animal_cow",
           "normal_sets": [
             [
               [
@@ -9119,7 +9119,7 @@
         }
       ],
       "description": {
-        "identifier": "geometry.animal_camel"
+        "identifier": "geometry.animal_cow"
       }
     }
   ]

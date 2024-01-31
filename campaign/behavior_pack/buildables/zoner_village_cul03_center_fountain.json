@@ -1,0 +1,392 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_village_cul03_center_fountain",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Upgrade",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [
+          {
+            "item": "fountain",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "gold",
+            "amount": 1660
+          },
+          {
+            "item": "stone",
+            "amount": 315
+          },
+          {
+            "item": "wood",
+            "amount": 365
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "flowing_water",
+          "block_netherrack"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "world_hazard"
+        ]
+      },
+      "badger:music_emitter_states": [
+        "default",
+        "level1",
+        "level2",
+        "level3",
+        "occupied",
+        "incoming_attack",
+        "damaged"
+      ],
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [
+          "fountain"
+        ],
+        "zone": 140,
+        "village_gen_zone_control_score_threshold": 0.0,
+        "village_zone": true
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_village_cul03_center_fountain",
+        "build_time": 15,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:generate_ruins": {
+        "max": 9,
+        "min": -1
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_fountain_large"
+      },
+      "badger:health": {
+        "max_health": 600
+      },
+      "badger:objective_health_bar": {
+        "max_visible_range": 100,
+        "priority": 1,
+        "type": "village"
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:villager_culture01",
+            "percentage": 0.5
+          },
+          {
+            "type": "badger:villager_illager_culture01",
+            "percentage": 0.5
+          }
+        ],
+        "cap": 15,
+        "rate": 20,
+        "offset": [
+          0,
+          3.0,
+          10.0
+        ]
+      },
+      "badger:presentation_event": {
+        "on_destroyed": {
+          "spawn_entity": [
+            "badger:fountain_ruins_waypoint_marker"
+          ]
+        }
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            4, 
+            0
+          ],
+          [
+            0, 
+            15, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "fountain",
+          "hq",
+          "emitter",
+          "bsharp_buildable_utility",
+          "do_not_test"
+        ]
+      },
+      "badger:village_heart_disabled_actions": {
+        "village_structures_action": "DISABLED_BY_HEALTH"
+      },
+      "badger:disable_by_health": {
+        "health_disabled_percent": 0.0,
+        "health_enabled_percent": 0.03,
+        "block_conversion_cinematic_delay": 0.0,
+        "block_conversion_states": {
+          "disabled_state": {
+            "modifiers": [
+              {
+                "badger:block_water": "minecraft:air"
+              },
+              {
+                "badger:block_gold_moss": "badger:block_gold_moss_dead"
+              },
+              {
+                "badger:block_slab_gold_moss": "badger:block_slab_gold_moss_dead"
+              },
+              {
+                "badger:block_slab_gold_moss_var01": "badger:block_slab_gold_moss_dead_var01"
+              },
+              {
+                "badger:block_alabaster_carved_mossy": "badger:block_alabaster_carved_mossy_dead"
+              },
+              {
+                "badger:block_alabaster_mossy": "badger:block_alabaster_mossy_dead"
+              },
+              {
+                "badger:block_slab_stucco_mossy": "badger:block_slab_stucco_mossy_dead"
+              },
+              {
+                "badger:block_stair_alabaster_mossy": "badger:block_stair_alabaster_mossy_dead"
+              },
+              {
+                "badger:block_stucco_mossy": "badger:block_stucco_mossy_dead"
+              },
+              {
+                "badger:block_deco_fountain_arch": "badger:block_deco_fountain_arch_deactivated"
+              },
+              {
+                "badger:block_deco_fountain_trim": "badger:block_deco_fountain_trim_deactivated"
+              },
+              {
+                "badger:block_deco_fountain_cage": "badger:block_deco_fountain_cage_deactivated"
+              },
+              {
+                "badger:block_deco_vine_ivy_slab": "badger:block_deco_vine_ivy_slab_dead"
+              },
+              {
+                "badger:block_deco_vine_ivy_slab_var01": "badger:block_deco_vine_ivy_slab_dead_var01"
+              },
+              {
+                "badger:block_alabaster_moss_top_side": "badger:block_alabaster_moss_top_side_dead"
+              },
+              {
+                "badger:block_deco_plant_fategrass_01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_fategrass_02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_fategrass_04": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_fategrass_05": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_daisy_02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_foxglove_03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_foxglove_04": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_junglelily_01_structure": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_junglelily_02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_junglelily_03": "minecraft:air"
+              }
+            ],
+            "duration_percentage": 0.5,
+            "top_to_bottom": true
+          },
+          "enabled_state": {
+            "reverse_existing_modifiers": true,
+            "reversal_duration_percentage": 0.5
+          }
+        }
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture"
+        ],
+        "disabled_by_health_components": [
+          "badger:targeting"
+        ]
+      },
+      "badger:generate_player_village": {
+        "factionId": "faction.cul.003",
+        "villageId": "badger:villager_player_village",
+        "ownership_alliance_rule": "friendly"
+      },
+      "badger:template": [
+        "badger:template_zoner_utopia"
+      ],
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "buildable",
+            "value": "zoner_village_cul03_center_fountain"
+          }
+        ]
+      },
+      "badger:fast_travel_point": {
+        "incoming_alliance_rule_filter": "can_fast_travel",
+        "outgoing_alliance_rule_filter": "can_fast_travel",
+        "outgoing_tag_filter": {
+          "include_tags": [
+            "luredirect",
+            "special"
+          ],
+          "exclude_tags": []
+        },
+        "spawn_point_archetype": "badger:metadata_village_spawn_point"
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          {
+            "name": "fountain_healing",
+            "max_health": 0.99,
+            "shape": {
+              "type": "box",
+              "width": 180,
+              "length": 180,
+              "height": 20,
+              "position": [
+                0,
+                0,
+                0
+              ]
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "healing"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "healing",
+            "state_machine": {
+              "cooldown_time": 0,
+              "deactivates_on_cooldown": false
+            },
+            "timer": {
+              "interval": 0
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "box",
+                "width": 180,
+                "length": 180,
+                "height": 20,
+                "position": [
+                  0,
+                  0,
+                  0
+                ]
+              },
+              "collision": {
+                "include_tags": [
+                  "player"
+                ],
+                "exclude_tags": [],
+                "alliance_rule_filter": "friendly"
+              },
+              "apply_status": {
+                "healing_hub": {
+                  "chance": 1.0,
+                  "strength": 5.0
+                }
+              }
+            }
+          }
+        ]
+      },
+      "badger:block_damage": {
+        "phases": [
+          {
+            "damage_level": 0.001,
+            "max_clamp": 0.0,
+            "min_clamp": 0.15,
+            "max_damage": 0.8,
+            "min_damage": 0.0
+          },
+          {
+            "damage_level": 0.1,
+            "max_clamp": 0.0,
+            "min_clamp": 0.25,
+            "max_damage": 0.8,
+            "min_damage": 0.0
+          },
+          {
+            "damage_level": 0.5,
+            "max_clamp": 0.25,
+            "min_clamp": 0.5,
+            "max_damage": 0.9,
+            "min_damage": 0.0
+          },
+          {
+            "damage_level": 0.75,
+            "max_clamp": 0.0,
+            "min_clamp": 0.8,
+            "max_damage": 1.0,
+            "min_damage": 0.0
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:pop_cap_anchor": {
+        "min_pop_cap": 30,
+        "min_pop_cap_range": 160,
+        "alliance_rule_filter": "enemy",
+        "greedy": false
+      }
+    }
+  }
+}

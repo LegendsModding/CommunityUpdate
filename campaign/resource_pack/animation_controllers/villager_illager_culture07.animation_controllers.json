@@ -1,0 +1,1147 @@
+{
+  "animation_controllers": {
+    "controller.animation.villager_illager_culture07.bespoke": {
+      "states": {
+        "admire": {
+          "animations":  [
+            {
+              "behaviour_admiring": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "ally_curious": {
+          "animations":  [
+            {
+              "behaviour_startled": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            }
+          ]
+        },
+        "applaud": {
+          "animations":  [
+            {
+              "behaviour_applaud": "1"
+            },
+            {
+              "behaviour_claps": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "bow": {
+          "animations":  [
+            {
+              "behaviour_bow": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "celebrate": {
+          "animations":  [
+            {
+              "behaviour_celebrate": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "chat": "(variable.greeting == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "chat": {
+          "animations":  [
+            {
+              "behaviour_chatting": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "cheer": {
+          "animations":  [
+            {
+              "behaviour_celebrate": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "enter_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "greeting": "(variable.greeting == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        },
+        "greeting": {
+          "animations":  [
+            {
+              "behaviour_greeting": "1"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished == 1)"
+            },
+            {
+              "chat": "(variable.chat == 1)"
+            },
+            {
+              "cheer": "(variable.cheer == 1)"
+            },
+            {
+              "celebrate": "(variable.celebrate == 1)"
+            },
+            {
+              "admire": "(variable.admire == 1)"
+            },
+            {
+              "bow": "(variable.bow == 1)"
+            },
+            {
+              "applaud": "(variable.applaud == 1)"
+            },
+            {
+              "ally_curious": "(variable.ally_curious == 1)"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.villager_illager_culture07.default": {
+      "initial_state": "init",
+      "states": {
+        "bespoke": {
+          "animations":  [
+            {
+              "bespoke": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "((query.in_knockback == 0) && variable.is_stunned)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            },
+            {
+              "death_b": 1.0
+            },
+            {
+              "death_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.deathchooser"
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.idlechooser = math.random(0,3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "((query.in_knockback == 0) && variable.is_stunned)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "bespoke": "variable.isattacking"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "knockback": {
+          "animations":  [
+            {
+              "knockback_a": 1.0
+            },
+            {
+              "additive_tumnle_fast": "(variable.speed_modifier <= 1)"
+            },
+            {
+              "additive_tumble_slow": "(variable.speed_modifier > 1)"
+            }
+          ],
+          "on_entry": ["variable.speed_modifier = math.random(0,1.3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.in_knockback == 0)"
+            },
+            {
+              "stun": "((query.in_knockback == 0) && variable.is_stunned)"
+            },
+            {
+              "death": "((query.in_knockback == 0) && variable.is_dead)"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(variable.is_stunned == 0)"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.walkchooser = math.random(0,2);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "((query.in_knockback == 0) && variable.is_stunned)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "bespoke": "variable.chat"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.villager_illager_culture07.hitreact": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "hit_react": "((variable.intense_hit || variable.normal_hit) || query.in_knockback)"
+            }
+          ]
+        },
+        "hit_react": {
+          "animations":  [
+            {
+              "hit_react": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished && !query.in_knockback)"
+            },
+            {
+              "in_knockback": "(query.in_knockback && query.any_animation_finished)"
+            }
+          ]
+        },
+        "in_knockback": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "landing": {
+          "animations":  [
+            {
+              "knowback_landing_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.villager_illager_culture07.idle": {
+      "initial_state": "default_idle",
+      "states": {
+        "curious_idle": {
+          "animations":  [
+            {
+              "behaviour_curious_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.look_at_disabled = 1;"],
+          "on_exit": ["variable.face_anim_frame = 0;","variable.look_at_disabled = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "default_idle": {
+          "animations":  [
+            {
+              "look_at": 0.0
+            },
+            {
+              "idle_a": "((variable.idle_chooser >= 0) && (variable.idle_chooser <= 1))"
+            },
+            {
+              "idle_b": "((variable.idle_chooser >= 1) && (variable.idle_chooser < 2))"
+            },
+            {
+              "idle_c": "((variable.idle_chooser >= 2) && (variable.idle_chooser <= 3))"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.idle_chooser = math.random(0,3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "happy_idle": {
+          "animations":  [
+            {
+              "behaviour_happy_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "heavy_excited": {
+          "animations":  [
+            {
+              "behaviour_happy_b": "((variable.idle_chooser >= 0) && (variable.idle_chooser <= 1))"
+            },
+            {
+              "behaviour_happy_c": "(variable.idle_chooser > 1)"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.idlechooser = math.random(0,3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "indifferent_idle": {
+          "animations":  [
+            {
+              "behaviour_indifferent_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "sad_idle": {
+          "animations":  [
+            {
+              "behaviour_idle_sad_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            }
+          ]
+        },
+        "scared_heavy_idle": {
+          "animations":  [
+            {
+              "behaviour_scared_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "scared_idle": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "scared_idle": {
+          "animations":  [
+            {
+              "behaviour_scared_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "query.behavior_default"
+            },
+            {
+              "indifferent_idle": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "scared_heavy_idle": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "happy_idle": "variable.badger_behavior_illager_happy"
+            },
+            {
+              "curious_idle": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "sad_idle": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_idle": "!variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.villager_illager_culture07.walk": {
+      "initial_state": "default_walks",
+      "states": {
+        "curious": {
+          "animations":  [
+            {
+              "behaviour_walk_curious_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.walkchooser",
+          "transitions":  [
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "default_walks": {
+          "animations":  [
+            {
+              "walk_a": "((variable.walkchooser >= 0) && (variable.walkchooser < 1))"
+            },
+            {
+              "walk_b": "((variable.walkchooser >= 1) && (variable.walkchooser < 2))"
+            },
+            {
+              "walk_c": "((variable.walkchooser >= 2) && (variable.walkchooser <= 3))"
+            },
+            {
+              "sprint_a": "(query.speed >= 6)"
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.walkchooser = math.random(0,3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "happy_greeting": {
+          "animations":  [
+            {
+              "behaviour_walk_happy_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "heavy_excited": {
+          "animations":  [
+            {
+              "behaviour_walk_happy_a": 1.0
+            },
+            {
+              "behaviour_walk_happy_b": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.heavyexcitedwalkchooser",
+          "transitions":  [
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "heavy_scared": {
+          "animations":  [
+            {
+              "behaviour_walk_scared_heavy": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "indifferent": {
+          "animations":  [
+            {
+              "walk_a": 1.0
+            },
+            {
+              "walk_b": 1.0
+            },
+            {
+              "walk_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.walkchooser",
+          "transitions":  [
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "sad_walk": {
+          "animations":  [
+            {
+              "behaviour_walk_heavy_sad_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "scared": "(variable.badger_behavior_illager_scared || variable.badger_behavior_illager_scared_act2)"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            }
+          ]
+        },
+        "scared": {
+          "animations":  [
+            {
+              "behaviour_walk_scared_light": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "indifferent": "variable.badger_behavior_illager_indifferent"
+            },
+            {
+              "curious": "variable.badger_behavior_illager_curious"
+            },
+            {
+              "happy_greeting": "(variable.badger_behavior_illager_happy || variable.badger_behavior_illager_greeting)"
+            },
+            {
+              "heavy_excited": "variable.badger_behavior_illager_heavy_excited"
+            },
+            {
+              "heavy_scared": "variable.badger_behavior_illager_heavy_scared"
+            },
+            {
+              "default_walks": "query.behavior_default"
+            },
+            {
+              "sad_walk": "variable.badger_behavior_villager_illager_sad"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "default_walks": "!variable.is_swimming"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

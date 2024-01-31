@@ -1,0 +1,29 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+      "description": {
+        "identifier": "badger:resourceDrop_culture1",
+        "is_summonable": true,
+        "runtime_identifier": "badger:item"
+      },
+      "components": {
+        "badger:tags": {
+          "tags": [
+            "item",
+            "tnt",
+            "ghostTriggerFriendly"
+          ]
+        },
+        "badger:removal_time": {
+          "time": 60
+        },
+        "badger:projectile_physics": {
+          "gravity": -25.0
+        },
+        "badger:item_collection": {
+          "alliance_rule_filter": "collect_loot_items"
+        }
+      }
+    }
+  }
+  

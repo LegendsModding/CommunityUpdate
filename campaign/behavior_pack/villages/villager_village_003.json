@@ -1,0 +1,130 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:villager_village_003",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:village": {
+                "name": "villager.culture.003.name"
+            },
+            "badger:waypoint_marker_visibility": {
+                "waypoint_min_range": 20.0,
+                "waypoint_max_range": 20.0,
+                "compass_max_range": "medium-long"
+            },
+            "badger:waypoint_marker": {
+                "path": "waypoint_culture",
+                "label": "resources.unlock_journal_village_03.name",
+                "world_position_offset": [0, 4, 0],
+                "priority": 0,
+                "use_faction_name": true
+            },
+            "badger:map_controller": {
+                "initial_key_values": [
+                    {
+                        "key": "village_chest_state",
+                        "value": "collected"
+                    },
+                    {
+                        "key": "village_level",
+                        "value": "0"
+                    }
+                ]
+            },
+            "badger:village_building_path": {
+                "path_blocks": ["block_path_village"],
+                "edge_blocks": ["block_path_village_edge"],
+                "edge_decoration_blocks": ["block_deco_plant_foxglove_01", "block_deco_plant_foxglove_02", "block_deco_plant_foxglove_03", "block_deco_plant_foxglove_04", "block_deco_fol_wofgrass_01", "block_deco_fol_wofgrass_05", "air", "block_deco_plant_daisy_01", "block_deco_plant_daisy_02", "block_deco_plant_daisy_03", "block_deco_fol_wofgrass_02", "block_deco_fol_wofgrass_04", "air", "block_deco_plant_wildflower_01", "block_deco_plant_wildflower_02", "block_deco_plant_wildflower_03", "block_deco_fol_wofgrass_03", "block_deco_fol_wofgrass_03", "air", "block_deco_flowerscatter_01", "block_deco_flowerscatter_02", "block_deco_flowerscatter_03", "block_deco_fol_wofgrass_04", "block_deco_fol_wofgrass_02", "air", "block_deco_plant_periwinkle_01", "block_deco_plant_periwinkle_01", "block_deco_plant_periwinkle_01", "block_deco_fol_wofgrass_05", "block_deco_fol_wofgrass_01", "air"],
+                "path_width": 5.0,
+                "edge_width": 1.0,
+                "path_noise_scale_factor": 0.0,
+                "path_deco_noise_scale_factor": 6.0,
+                "path_noise_amplitude": 0.0,
+                "edge_noise_amplitude": 5.0,
+                "diagonal_path_degree_tolerance": 15,
+                "prevent_buildable_placement": true,
+                "can_plan_under_buildables": false,
+                "can_place_under_buildables": true,
+                "can_place_bridge_for_height_changes": true,
+                "can_reuse_existing_paths": true,
+                "height_change_needs_bridge": 5.0
+            },
+            "badger:village_district_path": {
+                "path_blocks": ["block_path_village"],
+                "edge_blocks": ["block_path_village_edge"],
+                "edge_decoration_blocks": ["block_deco_plant_foxglove_01", "block_deco_plant_foxglove_02", "block_deco_plant_foxglove_03", "block_deco_plant_foxglove_04", "block_deco_fol_wofgrass_01", "block_deco_fol_wofgrass_05", "air", "block_deco_plant_daisy_01", "block_deco_plant_daisy_02", "block_deco_plant_daisy_03", "block_deco_fol_wofgrass_02", "block_deco_fol_wofgrass_04", "air", "block_deco_plant_wildflower_01", "block_deco_plant_wildflower_02", "block_deco_plant_wildflower_03", "block_deco_fol_wofgrass_03", "block_deco_fol_wofgrass_03", "air", "block_deco_flowerscatter_01", "block_deco_flowerscatter_02", "block_deco_flowerscatter_03", "block_deco_fol_wofgrass_04", "block_deco_fol_wofgrass_02", "air", "block_deco_plant_periwinkle_01", "block_deco_plant_periwinkle_01", "block_deco_plant_periwinkle_01", "block_deco_fol_wofgrass_05", "block_deco_fol_wofgrass_01", "air"],
+                "path_width": 5.0,
+                "edge_width": 1.0,
+                "path_noise_scale_factor": 0.0,
+                "path_deco_noise_scale_factor": 6.0,
+                "path_noise_amplitude": 0.0,
+                "edge_noise_amplitude": 5.0,
+                "diagonal_path_degree_tolerance": 15,
+                "prevent_buildable_placement": true,
+                "can_plan_under_buildables": false,
+                "can_place_under_buildables": true,
+                "can_place_bridge_for_height_changes": true,
+                "can_reuse_existing_paths": true,
+                "height_change_needs_bridge": 5.0
+            },
+            "badger:village_zone": {
+                "expansion_distance": 100.0,
+                "zone_jitter_min": 0.5,
+                "zone_jitter_max": 1,
+                "is_zone_jitter_bell_curve_enabled": false,
+                "zone_spacing": 14.0,
+                "water_search_resolution": 2.0
+            },
+            "badger:village_zone_scoring": {
+                "close_to_easing": "linear",
+                "far_from_easing": "linear",
+                "direction_easing": "linear",
+                "close_to_wall_easing": "linear",
+                "spacing_easing": "linear",
+                "close_to_weight": 1.2,
+                "far_from_weight": 1.0,
+                "direction_weight": 1.0,
+                "close_to_wall_weight": 0.5,
+                "random_weight": 1.2,
+                "elevation_weight": 0.0,
+                "distance_from_weight": 1.0
+            },
+            "badger:village_building_placement": {
+                "minimum_distance_between_buildings": 0.0
+            },
+            "badger:village_bounds_trigger_volume_size": {
+                "padding": 75
+            },
+            "badger:culture": {
+                "base_culture_a": 0
+            },
+            "badger:culture_status": {
+                "thresholds": [
+                    {
+                        "thresholdA": 250,
+                        "thresholdB": 250,
+                        "thresholdC": 250
+                    },
+                    {
+                        "thresholdA": 500,
+                        "thresholdB": 500,
+                        "thresholdC": 500
+                    },
+                    {
+                        "thresholdA": 1000,
+                        "thresholdB": 1000,
+                        "thresholdC": 1000
+                    }
+                ]
+            },
+            "badger:telemetry_game_zone": {
+                "id": 4,
+                "alt_id": 99,
+                "add_details_in_pvp": false
+            },
+            "badger:template": "badger:template_village_root"
+        }
+    }
+}

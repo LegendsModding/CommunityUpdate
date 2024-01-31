@@ -49,7 +49,28 @@ const villageGenericData = {
 //=====================================================================================================================================================================
 
 const _MonoVillageDeck = (villageId) => {
-    OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeckO())
+    const cultureName = QUERY_GetFactionNameFromVillageID(villageId)
+    if (cultureName === CULTURE_NAME_FOREST) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck1())
+    } else if (cultureName === CULTURE_NAME_FROSTLANDS) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck2())
+    } else if (cultureName === CULTURE_NAME_DRYLANDS) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck3())
+    } else if (cultureName === CULTURE_NAME_WETLANDS) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck4())
+    } else if (cultureName === CULTURE_NAME_GRASSLANDS) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck5())
+    } else if (cultureName === CULTURE_NAME_BROKENLANDS) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck6())
+    } else if (cultureName === CULTURE_NAME_FATEFUL_LAND) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck7())
+    } else if (cultureName === CULTURE_NAME_JUNGLE) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck8())
+    } else if (cultureName === CULTURE_NAME_MOUNTAIN) {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeck9())
+    } else {
+        OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, VillageDeckO())
+    }
 }
 
 //=====================================================================================================================================================================
@@ -133,7 +154,55 @@ const _setupVillageBehaviorMode = () => {
     LISTENFOR_VillageGenerated({
         snippet: "vg_setup_village",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_VILLAGERS
+        factionName: CULTURE_NAME_FOREST
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_FROSTLANDS
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_DRYLANDS
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_WETLANDS
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_GRASSLANDS
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_BROKENLANDS
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_FATEFUL_LAND
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_JUNGLE
+    })
+
+    LISTENFOR_VillageGenerated({
+        snippet: "vg_setup_village",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        factionName: CULTURE_NAME_MOUNTAIN
     })
 
     LISTENFOR_ExternalEvent({
@@ -326,7 +395,7 @@ SNIPPET_BuildingComplete("bc_village_fountain_cs", (fountain) => {
 
     //spawn spawners
     const gamemode = QUERY_GetGameMode()
-    if (gamemode === GAMEMODE_CAMPAIGN || gamemode === GAMEMODE_CAMPAIGN_CUSTOM) {
+    if (gamemode === GAMEMODE_CAMPAIGN || gamemode === GAMEMODE_CAMPAIGN_CUSTOM || gamemode === GAMEMODE_CAMPAIGN_LCU) {
         // TODO: once poi_mounts has a mono version that lists all possible mounts/spawners we can iterate through that
         const mountSpawnPosition = QUERY_GetChildEntitiesWithInstanceName(fountain, "metadata_mount_spawn_position")
         SpawnEntitiesAt(mountSpawnPosition, "badger:spawner_mount_01", 1, TEAM_BLUE, villageId)

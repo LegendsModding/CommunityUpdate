@@ -1,0 +1,73 @@
+{
+  "settings": {
+    "seconds_per_played_faction_card": 0.25
+  },
+  "factions": [
+    {
+      "unique_card_id": "badger_onboarding_village_onboarding_culture_required_onboarding",
+      "map_data": "badger:onboarding_faction",
+      "village_data": "badger:onboarding_village",
+      "placement_name": "onboarding_village",
+      "placement_type": "special",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "onboarding",
+        "culture_required_onboarding"
+      ],
+      "biome": {
+        "biome": "onboarding",
+        "total_pixels": 80,
+        "starting_pixels": 1
+      },
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "wof_tutorial_texturestamp_01",
+          "manual_height": true,
+          "manual_height_range": [
+            18,
+            120
+          ]
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              0
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_center_onboarding_center",
+      "placement_name": "center",
+      "placement_type": "special",
+      "spawn_entity": "badger:world_center_locator",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "onboarding",
+        "center"
+      ],
+      "placement_rules": [
+        {
+          "game_start": {}
+        }
+      ]
+    }
+  ]
+}

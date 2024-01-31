@@ -101,150 +101,6 @@ const maOccupationVal = {
             portalEscalationTimer: "skeleton_portal_escalation_timer"
         }
     },
-    spider: {
-        villageArchetype: "badger:piglin_defend_small",
-        baseSize: BASE_SIZE_PIGLIN_SPIDER,
-        piglinFactionName: FACTION_NAME_DEFEND,
-        presentationActionDistance: 125,
-        baseSlot: "initialSpiderPiglinBaseSlot",
-        startOccupationGlobal: GV_START_MOB_ALLIANCE_OCCUPATION[MOB_ALLIANCE_NAME_SPIDER],
-        vars: {
-            playerPresent: "player_present_spider",
-            firstCageOpened: "gv_spider_piglin_cage_opened_first_time",
-            occupyingPiglinCount: "piglins_remaining_spider",
-            occupyingPiglinCountInitialized: "piglins_init_spider",
-            counterCompCount: "gv_spider_comps_spawned"
-        },
-        tags: {
-            objectivePiglinsTag: "objective_piglins_spider",
-            baseVicinityTvTag: "base_vicinity_tv_spider",
-            piglinSpawnTvTag: "piglin_spawn_tv_spider"
-        },
-        VOs: {
-            //intro: "mob_spider_first",
-            joinTheFight: "mob_post_join_fight_1",
-            attackedPortalVOs: "mob_enter_homestead_2",
-            firstCageOpenedBase: "mob_cage_opened_base_1",
-            mobAlliancePiglinAttack: "moballiance_spider_piglinattack",
-            mobAllianceFoA: "moballiance_spider_outro",
-            firstCageOpenedMobAlliance: "mob_spider_first_cage"
-        },
-        behaviours: {
-            default: MOB_BEHAVIOUR_DICTIONARY.spider.default,
-            caged: MOB_BEHAVIOUR_DICTIONARY.spider.caged,
-            // Act 1 makes the mob look scared
-            act1: MOB_BEHAVIOUR_DICTIONARY.spider.act1
-        },
-        cinematics: {
-            piglinOccupation: "mob01_c03_spider_piglin_attack_fmv",
-            piglinOccupationNight: "mob01_c03_spider_piglin_attack_night_fmv",
-            mobJoinTheFight: "mob01_c03a_spider_join_fight",
-            flameOfAllegiance: "mob01_c05_spider_foa_fmv",
-            flameOfAllegianceNight: "mob01_c05_spider_foa_night_fmv"
-        },
-        message: {
-            mobJoinTheFight: "mob_join_fight_spider"
-        },
-        timers: {
-            portalEscalationTimer: "spider_portal_escalation_timer"
-        }
-    },
-    slime: {
-        villageArchetype: "badger:piglin_obstacle_small",
-        baseSize: BASE_SIZE_PIGLIN_SLIME,
-        piglinFactionName: FACTION_NAME_OBSTACLE,
-        presentationActionDistance: 125,
-        baseSlot: "initialSlimePiglinBaseSlot",
-        startOccupationGlobal: GV_START_MOB_ALLIANCE_OCCUPATION[MOB_ALLIANCE_NAME_SLIME],
-        vars: {
-            playerPresent: "player_present_slime",
-            firstCageOpened: "gv_slime_piglin_cage_opened_first_time",
-            occupyingPiglinCount: "piglins_remaining_slime",
-            occupyingPiglinCountInitialized: "piglins_init_slime",
-            counterCompCount: "gv_slime_comps_spawned"
-        },
-        tags: {
-            objectivePiglinsTag: "objective_piglins_slime",
-            baseVicinityTvTag: "base_vicinity_tv_slime",
-            piglinSpawnTvTag: "piglin_spawn_tv_slime"
-        },
-        VOs: {
-            //intro: "mob_slime_first",
-            joinTheFight: "mob_post_join_fight_1",
-            attackedPortalVOs: "mob_enter_homestead_2",
-            firstCageOpenedBase: "mob_cage_opened_base_1",
-            mobAlliancePiglinAttack: "moballiance_slime_piglinattack",
-            mobAllianceFoA: "moballiance_slime_outro",
-            firstCageOpenedMobAlliance: "mob_slime_first_cage"
-        },
-        behaviours: {
-            default: MOB_BEHAVIOUR_DICTIONARY.slime.default,
-            caged: MOB_BEHAVIOUR_DICTIONARY.slime.caged,
-            // Act 1 makes the mob look scared
-            act1: MOB_BEHAVIOUR_DICTIONARY.slime.act1
-        },
-        cinematics: {
-            piglinOccupation: "mob01_c03_slime_piglin_attack_fmv",
-            piglinOccupationNight: "mob01_c03_slime_piglin_attack_night_fmv",
-            mobJoinTheFight: "mob01_c03a_slime_join_fight",
-            flameOfAllegiance: "mob01_c05_slime_foa_fmv",
-            flameOfAllegianceNight: "mob01_c05_slime_foa_night_fmv"
-        },
-        message: {
-            mobJoinTheFight: "mob_join_fight_slime"
-        },
-        timers: {
-            portalEscalationTimer: "slime_portal_escalation_timer"
-        }
-    },
-    silverfish: {
-        villageArchetype: "badger:piglin_frost_small",
-        baseSize: BASE_SIZE_PIGLIN_SILVERFISH,
-        piglinFactionName: FACTION_NAME_FROST,
-        presentationActionDistance: 125,
-        baseSlot: "initialSilverfishPiglinBaseSlot",
-        startOccupationGlobal: GV_START_MOB_ALLIANCE_OCCUPATION[MOB_ALLIANCE_NAME_SILVERFISH],
-        vars: {
-            playerPresent: "player_present_silverfish",
-            firstCageOpened: "gv_silverfish_piglin_cage_opened_first_time",
-            occupyingPiglinCount: "piglins_remaining_silverfish",
-            occupyingPiglinCountInitialized: "piglins_init_silverfish",
-            counterCompCount: "gv_silverfish_comps_spawned"
-        },
-        tags: {
-            objectivePiglinsTag: "objective_piglins_silverfish",
-            baseVicinityTvTag: "base_vicinity_tv_silverfish",
-            piglinSpawnTvTag: "piglin_spawn_tv_silverfish"
-        },
-        VOs: {
-            //intro: "mob_silverfish_first",
-            joinTheFight: "mob_post_join_fight_1",
-            attackedPortalVOs: "mob_enter_homestead_2",
-            firstCageOpenedBase: "mob_cage_opened_base_1",
-            mobAlliancePiglinAttack: "moballiance_silverfish_piglinattack",
-            mobAllianceFoA: "moballiance_silverfish_outro",
-            firstCageOpenedMobAlliance: "mob_silverfish_first_cage"
-        },
-        behaviours: {
-            default: MOB_BEHAVIOUR_DICTIONARY.silverfish.default,
-            caged: MOB_BEHAVIOUR_DICTIONARY.silverfish.caged,
-            // Act 1 makes the mob look scared
-            act1: MOB_BEHAVIOUR_DICTIONARY.silverfish.act1
-        },
-        cinematics: {
-            piglinOccupation: "mob01_c03_silverfish_piglin_attack_fmv",
-            piglinOccupationNight: "mob01_c03_silverfish_piglin_attack_night_fmv",
-            mobJoinTheFight: "mob01_c03a_silverfish_join_fight",
-            flameOfAllegiance: "mob01_c05_silverfish_foa_fmv",
-            flameOfAllegianceNight: "mob01_c05_silverfish_foa_night_fmv"
-        },
-        message: {
-            mobJoinTheFight: "mob_join_fight_silverfish"
-        },
-        timers: {
-            portalEscalationTimer: "silverfish_portal_escalation_timer"
-        }
-    },
     zombie: {
         villageArchetype: "badger:piglin_obstacle_small",
         baseSize: BASE_SIZE_PIGLIN_ZOMBIE,
@@ -293,6 +149,150 @@ const maOccupationVal = {
             portalEscalationTimer: "zombie_portal_escalation_timer"
         }
     },
+    spider: {
+        villageArchetype: "badger:piglin_frost_small",
+        baseSize: BASE_SIZE_PIGLIN_SPIDER,
+        piglinFactionName: FACTION_NAME_FROST,
+        presentationActionDistance: 135,
+        baseSlot: "initialSpiderPiglinBaseSlot",
+        startOccupationGlobal: GV_START_MOB_ALLIANCE_OCCUPATION[MOB_ALLIANCE_NAME_SPIDER],
+        vars: {
+            playerPresent: "player_present_spider",
+            firstCageOpened: "gv_spider_piglin_cage_opened_first_time",
+            occupyingPiglinCount: "piglins_remaining_spider",
+            occupyingPiglinCountInitialized: "piglins_init_spider",
+            counterCompCount: "gv_spider_comps_spawned"
+        },
+        tags: {
+            objectivePiglinsTag: "objective_piglins_spider",
+            baseVicinityTvTag: "base_vicinity_tv_spider",
+            piglinSpawnTvTag: "piglin_spawn_tv_spider"
+        },
+        VOs: {
+            //intro: "mob_spider_first",
+            joinTheFight: "mob_post_join_fight_3",
+            attackedPortalVOs: "mob_enter_homestead_3",
+            firstCageOpenedBase: "mob_cage_opened_base_3",
+            mobAlliancePiglinAttack: "moballiance_spider_piglinattack",
+            mobAllianceFoA: "moballiance_spider_outro",
+            firstCageOpenedMobAlliance: "mob_spider_first_cage"
+        },
+        behaviours: {
+            default: MOB_BEHAVIOUR_DICTIONARY.spider.default,
+            caged: MOB_BEHAVIOUR_DICTIONARY.spider.caged,
+            // Act 1 makes the mob look scared
+            act1: MOB_BEHAVIOUR_DICTIONARY.spider.act1
+        },
+        cinematics: {
+            piglinOccupation: "mob02_c03_spider_piglin_attack_fmv",
+            piglinOccupationNight: "mob02_c03_spider_piglin_attack_night_fmv",
+            mobJoinTheFight: "mob02_c03a_spider_join_fight",
+            flameOfAllegiance: "mob02_c05_spider_foa_fmv",
+            flameOfAllegianceNight: "mob02_c05_spider_foa_night_fmv"
+        },
+        message: {
+            mobJoinTheFight: "mob_join_fight_spider"
+        },
+        timers: {
+            portalEscalationTimer: "spider_portal_escalation_timer"
+        }
+    },
+    slime: {
+        villageArchetype: "badger:piglin_obstacle_small",
+        baseSize: BASE_SIZE_PIGLIN_SLIME,
+        piglinFactionName: FACTION_NAME_OBSTACLE,
+        presentationActionDistance: 135,
+        baseSlot: "initialSpiderPiglinBaseSlot",
+        startOccupationGlobal: GV_START_MOB_ALLIANCE_OCCUPATION[MOB_ALLIANCE_NAME_SLIME],
+        vars: {
+            playerPresent: "player_present_slime",
+            firstCageOpened: "gv_slime_piglin_cage_opened_first_time",
+            occupyingPiglinCount: "piglins_remaining_slime",
+            occupyingPiglinCountInitialized: "piglins_init_slime",
+            counterCompCount: "gv_slime_comps_spawned"
+        },
+        tags: {
+            objectivePiglinsTag: "objective_piglins_slime",
+            baseVicinityTvTag: "base_vicinity_tv_slime",
+            piglinSpawnTvTag: "piglin_spawn_tv_slime"
+        },
+        VOs: {
+            //intro: "mob_slime_first",
+            joinTheFight: "mob_post_join_fight_3",
+            attackedPortalVOs: "mob_enter_homestead_3",
+            firstCageOpenedBase: "mob_cage_opened_base_3",
+            mobAlliancePiglinAttack: "moballiance_slime_piglinattack",
+            mobAllianceFoA: "moballiance_slime_outro",
+            firstCageOpenedMobAlliance: "mob_slime_first_cage"
+        },
+        behaviours: {
+            default: MOB_BEHAVIOUR_DICTIONARY.slime.default,
+            caged: MOB_BEHAVIOUR_DICTIONARY.slime.caged,
+            // Act 1 makes the mob look scared
+            act1: MOB_BEHAVIOUR_DICTIONARY.slime.act1
+        },
+        cinematics: {
+            piglinOccupation: "mob02_c03_slime_piglin_attack_fmv",
+            piglinOccupationNight: "mob02_c03_slime_piglin_attack_night_fmv",
+            mobJoinTheFight: "mob02_c03a_slime_join_fight",
+            flameOfAllegiance: "mob02_c05_slime_foa_fmv",
+            flameOfAllegianceNight: "mob02_c05_slime_foa_night_fmv"
+        },
+        message: {
+            mobJoinTheFight: "mob_join_fight_slime"
+        },
+        timers: {
+            portalEscalationTimer: "slime_portal_escalation_timer"
+        }
+    },
+    silverfish: {
+        villageArchetype: "badger:piglin_defend_small",
+        baseSize: BASE_SIZE_PIGLIN_SILVERFISH,
+        piglinFactionName: FACTION_NAME_DEFEND,
+        presentationActionDistance: 125,
+        baseSlot: "initialSilverfishPiglinBaseSlot",
+        startOccupationGlobal: GV_START_MOB_ALLIANCE_OCCUPATION[MOB_ALLIANCE_NAME_SILVERFISH],
+        vars: {
+            playerPresent: "player_present_silverfish",
+            firstCageOpened: "gv_silverfish_piglin_cage_opened_first_time",
+            occupyingPiglinCount: "piglins_remaining_silverfish",
+            occupyingPiglinCountInitialized: "piglins_init_silverfish",
+            counterCompCount: "gv_silverfish_comps_spawned"
+        },
+        tags: {
+            objectivePiglinsTag: "objective_piglins_silverfish",
+            baseVicinityTvTag: "base_vicinity_tv_silverfish",
+            piglinSpawnTvTag: "piglin_spawn_tv_silverfish"
+        },
+        VOs: {
+            //intro: "mob_silverfish_first",
+            joinTheFight: "mob_post_join_fight_1",
+            attackedPortalVOs: "mob_enter_homestead_2",
+            firstCageOpenedBase: "mob_cage_opened_base_1",
+            mobAlliancePiglinAttack: "moballiance_silverfish_piglinattack",
+            mobAllianceFoA: "moballiance_silverfish_outro",
+            firstCageOpenedMobAlliance: "mob_silverfish_first_cage"
+        },
+        behaviours: {
+            default: MOB_BEHAVIOUR_DICTIONARY.silverfish.default,
+            caged: MOB_BEHAVIOUR_DICTIONARY.silverfish.caged,
+            // Act 1 makes the mob look scared
+            act1: MOB_BEHAVIOUR_DICTIONARY.silverfish.act1
+        },
+        cinematics: {
+            piglinOccupation: "mob01_c03_silverfish_piglin_attack_fmv",
+            piglinOccupationNight: "mob01_c03_silverfish_piglin_attack_night_fmv",
+            mobJoinTheFight: "mob01_c03a_silverfish_join_fight",
+            flameOfAllegiance: "mob01_c05_silverfish_foa_fmv",
+            flameOfAllegianceNight: "mob01_c05_silverfish_foa_night_fmv"
+        },
+        message: {
+            mobJoinTheFight: "mob_join_fight_silverfish"
+        },
+        timers: {
+            portalEscalationTimer: "silverfish_portal_escalation_timer"
+        }
+    },
     common: {
         audioEntityAlliance: "badger:music_combat_act1_MA",
         audioEntityPiglin: "badger:music_combat_act1_MA_piglin",
@@ -302,7 +302,7 @@ const maOccupationVal = {
         portalHalfHealthThreshold: 0.5,
         cinematicPlayerGatherRange: 300,
         initialOccupationMobDespawnRange: 500,
-        guardedBehaviourDictionary: [
+        guardedBehaviourDictionary: [ 
             { tag: "grunter", behaviour: "badger:behavior_piglin_grunter_guarded" },
             { tag: "runt", behaviour: "badger:behavior_piglin_runt_guarded" },
             { tag: "portalguard", behaviour: "badger:behavior_piglin_portal_guard_guarded" },
@@ -1067,7 +1067,7 @@ const occupationBaseData = {
         ],
         totalRallyPoints: 2,
         viableRallyBuildingTags: ["pigSpreader", "pigKnockbackTower"],
-        mobPortalTriggerVolume: "badger:spatial_trigger_mob_alliance_zombie_assault",
+        mobPortalTriggerVolume: "badger:spatial_trigger_mob_alliance_spider_assault",
         structureDetectionRadius: 200,
         responseTimers: {
             piglinPortalDamagedResponseTimer: 5,
@@ -1804,13 +1804,13 @@ const _frostFactionOccupationBaseDeck = (villageId, mobId) => {
     const firstZone = ZonesCard("frostCenterZone", 1)
     DECK_MultiplyByMultipleRules(firstZone, [ZoneHeightChangeCard(FrostHeight.H23), ZoneTagCard("frostValidZone")])
     const keepZone = ZonesCard("addZone", 19)
-    DECK_MultiplyByMultipleRules(keepZone, [ZoneHeightChangeCard(FrostHeight.H23), ZoneTagCard("keepZone"), ZoneTagCard("frostValidZone")])
+    DECK_MultiplyByMultipleRules(keepZone, [ZoneHeightChangeCard(FrostHeight.H23), ZoneTagCard("keepZone"), ZoneTagCard("obstacleValidZone")])
     const dropZone1 = ZonesCard("addZone", 1)
-    DECK_MultiplyByMultipleRules(dropZone1, [ZoneHeightChangeCard(FrostHeight.H17), ZoneTagCard("dropZone"), PlacementPreferenceCard(DIRECTION_CARD.northWedge)])
+    DECK_MultiplyByMultipleRules(dropZone1, [ZoneHeightChangeCard(FrostHeight.H17), ZoneTagCard("dropZoneFrost"), PlacementPreferenceCard(DIRECTION_CARD.northWedge)])
     const dropZone2 = ZonesCard("addZone", 1)
-    DECK_MultiplyByMultipleRules(dropZone2, [ZoneHeightChangeCard(FrostHeight.H12), ZoneTagCard("dropZone"), PlacementPreferenceCard(DIRECTION_CARD.northWedge)])
+    DECK_MultiplyByMultipleRules(dropZone2, [ZoneHeightChangeCard(FrostHeight.H12), ZoneTagCard("dropZoneFrost"), PlacementPreferenceCard(DIRECTION_CARD.northWedge)])
     const dropZone3 = ZonesCard("addZone", 1)
-    DECK_MultiplyByMultipleRules(dropZone3, [ZoneHeightChangeCard(FrostHeight.H7), ZoneTagCard("dropZone"), PlacementPreferenceCard(DIRECTION_CARD.northWedge)])
+    DECK_MultiplyByMultipleRules(dropZone3, [ZoneHeightChangeCard(FrostHeight.H7), ZoneTagCard("dropZoneFrost"), PlacementPreferenceCard(DIRECTION_CARD.northWedge)])
 
     const portalType = "occupationFrostPortalSmall"
     const portalRules = [ForceBuildingPlacementCard("forceBuildingPlacement"), ZoneHeightChangeCard(FrostHeight.H16), PlacementPreferenceCard("facingNorth"), PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("frostValidZone"), ZoneFilterCard("placeInsideVillageAlways")]
@@ -2189,14 +2189,14 @@ const _BuildCages = (mobId) => {
         DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("creeperCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
     } else if (mobAllianceData.id === "skeleton") {
         DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("skeletonCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
-    } else if (mobAllianceData.id === "spider") {
-        DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("spiderCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
-    } else if (mobAllianceData.id === "slime") {
-        DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("slimeCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
-    } else if (mobAllianceData.id === "silverfish") {
-        DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("silverfishCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
     } else if (mobAllianceData.id === "zombie") {
         DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("zombieCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
+    } else if (mobAllianceData.id === "spider") {
+        DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("spiderCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
+    } else if (mobAllianceData.id === "silverfish") {
+        DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("silverfishCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
+    } else if (mobAllianceData.id === "slime") {
+        DECK_MultiplyByMultipleRules(randomCageDeck, [PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("slimeCageZones"), PlacementPreferenceCard("placeWithoutSpacing"), PlacementPreferenceCard(PLACEMENT_RANDOM)])
     } else {
         throw new Error('Attempted to build cages for an unknown mob alliance: "' + mobAllianceData.id + '". If a new alliance has been added, please update this script.')
     }
@@ -2555,25 +2555,6 @@ SNIPPET_VillageGenerated("vg_mob_alliance_piglin", (villageId, payload) => {
             includeTags: [BARRACKS_NAME_SIEGER],
             villageId: villageId
         })
-    } else if (occupationData.piglinFactionName === FACTION_NAME_OBSTACLE) {
-        LISTENFOR_BuildingComplete({
-            snippet: "bc_occupation_obstacle_attack_barracks",
-            ownerVillageId: villageId,
-            includeTags: [BARRACKS_NAME_FIGHTER],
-            villageId: villageId
-        })
-        LISTENFOR_BuildingComplete({
-            snippet: "bc_occupation_obstacle_defend_barracks",
-            ownerVillageId: villageId,
-            includeTags: [BARRACKS_NAME_DISRUPTOR],
-            villageId: villageId
-        })
-        LISTENFOR_BuildingComplete({
-            snippet: "bc_occupation_obstacle_siege_barracks",
-            ownerVillageId: villageId,
-            includeTags: [BARRACKS_NAME_SIEGER],
-            villageId: villageId
-        })
     } else if (occupationData.piglinFactionName === FACTION_NAME_FROST) {
         LISTENFOR_BuildingComplete({
             snippet: "bc_occupation_frost_attack_barracks",
@@ -2589,6 +2570,25 @@ SNIPPET_VillageGenerated("vg_mob_alliance_piglin", (villageId, payload) => {
         })
         LISTENFOR_BuildingComplete({
             snippet: "bc_occupation_frost_siege_barracks",
+            ownerVillageId: villageId,
+            includeTags: [BARRACKS_NAME_SIEGER],
+            villageId: villageId
+        })
+    } else if (occupationData.piglinFactionName === FACTION_NAME_OBSTACLE) {
+        LISTENFOR_BuildingComplete({
+            snippet: "bc_occupation_obstacle_attack_barracks",
+            ownerVillageId: villageId,
+            includeTags: [BARRACKS_NAME_FIGHTER],
+            villageId: villageId
+        })
+        LISTENFOR_BuildingComplete({
+            snippet: "bc_occupation_obstacle_defend_barracks",
+            ownerVillageId: villageId,
+            includeTags: [BARRACKS_NAME_DISRUPTOR],
+            villageId: villageId
+        })
+        LISTENFOR_BuildingComplete({
+            snippet: "bc_occupation_obstacle_siege_barracks",
             ownerVillageId: villageId,
             includeTags: [BARRACKS_NAME_SIEGER],
             villageId: villageId
@@ -3389,7 +3389,7 @@ SNIPPET_SpatialPartitionEntered("spe_piglins_spawned_from_invasion", (triggerEnt
 
 SNIPPET_ProcessPatch("pgv_occupation_base_barracks_patch", 1, () => {
     //In case the player loads an old save inside the piglin base
-    const mobIds = ["skeleton", "creeper", "spider", "slime", "silverfish", "zombie"]
+    const mobIds = ["skeleton", "creeper", "zombie", "spider", "silverfish", "slime"]
     mobIds.forEach((mobId) => {
         const piglinFaction = maOccupationVal[mobId].piglinFactionName
         const piglinOccupationBase = GetAliveVillages(piglinFaction, maOccupationVal[mobId].baseSize)
@@ -3434,6 +3434,48 @@ const patchOccupationBaseBarracks = (villageId, mobId) => {
                 config: SiegerBarracksConfig_ObstacleFaction_Variations
             }
         ],
+        spider: [
+            {
+                tags: [BARRACKS_NAME_FIGHTER],
+                config: FighterBarracksConfig_FrostFaction_Variations
+            },
+            {
+                tags: [BARRACKS_NAME_DISRUPTOR],
+                config: DisruptorBarracksConfig_FrostFaction_Variations
+            },
+            {
+                tags: [BARRACKS_NAME_SIEGER],
+                config: SiegerBarracksConfig_FrostFaction_Variations
+            }
+        ],
+        slime: [
+            {
+                tags: [BARRACKS_NAME_FIGHTER],
+                config: FighterBarracksConfig_ObstacleFaction_Variations
+            },
+            {
+                tags: [BARRACKS_NAME_DISRUPTOR],
+                config: DisruptorBarracksConfig_ObstacleFaction_Variations
+            },
+            {
+                tags: [BARRACKS_NAME_SIEGER],
+                config: SiegerBarracksConfig_ObstacleFaction_Variations
+            }
+        ],
+        slime: [
+            {
+                tags: [BARRACKS_NAME_FIGHTER],
+                config: FighterBarracksConfig_DefendFaction_Variations
+            },
+            {
+                tags: [BARRACKS_NAME_DISRUPTOR],
+                config: DisruptorBarracksConfig_DefendFaction_Variations
+            },
+            {
+                tags: [BARRACKS_NAME_SIEGER],
+                config: SiegerBarracksConfig_DefendFaction_Variations
+            }
+        ],
         creeper: [
             {
                 tags: [BARRACKS_NAME_FIGHTER],
@@ -3447,48 +3489,6 @@ const patchOccupationBaseBarracks = (villageId, mobId) => {
                 tags: [BARRACKS_NAME_SIEGER],
                 config: SiegerBarracksConfig_DefendFaction_Variations
             }
-        ],
-        spider: [
-            {
-                tags: [BARRACKS_NAME_FIGHTER],
-                config: FighterBarracksConfig_DefendFaction_Variations
-            },
-            {
-                tags: [BARRACKS_NAME_DISRUPTOR],
-                config: FighterBarracksConfig_DefendFaction_Variations
-            },
-            {
-                tags: [BARRACKS_NAME_SIEGER],
-                config: SiegerBarracksConfig_DefendFaction_Variations
-            }
-        ],
-        slime: [
-            {
-                tags: [BARRACKS_NAME_FIGHTER],
-                config: FighterBarracksConfig_ObstacleFaction_Variations
-            },
-            {
-                tags: [BARRACKS_NAME_DISRUPTOR],
-                config: FighterBarracksConfig_ObstacleFaction_Variations
-            },
-            {
-                tags: [BARRACKS_NAME_SIEGER],
-                config: SiegerBarracksConfig_ObstacleFaction_Variations
-            }
-        ],
-        silverfish: [
-            {
-                tags: [BARRACKS_NAME_FIGHTER],
-                config: FighterBarracksConfig_FrostFaction_Variations
-            },
-            {
-                tags: [BARRACKS_NAME_DISRUPTOR],
-                config: FighterBarracksConfig_FrostFaction_Variations
-            },
-            {
-                tags: [BARRACKS_NAME_SIEGER],
-                config: SiegerBarracksConfig_FrostFaction_Variations
-            }
         ]
     }
 
@@ -3500,7 +3500,7 @@ const patchOccupationBaseBarracks = (villageId, mobId) => {
 }
 
 SNIPPET_ProcessPatch("pgv_patchHomesteadOccupationMapIcon", 1, () => {
-    const mobIds = ["skeleton", "creeper", "spider", "slime", "silverfish", "zombie"]
+    const mobIds = ["skeleton", "creeper", "zombie", "slime", "spider", "silverfish"]
     mobIds.forEach((mobId) => {
         if (IsOccupationBeatActive(mobId)) {
             const mobAllianceData = GetMobAllianceData(mobId)

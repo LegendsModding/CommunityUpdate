@@ -1,0 +1,71 @@
+{
+   "format_version" : "1.13.0",
+   "minecraft:biome" : {
+      "components" : {
+         "badger:overworld_height" : {
+            "height_params": {
+               "texture_heights": [16, 22],
+               "average_height": 19
+            },
+            "noise_params" : [ -0.50, 0.0 ]
+         },
+         "badger:visual_biome_attributes" : {
+            "grass" : {
+               "normal" : {
+                  "grass_noise_intensity" : 0.50,
+                  "grass_noise_scale" : 0.50,
+                  "grass_surface_color" : "#7CB85C"
+               },
+               "overlay" : {
+                  "grass_overlay_noise_bias" : 0.0,
+                  "grass_overlay_noise_intensity" : 0.0,
+                  "grass_overlay_noise_scale" : 0.0,
+                  "grass_overlay_surface_color" : "#000000"
+               }
+            },
+            "map" : {
+               "biome_banner" : "map_screen/banners/legend_banner_biome_drylands.png",
+               "biome_display_name" : "forest",
+               "common_resource_icon" : "/icons/resources/resource_iron.png",
+               "map_color" : "#ae9e93",
+               "map_color_odd" : "#ae9e93",
+               "map_pattern_index" : 3
+            },
+            "particulates" : {
+               "nether_spores" : 0.0,
+               "sparkles" : 0.0
+            },
+            "rain" : {
+               "downfall" : 25.0,
+               "lower_limit" : 0.6999999880790710,
+               "rain_to_snow_height" : 200,
+               "rain_to_snow_transition_size" : 5,
+               "snow_to_rain_density_ratio" : 0.75,
+               "upper_limit" : 0.8999999761581421
+            },
+            "water" : {
+               "water_blur_distance" : 15.0,
+               "water_color_blend_distance" : 0.0,
+               "water_depths_color" : "#44AFF5",
+               "water_surface_color" : "#3D539C",
+               "water_surface_transparency" : 0.6499999761581421
+            }
+         },
+         "minecraft:surface_parameters" : {
+            "default_surface" : {
+               "mid_material" : "badger:block_dirt",
+               "top_material" : "minecraft:grass"
+            },
+            "foundation_material" : "badger:block_stone",
+            "sea_floor_depth" : 7,
+            "sea_floor_material" : "badger:block_gravel",
+            "sea_material" : "badger:block_water"
+         },
+         "overworld" : {},
+         "river" : {}
+      },
+      "description" : {
+         "identifier" : "cherry_grove_river"
+      }
+   }
+}

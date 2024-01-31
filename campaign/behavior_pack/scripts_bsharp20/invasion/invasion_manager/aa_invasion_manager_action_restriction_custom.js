@@ -18,7 +18,7 @@ const invasionManagerSharedRestrictions_Custom = {
         [FACTION_NAME_ATTACK]: 15,
         [FACTION_NAME_DEFEND]: 12,
         [FACTION_NAME_OBSTACLE]: 15,
-        [FACTION_NAME_FROST]: 15
+        [FACTION_NAME_FROST]: 12
     }
 }
 

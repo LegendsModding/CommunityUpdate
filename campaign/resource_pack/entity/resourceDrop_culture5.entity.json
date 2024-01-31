@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:resourceDrop_culture5",
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.item_orb_02"
+      },
+      "materials": {
+        "default": "entity_model",
+        "mat_item_orb_02": "mat_item_orb_02"
+      },
+      "render_controllers": [ "controller.render.item_orb_02" ],
+      "textures": {
+        "default": "textures/entity/tex_item_orb_02_d"
+      }
+    },
+
+    "components": {
+
+      "badger:rendering": {
+
+        "definition": "badger:item_orb_02",
+
+        "static": true
+
+      },
+
+      "badger:interpolation": {
+        "position_interpolation_steps": 4.0
+      },
+      "badger:projectile_trail_request": {
+
+        "name": "trail_1"
+
+      }
+
+    }
+  }
+}

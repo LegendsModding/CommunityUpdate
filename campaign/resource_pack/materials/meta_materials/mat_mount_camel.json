@@ -3,9 +3,7 @@
   "mat_mount_camel:base_entity_hero": {
     "pass":"AlphaTest",
     "textures": {
-      "diffuseMap": "textures/entity/tex_mount_camel_d",
-      "coeffMap": "textures/entity/tex_mount_camel_mr",
-      "normalMap": "textures/entity/tex_mount_camel_n"
+      "diffuseMap": "textures/entity/tex_mount_camel_d"
     }
   }
 }

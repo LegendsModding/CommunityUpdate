@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:wmap_village_fountain_cul05",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 1.5,
+        "length": 0.796875076294,
+        "width": 0.46875
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      },
+      "badger:map3_selectable": {}
+    }
+  }
+}

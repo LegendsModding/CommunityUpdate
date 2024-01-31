@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:villager_culture_001"
+    },
+    "components": {
+      "badger:faction": {
+        //Forest
+        "id": "faction.cul.001",
+        "name": "villager.culture.001.name",
+        "description": "villager.culture.001.description",
+        "icon": "ui_map_biomelegend_villager_01",
+        "color": [0.34, 0.69, 0.9, 1.0],
+        "known": true
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:campaign_team": {
+        "team_tag": "campaign_team"
+      },
+      "badger:template": "badger:template_faction_villager"
+    }
+  }
+}

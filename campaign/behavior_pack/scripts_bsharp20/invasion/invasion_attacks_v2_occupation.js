@@ -178,8 +178,120 @@ const occupationValMobs = {
             repairMessage: "village_attack_occupation_repair_message_zombies"
         }
     },
-    [CULTURE_NAME_VILLAGERS]: {
+    [CULTURE_NAME_FOREST]: {
         mobArchetype: "badger:villager_culture01",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_FROSTLANDS]: {
+        mobArchetype: "badger:villager_culture02",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_DRYLANDS]: {
+        mobArchetype: "badger:villager_culture03",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_WETLANDS]: {
+        mobArchetype: "badger:villager_culture04",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_GRASSLANDS]: {
+        mobArchetype: "badger:villager_culture05",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_BROKENLANDS]: {
+        mobArchetype: "badger:villager_culture06",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_FATEFUL_LAND]: {
+        mobArchetype: "badger:villager_culture07",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_JUNGLE]: {
+        mobArchetype: "badger:villager_culture08",
+        numberOfCages: 3,
+        amountInCage: 2,
+        messaging: {
+            freeOccupation: "village_attack_occupation_free_villagers",
+            beginOccupation: "village_attack_occupation_begin_villagers",
+            abandonOccupation: "village_attack_occupation_abandon_villagers",
+            endOccupationSequence: "village_attack_occupation_end_villagers_sequence",
+            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_villagers",
+            repairReminder: "village_attack_occupation_repair_reminder_villagers",
+            repairMessage: "village_attack_occupation_repair_message_villagers"
+        }
+    },
+    [CULTURE_NAME_MOUNTAIN]: {
+        mobArchetype: "badger:villager_culture09",
         numberOfCages: 3,
         amountInCage: 2,
         messaging: {
@@ -689,7 +801,39 @@ SNIPPET_PresenceEntered("pe_setup_occupation_state", (triggerEntity, _count, pay
     const villageFaction = QUERY_GetFactionNameFromVillageID(villageId)
 
     //VO
-    if (villageFaction === CULTURE_NAME_VILLAGERS) {
+    if (villageFaction === CULTURE_NAME_FOREST) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_FROSTLANDS) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_DRYLANDS) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_WETLANDS) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_GRASSLANDS) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_BROKENLANDS) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_FATEFUL_LAND) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_JUNGLE) {
+        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
+            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
+        }
+    } else if (villageFaction === CULTURE_NAME_MOUNTAIN) {
         if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
             PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
         }

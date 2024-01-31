@@ -14,19 +14,19 @@ const VindicatorBarracksConfig_wofFaction = {
                 batch: 0
             },
             phase_1: {
-                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_zombie"],
+                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_zombie"],
                 cap: 8,
                 rate: 50,
                 batch: 8
             },
             phase_2: {
-                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_zombie"],
+                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_zombie"],
                 cap: 8,
                 rate: 50,
                 batch: 8
             },
             phase_3: {
-                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_zombie"],
+                loadout: ["badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_axe", "badger:mob_illager_witch", "badger:mob_creeper", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_zombie"],
                 cap: 8,
                 rate: 50,
                 batch: 8
@@ -401,8 +401,290 @@ const DisruptorBarracksConfig_AttackFaction = {
     }
 }
 
+////disruptor barracks - frost faction
+const DisruptorBarracksConfig_FrostFaction = {
+    name: BARRACKS_NAME_DISRUPTOR,
+    wofBase: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        }
+    },
+    small: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 15,
+            batch: 2
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 12,
+            batch: 2
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 10,
+            rate: 12,
+            batch: 2
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 12,
+            batch: 3
+        }
+    },
+    medium: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 15,
+            batch: 2
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 12,
+            batch: 2
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 10,
+            rate: 12,
+            batch: 2
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 12,
+            batch: 3
+        }
+    },
+    large: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 15,
+            batch: 2
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 12,
+            batch: 2
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 10,
+            rate: 12,
+            batch: 2
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 12,
+            batch: 3
+        }
+    },
+    frontlineA: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 15,
+            batch: 2
+        }
+    }
+}
+
 ////fighter barrack - attack faction
 const FighterBarracksConfig_AttackFaction = {
+    name: BARRACKS_NAME_FIGHTER,
+    wofBase: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        }
+    },
+    small: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 8,
+            batch: 1
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 10,
+            rate: 7,
+            batch: 1
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 6,
+            batch: 1
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 6,
+            batch: 1
+        }
+    },
+    medium: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 8,
+            batch: 1
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 10,
+            rate: 7,
+            batch: 1
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 6,
+            batch: 1
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 6,
+            batch: 1
+        }
+    },
+    large: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 8,
+            batch: 1
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt"],
+            cap: 10,
+            rate: 7,
+            batch: 1
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 6,
+            batch: 1
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt"],
+            cap: 12,
+            rate: 6,
+            batch: 1
+        }
+    },
+    frontlineA: {
+        phase_0: {
+            loadout: ["badger:piglin_runt"],
+            cap: 8,
+            rate: 8,
+            batch: 1
+        }
+    }
+}
+
+////fighter barrack - frost faction
+const FighterBarracksConfig_FrostFaction = {
     name: BARRACKS_NAME_FIGHTER,
     wofBase: {
         phase_0: {
@@ -643,6 +925,107 @@ const SiegerBarracksConfig_AttackFaction = {
     }
 }
 
+////sieger barrack - frost faction
+const SiegerBarracksConfig_FrostFaction = {
+    name: BARRACKS_NAME_SIEGER,
+    wofBase: {
+        phase_0: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_1: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_2: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_3: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        },
+        phase_4: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 0,
+            rate: 30,
+            batch: 0
+        }
+    },
+    act1_a: {
+        phase_0: {
+            loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_medic"],
+            cap: 16,
+            rate: 20,
+            batch: 4
+        },
+        phase_1: {
+            loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_medic"],
+            cap: 16,
+            rate: 20,
+            batch: 4
+        },
+        phase_2: {
+            loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_medic"],
+            cap: 16,
+            rate: 20,
+            batch: 4
+        },
+        phase_3: {
+            loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_medic"],
+            cap: 16,
+            rate: 20,
+            batch: 4
+        },
+        phase_4: {
+            loadout: ["badger:piglin_runt", "badger:piglin_runt", "badger:piglin_runt", "badger:piglin_medic"],
+            cap: 16,
+            rate: 20,
+            batch: 4
+        }
+    },
+    act1_c: {
+        phase_0: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 0,
+            rate: 20,
+            batch: 5
+        },
+        phase_1: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 18,
+            rate: 20,
+            batch: 6
+        },
+        phase_2: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 18,
+            rate: 20,
+            batch: 6
+        },
+        phase_3: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 18,
+            rate: 20,
+            batch: 6
+        },
+        phase_4: {
+            loadout: ["badger:piglin_grunter"],
+            cap: 18,
+            rate: 20,
+            batch: 6
+        }
+    }
+}
+
 //OBSTACLE Faction
 ////disruptor barracks - obstacle faction
 const DisruptorBarracksConfig_ObstacleFaction = {
@@ -755,225 +1138,6 @@ const DisruptorBarracksConfig_ObstacleFaction = {
 
 ////sieger barracks - obstacle faction
 const SiegerBarracksConfig_ObstacleFaction = {
-    name: BARRACKS_NAME_SIEGER,
-    frontlineA: {
-        phase_0: {
-            loadout: ["badger:piglin_grunter"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        }
-    },
-    small: {
-        phase_0: {
-            loadout: ["badger:piglin_grunter"],
-            cap: 0,
-            rate: 30,
-            batch: 4
-        },
-        phase_1: {
-            loadout: ["badger:piglin_grunter"],
-            cap: 8,
-            rate: 30,
-            batch: 4
-        },
-        phase_2: {
-            loadout: ["badger:piglin_grunter"],
-            cap: 8,
-            rate: 30,
-            batch: 4
-        },
-        phase_3: {
-            loadout: ["badger:piglin_grunter"],
-            cap: 10,
-            rate: 30,
-            batch: 5
-        },
-        phase_4: {
-            loadout: ["badger:piglin_grunter"],
-            cap: 10,
-            rate: 30,
-            batch: 5
-        }
-    },
-    medium: {
-        phase_0: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 0,
-            rate: 30,
-            batch: 4
-        },
-        phase_1: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_2: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_3: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_4: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        }
-    },
-    large: {
-        phase_0: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 0,
-            rate: 60,
-            batch: 3
-        },
-        phase_1: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_2: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_3: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 8,
-            rate: 30,
-            batch: 4
-        },
-        phase_4: {
-            loadout: ["badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_grunter", "badger:piglin_piggo_lava_launcher"],
-            cap: 8,
-            rate: 30,
-            batch: 4
-        }
-    }
-}
-
-//FROST Faction
-////disruptor barracks - frost faction
-const DisruptorBarracksConfig_FrostFaction = {
-    name: BARRACKS_NAME_DISRUPTOR,
-    frontlineA: {
-        phase_0: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        }
-    },
-    small: {
-        phase_0: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 2
-        },
-        phase_1: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 2
-        },
-        phase_2: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 2
-        },
-        phase_3: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 2
-        },
-        phase_4: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 2
-        }
-    },
-    medium: {
-        phase_0: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 3
-        },
-        phase_1: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_2: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_3: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 9,
-            rate: 30,
-            batch: 3
-        },
-        phase_4: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 9,
-            rate: 30,
-            batch: 3
-        }
-    },
-    large: {
-        phase_0: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 0,
-            rate: 60,
-            batch: 3
-        },
-        phase_1: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_2: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 6,
-            rate: 30,
-            batch: 3
-        },
-        phase_3: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 9,
-            rate: 30,
-            batch: 3
-        },
-        phase_4: {
-            loadout: ["badger:piglin_grenadier"],
-            cap: 9,
-            rate: 30,
-            batch: 3
-        }
-    }
-}
-
-////sieger barracks - frost faction
-const SiegerBarracksConfig_FrostFaction = {
     name: BARRACKS_NAME_SIEGER,
     frontlineA: {
         phase_0: {
@@ -1676,25 +1840,25 @@ const AllyBarracksConfig_DBBFaction = {
     name: BARRACKS_NAME_ALLIES,
     darkBeacon: {
         phase_0: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_creeper"],
             cap: 0,
             rate: 0,
             batch: 0
         },
         phase_1: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_creeper"],
             cap: 6,
             rate: 31,
             batch: 3
         },
         phase_2: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_creeper"],
             cap: 6,
             rate: 31,
             batch: 3
         },
         phase_3: {
-            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_silverfish", "badger:mob_slime", "badger:mob_creeper"],
+            loadout: ["badger:mob_zombie", "badger:mob_skeleton", "badger:mob_creeper", "badger:mob_zombie", "badger:mob_zombie", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_skeleton", "badger:mob_spider", "badger:mob_slime", "badger:mob_silverfish", "badger:mob_creeper"],
             cap: 6,
             rate: 31,
             batch: 3
@@ -1764,7 +1928,7 @@ const AllyBarracksSkeletonConfig_DBBFaction = {
     }
 }
 
-//Spider
+//spider
 const AllyBarracksSpiderConfig_DBBFaction = {
     name: BARRACKS_NAME_SPIDER,
     darkBeacon: {
@@ -1776,26 +1940,26 @@ const AllyBarracksSpiderConfig_DBBFaction = {
         },
         phase_1: {
             loadout: ["badger:mob_spider"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         },
         phase_2: {
             loadout: ["badger:mob_spider"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         },
         phase_3: {
             loadout: ["badger:mob_spider"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         }
     }
 }
 
-//Slime
+//slime
 const AllyBarracksSlimeConfig_DBBFaction = {
     name: BARRACKS_NAME_SLIME,
     darkBeacon: {
@@ -1807,26 +1971,26 @@ const AllyBarracksSlimeConfig_DBBFaction = {
         },
         phase_1: {
             loadout: ["badger:mob_slime"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         },
         phase_2: {
             loadout: ["badger:mob_slime"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         },
         phase_3: {
             loadout: ["badger:mob_slime"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         }
     }
 }
 
-//Silverfish
+//silverfish
 const AllyBarracksSilverfishConfig_DBBFaction = {
     name: BARRACKS_NAME_SILVERFISH,
     darkBeacon: {
@@ -1838,25 +2002,24 @@ const AllyBarracksSilverfishConfig_DBBFaction = {
         },
         phase_1: {
             loadout: ["badger:mob_silverfish"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         },
         phase_2: {
             loadout: ["badger:mob_silverfish"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         },
         phase_3: {
             loadout: ["badger:mob_silverfish"],
-            cap: 16,
-            rate: 50,
-            batch: 4
+            cap: 2,
+            rate: 62,
+            batch: 1
         }
     }
 }
-
 //Zombie
 const AllyBarracksZombieConfig_DBBFaction = {
     name: BARRACKS_NAME_ZOMBIE,
@@ -2110,6 +2273,135 @@ const FighterBarracksConfig_Attack_WOF = {
 ////attack disruptor barracks - wof faction
 const DisruptorBarracksConfig_Attack_WOF = {
     name: "attackBarracksDisruptor",
+    wofBase: {
+        phase_0: {
+            loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],
+            cap: 0,
+            rate: 60,
+            batch: 0
+        },
+        phase_1: {
+            loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],
+            cap: 5,
+            rate: 20,
+            batch: 5
+        },
+        phase_2: {
+            loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],        
+            cap: 3,
+            rate: 20,
+            batch: 3
+        },
+        phase_3: {
+            loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],         
+            cap: 3,
+            rate: 20,
+            batch: 3
+        },
+        phase_4: {
+            loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],
+            cap: 3,
+            rate: 20,
+            batch: 3
+        },
+        phase_5: {
+            loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],
+            cap: 0,
+            rate: 20,
+            batch: 0
+        }
+    }
+}
+
+////frost sieger barrack - wof faction 
+const SiegerBarracksConfig_Frost_WOF = {
+    name: "frostBarracksSieger",
+    wofBase: {
+        phase_0: {
+            loadout: [PIGLIN_ARCHETYPE.PIGMADILO],
+            cap: 0,
+            rate: 45,
+            batch: 0
+        },
+        phase_1: {
+            loadout:[PIGLIN_ARCHETYPE.PIGMADILO],
+            cap: 4,
+            rate: 45,
+            batch: 4
+        },
+        phase_2: {
+            loadout: [PIGLIN_ARCHETYPE.PIGMADILO],
+            cap: 4,
+            rate: 45,
+            batch: 4
+        },
+        phase_3: {
+            loadout: [PIGLIN_ARCHETYPE.PIGMADILO],
+            cap: 4,
+            rate: 45,
+            batch: 4
+        },
+        phase_4: {
+            loadout: [PIGLIN_ARCHETYPE.PIGMADILO],
+            cap: 4,
+            rate: 45,
+            batch: 4
+        },
+        phase_5: {
+            loadout: [PIGLIN_ARCHETYPE.PIGMADILO],
+            cap: 0,
+            rate: 1,
+            batch: 0
+        }
+    }
+}
+
+////frost fighter barrack - wof faction 
+const FighterBarracksConfig_Frost_WOF = {
+    name: "frostBarracksFighter",
+    wofBase: {
+        phase_0: {
+            loadout: [PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT],
+            cap: 0,
+            rate: 60,
+            batch: 0
+        },
+        phase_1: {
+            loadout: [PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT],
+            cap: 5,
+            rate: 15,
+            batch: 5
+        },
+        phase_2: {
+            loadout: [PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT],
+            cap: 5,
+            rate: 15,
+            batch: 5
+        },
+        phase_3: {
+            loadout: [PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT],
+            cap: 5,
+            rate: 15,
+            batch: 5
+        },
+        phase_4: {
+            loadout: [PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT],
+            cap: 5,
+            rate: 15,
+            batch: 5
+        },
+        phase_5: {
+            loadout: [PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.WARBOAR, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT, PIGLIN_ARCHETYPE.RUNT],
+            cap: 0,
+            rate: 1,
+            batch: 0
+        }
+    }
+}
+
+////frost disruptor barracks - wof faction
+const DisruptorBarracksConfig_Frost_WOF = {
+    name: "frostBarracksDisruptor",
     wofBase: {
         phase_0: {
             loadout:  [PIGLIN_ARCHETYPE.MEDIC,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR,PIGLIN_ARCHETYPE.WARBOAR],

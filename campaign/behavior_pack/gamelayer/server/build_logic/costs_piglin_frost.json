@@ -35,480 +35,480 @@
   ],
   "zone_height_change_cards": [
     {
-      "unique_card_id": "Flatten",
+      "unique_card_id": "FlattenFrost",
       "cost": 0,
       "tags": [
-        "Flatten"
+        "FlattenFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 0,
       "zone_height_control": "height_control_lowest"
     },
     {
-      "unique_card_id": "2Height",
+      "unique_card_id": "2HeightFrost",
       "cost": 0,
       "tags": [
-        "2Height"
+        "2HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 2,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "3Height",
+      "unique_card_id": "3HeightFrost",
       "cost": 0,
       "tags": [
-        "3Height"
+        "3HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 3,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "4Height",
+      "unique_card_id": "4HeightFrost",
       "cost": 0,
       "tags": [
-        "4Height"
+        "4HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 4,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "5Height",
+      "unique_card_id": "5HeightFrost",
       "cost": 0,
       "tags": [
-        "5Height"
+        "5HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 5,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "6Height",
+      "unique_card_id": "6HeightFrost",
       "cost": 0,
       "tags": [
-        "6Height"
+        "6HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 6,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "7Height",
+      "unique_card_id": "7HeightFrost",
       "cost": 0,
       "tags": [
-        "7Height"
+        "7HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 7,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "8Height",
+      "unique_card_id": "8HeightFrost",
       "cost": 0,
       "tags": [
-        "8Height"
+        "8HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 8,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "9Height",
+      "unique_card_id": "9HeightFrost",
       "cost": 0,
       "tags": [
-        "9Height"
+        "9HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 9,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "10Height",
+      "unique_card_id": "10HeightFrost",
       "cost": 0,
       "tags": [
-        "10Height"
+        "10HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 10,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "11Height",
+      "unique_card_id": "11HeightFrost",
       "cost": 0,
       "tags": [
-        "11Height"
+        "11HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 11,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "12Height",
+      "unique_card_id": "12HeightFrost",
       "cost": 0,
       "tags": [
-        "12Height"
+        "12HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 12,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "13Height",
+      "unique_card_id": "13HeightFrost",
       "cost": 0,
       "tags": [
-        "13Height"
+        "13HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 13,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "14Height",
+      "unique_card_id": "14HeightFrost",
       "cost": 0,
       "tags": [
-        "14Height"
+        "14HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 14,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "15Height",
+      "unique_card_id": "15HeightFrost",
       "cost": 0,
       "tags": [
-        "15Height"
+        "15HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 15,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "16Height",
+      "unique_card_id": "16HeightFrost",
       "cost": 0,
       "tags": [
-        "16Height"
+        "16HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 16,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "17Height",
+      "unique_card_id": "17HeightFrost",
       "cost": 0,
       "tags": [
-        "17Height"
+        "17HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 17,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "18Height",
+      "unique_card_id": "18HeightFrost",
       "cost": 0,
       "tags": [
-        "18Height"
+        "18HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 18,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "19Height",
+      "unique_card_id": "19HeightFrost",
       "cost": 0,
       "tags": [
-        "19Height"
+        "19HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 19,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "20Height",
+      "unique_card_id": "20HeightFrost",
       "cost": 0,
       "tags": [
-        "20Height"
+        "20HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 20,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "21Height",
+      "unique_card_id": "21HeightFrost",
       "cost": 0,
       "tags": [
-        "21Height"
+        "21HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 21,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "22Height",
+      "unique_card_id": "22HeightFrost",
       "cost": 0,
       "tags": [
-        "22Height"
+        "22HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 22,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "23Height",
+      "unique_card_id": "23HeightFrost",
       "cost": 0,
       "tags": [
-        "23Height"
+        "23HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 23,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "24Height",
+      "unique_card_id": "24HeightFrost",
       "cost": 0,
       "tags": [
-        "24Height"
+        "24HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 24,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "26Height",
+      "unique_card_id": "26HeightFrost",
       "cost": 0,
       "tags": [
-        "26Height"
+        "26HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 26,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "28Height",
+      "unique_card_id": "28HeightFrost",
       "cost": 0,
       "tags": [
-        "28Height"
+        "28HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 28,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "29Height",
+      "unique_card_id": "29HeightFrost",
       "cost": 0,
       "tags": [
-        "29Height"
+        "29HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 29,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "30Height",
+      "unique_card_id": "30HeightFrost",
       "cost": 0,
       "tags": [
-        "30Height"
+        "30HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 30,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "32Height",
+      "unique_card_id": "32HeightFrost",
       "cost": 0,
       "tags": [
-        "32Height"
+        "32HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 32,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "34Height",
+      "unique_card_id": "34HeightFrost",
       "cost": 0,
       "tags": [
-        "34Height"
+        "34HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 34,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "36Height",
+      "unique_card_id": "36HeightFrost",
       "cost": 0,
       "tags": [
-        "36Height"
+        "36HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 36,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "38Height",
+      "unique_card_id": "38HeightFrost",
       "cost": 0,
       "tags": [
-        "38Height"
+        "38HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 38,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "40Height",
+      "unique_card_id": "40HeightFrost",
       "cost": 0,
       "tags": [
-        "40Height"
+        "40HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 40,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "42Height",
+      "unique_card_id": "42HeightFrost",
       "cost": 0,
       "tags": [
-        "42Height"
+        "42HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 42,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "44Height",
+      "unique_card_id": "44HeightFrost",
       "cost": 0,
       "tags": [
-        "44Height"
+        "44HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 44,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "46Height",
+      "unique_card_id": "46HeightFrost",
       "cost": 0,
       "tags": [
-        "46Height"
+        "46HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 46,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "48Height",
+      "unique_card_id": "48HeightFrost",
       "cost": 0,
       "tags": [
-        "48Height"
+        "48HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 48,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "50Height",
+      "unique_card_id": "50HeightFrost",
       "cost": 0,
       "tags": [
-        "50Height"
+        "50HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 50,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "52Height",
+      "unique_card_id": "52HeightFrost",
       "cost": 0,
       "tags": [
-        "52Height"
+        "52HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 52,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "54Height",
+      "unique_card_id": "54HeightFrost",
       "cost": 0,
       "tags": [
-        "54Height"
+        "54HeightFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 54,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "8UpRelativeToCentre",
+      "unique_card_id": "8UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "8UpRelativeToCentre"
+        "8UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 8,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "7UpRelativeToCentre",
+      "unique_card_id": "7UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "7UpRelativeToCentre"
+        "7UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 7,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "6UpRelativeToCentre",
+      "unique_card_id": "6UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "6UpRelativeToCentre"
+        "6UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 6,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "5UpRelativeToCentre",
+      "unique_card_id": "5UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "5UpRelativeToCentre"
+        "5UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 5,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "4UpRelativeToCentre",
+      "unique_card_id": "4UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "4UpRelativeToCentre"
+        "4UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 4,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "3UpRelativeToCentre",
+      "unique_card_id": "3UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "3UpRelativeToCentre"
+        "3UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 3,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "2UpRelativeToCentre",
+      "unique_card_id": "2UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "2UpRelativeToCentre"
+        "2UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 2,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "1UpRelativeToCentre",
+      "unique_card_id": "1UpRelativeToCentreFrost",
       "cost": 0,
       "tags": [
-        "1UpRelativeToCentre"
+        "1UpRelativeToCentreFrost"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 1,
@@ -517,20 +517,20 @@
   ],
   "walls_cards": [
     {
-      "unique_card_id": "wallNoTowersNoGates",
+      "unique_card_id": "wallNoTowersNoGatesFrost",
       "cost": 0,
       "tags": [
-        "wallNoTowersNoGates"
+        "wallNoTowersNoGatesFrost"
       ],
       "wall_buildable": "badger:chunk_piglin_wall_001",
       "path_entrance": "badger:gate_piglin",
       "embedded_buildables": []
     },
     {
-      "unique_card_id": "wallNoTowers3Gates",
+      "unique_card_id": "wallNoTowers3GatesFrost",
       "cost": 0,
       "tags": [
-        "wallNoTowers3Gates"
+        "wallNoTowers3GatesFrost"
       ],
       "wall_buildable": "badger:chunk_piglin_wall_001",
       "path_entrance": "badger:gate_piglin",
@@ -1148,30 +1148,30 @@
       "exclude": false
     },
     {
-      "unique_card_id": "zone_filter_cards_keepZone",
+      "unique_card_id": "zone_filter_cards_keepZoneFrost",
       "cost": 0,
       "tags": [
-        "keepZone"
+        "keepZoneFrost"
       ],
-      "zone_filter": "keepZone",
+      "zone_filter": "keepZoneFrost",
       "exclude": false
     },
     {
-      "unique_card_id": "zone_filter_cards_groundZone",
+      "unique_card_id": "zone_filter_cards_groundZoneFrost",
       "cost": 0,
       "tags": [
-        "groundZone"
+        "groundZoneFrost"
       ],
-      "zone_filter": "groundZone",
+      "zone_filter": "groundZoneFrost",
       "exclude": false
     },
     {
-      "unique_card_id": "zone_filter_cards_dropZone",
+      "unique_card_id": "zone_filter_cards_dropZoneFrost",
       "cost": 0,
       "tags": [
-        "dropZone"
+        "dropZoneFrost"
       ],
-      "zone_filter": "dropZone",
+      "zone_filter": "dropZoneFrost",
       "exclude": false
     }
   ],
@@ -1521,28 +1521,28 @@
       "zone_tag": "frostValidZone"
     },
     {
-      "unique_card_id": "zone_tag_cards_keepZone",
+      "unique_card_id": "zone_tag_cards_keepZoneFrost",
       "cost": 0,
       "tags": [
-        "keepZone"
+        "keepZoneFrost"
       ],
-      "zone_tag": "keepZone"
+      "zone_tag": "keepZoneFrost"
     },
     {
-      "unique_card_id": "zone_tag_cards_groundZone",
+      "unique_card_id": "zone_tag_cards_groundZoneFrost",
       "cost": 0,
       "tags": [
-        "groundZone"
+        "groundZoneFrost"
       ],
-      "zone_tag": "groundZone"
+      "zone_tag": "groundZoneFrost"
     },
     {
-      "unique_card_id": "zone_tag_cards_dropZone",
+      "unique_card_id": "zone_tag_cards_dropZoneFrost",
       "cost": 0,
       "tags": [
-        "dropZone"
+        "dropZoneFrost"
       ],
-      "zone_tag": "dropZone"
+      "zone_tag": "dropZoneFrost"
     }
   ],
   "zones_cards": [

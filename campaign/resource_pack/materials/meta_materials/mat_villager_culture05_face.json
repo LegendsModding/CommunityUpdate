@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "mat_villager_culture05_face:base_entity_face": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_villager_culture05_face_d",
+            "coeffMap": "textures/entity/tex_villager_culture05_face_mr",
+            "normalMap": "textures/entity/tex_villager_culture05_face_n"
+        },
+        "uniforms": {
+            "TeamColor": [
+              "9.0 / 255.0", // 9.0 to use a black outline ("wild team")
+              "0.0",
+              "0.0",
+              "0.0"
+            ]
+        }
+    }
+}

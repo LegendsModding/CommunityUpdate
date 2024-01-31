@@ -2548,7 +2548,7 @@ SNIPPET_InvasionDestroyEntitiesObjective("deo_piglins_invading_first_village", (
     }
 })
 
-SNIPPET_BuildingComplete("bc_onboarding_first_village_cage", (buildingCompleteEG, payload) => {
+SNIPPET_BuildingComplete("bc_onboarding_first_village_cage", (buildingCompleteEG, payload, villageId) => {
     IncrementGlobal(act1FlowVal.firstVillageUnderAttack.global.cagesBuilt)
     OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture01", "badger:villager_culture01"])
     OUTPUT_SetBarracksSpawnCap(buildingCompleteEG, 5)
@@ -5792,7 +5792,7 @@ const _TryRunSecondSkirmishPlacementTiers = () => {
         { playersMin: 500, wofMin: 550, wofMax: 2000, friendlyVillagesMin: 350, poiMin: 550, maMin: 550 }
     ]
 
-    const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS])
+    const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS)
     const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
     const wof = GetVillageEntityFromFaction(WELL_OF_FATE)
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
@@ -5957,8 +5957,9 @@ SNIPPET_VillageGenerated("vg_act_1_second_skirmish", (villageId, _payload) => {
         direction: HEALTH_DIRECTION.DAMAGE
     })
     Logi("~~~~~vg_act_1_second_skirmish vg_act_1_second_skirmish~~~~")
-
-    SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS)
+    
+    
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS)
     Once()
 })
 

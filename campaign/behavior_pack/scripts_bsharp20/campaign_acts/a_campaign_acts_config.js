@@ -113,7 +113,7 @@ const campaignActsVal = {
         archetype: "badger:piglin_dbb"
     },
     invasionSystemFmvConfig: {
-        daysToPass: 5, //number of days to keep trying to play invasion cinematic before giving up
+        daysToPass: 1, //number of days to keep trying to play invasion cinematic before giving up
         playAtDusk: true, //will play at dawn if false, tied to the invasion cycle
         delayBeforeTriggeringTutorialForTheFirstTime: 8,
         playedOnce: "gv_invasion_cine_played",

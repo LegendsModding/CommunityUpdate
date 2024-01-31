@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-const mobAllianceOccupationOrder = [{ type: "fixed", mobAllianceId: "skeleton" }, { type: "random" }, { type: "random" }, { type: "random" }]
+const mobAllianceOccupationOrder = [{ type: "fixed", mobAllianceId: "skeleton" }, { type: "random" }, { type: "random" }, { type: "random" }, { type: "random" }, { type: "random" }]
 
 const currentMobOccupationOrderIndex = "gv_current_mob_alliance_order_index"
 

@@ -63,13 +63,6 @@ const baseLootTables = {
                 loot: [Resource("gold", 25), Resource("xp_common", 10)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SPIDER]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 25), Resource("xp_common", 10)]
-            }
-        ],
         [BASE_SIZE_MEDIUM]: [
             {
                 name: baseLootVariations.GOLD,
@@ -107,13 +100,6 @@ const baseLootTables = {
                 loot: [Resource("gold", 25), Resource("xp_common", 10)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SLIME]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 25), Resource("xp_common", 10)]
-            }
-        ],
         [BASE_SIZE_MEDIUM]: [
             {
                 name: baseLootVariations.GOLD,
@@ -144,7 +130,7 @@ const baseLootTables = {
                 loot: [Resource("gold", 25), Resource("xp_common", 10)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SILVERFISH]: [
+        [BASE_SIZE_PIGLIN_SPIDER]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,

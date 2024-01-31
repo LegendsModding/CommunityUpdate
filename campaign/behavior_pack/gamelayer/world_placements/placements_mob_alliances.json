@@ -20,7 +20,7 @@
       ],
       "biome": {
         "biome": "frostlands",
-        "total_pixels": 20,
+        "total_pixels": 35,
         "starting_pixels": 9,
         "spread_priority": 1
       },
@@ -64,7 +64,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              144
+              194
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "center",
@@ -82,8 +82,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              48,
-              125
+              64,
+              195
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "wellOfFate",
@@ -92,7 +92,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 76,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
             "mandatory_threshold": 1.0
@@ -119,7 +119,7 @@
       ],
       "biome": {
         "biome": "jungle",
-        "total_pixels": 20,
+        "total_pixels": 35,
         "starting_pixels": 5,
         "spread_priority": 1
       },
@@ -144,7 +144,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  10
+                  25
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_1"
@@ -152,7 +152,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  10
+                  25
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_2"
@@ -181,7 +181,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 48,
+            "chunk_distance_from_parent": 70,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -189,7 +189,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 90,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
             "mandatory_threshold": 1.0
@@ -216,7 +216,7 @@
       ],
       "biome": {
         "biome": "brokenlands",
-        "total_pixels": 20,
+        "total_pixels": 35,
         "starting_pixels": 5,
         "spread_priority": 1
       },
@@ -240,7 +240,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  10
+                  40
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "brokenlands_1"
@@ -248,7 +248,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  10
+                  40
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "brokenlands_2"
@@ -260,7 +260,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 60,
+            "chunk_distance_from_parent": 90,
             "distance_to_zero_score": 10,
             "tag_parent": "village",
             "weight": 1,
@@ -277,7 +277,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 48,
+            "chunk_distance_from_parent": 78,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -285,7 +285,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 86,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
             "mandatory_threshold": 1.0
@@ -301,18 +301,18 @@
       "placement_type": "poi",
       "add_to_poi_graph": true,
       "allow_rivers_nearby": false,
+      "priority": 1,
       "initial_villages": {
         "small": {
           "count": 1
         }
       },
-      "priority": 1,
       "tags": [
-        "spider_alliance"
+        "mob_alliance_factions"
       ],
       "biome": {
         "biome": "forest",
-        "total_pixels": 20,
+        "total_pixels": 35,
         "starting_pixels": 5,
         "spread_priority": 1
       },
@@ -324,9 +324,10 @@
           "texture_name": "ma_spider_homestead_biome",
           "manual_height": true,
           "manual_height_range": [
-            42,
-            46
-          ]
+            30,
+            40
+          ],
+          "auto_rotate": false
         }
       ],
       "placement_rules": [
@@ -336,21 +337,21 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  15
+                  30
                 ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "forest_2"
+                "distance_to_zero_score": 20,
+                "tag_parent": "forest_1_village"
               },
               {
                 "chunk_distance_from_parent": [
-                  5,
-                  20
+                  0,
+                  30
                 ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "forest_1_village"
+                "distance_to_zero_score": 20,
+                "tag_parent": "forest_2"
               }
             ],
-            "weight": 5,
+            "weight": 3,
             "mandatory_threshold": 0.1
           }
         },
@@ -368,12 +369,15 @@
             "chunk_distance_from_parent": 30,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
-            "weight": 3
+            "weight": 2
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 48,
+            "chunk_distance_from_parent": [
+              60,
+              150
+            ],
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -381,97 +385,12 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 0,
-            "tag_parent": "claimed_area_cluster",
-            "mandatory_threshold": 1.0
-          }
-        }
-      ]
-    },
-    {
-      "unique_card_id": "badger_slime_alliance_mob_alliance_factions",
-      "map_data": "badger:mob_alliance_slime_faction",
-      "village_data": "badger:mob_alliance_slime_village",
-      "placement_name": "slime_alliance",
-      "placement_type": "poi",
-      "add_to_poi_graph": true,
-      "allow_rivers_nearby": false,
-      "initial_villages": {
-        "small": {
-          "count": 1
-        }
-      },
-      "priority": 1,
-      "tags": [
-        "slime_alliance"
-      ],
-      "biome": {
-        "biome": "forest",
-        "total_pixels": 6,
-        "starting_pixels": 1,
-        "spread_priority": 1
-      },
-      "jitter": 0,
-      "textures": [
-        {
-          "enabled": true,
-          "texture_key": "primary_texture",
-          "texture_name": "ma_slime_homestead_biome",
-          "manual_height": true,
-          "manual_height_range": [
-            42,
-            46
-          ]
-        }
-      ],
-      "placement_rules": [
-        {
-          "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  40
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "forest_2"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  5,
-                  60
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "forest_1_village"
-              }
+            "chunk_distance_from_parent": [
+              60,
+              150
             ],
-            "weight": 5,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 60,
-            "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 30,
-            "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 48,
             "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
+            "tag_parent": "center",
             "weight": 1
           }
         },
@@ -493,19 +412,19 @@
       "placement_type": "poi",
       "add_to_poi_graph": true,
       "allow_rivers_nearby": false,
+      "priority": 1,
       "initial_villages": {
         "small": {
           "count": 1
         }
       },
-      "priority": 1,
       "tags": [
-        "silverfish_alliance"
+        "mob_alliance_factions"
       ],
       "biome": {
-        "biome": "forest",
-        "total_pixels": 5,
-        "starting_pixels": 1,
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 35,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -516,9 +435,10 @@
           "texture_name": "ma_silverfish_homestead_biome",
           "manual_height": true,
           "manual_height_range": [
-            42,
-            46
-          ]
+            30,
+            40
+          ],
+          "auto_rotate": false
         }
       ],
       "placement_rules": [
@@ -528,18 +448,18 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  80
+                  25
                 ],
                 "distance_to_zero_score": 30,
-                "tag_parent": "forest_2"
+                "tag_parent": "extreme_hills_1"
               },
               {
                 "chunk_distance_from_parent": [
-                  5,
-                  80
+                  0,
+                  25
                 ],
                 "distance_to_zero_score": 30,
-                "tag_parent": "forest_1_village"
+                "tag_parent": "extreme_hills_2"
               }
             ],
             "weight": 5,
@@ -565,7 +485,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 48,
+            "chunk_distance_from_parent": 70,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -573,7 +493,104 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 70,
+            "distance_to_zero_score": 0,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_slime_alliance_mob_alliance_factions",
+      "map_data": "badger:mob_alliance_slime_faction",
+      "village_data": "badger:mob_alliance_slime_village",
+      "placement_name": "slime_alliance",
+      "placement_type": "poi",
+      "add_to_poi_graph": true,
+      "allow_rivers_nearby": false,
+      "priority": 1,
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "mob_alliance_factions"
+      ],
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 35,
+        "starting_pixels": 5,
+        "spread_priority": 1
+      },
+      "jitter": 0,
+      "textures": [
+        {
+          "enabled": true,
+          "texture_key": "primary_texture",
+          "texture_name": "ma_slime_homestead_biome",
+          "manual_height": true,
+          "manual_height_range": [
+            30,
+            40
+          ],
+          "auto_rotate": false
+        }
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  35
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "wetlands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  0,
+                  30
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "wetlands_2"
+              }
+            ],
+            "weight": 5,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 30,
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 80,
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 65,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
             "mandatory_threshold": 1.0

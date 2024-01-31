@@ -54,14 +54,14 @@
       ],
       "biome": {
         "biome": "generic",
-        "total_pixels": 6,
+        "total_pixels": 14,
         "starting_pixels": 1
       },
       "placement_rules": [
         {
           "distance": {
             "chunk_distance_from_parent": [
-              15,
+              10,
               150
             ],
             "distance_to_zero_score": 10,
@@ -73,7 +73,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               40,
-              130
+              140
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "wellOfFate",
@@ -83,7 +83,7 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              40,
+              30,
               180
             ],
             "distance_to_zero_score": 10,
@@ -95,7 +95,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               10,
-              200
+              250
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "base",
@@ -155,32 +155,9 @@
           "archetype": "badger:piglin_obstacle_small",
           "count": 0,
           "invasion": 1
-        }
-      }
-    },
-    {
-      "unique_card_id": "badger_invasion_frost_faction_required",
-      "map_data": "badger:piglin_frost_faction",
-      "village_data": "badger:piglin_frost",
-      "placement_name": "invasion_frost",
-      "add_to_poi_graph": true,
-      "placement_type": "base",
-      "tags": [
-        "faction_required"
-      ],
-      "initial_villages": {
-        "large": {
-          "archetype": "badger:piglin_frost_large",
-          "count": 0,
-          "invasion": 3
         },
-        "medium": {
-          "archetype": "badger:piglin_frost_medium",
-          "count": 0,
-          "invasion": 2
-        },
-        "small": {
-          "archetype": "badger:piglin_frost_small",
+        "piglin_occupying_slime_mob_alliance": {
+          "archetype": "badger:piglin_attack_small",
           "count": 0,
           "invasion": 1
         }
@@ -272,8 +249,41 @@
           "count": 0,
           "invasion": 1
         },
-        "piglin_occupying_spider_mob_alliance": {
+        "piglin_occupying_silverfish_mob_alliance": {
           "archetype": "badger:piglin_defend_small",
+          "count": 0,
+          "invasion": 1
+        }
+      }
+    },
+    {
+      "unique_card_id": "badger_invasion_frost_faction_required",
+      "map_data": "badger:piglin_frost_faction",
+      "village_data": "badger:piglin_frost",
+      "placement_name": "invasion_frost",
+      "add_to_poi_graph": true,
+      "placement_type": "base",
+      "tags": [
+        "faction_required"
+      ],
+      "initial_villages": {
+        "large": {
+          "archetype": "badger:piglin_frost_large",
+          "count": 0,
+          "invasion": 3
+        },
+        "medium": {
+          "archetype": "badger:piglin_frost_medium",
+          "count": 0,
+          "invasion": 2
+        },
+        "small": {
+          "archetype": "badger:piglin_frost_small",
+          "count": 0,
+          "invasion": 1
+        },
+        "piglin_occupying_spider_mob_alliance": {
+          "archetype": "badger:piglin_frost_small",
           "count": 0,
           "invasion": 1
         }

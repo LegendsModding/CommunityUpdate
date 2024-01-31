@@ -1,0 +1,1037 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_wellOfFate_wellOfFate_campaign",
+      "map_data": "badger:xp_well_of_fate_culture",
+      "village_data": "badger:xp_well_of_fate",
+      "placement_name": "wellOfFate",
+      "placement_type": "special",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "wellOfFate",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "fateful_land_campaign",
+        "total_pixels": 65,
+        "starting_pixels": 45
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              35
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_center_campaign_center",
+      "placement_name": "center",
+      "placement_type": "special",
+      "spawn_entity": "badger:world_center_locator",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "center"
+      ],
+      "placement_rules": [
+        {
+          "game_start": {}
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_extreme_hills_1_campaign_biome_set1",
+      "placement_name": "extreme_hills_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set1"
+      ],
+      "biome": {
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              54,
+              250
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 50,
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 40,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              16,
+              48
+            ],
+            "distance_to_zero_score": 25,
+            "tag_parent": "defend_cluster",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill_campaign",
+      "placement_name": "genericFill",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 11,
+        "starting_pixels": 1
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.4,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              250
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              50
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_jungle_1_campaign_biome_set1",
+      "placement_name": "jungle_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set1"
+      ],
+      "biome": {
+        "biome": "jungle",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              54,
+              250
+            ],
+            "distance_to_zero_score": 25,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 74,
+            "distance_to_zero_score": 40,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_brokenlands_1_campaign_biome_set1",
+      "placement_name": "brokenlands_1",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set1"
+      ],
+      "biome": {
+        "biome": "brokenlands",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              54,
+              280
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 40,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              120,
+              300
+            ],
+            "distance_to_zero_score": 40,
+            "tag_parent": "frostlands_1_village",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_forest_2_campaign_biome_set2",
+      "placement_name": "forest_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "forest",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              100
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              60,
+              120
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "forest_1_village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_drylands_2_campaign_biome_set2",
+      "placement_name": "drylands_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "drylands",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              110
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              120
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "drylands_1_village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              200
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_wetlands_2_campaign_biome_set2",
+      "placement_name": "wetlands_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "wetlands",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              40,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 70,
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 25,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "wetlands_1_village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              25,
+              250
+            ],
+            "distance_to_zero_score": 25,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 56,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_grasslands_2_campaign_biome_set2",
+      "placement_name": "grasslands_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "grasslands",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "grasslands_1_village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              25,
+              220
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_jungle_2_campaign_biome_set2",
+      "placement_name": "jungle_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "jungle",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              140
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "jungle_1",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              15,
+              250
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_brokenlands_2_campaign_biome_set2",
+      "placement_name": "brokenlands_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "brokenlands",
+        "total_pixels": 70,
+        "starting_pixels": 12,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              150
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 25,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              80
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "brokenlands_1",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              120,
+              300
+            ],
+            "distance_to_zero_score": 40,
+            "tag_parent": "frostlands_1_village",
+            "weight": 4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              15,
+              250
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_extreme_hills_2_campaign_biome_set2",
+      "placement_name": "extreme_hills_2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "campaign",
+        "biome",
+        "set2"
+      ],
+      "biome": {
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 70,
+        "starting_pixels": 7,
+        "spread_priority": 1
+      },
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              160
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 70,
+            "distance_to_zero_score": 20,
+            "tag_parent": "poi",
+            "weight": 1,
+            "mandatory_threshold": 0.5
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 64,
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              250
+            ],
+            "distance_to_zero_score": 35,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "extreme_hills_1",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              35,
+              250
+            ],
+            "distance_to_zero_score": 40,
+            "tag_parent": "center",
+            "weight": 3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "claimed_area_cluster",
+            "mandatory_threshold": 0.1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_onboarding_faction_onboarding",
+      "map_data": "badger:onboarding_faction",
+      "village_data": "badger:onboarding_village",
+      "placement_name": "onboarding_faction",
+      "placement_type": "special",
+      "initial_villages": {
+        "small": {
+          "count": 0
+        }
+      },
+      "tags": [
+        "onboarding"
+      ],
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              25,
+              60
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        }
+      ]
+    }
+  ]
+}

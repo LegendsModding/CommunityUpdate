@@ -1,0 +1,14 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_block_culture01:base_entity_static": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/blocks/tex_shared_block_culture01_d",
+            "coeffMap": "textures/blocks/tex_shared_block_culture01_mr",
+            "emissiveMap": "textures/blocks/tex_shared_block_culture01_e",
+            "normalMap": "textures/blocks/tex_shared_block_culture01_n"
+            
+            
+        }
+    }
+}

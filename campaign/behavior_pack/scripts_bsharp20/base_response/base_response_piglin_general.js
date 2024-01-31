@@ -20,6 +20,9 @@ const piglinGeneralVal = {
         occupationPortalDestuction: {
             zombieOccupationCine: "mob02_c04_zombie_portaldestruction",
             skeletonOccupationCine: "mob03_c04_skeleton_portaldestruction",
+            slimeOccupationCine: "mob03_c04_skeleton_portaldestruction",
+            silverfishOccupationCine: "mob03_c04_skeleton_portaldestruction",
+            spiderOccupationCine: "mob03_c04_skeleton_portaldestruction",
             creeperOccupationCine: "mob01_c04_creeper_portaldestruction"
         },
         portalDestruction: {
@@ -47,7 +50,16 @@ const piglinGeneralVal = {
             [BASE_SIZE_PIGLIN_CREEPER]: {
                 occupationCine: "mob01_c04_creeper_portaldestruction"
             },
+            [BASE_SIZE_PIGLIN_SILVERFISH]: {
+                occupationCine: "mob03_c04_skeleton_portaldestruction"
+            },
             [BASE_SIZE_PIGLIN_SKELETON]: {
+                occupationCine: "mob03_c04_skeleton_portaldestruction"
+            },
+            [BASE_SIZE_PIGLIN_SLIME]: {
+                occupationCine: "mob03_c04_skeleton_portaldestruction"
+            },
+            [BASE_SIZE_PIGLIN_SPIDER]: {
                 occupationCine: "mob03_c04_skeleton_portaldestruction"
             },
             [BASE_SIZE_PIGLIN_ZOMBIE]: {

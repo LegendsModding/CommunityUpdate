@@ -18,9 +18,9 @@ const basePlacementConfig = {
         [FACTION_NAME_FROST]: ["frostlands"]
     },
     maxElevationAllowed: {
-        [FACTION_NAME_ATTACK]: 50,
-        [FACTION_NAME_DEFEND]: 150,
-        [FACTION_NAME_OBSTACLE]: 70,
+        [FACTION_NAME_ATTACK]: 60,
+        [FACTION_NAME_DEFEND]: 170,
+        [FACTION_NAME_OBSTACLE]: 80,
         [FACTION_NAME_FROST]: 120
     },
     claimedAreaRadius: {        // specific to bases - the radius of claimed area to bring in with the base

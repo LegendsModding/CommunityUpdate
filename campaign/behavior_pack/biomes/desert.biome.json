@@ -10,6 +10,13 @@
             },
             "noise_params" : [ 1.0, 1.0 ]
          },
+         "badger:rivers" : {
+            "cell_range" : [ 0, 3 ],
+            "point_chance" : 0.50,
+            "river_biome" : "desert_river",
+            "river_border_width" : 12,
+            "river_width" : 4
+         },
          "badger:visual_biome_attributes" : {
             "grass" : {
                "normal" : {

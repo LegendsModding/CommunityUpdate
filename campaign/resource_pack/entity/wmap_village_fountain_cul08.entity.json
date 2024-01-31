@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:map_entity_3d_icon": {},
+      "badger:presentation_event": {
+        "off_state": {
+          "script": "off"
+        },
+        "on_state": {
+          "script": "on"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:wmap_village_fountain_cul08"
+      }
+    },
+    "description": {
+      "enable_attachables": true,
+      "event_scripts": {
+        "off": "variable.state = 0;",
+        "on": "variable.state = 1;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.wmap_village_fountain_cul08"
+      },
+      "identifier": "badger:wmap_village_fountain_cul08",
+      "materials": {
+        "mat_wmap_village_fountain_cul08": "mat_wmap_village_fountain_cul08"
+      },
+      "render_controllers": ["controller.render.wmap_village_fountain_cul08"]
+    }
+  }
+}

@@ -1,0 +1,1155 @@
+{
+  "buildable_cards": [
+    {
+      "unique_card_id": "serious_card_test3",
+      "cost": 0,
+      "tags": [
+        "serious_card"
+      ],
+      "buildable": "badger:zoner_village_center_fountain"
+    },
+    {
+      "unique_card_id": "serious_card_test4",
+      "cost": 0,
+      "tags": [
+        "serious_card"
+      ],
+      "buildable": "badger:zoner_village_center_fountain"
+    },
+    {
+      "unique_card_id": "serious_card_test5",
+      "cost": 0,
+      "tags": [
+        "serious_card"
+      ],
+      "buildable": "badger:zoner_village_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain",
+      "cost": 0,
+      "tags": [
+        "centerFountain"
+      ],
+      "buildable": "badger:zoner_village_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul01",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul01"
+      ],
+      "buildable": "badger:zoner_village_cul01_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul02",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul02"
+      ],
+      "buildable": "badger:zoner_village_cul02_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul03",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul03"
+      ],
+      "buildable": "badger:zoner_village_cul03_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul04",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul04"
+      ],
+      "buildable": "badger:zoner_village_cul04_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul05",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul05"
+      ],
+      "buildable": "badger:zoner_village_cul05_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul06",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul06"
+      ],
+      "buildable": "badger:zoner_village_cul06_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul07",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul07"
+      ],
+      "buildable": "badger:zoner_village_cul07_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul08",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul08"
+      ],
+      "buildable": "badger:zoner_village_cul08_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountain_cul09",
+      "cost": 0,
+      "tags": [
+        "centerFountain_cul09"
+      ],
+      "buildable": "badger:zoner_village_cul09_center_fountain"
+    },
+    {
+      "unique_card_id": "badger_centerFountainPvp",
+      "cost": 0,
+      "tags": [
+        "centerFountainPvp"
+      ],
+      "buildable": "badger:zoner_village_center_fountain_pvp"
+    },
+    {
+      "unique_card_id": "witch_hut_pvp",
+      "cost": 0,
+      "tags": [
+        "pvpwitchhut"
+      ],
+      "buildable": "badger:spawner_witch_hut"
+    },
+    {
+      "unique_card_id": "badger_pvphq",
+      "cost": 0,
+      "tags": [
+        "pvphq"
+      ],
+      "buildable": "badger:zoner_fort_outpost_pvp"
+    },
+    {
+      "unique_card_id": "badger_pvpHouseSmall",
+      "cost": 10,
+      "tags": [
+        "pvpHouseSmall"
+      ],
+      "buildable": "badger:zoner_village_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture1HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture1HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture01HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture01HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul01_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture02HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture02HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul02_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture03HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture03HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul03_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture04HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture04HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul04_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture05HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture05HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul05_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture06HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture06HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul06_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture07HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture07HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul07_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture08HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture08HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul08_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture09HouseSmall",
+      "cost": 10,
+      "tags": [
+        "culture09HouseSmall"
+      ],
+      "buildable": "badger:zoner_village_cul09_house_small"
+    },
+    {
+      "unique_card_id": "badger_culture1HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture1HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture01HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture01HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul01_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture02HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture02HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul02_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture03HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture03HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul03_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture04HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture04HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul04_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture05HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture05HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul05_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture06HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture06HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul06_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture07HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture07HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul07_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture08HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture08HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul08_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture09HouseMedium",
+      "cost": 15,
+      "tags": [
+        "culture09HouseMedium"
+      ],
+      "buildable": "badger:zoner_village_cul09_house_medium"
+    },
+    {
+      "unique_card_id": "badger_culture1HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture1HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture01HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture01HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul01_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture02HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture02HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul02_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture03HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture03HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul03_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture04HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture04HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul04_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture05HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture05HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul05_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture06HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture06HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul06_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture07HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture07HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul07_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture08HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture08HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul08_house_large"
+    },
+    {
+      "unique_card_id": "badger_culture09HouseLarge",
+      "cost": 20,
+      "tags": [
+        "culture09HouseLarge"
+      ],
+      "buildable": "badger:zoner_village_cul09_house_large"
+    },
+    {
+      "unique_card_id": "badger_village_arch_01",
+      "cost": 0,
+      "tags": [
+        "village_arch_01"
+      ],
+      "buildable": "badger:village_arch_01"
+    },
+    {
+      "unique_card_id": "badger_village_bench_01",
+      "cost": 0,
+      "tags": [
+        "village_bench_01"
+      ],
+      "buildable": "badger:village_bench_01"
+    },
+    {
+      "unique_card_id": "badger_village_decoration_01",
+      "cost": 5,
+      "tags": [
+        "village_decoration_01"
+      ],
+      "buildable": "badger:village_decoration_01"
+    },
+    {
+      "unique_card_id": "badger_village_decoration_02",
+      "cost": 5,
+      "tags": [
+        "village_decoration_02"
+      ],
+      "buildable": "badger:village_decoration_02"
+    },
+    {
+      "unique_card_id": "badger_village_decoration_03",
+      "cost": 5,
+      "tags": [
+        "village_decoration_03"
+      ],
+      "buildable": "badger:village_decoration_03"
+    },
+    {
+      "unique_card_id": "badger_village_decoration_04",
+      "cost": 5,
+      "tags": [
+        "village_decoration_04"
+      ],
+      "buildable": "badger:village_decoration_04"
+    },
+    {
+      "unique_card_id": "badger_village_planter_01",
+      "cost": 0,
+      "tags": [
+        "village_planter_01"
+      ],
+      "buildable": "badger:village_planter_01"
+    },
+    {
+      "unique_card_id": "badger_village_planter_02",
+      "cost": 0,
+      "tags": [
+        "village_planter_02"
+      ],
+      "buildable": "badger:village_planter_02"
+    },
+    {
+      "unique_card_id": "badger_village_planter_03",
+      "cost": 0,
+      "tags": [
+        "village_planter_03"
+      ],
+      "buildable": "badger:village_planter_03"
+    },
+    {
+      "unique_card_id": "badger_village_planter_04",
+      "cost": 0,
+      "tags": [
+        "village_planter_04"
+      ],
+      "buildable": "badger:village_planter_04"
+    },
+    {
+      "unique_card_id": "badger_poiWellOfFate",
+      "cost": 0,
+      "tags": [
+        "poiWellOfFate"
+      ],
+      "buildable": "badger:poi_zoner_well_of_fate"
+    },
+    {
+      "unique_card_id": "badger_poiWellOfFatePylon",
+      "cost": 0,
+      "tags": [
+        "poiWellOfFatePylon"
+      ],
+      "buildable": "badger:poi_zoner_well_of_fate_pylon"
+    },
+    { // Card for the witch hut
+      "unique_card_id": "badger_culture1WitchHut",
+      "cost": 20,
+      "tags": [
+        "culture1WitchHut"
+      ],
+      "buildable": "badger:spawner_witch_hut_campaign"
+    }
+  ],
+  "moat_cards": [
+    {
+      "unique_card_id": "addWaterMoatWithBridges",
+      "cost": 0,
+      "tags": [
+        "addWaterMoatWithBridges"
+      ],
+      "biome": "water_moat",
+      "distance_in_zones": 2,
+      "filling_depth": 2
+    },
+    {
+      "unique_card_id": "addIceMoatWithBridges",
+      "cost": 0,
+      "tags": [
+        "addIceMoatWithBridges"
+      ],
+      "biome": "ice_moat",
+      "distance_in_zones": 2,
+      "filling_depth": 2
+    },
+    {
+      "unique_card_id": "narrowWaterMoatNoBridges",
+      "cost": 0,
+      "tags": [
+        "narrowWaterMoatNoBridges"
+      ],
+      "biome": "water_moat",
+      "distance_in_zones": 1,
+      "filling_depth": 1
+    },
+    {
+      "unique_card_id": "narrowIceMoatNoBridges",
+      "cost": 0,
+      "tags": [
+        "narrowIceMoatNoBridges"
+      ],
+      "biome": "ice_moat",
+      "distance_in_zones": 1,
+      "filling_depth": 1
+    }
+  ],
+  "zone_filter_cards": [
+    {
+      "unique_card_id": "zone_filter_cards_culture1KeepInsideCenter",
+      "cost": 0,
+      "tags": [
+        "culture1KeepInsideCenter"
+      ],
+      "zone_filter": "culture1KeepInsideCenter",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_culture1ExcludeCenter",
+      "cost": 0,
+      "tags": [
+        "culture1ExcludeCenter"
+      ],
+      "zone_filter": "culture1ExcludeCenter",
+      "exclude": true
+    },
+    {
+      "unique_card_id": "zone_filter_cards_district1",
+      "cost": 0,
+      "tags": [
+        "district1"
+      ],
+      "zone_filter": "district1",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_district2",
+      "cost": 0,
+      "tags": [
+        "district2"
+      ],
+      "zone_filter": "district2",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_district3",
+      "cost": 0,
+      "tags": [
+        "district3"
+      ],
+      "zone_filter": "district3",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_district4",
+      "cost": 0,
+      "tags": [
+        "district4"
+      ],
+      "zone_filter": "district4",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_district5",
+      "cost": 0,
+      "tags": [
+        "district5"
+      ],
+      "zone_filter": "district5",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_district6",
+      "cost": 0,
+      "tags": [
+        "district6"
+      ],
+      "zone_filter": "district6",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageRing1",
+      "cost": 0,
+      "tags": [
+        "villageRing1"
+      ],
+      "zone_filter": "villageRing1",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageRing2",
+      "cost": 0,
+      "tags": [
+        "villageRing2"
+      ],
+      "zone_filter": "villageRing2",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageRing3",
+      "cost": 0,
+      "tags": [
+        "villageRing3"
+      ],
+      "zone_filter": "villageRing3",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageRing4",
+      "cost": 0,
+      "tags": [
+        "villageRing4"
+      ],
+      "zone_filter": "villageRing4",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageRing5",
+      "cost": 0,
+      "tags": [
+        "villageRing5"
+      ],
+      "zone_filter": "villageRing5",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageOutskirts",
+      "cost": 0,
+      "tags": [
+        "villageOutskirts"
+      ],
+      "zone_filter": "villageOutskirts",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageRaisedPlatform",
+      "cost": 0,
+      "tags": [
+        "villageRaisedPlatform"
+      ],
+      "zone_filter": "villageRaisedPlatform",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtNorthEast",
+      "cost": 0,
+      "tags": [
+        "districtNorthEast"
+      ],
+      "zone_filter": "districtNorthEast",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtNorthWest",
+      "cost": 0,
+      "tags": [
+        "districtNorthWest"
+      ],
+      "zone_filter": "districtNorthWest",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtSouthEast",
+      "cost": 0,
+      "tags": [
+        "districtSouthEast"
+      ],
+      "zone_filter": "districtSouthEast",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtSouthWest",
+      "cost": 0,
+      "tags": [
+        "districtSouthWest"
+      ],
+      "zone_filter": "districtSouthWest",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtNorthFar",
+      "cost": 0,
+      "tags": [
+        "districtNorthFar"
+      ],
+      "zone_filter": "districtNorthFar",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_districtSouthFar",
+      "cost": 0,
+      "tags": [
+        "districtSouthFar"
+      ],
+      "zone_filter": "districtSouthFar",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_pathConnectionZone",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZone"
+      ],
+      "zone_filter": "pathConnectionZone",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageDeadCenter",
+      "cost": 0,
+      "tags": [
+        "villageDeadCenter"
+      ],
+      "zone_filter": "villageDeadCenter",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_pathConnectionZoneInnerNorth",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerNorth"
+      ],
+      "zone_filter": "pathConnectionZoneInnerNorth",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_pathConnectionZoneInnerEast",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerEast"
+      ],
+      "zone_filter": "pathConnectionZoneInnerEast",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_pathConnectionZoneInnerSouth",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerSouth"
+      ],
+      "zone_filter": "pathConnectionZoneInnerSouth",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_pathConnectionZoneInnerWest",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerWest"
+      ],
+      "zone_filter": "pathConnectionZoneInnerWest",
+      "exclude": false
+    },
+    {
+      "unique_card_id": "zone_filter_cards_villageCageZone",
+      "cost": 0,
+      "tags": [
+        "villageCageZone"
+      ],
+      "zone_filter": "villageCageZone",
+      "exclude": false
+    }
+  ],
+  "zone_tag_cards": [
+    {
+      "unique_card_id": "zone_tag_cards_villageRaisedPlatform",
+      "cost": 0,
+      "tags": [
+        "villageRaisedPlatform"
+      ],
+      "zone_tag": "villageRaisedPlatform"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_district1",
+      "cost": 0,
+      "tags": [
+        "district1"
+      ],
+      "zone_tag": "district1"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_district2",
+      "cost": 0,
+      "tags": [
+        "district2"
+      ],
+      "zone_tag": "district2"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_district3",
+      "cost": 0,
+      "tags": [
+        "district3"
+      ],
+      "zone_tag": "district3"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_district4",
+      "cost": 0,
+      "tags": [
+        "district4"
+      ],
+      "zone_tag": "district4"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageRing1",
+      "cost": 0,
+      "tags": [
+        "villageRing1"
+      ],
+      "zone_tag": "villageRing1"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageRing2",
+      "cost": 0,
+      "tags": [
+        "villageRing2"
+      ],
+      "zone_tag": "villageRing2"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageRing3",
+      "cost": 0,
+      "tags": [
+        "villageRing3"
+      ],
+      "zone_tag": "villageRing3"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageRing4",
+      "cost": 0,
+      "tags": [
+        "villageRing4"
+      ],
+      "zone_tag": "villageRing4"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageRing5",
+      "cost": 0,
+      "tags": [
+        "villageRing5"
+      ],
+      "zone_tag": "villageRing5"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageOutskirts",
+      "cost": 0,
+      "tags": [
+        "villageOutskirts"
+      ],
+      "zone_tag": "villageOutskirts"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtNorthEast",
+      "cost": 0,
+      "tags": [
+        "districtNorthEast"
+      ],
+      "zone_tag": "districtNorthEast"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtNorthWest",
+      "cost": 0,
+      "tags": [
+        "districtNorthWest"
+      ],
+      "zone_tag": "districtNorthWest"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtSouthEast",
+      "cost": 0,
+      "tags": [
+        "districtSouthEast"
+      ],
+      "zone_tag": "districtSouthEast"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtSouthWest",
+      "cost": 0,
+      "tags": [
+        "districtSouthWest"
+      ],
+      "zone_tag": "districtSouthWest"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtNorthFar",
+      "cost": 0,
+      "tags": [
+        "districtNorthFar"
+      ],
+      "zone_tag": "districtNorthFar"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_districtSouthFar",
+      "cost": 0,
+      "tags": [
+        "districtSouthFar"
+      ],
+      "zone_tag": "districtSouthFar"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_pathConnectionZone",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZone"
+      ],
+      "zone_tag": "pathConnectionZone"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageDeadCenter",
+      "cost": 0,
+      "tags": [
+        "villageDeadCenter"
+      ],
+      "zone_tag": "villageDeadCenter"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_pathConnectionZoneInnerNorth",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerNorth"
+      ],
+      "zone_tag": "pathConnectionZoneInnerNorth"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_pathConnectionZoneInnerEast",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerEast"
+      ],
+      "zone_tag": "pathConnectionZoneInnerEast"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_pathConnectionZoneInnerSouth",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerSouth"
+      ],
+      "zone_tag": "pathConnectionZoneInnerSouth"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_pathConnectionZoneInnerWest",
+      "cost": 0,
+      "tags": [
+        "pathConnectionZoneInnerWest"
+      ],
+      "zone_tag": "pathConnectionZoneInnerWest"
+    },
+    {
+      "unique_card_id": "zone_tag_cards_villageCageZone",
+      "cost": 0,
+      "tags": [
+        "villageCageZone"
+      ],
+      "zone_tag": "villageCageZone"
+    }
+  ],
+  "district_cards": [
+    {
+      "unique_card_id": "district_cards_district1",
+      "cost": 0,
+      "tags": [
+        "district1"
+      ],
+      "district": "district1"
+    },
+    {
+      "unique_card_id": "district_cards_district2",
+      "cost": 0,
+      "tags": [
+        "district2"
+      ],
+      "district": "district2"
+    },
+    {
+      "unique_card_id": "district_cards_district3",
+      "cost": 0,
+      "tags": [
+        "district3"
+      ],
+      "district": "district3"
+    },
+    {
+      "unique_card_id": "district_cards_district4",
+      "cost": 0,
+      "tags": [
+        "district4"
+      ],
+      "district": "district4"
+    },
+    {
+      "unique_card_id": "district_cards_district5",
+      "cost": 0,
+      "tags": [
+        "district5"
+      ],
+      "district": "district5"
+    },
+    {
+      "unique_card_id": "district_cards_district6",
+      "cost": 0,
+      "tags": [
+        "district6"
+      ],
+      "district": "district6"
+    },
+    {
+      "unique_card_id": "district_cards_district7",
+      "cost": 0,
+      "tags": [
+        "district7"
+      ],
+      "district": "district7"
+    },
+    {
+      "unique_card_id": "district_cards_district8",
+      "cost": 0,
+      "tags": [
+        "district8"
+      ],
+      "district": "district8"
+    },
+    {
+      "unique_card_id": "district_cards_districtNorthEast",
+      "cost": 0,
+      "tags": [
+        "districtNorthEast"
+      ],
+      "district": "districtNorthEast"
+    },
+    {
+      "unique_card_id": "district_cards_districtNorthWest",
+      "cost": 0,
+      "tags": [
+        "districtNorthWest"
+      ],
+      "district": "districtNorthWest"
+    },
+    {
+      "unique_card_id": "district_cards_districtSouthEast",
+      "cost": 0,
+      "tags": [
+        "districtSouthEast"
+      ],
+      "district": "districtSouthEast"
+    },
+    {
+      "unique_card_id": "district_cards_districtSouthWest",
+      "cost": 0,
+      "tags": [
+        "districtSouthWest"
+      ],
+      "district": "districtSouthWest"
+    },
+    {
+      "unique_card_id": "district_cards_districtNorthFar",
+      "cost": 0,
+      "tags": [
+        "districtNorthFar"
+      ],
+      "district": "districtNorthFar"
+    },
+    {
+      "unique_card_id": "district_cards_districtSouthFar",
+      "cost": 0,
+      "tags": [
+        "districtSouthFar"
+      ],
+      "district": "districtSouthFar"
+    }
+  ],
+  "path_cards": [
+    {
+      "unique_card_id": "village_district_path",
+      "cost": 0,
+      "tags": [
+        "village_district_path"
+      ],
+      "is_district_path": true
+    },
+    {
+      "unique_card_id": "village_building_path",
+      "cost": 0,
+      "tags": [
+        "village_building_path"
+      ],
+      "is_district_path": true
+    }
+  ],
+  "placement_preference_cards": [
+    {
+      "unique_card_id": "vilage_elevationTargetMax",
+      "cost": 0,
+      "tags": [
+        "vilage_elevationTargetMax"
+      ],
+      "placement_preference": "elevation_range",
+      "elevation_target": 1
+    },
+    {
+      "unique_card_id": "village_elevationRangeLow",
+      "cost": 0,
+      "tags": [
+        "village_elevationRangeLow"
+      ],
+      "placement_preference": "elevation_range",
+      "elevation_target": 0.1,
+      "elevation_max": 0.4,
+      "elevation_min": 0
+    },
+    {
+      "unique_card_id": "villageAcrossPath",
+      "cost": 0,
+      "tags": [
+        "villageAcrossPath"
+      ],
+      "placement_preference": "across_path"
+    },
+    {
+      "unique_card_id": "villageAlongPath",
+      "cost": 0,
+      "tags": [
+        "villageAlongPath"
+      ],
+      "placement_preference": "along_path",
+      "offset_from_path": 1
+    }
+  ],
+  "tag_cards": [
+    {
+      "unique_card_id": "villageCage",
+      "cost": 0,
+      "tags": [
+        "villageCage"
+      ],
+      "tag": "villageCage"
+    }
+  ]
+}

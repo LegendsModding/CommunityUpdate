@@ -483,7 +483,15 @@ const displayInvasionActiveIcon = () => {
       setOffset(ICON_GROUP.INVASION_ACTIVE, ICON_GROUP.MAIN_ICON);
 
       switch (get(MAP_CATEGORY.FACTION)) {
-        case MAP_FACTION_IDS.CULTURE_VILLAGER:
+        case MAP_FACTION_IDS.CULTURE_FOREST:
+        case MAP_FACTION_IDS.CULTURE_FROSTLANDS:
+        case MAP_FACTION_IDS.CULTURE_DRYLANDS:
+        case MAP_FACTION_IDS.CULTURE_WETLANDS:
+        case MAP_FACTION_IDS.CULTURE_GRASSLANDS:
+        case MAP_FACTION_IDS.CULTURE_BROKENLANDS:
+        case MAP_FACTION_IDS.CULTURE_FATEFUL_LAND:
+        case MAP_FACTION_IDS.CULTURE_JUNGLE:
+        case MAP_FACTION_IDS.CULTURE_MOUNTAIN:
           makeEntity(
             ICON_GROUP.INVASION_ACTIVE_EXTENDED_TOOLTIP,
             MAP_EXTENDED_TOOLTIP.INVASION_ACTIVE_OCCUPIED_VILLAGE
@@ -518,7 +526,15 @@ const displayInvasionActiveIcon = () => {
       setOffset(ICON_GROUP.INVASION_ACTIVE_SPECIAL, ICON_GROUP.MAIN_ICON);
 
       switch (get(MAP_CATEGORY.FACTION)) {
-        case MAP_FACTION_IDS.CULTURE_VILLAGER:
+        case MAP_FACTION_IDS.CULTURE_FOREST:
+        case MAP_FACTION_IDS.CULTURE_FROSTLANDS:
+        case MAP_FACTION_IDS.CULTURE_DRYLANDS:
+        case MAP_FACTION_IDS.CULTURE_WETLANDS:
+        case MAP_FACTION_IDS.CULTURE_GRASSLANDS:
+        case MAP_FACTION_IDS.CULTURE_BROKENLANDS:
+        case MAP_FACTION_IDS.CULTURE_FATEFUL_LAND:
+        case MAP_FACTION_IDS.CULTURE_JUNGLE:
+        case MAP_FACTION_IDS.CULTURE_MOUNTAIN:
           makeEntity(
             ICON_GROUP.INVASION_ACTIVE_EXTENDED_TOOLTIP,
             MAP_EXTENDED_TOOLTIP.INVASION_ACTIVE_OCCUPIED_BOSS_VILLAGE
@@ -671,7 +687,47 @@ const displayInvasionRecapIcon = () => {
 
 const displayInvasionRecapSuccessTooltip = () => {
   const faction = get(MAP_CATEGORY.FACTION)
-  if (faction === MAP_FACTION_IDS.CULTURE_VILLAGER) {
+  if (faction === MAP_FACTION_IDS.CULTURE_FOREST) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_FROSTLANDS) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_DRYLANDS) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_WETLANDS) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_GRASSLANDS) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_BROKENLANDS) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_FATEFUL_LAND) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_JUNGLE) {
+    makeEntity(
+      ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
+      MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
+    );
+  } else if (faction === MAP_FACTION_IDS.CULTURE_MOUNTAIN) {
     makeEntity(
       ICON_GROUP.INVASION_RECAP_EXTENDED_TOOLTIP,
       MAP_EXTENDED_TOOLTIP.INVASION_RECAP_ATTACK_SUCCESS
@@ -1101,13 +1157,21 @@ const addMainTooltip = (id) => {
         return;
       }
       break;
-    case MAP_FACTION_IDS.CULTURE_VILLAGER:
+    case MAP_FACTION_IDS.CULTURE_FOREST:
+    case MAP_FACTION_IDS.CULTURE_FROSTLANDS:
+    case MAP_FACTION_IDS.CULTURE_DRYLANDS:
+    case MAP_FACTION_IDS.CULTURE_WETLANDS:
+    case MAP_FACTION_IDS.CULTURE_GRASSLANDS:
+    case MAP_FACTION_IDS.CULTURE_BROKENLANDS:
+    case MAP_FACTION_IDS.CULTURE_FATEFUL_LAND:
+    case MAP_FACTION_IDS.CULTURE_JUNGLE:
+    case MAP_FACTION_IDS.CULTURE_MOUNTAIN:
       if (isPlayerOutpost()) {
         addOutpostMainTooltip();
         return;
       }
 
-      addCulture01MainTooltip();
+      addCultureMainTooltip(id);
       return;
     case MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER:
       addMobAllianceMainTooltip(MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER);
@@ -1138,7 +1202,7 @@ const addMainTooltip = (id) => {
   }
 };
 
-const addCulture01MainTooltip = () => {
+const addCultureMainTooltip = () => {
   // under attack / occupied
   switch (get(MAP_KEY.ACT1_VILLAGE_STATE)) {
     case MAP_ICON_STATE.UNDER_ATTACK:
@@ -1169,7 +1233,35 @@ const addCulture01MainTooltip = () => {
     return;
   }
 
-  makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_VILLAGER]);
+  switch (get(MAP_CATEGORY.FACTION)) {
+    case MAP_FACTION_IDS.CULTURE_FOREST:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_FOREST]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_FROSTLANDS:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_FROSTLANDS]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_DRYLANDS:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_DRYLANDS]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_WETLANDS:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_WETLANDS]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_GRASSLANDS:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_GRASSLANDS]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_BROKENLANDS:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_BROKENLANDS]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_FATEFUL_LAND:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_FATEFUL_LAND]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_JUNGLE:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_JUNGLE]);
+      break;
+    case MAP_FACTION_IDS.CULTURE_MOUNTAIN:
+      makeEntity(ICON_GROUP.DESCRIPTION, MAP_DESCRIPTION_IDS[MAP_FACTION_IDS.CULTURE_MOUNTAIN]);
+      break;
+  }
 };
 
 const addMobAllianceMainTooltip = (mobFactionId) => {
@@ -1266,7 +1358,11 @@ const isVillageSlot = () => {
     get("debug_slot_name") === "frostlands_1_village" ||
     get("debug_slot_name") === "drylands_1_village" ||
     get("debug_slot_name") === "wetlands_1_village" ||
-    get("debug_slot_name") === "grasslands_1_village"
+    get("debug_slot_name") === "grasslands_1_village" ||
+    get("debug_slot_name") === "brokenlands_1_village" ||
+    get("debug_slot_name") === "fateful_land_1_village" ||
+    get("debug_slot_name") === "jungle_1_village" ||
+    get("debug_slot_name") === "mountain_1_village"
   );
 };
 
@@ -1278,7 +1374,11 @@ const isVillageOBSlot = () => {
     slotName === "villageFrostlandsPiglinBaseSlot" ||
     slotName === "villageDrylandsPiglinBaseSlot" ||
     slotName === "villageWetlandsPiglinBaseSlot" ||
-    slotName === "villageGrasslandsPiglinBaseSlot"
+    slotName === "villageGrasslandsPiglinBaseSlot" ||
+    slotName === "villageBrokenlandsPiglinBaseSlot" ||
+    slotName === "villageFatefulLandPiglinBaseSlot" ||
+    slotName === "villageJunglePiglinBaseSlot" ||
+    slotName === "villageMountainPiglinBaseSlot"
   );
 };
 
@@ -1614,7 +1714,15 @@ const displayObjectiveIcon = () => {
 
   // Beacon to further accentuate the objective
   switch (get(MAP_CATEGORY.FACTION)) {
-    case MAP_FACTION_IDS.CULTURE_VILLAGER:
+    case MAP_FACTION_IDS.CULTURE_FOREST:
+    case MAP_FACTION_IDS.CULTURE_FROSTLANDS:
+    case MAP_FACTION_IDS.CULTURE_DRYLANDS:
+    case MAP_FACTION_IDS.CULTURE_WETLANDS:
+    case MAP_FACTION_IDS.CULTURE_GRASSLANDS:
+    case MAP_FACTION_IDS.CULTURE_BROKENLANDS:
+    case MAP_FACTION_IDS.CULTURE_FATEFUL_LAND:
+    case MAP_FACTION_IDS.CULTURE_JUNGLE:
+    case MAP_FACTION_IDS.CULTURE_MOUNTAIN:
       makeEntity(ICON_GROUP.OBJECTIVE_BEACON, OBJECTIVE_BEACON_ICON.VILLAGE)
       break;
     case MAP_FACTION_IDS.WELL_OF_FATE:
@@ -1748,11 +1856,83 @@ onUpdate(() => {
     case MAP_FACTION_IDS.FACTION_PVP:
       displayPiglinFactionIcon(MAP_FACTION_IDS.FACTION_PVP);
       break;
-    case MAP_FACTION_IDS.CULTURE_VILLAGER:
+    case MAP_FACTION_IDS.CULTURE_FOREST:
       if (isPlayerOutpost()) {
         displayPlayerOutpostIcon();
       } else {
-        displayVillageCultureIcon(MAP_ICON.CULTURE_VILLAGER);
+        displayVillageCultureIcon(MAP_ICON.CULTURE_FOREST);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_FROSTLANDS:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_FROSTLANDS);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_DRYLANDS:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_DRYLANDS);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_WETLANDS:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_WETLANDS);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_GRASSLANDS:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_GRASSLANDS);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_BROKENLANDS:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_BROKENLANDS);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_FATEFUL_LAND:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_FATEFUL_LAND);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_JUNGLE:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_JUNGLE);
+        displayPvpAllegianceStateIcon();
+      }
+      displayVillageIcons();
+      break;
+    case MAP_FACTION_IDS.CULTURE_MOUNTAIN:
+      if (isPlayerOutpost()) {
+        displayPlayerOutpostIcon();
+      } else {
+        displayVillageCultureIcon(MAP_ICON.CULTURE_MOUNTAIN);
         displayPvpAllegianceStateIcon();
       }
       displayVillageIcons();

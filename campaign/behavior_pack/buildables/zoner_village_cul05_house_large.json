@@ -1,0 +1,323 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_village_cul05_house_large",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 75
+          },
+          {
+            "item": "wood",
+            "amount": 75
+          },
+          {
+            "item": "gold",
+            "amount": 50
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:health": {
+        "max_health": 125
+      },
+      "badger:culture": {
+        "base_culture_a": 0
+      },
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:villager_culture05",
+            "percentage": 0.5
+          },
+          {
+            "type": "badger:villager_illager_culture05",
+            "percentage": 0.5
+          }
+        ],
+        "cap": 6,
+        "rate": 60,
+        "offset": [
+          0.0,
+          2.0,
+          0.0
+        ]
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_village_cul05_house_large",
+        "build_time": 16,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:zone_type": {
+        "zone_type": "housing"
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 0,
+        "village_gen_zone_control_score_threshold": 0.0
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "largeHouse",
+          "culture5LargeHouse",
+          "house"
+        ]
+      },
+      "badger:disable_by_health": {
+        "health_disabled_percent": 0.5,
+        "health_enabled_percent": 1.0,
+        "block_conversion_states": {
+          "disabled_state": {
+            "modifiers": [
+              {
+                "badger:block_alabaster_carved_mossy": "badger:block_alabaster_carved_mossy_dead"
+              },
+              {
+                "badger:block_alabaster_mossy": "badger:block_alabaster_mossy_dead"
+              },
+              {
+                "badger:block_slab_stucco_mossy": "badger:block_slab_stucco_mossy_dead"
+              },
+              {
+                "badger:block_stair_alabaster_mossy": "badger:block_stair_alabaster_mossy_dead"
+              },
+              {
+                "badger:block_stucco_mossy": "badger:block_stucco_mossy_dead"
+              },
+              {
+                "badger:block_deco_culture01_pillar_base": "badger:block_deco_culture01_pillar_base_deactivated"
+              },
+              {
+                "badger:block_deco_culture01_support": "badger:block_deco_culture01_support_deactivated"
+              },
+              {
+                "badger:block_deco_vine_ivy": "badger:block_deco_vine_ivy_dead"
+              },
+              {
+                "badger:block_deco_vine_ivy_half": "badger:block_deco_vine_ivy_dead_half"
+              },
+              {
+                "badger:block_deco_vine_ivy_var01": "badger:block_deco_vine_ivy_dead_var01"
+              },
+              {
+                "badger:block_deco_container_culture01_var01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_container_culture01_var02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_container_culture01_var03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_chair_base_end_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_chair_back_middle_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_chair_back_end_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_table_corner_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_table_middle_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_table_cupcakes_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_table_cupcake_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_table_cake_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_table_vase_culture01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_house_pillow_var02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_house_pillow_var03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_house_pillow": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_foliage_var01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_foliage_var02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_foliage_var03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_foliage_var04": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_foliage_var05": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_foliage_var06": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_fategrass_03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_fategrass_04": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_fategrass_05": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_daisy_02_structure": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_daisy_03_structure": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_foxglove_03": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_foxglove_04": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_periwinkle_02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_periwinkle_01": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_wildflower_02": "minecraft:air"
+              },
+              {
+                "badger:block_deco_plant_wildflower_03": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var01": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var02": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var03": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var04": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var05": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var06": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var07": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var08": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var09": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var10": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var11": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var12": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var13": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var14": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var15": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var16": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var17": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern_var18": "minecraft:air"
+              },
+              {
+                "badger:block_carpet_culture01_pattern": "minecraft:air"
+              },
+              {
+                "badger:block_deco_village_cloth_side_var01": "badger:block_deco_village_cloth_side_var01_disabled"
+              },
+              {
+                "badger:block_deco_village_cloth_bend": "badger:block_deco_village_cloth_bend_disabled"
+              },
+              {
+                "badger:block_deco_village_cloth_bottom": "badger:block_deco_village_cloth_bottom_disabled"
+              },
+              {
+                "badger:block_deco_village_cloth_flat_back": "badger:block_deco_village_cloth_flat_back_disabled"
+              },
+              {
+                "badger:block_deco_village_cloth_flat": "badger:block_deco_village_cloth_flat_disabled"
+              },
+              {
+                "badger:block_deco_village_cloth_side": "badger:block_deco_village_cloth_side_disabled"
+              },
+              {
+                "badger:block_deco_village_cloth_bottom_var01": "badger:block_deco_village_cloth_bottom_var01_disabled"
+              }
+            ],
+            "duration_percentage": 0.5,
+            "top_to_bottom": true
+          },
+          "enabled_state": {
+            "reverse_existing_modifiers": true,
+            "reversal_duration_percentage": 0.5
+          }
+        }
+      },
+      "badger:template": [
+        "badger:template_zoner_house",
+        "badger:component_generate_ruins_default"
+      ],
+      "badger:buildable_presentation": {
+        "icon": "house_culture5_large",
+        "tooltip_title": "structures.house.large.name",
+        "tooltip_description": "structures.house.large.description",
+        "buildable_category": ""
+      }
+    }
+  }
+}

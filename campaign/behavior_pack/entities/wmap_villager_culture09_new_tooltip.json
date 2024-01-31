@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:wmap_villager_culture09_new_tooltip",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "components": {
+            "badger:map3_tooltip": {
+                "title": "villager.culture.009.name",
+                "description": "villager.culture.009.description",
+                "banner": "map_screen/banners/legend_banner_village_culture09_new.png",
+                "priority": 1
+            }
+        }
+    }
+}

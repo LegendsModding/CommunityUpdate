@@ -1,0 +1,190 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 9,
+        "anim_rows": 2,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 0.93
+      },
+      "badger:lookat": {
+        "joint_name": "joint_look_at",
+        "look_at_axis": "-y",
+        "max_angle": 60,
+        "max_range": 75,
+        "min_range": 5,
+        "turning_delta": 5
+      },
+      "badger:presentation_event": {
+        "cheers_cine_a_offset": {
+          "animation": {
+            "animation": "cheers_cine_a_offset"
+          }
+        },
+        "cheers_cine_idle_a": {
+          "animation": {
+            "animation": "cheers_cine_idle_a"
+          }
+        },
+        "cheers_cine_idle_b": {
+          "animation": {
+            "animation": "cheers_cine_idle_b"
+          }
+        },
+        "cheers_cine_idle_c": {
+          "animation": {
+            "animation": "cheers_cine_idle_c"
+          }
+        },
+        "cine_cheers_cine_a": {
+          "animation": {
+            "animation": "cheers_cine_a"
+          }
+        },
+        "on_hearts": {
+          "particles": {
+            "bind_to_actor": true,
+            "effect": "badger:fx_stat_hearts",
+            "enabled": true,
+            "locator": "loc_fx_stat_head"
+          }
+        },
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:villager_illager_culture06"
+      },
+      "badger:template": ["badger:template_villager","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_slow": "animation.villager_illager_culture06.additive_tumble_slow",
+        "additive_tumnle_fast": "animation.villager_illager_culture06.additive_tumnle_fast",
+        "behaviour_admiring": "animation.villager_illager_culture06_behaviours.behaviour_admiring",
+        "behaviour_applaud": "animation.villager_illager_culture06_behaviours.behaviour_applaud",
+        "behaviour_bow": "animation.villager_illager_culture06_behaviours.behaviour_bow",
+        "behaviour_celebrate": "animation.villager_illager_culture06_behaviours.behaviour_celebrate",
+        "behaviour_chatting": "animation.villager_illager_culture06_behaviours.behaviour_chatting",
+        "behaviour_claps": "animation.villager_illager_culture06_behaviours.behaviour_claps",
+        "behaviour_curious_a": "animation.villager_illager_culture06_behaviours.behaviour_curious_a",
+        "behaviour_curious_b": "animation.villager_illager_culture06_behaviours.behaviour_curious_b",
+        "behaviour_ducking": "animation.villager_illager_culture06_behaviours.behaviour_ducking",
+        "behaviour_greeting": "animation.villager_illager_culture06_behaviours.behaviour_greeting",
+        "behaviour_happy_a": "animation.villager_illager_culture06_behaviours.behaviour_happy_a",
+        "behaviour_happy_b": "animation.villager_illager_culture06_behaviours.behaviour_happy_b",
+        "behaviour_happy_c": "animation.villager_illager_culture06_behaviours.behaviour_happy_c",
+        "behaviour_idle_sad_a": "animation.villager_illager_culture06_behaviours.behaviour_sad_a",
+        "behaviour_indifferent_a": "animation.villager_illager_culture06_behaviours.behaviour_indifferent_a",
+        "behaviour_scared_a": "animation.villager_illager_culture06_behaviours.behaviour_scared_a",
+        "behaviour_scared_b": "animation.villager_illager_culture06_behaviours.behaviour_scared_b",
+        "behaviour_startled": "animation.villager_illager_culture06_behaviours.behaviour_startled",
+        "behaviour_walk_curious_a": "animation.villager_illager_culture06_behaviours.behaviour_walk_curious_a",
+        "behaviour_walk_happy_a": "animation.villager_illager_culture06_behaviours.behaviour_walk_happy_a",
+        "behaviour_walk_happy_b": "animation.villager_illager_culture06_behaviours.behaviour_walk_happy_b",
+        "behaviour_walk_heavy_sad_a": "animation.villager_illager_culture06_behaviours.behaviour_walk_sad_a",
+        "behaviour_walk_scared_heavy": "animation.villager_illager_culture06_behaviours.behaviour_walk_scared_heavy",
+        "behaviour_walk_scared_light": "animation.villager_illager_culture06_behaviours.behaviour_walk_scared_light",
+        "bespoke": "controller.animation.villager_illager_culture06.bespoke",
+        "cheers_cine_a": "animation.villager_illager_culture06.cheers_cine_a",
+        "cheers_cine_a_offset": "animation.villager_illager_culture06.cheers_cine_a_offset",
+        "cheers_cine_idle_a": "animation.villager_illager_culture06.cheers_cine_idle_a",
+        "cheers_cine_idle_b": "animation.villager_illager_culture06.cheers_cine_idle_b",
+        "cheers_cine_idle_c": "animation.villager_illager_culture06.cheers_cine_idle_c",
+        "cine_sad_looking_up_a": "animation.villager_illager_culture06.cine_sad_looking_up_a",
+        "death_a": "animation.villager_illager_culture06.death_a",
+        "death_b": "animation.villager_illager_culture06.death_b",
+        "death_c": "animation.villager_illager_culture06.death_c",
+        "default": "controller.animation.villager_illager_culture06.default",
+        "hit_react": "animation.villager_illager_culture06.hit_react",
+        "hitreact": "controller.animation.villager_illager_culture06.hitreact",
+        "idle": "controller.animation.villager_illager_culture06.idle",
+        "idle_a": "animation.villager_illager_culture06.idle_a",
+        "idle_b": "animation.villager_illager_culture06.idle_b",
+        "idle_c": "animation.villager_illager_culture06.idle_c",
+        "knockback_a": "animation.villager_illager_culture06.knockback_a",
+        "knowback_landing_a": "animation.villager_illager_culture06.knowback_landing_a",
+        "look_at": "animation.villager_illager_culture06.look_at",
+        "spawn_a": "animation.villager_illager_culture06.spawn_a",
+        "sprint_a": "animation.villager_illager_culture06.sprint_a",
+        "stun_a": "animation.villager_illager_culture06.stun_a",
+        "swim_a": "animation.villager_illager_culture06.swim_a",
+        "swim_idle": "animation.villager_illager_culture06.swim_idle",
+        "walk": "controller.animation.villager_illager_culture06.walk",
+        "walk_a": "animation.villager_illager_culture06.walk_a",
+        "walk_b": "animation.villager_illager_culture06.walk_b",
+        "walk_c": "animation.villager_illager_culture06.walk_c"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enemy_spotted": "variable.enemy_spotted = 1;",
+        "hero_spotted": "variable.hero_spotted = 1;",
+        "melee_attack_a": "variable.attack_used = 1;",
+        "melee_attack_b": "variable.attack_used = 2;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Curious","Curious Blink","Scared","Scared Blink","Cheer","Cheer Blink","Worried","Worried Blink"],
+      "geometry": {
+        "default": "geometry.villager_illager_culture06"
+      },
+      "identifier": "badger:villager_illager_culture06",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128",
+        "mat_villager_illager_culture06": "mat_villager_illager_culture06",
+        "mat_villager_illager_culture06_face": "mat_villager_illager_culture06_face"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
+        "fx_death_puff": "badger:fx_shared_death_smoke_small"
+      },
+      "render_controllers": ["controller.render.villager_illager_culture06"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hitreact": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "applaud": "BAE_villager_illager_culture_applaud",
+        "bodyfall": "BAE_villager_illager_culture_bodyfall",
+        "clap": "BAE_villager_illager_culture_clap",
+        "dx_admiring": "BAE_villager_illager_culture_dx_admiring",
+        "dx_bow": "BAE_villager_illager_culture_dx_bow",
+        "dx_chatting": "BAE_villager_illager_culture_dx_chatting",
+        "dx_cheering": "BAE_villager_illager_culture_dx_cheering",
+        "dx_curious": "BAE_villager_illager_culture_dx_curious",
+        "dx_death": "BAE_villager_illager_culture_dx_death",
+        "dx_ducking": "BAE_villager_illager_culture_dx_ducking",
+        "dx_excited": "BAE_villager_illager_culture_dx_excited",
+        "dx_happy": "BAE_villager_illager_culture_dx_happy",
+        "dx_indifferent": "BAE_villager_illager_culture_dx_indifferent",
+        "dx_jump": "BAE_villager_culture_dx_jump",
+        "dx_reaction_hit": "BAE_villager_culture_reaction_hit",
+        "dx_scared_heavy": "BAE_villager_illager_culture_dx_scared_heavy",
+        "dx_scared_light": "BAE_villager_illager_culture_dx_scared_light",
+        "dx_startled": "BAE_villager_illager_culture_dx_startled",
+        "dx_stun": "BAE_villager_illager_culture_dx_stun",
+        "footstep": "BAE_villager_illager_culture_footstep",
+        "move": "BAE_villager_illager_culture_move"
+      }
+    }
+  }
+}

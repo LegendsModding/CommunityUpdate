@@ -278,9 +278,16 @@ const PLACEMENT_NAME = {
     DRYLANDS_VILLAGE: "drylands_1_village",
     WETLANDS_VILLAGE: "wetlands_1_village",
     GRASSLANDS_VILLAGE: "grasslands_1_village",
+    BROKENLANDS_VILLAGE: "brokenlands_1_village",
+    FATEFUL_LAND_VILLAGE: "fateful_land_1_village",
+    JUNGLE_VILLAGE: "jungle_1_village",
+    MOUNTAIN_VILLAGE: "mountain_1_village",
     CREEPER_ALLIANCE: "creeper_alliance",
     SKELETON_ALLIANCE: "skeleton_alliance",
-    ZOMBIE_ALLIANCE: "zombie_alliance"
+    ZOMBIE_ALLIANCE: "zombie_alliance",
+    SLIME_ALLIANCE: "slime_alliance",
+    SILVERFISH_ALLIANCE: "silverfish_alliance",
+    SPIDER_ALLIANCE: "spider_alliance"
 }
 
 const PLACEMENT_NAME_MAP = {
@@ -290,10 +297,17 @@ const PLACEMENT_NAME_MAP = {
     [PLACEMENT_NAME.DRYLANDS_VILLAGE]: "villageDrylandsPiglinBaseSlot",
     [PLACEMENT_NAME.WETLANDS_VILLAGE]: "villageWetlandsPiglinBaseSlot",
     [PLACEMENT_NAME.GRASSLANDS_VILLAGE]: "villageGrasslandsPiglinBaseSlot",
+    [PLACEMENT_NAME.BROKENLANDS_VILLAGE]: "villageBrokenlandsPiglinBaseSlot",
+    [PLACEMENT_NAME.FATEFUL_LAND_VILLAGE]: "villageFatefulLandPiglinBaseSlot",
+    [PLACEMENT_NAME.JUNGLE_VILLAGE]: "villageJunglePiglinBaseSlot",
+    [PLACEMENT_NAME.MOUNTAIN_VILLAGE]: "villageMountainPiglinBaseSlot",
     //Mob alliances
     [PLACEMENT_NAME.CREEPER_ALLIANCE]: "creeperPiglinBaseSlot",
     [PLACEMENT_NAME.SKELETON_ALLIANCE]: "skeletonPiglinBaseSlot",
-    [PLACEMENT_NAME.ZOMBIE_ALLIANCE]: "zombiePiglinBaseSlot"
+    [PLACEMENT_NAME.ZOMBIE_ALLIANCE]: "zombiePiglinBaseSlot",
+    [PLACEMENT_NAME.SPIDER_ALLIANCE]: "spiderPiglinBaseSlot",
+    [PLACEMENT_NAME.SILVERFISH_ALLIANCE]: "silverfishPiglinBaseSlot",
+    [PLACEMENT_NAME.SLIME_ALLIANCE]: "slimePiglinBaseSlot"
 }
 
 const PIGLIN_CAMP_PLACEMENT_NAME_MAP = {
@@ -301,7 +315,11 @@ const PIGLIN_CAMP_PLACEMENT_NAME_MAP = {
     [PLACEMENT_NAME.FROSTLANDS_VILLAGE]: "act1CampsSlotFrostlands",
     [PLACEMENT_NAME.DRYLANDS_VILLAGE]: "act1CampsSlotDrylands",
     [PLACEMENT_NAME.WETLANDS_VILLAGE]: "act1CampsSlotWetlands",
-    [PLACEMENT_NAME.GRASSLANDS_VILLAGE]: "act1CampsSlotGrasslands"
+    [PLACEMENT_NAME.GRASSLANDS_VILLAGE]: "act1CampsSlotGrasslands",
+    [PLACEMENT_NAME.BROKENLANDS_VILLAGE]: "act1CampsSlotBrokenlands",
+    [PLACEMENT_NAME.FATEFUL_LAND_VILLAGE]: "act1CampsSlotFatefulLand",
+    [PLACEMENT_NAME.JUNGLE_VILLAGE]: "act1CampsSlotJungle",
+    [PLACEMENT_NAME.MOUNTAIN_VILLAGE]: "act1CampsSlotMountain",
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -416,7 +416,7 @@ const LocksKeys = {
                     res0: "diamond"
                 },
                 mobAlliances: {
-                    ma0: "unlock_spawner_skeleton"
+                    ma0: "unlock_spawner_spider"
                 },
                 allies: {},
                 alliesRequired: 0,
@@ -455,7 +455,7 @@ const LocksKeys = {
                     res0: "diamond"
                 },
                 mobAlliances: {
-                    ma0: "unlock_spawner_skeleton"
+                    ma0: "unlock_spawner_spider"
                 },
                 allies: {},
                 alliesRequired: 0,
@@ -510,7 +510,7 @@ const LocksKeys = {
                     res0: "diamond"
                 },
                 mobAlliances: {
-                    ma0: "unlock_spawner_skeleton"
+                    ma0: "unlock_spawner_spider"
                 },
                 allies: {},
                 alliesRequired: 0,
@@ -1481,6 +1481,15 @@ SNIPPET_EntitySpawned("es_caged_mobs_spawned", (entitySpawned, payload) => {
     let behavior = ""
     switch (victimArchetype) {
         case MOB_ARCHETYPE.VILLAGERS:
+        case MOB_ARCHETYPE.VILLAGERS_FOREST:
+        case MOB_ARCHETYPE.VILLAGERS_FROSTLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_DRYLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_WETLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_GRASSLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_BROKENLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND:
+        case MOB_ARCHETYPE.VILLAGERS_JUNGLE:
+        case MOB_ARCHETYPE.VILLAGERS_MOUNTAIN:
             behavior = VILLAGE_BEHAVIOR.villager.heavyScared
             break
         case MOB_ARCHETYPE.ZOMBIE:
@@ -1585,6 +1594,15 @@ SNIPPET_NonPopCappedEntityDestroyed("ed_raiding_party_cage", (cage, payload) => 
     const piglins = FILTER_ByTagFilter(villageEntities, ["piglin"], [])
     switch (victimArchetype) {
         case MOB_ARCHETYPE.VILLAGERS:
+        case MOB_ARCHETYPE.VILLAGERS_FOREST:
+        case MOB_ARCHETYPE.VILLAGERS_FROSTLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_DRYLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_WETLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_GRASSLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_BROKENLANDS:
+        case MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND:
+        case MOB_ARCHETYPE.VILLAGERS_JUNGLE:
+        case MOB_ARCHETYPE.VILLAGERS_MOUNTAIN:
             if (QUERY_GetEntitiesCount(piglins) > 0) {
                 OUTPUT_SetBehavior(closeCagedMobs, VILLAGE_BEHAVIOR.villager.scared)
                 OUTPUT_ApplyStatusEffectWithSource(closeCagedMobs, RandomEntity(piglins), "feared", 40)
@@ -1843,9 +1861,7 @@ const SetupPortalInvulnerabilityVO = (villageId) => {
         return //exit out if an attack horde base
     } else if (factionName === FACTION_NAME_OBSTACLE) {
         presentationVO = "piglin_portal_invulnerable_obstacle"
-    } else if (factionName === FACTION_NAME_FROST) {
-        presentationVO = "piglin_portal_invulnerable_frost"
-    }
+    } 
 
     const invulnerabilityVOTrigger = SpawnTriggerVolume(villagePortal, villagePortal, "badger:spatial_trigger_invulnerability_vo", TEAM_WILD, villageId, true, TAG_PLAYER, [], ALLIANCE_FRIENDLY)
     //const invulnerabilityVOTrigger = SpawnTriggerVolumeWithMultipleTagsets(villagePortal, villagePortal, "badger:spatial_trigger_invulnerability_vo", TEAM_WILD, villageId, true, TAGSET_PLAYER_OR_MOB)

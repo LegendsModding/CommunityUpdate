@@ -1,0 +1,50 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:villager_village_005"
+    },
+    "components": {
+      "badger:beacon_render_info": {
+        "states": [
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              0.740,
+              0.630,
+              0.1
+            ],
+            "min_distance": 150,
+            "max_distance": 5000,
+            "beacon_width": 8.0,
+            "emissive_scale": 2.0
+          },
+          {
+            "meta_material": "mat_map_beacon",
+            "beacon_color": [
+              1.0,
+              0.1,
+              0.6
+            ],
+            "min_distance": 0,
+            "max_distance": 0,
+            "beacon_width": 8.0,
+            "emissive_scale": 5.0
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "visual_state_added.set_act_one_objective": {
+          "beacon": {
+            "index": 1
+          }
+        },
+        "visual_state_removed.set_act_one_objective": {
+          "beacon": {
+            "index": 0
+          }
+        }
+      }
+    }
+  }
+}

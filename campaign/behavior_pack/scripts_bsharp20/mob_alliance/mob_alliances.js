@@ -653,42 +653,92 @@ const maVal = {
             ],
             cageBuildingCard: "mobCage"
         },
+        silverfish: {
+            id: "silverfish",
+            factionName: MOB_ALLIANCE_NAME_SILVERFISH,
+            telemetryName: TELEMETRY_MOB_ALLIANCE_NAMES.silverfish,
+            journalUnlock: JOURNAL_UNLOCKS.MOB_SILVERFISH,
+            hudItem: "badger:spawner_silverfish",
+            hudItemTimer: 14,
+            spawnerTag: "silverfishspawner",
+            villageGen: {
+                addPath: false,
+                centerBuildingCard: "silverfishVillageCenter",
+                totemZoneCard: "silverfishTotemOnlyZone", // TODO FIX
+                northDistrictBuildings: [
+                    { card: "silverfishMobAllianceHouse01", amount: 1 },
+                    { card: "silverfishMobAllianceHouse02", amount: 2 }
+                    //{ card: "silverfishMobAllianceHouse03", amount: 0 }
+                ],
+                southDistrictBuildings: [
+                    { card: "silverfishMobAllianceHouse01", amount: 1 },
+                    //{ card: "silverfishMobAllianceHouse02", amount: 0 },
+                    { card: "silverfishMobAllianceHouse03", amount: 1 }
+                ],
+                eastDistrictBuildings: [
+                    { card: "silverfishMobAllianceHouse01", amount: 1 },
+                    { card: "silverfishMobAllianceHouse02", amount: 1 }
+                    //{ card: "silverfishMobAllianceHouse03", amount: 0 }
+                ],
+                westDistrictBuildings: [
+                    { card: "silverfishMobAllianceHouse01", amount: 2 }
+                    //{ card: "silverfishMobAllianceHouse02", amount: 0 },
+                    //{ card: "silverfishMobAllianceHouse03", amount: 0 }
+                ],
+                northDistrictDecoBuildings: [
+                    { card: "silverfishMobAllianceDeco01", amount: 2 }
+                    //{ card: "silverfishMobAllianceDeco02", amount: 0 }
+                ],
+                southDistrictDecoBuildings: [
+                    { card: "silverfishMobAllianceDeco01", amount: 1 },
+                    { card: "silverfishMobAllianceDeco02", amount: 1 }
+                ],
+                eastDistrictDecoBuildings: [
+                    //{ card: "silverfishMobAllianceDeco01", amount: 0 }
+                    { card: "silverfishMobAllianceDeco02", amount: 2 }
+                ],
+                westDistrictDecoBuildings: [
+                    { card: "silverfishMobAllianceDeco01", amount: 1 },
+                    { card: "silverfishMobAllianceDeco02", amount: 1 }
+                ],
+                cageBuildingCard: "mobCage"
+            },
         global: {
-            mobAllianceCompleted: "gv_mob_alliance_slime_piglin_defeated",
-            playerHasEngagedFirstFight: "gv_player_has_enganged_slime_mob_alliance_fight",
-            mobAlliancePiglinInvasionStarted: "gv_mob_alliance_slime_piglin_invasion_started",
-            playerHasAttackedThePortal: "gv_player_slime_has_attacked_the_portal",
-            mobAllianceGenerated: "gv_mob_alliance_slime_generated",
-            queueMobAlliancePiglinInvasion: "gv_queue_slime_mob_alliance_piglin_invasion",
-            playerEnteredAllianceAreaDuringInvasion: "gv_player_entered_slime_mob_alliance_area_during_invasion",
-            soItBegins: "gv_mob_alliance_slime_invasion_starterd",
-            introCinematicPlayed: "gv_slime_mob_alliance_intro_cinematic_played",
-            act1bIntroVOPlayed: "gv_slime_mob_alliance_act1bvo_played",
-            cageDestroyed: "gv_slime_mob_alliance_caged_destroyed",
-            portalEscalated: "gv_slime_mob_alliance_portal_escalated",
-            totalCagesBuilt: "gv_slime_mob_alliance_cages_built",
-            mobAllegianceBuildings: "gv_slime_amount_of_mob_allegiance_buildings",
-            mobAllegianceGainedOnce: "gv_slime_mob_alliance_gained_once",
-            hasEnteredMobAllianceAreaFirst: "gv_slime_player_entered_mob_alliance_area_during_piglin_invasion",
-            joinedTheFight: "gv_slime_joined_the_fight",
-            queueMobOccupationDestruction: "gv_slime_queue_mob_occupation_destruction",
-            allCagesRemoved: "gv_slime_all_cages_removed",
-            attackPortalVOPlayed: "gv_slime_attack_portal_vo_played",
-            act2PreAttackVOPlayed: "gv_act2_pre_attack_vo_played_slime",
-            playersEnteredPreOccupationZone: "gv_homestead_occupation_players_entered_pre_occupation_zone_slime"
+            mobAllianceCompleted: "gv_mob_alliance_silverfish_piglin_defeated",
+            playerHasEngagedFirstFight: "gv_player_has_enganged_silverfish_mob_alliance_fight",
+            mobAlliancePiglinInvasionStarted: "gv_mob_alliance_silverfish_piglin_invasion_started",
+            playerHasAttackedThePortal: "gv_player_silverfish_has_attacked_the_portal",
+            mobAllianceGenerated: "gv_mob_alliance_silverfish_generated",
+            queueMobAlliancePiglinInvasion: "gv_queue_silverfish_mob_alliance_piglin_invasion",
+            playerEnteredAllianceAreaDuringInvasion: "gv_player_entered_silverfish_mob_alliance_area_during_invasion",
+            soItBegins: "gv_mob_alliance_silverfish_invasion_starterd",
+            introCinematicPlayed: "gv_silverfish_mob_alliance_intro_cinematic_played",
+            act1bIntroVOPlayed: "gv_silverfish_mob_alliance_act1bvo_played",
+            cageDestroyed: "gv_silverfish_mob_alliance_caged_destroyed",
+            portalEscalated: "gv_silverfish_mob_alliance_portal_escalated",
+            totalCagesBuilt: "gv_silverfish_mob_alliance_cages_built",
+            mobAllegianceBuildings: "gv_silverfish_amount_of_mob_allegiance_buildings",
+            mobAllegianceGainedOnce: "gv_silverfish_mob_alliance_gained_once",
+            hasEnteredMobAllianceAreaFirst: "gv_silverfish_player_entered_mob_alliance_area_during_piglin_invasion",
+            joinedTheFight: "gv_silverfish_joined_the_fight",
+            queueMobOccupationDestruction: "gv_silverfish_queue_mob_occupation_destruction",
+            allCagesRemoved: "gv_silverfish_all_cages_removed",
+            attackPortalVOPlayed: "gv_silverfish_attack_portal_vo_played",
+            act2PreAttackVOPlayed: "gv_act2_pre_attack_vo_played_silverfish",
+            playersEnteredPreOccupationZone: "gv_homestead_occupation_players_entered_pre_occupation_zone_silverfish"
         },
         cinematics: {
-            introBeforeOccupation: "mob05_c04_slime_intro_fmv"
+            introBeforeOccupation: "mob05_c04_silverfish_intro_fmv"
         },
         constant: {
             allegianceBuildingOffset: 28
         },
         behaviours: {
-            default: "badger:mob_slime"
+            default: "badger:mob_silverfish"
         },
         //this data is used by ManageMobAllianceSpawner in order to update spawners at homesteads based on the type of spawner (house or central building) and difficulty
         spawnerData: {
-            mobIdentifier: "badger:mob_slime",
+            mobIdentifier: "badger:mob_silverfish",
             normalConfig: {
                 house: {
                     cap: 2,
@@ -755,160 +805,8 @@ const maVal = {
                 quantity: 25
             }
         }
-    },
-    silverfish: {
-        id: "silverfish",
-        factionName: MOB_ALLIANCE_NAME_SILVERFISH,
-        telemetryName: TELEMETRY_MOB_ALLIANCE_NAMES.silverfish,
-        journalUnlock: JOURNAL_UNLOCKS.MOB_SILVERFISH,
-        hudItem: "badger:spawner_silverfish",
-        hudItemTimer: 14,
-        spawnerTag: "silverfishspawner",
-        villageGen: {
-            addPath: false,
-            centerBuildingCard: "silverfishVillageCenter",
-            totemZoneCard: "silverfishTotemOnlyZone", // TODO FIX
-            northDistrictBuildings: [
-                { card: "silverfishMobAllianceHouse01", amount: 1 },
-                { card: "silverfishMobAllianceHouse02", amount: 2 }
-                //{ card: "silverfishMobAllianceHouse03", amount: 0 }
-            ],
-            southDistrictBuildings: [
-                { card: "silverfishMobAllianceHouse01", amount: 1 },
-                //{ card: "silverfishMobAllianceHouse02", amount: 0 },
-                { card: "silverfishMobAllianceHouse03", amount: 1 }
-            ],
-            eastDistrictBuildings: [
-                { card: "silverfishMobAllianceHouse01", amount: 1 },
-                { card: "silverfishMobAllianceHouse02", amount: 1 }
-                //{ card: "silverfishMobAllianceHouse03", amount: 0 }
-            ],
-            westDistrictBuildings: [
-                { card: "silverfishMobAllianceHouse01", amount: 2 }
-                //{ card: "silverfishMobAllianceHouse02", amount: 0 },
-                //{ card: "silverfishMobAllianceHouse03", amount: 0 }
-            ],
-            northDistrictDecoBuildings: [
-                { card: "silverfishMobAllianceDeco01", amount: 2 }
-                //{ card: "silverfishMobAllianceDeco02", amount: 0 }
-            ],
-            southDistrictDecoBuildings: [
-                { card: "silverfishMobAllianceDeco01", amount: 1 },
-                { card: "silverfishMobAllianceDeco02", amount: 1 }
-            ],
-            eastDistrictDecoBuildings: [
-                //{ card: "silverfishMobAllianceDeco01", amount: 0 }
-                { card: "silverfishMobAllianceDeco02", amount: 2 }
-            ],
-            westDistrictDecoBuildings: [
-                { card: "silverfishMobAllianceDeco01", amount: 1 },
-                { card: "silverfishMobAllianceDeco02", amount: 1 }
-            ],
-            cageBuildingCard: "mobCage"
-        },
-        global: {
-            mobAllianceCompleted: "gv_mob_alliance_silverfish_piglin_defeated",
-            playerHasEngagedFirstFight: "gv_player_has_enganged_silverfish_mob_alliance_fight",
-            mobAlliancePiglinInvasionStarted: "gv_mob_alliance_silverfish_piglin_invasion_started",
-            playerHasAttackedThePortal: "gv_player_silverfish_has_attacked_the_portal",
-            mobAllianceGenerated: "gv_mob_alliance_silverfish_generated",
-            queueMobAlliancePiglinInvasion: "gv_queue_silverfish_mob_alliance_piglin_invasion",
-            playerEnteredAllianceAreaDuringInvasion: "gv_player_entered_silverfish_mob_alliance_area_during_invasion",
-            soItBegins: "gv_mob_alliance_silverfish_invasion_starterd",
-            introCinematicPlayed: "gv_silverfish_mob_alliance_intro_cinematic_played",
-            act1bIntroVOPlayed: "gv_silverfish_mob_alliance_act1bvo_played",
-            cageDestroyed: "gv_silverfish_mob_alliance_caged_destroyed",
-            portalEscalated: "gv_silverfish_mob_alliance_portal_escalated",
-            totalCagesBuilt: "gv_silverfish_mob_alliance_cages_built",
-            mobAllegianceBuildings: "gv_silverfish_amount_of_mob_allegiance_buildings",
-            mobAllegianceGainedOnce: "gv_silverfish_mob_alliance_gained_once",
-            hasEnteredMobAllianceAreaFirst: "gv_silverfish_player_entered_mob_alliance_area_during_piglin_invasion",
-            joinedTheFight: "gv_silverfish_joined_the_fight",
-            queueMobOccupationDestruction: "gv_silverfish_queue_mob_occupation_destruction",
-            allCagesRemoved: "gv_silverfish_all_cages_removed",
-            attackPortalVOPlayed: "gv_silverfish_attack_portal_vo_played",
-            act2PreAttackVOPlayed: "gv_act2_pre_attack_vo_played_silverfish",
-            playersEnteredPreOccupationZone: "gv_homestead_occupation_players_entered_pre_occupation_zone_silverfish"
-        },
-        cinematics: {
-            introBeforeOccupation: "mob06_c04_silverfish_intro_fmv"
-        },
-        constant: {
-            allegianceBuildingOffset: 28
-        },
-        behaviours: {
-            default: "badger:mob_silverfish"
-        },
-        //this data is used by ManageMobAllianceSpawner in order to update spawners at homesteads based on the type of spawner (house or central building) and difficulty
-        spawnerData: {
-            mobIdentifier: "badger:mob_silverfish",
-            normalConfig: {
-                house: {
-                    cap: 2,
-                    rate: 2,
-                    batch: 2
-                },
-                centralBuilding: {
-                    cap: 8,
-                    rate: 2,
-                    batch: 4
-                }
-            },
-            //spawner data for harder difficulty. I didn't want the rate to be too high or the homesteads feel empty for too long.
-            hardConfig: {
-                house: {
-                    cap: 2,
-                    rate: 20,
-                    batch: 1
-                },
-                centralBuilding: {
-                    cap: 8,
-                    rate: 20,
-                    batch: 1
-                }
-            },
-            //spawner data used when the mob alliances are being occupied for the first time
-            duringOccupation: {
-                house: {
-                    cap: 3,
-                    rate: 2,
-                    batch: 1
-                },
-                centralBuilding: {
-                    cap: 5,
-                    rate: 2,
-                    batch: 5
-                }
-            },
-            duringOccupationHard: {
-                house: {
-                    cap: 1,
-                    rate: 20,
-                    batch: 1
-                },
-                centralBuilding: {
-                    cap: 3,
-                    rate: 20,
-                    batch: 1
-                }
-            },
-            homesteadSpawner: "badger:spawner_world_silverfish_homestead"
-        },
-        voiceOvers: {
-            act1bFirstTime: "act1b_silverfishes_first_time",
-            act1bMet: "act1b_silverfishes_met",
-            ac2PreAttack: "mob_act2_pre_attack_silverfish"
-        },
-        unlocks: {
-            spawner: "unlock_spawner_silverfish",
-            playerSpawner: "unlock_player_spawner_silverfish",
-            battleView: "unlock_battle_view_silverfish",
-            firstTimeUnlockResource: {
-                resourceName: "coal",
-                quantity: 25
-            }
-        }
     }
+}
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

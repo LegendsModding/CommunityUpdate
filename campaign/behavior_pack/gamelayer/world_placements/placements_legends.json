@@ -19,8 +19,8 @@
       ],
       "biome": {
         "biome": "brokenlands",
-        "total_pixels": 12,
-        "starting_pixels": 3,
+        "total_pixels": 30,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -40,7 +40,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  70
+                  35
                 ],
                 "distance_to_zero_score": [0, 20],
                 "tag_parent": "brokenlands_1"
@@ -48,7 +48,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  70
+                  35
                 ],
                 "distance_to_zero_score": [0,20],
                 "tag_parent": "brokenlands_2"
@@ -76,7 +76,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 40,
+            "chunk_distance_from_parent": 60,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -111,9 +111,9 @@
         "killer_rabbit"
       ],
       "biome": {
-        "biome": "brokenlands",
-        "total_pixels": 12,
-        "starting_pixels": 3,
+        "biome": "grasslands",
+        "total_pixels": 30,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -133,18 +133,18 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  70
+                  50
                 ],
                 "distance_to_zero_score": [0, 20],
-                "tag_parent": "brokenlands_1"
+                "tag_parent": "grasslands_1_village"
               },
               {
                 "chunk_distance_from_parent": [
                   0,
-                  70
+                  50
                 ],
                 "distance_to_zero_score": [0,20],
-                "tag_parent": "brokenlands_2"
+                "tag_parent": "grasslands_2"
               }
             ],
             "weight": 1,

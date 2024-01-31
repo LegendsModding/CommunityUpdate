@@ -1,0 +1,28 @@
+{
+  "id": "brokenlands_biome_village_stamp",
+  "textures": [
+    {
+      "texture": "villages/brokenlands_village_biome",
+      "channels": {
+        "r": "blend",
+        "g": "terrain_height",
+        "b": "biome"
+      }
+    }
+  ],
+  "additional_data": {
+    "lock_rotation": true,
+    "village_texture_stamp": true
+  },
+  "biome_map": [
+    {
+      "biome": "brokenlands",
+      "value": 131
+    },
+    {
+      "biome": "brokenlands_valleys",
+      "value": 100,
+      "borderBiome": true
+    }
+  ]
+}

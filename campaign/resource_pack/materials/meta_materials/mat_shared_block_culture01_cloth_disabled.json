@@ -1,0 +1,13 @@
+{
+    "format_version": "1.8.0",
+    "mat_shared_block_culture01_cloth_disabled:base_block_cutout": {
+        "material": "decorations_fancy",
+        "textures": {
+            "diffuseMap": "textures/blocks/tex_shared_block_culture01_torn_cloth_d",
+            "coeffMap": "textures/blocks/tex_shared_block_culture01_torn_cloth_mr",
+            "normalMap": "textures/blocks/tex_shared_block_culture01_torn_cloth_n"
+            
+            
+        }
+    }
+}

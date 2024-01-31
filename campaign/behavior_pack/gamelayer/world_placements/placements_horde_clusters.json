@@ -15,8 +15,8 @@
         "campaign"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "brokenlands",
+        "total_pixels": 40,
         "starting_pixels": 5,
         "spread_priority": 0
       },
@@ -26,19 +26,54 @@
           "distance": {
             "chunk_distance_from_parent": [
               64,
-              88
+              250
             ],
-            "distance_to_zero_score": 10,
+            "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
             "tag_parent": "village",
             "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              100,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "frostlands_1_village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  20,
+                  80
+                ],
+                "distance_to_zero_score": [20, 30],
+                "tag_parent": "brokenlands_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  20,
+                  80
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "brokenlands_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.1
           }
         }
       ]
@@ -58,8 +93,8 @@
         "campaign"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "brokenlands",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -89,8 +124,8 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
             "tag_parent": "village",
             "weight": 1
           }
@@ -112,8 +147,8 @@
         "campaign"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 40,
         "starting_pixels": 5,
         "spread_priority": 0
       },
@@ -122,8 +157,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              139,
-              152
+              159,
+              300
             ],
             "distance_to_zero_score": 30,
             "tag_parent": "claimed_area_cluster",
@@ -134,19 +169,43 @@
           "distance": {
             "chunk_distance_from_parent": [
               64,
-              88
+              220
             ],
-            "distance_to_zero_score": 10,
+            "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
             "tag_parent": "village",
             "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  20,
+                  80
+                ],
+                "distance_to_zero_score": [20, 30],
+                "tag_parent": "extreme_hills_1"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  20,
+                  80
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "extreme_hills_1"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.1
           }
         }
       ]
@@ -166,8 +225,8 @@
         "campaign"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -181,6 +240,169 @@
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "defend_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 76,
+            "distance_to_zero_score": 10,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_frost_cluster_cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_green",
+      "placement_name": "frost_cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "frostlands",
+        "total_pixels": 40,
+        "starting_pixels": 5,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              159,
+              300
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "claimed_area_cluster",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              64,
+              220
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              64,
+              200
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
+            "tag_parent": "village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              32,
+              80
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "frostlands_1_village",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              120,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "brokenlands_1",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              120,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "brokenlands_2",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              160,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "attack_cluster",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_frost_sub-cluster_sub-cluster_campaign",
+      "spawn_entity": "badger:debug_map_marker_red",
+      "placement_name": "frost_sub-cluster",
+      "placement_type": "claimed_area_cluster",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "sub-cluster",
+        "campaign"
+      ],
+      "biome": {
+        "biome": "frostlands",
+        "total_pixels": 40,
+        "starting_pixels": 1,
+        "spread_priority": 0
+      },
+      "add_to_poi_graph": false,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              20,
+              40
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "frost_cluster",
             "weight": 1
           }
         },
@@ -220,8 +442,8 @@
         "campaign"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "wetlands",
+        "total_pixels": 40,
         "starting_pixels": 5,
         "spread_priority": 0
       },
@@ -230,8 +452,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              139,
-              152
+              159,
+              300
             ],
             "distance_to_zero_score": 30,
             "tag_parent": "claimed_area_cluster",
@@ -242,19 +464,43 @@
           "distance": {
             "chunk_distance_from_parent": [
               64,
-              88
+              250
             ],
-            "distance_to_zero_score": 10,
+            "distance_to_zero_score": 30,
             "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 66,
+            "distance_to_zero_score": 20,
             "tag_parent": "village",
             "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "one_of": [
+              {
+                "chunk_distance_from_parent": [
+                  32,
+                  90
+                ],
+                "distance_to_zero_score": [20, 30],
+                "tag_parent": "wetlands_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
+                  20,
+                  80
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "wetlands_2"
+              }
+            ],
+            "weight": 1,
+            "mandatory_threshold": 0.1
           }
         }
       ]
@@ -274,8 +520,8 @@
         "campaign"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "wetlands",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -314,114 +560,6 @@
       ]
     },
     {
-      "unique_card_id": "badger_frost_cluster_cluster_campaign",
-      "spawn_entity": "badger:debug_map_marker_blue",
-      "placement_name": "frost_cluster",
-      "placement_type": "claimed_area_cluster",
-      "initial_villages": {
-        "small": {
-          "count": 1
-        }
-      },
-      "tags": [
-        "cluster",
-        "campaign"
-      ],
-      "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
-        "starting_pixels": 5,
-        "spread_priority": 0
-      },
-      "add_to_poi_graph": false,
-      "placement_rules": [
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              139,
-              202
-            ],
-            "distance_to_zero_score": 30,
-            "tag_parent": "claimed_area_cluster",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              64,
-              100
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "wellOfFate",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 50,
-            "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 1
-          }
-        }
-      ]
-    },
-    {
-      "unique_card_id": "badger_frost_sub-cluster_sub-cluster_campaign",
-      "spawn_entity": "badger:debug_map_marker_red",
-      "placement_name": "frost_sub-cluster",
-      "placement_type": "claimed_area_cluster",
-      "initial_villages": {
-        "small": {
-          "count": 1
-        }
-      },
-      "tags": [
-        "sub-cluster",
-        "campaign"
-      ],
-      "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
-        "starting_pixels": 1,
-        "spread_priority": 0
-      },
-      "add_to_poi_graph": false,
-      "placement_rules": [
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              20,
-              60
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "frost_cluster",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              20,
-              60
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "claimed_area_cluster",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 1
-          }
-        }
-      ]
-    },
-    {
       "unique_card_id": "badger_attack_sub-cluster_extra-cluster_campaign",
       "spawn_entity": "badger:debug_map_marker_red",
       "placement_name": "attack_extra-cluster",
@@ -437,8 +575,8 @@
         "attack"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "brokenlands",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -492,8 +630,8 @@
         "defend"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "mountain_parent_valleys",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -547,8 +685,8 @@
         "obstacle"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "wetlands",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -602,8 +740,8 @@
         "frost"
       ],
       "biome": {
-        "biome": "generic",
-        "total_pixels": 30,
+        "biome": "frostlands",
+        "total_pixels": 40,
         "starting_pixels": 1,
         "spread_priority": 0
       },
@@ -613,7 +751,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               40,
-              120
+              100
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "frost_cluster",
@@ -624,7 +762,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               20,
-              60
+              40
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "claimed_area_cluster",

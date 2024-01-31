@@ -1,0 +1,29 @@
+{
+  "render_controllers": {
+    "controller.render.villager_illager_culture01": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_heal_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_spore_damaged_128"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_villager_illager_culture01": "MetaMaterial.mat_villager_illager_culture01"
+        },
+        {
+          "mat_villager_illager_culture01_face": "MetaMaterial.mat_villager_illager_culture01_face"
+        },
+        {
+          "mat_fx_frozen_128": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

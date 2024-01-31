@@ -166,10 +166,10 @@ const _grantAct1SkipResources = () => {
     GrantStartingResources()
     // Give the player extra resources from skipping to act 2
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_creeper_rally", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_silverfish_rally", 1, false)
+    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
+    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
+    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_zombie_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_creeper", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_skeleton", 1, false)
@@ -212,7 +212,7 @@ const _DBBPlacementTiers = () => {
         { playersMin: 500, primaryMin: 350, primaryMax: 400, wofMin: 750, friendlyVillagesMin: 400, poiMin: 550, maMin: 550 }
     ]
 
-    const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS])
+    const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS)
     const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
     const primaryRef = _GetFirstVillageEntity()
     const wof = GetVillageEntityFromFaction(WELL_OF_FATE)
@@ -882,9 +882,9 @@ const _ActivateAct2Objectives = () => {
     OUTPUT_SetObjectiveVisibility("objectives.defeatFrost", true)
     OUTPUT_SetObjectiveVisibility("objectives.villagesSafe", true)
     //Only enable this one if the player has opted to add witches (or its default)
-    if (witchHutEnabled.defaultValue === 1) {
-        OUTPUT_SetObjectiveVisibility("objectives.witchesUnlocked", true)
-    }
+    //if (witchHutEnabled.defaultValue === 1) {
+    //    OUTPUT_SetObjectiveVisibility("objectives.witchesUnlocked", true)
+    //}
     OUTPUT_SetObjectiveVisibility("objectives.mountsUnlocked", true)
     OUTPUT_SetObjectiveVisibility("objectives.firstsAwoken", true)
     OUTPUT_SetObjectiveVisibility("objectives.towersUnlocked", true)
@@ -897,7 +897,7 @@ const _ActivateAct3Objectives = () => {
     OUTPUT_SetObjectiveVisibility("objectives.defeatSpore", false)
     OUTPUT_SetObjectiveVisibility("objectives.defeatFrost", false)
     OUTPUT_SetObjectiveVisibility("objectives.villagesSafe", false)
-    OUTPUT_SetObjectiveVisibility("objectives.witchesUnlocked", false)
+    //OUTPUT_SetObjectiveVisibility("objectives.witchesUnlocked", false)
     OUTPUT_SetObjectiveVisibility("objectives.alliancesSafe", false)
     OUTPUT_SetObjectiveVisibility("objectives.mountsUnlocked", false)
     OUTPUT_SetObjectiveVisibility("objectives.firstsAwoken", false)
@@ -936,7 +936,7 @@ const _CampaignAct3AStart = () => {
     //move players near the wof to not be near the wof
     const playersNearWof = FILTER_ByDistance(QUERY_GetAllPlayers(), wofVillageEntity, 600) // covers the area around the wof where the final base spawns
     if (HasEntities(playersNearWof)) {
-        const randomVillage = RandomEntity(FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS]))
+        const randomVillage = RandomEntity(FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS))
         OUTPUT_TeleportFastTravel(playersNearWof, randomVillage)
     }
 
@@ -1147,7 +1147,55 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
         LISTENFOR_PlayerEnteredVillage({
             snippet: "pev_player_enetered_village_fast_travel_check",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_VILLAGERS,
+            factionName: CULTURE_NAME_FOREST,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_FROSTLANDS,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_DRYLANDS,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_WETLANDS,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_GRASSLANDS,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_BROKENLANDS,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_FATEFUL_LAND,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_JUNGLE,
+            villageSize: BASE_SIZE_SMALL
+        })
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "pev_player_enetered_village_fast_travel_check",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: CULTURE_NAME_MOUNTAIN,
             villageSize: BASE_SIZE_SMALL
         })
 

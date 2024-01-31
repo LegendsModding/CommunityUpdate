@@ -233,7 +233,7 @@ const setupPoiLegends = () => {
 }
 
 // This previously used the poiAlliesMode game rule
-SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
+SNIPPET_InheritsFromGameMode("campaign", () => {
     setupPoiLegends()
 })
 

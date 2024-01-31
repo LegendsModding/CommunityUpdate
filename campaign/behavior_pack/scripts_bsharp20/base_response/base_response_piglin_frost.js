@@ -1,10 +1,10 @@
-const frostAI = {
+const FrostAI = {
     Siege: "frost_siege",
     Assault: "frost_offensive",
     Guard: "frost_defensive"
 }
 
-const frostCompositions = {
+const FrostCompositions = {
     grunters: {
         units: [{ amount: 4, unit: PIGLIN_ARCHETYPE.GRUNTER }],
         delayUntilSentOut: 15
@@ -169,304 +169,304 @@ const frostCompositions = {
         delayUntilSentOut: 15
     }
 }
-const frostDiscreteEncounters = {
-    sporeBlockade: {
-        unitComposition: frostCompositions.grunters,
+const FrostDiscreteEncounters = {
+    frostBlockade: {
+        unitComposition: FrostCompositions.grunters,
         buildableTag: "pigKnockbackTower",
         leashDistance: 100,
         returnDistance: 50
     },
-    blazedSpore: {
-        unitComposition: frostCompositions.grunters,
+    blazedFrost: {
+        unitComposition: FrostCompositions.grunters,
         buildableTag: "pigArrowTower",
         leashDistance: 100,
         returnDistance: 50
     },
     seekingVengeance: {
-        unitComposition: frostCompositions.basicSeeker,
+        unitComposition: FrostCompositions.basicSeeker,
         buildableTag: "pigSpreader",
         leashDistance: 100,
         returnDistance: 50
     },
     boomSpreader: {
-        unitComposition: frostCompositions.basicSeeker,
+        unitComposition: FrostCompositions.basicSeeker,
         buildableTag: "pigSpreader",
         leashDistance: 100,
         returnDistance: 50
     },
     gruntersMedics: {
-        unitComposition: frostCompositions.grunterPatrol,
+        unitComposition: FrostCompositions.grunterPatrol,
         buildableTag: "barracks",
         leashDistance: 100,
         returnDistance: 50
     },
     grenadierGuards: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "barracks",
         leashDistance: 100,
         returnDistance: 50
     },
     grenadiers: {
-        unitComposition: frostCompositions.grenadierSquad,
+        unitComposition: FrostCompositions.grenadierSquad,
         buildableTag: "frostComposition3",
         leashDistance: 100,
         returnDistance: 50
     },
     grenadiersTower: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigArrowTower",
         leashDistance: 100,
         returnDistance: 50
     },
     grenadiersKnockback: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigKnockbackTower",
         leashDistance: 100,
         returnDistance: 50
     },
     comeAndTakeIt: {
-        unitComposition: frostCompositions.longrangeSiege,
+        unitComposition: FrostCompositions.longrangeSiege,
         buildableTag: "barracks",
         leashDistance: 100,
         returnDistance: 50
     },
     pain: {
-        unitComposition: frostCompositions.heavySquad,
+        unitComposition: FrostCompositions.heavySquad,
         buildableTag: "pigKnockbackTower",
         leashDistance: 100,
         returnDistance: 50
     },
-    sporeGrowth: {
-        unitComposition: frostCompositions.genadiers,
+    frostGrowth: {
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigArrowTower",
         leashDistance: 100,
         returnDistance: 50
     },
-    sporeCannons: {
-        unitComposition: frostCompositions.longrangeSiege,
+    frostCannons: {
+        unitComposition: FrostCompositions.longrangeSiege,
         buildableTag: "pigKnockbackTower",
         leashDistance: 100,
         returnDistance: 50
     },
     hornsFromAbove: {
-        unitComposition: frostCompositions.heavyPatrol,
+        unitComposition: FrostCompositions.heavyPatrol,
         buildableTag: "pigSpreader",
         leashDistance: 100,
         returnDistance: 50
     },
-    sporeScore: {
-        unitComposition: frostCompositions.rotSquad,
+    frostScore: {
+        unitComposition: FrostCompositions.rotSquad,
         buildableTag: "pigSpreader",
         leashDistance: 100,
         returnDistance: 50
     },
     grenadierNether: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigSpreader",
         leashDistance: 100,
         returnDistance: 50
     },
-    sporeSpread: {
-        unitComposition: frostCompositions.grunterPatrol,
+    frostSpread: {
+        unitComposition: FrostCompositions.grunterPatrol,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     highGround: {
-        unitComposition: frostCompositions.heavySiege,
+        unitComposition: FrostCompositions.heavySiege,
         buildableTag: "piglin_portal",
         leashDistance: 100,
         returnDistance: 50
     },
     heavySquad: {
-        unitComposition: frostCompositions.heavySiege,
+        unitComposition: FrostCompositions.heavySiege,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     heavyPatrol: {
-        unitComposition: frostCompositions.heavySiege,
+        unitComposition: FrostCompositions.heavySiege,
         buildableTag: "frostComposition2",
         leashDistance: 100,
         returnDistance: 50
     },
     heavySiege: {
-        unitComposition: frostCompositions.heavySiege,
+        unitComposition: FrostCompositions.heavySiege,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     highGround2: {
-        unitComposition: frostCompositions.heavySiege,
+        unitComposition: FrostCompositions.heavySiege,
         buildableTag: "frostComposition3",
         leashDistance: 100,
         returnDistance: 50
     },
     noCannonForYou: {
-        unitComposition: frostCompositions.basicSeeker,
+        unitComposition: FrostCompositions.basicSeeker,
         buildableTag: "pigSpreader",
         leashDistance: 100,
         returnDistance: 50
     },
     gruntersEverywhere: {
-        unitComposition: frostCompositions.grunterPatrol,
+        unitComposition: FrostCompositions.grunterPatrol,
         buildableTag: "barracks",
         leashDistance: 100,
         returnDistance: 50
     },
     rotSquad: {
-        unitComposition: frostCompositions.rotSquad,
+        unitComposition: FrostCompositions.rotSquad,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
 
     smallBGuards: {
-        unitComposition: frostCompositions.smallBGuards,
+        unitComposition: FrostCompositions.smallBGuards,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     smallAGuards: {
-        unitComposition: frostCompositions.smallAGuards,
+        unitComposition: FrostCompositions.smallAGuards,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     medAGuard1: {
-        unitComposition: frostCompositions.medAGuard1,
+        unitComposition: FrostCompositions.medAGuard1,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     medAGuard2: {
-        unitComposition: frostCompositions.medAGuard2,
+        unitComposition: FrostCompositions.medAGuard2,
         buildableTag: "frostComposition2",
         leashDistance: 100,
         returnDistance: 50
     },
     medAGuard3: {
-        unitComposition: frostCompositions.medAGuard3,
+        unitComposition: FrostCompositions.medAGuard3,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     medBGuard1: {
-        unitComposition: frostCompositions.medBGuard1,
+        unitComposition: FrostCompositions.medBGuard1,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     medBGuard2: {
-        unitComposition: frostCompositions.medBGuard2,
+        unitComposition: FrostCompositions.medBGuard2,
         buildableTag: "frostComposition2",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostCrateA2: {
-        unitComposition: frostCompositions.runts,
+        unitComposition: FrostCompositions.runts,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostCrateA3: {
-        unitComposition: frostCompositions.macesAndCymbals,
+        unitComposition: FrostCompositions.macesAndCymbals,
         buildableTag: "pigCrateOutpostL3",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostCrateB2: {
-        unitComposition: frostCompositions.grunters,
+        unitComposition: FrostCompositions.grunters,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostCrateB3: {
-        unitComposition: frostCompositions.longrangeSiege,
+        unitComposition: FrostCompositions.longrangeSiege,
         buildableTag: "pigCrateOutpostL3",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostCrateC2: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostCrateC3: {
-        unitComposition: frostCompositions.grenadesAndHiHats,
+        unitComposition: FrostCompositions.grenadesAndHiHats,
         buildableTag: "pigCrateOutpostL3",
         leashDistance: 100,
         returnDistance: 50
     },
     smallCrateA: {
-        unitComposition: frostCompositions.grunters,
+        unitComposition: FrostCompositions.grunters,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     smallCrateB: {
-        unitComposition: frostCompositions.runts,
+        unitComposition: FrostCompositions.runts,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     mediumCrateA: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     mediumCrateB: {
-        unitComposition: frostCompositions.medBGuard2,
+        unitComposition: FrostCompositions.medBGuard2,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     largeCrate: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigCrateOutpostL2",
         leashDistance: 100,
         returnDistance: 50
     },
     outpostC: {
-        unitComposition: frostCompositions.outpostCComposition,
+        unitComposition: FrostCompositions.outpostCComposition,
         buildableTag: "pigArrowTower",
         leashDistance: 100,
         returnDistance: 50
     },
     largeBaseStructureGuardsGrunters: {
-        unitComposition: frostCompositions.grunterPatrol,
+        unitComposition: FrostCompositions.grunterPatrol,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     largeBaseStructureGuardsSeekers: {
-        unitComposition: frostCompositions.seekersOnly,
+        unitComposition: FrostCompositions.seekersOnly,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     largeBaseStructureGuardsGrenadiers: {
-        unitComposition: frostCompositions.genadiers,
+        unitComposition: FrostCompositions.genadiers,
         buildableTag: "frostComposition1",
         leashDistance: 100,
         returnDistance: 50
     },
     bossPlatform1: {
-        unitComposition: frostCompositions.bossPlatform1,
+        unitComposition: FrostCompositions.bossPlatform1,
         buildableTag: "frostBossRally1",
         leashDistance: 100,
         returnDistance: 50
     },
     bossPlatform2: {
-        unitComposition: frostCompositions.bossPlatform2,
+        unitComposition: FrostCompositions.bossPlatform2,
         buildableTag: "frostBossRally2",
         leashDistance: 100,
         returnDistance: 50
     },
     bossPlatform3: {
-        unitComposition: frostCompositions.bossPlatform3,
+        unitComposition: FrostCompositions.bossPlatform3,
         buildableTag: "frostBossRally3",
         leashDistance: 100,
         returnDistance: 50
@@ -504,11 +504,11 @@ const frostVal = {
     bossValues: {},
     barracks: {
         // eslint-disable-next-line @typescript-eslint/camelcase
-        [BARRACKS_NAME_FIGHTER]: FighterBarracksConfig_frostFaction_Variations,
+        [BARRACKS_NAME_FIGHTER]: FighterBarracksConfig_FrostFaction_Variations,
         // eslint-disable-next-line @typescript-eslint/camelcase
-        [BARRACKS_NAME_SIEGER]: SiegerBarracksConfig_frostFaction_Variations,
+        [BARRACKS_NAME_SIEGER]: SiegerBarracksConfig_FrostFaction_Variations,
         // eslint-disable-next-line @typescript-eslint/camelcase
-        [BARRACKS_NAME_DISRUPTOR]: DisruptorBarracksConfig_frostFaction_Variations
+        [BARRACKS_NAME_DISRUPTOR]: DisruptorBarracksConfig_FrostFaction_Variations
     },
     //Used in ResetLavaLaunchers() only
     lavalLaunchersCount: {
@@ -580,22 +580,22 @@ const frostVal = {
             villageVariationA: {
                 ["frostGuard"]: {
                     controlGroupTag: "frostGuard",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Guard, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Guard, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostAssault"]: {
                     controlGroupTag: "frostAssault",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Assault, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Assault, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostSiege"]: {
                     controlGroupTag: "frostSiege",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Siege, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Siege, 100]],
                     positionTags: ["frostSiegeRally"],
                     positionTagExcludes: []
                 }
@@ -603,22 +603,22 @@ const frostVal = {
             villageVariationB: {
                 ["frostGuard"]: {
                     controlGroupTag: "frostGuard",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Guard, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Guard, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostAssault"]: {
                     controlGroupTag: "frostAssault",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Assault, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Assault, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostSiege"]: {
                     controlGroupTag: "frostSiege",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Siege, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Siege, 100]],
                     positionTags: ["frostSiegeRally"],
                     positionTagExcludes: []
                 }
@@ -628,22 +628,22 @@ const frostVal = {
             villageVariationA: {
                 ["frostGuard"]: {
                     controlGroupTag: "frostGuard",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Guard, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Guard, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostAssault"]: {
                     controlGroupTag: "frostAssault",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Assault, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Assault, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostSiege"]: {
                     controlGroupTag: "frostSiege",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Siege, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Siege, 100]],
                     positionTags: ["frostSiegeRally"],
                     positionTagExcludes: []
                 }
@@ -651,22 +651,22 @@ const frostVal = {
             villageVariationB: {
                 ["frostGuard"]: {
                     controlGroupTag: "frostGuard",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Guard, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Guard, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostAssault"]: {
                     controlGroupTag: "frostAssault",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Assault, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Assault, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostSiege"]: {
                     controlGroupTag: "frostSiege",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Siege, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Siege, 100]],
                     positionTags: ["frostSiegeRally"],
                     positionTagExcludes: []
                 }
@@ -676,22 +676,22 @@ const frostVal = {
             villageVariationA: {
                 ["frostGuard"]: {
                     controlGroupTag: "frostGuard",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Guard, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Guard, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostAssault"]: {
                     controlGroupTag: "frostAssault",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Assault, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Assault, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostSiege"]: {
                     controlGroupTag: "frostSiege",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Siege, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Siege, 100]],
                     positionTags: ["frostSiegeRally"],
                     positionTagExcludes: []
                 }
@@ -701,22 +701,22 @@ const frostVal = {
             villageVariationDefault: {
                 ["frostGuard"]: {
                     controlGroupTag: "frostGuard",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Guard, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Guard, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostAssault"]: {
                     controlGroupTag: "frostAssault",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Assault, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Assault, 100]],
                     positionTags: ["frostGuardRally"],
                     positionTagExcludes: []
                 },
                 ["frostSiege"]: {
                     controlGroupTag: "frostSiege",
-                    composition: frostCompositions.grunters,
-                    ais: [[frostAI.Siege, 100]],
+                    composition: FrostCompositions.grunters,
+                    ais: [[FrostAI.Siege, 100]],
                     positionTags: ["frostSiegeRally"],
                     positionTagExcludes: []
                 }
@@ -805,7 +805,7 @@ const frostVal = {
     villageAttack: {
         fobSmall: {
             baseConstructor: (villageId) => {
-                _frostFactionAttackAMakeBase(villageId)
+                _FrostFactionAttackAMakeBase(villageId)
             },
             timeBetweenWaves: 60,
             waves: [
@@ -825,7 +825,7 @@ const frostVal = {
         },
         fobMedium: {
             baseConstructor: (villageId) => {
-                _frostFactionAttackBMakeBase(villageId)
+                _FrostFactionAttackBMakeBase(villageId)
             },
             timeBetweenWaves: 45,
             waves: [
@@ -959,7 +959,7 @@ const frostVal = {
     },
 
     aiConfig: {
-        [frostAI.Assault]: {
+        [FrostAI.Assault]: {
             controllerArchetype: "badger:ai_entity_frost_offensive",
             controllerTag: "frostAttackAi",
             waveReinforcementsEnabled: false,
@@ -968,7 +968,7 @@ const frostVal = {
             reinforcementInterval: 10,
             reinforcementPercentage: 100
         },
-        [frostAI.Siege]: {
+        [FrostAI.Siege]: {
             controllerArchetype: "badger:ai_entity_frost_siege",
             controllerTag: "frostSiegeAi",
             waveReinforcementsEnabled: false,
@@ -977,7 +977,7 @@ const frostVal = {
             reinforcementInterval: 10,
             reinforcementPercentage: 100
         },
-        [frostAI.Guard]: {
+        [FrostAI.Guard]: {
             controllerArchetype: "badger:ai_entity_frost_defensive",
             controllerTag: "frostDefendAi",
             waveReinforcementsEnabled: false,
@@ -991,129 +991,129 @@ const frostVal = {
         frontlineA: {
             villageVariationA1: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.smallBGuards,
+                    type: FrostDiscreteEncounters.smallBGuards,
                     amount: 1
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateA2,
+                    type: FrostDiscreteEncounters.outpostCrateA2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateA3,
+                    type: FrostDiscreteEncounters.outpostCrateA3,
                     amount: 2
                 }
             },
             villageVariationA2: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.smallBGuards,
+                    type: FrostDiscreteEncounters.smallBGuards,
                     amount: 2
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateA2,
+                    type: FrostDiscreteEncounters.outpostCrateA2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateA3,
+                    type: FrostDiscreteEncounters.outpostCrateA3,
                     amount: 2
                 }
             },
             villageVariationA3: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.smallBGuards,
+                    type: FrostDiscreteEncounters.smallBGuards,
                     amount: 3
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateA2,
+                    type: FrostDiscreteEncounters.outpostCrateA2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateA3,
+                    type: FrostDiscreteEncounters.outpostCrateA3,
                     amount: 2
                 }
             },
             //----------------------------------------------------
             villageVariationB1: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.blazedSpore,
+                    type: FrostDiscreteEncounters.blazedFrost,
                     amount: 1
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateB2,
+                    type: FrostDiscreteEncounters.outpostCrateB2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateB3,
+                    type: FrostDiscreteEncounters.outpostCrateB3,
                     amount: 2
                 }
             },
             villageVariationB2: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.blazedSpore,
+                    type: FrostDiscreteEncounters.blazedFrost,
                     amount: 2
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateB2,
+                    type: FrostDiscreteEncounters.outpostCrateB2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateB3,
+                    type: FrostDiscreteEncounters.outpostCrateB3,
                     amount: 2
                 }
             },
             villageVariationB3: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.blazedSpore,
+                    type: FrostDiscreteEncounters.blazedFrost,
                     amount: 3
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateB2,
+                    type: FrostDiscreteEncounters.outpostCrateB2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateB3,
+                    type: FrostDiscreteEncounters.outpostCrateB3,
                     amount: 2
                 }
             },
             //----------------------------------------------------
             villageVariationC1: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.outpostC,
+                    type: FrostDiscreteEncounters.outpostC,
                     amount: 1
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateC2,
+                    type: FrostDiscreteEncounters.outpostCrateC2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateC3,
+                    type: FrostDiscreteEncounters.outpostCrateC3,
                     amount: 2
                 }
             },
             villageVariationC2: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.outpostC,
+                    type: FrostDiscreteEncounters.outpostC,
                     amount: 2
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateC2,
+                    type: FrostDiscreteEncounters.outpostCrateC2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateC3,
+                    type: FrostDiscreteEncounters.outpostCrateC3,
                     amount: 2
                 }
             },
             villageVariationC3: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.outpostC,
+                    type: FrostDiscreteEncounters.outpostC,
                     amount: 3
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.outpostCrateC2,
+                    type: FrostDiscreteEncounters.outpostCrateC2,
                     amount: 1
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.outpostCrateC3,
+                    type: FrostDiscreteEncounters.outpostCrateC3,
                     amount: 2
                 }
             }
@@ -1121,25 +1121,25 @@ const frostVal = {
         small: {
             villageVariationA: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.smallAGuards,
+                    type: FrostDiscreteEncounters.smallAGuards,
                     amount: 6
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.smallAGuards,
+                    type: FrostDiscreteEncounters.smallAGuards,
                     amount: 6
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.smallCrateA,
+                    type: FrostDiscreteEncounters.smallCrateA,
                     amount: 1
                 }
             },
             villageVariationB: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.smallBGuards,
+                    type: FrostDiscreteEncounters.smallBGuards,
                     amount: 7
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.smallCrateB,
+                    type: FrostDiscreteEncounters.smallCrateB,
                     amount: 1
                 }
             }
@@ -1147,33 +1147,33 @@ const frostVal = {
         medium: {
             villageVariationA: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.medAGuard1,
+                    type: FrostDiscreteEncounters.medAGuard1,
                     amount: 5
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.medAGuard2,
+                    type: FrostDiscreteEncounters.medAGuard2,
                     amount: 7
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.medAGuard3,
+                    type: FrostDiscreteEncounters.medAGuard3,
                     amount: 2
                 },
                 ["de3"]: {
-                    type: frostDiscreteEncounters.mediumCrateA,
+                    type: FrostDiscreteEncounters.mediumCrateA,
                     amount: 1
                 }
             },
             villageVariationB: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.medBGuard1,
+                    type: FrostDiscreteEncounters.medBGuard1,
                     amount: 7
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.medBGuard2,
+                    type: FrostDiscreteEncounters.medBGuard2,
                     amount: 7
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.mediumCrateB,
+                    type: FrostDiscreteEncounters.mediumCrateB,
                     amount: 1
                 }
             }
@@ -1181,27 +1181,27 @@ const frostVal = {
         large: {
             villageVariationA: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.rotSquad,
+                    type: FrostDiscreteEncounters.rotSquad,
                     amount: 5
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.sporeScore,
+                    type: FrostDiscreteEncounters.frostScore,
                     amount: 3
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.highGround2,
+                    type: FrostDiscreteEncounters.highGround2,
                     amount: 4
                 },
                 ["de3"]: {
-                    type: frostDiscreteEncounters.largeBaseStructureGuardsGrunters,
+                    type: FrostDiscreteEncounters.largeBaseStructureGuardsGrunters,
                     amount: 6
                 },
                 ["de4"]: {
-                    type: frostDiscreteEncounters.largeBaseStructureGuardsSeekers,
+                    type: FrostDiscreteEncounters.largeBaseStructureGuardsSeekers,
                     amount: 4
                 },
                 ["de5"]: {
-                    type: frostDiscreteEncounters.largeCrate,
+                    type: FrostDiscreteEncounters.largeCrate,
                     amount: 1
                 }
             }
@@ -1209,35 +1209,35 @@ const frostVal = {
         boss: {
             villageVariationDefault: {
                 ["de0"]: {
-                    type: frostDiscreteEncounters.highGround2,
+                    type: FrostDiscreteEncounters.highGround2,
                     amount: 3
                 },
                 ["de1"]: {
-                    type: frostDiscreteEncounters.noCannonForYou,
+                    type: FrostDiscreteEncounters.noCannonForYou,
                     amount: 2
                 },
                 ["de2"]: {
-                    type: frostDiscreteEncounters.sporeScore,
+                    type: FrostDiscreteEncounters.frostScore,
                     amount: 2
                 },
                 ["de3"]: {
-                    type: frostDiscreteEncounters.grenadierGuards,
+                    type: FrostDiscreteEncounters.grenadierGuards,
                     amount: 4
                 },
                 ["de4"]: {
-                    type: frostDiscreteEncounters.largeBaseStructureGuardsGrenadiers,
+                    type: FrostDiscreteEncounters.largeBaseStructureGuardsGrenadiers,
                     amount: 6
                 },
                 ["de5"]: {
-                    type: frostDiscreteEncounters.bossPlatform1,
+                    type: FrostDiscreteEncounters.bossPlatform1,
                     amount: 1
                 },
                 ["de6"]: {
-                    type: frostDiscreteEncounters.bossPlatform2,
+                    type: FrostDiscreteEncounters.bossPlatform2,
                     amount: 1
                 },
                 ["de7"]: {
-                    type: frostDiscreteEncounters.bossPlatform3,
+                    type: FrostDiscreteEncounters.bossPlatform3,
                     amount: 1
                 }
             }
@@ -1365,9 +1365,9 @@ const frostVal = {
             tier2: {
                 gatherPercentage: 60,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1398,9 +1398,9 @@ const frostVal = {
             tier3: {
                 gatherPercentage: 100,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1428,9 +1428,9 @@ const frostVal = {
             bridge: {
                 gatherPercentage: 75,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1463,9 +1463,9 @@ const frostVal = {
             tier2: {
                 gatherPercentage: 60,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1496,9 +1496,9 @@ const frostVal = {
             tier3: {
                 gatherPercentage: 100,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1528,9 +1528,9 @@ const frostVal = {
             tier2: {
                 gatherPercentage: 100,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1561,9 +1561,9 @@ const frostVal = {
             tier3: {
                 gatherPercentage: 100,
                 aiDistribution: [
-                    [[frostAI.Assault], 60],
-                    [[frostAI.Guard], 20],
-                    [[frostAI.Siege], 20]
+                    [[FrostAI.Assault], 60],
+                    [[FrostAI.Guard], 20],
+                    [[FrostAI.Siege], 20]
                 ],
                 portalSpawns: {
                     [BASE_SIZE_SMALL]: {
@@ -1675,24 +1675,24 @@ const frostZoneCards = {
 /*                              Helper Functions                              */
 /* -------------------------------------------------------------------------- */
 
-const GetfrostAIConfig = () => {
+const GetFrostAIConfig = () => {
     return frostVal.aiConfig
 }
 
-const GetfrostRallyPointconfig = (villageId, ControlGroupTag) => {
+const GetFrostRallyPointconfig = (villageId, ControlGroupTag) => {
     const size = QUERY_GetFactionSizeFromVillageID(villageId)
     const flavour = GetVillageFlavour(villageId)
     return frostVal.rallypoints[size][flavour][ControlGroupTag]
 }
 
-const GetfrostDescreteEncounters = (villageId) => {
+const GetFrostDescreteEncounters = (villageId) => {
     const size = QUERY_GetFactionSizeFromVillageID(villageId)
     let flavour = GetVillageFlavour(villageId)
     if (size === BASE_SIZE_OUTPOST) flavour += GetOutpostDifficultyFromPhase(FACTION_NAME_FROST)
     return frostVal.discreteEncounters[size][flavour]
 }
 
-const _frostSpawnBossBaseResponseUnits = (villageId, spawnedUnits) => {
+const _FrostSpawnBossBaseResponseUnits = (villageId, spawnedUnits) => {
     const spawnLocation = GetVillagePortalSpawnLocation(villageId)
     let newUnits = EMPTY_ENTITY_GROUP
     if (spawnedUnits === undefined || spawnedUnits.length === 0) {
@@ -1710,31 +1710,31 @@ const _frostSpawnBossBaseResponseUnits = (villageId, spawnedUnits) => {
     return newUnits
 }
 
-const _playfrostAttackStinger = (villageId) => {
+const _playFrostAttackStinger = (villageId) => {
     const portal = GetVillagePortal(villageId)
     if (HasEntities(portal)) {
         OUTPUT_SendPositionalAudio("BAE_mus_stinger_rallyman_piglin_tactic_attack", portal)
     }
 }
 
-const _playfrostTargetStinger = (villageId) => {
+const _playFrostTargetStinger = (villageId) => {
     const portal = GetVillagePortal(villageId)
     if (HasEntities(portal)) {
         OUTPUT_SendPositionalAudio("BAE_mus_stinger_rallyman_piglin_tactic_target", portal)
     }
 }
 
-const _SetfrostBarracksConfig = (spawner) => {
+const _SetFrostBarracksConfig = (spawner) => {
     if (QUERY_HasTags(spawner, [BARRACKS_NAME_FIGHTER])) {
-        SetBarracksConfigForVillageVariation(spawner, FighterBarracksConfig_frostFaction_Variations)
+        SetBarracksConfigForVillageVariation(spawner, FighterBarracksConfig_FrostFaction_Variations)
     } else if (QUERY_HasTags(spawner, [BARRACKS_NAME_DISRUPTOR])) {
-        SetBarracksConfigForVillageVariation(spawner, DisruptorBarracksConfig_frostFaction_Variations)
+        SetBarracksConfigForVillageVariation(spawner, DisruptorBarracksConfig_FrostFaction_Variations)
     } else if (QUERY_HasTags(spawner, [BARRACKS_NAME_SIEGER])) {
-        SetBarracksConfigForVillageVariation(spawner, SiegerBarracksConfig_frostFaction_Variations)
+        SetBarracksConfigForVillageVariation(spawner, SiegerBarracksConfig_FrostFaction_Variations)
     }
 }
 
-const _CheckIffrostFactionIsDefeated = () => {
+const _CheckIfFrostFactionIsDefeated = () => {
     if (IsPiglinFactionDefeated(FACTION_NAME_FROST)) {
         GV_ROAMING_PIGLIN_FROST_FACTION_SPAWNERS.forEach((roamingGV) => {
             OUTPUT_SetGlobalVariable(roamingGV, 1)
@@ -1840,7 +1840,7 @@ SNIPPET_SpatialPartitionEntered("spe_frost_general", (triggerEntity, intruderEnt
             })
 
             LISTENFOR_CinematicFinished({
-                snippet: "frostSpawnfrostBoss",
+                snippet: "frostSpawnFrostoss",
                 ownerVillageId: villageId,
                 cinematicName: frostVal.cinematic.bossIntro
             })
@@ -1871,7 +1871,7 @@ SNIPPET_SpatialPartitionEntered("spe_frost_general", (triggerEntity, intruderEnt
     // Escalation
     if (!IsBaseEscalated(triggerEntity, frostVal.escalation.phase1.name)) {
         MarkBaseAsEscalated(triggerEntity, frostVal.escalation.phase1.name)
-        SetEscalationValueAndUpdateAllBarracksForVillageVariation(villageId, frostVal.barracks, 1)
+        SetEscalationValueAndUpdateAllBarracksForVillageVariation(villageId, Val.barracks, 1)
     }
 })
 
@@ -2006,10 +2006,10 @@ SNIPPET_SpatialPartitionEntered("spe_frost_player_enter_inner_keep", (triggerEnt
 /* -------------------------------------------------------------------------- */
 /*                               Piglin Responses                             */
 /* -------------------------------------------------------------------------- */
-const _InitfrostResponses = (villageId, hasPortal) => {
+const _InitFrostResponses = (villageId, hasPortal) => {
     SetVillageVariable(villageId, frostVal.village.ScriptedResponsesEnabled, 1)
     SetVillageVariable(villageId, frostVal.village.ScriptedResponsesTimeout, 0)
-    _SetupfrostResponseDebounce(villageId)
+    _SetupFrostResponseDebounce(villageId)
     if (hasPortal) {
         BASE_InitPiglinStructureDamagedResponse(villageId, [
             { snippetName: "sd_portal_damaged_phase1", debounceTimer: 60, healthThreshold: frostVal.portalHealthThreshold.first.health, triggerMode: HEALTH_TRIGGER_MODE.CROSS, includeTags: ["portal_piglin"] },
@@ -2058,7 +2058,7 @@ const _InitfrostResponses = (villageId, hasPortal) => {
     ])
 }
 
-const _SetupfrostResponseDebounce = (villageId) => {
+const _SetupFrostResponseDebounce = (villageId) => {
     LISTENFOR_EntityTimer({
         snippet: "lt_scriptedResponseDebounce",
         ownerVillageId: villageId,
@@ -2066,7 +2066,7 @@ const _SetupfrostResponseDebounce = (villageId) => {
         timerName: "frostScriptedResponseDebounce"
     })
 }
-const _frostPortalDamagedResponse = (portal, phase) => {
+const _FrostPortalDamagedResponse = (portal, phase) => {
     const villageId = QUERY_GetVillageIDFromEntity(portal)
     const spawnPosition = GetVillagePortalSpawnLocation(villageId)
     const baseSize = QUERY_GetFactionSizeFromVillageID(villageId)
@@ -2105,28 +2105,28 @@ const _frostPortalDamagedResponse = (portal, phase) => {
             break
     }
     if (HasEntities(newUnits)) {
-        AssignEntitiesToAI(villageId, newUnits, frostVal.aiConfig[frostAI.Guard])
+        AssignEntitiesToAI(villageId, newUnits, frostVal.aiConfig[FrostAI.Guard])
     }
     GatherNearestUnitsAndSendToLocation(["piglin", "mob"], ["boss", "frostBoss"], villageId, GetPlayerOrMobCloseToPortal(portal), 100, "", "")
 }
 
 BASE_DeclarePiglinStructureDamagedResponseHandler("sd_portal_damaged_phase1", (villageId, portal) => {
-    _frostPortalDamagedResponse(portal, 1)
+    _FrostPortalDamagedResponse(portal, 1)
 })
 
 BASE_DeclarePiglinStructureDamagedResponseHandler("sd_portal_damaged_phase2", (villageId, portal) => {
-    _frostPortalDamagedResponse(portal, 2)
+    _FrostPortalDamagedResponse(portal, 2)
 })
 
 BASE_DeclarePiglinStructureDamagedResponseHandler("sd_portal_damaged_phase3", (villageId, portal) => {
-    _frostPortalDamagedResponse(portal, 3)
+    _FrostPortalDamagedResponse(portal, 3)
 })
 
 BASE_DeclarePiglinStructureDamagedResponseHandler("sd_portal_damaged_phase4", (villageId, portal) => {
-    _frostPortalDamagedResponse(portal, 4)
+    _FrostPortalDamagedResponse(portal, 4)
 })
 BASE_DeclarePiglinStructureDamagedResponseHandler("sd_portal_damaged_phase5", (villageId, portal) => {
-    _frostPortalDamagedResponse(portal, 5)
+    _FrostPortalDamagedResponse(portal, 5)
 })
 
 BASE_DeclarePiglinStructureDamagedResponseHandler("sd_tier_2_structure_response", (_villageId, _structure) => {})
@@ -2140,7 +2140,7 @@ BASE_DeclarePiglinStructureDestroyedResponseHandler("sk_tier_3_structure_respons
 BASE_DeclarePlayerStructureBuiltResponseHandler("pb_tier_2_structure_response", (_villageId, _structure) => {})
 
 BASE_DeclarePlayerStructureBuiltResponseHandler("pb_tier_3_structure_response", (villageId, _structure) => {
-    _playfrostTargetStinger(villageId)
+    _playFrostTargetStinger(villageId)
 })
 
 BASE_DeclarePlayerStructureBuiltResponseHandler("pb_bridge_response", (villageId, bridge) => {
@@ -2148,7 +2148,7 @@ BASE_DeclarePlayerStructureBuiltResponseHandler("pb_bridge_response", (villageId
     if (!CheckIfVillageIDIsEscalated(villageId, frostVal.escalation.phase2.name)) {
         _frostEscalate(villageId, frostVal.escalation.phase2, bridge)
     }
-    _playfrostTargetStinger(villageId)
+    _playFrostTargetStinger(villageId)
 })
 
 SNIPPET_NonPopCappedEntityDestroyed("ed_frost_knockback_spread_tactic", (_destroyedEntity, payload) => {
@@ -2219,23 +2219,23 @@ SNIPPET_BuildingComplete("bc_frost_siege_barracks", (buildingEntity, payload) =>
     const villageId = payload.ownerVillageId
     const size = QUERY_GetFactionSizeFromVillageID(villageId)
     const flavour = GetVillageFlavour(villageId)
-    RecruitSpawnedComposition(villageId, frostVal.rallypoints[size][flavour]["frostSiege"], buildingEntity, frostAI.Siege)
+    RecruitSpawnedComposition(villageId, frostVal.rallypoints[size][flavour]["frostSiege"], buildingEntity, FrostAI.Siege)
 })
 SNIPPET_BuildingComplete("bc_frost_assault_barracks", (buildingEntity, payload) => {
     const villageId = payload.ownerVillageId
     const size = QUERY_GetFactionSizeFromVillageID(villageId)
     const flavour = GetVillageFlavour(villageId)
-    RecruitSpawnedComposition(villageId, frostVal.rallypoints[size][flavour]["frostGuard"], buildingEntity, frostAI.Guard)
+    RecruitSpawnedComposition(villageId, frostVal.rallypoints[size][flavour]["frostGuard"], buildingEntity, FrostAI.Guard)
 })
 SNIPPET_BuildingComplete("bc_frost_guard_barracks", (buildingEntity, payload) => {
     const villageId = payload.ownerVillageId
     const size = QUERY_GetFactionSizeFromVillageID(villageId)
     const flavour = GetVillageFlavour(villageId)
-    RecruitSpawnedComposition(villageId, frostVal.rallypoints[size][flavour]["frostGuard"], buildingEntity, frostAI.Guard)
+    RecruitSpawnedComposition(villageId, frostVal.rallypoints[size][flavour]["frostGuard"], buildingEntity, FrostAI.Guard)
 })
 
 SNIPPET_BuildingComplete("bc_frost_barracks_common_setup", (spawner, _payload) => {
-    _SetfrostBarracksConfig(spawner)
+    _SetFrostBarracksConfig(spawner)
 })
 
 /* -------------------------------------------------------------------------- */
@@ -2274,7 +2274,7 @@ SNIPPET_PresenceEntered("spe_frost_gameplay", (triggerEntity, _count, _payload) 
 SNIPPET_VillageDestroyed("vd_frost_faction_portal", (villageId, payload) => {
     const baseSize = QUERY_GetFactionSizeFromVillageID(villageId)
 
-    _CheckIffrostFactionIsDefeated()
+    _CheckIfFrostFactionIsDefeated()
 
     const triggerVolumesToClean = payload.entities
     OUTPUT_DespawnEntities(triggerVolumesToClean)
@@ -2562,7 +2562,7 @@ const _StartBossFight = (villageId) => {
     SetEscalationValueAndUpdateAllBarracksForVillage(villageId, frostVal.barracks, 0)
 }
 
-SNIPPET_CinematicFinished("frostSpawnfrostBoss", (payload) => {
+SNIPPET_CinematicFinished("frostSpawnFrostBoss", (payload) => {
     Once()
     const villageId = payload.ownerVillageId
     //KEEP BOSS CLOSE TO PORTAL
@@ -2579,7 +2579,7 @@ SNIPPET_CinematicFinished("frostSpawnfrostBoss", (payload) => {
     SpawnAtPortal(villageId, "badger:piglin_frost_boss", 1)
     SetAudioPhaseForBase(villageId, frostVal.escalation.phase4.bossAudio)
     const villageEntity = GetVillageEntityFromID(villageId)
-    OUTPUT_MapSetKeyValue(villageEntity, MAP_KEY.BOSS, MAP_BOSS.frost_BOSS)
+    OUTPUT_MapSetKeyValue(villageEntity, MAP_KEY.BOSS, MAP_BOSS.FROST_BOSS)
 })
 
 SNIPPET_HealthChanged("hc_frost_boss_engaged", (boss, _currentHealth, _previousHealth, payload) => {
@@ -2653,21 +2653,21 @@ SNIPPET_EntitySpawned("es_frost_boss", (entitySpawned, payload) => {
 })
 
 SNIPPET_VillageDestroyed("vd_frost_boss_base_destroyed", (villageId) => {
-    _onfrostBossBaseDefeated(villageId)
+    _onFrostBossBaseDefeated(villageId)
 })
 
-const _onfrostBossBaseDefeated = (villageId) => {
+const _onFrostBossBaseDefeated = (villageId) => {
     if (DoOnce("frostBossKilled")) {
-        UnlockJournalEntry(JOURNAL_UNLOCKS.HORDE_frost_BOSS)
+        UnlockJournalEntry(JOURNAL_UNLOCKS.HORDE_FROST_BOSS)
 
         OUTPUT_AddOrSubtractObjectiveProgress("objectives.defeatFrost", 1)
 
         const villageEntity = GetVillageEntityFromID(villageId)
         OUTPUT_MapSetKeyValue(villageEntity, MAP_KEY.BOSS, MAP_BOSS.DEFEATED)
 
-        _CheckIffrostFactionIsDefeated()
+        _CheckIfFrostFactionIsDefeated()
 
-        TelemetrySendBossKilled(GetAllPlayers(), "frostBoss") //telemetry achievement event for killing boss
+        TelemetrySendBossKilled(GetAllPlayers(), "FrostBoss") //telemetry achievement event for killing boss
         TelemetrySendKeyActionCompletedServerEvent(BOSS_BASE_VALS.telemetry.frostBossDefeat)
 
         LISTENFOR_LocalTimer({
@@ -2717,8 +2717,8 @@ SNIPPET_HealthChanged("hc_frost_boss_final_leap", (boss, _currentHealth, _previo
     OUTPUT_SetAttackMode(boss, "spit_attack_escalate_2", true)
 
     const spawnLocation = GetVillagePortalSpawnLocation(payload.ownerVillageId)
-    CreateUnitCompositionAtTarget(spawnLocation, frostCompositions.heavyPatrol, payload.ownerVillageId)
-    CreateUnitCompositionAtTarget(spawnLocation, frostCompositions.heavyPatrol, payload.ownerVillageId)
+    CreateUnitCompositionAtTarget(spawnLocation, FrostCompositions.heavyPatrol, payload.ownerVillageId)
+    CreateUnitCompositionAtTarget(spawnLocation, FrostCompositions.heavyPatrol, payload.ownerVillageId)
     OUTPUT_SetEmitterState(boss, "frost_boss_jumped2")
     Once()
 })
@@ -2802,13 +2802,13 @@ const _PlayMiniDecks = (baseDeck, minideck, deckNames) => {
     })
 }
 
-const _DeckShufflefrost = (deck) => {
-    DECK_ShuffleGroup(deck, RANDOM_GROUP_frost_HORDE)
+const _DeckShuffleFrost = (deck) => {
+    DECK_ShuffleGroup(deck, RANDOM_GROUP_FROST_HORDE)
 }
 
 const _ShuffleMiniDecks = (minideck, deckNames) => {
     deckNames.forEach((name) => {
-        _DeckShufflefrost(minideck[name])
+        _DeckShuffleFrost(minideck[name])
     })
 }
 
@@ -2997,7 +2997,7 @@ const _BuildBridge = (BaseDeck, StartFilters, EndFilters, StartDistrict = null, 
 /* ------------------------ Village Generation Logic ------------------------ */
 
 //Frontline A
-const _frostFactionMakeOutpost = (villageId) => {
+const _FrostFactionMakeOutpost = (villageId) => {
     const baseDeck = DECK_Empty()
     //const flavourBase = GetVillageFlavour(villageId)
     const baseSize = QUERY_GetFactionSizeFromVillageID(villageId)
@@ -3056,7 +3056,7 @@ const _frostFactionMakeOutpost = (villageId) => {
     }
     return baseDeck
 }
-const _frostFactionAttackAMakeBase = (villageId) => {
+const _FrostFactionAttackAMakeBase = (villageId) => {
     const baseDeck = DECK_Empty()
 
     const primaryZone = ZonesCard("def6Zones", 1)
@@ -3079,7 +3079,7 @@ const _frostFactionAttackAMakeBase = (villageId) => {
     DECK_PutOnBottomOf(BuildableCard(BUILDABLE_CARD.TOWER_PIGLIN_ARROW, 2), inner)
     DECK_PutOnBottomOf(BuildableCard(BUILDABLE_CARD.NETHERSPREADER, 1), inner)
     DECK_MultiplyByMultipleRules(inner, [ZoneFilterCard("frostValidZone"), PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START)])
-    _DeckShufflefrost(inner)
+    _DeckShuffleFrost(inner)
 
     const deadZone = LayerOfZonesCard("addLayerOfZones", 1)
     DECK_MultiplyBySingle(deadZone, ZoneTagCard("frostDeadZone"))
@@ -3092,7 +3092,7 @@ const _frostFactionAttackAMakeBase = (villageId) => {
     const spires = BuildableCard(BUILDABLE_CARD.NETHERSPREADER, 1)
     DECK_PutOnBottomOf(BuildableCard(BUILDABLE_CARD.TOWER_PIGLIN_ARROW, 1), spires)
     DECK_MultiplyByMultipleRules(spires, [ZoneFilterCard("frostSmallSpire")])
-    _DeckShufflefrost(spires)
+    _DeckShuffleFrost(spires)
 
     DECK_PutOnBottomOf(portal, baseDeck)
     DECK_PutOnBottomOf(inner, baseDeck)
@@ -3101,7 +3101,7 @@ const _frostFactionAttackAMakeBase = (villageId) => {
     SetupBasicVillageClearingCards(baseDeck)
     OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, baseDeck)
 }
-const _frostFactionAttackBMakeBase = (villageId) => {
+const _FrostFactionAttackBMakeBase = (villageId) => {
     const baseDeck = DECK_Empty()
 
     const primaryZone = ZonesCard("def6Zones", 1)
@@ -3124,7 +3124,7 @@ const _frostFactionAttackBMakeBase = (villageId) => {
     DECK_PutOnBottomOf(BuildableCard(BUILDABLE_CARD.TOWER_PIGLIN_ARROW, 3), inner)
     DECK_PutOnBottomOf(BuildableCard(BUILDABLE_CARD.NETHERSPREADER, 1), inner)
     DECK_MultiplyByMultipleRules(inner, [ZoneFilterCard("frostValidZone"), PlacementPreferenceCard("placeRandomly")])
-    _DeckShufflefrost(inner)
+    _DeckShuffleFrost(inner)
 
     const deadZone = LayerOfZonesCard("addLayerOfZones", 1)
     DECK_MultiplyBySingle(deadZone, ZoneTagCard("frostDeadZone"))
@@ -3141,7 +3141,7 @@ const _frostFactionAttackBMakeBase = (villageId) => {
     const spires = BuildableCard(BUILDABLE_CARD.NETHERSPREADER, 2)
     DECK_PutOnBottomOf(BuildableCard(BUILDABLE_CARD.TOWER_PIGLIN_ARROW, 2), spires)
     DECK_MultiplyByMultipleRules(spires, [ZoneFilterCard("frostSmallSpire")])
-    _DeckShufflefrost(spires)
+    _DeckShuffleFrost(spires)
 
     DECK_PutOnBottomOf(portal, baseDeck)
     DECK_PutOnBottomOf(inner, baseDeck)
@@ -3150,7 +3150,7 @@ const _frostFactionAttackBMakeBase = (villageId) => {
     SetupBasicVillageClearingCards(baseDeck)
     OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, baseDeck)
 }
-const _frostGenerateCentralPlatform = (villageId, baseSize, baseDeck, placePortal = true) => {
+const _FrostGenerateCentralPlatform = (villageId, baseSize, baseDeck, placePortal = true) => {
     //SetupBasicVillageClearingCards(baseDeck)
     let firstZone = DECK_Empty()
     let keepZone = DECK_Empty()
@@ -3226,7 +3226,7 @@ const _frostGenerateCentralPlatform = (villageId, baseSize, baseDeck, placePorta
     DECK_MultiplyByMultipleRules(extraZone2, [ZoneTagCard("frostDeadZone"), ZoneHeightChangeCard(FrostHeight.Flatten)])
     DECK_PutOnBottomOf(extraZone2, baseDeck)
 }
-const _frostGeneratePlateaus = (villageId, baseSize, baseDeck, miniDecks, districts, applyWeathering = true) => {
+const _FrostGeneratePlateaus = (villageId, baseSize, baseDeck, miniDecks, districts, applyWeathering = true) => {
     /* --------------------- Districts and spire generation --------------------- */
     switch (baseSize) {
         case BASE_SIZE_SMALL:
@@ -3358,7 +3358,7 @@ const _frostGeneratePlateaus = (villageId, baseSize, baseDeck, miniDecks, distri
         DECK_PutOnBottomOf(TerrainWeatheringCard("terrainWeathering"), baseDeck)
     }
 }
-const _frostFactionMakeBase = (villageId, baseSize, districts) => {
+const _FrostFactionMakeBase = (villageId, baseSize, districts) => {
     const baseDeck = DECK_Empty()
     const miniDecks = _frostGenMiniDecks(villageId, baseSize)
     if (miniDecks === null) {
@@ -3380,8 +3380,8 @@ const _frostFactionMakeBase = (villageId, baseSize, districts) => {
         _MultiplyMiniDeckByRules(miniDecks, deckNames, rules)
     }
 
-    _frostGenerateCentralPlatform(villageId, baseSize, baseDeck)
-    _frostGeneratePlateaus(villageId, baseSize, baseDeck, miniDecks, districts)
+    _FrostGenerateCentralPlatform(villageId, baseSize, baseDeck)
+    _FrostGeneratePlateaus(villageId, baseSize, baseDeck, miniDecks, districts)
 
     //setup keep walls
     let keepWall = null
@@ -3496,7 +3496,7 @@ const _frostFactionMakeBase = (villageId, baseSize, districts) => {
     }
     return baseDeck
 }
-const _frostGenerateBossPlatforms = (villageId, baseDeck) => {
+const _FrostGenerateBossPlatforms = (villageId, baseDeck) => {
     //districts
     const district1 = DistrictCard("frostBossDistrict1")
     const district2 = DistrictCard("frostBossDistrict2")
@@ -3523,15 +3523,15 @@ const _frostGenerateBossPlatforms = (villageId, baseDeck) => {
     DECK_PutOnBottomOf(district1, baseDeck)
     DECK_PutOnBottomOf(d1Plateau, baseDeck)
 }
-const _frostFactionMakeBossBase = (villageId, baseSize, districts) => {
+const _FrostFactionMakeBossBase = (villageId, baseSize, districts) => {
     const baseDeck = DECK_Empty()
     const miniDecks = _frostGenMiniDecks(villageId, baseSize)
     const spireNames = ["northSpires", "eastSpires", "southSpires", "westSpires"]
     const platformNames = ["northPlatform", "eastPlatform", "southPlatform", "westPlatform"]
 
     //helper for the helper function to use basedeck
-    _frostGenerateBossPlatforms(villageId, baseDeck)
-    _frostGeneratePlateaus(villageId, baseSize, baseDeck, miniDecks, districts)
+    _FrostGenerateBossPlatforms(villageId, baseDeck)
+    _FrostGeneratePlateaus(villageId, baseSize, baseDeck, miniDecks, districts)
 
     DECK_PutOnBottomOf(TerrainWeatheringCard("terrainWeathering"), baseDeck)
     _PlaceObjectiveStructure("frostPortalLarge", baseDeck, [ZoneHeightChangeCard(FrostHeight.H42), ZoneFilterCard("frostBossThirdPlatform"), PlacementPreferenceCard(PLACEMENT_CLOSE_TO_VILLAGE_START), ZoneFilterCard("frostDeadZone"), ForceBuildingPlacementCard("forceBuildingPlacement"), ZoneFilterCard("placeInsideVillageAlways")])
@@ -3623,12 +3623,12 @@ SNIPPET_VillageFinishedBuilding("vfb_frost_base_setup", (villageId, _payload) =>
     }
 
     if (IsSmallOrGreater(baseSize)) {
-        _InitfrostResponses(villageId, true)
+        _InitFrostResponses(villageId, true)
     }
 })
 
 SNIPPET_VillageGenerated("vg_frost", (villageId, _payload) => {
-    DebugOutput("frost Base " + villageId + " has generated", frostVal.debug.outputOn)
+    DebugOutput("Frost Base " + villageId + " has generated", frostVal.debug.outputOn)
     const baseSize = QUERY_GetFactionSizeFromVillageID(villageId)
     if (IsMobAlliancePiglinSize(baseSize)) {
         return
@@ -3677,7 +3677,7 @@ SNIPPET_VillageGenerated("vg_frost", (villageId, _payload) => {
 
     switch (baseSize) {
         case BASE_SIZE_OUTPOST:
-            baseDeck = _frostFactionMakeOutpost(villageId)
+            baseDeck = _FrostFactionMakeOutpost(villageId)
             if (IsPiglinRaidingParty(villageId)) {
                 // eslint-disable-next-line no-undef
                 const shouldSpawnWitchesInCages = QUERY_RandomNumberGroup(0, 99, "witch_spawn_probability") < piglinGeneralVal.globals.cagedWitchProbability * 100
@@ -3693,10 +3693,10 @@ SNIPPET_VillageGenerated("vg_frost", (villageId, _payload) => {
             }
             break
         case BASE_SIZE_BOSS:
-            baseDeck = _frostFactionMakeBossBase(villageId, BASE_SIZE_BOSS, districts)
+            baseDeck = _FrostFactionMakeBossBase(villageId, BASE_SIZE_BOSS, districts)
             break
         default:
-            baseDeck = _frostFactionMakeBase(villageId, baseSize, districts)
+            baseDeck = _FrostFactionMakeBase(villageId, baseSize, districts)
             break
     }
 
@@ -4295,7 +4295,7 @@ const _frostGenMiniDecks = (villageId, baseSize, flavorOverride = "") => {
     if (buildingPlan[baseSize] === undefined) {
         return null
     }
-    return CreateBuildableGenMinidecksForSize(Object.keys(buildingPlan[baseSize]), buildingPlan, baseSize, villageId, RANDOM_GROUP_frost_HORDE)
+    return CreateBuildableGenMinidecksForSize(Object.keys(buildingPlan[baseSize]), buildingPlan, baseSize, villageId, RANDOM_GROUP_FROST_HORDE)
 }
 
 //helper function for reading buildable data for minidecks
@@ -4327,7 +4327,7 @@ SNIPPET_EntitySpawned("es_lava_launcher_vo", (piglinEntity) => {
 
 SNIPPET_CinematicFinished(`cf_${frostVal.cinematic.firstTimeNonShieldBaseIntro}`, (payload) => {
     PlayPresentationActionToAll(frostVal.VO.postIntroVO)
-    UnlockJournalEntry(JOURNAL_UNLOCKS.HORDE_frost_FACTION)
+    UnlockJournalEntry(JOURNAL_UNLOCKS.HORDE_FROST_FACTION)
     PlayBaseTooToughVO(payload.ownerVillageId, 7)
     HandleRSLOnboarding(payload.ownerVillageId)
 })

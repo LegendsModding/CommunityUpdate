@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.wmap_village_fountain_cul08": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_wmap_village_fountain_cul08": "MetaMaterial.mat_wmap_village_fountain_cul08"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

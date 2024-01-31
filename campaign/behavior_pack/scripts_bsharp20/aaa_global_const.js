@@ -25,23 +25,31 @@ const FACTION_NAME_WOF = "faction.pig.wof"
 const FACTION_PIGLINS = [FACTION_NAME_ATTACK, FACTION_NAME_DEFEND, FACTION_NAME_OBSTACLE, FACTION_NAME_FROST]
 const HORDE_PIGLINS_ALL = [FACTION_NAME_ATTACK, FACTION_NAME_DEFEND, FACTION_NAME_OBSTACLE, FACTION_NAME_FROST, FACTION_NAME_DBB, FACTION_NAME_WOF]
 const FACTION_PIGLINS_ALL = [FACTION_NAME_ATTACK, FACTION_NAME_DEFEND, FACTION_NAME_OBSTACLE, FACTION_NAME_FROST, FACTION_NAME_DBB, FACTION_NAME_WOF]
-
-const CULTURE_NAME_VILLAGERS = "faction.cul.001"
+const CULTURE_NAME_FOREST = "faction.cul.001"
+const CULTURE_NAME_FROSTLANDS = "faction.cul.002"
+const CULTURE_NAME_DRYLANDS = "faction.cul.003"
+const CULTURE_NAME_WETLANDS = "faction.cul.004"
+const CULTURE_NAME_GRASSLANDS = "faction.cul.005"
+const CULTURE_NAME_BROKENLANDS = "faction.cul.006"
+const CULTURE_NAME_FATEFUL_LAND = "faction.cul.007"
+const CULTURE_NAME_JUNGLE = "faction.cul.008"
+const CULTURE_NAME_MOUNTAIN = "faction.cul.009"
+const CULTURE_NAME_VILLAGERS = [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN]
 
 const MOB_ALLIANCE_NAME_CREEPER = "faction.mob.alliance.creeper"
-const MOB_ALLIANCE_NAME_SKELETON = "faction.mob.alliance.skeleton"
-const MOB_ALLIANCE_NAME_SPIDER = "faction.mob.alliance.spider"
-const MOB_ALLIANCE_NAME_SLIME = "faction.mob.alliance.slime"
 const MOB_ALLIANCE_NAME_SILVERFISH = "faction.mob.alliance.silverfish"
+const MOB_ALLIANCE_NAME_SKELETON = "faction.mob.alliance.skeleton"
+const MOB_ALLIANCE_NAME_SLIME = "faction.mob.alliance.slime"
+const MOB_ALLIANCE_NAME_SPIDER = "faction.mob.alliance.spider"
 const MOB_ALLIANCE_NAME_ZOMBIE = "faction.mob.alliance.zombie"
 
-const FACTION_MOB_ALLIANCES = [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH]
+const FACTION_MOB_ALLIANCES = [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_ZOMBIE]
 
 const MOB_ALLIANCE_NAME_CREEPER_PIGLINS = "faction.mob.alliance.piglin.creeper"
-const MOB_ALLIANCE_NAME_SKELETON_PIGLINS = "faction.mob.alliance.piglin.skeleton"
-const MOB_ALLIANCE_NAME_SPIDER_PIGLINS = "faction.mob.alliance.piglin.spider"
-const MOB_ALLIANCE_NAME_SLIME_PIGLINS = "faction.mob.alliance.piglin.slime"
 const MOB_ALLIANCE_NAME_SILVERFISH_PIGLINS = "faction.mob.alliance.piglin.silverfish"
+const MOB_ALLIANCE_NAME_SKELETON_PIGLINS = "faction.mob.alliance.piglin.skeleton"
+const MOB_ALLIANCE_NAME_SLIME_PIGLINS = "faction.mob.alliance.piglin.slime"
+const MOB_ALLIANCE_NAME_SPIDER_PIGLINS = "faction.mob.alliance.piglin.spider"
 const MOB_ALLIANCE_NAME_ZOMBIE_PIGLINS = "faction.mob.alliance.piglin.zombie"
 
 const POI_TOWER_NAME_KNOCKBACK = "faction.poi.tower_01"
@@ -71,14 +79,9 @@ const POI_NAME_ALLY_07 = "faction.poi.ally.07"
 
 const FACTION_POI_ALLIES = [POI_NAME_ALLY_01, POI_NAME_ALLY_02, POI_NAME_ALLY_04, POI_NAME_ALLY_05, POI_NAME_ALLY_06, POI_NAME_ALLY_07]
 
-const POI_NAME_LEGEND_DRAGON_RED = "faction.poi.legend.dragon.red"
-const POI_NAME_LEGEND_KILLER_RABBIT = "faction.poi.legend.killer_rabbit"
+const FACTION_POI_ALL = [POI_TOWER_NAME_KNOCKBACK, POI_TOWER_NAME_FREEZE, POI_TOWER_NAME_STUN, POI_TOWER_NAME_BURN, POI_TOWER_NAME_GIANT, POI_NAME_MOUNT_01, POI_NAME_MOUNT_03, POI_NAME_MOUNT_04, POI_NAME_MOUNT_06, POI_NAME_MOUNT_07, POI_NAME_MOUNT_08, POI_NAME_MOUNT_09, POI_NAME_ALLY_01, POI_NAME_ALLY_02, POI_NAME_ALLY_04, POI_NAME_ALLY_05, POI_NAME_ALLY_06, POI_NAME_ALLY_07]
 
-const FACTION_POI_LEGENDS = [POI_NAME_LEGEND_DRAGON_RED, POI_NAME_LEGEND_KILLER_RABBIT]
-
-const FACTION_POI_ALL = [POI_TOWER_NAME_KNOCKBACK, POI_TOWER_NAME_FREEZE, POI_TOWER_NAME_STUN, POI_TOWER_NAME_BURN, POI_TOWER_NAME_GIANT, POI_NAME_MOUNT_01, POI_NAME_MOUNT_03, POI_NAME_MOUNT_04, POI_NAME_MOUNT_06, POI_NAME_MOUNT_07, POI_NAME_MOUNT_08, POI_NAME_MOUNT_09, POI_NAME_ALLY_01, POI_NAME_ALLY_02, POI_NAME_ALLY_04, POI_NAME_ALLY_05, POI_NAME_ALLY_06, POI_NAME_ALLY_07, POI_NAME_LEGEND_DRAGON_RED, POI_NAME_LEGEND_KILLER_RABBIT]
-
-const MOB_ALLIANCE_IDS = ["creeper", "skeleton", "zombie", "spider", "slime", "silverfish"]
+const MOB_ALLIANCE_IDS = ["creeper", "silverfish", "skeleton", "slime", "spider", "zombie"]
 
 const TEAM_WILD = "wild_team"
 const TEAM_BLUE = "team_two"
@@ -118,9 +121,9 @@ const BASE_SIZE_PIGLIN_WOF = "wofBase"
 const BASE_SIZE_PIGLIN_ZOMBIE = "piglin_occupying_zombie_mob_alliance"
 const BASE_SIZE_PIGLIN_CREEPER = "piglin_occupying_creeper_mob_alliance"
 const BASE_SIZE_PIGLIN_SKELETON = "piglin_occupying_skeleton_mob_alliance"
-const BASE_SIZE_PIGLIN_SPIDER = "piglin_occupying_spider_mob_alliance"
-const BASE_SIZE_PIGLIN_SLIME = "piglin_occupying_slime_mob_alliance"
 const BASE_SIZE_PIGLIN_SILVERFISH = "piglin_occupying_silverfish_mob_alliance"
+const BASE_SIZE_PIGLIN_SLIME = "piglin_occupying_slime_mob_alliance"
+const BASE_SIZE_PIGLIN_SPIDER = "piglin_occupying_spider_mob_alliance"
 const BASE_SIZE_ACT1_FIRST_SKIRMISH = "piglin_act1_first_skirmish"
 const BASE_SIZE_ACT1_SECOND_SKIRMISH = "piglin_act1_second_skirmish"
 const BASE_SIZE_ACT1_NON_PORTAL_ATTACK_BASE = "piglin_act1_non_portal_attack_base"
@@ -131,7 +134,7 @@ const BASE_SIZE_ALL_PORTALS_AND_BOSS = [BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_
 const BASE_SIZE_ALL = [BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_SIZE_LARGE, BASE_SIZE_BOSS, BASE_SIZE_OUTPOST]
 const BASE_SIZE_ALL_FOBS = [BASE_SIZE_FOB_SMALL, BASE_SIZE_FOB_MEDIUM, BASE_SIZE_FOB_LARGE]
 const BASE_SIZE_ALL_VILLAGES = [VILLAGE_SIZE_DEFAULT]
-const BASE_SIZE_ALL_PORTALS_AND_BOSS_AND_MOB = [BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_SIZE_LARGE, BASE_SIZE_BOSS, BASE_SIZE_PIGLIN_CREEPER, BASE_SIZE_PIGLIN_SKELETON, BASE_SIZE_PIGLIN_SPIDER, BASE_SIZE_PIGLIN_SLIME, BASE_SIZE_PIGLIN_SILVERFISH, BASE_SIZE_PIGLIN_ZOMBIE]
+const BASE_SIZE_ALL_PORTALS_AND_BOSS_AND_MOB = [BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_SIZE_LARGE, BASE_SIZE_BOSS, BASE_SIZE_PIGLIN_CREEPER, BASE_SIZE_PIGLIN_SILVERFISH, BASE_SIZE_PIGLIN_SKELETON, BASE_SIZE_PIGLIN_SLIME, BASE_SIZE_PIGLIN_SPIDER, BASE_SIZE_PIGLIN_ZOMBIE]
 
 const NORTH = "north"
 const SOUTH = "south"
@@ -155,8 +158,8 @@ const POI_NAME_TOWER_GIANT = "tower_006"
 // These seem very redundant, and should just use the actual mob alliance faction names.
 const TELEMETRY_MOB_ALLIANCE_NAMES = {
     creeper: "creeper_mob_alliance",
-    skeleton: "skeleton_mob_alliance",
     silverfish: "silverfish_mob_alliance",
+    skeleton: "skeleton_mob_alliance",
     slime: "slime_mob_alliance",
     spider: "spider_mob_alliance",
     zombie: "zombie_mob_alliance",
@@ -170,6 +173,10 @@ const TELEMETRY_MOB_ALLIANCE_NAMES = {
     mount06Lure: "mount_006_lure",
     mount07: "mount_007",
     mount07Lure: "mount_007_lure",
+    mount08: "mount_008",
+    mount08Lure: "mount_008_lure",
+    mount09: "mount_009",
+    mount09Lure: "mount_009_lure",
     ally01: "ally_001",
     ally01Piece01: "ally_001_piece_001",
     ally01Piece02: "ally_001_piece_002",
@@ -183,8 +190,6 @@ const TELEMETRY_MOB_ALLIANCE_NAMES = {
     ally06Piece01: "ally_006_piece_001",
     ally07: "ally_007",
     ally07Piece01: "ally_007_piece_001",
-    legendDragonRed: "legend_001",
-    legendKillerRabbit: "legend_002",
     tower01: "tower_001",
     tower02: "tower_002",
     tower04: "tower_004",
@@ -216,9 +221,9 @@ const BARRACKS_NAME_SPECIALIST = "spawner_piglin_barracks_specialist"
 const BARRACKS_NAME_ENGINEER = "badger:spawner_piglin_barracks_disruptor"
 const BARRACKS_NAME_CREEPER = "spawner_db_ally_creeper"
 const BARRACKS_NAME_SKELETON = "spawner_db_ally_skeleton"
-const BARRACKS_NAME_SILVERFISH = "spawner_db_ally_silverfish"
-const BARRACKS_NAME_SLIME = "spawner_db_ally_slime"
 const BARRACKS_NAME_SPIDER = "spawner_db_ally_spider"
+const BARRACKS_NAME_SLIME = "spawner_db_ally_slime"
+const BARRACKS_NAME_SILVERFISH = "spawner_db_ally_silverfish"
 const BARRACKS_NAME_ZOMBIE = "spawner_db_ally_zombie"
 const BARRACKS_NAME_ALLIES = "spawner_db_ally_zombie"
 const BARRACKS_NAME_VINDICATORS = "spawner_fb_ally_vindicator"
@@ -376,6 +381,7 @@ const DEFEND_UNIQUE_AI = {
 const TAGS_AI_CONTROL_GROUPS = [DEFEND_SIEGE_AI.CG_0, DEFEND_SIEGE_AI.CG_1, DEFEND_DEFEND_AI.CG_0, DEFEND_DEFEND_AI.CG_1, DEFEND_UNIQUE_AI.CG_0, DEFEND_UNIQUE_AI.CG_1]
 
 const GAMEMODE_CAMPAIGN = "campaign"
+const GAMEMODE_CAMPAIGN_LCU = "lcu_campaign"
 const GAMEMODE_CAMPAIGN_CUSTOM = "campaign_custom"
 const GAMEMODE_ONBOARDING = "onboarding"
 const GAMEMODE_PVP = "conquest"
@@ -399,8 +405,8 @@ const PLACEMENT_OUTSIDE_VILLAGE = "placeOutsideVillage"
 // Random number generator groups.
 const RANDOM_GROUP_ATTACK_HORDE = "random_group_attack_horde"
 const RANDOM_GROUP_DEFEND_HORDE = "random_group_defend_horde"
-const RANDOM_GROUP_OBSTACLE_HORDE = "random_group_obstacle_horde"
 const RANDOM_GROUP_FROST_HORDE = "random_group_frost_horde"
+const RANDOM_GROUP_OBSTACLE_HORDE = "random_group_obstacle_horde"
 const RANDOM_GROUP_DBB_HORDE = "random_group_dbb_horde"
 const RANDOM_GROUP_WOF_HORDE = "random_group_wof_horde"
 const RANDOM_GROUP_VILLAGER = "random_group_villager"
@@ -409,8 +415,8 @@ const RANDOM_GROUP_MOB_OCCUPATION = "random_group_mob_occupation"
 
 const BUILDING_APPEARANCE_OVERRIDE_ATTACK_HORDE = "appearance_override_attack_horde"
 const BUILDING_APPEARANCE_OVERRIDE_DEFEND_HORDE = "appearance_override_defend_horde"
-const BUILDING_APPEARANCE_OVERRIDE_OBSTACLE_HORDE = "appearance_override_obstacle_horde"
 const BUILDING_APPEARANCE_OVERRIDE_FROST_HORDE = "appearance_override_frost_horde"
+const BUILDING_APPEARANCE_OVERRIDE_OBSTACLE_HORDE = "appearance_override_obstacle_horde"
 const BUILDING_APPEARANCE_OVERRIDE_DBB_HORDE = "appearance_override_dbb_horde"
 const BUILDING_APPEARANCE_OVERRIDE_WOF_HORDE = "appearance_override_wof_horde"
 
@@ -495,10 +501,10 @@ const GV_INVASION_OPENING_NIGHT = "gv_invasion_first_night"
 const GV_DBB_VARIANT = "gb_dbb_variant"
 const GV_START_MOB_ALLIANCE_OCCUPATION = {
     [MOB_ALLIANCE_NAME_CREEPER]: "gv_start_creeper_occupation",
-    [MOB_ALLIANCE_NAME_SKELETON]: "gv_start_skeleton_occupation",
-    [MOB_ALLIANCE_NAME_SPIDER]: "gv_start_spider_occupation",
-    [MOB_ALLIANCE_NAME_SLIME]: "gv_start_slime_occupation",
     [MOB_ALLIANCE_NAME_SILVERFISH]: "gv_start_silverfish_occupation",
+    [MOB_ALLIANCE_NAME_SKELETON]: "gv_start_skeleton_occupation",
+    [MOB_ALLIANCE_NAME_SLIME]: "gv_start_slime_occupation",
+    [MOB_ALLIANCE_NAME_SPIDER]: "gv_start_spider_occupation",
     [MOB_ALLIANCE_NAME_ZOMBIE]: "gv_start_zombie_occupation"
 }
 
@@ -521,8 +527,8 @@ const ACTS = {
 
 const MOB_BEHAVIOUR_DICTIONARY = {
     creeper: { act1: "badger:behavior_creeper_act1", act2: "badger:behavior_creeper_act2", caged: "badger:behavior_creeper_caged", default: "badger:mob_creeper" },
-    skeleton: { act1: "badger:behavior_skeleton_act1", act2: "badger:behavior_skeleton_act2", caged: "badger:behavior_skeleton_caged", default: "badger:mob_skeleton" },
     silverfish: { act1: "badger:behavior_silverfish_act1", act2: "badger:behavior_silverfish_act2", caged: "badger:behavior_silverfish_caged", default: "badger:mob_silverfish" },
+    skeleton: { act1: "badger:behavior_skeleton_act1", act2: "badger:behavior_skeleton_act2", caged: "badger:behavior_skeleton_caged", default: "badger:mob_skeleton" },
     slime: { act1: "badger:behavior_slime_act1", act2: "badger:behavior_slime_act2", caged: "badger:behavior_slime_caged", default: "badger:mob_slime" },
     spider: { act1: "badger:behavior_spider_act1", act2: "badger:behavior_spider_act2", caged: "badger:behavior_spider_caged", default: "badger:mob_spider" },
     zombie: { act1: "badger:behavior_zombie_act1", act2: "badger:behavior_zombie_act2", caged: "badger:behavior_zombie_caged", default: "badger:mob_zombie" },
@@ -532,13 +538,22 @@ const MOB_BEHAVIOUR_DICTIONARY = {
 const MOB_ARCHETYPE = {
     ZOMBIE: "badger:mob_zombie",
     CREEPER: "badger:mob_creeper",
-    SKELETON: "badger:mob_skeleton",
     SILVERFISH: "badger:mob_silverfish",
+    SKELETON: "badger:mob_skeleton",
     SLIME: "badger:mob_slime",
     SPIDER: "badger:mob_spider",
     WITCH: "badger:mob_illager_witch",
-    VILLAGERS: "badger:villager_culture01",
-    ANIMALS: ["badger:animal_badger", "badger:animal_fox", "badger:animal_ocelot", "badger:animal_sea_turtle", "badger:animal_pig", "badger:animal_wolf", "badger:animal_llama", "badger:animal_rabbit"]
+    VILLAGERS: "badger:villager_culture07",
+    VILLAGERS_FOREST: "badger:villager_culture01",
+    VILLAGERS_FROSTLANDS: "badger:villager_culture02",
+    VILLAGERS_DRYLANDS: "badger:villager_culture03",
+    VILLAGERS_WETLANDS: "badger:villager_culture04",
+    VILLAGERS_GRASSLANDS: "badger:villager_culture05",
+    VILLAGERS_BROKENLANDS: "badger:villager_culture06",
+    VILLAGERS_FATEFUL_LAND: "badger:villager_culture07",
+    VILLAGERS_JUNGLE: "badger:villager_culture08",
+    VILLAGERS_MOUNTAIN: "badger:villager_culture09",
+    ANIMALS: ["badger:animal_badger", "badger:animal_fox", "badger:animal_ocelot", "badger:animal_sea_turtle", "badger:animal_pig", "badger:animal_wolf", "badger:animal_llama", "badger:animal_rabbit", "animal_armadillo", "animal_cow", "animal_crab", "animal_crocapus", "animal_penguin", "animal_pinnipod", "animal_polar_bear", "animal_scarab_beetle", "animal_scorpion", "animal_sheep"]
 }
 
 const EMPTY_ENTITY_GROUP = []
@@ -547,8 +562,6 @@ const OWNER_VILLAGE_OPT_OUT = 1234567890
 const ICON_QUESTION_MARK = "badger:wmap_question_mark"
 
 const VILLAGE_WITH_CARRIER_GOLEM_PIECE_TAG = "hasCarrierPiece"
-const VILLAGE_WITH_DRILL_GOLEM_PIECE_TAG = "hasDrillPiece"
-const VILLAGE_WITH_GRAPPLER_GOLEM_PIECE_TAG = "hasGrapplerPiece"
 
 const FACTION_ACTION_BUILD_DEFENSIVE_OUTPOST = "build_defensive_outpost"
 const FACTION_ACTION_BUILD_OFFENSIVE_OUTPOST = "build_offensive_outpost"
@@ -646,14 +659,14 @@ const GV_ROAMING_PIGLIN_SPAWNERS_CONTROL = {
     HORDE_FROST_MEDIC: "disable_spawner_piglin_faction_frost_medic",
     HORDE_DEFEND_MEDIC_DAY: "disable_sspawner_piglin_faction_medic_defend_day",
     HORDE_ATTACK_MEDIC_DAY: "disable_spawner_piglin_faction_medic_attack_day",
-    HORDE_OBSTACLE_MEDIC_DAY: "disable_spawner_piglin_faction_medic_obstacle_day",
-    HORDE_FROST_MEDIC_DAY: "disable_spawner_piglin_faction_medic_frost_day"
+    HORDE_FROST_MEDIC_DAY: "disable_spawner_piglin_faction_medic_frost_day",
+    HORDE_OBSTACLE_MEDIC_DAY: "disable_spawner_piglin_faction_medic_obstacle_day"
 }
 
 const GV_ROAMING_PIGLIN_DEFEND_FACTION_SPAWNERS = [GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_BRUISER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_BRUISER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_RUNT, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_RUNT_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PORTAL_GUARD, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PORTAL_GUARD_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_ENGINEER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_ENGINEER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_DEFEND_MEDIC, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_DEFEND_MEDIC_DAY]
 const GV_ROAMING_PIGLIN_ATTACK_FACTION_SPAWNERS = [GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_SEEKER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_SEEKER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_WARBOAR, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_WARBOAR_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PACK_PIGMADILO, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PACK_PIGMADILO_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_ATTACK_MEDIC, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_ATTACK_MEDIC_DAY]
 const GV_ROAMING_PIGLIN_OBSTACLE_FACTION_SPAWNERS = [GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRENADIER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRENADIER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRUNTER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRUNTER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PIGGO_LAUNCHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PIGGO_LAUNCHER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_OBSTACLE_MEDIC, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_OBSTACLE_MEDIC_DAY]
-const GV_ROAMING_PIGLIN_FROST_FACTION_SPAWNERS = [GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_SEEKER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_SEEKER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRUNTER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRUNTER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PIGGO_LAUNCHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PIGGO_LAUNCHER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_FROST_MEDIC, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_FROST_MEDIC_DAY]
+const GV_ROAMING_PIGLIN_FROST_FACTION_SPAWNERS = [GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRENADIER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRENADIER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRUNTER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_GRUNTER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PIGGO_LAUNCHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_PACK_PIGGO_LAUNCHER_DAY_NETHER, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_FROST_MEDIC, GV_ROAMING_PIGLIN_SPAWNERS_CONTROL.HORDE_FROST_MEDIC_DAY]
 
 //commonly used zone height cards for obstacle bases
 const ObstacleHeight = {
@@ -699,49 +712,48 @@ const ObstacleHeight = {
     H52: "52Height",
     H54: "54Height"
 }
-
 const FrostHeight = {
-    Flatten: "Flatten",
-    H1: "1Height",
-    H2: "2Height",
-    H3: "3Height",
-    H4: "4Height",
-    H5: "5Height",
-    H6: "6Height",
-    H7: "7Height",
-    H8: "8Height",
-    H9: "9Height",
-    H10: "10Height",
-    H11: "11Height",
-    H12: "12Height",
-    H13: "13Height",
-    H14: "14Height",
-    H15: "15Height",
-    H16: "16Height",
-    H17: "17Height",
-    H18: "18Height",
-    H19: "19Height",
-    H20: "20Height",
-    H21: "21Height",
-    H22: "22Height",
-    H23: "23Height",
-    H24: "24Height",
-    H26: "26Height",
-    H28: "28Height",
-    H29: "29Height",
-    H30: "30Height",
-    H32: "32Height",
-    H34: "34Height",
-    H36: "36Height",
-    H38: "38Height",
-    H40: "40Height",
-    H42: "42Height",
-    H44: "44Height",
-    H46: "46Height",
-    H48: "48Height",
-    H50: "50Height",
-    H52: "52Height",
-    H54: "54Height"
+    Flatten: "FlattenFrost",
+    H1: "1HeightFrost",
+    H2: "2HeightFrost",
+    H3: "3HeightFrost",
+    H4: "4HeightFrost",
+    H5: "5HeightFrost",
+    H6: "6HeightFrost",
+    H7: "7HeightFrost",
+    H8: "8HeightFrost",
+    H9: "9HeightFrost",
+    H10: "10HeightFrost",
+    H11: "11HeightFrost",
+    H12: "12HeightFrost",
+    H13: "13HeightFrost",
+    H14: "14HeightFrost",
+    H15: "15HeightFrost",
+    H16: "16HeightFrost",
+    H17: "17HeightFrost",
+    H18: "18HeightFrost",
+    H19: "19HeightFrost",
+    H20: "20HeightFrost",
+    H21: "21HeightFrost",
+    H22: "22HeightFrost",
+    H23: "23HeightFrost",
+    H24: "24HeightFrost",
+    H26: "26HeightFrost",
+    H28: "28HeightFrost",
+    H29: "29HeightFrost",
+    H30: "30HeightFrost",
+    H32: "32HeightFrost",
+    H34: "34HeightFrost",
+    H36: "36HeightFrost",
+    H38: "38HeightFrost",
+    H40: "40HeightFrost",
+    H42: "42HeightFrost",
+    H44: "44HeightFrost",
+    H46: "46HeightFrost",
+    H48: "48HeightFrost",
+    H50: "50HeightFrost",
+    H52: "52HeightFrost",
+    H54: "54HeightFrost"
 }
 
 //Commonly used direction placement cards
@@ -947,10 +959,10 @@ const ALLOWED_INVASION_BASE_SIZES = [BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_SIZ
 const SLOT = {
     BASE: "slot_invasion",
     OB_MA_ZOMBIE: "zombiePiglinBaseSlot",
-    OB_MA_SKELETON: "skeletonPiglinBaseSlot",
-    OB_MA_SPIDER: "spiderPiglinBaseSlot",
     OB_MA_SILVERFISH: "silverfishPiglinBaseSlot",
+    OB_MA_SKELETON: "skeletonPiglinBaseSlot",
     OB_MA_SLIME: "slimePiglinBaseSlot",
+    OB_MA_SPIDER: "spiderPiglinBaseSlot",
     OB_MA_CREEPER: "creeperPiglinBaseSlot"
 }
 
@@ -995,10 +1007,10 @@ const STAMP_TEXTURES = [
         [BASE_SIZE_FOB_LARGE]: "piglin_attack_ob",
         // MA Occupation Bases
         [BASE_SIZE_PIGLIN_CREEPER]: "piglin_attack_small_01",
-        [BASE_SIZE_PIGLIN_SKELETON]: "piglin_attack_small_01",
-        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_attack_small_01",
-        [BASE_SIZE_PIGLIN_SLIME]: "piglin_attack_small_01",
         [BASE_SIZE_PIGLIN_SILVERFISH]: "piglin_attack_small_01",
+        [BASE_SIZE_PIGLIN_SKELETON]: "piglin_attack_small_01",
+        [BASE_SIZE_PIGLIN_SLIME]: "piglin_attack_small_01",
+        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_attack_small_01",
         [BASE_SIZE_PIGLIN_ZOMBIE]: "piglin_attack_small_01"
     },
     {
@@ -1015,10 +1027,10 @@ const STAMP_TEXTURES = [
         [BASE_SIZE_FOB_LARGE]: "piglin_defend_ob",
         // MA Occupation Bases
         [BASE_SIZE_PIGLIN_CREEPER]: "piglin_biome_defend_small",
-        [BASE_SIZE_PIGLIN_SKELETON]: "piglin_biome_defend_small",
-        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_biome_defend_small",
-        [BASE_SIZE_PIGLIN_SLIME]: "piglin_biome_defend_small",
         [BASE_SIZE_PIGLIN_SILVERFISH]: "piglin_biome_defend_small",
+        [BASE_SIZE_PIGLIN_SKELETON]: "piglin_biome_defend_small",
+        [BASE_SIZE_PIGLIN_SLIME]: "piglin_biome_defend_small",
+        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_biome_defend_small",
         [BASE_SIZE_PIGLIN_ZOMBIE]: "piglin_biome_defend_small"
     },
     {
@@ -1035,10 +1047,10 @@ const STAMP_TEXTURES = [
         [BASE_SIZE_FOB_LARGE]: "piglin_obstacle_ob",
         // MA Occupation Bases
         [BASE_SIZE_PIGLIN_CREEPER]: "piglin_obstacle_ma_01",
+        [BASE_SIZE_PIGLIN_SILVERFISH]: "piglin_obstacle_ma_01",
         [BASE_SIZE_PIGLIN_SKELETON]: "piglin_obstacle_ma_01",
-        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_obstacle_ma_01",
         [BASE_SIZE_PIGLIN_SLIME]: "piglin_obstacle_ma_01",
-        [BASE_SIZE_PIGLIN_SILVERFISHR]: "piglin_obstacle_ma_01",
+        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_obstacle_ma_01",
         [BASE_SIZE_PIGLIN_ZOMBIE]: "piglin_obstacle_ma_01"
     },
     {
@@ -1055,10 +1067,10 @@ const STAMP_TEXTURES = [
         [BASE_SIZE_FOB_LARGE]: "piglin_frost_ob",
         // MA Occupation Bases
         [BASE_SIZE_PIGLIN_CREEPER]: "piglin_frost_ma_01",
-        [BASE_SIZE_PIGLIN_SKELETON]: "piglin_frost_ma_01",
-        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_frost_ma_01",
         [BASE_SIZE_PIGLIN_SILVERFISH]: "piglin_frost_ma_01",
+        [BASE_SIZE_PIGLIN_SKELETON]: "piglin_frost_ma_01",
         [BASE_SIZE_PIGLIN_SLIME]: "piglin_frost_ma_01",
+        [BASE_SIZE_PIGLIN_SPIDER]: "piglin_frost_ma_01",
         [BASE_SIZE_PIGLIN_ZOMBIE]: "piglin_frost_ma_01"
     },
     {
@@ -1165,19 +1177,18 @@ const GV_WORLD_SPAWNER_CREEPER_CONFLICT = "gv_world_spawner_creeper_conflict"
 const GV_WORLD_SPAWNER_ZOMBIE = "gv_world_spawner_zombie"
 const GV_WORLD_SPAWNER_ZOMBIE_HOMESTEAD = "gv_world_spawner_zombie_homestead"
 const GV_WORLD_SPAWNER_ZOMBIE_CONFLICT = "gv_world_spawner_zombie_conflict"
-const GV_WORLD_SPAWNER_SKELETON = "gv_world_spawner_skeleton"
-const GV_WORLD_SPAWNER_SKELETON_HOMESTEAD = "gv_world_spawner_skeleton_homestead"
-const GV_WORLD_SPAWNER_SKELETON_CONFLICT = "gv_world_spawner_skeleton_conflict"
-const GV_WORLD_SPAWNER_SPIDER = "gv_world_spawner_spider"
-const GV_WORLD_SPAWNER_SPIDER_HOMESTEAD = "gv_world_spawner_spider_homestead"
-const GV_WORLD_SPAWNER_SPIDER_CONFLICT = "gv_world_spawner_spider_conflict"
-const GV_WORLD_SPAWNER_SLIME = "gv_world_spawner_slime"
-const GV_WORLD_SPAWNER_SLIME_HOMESTEAD = "gv_world_spawner_slime_homestead"
-const GV_WORLD_SPAWNER_SLIME_CONFLICT = "gv_world_spawner_slime_conflict"
 const GV_WORLD_SPAWNER_SILVERFISH = "gv_world_spawner_silverfish"
 const GV_WORLD_SPAWNER_SILVERFISH_HOMESTEAD = "gv_world_spawner_silverfish_homestead"
 const GV_WORLD_SPAWNER_SILVERFISH_CONFLICT = "gv_world_spawner_silverfish_conflict"
-
+const GV_WORLD_SPAWNER_SKELETON = "gv_world_spawner_skeleton"
+const GV_WORLD_SPAWNER_SKELETON_HOMESTEAD = "gv_world_spawner_skeleton_homestead"
+const GV_WORLD_SPAWNER_SKELETON_CONFLICT = "gv_world_spawner_skeleton_conflict"
+const GV_WORLD_SPAWNER_SLIME = "gv_world_spawner_slime"
+const GV_WORLD_SPAWNER_SLIME_HOMESTEAD = "gv_world_spawner_slime_homestead"
+const GV_WORLD_SPAWNER_SLIME_CONFLICT = "gv_world_spawner_slime_conflict"
+const GV_WORLD_SPAWNER_SPIDER = "gv_world_spawner_spider"
+const GV_WORLD_SPAWNER_SPIDER_HOMESTEAD = "gv_world_spawner_spider_homestead"
+const GV_WORLD_SPAWNER_SPIDER_CONFLICT = "gv_world_spawner_spider_conflict"
 
 const TAG_REVEALED_POI = "revealed_poi"
 
@@ -1188,8 +1199,6 @@ const POI_WAYPOINT_ICON_DICTIONARY = {
     ["poiAlly05Val"]: "waypoint_mob_golem_sniper",
     ["poiAlly06Val"]: "waypoint_mob_golem_drill",
     ["poiAlly07Val"]: "waypoint_mob_golem_grappler",
-    ["poiLegendDragonRedVal"]: "waypoint_dragon_red",
-    ["poiLegendKillerRabbitVal"]: "waypoint_killer_rabbit",
     ["mount01"]: "temp_waypoint_purple_tiger",
     ["mount03"]: "temp_waypoint_giant_beetle",
     ["mount04"]: "temp_waypoint_terror_bird",
@@ -1229,10 +1238,10 @@ const JOURNAL_UNLOCKS = {
     STONE_GOLEM: "unlock_journal_cobblestone_golem",
     MOB_CREEPER: "unlock_journal_mob_creeper",
     MOB_ZOMBIE: "unlock_journal_mob_zombie",
-    MOB_SKELETON: "unlock_journal_mob_skeleton",
-    MOB_SPIDER: "unlock_journal_mob_spider",
-    MOB_SLIME: "unlock_journal_mob_slime",
     MOB_SILVERFISH: "unlock_journal_mob_silverfish",
+    MOB_SKELETON: "unlock_journal_mob_skeleton",
+    MOB_SLIME: "unlock_journal_mob_slime",
+    MOB_SPIDER: "unlock_journal_mob_spider",
     MOUNT_TIGER: "unlock_journal_mount_tiger",
     MOUNT_BEETLE: "unlock_journal_mount_beetle",
     MOUNT_BIRD: "unlock_journal_mount_bird",
@@ -1244,12 +1253,10 @@ const JOURNAL_UNLOCKS = {
     VINDICATOR: "unlock_journal_vindicator",
     ALLY_FALLEN_WARRIOR: "unlock_journal_ally_fallen_warrior",
     ALLY_SPAWNER: "unlock_journal_ally_spawner",
-    ALLY_DRILL: "unlock_journal_ally_drill",
-    ALLY_GRAPPLER: "unlock_journal_ally_grappler",
     ALLY_SHIELD: "unlock_journal_ally_shield",
     ALLY_SNIPER: "unlock_journal_ally_sniper",
-    LEGEND_DRAGON_RED: "unlock_journal_legend_dragon_red",
-    LEGEND_KILLER_RABBIT: "unlock_journal_legend_killer_rabbit",
+    ALLY_DRILL: "unlock_journal_ally_drill",
+    ALLY_GRAPPLER: "unlock_journal_ally_grappler",
     TOWER_BLAST: "unlock_journal_tower_blast",
     TOWER_STUN: "unlock_journal_tower_stun",
     TOWER_FROST: "unlock_journal_tower_frost",
@@ -1265,12 +1272,12 @@ const JOURNAL_UNLOCKS = {
     HAZARD_GEYSER: "unlock_journal_hazard_geyser",
     HORDE_ATTACK_FACTION: "unlock_journal_horde_attack_faction",
     HORDE_DEFEND_FACTION: "unlock_journal_horde_defend_faction",
-    HORDE_OBSTACLE_FACTION: "unlock_journal_horde_obstacle_faction",
     HORDE_FROST_FACTION: "unlock_journal_horde_frost_faction",
+    HORDE_OBSTACLE_FACTION: "unlock_journal_horde_obstacle_faction",
     HORDE_ATTACK_BOSS: "unlock_journal_horde_attack_boss",
     HORDE_DEFEND_BOSS: "unlock_journal_horde_defend_boss",
-    HORDE_OBSTACLE_BOSS: "unlock_journal_horde_obstacle_boss",
     HORDE_FROST_BOSS: "unlock_journal_horde_frost_boss",
+    HORDE_OBSTACLE_BOSS: "unlock_journal_horde_obstacle_boss",
     GREAT_HOG: "unlock_journal_great_hog",
     PIGLIN_INVASION: "unlock_journal_piglin_invasion",
     PIGLIN_CRATE: "unlock_journal_piglin_crate",

@@ -27,36 +27,31 @@
     {
         "name" : "objectives.villagesSafe",
         "priority": 5,
-        "amount_required": 5
-    },
-    {
-        "name" : "objectives.witchesUnlocked",
-        "priority": 6,
-        "amount_required": 1
+        "amount_required": 9
     },
     {
         "name" : "objectives.alliancesSafe",
-        "priority": 7,
+        "priority": 6,
         "amount_required": 6
     },
     {
         "name" : "objectives.mountsUnlocked",
-        "priority": 8,
+        "priority": 7,
         "amount_required": 7
     },
     {
         "name" : "objectives.firstsAwoken",
-        "priority": 9,
+        "priority": 8,
         "amount_required": 6
     },
     {
         "name" : "objectives.towersUnlocked",
-        "priority": 10,
+        "priority": 9,
         "amount_required": 5
     },
     {
         "name" : "objectives.saveWorld",
-        "priority": 11,
+        "priority": 10,
         "amount_required": 1,
         "is_primary": true
     }

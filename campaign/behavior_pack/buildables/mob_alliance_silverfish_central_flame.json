@@ -1,0 +1,77 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_alliance_silverfish_central_flame",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_structure": {
+        "nbt_file": "poi_mob_alliance_silverfish_flame"
+      },
+      "badger:buildable_foundation": {
+        "style": "generic"
+      },
+      "badger:omit_blocks_outline": {},
+      "badger:buildable_spawner": {
+        "types": [
+          {
+            "type": "badger:mob_silverfish",
+            "percentage": 1
+          }
+        ],
+        "cap": 9,
+        "batch": 1,
+        "rate": 3,
+        "spawning_trigger": "on_barracks_spawn",
+        "offset": [
+          2.0,
+          2.0,
+          0.0
+        ]
+      },
+      "badger:scriptable_buildable_spawner": {},
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "mob_alliance_silverfish",
+          "mob_alliance_silverfish_central_flame",
+          "cine_silverfish_center",
+          "donotattack"
+        ]
+      },
+      "badger:spawner_add_tags": {
+        "tags": [
+          "homestead_mob"
+        ]
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 140,
+        "village_gen_zone_control_score_threshold": 0.0,
+        "village_zone": true
+      },
+      "badger:zone_type": {
+        "zone_type": "mob_alliance"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_village"
+      },
+      "badger:health": {
+        "max_health": 300
+      },
+      "badger:pop_cap_anchor": {
+        "min_pop_cap": 30,
+        "min_pop_cap_range": 160,
+        "alliance_rule_filter": "enemy",
+        "greedy": false
+      },
+      "badger:template": [
+        "badger:template_poi_mob_alliance"
+      ]
+    }
+  }
+}

@@ -15,7 +15,7 @@
       },
       "badger:template": {
         "parent": "badger:mob_golem_grappler",
-        "game_mode": "campaign"
+        "game_mode": "lcu_campaign"
       }
     }
   }

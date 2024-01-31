@@ -18,8 +18,8 @@
       ],
       "biome": {
         "biome": "grasslands",
-        "total_pixels": 20,
-        "starting_pixels": 9,
+        "total_pixels": 30,
+        "starting_pixels": 3,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -38,18 +38,18 @@
             "one_of": [
               {
                 "chunk_distance_from_parent": [
-                  30,
-                  50
+                  40,
+                  70
                 ],
-                "distance_to_zero_score": [0, 20],
+                "distance_to_zero_score": [0, 15],
                 "tag_parent": "grasslands_1_village"
               },
               {
                 "chunk_distance_from_parent": [
                   0,
-                  20
+                  70
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 20,
                 "tag_parent": "grasslands_2"
               }
             ],
@@ -59,7 +59,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 15,
             "distance_to_zero_score": 10,
             "tag_parent": "village",
             "weight": 3
@@ -67,7 +67,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 50,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
@@ -75,7 +75,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 50,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -83,8 +83,8 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 20,
+            "chunk_distance_from_parent": 76,
+            "distance_to_zero_score": 15,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
             "mandatory_threshold": 0.5
@@ -110,8 +110,8 @@
       ],
       "biome": {
         "biome": "mountain_parent_valleys",
-        "total_pixels": 20,
-        "starting_pixels": 9,
+        "total_pixels": 30,
+        "starting_pixels": 3,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -130,17 +130,17 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  20
+                  50
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 25,
                 "tag_parent": "extreme_hills_1"
               },
               {
                 "chunk_distance_from_parent": [
                   0,
-                  20
+                  40
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 25,
                 "tag_parent": "extreme_hills_2"
               }
             ],
@@ -150,7 +150,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 20,
             "distance_to_zero_score": 10,
             "tag_parent": "village",
             "weight": 3
@@ -158,7 +158,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 50,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
@@ -166,15 +166,15 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
-            "distance_to_zero_score": 20,
+            "chunk_distance_from_parent": 70,
+            "distance_to_zero_score": 30,
             "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 76,
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -201,8 +201,8 @@
       ],
       "biome": {
         "biome": "drylands",
-        "total_pixels": 20,
-        "starting_pixels": 9,
+        "total_pixels": 30,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -226,7 +226,7 @@
               {
                 "chunk_distance_from_parent": [
                   30,
-                  50
+                  60
                 ],
                 "distance_to_zero_score": [0, 20],
                 "tag_parent": "drylands_1_village"
@@ -234,9 +234,9 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  20
+                  40
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 20,
                 "tag_parent": "drylands_2"
               }
             ],
@@ -246,15 +246,15 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 15,
+            "distance_to_zero_score": 15,
             "tag_parent": "village",
             "weight": 3
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 45,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
@@ -262,7 +262,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 55,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -270,7 +270,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 75,
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -309,8 +309,8 @@
       ],
       "biome": {
         "biome": "brokenlands",
-        "total_pixels": 20,
-        "starting_pixels": 9,
+        "total_pixels": 30,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -321,35 +321,57 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  20
+                  30
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 25,
                 "tag_parent": "brokenlands_1"
               },
               {
                 "chunk_distance_from_parent": [
                   0,
-                  20
+                  30
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 25,
                 "tag_parent": "brokenlands_2"
               }
             ],
-            "weight": 1,
+            "weight": 2,
             "mandatory_threshold": 0.5
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 20,
+            "distance_to_zero_score": 15,
             "tag_parent": "village",
             "weight": 3
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              100,
+              300
+            ],
+            "distance_to_zero_score": 15,
+            "tag_parent": "frostlands_1_village",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              100,
+              300
+            ],
+            "distance_to_zero_score": 15,
+            "tag_parent": "frost_cluster",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": 50,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
@@ -357,7 +379,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 60,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
             "weight": 1
@@ -365,7 +387,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 76,
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -404,8 +426,8 @@
       ],
       "biome": {
         "biome": "jungle",
-        "total_pixels": 4,
-        "starting_pixels": 1,
+        "total_pixels": 30,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -416,17 +438,17 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  50
+                  40
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 25,
                 "tag_parent": "jungle_1"
               },
               {
                 "chunk_distance_from_parent": [
                   0,
-                  50
+                  40
                 ],
-                "distance_to_zero_score": 30,
+                "distance_to_zero_score": 25,
                 "tag_parent": "jungle_2"
               }
             ],
@@ -436,15 +458,15 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
-            "distance_to_zero_score": 10,
+            "chunk_distance_from_parent": 20,
+            "distance_to_zero_score": 15,
             "tag_parent": "village",
             "weight": 3
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 40,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
@@ -452,15 +474,15 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 15,
-            "distance_to_zero_score": 20,
+            "chunk_distance_from_parent": 60,
+            "distance_to_zero_score": 25,
             "tag_parent": "wellOfFate",
-            "weight": 2
+            "weight": 1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 76,
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -498,9 +520,9 @@
         }
       ],
       "biome": {
-        "biome": "jungle",
-        "total_pixels": 4,
-        "starting_pixels": 1,
+        "biome": "forest",
+        "total_pixels": 30,
+        "starting_pixels": 5,
         "spread_priority": 1
       },
       "jitter": 0,
@@ -511,18 +533,18 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  50
+                  40
                 ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "jungle_1"
+                "distance_to_zero_score": 25,
+                "tag_parent": "forest_1_village"
               },
               {
                 "chunk_distance_from_parent": [
                   0,
-                  50
+                  40
                 ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "jungle_2"
+                "distance_to_zero_score": 25,
+                "tag_parent": "forest_2"
               }
             ],
             "weight": 1,
@@ -531,7 +553,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 20,
             "distance_to_zero_score": 10,
             "tag_parent": "village",
             "weight": 3
@@ -539,7 +561,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": 40,
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
@@ -547,15 +569,15 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 15,
+            "chunk_distance_from_parent": 65,
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
-            "weight": 2
+            "weight": 1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
+            "chunk_distance_from_parent": 76,
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
