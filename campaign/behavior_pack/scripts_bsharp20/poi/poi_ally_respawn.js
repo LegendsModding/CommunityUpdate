@@ -135,7 +135,7 @@ const _setupPoiRespawn = () => {
     })
 }
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     _setupPoiRespawn()
 })
 SNIPPET_InheritsFromGameMode("editor", () => {

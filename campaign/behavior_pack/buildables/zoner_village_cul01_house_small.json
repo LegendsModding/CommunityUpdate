@@ -84,11 +84,7 @@
           "buildable_combat",
           "buildable_structure",
           "smallHouse",
-          "culture1SmallHouse",
-          "culture2SmallHouse",
-          "culture3SmallHouse",
-          "culture4SmallHouse",
-          "culture5SmallHouse",
+          "culture01SmallHouse",
           "house"
         ]
       },

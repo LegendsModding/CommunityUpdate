@@ -139,6 +139,7 @@
           "buildable_combat",
           "buildable_structure",
           "fountain",
+          "zoner_village_cul06_center_fountain",
           "hq",
           "emitter",
           "bsharp_buildable_utility",

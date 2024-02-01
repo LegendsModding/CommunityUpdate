@@ -186,7 +186,7 @@ const _SpawnRoamingPiglinCloseToTower = (towerEntity, villageId) => {
 }
 
 // This previously used the mobAllianceBehaviourMode game rule
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     for (const towerKey in poiTowerVal) {
         const towerData = poiTowerVal[towerKey]
         LISTENFOR_VillageGenerated({

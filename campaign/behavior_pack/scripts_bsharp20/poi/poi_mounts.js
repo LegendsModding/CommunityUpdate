@@ -436,7 +436,7 @@ const GetMountDataFromMountEntity = (mount) => {
     return mountData
 }
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     LISTENFOR_VillagePlanned({
         snippet: "vp_poi_mount",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,

@@ -96,11 +96,11 @@
       "badger:buildable_spawner": {
         "types": [
           {
-            "type": "badger:villager_culture01",
+            "type": "badger:villager_culture05",
             "percentage": 0.5
           },
           {
-            "type": "badger:villager_illager_culture01",
+            "type": "badger:villager_illager_culture05",
             "percentage": 0.5
           }
         ],
@@ -139,6 +139,7 @@
           "buildable_combat",
           "buildable_structure",
           "fountain",
+          "zoner_village_cul05_center_fountain",
           "hq",
           "emitter",
           "bsharp_buildable_utility",

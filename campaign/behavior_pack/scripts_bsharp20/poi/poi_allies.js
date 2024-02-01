@@ -478,7 +478,7 @@ const setupPoiAllies = () => {
 }
 
 // This previously used the poiAlliesMode game rule
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     setupPoiAllies()
 })
 

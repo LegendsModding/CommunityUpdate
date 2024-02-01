@@ -936,7 +936,7 @@ const _CampaignAct3AStart = () => {
     //move players near the wof to not be near the wof
     const playersNearWof = FILTER_ByDistance(QUERY_GetAllPlayers(), wofVillageEntity, 600) // covers the area around the wof where the final base spawns
     if (HasEntities(playersNearWof)) {
-        const randomVillage = RandomEntity(FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS))
+        const randomVillage = RandomEntity(FILTER_ByFactionName(QUERY_GetAllAliveVillages(),CULTURE_NAME_VILLAGERS))
         OUTPUT_TeleportFastTravel(playersNearWof, randomVillage)
     }
 
@@ -1147,55 +1147,7 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
         LISTENFOR_PlayerEnteredVillage({
             snippet: "pev_player_enetered_village_fast_travel_check",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FOREST,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FROSTLANDS,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_DRYLANDS,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_WETLANDS,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_GRASSLANDS,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_BROKENLANDS,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FATEFUL_LAND,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_JUNGLE,
-            villageSize: BASE_SIZE_SMALL
-        })
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_MOUNTAIN,
+            factionName: CULTURE_NAME_VILLAGERS,
             villageSize: BASE_SIZE_SMALL
         })
 

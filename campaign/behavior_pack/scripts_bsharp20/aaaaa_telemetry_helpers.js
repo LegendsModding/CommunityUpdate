@@ -351,7 +351,31 @@ const TelemetrySendInvasionAttackConcludedEvent = (attackV2Data, defenseSuccess,
 
     let attackArea = ""
     switch (QUERY_GetFactionNameFromVillageID(attackV2Data.villageId)) {
-        case CULTURE_NAME_VILLAGERS:
+        case CULTURE_NAME_FOREST:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_FROSTLANDS:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_DRYLANDS:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_WETLANDS:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_GRASSLANDS:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_BROKENLANDS:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_FATEFUL_LAND:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_JUNGLE:
+            attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
+            break
+        case CULTURE_NAME_MOUNTAIN:
             attackArea = IsPlayerOutpost(attackV2Data.villageId) ? "wellhouse" : "village"
             break
         case MOB_ALLIANCE_NAME_CREEPER:
@@ -398,7 +422,7 @@ const TelemetrySendInvasionAttackConcludedEvent = (attackV2Data, defenseSuccess,
 const SetupDefaultTelemetryForPiglinBase = (factionName) => {
     // TODO: DAMAGE TRACKING (do this in a system). Disabled for beta, and also bump to this todo.
     // This previously used the factionSelectMode game rule
-    SNIPPET_InheritsFromGameMode("campaign", () => {
+    SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
         // Logv("Telemetry health tracking ON")
         // LISTENFOR_HealthChanged({
         //     snippet: `hc_telemetry_${factionName}`,
@@ -561,7 +585,7 @@ SNIPPET_ExternalEvent("ee_test_telemetry_3", () => {
 
 //================================== ACHIEVEMENTS =======================================
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     RegisterStructureGroupPlacement(3, 50, "poi_tower")
     _setupVGAchievementListeners()
 })

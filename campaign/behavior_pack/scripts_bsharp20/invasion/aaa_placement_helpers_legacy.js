@@ -282,7 +282,7 @@ const PlaceInvasionClaimedArea = (horde, claimedAreaRadius, numOutposts, placeBa
             }
 
             // Avoid placing them nearby friendy villages
-            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, claimedAreaRadius + placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
 
             if (!OUTPUT_PlacementExecute()) {
@@ -384,7 +384,7 @@ const PlacePregameCenterClaimedArea = (horde, claimedAreaRadius, numOutposts) =>
             }
 
             // Avoid placing them nearby friendy villages
-            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, claimedAreaRadius + placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
 
             if (!OUTPUT_PlacementExecute()) {
@@ -478,7 +478,7 @@ const PlacePregameSideClaimedArea = (horde, claimedAreaRadius, numOutposts, cent
             }
 
             // Avoid placing them nearby friendy villages
-            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+            const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN, MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, claimedAreaRadius + placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
 
             if (!OUTPUT_PlacementExecute()) {
@@ -548,7 +548,7 @@ const PlaceOutpostInBaseProximity = (base = null) => {
     const fellowBossBases = FILTER_ByVillageSize(fellowHordeVillages, [BASE_SIZE_BOSS])
     const fellowOutposts = FILTER_ByVillageSize(fellowHordeVillages, [BASE_SIZE_OUTPOST])
     const mobAlliances = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), FACTION_MOB_ALLIANCES)
-    const villagerVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS)
+    const villagerVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN])
     const otherVillages = OPER_Difference(OPER_Difference(QUERY_GetAllAliveVillages(), OPER_Union(fellowHordeVillages, [base])), OPER_Union(mobAlliances, villagerVillages)) // excludes own hordes and then excludes mob alliances / villager villages
     const wofVillage = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), WELL_OF_FATE)
     const players = GetPlayers()

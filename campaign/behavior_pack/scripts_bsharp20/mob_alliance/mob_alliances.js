@@ -1730,7 +1730,7 @@ const _setupMobAllianceBehavior = () => {
     })
 }
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     _setupMobAllianceBehavior()
 })
 

@@ -93,7 +93,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               40,
-              200
+              150
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "wellOfFate",
@@ -108,7 +108,7 @@
             ],
             "distance_to_zero_score": 0,
             "tag_parent": "first_village_west_magnet",
-            "weight": 3
+            "weight": 2
           }
         }
       ]
@@ -179,7 +179,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               30,
-              200
+              150
             ],
             "distance_to_zero_score": [10, 30],
             "tag_parent": "wellOfFate",

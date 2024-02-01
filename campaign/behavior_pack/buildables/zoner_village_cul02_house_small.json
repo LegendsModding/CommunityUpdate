@@ -48,11 +48,11 @@
       "badger:buildable_spawner": {
         "types": [
           {
-            "type": "badger:villager_culture01",
+            "type": "badger:villager_culture02",
             "percentage": 0.5
           },
           {
-            "type": "badger:villager_illager_culture01",
+            "type": "badger:villager_illager_culture02",
             "percentage": 0.5
           }
         ],
@@ -239,7 +239,7 @@
         "badger:component_generate_ruins_default"
       ],
       "badger:buildable_presentation": {
-        "icon": "house_culture1_small",
+        "icon": "house_culture2_small",
         "tooltip_title": "structures.house.small.name",
         "tooltip_description": "structures.house.small.description",
         "buildable_category": ""

@@ -1400,7 +1400,7 @@ const SetupMobCages = (villageId, cageTag, mobArchetype = "", mobAmount = 15) =>
     if (!mobArchetype) {
         //Have villageId in case we do somesmart filtering later to pick victim
         const possibleVictims = [MOB_ARCHETYPE.VILLAGERS]
-
+        
         //Check if specific mobs have been attacked
         if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_ZOMBIE)) {
             possibleVictims.push(MOB_ARCHETYPE.ZOMBIE)

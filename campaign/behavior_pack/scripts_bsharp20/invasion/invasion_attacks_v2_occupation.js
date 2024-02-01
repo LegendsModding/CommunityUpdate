@@ -627,7 +627,7 @@ const SetupVillageOccupation = (villageId, hordeName, attackStrength) => {
     if (DoOnce(GetVillageVariableKey(villageId, occupationValCommon.vars.initialOccupation))) {
         // Set up listeners for cages that will appear.
 
-        if (villageFaction === CULTURE_NAME_VILLAGERS && hasStartedAct2 && witchHutEnabled.defaultValue === 1) {
+        if (villageFaction === CULTURE_NAME_WETLANDS && hasStartedAct2 && witchHutEnabled.defaultValue === 1) {
             SetupMobCages(villageId, occupationValCommon.cageTag, MOB_ARCHETYPE.WITCH, mobData.amountInCage)
         } else {
             SetupMobCages(villageId, occupationValCommon.cageTag, mobData.mobArchetype, mobData.amountInCage)
@@ -801,39 +801,7 @@ SNIPPET_PresenceEntered("pe_setup_occupation_state", (triggerEntity, _count, pay
     const villageFaction = QUERY_GetFactionNameFromVillageID(villageId)
 
     //VO
-    if (villageFaction === CULTURE_NAME_FOREST) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_FROSTLANDS) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_DRYLANDS) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_WETLANDS) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_GRASSLANDS) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_BROKENLANDS) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_FATEFUL_LAND) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_JUNGLE) {
-        if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
-            PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
-        }
-    } else if (villageFaction === CULTURE_NAME_MOUNTAIN) {
+    if (CULTURE_NAME_VILLAGERS.includes(villageFaction)) {
         if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
             PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
         }
@@ -1065,7 +1033,7 @@ const FinishVillageOccupation = (villageId, hordeName) => {
         ForEachEntities(nearbyPlayers, (playerEntity) => {
             OUTPUT_AnnounceSequencePlayer(mobData.messaging.endOccupationSequence, playerEntity)
             //Only show this message if we haven't visited it  before AND its a village, not a mob homestead
-            if (shouldWeAnnounceFastTravel && villageFaction === CULTURE_NAME_VILLAGERS) {
+            if (shouldWeAnnounceFastTravel && (CULTURE_NAME_VILLAGERS.includes(villageFaction))) {
                 OUTPUT_AnnouncePlayer("village_unlock_fast_travel", [], playerEntity)
             }
         })

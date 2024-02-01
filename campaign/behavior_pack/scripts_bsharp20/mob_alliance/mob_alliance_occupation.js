@@ -2345,7 +2345,7 @@ SetupBaseAIs(occupationBaseData[FACTION_NAME_FROST].aiConfig)
 CreateCompositionRallyPointListeners(occupationBaseData[FACTION_NAME_FROST].piglinRallyPoints, occupationBaseData[FACTION_NAME_FROST].aiConfig)
 
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     maOccupationVal.mobIds.forEach((mobId) => {
         const occupationData = maOccupationVal[mobId]
 

@@ -48,11 +48,11 @@
       "badger:buildable_spawner": {
         "types": [
           {
-            "type": "badger:villager_culture01",
+            "type": "badger:villager_culture03",
             "percentage": 0.5
           },
           {
-            "type": "badger:villager_illager_culture01",
+            "type": "badger:villager_illager_culture03",
             "percentage": 0.5
           }
         ],
@@ -84,7 +84,7 @@
           "buildable_combat",
           "buildable_structure",
           "largeHouse",
-          "culture1LargeHouse",
+          "3LargeHouse",
           "house"
         ]
       },
@@ -313,7 +313,7 @@
         "badger:component_generate_ruins_default"
       ],
       "badger:buildable_presentation": {
-        "icon": "house_culture1_large",
+        "icon": "house_culture3_large",
         "tooltip_title": "structures.house.large.name",
         "tooltip_description": "structures.house.large.description",
         "buildable_category": ""

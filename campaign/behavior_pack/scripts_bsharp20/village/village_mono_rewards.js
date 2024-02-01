@@ -510,7 +510,7 @@ SNIPPET_InvasionAttackV2Ended("invasion_attackV2_ended_surge_rewards", (attackV2
     }
 })
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     _setupVillageRewards()
 })
 
@@ -749,7 +749,7 @@ const _setupVillageChests = () => {
     })
 }
 
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     _setupVillageChests()
 })
 

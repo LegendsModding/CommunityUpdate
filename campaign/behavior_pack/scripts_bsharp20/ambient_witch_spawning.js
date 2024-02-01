@@ -5,7 +5,7 @@
  */
 
 // When we start a campaign game, listen for when Act 2 starts
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     //If the player has disabled witches in their campaign, then stop this chain of events from spawning them
     if (witchHutEnabled.defaultValue === 1) {
         // Listen for when Act 2 starts, and then place ambient witch spawners
@@ -25,7 +25,7 @@ SNIPPET_GlobalVariableChanged("enable_ambient_witches_on_act_2_start", (_oldValu
     }
 
     // When a player next enters a village, spawn an ambient witch spawner at the witch hut.
-    const villagerVillageEntities = FILTER_ByFactionName(QUERY_GetAllVillages(), CULTURE_NAME_VILLAGERS)
+    const villagerVillageEntities = FILTER_ByFactionName(QUERY_GetAllVillages(), CULTURE_NAME_WETLANDS)
     const villagerVillageIds = villagerVillageEntities.map((villageEntity) => {
         return QUERY_GetVillageIDFromEntity(villageEntity)
     })

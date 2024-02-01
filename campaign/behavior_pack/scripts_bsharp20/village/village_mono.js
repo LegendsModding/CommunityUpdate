@@ -103,7 +103,7 @@ const _playAnyOnEnterVO = (centerEntity) => {
     let anyOtherVillageCurrentlyUnderAttack = false
     const currentVillage = GetVillageEntityFromID(QUERY_GetVillageIDFromEntity(centerEntity))
     if (HasEntities(currentVillage)) {
-        let allVillagesBesideCurrentVillage = OPER_Difference(FILTER_ByFactionName(QUERY_GetAllVillages(), CULTURE_NAME_VILLAGERS), currentVillage)
+        let allVillagesBesideCurrentVillage = OPER_Difference(FILTER_ByFactionName(QUERY_GetAllVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN]), currentVillage)
         if (HasEntities(allVillagesBesideCurrentVillage)) {
             while (HasEntities(allVillagesBesideCurrentVillage)) {
                 const oneVillage = FILTER_RandomCount(allVillagesBesideCurrentVillage, 1)
@@ -231,7 +231,7 @@ const _setupVillageBehaviorMode = () => {
 }
 
 // This previously used the villageBehaviourMode game rule
-SNIPPET_InheritsFromGameMode("campaign", () => {
+SNIPPET_InheritsFromGameMode("lcu_campaign", () => {
     _setupVillageBehaviorMode()
 })
 
