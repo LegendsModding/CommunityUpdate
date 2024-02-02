@@ -1,0 +1,52 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:ruined_end_portal",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "type": "PoI"
+    },
+    "components": {
+      "badger:buildable_requirement": {
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_piglin_defend_territory",
+        "build_time": 60,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end"
+      },
+      "badger:buildable_foundation": {
+        "style": "inverted_pyramid"
+      },
+      "badger:health": {
+        "max_health": 999999999
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+            [
+                0,
+                5,
+                -2
+            ]
+        ]
+    },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_neather_small"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_health_generation_default",
+        "badger:template_structure"
+      ],
+      "badger:tags": {
+        "tags": [
+          "PoI",
+          "ruined_end_portal"
+        ]
+      }
+    }
+  }
+}

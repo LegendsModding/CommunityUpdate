@@ -14,7 +14,7 @@
         }
       },
       "tags": [
-        "poi_mount_01"
+        "poi_deck"
       ],
       "biome": {
         "biome": "drylands",
@@ -38,49 +38,50 @@
       "placement_rules": [
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  30,
-                  70
-                ],
-                "distance_to_zero_score": 0,
-                "tag_parent": "drylands_1_village"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  50
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "drylands_2"
-              }
+            "chunk_distance_from_parent": [
+              0,
+              30
             ],
-            "weight": 2
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 30,
             "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 3
+            "tag_parent": "drylands_1_village",
+            "weight": 3,
+            "mandatory_threshold": "1.0"
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
             "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
+            "tag_parent": "drylands_1",
+            "weight": 1,
+            "mandatory_threshold": 0.4
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 70,
-            "distance_to_zero_score": 0,
-            "tag_parent": "wellOfFate",
-            "weight": 1
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "drylands_2",
+            "weight": 1,
+            "mandatory_threshold": 0.4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0, 
+              250
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 0.8
           }
         }
       ]
@@ -99,7 +100,7 @@
         }
       },
       "tags": [
-        "poi_mount_03"
+        "poi_deck"
       ],
       "biome": {
         "biome": "jungle",
@@ -119,49 +120,50 @@
       "placement_rules": [
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  40
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "jungle_1"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  30
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "jungle_2"
-              }
+            "chunk_distance_from_parent": [
+              25,
+              60
             ],
-            "weight": 2
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 30,
             "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 3
+            "tag_parent": "jungle_1_village",
+            "weight": 3,
+            "mandatory_threshold": "1.0"
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
             "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
+            "tag_parent": "jungle_1",
+            "weight": 1,
+            "mandatory_threshold": 0.4
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 70,
-            "distance_to_zero_score": 0,
-            "tag_parent": "wellOfFate",
-            "weight": 1
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "jungle_2",
+            "weight": 1,
+            "mandatory_threshold": 0.4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0, 
+              250
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 0.8
           }
         }
       ]
@@ -180,7 +182,7 @@
         }
       },
       "tags": [
-        "poi_mount_04"
+        "poi_deck"
       ],
       "biome": {
         "biome": "mountain_parent_valleys",
@@ -205,49 +207,50 @@
       "placement_rules": [
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  40
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "extreme_hills_1"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  40
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "extreme_hills_2"
-              }
+            "chunk_distance_from_parent": [
+              25,
+              60
             ],
-            "weight": 2
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 30,
             "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 3
+            "tag_parent": "mountain_1_village",
+            "weight": 3,
+            "mandatory_threshold": "1.0"
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
             "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
+            "tag_parent": "mountain_1",
+            "weight": 1,
+            "mandatory_threshold": 0.4
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 80,
-            "distance_to_zero_score": 0,
-            "tag_parent": "wellOfFate",
-            "weight": 1
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "defend_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.6
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0, 
+              250
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 0.8
           }
         }
       ]
@@ -266,7 +269,7 @@
         }
       },
       "tags": [
-        "poi_mount_06"
+        "poi_deck"
       ],
       "biome": {
         "biome": "wetlands",
@@ -289,53 +292,54 @@
         }
       ],
       "placement_rules": [
-          {
-            "distance": {
-              "one_of": [
-                {
-                  "chunk_distance_from_parent": [
-                    30,
-                    70
-                  ],
-                  "distance_to_zero_score": 0,
-                  "tag_parent": "wetlands_1_village"
-                },
-                {
-                  "chunk_distance_from_parent": [
-                    0,
-                    30
-                  ],
-                  "distance_to_zero_score": 30,
-                  "tag_parent": "wetlands_2"
-                }
-              ],
-              "weight": 2
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": 30,
-              "distance_to_zero_score": 10,
-              "tag_parent": "village",
-              "weight": 3
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": 30,
-              "distance_to_zero_score": 10,
-              "tag_parent": "poi",
-              "weight": 3
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": 80,
-              "distance_to_zero_score": 0,
-              "tag_parent": "wellOfFate",
-              "weight": 1
-            }
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              25,
+              60
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wetlands_1_village",
+            "weight": 3,
+            "mandatory_threshold": "1.0"
           }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "wetlands_1",
+            "weight": 1,
+            "mandatory_threshold": 0.4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "obstacle_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.6
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0, 
+              250
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 0.8
+          }
+        }
         ]
     },
     {
@@ -352,7 +356,7 @@
         }
       },
       "tags": [
-        "poi_mount_07"
+        "poi_deck"
       ],
       "biome": {
         "biome": "brokenlands",
@@ -375,53 +379,54 @@
         }
       ],
       "placement_rules": [
-          {
-            "distance": {
-              "one_of": [
-                {
-                  "chunk_distance_from_parent": [
-                    0,
-                    50
-                  ],
-                  "distance_to_zero_score": 0,
-                  "tag_parent": "brokenlands_1"
-                },
-                {
-                  "chunk_distance_from_parent": [
-                    0,
-                    50
-                  ],
-                  "distance_to_zero_score": 20,
-                  "tag_parent": "brokenlands_2"
-                }
-              ],
-              "weight": 2
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": 30,
-              "distance_to_zero_score": 10,
-              "tag_parent": "village",
-              "weight": 3
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": 30,
-              "distance_to_zero_score": 10,
-              "tag_parent": "poi",
-              "weight": 3
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": [20,150],
-              "distance_to_zero_score": 0,
-              "tag_parent": "wellOfFate",
-              "weight": 1
-            }
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              25,
+              60
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "brokenlands_1_village",
+            "weight": 3,
+            "mandatory_threshold": "1.0"
           }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "brokenlands_1",
+            "weight": 1,
+            "mandatory_threshold": 0.4
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              120
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "attack_cluster",
+            "weight": 1,
+            "mandatory_threshold": 0.6
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0, 
+              250
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 1,
+            "mandatory_threshold": 0.8
+          }
+        }
         ]
     },
     {
@@ -438,7 +443,7 @@
         }
       },
       "tags": [
-        "poi_mount_08"
+        "poi_deck"
       ],
       "biome": {
         "biome": "frostlands",
@@ -463,37 +468,50 @@
       "placement_rules": [
           {
             "distance": {
-                  "chunk_distance_from_parent": [
-                    20,
-                    60
-                  ],
-                  "distance_to_zero_score": 0,
-                  "tag_parent": "frostlands_1_village",
-                  "weight": 2
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": 40,
+              "chunk_distance_from_parent": [
+                25,
+                60
+              ],
               "distance_to_zero_score": 10,
-              "tag_parent": "village",
-              "weight": 3
+              "tag_parent": "frostlands_1_village",
+              "weight": 3,
+              "mandatory_threshold": "1.0"
             }
           },
           {
             "distance": {
-              "chunk_distance_from_parent": 40,
+              "chunk_distance_from_parent": [
+                0,
+                90
+              ],
               "distance_to_zero_score": 10,
-              "tag_parent": "poi",
-              "weight": 3
+              "tag_parent": "frostlands_1",
+              "weight": 1,
+              "mandatory_threshold": 0.4
             }
           },
           {
             "distance": {
-              "chunk_distance_from_parent": 80,
-              "distance_to_zero_score": 0,
-              "tag_parent": "wellOfFate",
-              "weight": 1
+              "chunk_distance_from_parent": [
+                30,
+                120
+              ],
+              "distance_to_zero_score": 20,
+              "tag_parent": "frost_cluster",
+              "weight": 1,
+              "mandatory_threshold": 0.6
+            }
+          },
+          {
+            "distance": {
+              "chunk_distance_from_parent": [
+                0, 
+                250
+              ],
+              "distance_to_zero_score": 10,
+              "tag_parent": "center",
+              "weight": 1,
+              "mandatory_threshold": 0.8
             }
           }
         ]
@@ -512,7 +530,7 @@
         }
       },
       "tags": [
-        "poi_mount_09"
+        "poi_deck"
       ],
       "biome": {
         "biome": "fateful_land_campaign",
@@ -537,23 +555,19 @@
       "placement_rules": [
           {
             "distance": {
-              "chunk_distance_from_parent": 30,
+              "chunk_distance_from_parent": [
+                10,
+                30
+              ],
               "distance_to_zero_score": 10,
-              "tag_parent": "village",
-              "weight": 3
+              "tag_parent": "fateful_land_1_village",
+              "weight": 3,
+              "mandatory_threshold": 0.5
             }
           },
           {
             "distance": {
-              "chunk_distance_from_parent": 30,
-              "distance_to_zero_score": 10,
-              "tag_parent": "poi",
-              "weight": 3
-            }
-          },
-          {
-            "distance": {
-              "chunk_distance_from_parent": [20,80],
+              "chunk_distance_from_parent": [10,30],
               "distance_to_zero_score": 0,
               "tag_parent": "wellOfFate",
               "weight": 2

@@ -20,122 +20,23 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.invasionEnabled, (ruleValue) => {
             ownerVillageId: OWNER_VILLAGE_OPT_OUT
         })
 
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FOREST,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
+        for (const factionName of CULTURE_NAME_VILLAGERS) {
+            LISTENFOR_VillageDestroyed({
+                snippet: "vd_destroyed_player_outposts",
+                ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+                factionName: factionName,
+                villageSize: VILLAGE_SIZE_PLAYER
+            })
+        }
 
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FROSTLANDS,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_DRYLANDS,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_WETLANDS,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_GRASSLANDS,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_BROKENLANDS,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FATEFUL_LAND,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_JUNGLE,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageDestroyed({
-            snippet: "vd_destroyed_player_outposts",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_MOUNTAIN,
-            villageSize: VILLAGE_SIZE_PLAYER
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FOREST
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FROSTLANDS
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_DRYLANDS
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_WETLANDS
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_GRASSLANDS
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_BROKENLANDS
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_FATEFUL_LAND
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_JUNGLE
-        })
-
-        LISTENFOR_VillageGenerated({
-            snippet: "vg_setup_village_damaged_state_listeners",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_MOUNTAIN
-        })
+        for (const factionName of CULTURE_NAME_VILLAGERS) {
+            OUTPUT_DebugLogInvasion(`Setting up vg_setup_village_damaged_state_listeners for ${factionName}`)
+            LISTENFOR_VillageGenerated({
+                snippet: "vg_setup_village_damaged_state_listeners",
+                ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+                factionName: factionName
+            })
+        }
 
         for (const factionName of FACTION_MOB_ALLIANCES) {
             OUTPUT_DebugLogInvasion(`Setting up vg_setup_village_damaged_state_listeners for ${factionName}`)

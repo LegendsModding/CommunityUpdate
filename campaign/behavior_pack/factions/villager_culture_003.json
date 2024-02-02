@@ -11,8 +11,8 @@
         "name": "villager.culture.003.name",
         "description": "villager.culture.003.description",
         "icon": "ui_map_biomelegend_villager_03",
-        "color": [0.34, 0.69, 0.9, 1.0],
-        "known": true
+        "color": [0.78, 0.6, 0.21, 1.0],
+        "known": false
       },
       "badger:culture": {
         "base_culture_a": 0

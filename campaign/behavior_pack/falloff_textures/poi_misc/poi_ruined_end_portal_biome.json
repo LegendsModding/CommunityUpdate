@@ -1,0 +1,26 @@
+{
+    "id": "poi_ruined_end_portal_biome",
+    "textures": [
+      {
+        "texture": "poi_misc/heightmap_poi_ruined_end_portal",
+        "channels": {
+          "r": "blend",
+          "g": "terrain_height",
+          "b": "biome"
+        }
+      }
+    ],
+    "additional_data": {
+      "height_range": [
+        1,
+        4
+      ],
+      "village_texture_stamp": true
+    },
+    "biome_map": [
+      {
+        "biome": "fateful_land_campaign",
+        "value": 255
+      }
+    ]
+  }

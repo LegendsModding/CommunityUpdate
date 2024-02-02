@@ -405,60 +405,14 @@ const _HasRareResourceVillageAvailabilityCrossedDaysThreshold = (resource) => {
 }
 
 const _setupVillageRewards = () => {
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FOREST
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FROSTLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_DRYLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_WETLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_GRASSLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_BROKENLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FATEFUL_LAND
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_JUNGLE
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village_rewards",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_MOUNTAIN
-    })
-
+    for (const factionName of CULTURE_NAME_VILLAGERS) {
+        LISTENFOR_VillageGenerated({
+            snippet: "vg_setup_village_rewards",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: factionName
+        })
+    }
+    
     LISTENFOR_Timer({
         snippet: "gt_village_chest_restock",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,

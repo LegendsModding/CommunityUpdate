@@ -16,8 +16,8 @@
       ],
       "biome": {
         "biome": "brokenlands",
-        "total_pixels": 40,
-        "starting_pixels": 5,
+        "total_pixels": 75,
+        "starting_pixels": 15,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -25,18 +25,10 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              64,
-              250
+              110,
+              350
             ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 66,
-            "distance_to_zero_score": 20,
+            "distance_to_zero_score": 30,
             "tag_parent": "village",
             "weight": 1
           }
@@ -44,36 +36,34 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              100,
-              300
+              0,
+              250
             ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "frostlands_1_village",
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  20,
-                  80
-                ],
-                "distance_to_zero_score": [20, 30],
-                "tag_parent": "brokenlands_1"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  20,
-                  80
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "brokenlands_2"
-              }
+            "chunk_distance_from_parent": [
+              150,
+              550
             ],
-            "weight": 1,
-            "mandatory_threshold": 0.1
+            "distance_to_zero_score": 30,
+            "tag_parent": "ruined_end_portal",
+            "weight": 1
           }
         }
       ]
@@ -92,10 +82,11 @@
         "sub-cluster",
         "campaign"
       ],
+      "jitter": 0.4,
       "biome": {
         "biome": "brokenlands",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 45,
+        "starting_pixels": 8,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -103,23 +94,23 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "attack_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "claimed_area_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
@@ -148,8 +139,8 @@
       ],
       "biome": {
         "biome": "mountain_parent_valleys",
-        "total_pixels": 40,
-        "starting_pixels": 5,
+        "total_pixels": 75,
+        "starting_pixels": 15,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -157,55 +148,57 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              159,
-              300
+              280,
+              450
             ],
             "distance_to_zero_score": 30,
             "tag_parent": "claimed_area_cluster",
-            "weight": 1
+            "weight": 2,
+            "mandatory_threshold": 0.8
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              64,
-              220
+              110,
+              350
             ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 66,
-            "distance_to_zero_score": 20,
+            "distance_to_zero_score": 30,
             "tag_parent": "village",
             "weight": 1
           }
         },
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  20,
-                  80
-                ],
-                "distance_to_zero_score": [20, 30],
-                "tag_parent": "extreme_hills_1"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  20,
-                  80
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "extreme_hills_1"
-              }
+            "chunk_distance_from_parent": [
+              0,
+              250
             ],
-            "weight": 1,
-            "mandatory_threshold": 0.1
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "ruined_end_portal",
+            "weight": 1
           }
         }
       ]
@@ -224,10 +217,11 @@
         "sub-cluster",
         "campaign"
       ],
+      "jitter": 0.4,
       "biome": {
         "biome": "mountain_parent_valleys",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 45,
+        "starting_pixels": 8,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -235,23 +229,23 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "defend_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "claimed_area_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
@@ -280,8 +274,8 @@
       ],
       "biome": {
         "biome": "frostlands",
-        "total_pixels": 40,
-        "starting_pixels": 5,
+        "total_pixels": 75,
+        "starting_pixels": 15,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -289,40 +283,22 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              159,
-              300
+              280,
+              450
             ],
             "distance_to_zero_score": 30,
             "tag_parent": "claimed_area_cluster",
-            "weight": 2
+            "weight": 2,
+            "mandatory_threshold": 0.8
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              64,
-              220
+              110,
+              350
             ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              64,
-              200
-            ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "center",
-            "weight": 2
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 66,
-            "distance_to_zero_score": 20,
+            "distance_to_zero_score": 30,
             "tag_parent": "village",
             "weight": 1
           }
@@ -330,45 +306,34 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              32,
-              80
+              0,
+              250
             ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "frostlands_1_village",
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              120,
-              300
+              150,
+              550
             ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "brokenlands_1",
-            "weight": 2
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              120,
-              300
-            ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "brokenlands_2",
-            "weight": 2
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              160,
-              300
-            ],
-            "distance_to_zero_score": 20,
-            "tag_parent": "attack_cluster",
-            "weight": 2
+            "distance_to_zero_score": 30,
+            "tag_parent": "ruined_end_portal",
+            "weight": 1
           }
         }
       ]
@@ -387,10 +352,11 @@
         "sub-cluster",
         "campaign"
       ],
+      "jitter": 0.4,
       "biome": {
         "biome": "frostlands",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 45,
+        "starting_pixels": 8,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -398,23 +364,23 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "frost_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "claimed_area_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
@@ -443,8 +409,8 @@
       ],
       "biome": {
         "biome": "wetlands",
-        "total_pixels": 40,
-        "starting_pixels": 5,
+        "total_pixels": 75,
+        "starting_pixels": 15,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -452,55 +418,57 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              159,
-              300
+              280,
+              450
             ],
             "distance_to_zero_score": 30,
             "tag_parent": "claimed_area_cluster",
-            "weight": 1
+            "weight": 2,
+            "mandatory_threshold": 0.8
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              64,
-              250
+              110,
+              350
             ],
             "distance_to_zero_score": 30,
-            "tag_parent": "wellOfFate",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 66,
-            "distance_to_zero_score": 20,
             "tag_parent": "village",
             "weight": 1
           }
         },
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  32,
-                  90
-                ],
-                "distance_to_zero_score": [20, 30],
-                "tag_parent": "wetlands_1_village"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  20,
-                  80
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "wetlands_2"
-              }
+            "chunk_distance_from_parent": [
+              0,
+              300
             ],
-            "weight": 1,
-            "mandatory_threshold": 0.1
+            "distance_to_zero_score": 30,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wellOfFate",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "ruined_end_portal",
+            "weight": 2
           }
         }
       ]
@@ -519,10 +487,11 @@
         "sub-cluster",
         "campaign"
       ],
+      "jitter": 0.4,
       "biome": {
         "biome": "wetlands",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 45,
+        "starting_pixels": 7,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -530,23 +499,24 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "obstacle_cluster",
-            "weight": 1
+            "weight": 2,
+            "mandatory_threshold": 0.6
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              40
+              40,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "claimed_area_cluster",
-            "weight": 1
+            "weight": 2
           }
         },
         {
@@ -576,8 +546,8 @@
       ],
       "biome": {
         "biome": "brokenlands",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 12,
+        "starting_pixels": 3,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -631,8 +601,8 @@
       ],
       "biome": {
         "biome": "mountain_parent_valleys",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 12,
+        "starting_pixels": 3,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -686,8 +656,8 @@
       ],
       "biome": {
         "biome": "wetlands",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 12,
+        "starting_pixels": 3,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,
@@ -741,8 +711,8 @@
       ],
       "biome": {
         "biome": "frostlands",
-        "total_pixels": 40,
-        "starting_pixels": 1,
+        "total_pixels": 12,
+        "starting_pixels": 3,
         "spread_priority": 0
       },
       "add_to_poi_graph": false,

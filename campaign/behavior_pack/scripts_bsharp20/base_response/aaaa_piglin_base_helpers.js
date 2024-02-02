@@ -1398,9 +1398,41 @@ const IncreaseOutpostDifficultyForFaction = (faction) => {
 
 const SetupMobCages = (villageId, cageTag, mobArchetype = "", mobAmount = 15) => {
     if (!mobArchetype) {
-        //Have villageId in case we do somesmart filtering later to pick victim
-        const possibleVictims = [MOB_ARCHETYPE.VILLAGERS]
-        
+        //Have villageId in case we do somesmart filtering later to pick victim 
+        // Thank you ^
+        factionName = QUERY_GetFactionNameFromVillageID(villageId)
+
+        const possibleVictims = [MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND]
+
+        //Check if specific village cultures have been attacked
+        if (factionName === CULTURE_NAME_FOREST) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_FOREST)
+        }
+        if (factionName === CULTURE_NAME_FROSTLANDS) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_FROSTLANDS)
+        }
+        if (factionName === CULTURE_NAME_DRYLANDS) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_DRYLANDS)
+        }
+        if (factionName === CULTURE_NAME_WETLANDS) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_WETLANDS)
+        }
+        if (factionName === CULTURE_NAME_GRASSLANDS) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_GRASSLANDS)
+        }
+        if (factionName === CULTURE_NAME_BROKENLANDS) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_BROKENLANDS)
+        }
+        if (factionName === CULTURE_NAME_FATEFUL_LAND) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND)
+        }
+        if (factionName === CULTURE_NAME_JUNGLE) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_JUNGLE)
+        }
+        if (factionName === CULTURE_NAME_MOUNTAIN) {
+            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_MOUNTAIN)
+        }
+
         //Check if specific mobs have been attacked
         if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_ZOMBIE)) {
             possibleVictims.push(MOB_ARCHETYPE.ZOMBIE)
@@ -1480,7 +1512,6 @@ SNIPPET_EntitySpawned("es_caged_mobs_spawned", (entitySpawned, payload) => {
     const victimArchetype = payload.string
     let behavior = ""
     switch (victimArchetype) {
-        case MOB_ARCHETYPE.VILLAGERS:
         case MOB_ARCHETYPE.VILLAGERS_FOREST:
         case MOB_ARCHETYPE.VILLAGERS_FROSTLANDS:
         case MOB_ARCHETYPE.VILLAGERS_DRYLANDS:
@@ -1593,7 +1624,6 @@ SNIPPET_NonPopCappedEntityDestroyed("ed_raiding_party_cage", (cage, payload) => 
     const villageEntities = QUERY_GetEntitiesOwnedByVillage(payload.ownerVillageId)
     const piglins = FILTER_ByTagFilter(villageEntities, ["piglin"], [])
     switch (victimArchetype) {
-        case MOB_ARCHETYPE.VILLAGERS:
         case MOB_ARCHETYPE.VILLAGERS_FOREST:
         case MOB_ARCHETYPE.VILLAGERS_FROSTLANDS:
         case MOB_ARCHETYPE.VILLAGERS_DRYLANDS:

@@ -1299,7 +1299,7 @@ const addMobAllianceMainTooltip = (mobFactionId) => {
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH) {
         mobDescriptionId = MAP_DESCRIPTION_IDS.SILVERFISH_TARGETED_TOOLTIP;
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SLIME) {
-        mobDescriptionId = MAP_DESCRIPTION_IDS.SPIDER_TARGETED_TOOLTIP;
+        mobDescriptionId = MAP_DESCRIPTION_IDS.SLIME_TARGETED_TOOLTIP;
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE) {
         mobDescriptionId = MAP_DESCRIPTION_IDS.ZOMBIE_TARGETED_TOOLTIP;
       }

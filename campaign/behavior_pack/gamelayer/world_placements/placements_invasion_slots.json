@@ -1446,9 +1446,9 @@
               70,
               100
             ],
-            "distance_to_zero_score": 30,
+            "distance_to_zero_score": 45,
             "tag_parent": "creeper_alliance",
-            "weight": 2
+            "weight": 1
           }
         },
         {
@@ -1457,9 +1457,9 @@
               70,
               200
             ],
-            "distance_to_zero_score": 30,
+            "distance_to_zero_score": 45,
             "tag_parent": "zombie_alliance",
-            "weight": 2
+            "weight": 1
           }
         },
         {
@@ -1468,9 +1468,9 @@
               70,
               200
             ],
-            "distance_to_zero_score": 30,
+            "distance_to_zero_score": 45,
             "tag_parent": "skeleton_alliance",
-            "weight": 2
+            "weight": 1
           }
         },
         {
@@ -1479,9 +1479,9 @@
               70,
               200
             ],
-            "distance_to_zero_score": 30,
+            "distance_to_zero_score": 45,
             "tag_parent": "spider_alliance",
-            "weight": 2
+            "weight": 1
           }
         },
         {
@@ -1490,9 +1490,9 @@
               70,
               200
             ],
-            "distance_to_zero_score": 30,
+            "distance_to_zero_score": 45,
             "tag_parent": "slime_alliance",
-            "weight": 2
+            "weight": 1
             }
           },
           {
@@ -1501,9 +1501,9 @@
                 70,
                 200
               ],
-              "distance_to_zero_score": 30,
+              "distance_to_zero_score": 45,
               "tag_parent": "silverfish_alliance",
-              "weight": 2
+              "weight": 1
             }
           }
       ]

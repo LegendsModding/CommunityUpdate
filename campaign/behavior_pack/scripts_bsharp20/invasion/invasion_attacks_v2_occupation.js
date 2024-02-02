@@ -801,7 +801,7 @@ SNIPPET_PresenceEntered("pe_setup_occupation_state", (triggerEntity, _count, pay
     const villageFaction = QUERY_GetFactionNameFromVillageID(villageId)
 
     //VO
-    if (CULTURE_NAME_VILLAGERS.includes(villageFaction)) {
+    if (villageFaction === CULTURE_NAME_FOREST || villageFaction === CULTURE_NAME_FROSTLANDS || villageFaction === CULTURE_NAME_DRYLANDS || villageFaction === CULTURE_NAME_WETLANDS || villageFaction === CULTURE_NAME_GRASSLANDS || villageFaction === CULTURE_NAME_BROKENLANDS|| villageFaction === CULTURE_NAME_FATEFUL_LAND || villageFaction === CULTURE_NAME_JUNGLE || villageFaction === CULTURE_NAME_MOUNTAIN) {
         if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
             PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
         }

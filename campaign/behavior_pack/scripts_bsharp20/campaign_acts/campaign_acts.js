@@ -888,7 +888,7 @@ const _ActivateAct2Objectives = () => {
     OUTPUT_SetObjectiveVisibility("objectives.mountsUnlocked", true)
     OUTPUT_SetObjectiveVisibility("objectives.firstsAwoken", true)
     OUTPUT_SetObjectiveVisibility("objectives.towersUnlocked", true)
-    OUTPUT_AddOrSubtractObjectiveProgress("objectives.villagesSafe", 5)
+    OUTPUT_AddOrSubtractObjectiveProgress("objectives.villagesSafe", 9)
 }
 
 const _ActivateAct3Objectives = () => {
@@ -1144,12 +1144,15 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
             villageSize: BASE_SIZE_BOSS
         })
 
-        LISTENFOR_PlayerEnteredVillage({
-            snippet: "pev_player_enetered_village_fast_travel_check",
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: CULTURE_NAME_VILLAGERS,
-            villageSize: BASE_SIZE_SMALL
-        })
+        for (const factionName of CULTURE_NAME_VILLAGERS) {
+            LISTENFOR_PlayerEnteredVillage({
+                snippet: "pev_player_enetered_village_fast_travel_check",
+                ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+                factionName: factionName,
+                villageSize: BASE_SIZE_SMALL
+            })
+        }
+        
 
         //EE listeners for testing campaign acts
         LISTENFOR_ExternalEvent({

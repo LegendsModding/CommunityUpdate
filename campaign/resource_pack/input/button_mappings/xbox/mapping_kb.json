@@ -1,0 +1,779 @@
+{
+  "settings": {
+    "default": {
+      "sensitivity": 3.0
+    },
+    "player_moving": {
+      "sensitivity": 0.6,
+      "sensCurveP0": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP1": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP2": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP3": [
+        1.0,
+        1.0
+      ],
+      "sensCurveFrames": 0
+    },
+    "vanilla": {
+      "sensitivity": 1.0
+    },
+    "structure_placement": {
+      "sensitivity": 0.026,
+      "ignoreInvertY": true,
+      "sensCurveP0": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP1": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP2": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP3": [
+        1.0,
+        1.0
+      ],
+      "sensCurveFrames": 0
+    },
+    "debug": {
+      "sensitivity": 2
+    },
+    "aiming": {
+      "sensitivity": 0.15,
+      "ignoreInvertY": true,
+      "sensCurveP0": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP1": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP2": [
+        0.0,
+        1.0
+      ],
+      "sensCurveP3": [
+        1.0,
+        1.0
+      ],
+      "sensCurveFrames": 0
+    }
+  },
+  "keymap": [
+    {
+      "key_id": "key.showSkipCinematic",
+      "keys": [
+        "keyboard.keyName.escape",
+        "keyboard.keyName.return",
+        "mouse.buttonName.left"
+      ]
+    },
+    {
+      "key_id": "key.skipCinematic",
+      "keys": [
+        "keyboard.keyName.space"
+      ]
+    },
+    //------------------Basic Controls-----------------
+    //Hero Movement
+    {
+      "key_id": "key.forward",
+      "keys": [
+        "keyboard.keyName.w"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.left",
+      "keys": [
+        "keyboard.keyName.a"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.back",
+      "keys": [
+        "keyboard.keyName.s"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.right",
+      "keys": [
+        "keyboard.keyName.d"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.toggleSprint", // used by sprint/stamina feature
+      "keys": [
+        "keyboard.keyName.lshift"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.jump",
+      "keys": [
+        "keyboard.keyName.space"
+      ],
+      "rebindable": true
+    },
+    //Interact
+    {
+      "key_id": "key.activateSpawner",
+      "keys": [
+        "keyboard.keyName.q"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.refund",
+      "keys": [
+        "keyboard.keyName.g"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.deconstruct",
+      "keys": [
+        "keyboard.keyName.f"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.bsharpInteract",
+      "keys": [
+        "keyboard.keyName.q"
+      ],
+      "rebindable": true
+    },
+    //Interact Mount
+    {
+      "key_id": "key.tutorial",
+      "keys": [
+        "keyboard.keyName.escape"
+      ]
+    },
+    //Sword
+    {
+      "key_id": "key.heroAbility",
+      "keys": [
+        "mouse.buttonName.left"
+      ],
+      "rebindable": true
+    },
+    //Dismount
+    {
+      "key_id": "key.dismount",
+      "keys": [
+        "keyboard.keyName.n"
+      ],
+      "rebindable": false
+    },
+    //------------------Mob Controls-----------------
+    {
+      "key_id": "key.heroDirect",
+      "keys": [
+        "keyboard.keyName.e"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.heroLure",
+      "keys": [
+        "keyboard.keyName.q"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.recallMob",
+      "keys": [
+        "keyboard.keyName.e"
+      ],
+      "rebindable": true
+    },
+    //------------------Build Controls-----------------
+    {
+      "key_id": "key.build",
+      "keys": [
+        "mouse.buttonName.right"
+      ],
+      "rebindable": true
+    },
+    //Needed for Hold
+    {
+      "key_id": "key.buildCancel",
+      "keys": [
+        "mouse.buttonName.right"
+      ],
+      "rebindable": true,
+      "focus_impact": "neutral"
+    },
+    //Confirm
+    {
+      "key_id": "key.action",
+      "keys": [
+        "mouse.buttonName.left"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.rotatePreviewCounterclockwise",
+      "keys": [
+        "keyboard.keyName.q"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.rotatePreviewClockwise",
+      "keys": [
+        "keyboard.keyName.e"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.ping.buildpreview.request",
+      "keys": [
+        "keyboard.keyName.2"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.ping.buildpreview.statement",
+      "keys": [
+        "keyboard.keyName.1"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.ping.buildpreview.yes",
+      "keys": [
+        "keyboard.keyName.3"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.ping.buildpreview.no",
+      "keys": [
+        "keyboard.keyName.4"
+      ],
+      "rebindable": true
+    },
+    //------------------Battle Controls-----------------
+    //RSL Controls
+    {
+      "key_id": "key.cancelAiming",
+      "keys": [
+        "keyboard.keyName.q",
+        "mouse.buttonName.right"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.confirmTarget",
+      "keys": [
+        "mouse.buttonName.left"
+      ],
+      "rebindable": true
+    },
+    //Enter Battle View
+    {
+      "key_id": "key.battleView",
+      "keys": [
+        "keyboard.keyName.control"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.attackMove",
+      "keys": [
+        "mouse.buttonName.left"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.forceMove",
+      "keys": [
+        "mouse.buttonName.right"
+      ],
+      "rebindable": true
+    },
+    //Rally
+    {
+      "key_id": "key.rally",
+      "keys": [
+        "keyboard.keyName.q"
+      ],
+      "rebindable": true
+    },
+    // Type-Select Menus
+    {
+      "key_id": "key.typeSelectCategory1",
+      "keys": [
+        "keyboard.keyName.z"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.typeSelectCategory2",
+      "keys": [
+        "keyboard.keyName.x"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.typeSelectCategory4",
+      "keys": [
+        "keyboard.keyName.c"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.typeSelectCategory6",
+      "keys": [
+        "keyboard.keyName.v"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.typeSelectCycleHotbarPrevious",
+      "keys": [
+        "mouse.wheelName.up"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.typeSelectCycleHotbarNext",
+      "keys": [
+        "mouse.wheelName.down"
+      ],
+      "rebindable": true
+    },
+    // Chat
+    {
+      "key_id": "key.chat",
+      "keys": [
+        "keyboard.keyName.return"
+      ],
+      "rebindable": true
+    },
+    //------------------Menu & HUD Controls-----------------
+    {
+      "key_id": "key.menu.pause",
+      "keys": [
+        "keyboard.keyName.escape"
+      ]
+    },
+    {
+      "key_id": "key.menu.cancel",
+      "keys": [
+        "keyboard.keyName.escape"
+      ]
+    },
+    {
+      "key_id": "key.menuTabLeft",
+      "keys": [
+        "keyboard.keyName.lbracket"
+      ],
+      "rebindable": true,
+      "focus_impact": "activate"
+    },
+    {
+      "key_id": "key.menuTabRight",
+      "keys": [
+        "keyboard.keyName.rbracket"
+      ],
+      "rebindable": true,
+      "focus_impact": "activate"
+    },
+    {
+      "key_id": "key.menu.up",
+      "keys": [
+        "keyboard.keyName.up"
+      ]
+    },
+    {
+      "key_id": "key.menu.down",
+      "keys": [
+        "keyboard.keyName.down"
+      ]
+    },
+    {
+      "key_id": "key.menu.left",
+      "keys": [
+        "keyboard.keyName.left"
+      ]
+    },
+    {
+      "key_id": "key.menu.right",
+      "keys": [
+        "keyboard.keyName.right"
+      ]
+    },
+    {
+      "key_id": "key.menu.select",
+      "keys": [
+        "mouse.buttonName.left"
+      ],
+      "focus_impact": "activate"
+    },
+    {
+      "key_id": "key.menu.secondarySelect",
+      "keys": [
+        "keyboard.keyName.return"
+      ]
+    },
+    {
+      "key_id": "key.menu.ok",
+      "keys": [
+        "keyboard.keyName.return"
+      ]
+    },
+    //Radial Menu Controls
+    {
+      "key_id": "key.radialMenuExit",
+      "keys": [
+        "keyboard.keyName.escape"
+      ]
+    },
+    {
+      "key_id": "key.radialMenuSelect",
+      "keys": [
+        "mouse.buttonName.left"
+      ]
+    },
+    {
+      "key_id": "key.radialCategoryCycleForward",
+      "keys": [
+        "keyboard.keyName.q",
+        "mouse.wheelName.up"
+      ]
+    },
+    {
+      "key_id": "key.radialCategoryCycleBackward",
+      "keys": [
+        "keyboard.keyName.e",
+        "mouse.wheelName.down"
+      ]
+    },
+    //Map
+    {
+      "key_id": "key.mapScreen",
+      "keys": [
+        "keyboard.keyName.m",
+        "keyboard.keyName.tab"
+      ],
+      "rebindable": true
+    },
+    //Song Book - Recipe Book
+    {
+      "key_id": "key.songbookScreen",
+      "keys": [
+        "keyboard.keyName.r"
+      ],
+      "rebindable": true
+    },
+    //Hotbar Selection & Slots
+    {
+      "key_id": "key.toolbarCategory1",
+      "keys": [
+        "keyboard.keyName.z"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.toolbarCategory2",
+      "keys": [
+        "keyboard.keyName.x"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.toolbarCategory3",
+      "keys": [
+        "keyboard.keyName.c"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.toolbarCategory4",
+      "keys": [
+        "keyboard.keyName.v"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.cycleHotbarPrevious",
+      "keys": [
+        "mouse.wheelName.up"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.cycleHotbarNext",
+      "keys": [
+        "mouse.wheelName.down"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.1",
+      "keys": [
+        "keyboard.keyName.1"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.2",
+      "keys": [
+        "keyboard.keyName.2"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.3",
+      "keys": [
+        "keyboard.keyName.3"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.4",
+      "keys": [
+        "keyboard.keyName.4"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.5",
+      "keys": [
+        "keyboard.keyName.5"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.6",
+      "keys": [
+        "keyboard.keyName.6"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.7",
+      "keys": [
+        "keyboard.keyName.7"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.8",
+      "keys": [
+        "keyboard.keyName.8"
+      ],
+      "rebindable": true
+    },
+    {
+      "key_id": "key.hotbar.9",
+      "keys": [
+        "keyboard.keyName.9"
+      ],
+      "rebindable": true
+    },
+    //------------------Debug Controls-----------------
+    {
+      "key_id": "key.command",
+      "keys": [
+        "keyboard.keyName.slash"
+      ]
+    },
+    {
+      "key_id": "key.menu.autocomplete",
+      "keys": [
+        "keyboard.keyName.tab",
+        "keyboard.keyName.right"
+      ]
+    },
+    {
+      "key_id": "key.renderDebug",
+      "keys": [
+        "keyboard.keyName.f3"
+      ]
+    },
+    {
+      "key_id": "key.openImgui",
+      "keys": [
+        "keyboard.keyName.f4"
+      ]
+    },
+    {
+      "key_id": "key.togglePerspective",
+      "keys": [
+        "keyboard.keyName.f5"
+      ]
+    },
+    {
+      "key_id": "key.toggleBlockPicking",
+      "keys": [
+        "keyboard.keyName.f6"
+      ]
+    },
+    {
+      "key_id": "key.flyFast",
+      "keys": [
+        "keyboard.keyName.f7"
+      ]
+    },
+    {
+      "key_id": "key.simulateTouch",
+      "keys": [
+        "keyboard.keyName.f11"
+      ]
+    },
+    //Camera Controls
+    {
+      "key_id": "key.zoomIn",
+      "keys": [
+        "mouse.wheelName.up"
+      ]
+    },
+    {
+      "key_id": "key.zoomOut",
+      "keys": [
+        "mouse.wheelName.down"
+      ]
+    },
+    {
+      "key_id": "key.centerCamera",
+      "keys": [
+        "keyboard.keyName.r"
+      ]
+    },
+    {
+      "key_id": "key.debugCamSlow",
+      "keys": [
+        "keyboard.keyName.control"
+      ]
+    },
+    {
+      "key_id": "key.sprint", // used to speed up the debug cam
+      "keys": [
+        "keyboard.keyName.q"
+      ]
+    },
+    //Slash Command Hotkeys
+    {
+      "key_id": "key.slashCommandHotkeyModifier",
+      "keys": [
+        "keyboard.keyName.control"
+      ]
+    },
+    {
+      "key_id": "key.vfxCommandHotkeyModifier",
+      "keys": [
+        "keyboard.keyName.control"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey0",
+      "keys": [
+        "keyboard.keyName.0"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey1",
+      "keys": [
+        "keyboard.keyName.1"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey2",
+      "keys": [
+        "keyboard.keyName.2"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey3",
+      "keys": [
+        "keyboard.keyName.3"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey4",
+      "keys": [
+        "keyboard.keyName.4"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey5",
+      "keys": [
+        "keyboard.keyName.5"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey6",
+      "keys": [
+        "keyboard.keyName.6"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey7",
+      "keys": [
+        "keyboard.keyName.7"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey8",
+      "keys": [
+        "keyboard.keyName.8"
+      ]
+    },
+    {
+      "key_id": "key.slashCommandHotkey9",
+      "keys": [
+        "keyboard.keyName.9"
+      ]
+    },
+    {
+      "key_id": "key.vfxCommandHotkeySave",
+      "keys": [
+        "keyboard.keyName.s"
+      ]
+    },
+    {
+      "key_id": "key.vfxCommandHotkeyReload",
+      "keys": [
+        "keyboard.keyName.r"
+      ]
+    },
+    {
+      "key_id": "key.vfxCommandHotkeyVFXReload",
+      "keys": [
+        "keyboard.keyName.f"
+      ]
+    },
+    {
+      "key_id": "key.vfxCommandHotkeyDebugCam",
+      "keys": [
+        "keyboard.keyName.d"
+      ]
+    },
+    {
+      "key_id": "key.acceptInvite",
+      "keys": [], // Intentionally empty for keyboard
+      "rebindable": false
+    }
+  ]
+}

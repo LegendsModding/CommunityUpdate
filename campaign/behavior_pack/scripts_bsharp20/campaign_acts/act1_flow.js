@@ -88,20 +88,20 @@ const act1Skips = {
 }
 const act1FlowVal = {
     misc: {
-        act1MobCap: 20,
+        act1MobCap: 40,
         outpostDestroyedMessage: "act1_outpost_base_destroyed_sequence",
         gameIntroCinematic: "mst03_c00_opening",
         onboardingCompleteResource: "unlock_onboarding_act1_complete",
         act1FlowComplete: "gv_act1_onboarding_complete",
         successAudio: "onboarding_success",
         arrivalAudio: "onboarding_arrival",
-        timeToStartOnboardingAfterIntroCine: 8,
-        timeToStartPassiveOnboardingAfterIntroCine: 20,
-        timeToShowTutorialHint: 30,
+        timeToStartOnboardingAfterIntroCine: 5,
+        timeToStartPassiveOnboardingAfterIntroCine: 10,
+        timeToShowTutorialHint: 10,
         firstVillageTag: "firstVillageUnderAttack",
         secondVillageTag: "secondVillageUnderAttack",
         thirdVillageTag: "thirdVillageUnderAttack",
-        timeToTriggerSupportAndCavalryFMV: 10,
+        timeToTriggerSupportAndCavalryFMV: 5,
         failsafeAct1NISDistance: 90,
         legacyFlow: "gv_legacy_act1_flow",
         skipAct1Flow: "gv_skip_act1_flow",
@@ -109,10 +109,10 @@ const act1FlowVal = {
         villageCageTag: "villageCage",
         piglinsAtVillageTag: "piglinsAtVillage",
         remainingWoFUpgradesUnlock: "unlock_remaining_wof_upgrades",
-        totalCagesNumber: 3,
-        numOfPiglinsToSpawnMarkers: 6,
+        totalCagesNumber: 4,
+        numOfPiglinsToSpawnMarkers: 80,
         piglinLootTableOverride: "act1",
-        timeToTriggerStartingResources: 20,
+        timeToTriggerStartingResources: 10,
         startingResourcesVO: "onboarding_resources_granted",
         timeToSpawnCageMarkers: 6,
         noPoiNisDuringAct1: "gv_no_poi_nis_during_act_1",
@@ -291,9 +291,9 @@ const act1FlowVal = {
             timeToTriggerVOReminder: 10,
             timeToTriggerHint: 40,
             timeToSendPiglinsToAttackPlayers: 45,
-            numberOfPiglinsToSpawnAtVillage: 24,
-            numberOfPiglinsToSpawnAtCages: 4,
-            numberOfPiglinsLeftForSuccess: 16,
+            numberOfPiglinsToSpawnAtVillage: 60,
+            numberOfPiglinsToSpawnAtCages: 8,
+            numberOfPiglinsLeftForSuccess: 20,
             numberOfMobsToDemphasizeHud: 10
         },
         message: {
@@ -365,10 +365,10 @@ const act1FlowVal = {
             timeToTriggerNudgeAfterVO: 3,
             timeToTriggerVOReminder: 300,
             timeToTriggerHint: 40,
-            numberOfPiglinsToSpawnAtVillage: 20,
+            numberOfPiglinsToSpawnAtVillage: 40,
             timeToTriggerVillageIntroCine: 10,
             timeToTriggerVOAfterIntroCine: 4,
-            numberOfPiglinsLeftForSuccess: 5
+            numberOfPiglinsLeftForSuccess: 10
         },
         message: {
             onboardingNudge: "onboarding_find_second_village_nudge",
@@ -485,7 +485,7 @@ const act1FlowVal = {
             timeToTriggerHint: 40,
             amountOfGatesNecessary: 1,
             amountOfWallsNecessary: 40,
-            timeToStartFirstSkirmish: 120,
+            timeToStartFirstSkirmish: 30,
             thresholdsToPrelimenaryVO: [0.15, 0.8],
             completionVOdelay: 4
         },
@@ -542,7 +542,7 @@ const act1FlowVal = {
             timeToTriggerNudgeAfterVO: 4,
             timeToTriggerVOReminder: 300,
             timeToTriggerHint: 40,
-            villageAttackDuration: 150,
+            villageAttackDuration: 50,
             timeToReminderToReturnToVillage: 30,
             timeToFirstSkirmishVO: 3,
             thresholdsToPrelimenaryVO: [0.1, 0.4]
@@ -1604,7 +1604,7 @@ SNIPPET_PlayerEnteredVillage("pev_entered_modulated_village", (villageId, _playe
 const _SpawnCagesAtFirstVillage = () => {
     const firstUnderAttackVillage = _GetFirstVillageEntity()
     const villageId = QUERY_GetVillageIDFromEntity(firstUnderAttackVillage)
-    const cages = BuildableCard("mobCage", 3)
+    const cages = BuildableCard("mobCage", 6)
     DECK_MultiplyByMultipleRules(cages, [PlacementPreferenceCard(PLACEMENT_RANDOM), ZoneFilterCard("villageCageZone"), TagCard("villageCage")])
     OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, cages)
 }
@@ -2384,7 +2384,7 @@ SNIPPET_SpatialPartitionEntered("spe_first_village_under_attack_preparation", (t
     if (QUERY_GetGlobalVariable(act1Skips.skipVillage1) === 0) {
         const villageId = QUERY_GetVillageIDFromEntity(triggerEntity)
 
-        let runts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtVillage, TEAM_ORANGE, villageId, 30, 35)
+        let runts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtVillage, TEAM_ORANGE, villageId, 45, 60)
         OUTPUT_SetVillagePersistentEntities(runts, villageId)
         OUTPUT_SetLootTableOverride(runts, act1FlowVal.misc.piglinLootTableOverride)
 
@@ -2393,7 +2393,7 @@ SNIPPET_SpatialPartitionEntered("spe_first_village_under_attack_preparation", (t
         let villageCages = FILTER_ByTagFilter(villageEntities, ["villageCage"], []) // <-- get all the cages
         while (HasEntities(villageCages)) {
             const cage = RandomEntity(villageCages) // <-- grab a single cage to leash piglins to.
-            const cageRunts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtCages, TEAM_ORANGE, villageId, 30, 35)
+            const cageRunts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtCages, TEAM_ORANGE, villageId, 45, 60)
             OUTPUT_SetLeashWithReturnWhenNotTargeting(cageRunts, cage, 20, 10)
             OUTPUT_SetLootTableOverride(cageRunts, act1FlowVal.misc.piglinLootTableOverride)
             OUTPUT_SetVillagePersistentEntities(cageRunts, villageId)
@@ -2550,9 +2550,39 @@ SNIPPET_InvasionDestroyEntitiesObjective("deo_piglins_invading_first_village", (
 
 SNIPPET_BuildingComplete("bc_onboarding_first_village_cage", (buildingCompleteEG, payload) => {
     IncrementGlobal(act1FlowVal.firstVillageUnderAttack.global.cagesBuilt)
-    OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture01", "badger:villager_culture01"])
-    OUTPUT_SetBarracksSpawnCap(buildingCompleteEG, 5)
     const villageId = payload.ownerVillageId
+    const factionName = QUERY_GetFactionNameFromVillageID(villageId)
+    
+    switch (factionName) {
+        case CULTURE_NAME_FOREST:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture01", "badger:villager_culture01"])
+            break
+        case CULTURE_NAME_FROSTLANDS:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture02", "badger:villager_culture02"])
+            break
+        case CULTURE_NAME_DRYLANDS:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture03", "badger:villager_culture03"])
+            break
+        case CULTURE_NAME_WETLANDS:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture04", "badger:villager_culture04"])
+            break
+        case CULTURE_NAME_GRASSLANDS:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture05", "badger:villager_culture05"])
+            break
+        case CULTURE_NAME_BROKENLANDS:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture06", "badger:villager_culture06"])
+            break
+        case CULTURE_NAME_FATEFUL_LAND:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture07", "badger:villager_culture07"])
+            break
+        case CULTURE_NAME_JUNGLE:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture08", "badger:villager_culture08"])
+            break
+        case CULTURE_NAME_MOUNTAIN:
+            OUTPUT_SetBarracksSpawnTypes(buildingCompleteEG, ["badger:villager_illager_culture09", "badger:villager_culture09"])
+            break
+    }
+    OUTPUT_SetBarracksSpawnCap(buildingCompleteEG, 5)
     LISTENFOR_BuildableSpawnerSpawned({
         snippet: "bss_onboarding_first_village_cage",
         ownerVillageId: villageId,
@@ -5738,7 +5768,7 @@ const _TryRunThreeOutpostsPlacementTiers = (baseSize) => {
 
     const friendlyVillages = _GetFirstVillageEntity()
     const otherPiglinOutposts = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), FACTION_NAME_DBB)
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
 
     for (let i = 0; i < mainPlacementTiers.length; i++) {
@@ -5793,7 +5823,7 @@ const _TryRunSecondSkirmishPlacementTiers = () => {
     ]
 
     const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS])
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
     const wof = GetVillageEntityFromFaction(WELL_OF_FATE)
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
 
@@ -5957,8 +5987,26 @@ SNIPPET_VillageGenerated("vg_act_1_second_skirmish", (villageId, _payload) => {
         direction: HEALTH_DIRECTION.DAMAGE
     })
     Logi("~~~~~vg_act_1_second_skirmish vg_act_1_second_skirmish~~~~")
-
-    SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS)
+    const factionName = QUERY_GetFactionNameFromVillageID(villageId)
+    if (factionName === CULTURE_NAME_FOREST) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_FOREST)
+    } else if (factionName === CULTURE_NAME_FROSTLANDS) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_FROSTLANDS)
+    } else if (factionName === CULTURE_NAME_DRYLANDS) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_DRYLANDS)
+    } else if (factionName === CULTURE_NAME_WETLANDS) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_WETLANDS)
+    } else if (factionName === CULTURE_NAME_GRASSLANDS) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_GRASSLANDS)
+    } else if (factionName === CULTURE_NAME_BROKENLANDS) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_BROKENLANDS)
+    } else if (factionName === CULTURE_NAME_FATEFUL_LAND) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND)
+    } else if (factionName === CULTURE_NAME_JUNGLE) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_JUNGLE)
+    } else if (factionName === CULTURE_NAME_MOUNTAIN) {
+        SetupMobCages(villageId, act1FlowVal.misc.villageCageTag, MOB_ARCHETYPE.VILLAGERS_MOUNTAIN)
+    }
     Once()
 })
 

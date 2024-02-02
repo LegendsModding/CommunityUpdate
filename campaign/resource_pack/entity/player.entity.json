@@ -1,0 +1,755 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+		"description": {
+            "animations": {
+                "fe_anim": "controller.animation.hero.ranger_frontend",
+                "champion_frontend": "controller.animation.hero.champion_frontend",
+                "guardian_frontend": "controller.animation.hero.guardian_frontend",
+                "magus_frontend": "controller.animation.hero.magus_frontend",
+                "rabbit_frontend": "controller.animation.hero.rabbit_frontend",
+                "ranger_frontend": "controller.animation.hero.ranger_frontend",
+                "warrior_frontend": "controller.animation.hero.warrior_frontend",
+                "champion_frontend_alt": "controller.animation.hero.champion_frontend_alt",
+                "guardian_frontend_alt": "controller.animation.hero.guardian_frontend_alt",
+                "magus_frontend_alt": "controller.animation.hero.magus_frontend_alt",
+                "ranger_frontend_alt": "controller.animation.hero.ranger_frontend_alt",
+                "warrior_frontend_alt": "controller.animation.hero.warrior_frontend_alt",
+                "fe_champion_idle": "animation.hero_fe.fe_champion_idle",
+                "fe_champion_new_skin_a": "animation.hero_fe.fe_champion_new_skin_a",
+                "fe_champion_select": "animation.hero_fe.fe_champion_select",
+                "fe_guardian_idle": "animation.hero_fe.fe_guardian_idle",
+                "fe_guardian_new_skin_a": "animation.hero_fe.fe_guardian_new_skin_a",
+                "fe_guardian_select": "animation.hero_fe.fe_guardian_select",
+                "fe_magus_idle": "animation.hero_fe.fe_magus_idle",
+                "fe_magus_new_skin_a": "animation.hero_fe.fe_magus_new_skin_a",
+                "fe_magus_select": "animation.hero_fe.fe_magus_select",
+                "fe_rabbit_idle": "animation.hero_fe.fe_rabbit_idle",
+                "fe_rabbit_select": "animation.hero_fe.fe_rabbit_select",
+                "fe_ranger_idle": "animation.hero_fe.fe_ranger_idle",
+                "fe_ranger_new_skin_a": "animation.hero_fe.fe_ranger_new_skin_a",
+                "fe_ranger_select": "animation.hero_fe.fe_ranger_select",
+                "fe_warrior_idle": "animation.hero_fe.fe_warrior_idle",
+                "fe_warrior_new_skin_a": "animation.hero_fe.fe_warrior_new_skin_a",
+                "fe_warrior_select": "animation.hero_fe.fe_warrior_select"
+            },
+            "geometry": {
+                "default": "geometry.hero_ranger_bg_01"
+            },
+            "identifier": "minecraft:player",
+            "materials": {
+                "mat_hero_ranger_bg_01": "mat_hero_ranger_bg_01",
+                "mat_hero_ranger_bg_01_face": "mat_hero_ranger_bg_01_face"
+            },
+            "render_controllers": ["controller.render.hero_ranger_bg_01"]
+        },
+        "components": {
+            "badger:decal_visualization": {
+                "animation_frame_count": 3,
+                "animation_framerate": 3,
+                "apply_to_owned": true,
+                "bin": "indicator",
+                "decal_size": [2, 1.75, 2],
+                "decal_textures": ["decal_lure_status"],
+                "height_fade": true,
+                "is_symmetric_texture": true,
+                "shape": "none",
+                "sort_key": 0
+            },
+            "badger:fast_travel_presentation": {
+                "cooldown": "fast_travel_end",
+                "cooldown_event_time": 5.0,
+                "fade_to_black": {
+                    "begin_fade": 1.0,
+                    "end_fade": 3,
+                    "fade_in_duration": 1.0,
+                    "fade_out_duration": 1.0
+                },
+                "windup": "fast_travel_start",
+                "windup_event_time": 0.25
+            },
+            "badger:hero_lure_presentation": {
+                "start_trigger": "hero_lure_start",
+                "stop_trigger": "hero_lure_stop"
+            },
+            "badger:input_actions": {
+                "actions": [{
+                        "action_name": "sword_attack",
+                        "action_targeting_type": "none",
+                        "input_action_mode": "trigger",
+                        "input_id": "button.dismount"
+                    }, {
+                        "action_name": "sword_attack",
+                        "action_targeting_type": "none",
+                        "input_action_mode": "sustain",
+                        "input_id": "button.dismount"
+                    }, {
+                        "action_name": "dismount",
+                        "action_targeting_type": "none",
+                        "input_action_mode": "trigger",
+                        "input_id": "button.dismount"
+                    }
+                ]
+            },
+            "badger:respawn_trigger": {
+                "trigger": "on_respawned"
+            },
+            "badger:presentation_event": {
+                "fast_travel_end": {
+                    "audio": "BAE_hero_fast_travel_stop",
+                    "particles": {
+                        "bind_to_actor": true,
+                        "effect": "badger:fx_hero_fast_travel",
+                        "enabled": "true",
+                        "locator": "loc_butt"
+                    }
+                },
+                "fast_travel_start": {
+                    "audio": "BAE_hero_fast_travel_start",
+                    "particles": {
+                        "bind_to_actor": true,
+                        "effect": "badger:fx_hero_fast_travel",
+                        "enabled": "true",
+                        "locator": "loc_butt"
+                    },
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 50,
+                        "priority": 1,
+                        "override": true,
+                        "range": 0.0
+                    }
+                },
+                "on_initial_spawn": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 50,
+                        "priority": 1,
+                        "range": 0.0,
+                        "override": true
+                    }
+                },
+                "on_respawned": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 50,
+                        "priority": 1,
+                        "range": 0.0,
+                        "override": true
+                    }
+                },
+                "hero_lure_stop": {
+                    "audio": "BAE_hero_lure_off",
+                    "rumble": {
+                        "duration": 0.35,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_targeted": {
+                    "outline": {
+                        "affects_enemies": true,
+                        "color": "enemy_target",
+                        "duration": 0.25
+                    }
+                },
+                "on_battle_view_exit": {
+                    "audio": "BAE_STATE_battleview_stop"
+                },
+                "on_battle_view_start": {
+                    "audio": "BAE_STATE_battleview_start"
+                },
+                "on_build_preview_start": {
+                    "audio": "BAE_mus_lute_pre"
+                },
+                "on_building_battle_drum": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_rapid_fire_missiles"
+                },
+                "on_building_carpenter": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_regen_structures"
+                },
+                "on_building_chunk_drag_wall": {
+                    "audio": "BAE_UI_sb_build_utility_chunk_drag_wall"
+                },
+                "on_building_deconstructed": {
+                    "audio": "BAE_mus_lute_deconstruct"
+                },
+                "on_building_placed": {
+                    "rumble": {
+                        "duration": 0.35,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_building_failed": {
+                    "audio": "BAE_mus_lute_invalid"
+                },
+                "on_building_freeze_trap": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_apply_freeze"
+                },
+                "on_building_gate": {
+                    "audio": "BAE_UI_sb_build_utility_gate"
+                },
+                "on_building_increase_allay_cap_gather_build": {
+                    "audio": "BAE_UI_sb_build_village_increase_allay_cap_gather_build"
+                },
+                "on_building_increase_lure_cap": {
+                    "audio": "BAE_UI_sb_build_village_increase_lure_cap"
+                },
+                "on_building_increase_spawner_cap": {
+                    "audio": "BAE_UI_sb_build_village_increase_spawner_cap"
+                },
+                "on_building_increase_spawner_cap_medium": {
+                    "audio": "BAE_UI_sb_build_village_increase_spawner_cap_medium"
+                },
+                "on_building_increase_starting_cap": {
+                    "audio": "BAE_UI_sb_build_village_increase_starting_cap"
+                },
+                "on_building_kaboomery": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_explosive_missiles"
+                },
+                "on_building_outpost": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_fort_outpost"
+                },
+                "on_building_poi_tower_01": {
+                    "audio": "BAE_UI_sb_build_village_poi_tower_01"
+                },
+                "on_building_poi_tower_01_buildable": {
+                    "audio": "BAE_UI_sb_build_utility_poi_tower_01_buildable"
+                },
+                "on_building_poi_tower_02": {
+                    "audio": "BAE_UI_sb_build_village_poi_tower_02"
+                },
+                "on_building_poi_tower_02_buildable": {
+                    "audio": "BAE_UI_sb_build_utility_poi_tower_02_buildable"
+                },
+                "on_building_poi_tower_04": {
+                    "audio": "BAE_UI_sb_build_village_poi_tower_04"
+                },
+                "on_building_poi_tower_04_buildable": {
+                    "audio": "BAE_UI_sb_build_utility_poi_tower_04_buildable"
+                },
+                "on_building_poi_zoner_well_of_fate_pylon": {
+                    "audio": "BAE_UI_sb_build_village_poi_zoner_well_of_fate_pylon"
+                },
+                "on_building_redstone_launcher": {
+                    "audio": "BAE_UI_sb_build_utility_redstone_launcher"
+                },
+                "on_building_spawner_cavalry_golem": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_cavalry_golem"
+                },
+                "on_building_spawner_creeper": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_creeper"
+                },
+                "on_building_spawner_first_brick": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_first_brick"
+                },
+                "on_building_spawner_first_diorite": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_first_diorite"
+                },
+                "on_building_spawner_first_oak": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_first_oak"
+                },
+                "on_building_spawner_first_stone": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_first_stone"
+                },
+                "on_building_spawner_skeleton": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_skeleton"
+                },
+                "on_building_spawner_stone_golem": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_stone_golem"
+                },
+                "on_building_spawner_support_golem": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_support_golem"
+                },
+                "on_building_spawner_vindicator": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_vindicator"
+                },
+                "on_building_spawner_witch": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_witch_hut"
+                },
+                "on_building_spawner_wood_golem": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_wood_golem"
+                },
+                "on_building_spawner_zombie": {
+                    "audio": "BAE_UI_sb_build_mobs_spawner_zombie"
+                },
+                "on_building_spyglass": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_increased_range_missiles"
+                },
+                "on_building_stairs_wood": {
+                    "audio": "BAE_UI_sb_build_utility_stairs_wood"
+                },
+                "on_building_stone_mason": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_buff_structures"
+                },
+                "on_building_terraform_gather_surface_002": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_002"
+                },
+                "on_building_terraform_gather_surface_coal": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_coal"
+                },
+                "on_building_terraform_gather_surface_denether": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_denether"
+                },
+                "on_building_terraform_gather_surface_gold": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_gold"
+                },
+                "on_building_terraform_gather_surface_rare_ore": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_rare_ore"
+                },
+                "on_building_terraform_gather_surface_redstone": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_redstone"
+                },
+                "on_building_terraform_gather_surface_stone": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_stone"
+                },
+                "on_building_terraform_gather_surface_uncommon_ore": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_uncommon_ore"
+                },
+                "on_building_terraform_gather_surface_wood": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_wood"
+                },
+                "on_building_terraform_gather_surface_z_all": {
+                    "audio": "BAE_UI_sb_build_resourcing_terraform_gather_surface_z_all"
+                },
+                "on_building_totem_unlock_mob_alliance": {
+                    "audio": "BAE_UI_sb_build_utility_totem_unlock_mob_alliance"
+                },
+                "on_building_totem_unlock_village": {
+                    "audio": "BAE_UI_sb_build_mobs_totem_unlock_village"
+                },
+                "on_building_tower_anti_siege": {
+                    "audio": "BAE_UI_sb_build_utility_tower_anti_siege"
+                },
+                "on_building_tower_arrow": {
+                    "audio": "BAE_UI_sb_build_utility_tower_arrow"
+                },
+                "on_building_tower_shotgun": {
+                    "audio": "BAE_UI_sb_build_utility_tower_shotgun"
+                },
+                "on_building_unlock_clear_nether": {
+                    "audio": "BAE_UI_sb_build_village_unlock_clear_nether"
+                },
+                "on_building_unlock_gather_coal": {
+                    "audio": "BAE_UI_sb_build_village_unlock_gather_coal"
+                },
+                "on_building_unlock_gather_gold": {
+                    "audio": "BAE_UI_sb_build_village_unlock_gold"
+                },
+                "on_building_unlock_gather_rare": {
+                    "audio": "BAE_UI_sb_build_village_unlock_gather_rare"
+                },
+                "on_building_unlock_gather_redstone": {
+                    "audio": "BAE_UI_sb_build_village_unlock_redstone"
+                },
+                "on_building_unlock_gather_uncommon": {
+                    "audio": "BAE_UI_sb_build_village_unlock_gather_uncommon"
+                },
+                "on_building_unlock_increase_carpenter_regen": {
+                    "audio": "BAE_UI_sb_build_village_increase_carpenter_regen"
+                },
+                "on_building_unlock_increase_mason_rate": {
+                    "audio": "BAE_UI_sb_build_village_increase_mason_rate"
+                },
+                "on_building_unlock_linked_village_chests": {
+                    "audio": "BAE_UI_sb_build_village_unlock_linked_village_chests"
+                },
+                "on_building_unlock_poi_golem": {
+                    "audio": "BAE_UI_sb_build_village_unlock_poi_golem"
+                },
+                "on_building_unlock_poi_tower": {
+                    "audio": "BAE_UI_sb_build_village_unlock_poi_tower"
+                },
+                "on_building_zoner_cauldron": {
+                    "audio": "BAE_UI_sb_build_utility_zoner_cauldron"
+                },
+                "on_death": {
+                    "attachment": [{
+                            "location": "right_hand"
+                        }, {
+                            "location": "center"
+                        }
+                    ],
+                    "rumble": {
+                        "duration": 0.85,
+                        "strength": 100,
+                        "priority": 1,
+                        "override": true,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_cancel_badger:entity_struct_fountain_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest_stop"
+                },
+                "on_interaction_cancel_badger:entity_struct_piglin_crate_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_stop"
+                },
+                "on_interaction_cancel_badger:entity_struct_pigcratecom_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_stop"
+                },
+                "on_interaction_cancel_badger:entity_struct_pigcratedef_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_stop"
+                },
+                "on_interaction_cancel_badger:entity_struct_pigcrateext_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_stop"
+                },
+                "on_interaction_cancel_badger:entity_struct_pigcrateuti_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_stop"
+                },
+                "on_interaction_cancel_badger:entity_struct_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest_stop"
+                },
+                "on_interaction_cancel_badger:mob_alliance_mob_cage_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_cage_stop"
+                },
+                "on_interaction_cancel_badger:mob_golem_carrier_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_stop"
+                },
+                "on_interaction_cancel_badger:mob_golem_shield_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_stop"
+                },
+                "on_interaction_cancel_badger:mob_golem_sniper_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_stop"
+                },
+                "on_interaction_cancel_badger:poi_ally_01_interact_zone_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_stop"
+                },
+                "on_interaction_cancel_badger:poi_tower_01_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_stop"
+                },
+                "on_interaction_cancel_badger:poi_tower_02_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_stop"
+                },
+                "on_interaction_cancel_badger:poi_tower_04_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_stop"
+                },
+                "on_interaction_cancel_generic_deconstruct": {
+                    "audio": "BAE_lute_melody_deconstruct_structure_stop"
+                },
+                "on_interaction_cancel_generic_recall": {
+                    "audio": "BAE_lute_melody_recall_mobs_stop"
+                },
+                "on_interaction_cancel_generic_refund": {
+                    "audio": "BAE_lute_melody_refund_mobs_stop"
+                },
+                "on_interaction_cancel_generic_spawner": {
+                    "audio": "BAE_lute_melody_activate_spawner_stop"
+                },
+                "on_interaction_complete_badger:entity_struct_fountain_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_complete_badger:entity_struct_piglin_crate_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_complete_badger:entity_struct_pigcratecom_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_complete"
+                },
+                "on_interaction_complete_badger:entity_struct_pigcratedef_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_complete"
+                },
+                "on_interaction_complete_badger:entity_struct_pigcrateext_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_complete"
+                },
+                "on_interaction_complete_badger:entity_struct_pigcrateuti_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_complete"
+                },
+                "on_interaction_complete_badger:entity_struct_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_complete_badger:mob_alliance_mob_cage_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_cage_complete",
+                    "rumble": {
+                        "duration": 0.75,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_complete_badger:mob_golem_carrier_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_complete"
+                },
+                "on_interaction_complete_badger:mob_golem_shield_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_complete"
+                },
+                "on_interaction_complete_badger:mob_golem_sniper_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_complete"
+                },
+                "on_interaction_complete_badger:poi_ally_01_interact_zone_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_complete"
+                },
+                "on_interaction_complete_badger:poi_tower_01_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_complete"
+                },
+                "on_interaction_complete_badger:poi_tower_02_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_complete"
+                },
+                "on_interaction_complete_badger:poi_tower_04_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_complete"
+                },
+                "on_interaction_complete_generic_deconstruct": {
+                    "audio": "BAE_lute_melody_deconstruct_structure_complete",
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 20,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_complete_generic_recall": {
+                    "audio": "BAE_lute_melody_recall_mobs_complete",
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 20,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_interaction_interrupt_badger:entity_struct_fountain_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest_interrupt"
+                },
+                "on_interaction_interrupt_badger:entity_struct_piglin_crate_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_interrupt"
+                },
+                "on_interaction_interrupt_badger:entity_struct_pigcratecom_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_interrupt"
+                },
+                "on_interaction_interrupt_badger:entity_struct_pigcratedef_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_interrupt"
+                },
+                "on_interaction_interrupt_badger:entity_struct_pigcrateext_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_interrupt"
+                },
+                "on_interaction_interrupt_badger:entity_struct_pigcrateuti_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate_interrupt"
+                },
+                "on_interaction_interrupt_badger:entity_struct_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest_interrupt"
+                },
+                "on_interaction_interrupt_badger:mob_alliance_mob_cage_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_cage_interrupt"
+                },
+                "on_interaction_interrupt_badger:mob_golem_carrier_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_interrupt"
+                },
+                "on_interaction_interrupt_badger:mob_golem_shield_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_interrupt"
+                },
+                "on_interaction_interrupt_badger:mob_golem_sniper_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_interrupt"
+                },
+                "on_interaction_interrupt_badger:poi_ally_01_interact_zone_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem_interrupt"
+                },
+                "on_interaction_interrupt_badger:poi_tower_01_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_interrupt"
+                },
+                "on_interaction_interrupt_badger:poi_tower_02_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_interrupt"
+                },
+                "on_interaction_interrupt_badger:poi_tower_04_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower_interrupt"
+                },
+                "on_interaction_interrupt_generic_deconstruct": {
+                    "audio": "BAE_lute_melody_deconstruct_structure_interrupt"
+                },
+                "on_interaction_interrupt_generic_recall": {
+                    "audio": "BAE_lute_melody_recall_mobs_interrupt"
+                },
+                "on_interaction_interrupt_generic_refund": {
+                    "audio": "BAE_lute_melody_refund_mobs_interrupt"
+                },
+                "on_interaction_interrupt_generic_spawner": {
+                    "audio": "BAE_lute_melody_activate_spawner_interrupt"
+                },
+                "on_interaction_start_badger:entity_struct_fountain_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest"
+                },
+                "on_interaction_start_badger:entity_struct_piglin_crate_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate"
+                },
+                "on_interaction_start_badger:entity_struct_pigcratecom_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate"
+                },
+                "on_interaction_start_badger:entity_struct_pigcratedef_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate"
+                },
+                "on_interaction_start_badger:entity_struct_pigcrateext_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate"
+                },
+                "on_interaction_start_badger:entity_struct_pigcrateuti_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_crate"
+                },
+                "on_interaction_start_badger:entity_struct_treasure_chest_bsharp": {
+                    "audio": "BAE_lute_melody_open_chest"
+                },
+                "on_interaction_start_badger:mob_alliance_mob_cage_bsharp": {
+                    "audio": "BAE_lute_melody_open_piglin_cage"
+                },
+                "on_interaction_start_badger:mob_golem_carrier_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem"
+                },
+                "on_interaction_start_badger:mob_golem_shield_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem"
+                },
+                "on_interaction_start_badger:mob_golem_sniper_nis_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem"
+                },
+                "on_interaction_start_badger:poi_ally_01_interact_zone_bsharp": {
+                    "audio": "BAE_lute_melody_assemble_poi_golem"
+                },
+                "on_interaction_start_badger:poi_tower_01_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower"
+                },
+                "on_interaction_start_badger:poi_tower_02_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower"
+                },
+                "on_interaction_start_badger:poi_tower_04_deconstruct": {
+                    "audio": "BAE_lute_melody_gather_poi_tower"
+                },
+                "on_interaction_start_generic_deconstruct": {
+                    "audio": "BAE_lute_melody_deconstruct_structure"
+                },
+                "on_interaction_start_generic_recall": {
+                    "audio": "BAE_lute_melody_recall_mobs"
+                },
+                "on_interaction_start_generic_refund": {
+                    "audio": "BAE_lute_melody_refund_mobs"
+                },
+                "on_interaction_start_generic_spawner": {
+                    "audio": "BAE_lute_melody_activate_spawner"
+                },
+                "on_spawn_batch": {
+                    "rumble": {
+                        "duration": 0.2,
+                        "strength": 15,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_spawn_cap_reached": {
+                    "rumble": {
+                        "duration": 0.2,
+                        "strength": 10,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_fall_damage_received": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 25,
+                        "priority": 2,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_lure": {
+                    "spawn_entity": {
+                        "entities": [{
+                                "entity": "badger:mob_lure_instant_visual",
+                                "should_parent_transform": true
+                            }
+                        ]
+                    },
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_lure_stop": {
+                    "rumble": {
+                        "duration": 0.35,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_direct": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_force_all": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_force_single": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_charge_all": {
+                    "rumble": {
+                        "duration": 0.5,
+                        "strength": 25,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                },
+                "on_advanced_direct_charge_single": {
+                    "rumble": {
+                        "duration": 0.25,
+                        "strength": 15,
+                        "priority": 3,
+                        "override": false,
+                        "range": 0.0
+                    }
+                }
+            },
+            "badger:skin": {
+                "archetype": "badger:hero_ranger_bg_01",
+                "fe_anim": "ranger_frontend"
+            },
+            "badger:template": "badger:hero_ranger_bg_01"
+        }
+    }
+}

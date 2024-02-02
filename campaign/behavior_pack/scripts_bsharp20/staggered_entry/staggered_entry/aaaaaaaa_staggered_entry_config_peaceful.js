@@ -37,7 +37,7 @@ const HordeBasesSetup_Peaceful = {
         numInitialBases: 3,
         numInitialOutposts: 4,
         establishmentPace: 2,
-        firstAttackDelayDays: 1000
+        firstAttackDelayDays: 1
     }
 }
 

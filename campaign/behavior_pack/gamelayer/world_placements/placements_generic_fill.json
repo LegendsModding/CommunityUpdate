@@ -1,0 +1,356 @@
+{
+  "factions": [
+    {
+      "unique_card_id": "badger_genericFill1_campaign",
+      "placement_name": "genericFill",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill1"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 12,
+        "starting_pixels": 1
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.7,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              350
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              40
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 3
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill2_campaign",
+      "placement_name": "genericFill2",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill2"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 16,
+        "starting_pixels": 1
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.7,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              40
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill3_campaign",
+      "placement_name": "genericFill3",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill3"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 24,
+        "starting_pixels": 4
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.2,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              50
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill4_campaign",
+      "placement_name": "genericFill4",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill4"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 39,
+        "starting_pixels": 4
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.8,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              40
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill5_campaign",
+      "placement_name": "genericFill5",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill5"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 48,
+        "starting_pixels": 6
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.1,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              50
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill6_campaign",
+      "placement_name": "genericFill6",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill6"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 55,
+        "starting_pixels": 6
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.9,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              50
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill7_campaign",
+      "placement_name": "genericFill7",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill7"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 60,
+        "starting_pixels": 1
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.4,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              50
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    },
+    {
+      "unique_card_id": "badger_genericFill8_campaign",
+      "placement_name": "genericFill8",
+      "placement_type": "biome",
+      "initial_villages": {
+        "small": {
+          "count": 1
+        }
+      },
+      "tags": [
+        "genericFill8"
+      ],
+      "biome": {
+        "biome": "generic",
+        "total_pixels": 70,
+        "starting_pixels": 10
+      },
+      "add_to_poi_graph": true,
+      "jitter": 0.5,
+      "placement_rules": [
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "center",
+            "weight": 1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              50
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "biome",
+            "weight": 2
+          }
+        }
+      ]
+    }
+  ]
+}

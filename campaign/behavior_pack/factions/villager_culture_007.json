@@ -12,7 +12,7 @@
         "description": "villager.culture.007.description",
         "icon": "ui_map_biomelegend_villager_07",
         "color": [0.34, 0.69, 0.9, 1.0],
-        "known": true
+        "known": false
       },
       "badger:culture": {
         "base_culture_a": 0

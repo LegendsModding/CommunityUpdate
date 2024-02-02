@@ -151,58 +151,11 @@ SNIPPET_LocalTimer("lt_vindicators_lure_vo_cooldown", () => {
 })
 
 const _setupVillageBehaviorMode = () => {
+    for (const factionName of CULTURE_NAME_VILLAGERS)
     LISTENFOR_VillageGenerated({
         snippet: "vg_setup_village",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FOREST
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FROSTLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_DRYLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_WETLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_GRASSLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_BROKENLANDS
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FATEFUL_LAND
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_JUNGLE
-    })
-
-    LISTENFOR_VillageGenerated({
-        snippet: "vg_setup_village",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_MOUNTAIN
+        factionName: factionName
     })
 
     LISTENFOR_ExternalEvent({

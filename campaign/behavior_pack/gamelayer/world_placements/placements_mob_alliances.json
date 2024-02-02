@@ -15,8 +15,7 @@
       },
       "priority": 1,
       "tags": [
-        "skeleton_alliance",
-        "biome"
+        "mob_alliance_factions"
       ],
       "biome": {
         "biome": "frostlands",
@@ -41,22 +40,13 @@
       "placement_rules": [
         {
           "distance": {
-            "chunk_distance_from_parent": 60,
-            "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
             "chunk_distance_from_parent": [
-              80,
-              152
+              40,
+              80
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "frostlands_1_village",
-            "weight": 1,
+            "weight": 3,
             "mandatory_threshold": 0.1
           }
         },
@@ -64,7 +54,19 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              194
+              80
+            ],
+            "distance_to_zero_score": 20,
+            "tag_parent": "frostlands_1",
+            "weight": 3,
+            "mandatory_threshold": 0.3
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              300
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "center",
@@ -81,21 +83,10 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": [
-              64,
-              195
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "wellOfFate",
-            "weight": 1
-          }
-        },
-        {
-          "distance": {
             "chunk_distance_from_parent": 76,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
-            "mandatory_threshold": 1.0
+            "mandatory_threshold": 0.1
           }
         }
       ]
@@ -143,8 +134,16 @@
             "one_of": [
               {
                 "chunk_distance_from_parent": [
+                  20,
+                  55
+                ],
+                "distance_to_zero_score": 30,
+                "tag_parent": "jungle_1_village"
+              },
+              {
+                "chunk_distance_from_parent": [
                   0,
-                  25
+                  35
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_1"
@@ -152,7 +151,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  25
+                  35
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_2"
@@ -164,26 +163,11 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 60,
-            "distance_to_zero_score": 10,
-            "tag_parent": "village",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              30,
+              100],
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
-            "weight": 3
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 70,
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
             "weight": 1
           }
         },
@@ -269,18 +253,12 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              30,
+              100],
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 3
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 78,
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
-            "weight": 1
           }
         },
         {
@@ -333,40 +311,45 @@
       "placement_rules": [
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  30
-                ],
-                "distance_to_zero_score": 20,
-                "tag_parent": "forest_1_village"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  30
-                ],
-                "distance_to_zero_score": 20,
-                "tag_parent": "forest_2"
-              }
+            "chunk_distance_from_parent": [
+              20,
+              80
             ],
-            "weight": 3,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 60,
             "distance_to_zero_score": 10,
-            "tag_parent": "village",
+            "tag_parent": "forest_1_village",
             "weight": 1,
             "mandatory_threshold": 0.1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "forest_1",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
+            "distance_to_zero_score": 10,
+            "tag_parent": "forest_2",
+            "weight": 1,
+            "mandatory_threshold": 0.1
+          }
+        },
+        {
+          "distance": {
+            "chunk_distance_from_parent": [
+              30,
+              100],
             "distance_to_zero_score": 10,
             "tag_parent": "poi",
             "weight": 2
@@ -444,51 +427,36 @@
       "placement_rules": [
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  25
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "extreme_hills_1"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  25
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "extreme_hills_2"
-              }
+            "chunk_distance_from_parent": [
+              20,
+              80
             ],
-            "weight": 5,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 60,
             "distance_to_zero_score": 10,
-            "tag_parent": "village",
+            "tag_parent": "mountain_1_village",
             "weight": 1,
             "mandatory_threshold": 0.1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
             "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
+            "tag_parent": "mountain_1",
+            "weight": 1,
+            "mandatory_threshold": 0.1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 70,
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
-            "weight": 1
+            "chunk_distance_from_parent": [
+              30,
+              100],
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
           }
         },
         {
@@ -541,51 +509,36 @@
       "placement_rules": [
         {
           "distance": {
-            "one_of": [
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  35
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "wetlands_1_village"
-              },
-              {
-                "chunk_distance_from_parent": [
-                  0,
-                  30
-                ],
-                "distance_to_zero_score": 30,
-                "tag_parent": "wetlands_2"
-              }
+            "chunk_distance_from_parent": [
+              20,
+              80
             ],
-            "weight": 5,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 60,
             "distance_to_zero_score": 10,
-            "tag_parent": "village",
+            "tag_parent": "wetlands_1_village",
             "weight": 1,
             "mandatory_threshold": 0.1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 30,
+            "chunk_distance_from_parent": [
+              0,
+              90
+            ],
             "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
+            "tag_parent": "wetlands_1",
+            "weight": 1,
+            "mandatory_threshold": 0.1
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 80,
-            "distance_to_zero_score": 20,
-            "tag_parent": "wellOfFate",
-            "weight": 1
+            "chunk_distance_from_parent": [
+            30,
+            100],
+            "distance_to_zero_score": 10,
+            "tag_parent": "poi",
+            "weight": 3
           }
         },
         {
