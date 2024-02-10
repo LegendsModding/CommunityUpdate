@@ -7,10 +7,18 @@
       "is_summonable": true
     },
     "mushroom_data": {
-      "function": "Military",
-      "type": "Player"
+      "function": "Player",
+      "type": "Structure"
     },
     "components": {
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "buildable",
+            "value": "tower_allay_killer"
+          }
+        ]
+      },
       "badger:buildable_presentation": {
         "icon": "tower_allay_killer",
         "tooltip_title": "structure.tower.allay.killer.title",
@@ -83,6 +91,7 @@
       },
       "badger:tags": {
         "tags": [
+          "tower_allay_killer",
           "buffable-mason",
           "buildable",
           "buildable_combat",
