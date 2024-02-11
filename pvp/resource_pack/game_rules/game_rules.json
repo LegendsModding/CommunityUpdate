@@ -6,8 +6,8 @@
 	"defaults": {
 		//$ Do not have these uncommeted before a release.
 		"randomseedoverride": 2070850612,
-		"generator_type": "flat",
 		"creativemodedefault": true,
+		//"generator_type": "flat",
 		//$----------------------
 		"allowislands": false,
 		"autosaveenabled": true,
