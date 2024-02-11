@@ -18,7 +18,7 @@
         "auto_generate_shape": "aabb",
         "damage_resistances": {
           "explosion": 3, // defult 3
-          "crush": 1.5, // defult 1.5
+          "crush": 1.875, // defult 1.5
           "spore": 0.0,
           "ranged": 0.1,
           "melee": 0.30, //defult 0.2 so zomibes can do something
@@ -35,6 +35,23 @@
         "tooltip_description": "structures.tower.arrow.pvp.description",
         "buildable_category": "utility",
         "sort_order": 205
+      },
+      "badger:tags": {
+        "tags": [
+          "tower_arrow",
+          "buffable-mason",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "tower",
+          "buffable-crows_nest",
+          "buffable-war_drums",
+          "buffable-kaboomery",
+          "defense-target",
+          "arrowTower",
+          "tier1PlayerStructure"
+        ]
       },
       "badger:template": {
         "parent": "badger:tower_arrow",
@@ -64,7 +81,6 @@
         ],
         "invalid_blocks": [],
         "invalid_block_tags": [
-          "tower_arrow",
           "water",
           "lava",
           "netherrack",

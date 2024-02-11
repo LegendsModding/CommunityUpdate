@@ -12,59 +12,117 @@
       },
       "badger:modifier_resistance": {
         "resistances": {
-          "explosion": 0,
-          "crush": 0,
-          "spore": 0,
-          "ranged": 0,
-          "melee": 0,
-          "fire": 0,
-          "chop": 0,
-          "T3_Attack": 0
+          "explosion": 0.55,
+          "crush": 0.8125,
+          "spore": 0.0,
+          "ranged": 0.5,
+          "melee": 0.55,
+          "fire": 0.5,
+          "chop": 0.3,
+          "T3_Attack": 1.2
         }
       },
       "badger:modifier_block_swap": {
         "modifiers": [
-          { "badger:block_column_log_dark_oak": "badger:block_column_alabaster" },
-
-          { "badger:block_log_dark_oak": "badger:block_alabaster" },
-          { "badger:block_log_dark_oak_teamcolor": "badger:block_alabaster_teamcolor" },
-          { "badger:block_log_dark_oak_var01": "badger:block_alabaster_var01" },
-          { "badger:block_slab_log_dark_oak": "badger:block_slab_alabaster" },
-
-          { "badger:block_column_log_spruce": "badger:block_column_alabaster" },
-          { "badger:block_log_spruce": "badger:block_alabaster" },
-          { "badger:block_log_spruce_reinforced_bolt": "badger:block_alabaster_reinforced_bolt" },
-          { "badger:block_log_spruce_reinforced_hoop": "badger:block_alabaster_reinforced_hoop" },
-          { "badger:block_log_spruce_reinforced_hoop_var02": "badger:block_alabaster_reinforced_hoop_var02" },
-          { "badger:block_pillar_log_spruce": "badger:block_pillar_alabaster" },
-
-          { "badger:block_planks_dark_oak": "badger:block_cobblestone" },
-          { "badger:block_stair_planks_dark_oak": "badger:block_stair_cobblestone" },
-
-          { "badger:block_column_stonebrick_cracked": "badger:block_column_alabaster" },
-          { "badger:block_slab_stonebrick_cracked": "badger:block_slab_alabaster" },
-          { "badger:block_stonebrick_cracked": "badger:block_alabaster" },
-
-          { "badger:block_chunk_stonebrick": "badger:block_chunk_alabaster" },
-          { "badger:block_column_stonebrick": "badger:block_column_alabaster" },
-          { "badger:block_slab_stonebrick": "badger:block_slab_alabaster" },
-          { "badger:block_stair_stonebrick": "badger:block_stair_alabaster" },
-          { "badger:block_stonebrick": "badger:block_alabaster" },
-          { "badger:block_stonebrick_carved": "badger:block_alabaster_carved" },
-          { "badger:block_stonebrick_carved_mossy": "badger:block_alabaster_carved_mossy" },
-          { "badger:block_stonebrick_carved_var01": "badger:block_alabaster_carved_var01" },
-          { "badger:block_stonebrick_carved_var02": "badger:block_alabaster_carved_var02" },
-          { "badger:block_stonebrick_mossy": "badger:block_alabaster_mossy" },
-          { "badger:block_upright_stonebrick": "badger:block_upright_alabaster" },
-
-          { "badger:block_dark_oak_carved": "badger:block_alabaster_carved" },
-
-          { "badger:block_chunk_dark_oak": "badger:block_chunk_alabaster" },
-
-          { "badger:block_fence_spruce": "badger:block_wall_stonebrick" },
-          { "badger:block_deco_player_lantern_chunk": "badger:block_deco_player_lantern_chunk_stone" },
-          { "badger:block_deco_chair_oak": "badger:block_deco_chair_stone" },
-          { "badger:block_deco_sconce_torch_log_dark_oak": "badger:block_deco_sconce_torch_alabaster" }
+          {
+            "badger:block_column_log_dark_oak": "badger:block_column_alabaster"
+          },
+          {
+            "badger:block_log_dark_oak": "badger:block_alabaster"
+          },
+          {
+            "badger:block_log_dark_oak_teamcolor": "badger:block_alabaster_teamcolor"
+          },
+          {
+            "badger:block_log_dark_oak_var01": "badger:block_alabaster_var01"
+          },
+          {
+            "badger:block_slab_log_dark_oak": "badger:block_slab_alabaster"
+          },
+          {
+            "badger:block_column_log_spruce": "badger:block_column_alabaster"
+          },
+          {
+            "badger:block_log_spruce": "badger:block_alabaster"
+          },
+          {
+            "badger:block_log_spruce_reinforced_bolt": "badger:block_alabaster_reinforced_bolt"
+          },
+          {
+            "badger:block_log_spruce_reinforced_hoop": "badger:block_alabaster_reinforced_hoop"
+          },
+          {
+            "badger:block_log_spruce_reinforced_hoop_var02": "badger:block_alabaster_reinforced_hoop_var02"
+          },
+          {
+            "badger:block_pillar_log_spruce": "badger:block_pillar_alabaster"
+          },
+          {
+            "badger:block_planks_dark_oak": "badger:block_cobblestone"
+          },
+          {
+            "badger:block_stair_planks_dark_oak": "badger:block_stair_cobblestone"
+          },
+          {
+            "badger:block_column_stonebrick_cracked": "badger:block_column_alabaster"
+          },
+          {
+            "badger:block_slab_stonebrick_cracked": "badger:block_slab_alabaster"
+          },
+          {
+            "badger:block_stonebrick_cracked": "badger:block_alabaster"
+          },
+          {
+            "badger:block_chunk_stonebrick": "badger:block_chunk_alabaster"
+          },
+          {
+            "badger:block_column_stonebrick": "badger:block_column_alabaster"
+          },
+          {
+            "badger:block_slab_stonebrick": "badger:block_slab_alabaster"
+          },
+          {
+            "badger:block_stair_stonebrick": "badger:block_stair_alabaster"
+          },
+          {
+            "badger:block_stonebrick": "badger:block_alabaster"
+          },
+          {
+            "badger:block_stonebrick_carved": "badger:block_alabaster_carved"
+          },
+          {
+            "badger:block_stonebrick_carved_mossy": "badger:block_alabaster_carved_mossy"
+          },
+          {
+            "badger:block_stonebrick_carved_var01": "badger:block_alabaster_carved_var01"
+          },
+          {
+            "badger:block_stonebrick_carved_var02": "badger:block_alabaster_carved_var02"
+          },
+          {
+            "badger:block_stonebrick_mossy": "badger:block_alabaster_mossy"
+          },
+          {
+            "badger:block_upright_stonebrick": "badger:block_upright_alabaster"
+          },
+          {
+            "badger:block_dark_oak_carved": "badger:block_alabaster_carved"
+          },
+          {
+            "badger:block_chunk_dark_oak": "badger:block_chunk_alabaster"
+          },
+          {
+            "badger:block_fence_spruce": "badger:block_wall_stonebrick"
+          },
+          {
+            "badger:block_deco_player_lantern_chunk": "badger:block_deco_player_lantern_chunk_stone"
+          },
+          {
+            "badger:block_deco_chair_oak": "badger:block_deco_chair_stone"
+          },
+          {
+            "badger:block_deco_sconce_torch_log_dark_oak": "badger:block_deco_sconce_torch_alabaster"
+          }
         ],
         "duration_percentage": 0.5,
         "applied_by": "mason"
