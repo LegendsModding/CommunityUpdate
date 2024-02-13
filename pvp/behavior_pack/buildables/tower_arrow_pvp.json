@@ -12,16 +12,16 @@
     },
     "components": {
       "badger:health": {
-        "max_health": 125 // Defult 175
+        "max_health": 175 // Defult 175
       },
       "badger:damage_receiver": {
         "auto_generate_shape": "aabb",
         "damage_resistances": {
           "explosion": 3, // defult 3
-          "crush": 1.875, // defult 1.5
+          "crush": 1.60, // defult 1.5
           "spore": 0.0,
           "ranged": 0.1,
-          "melee": 0.30, //defult 0.2 so zomibes can do something
+          "melee": 0.25, //defult 0.2
           "fire": 1.0,
           "chop": 0.85,
           "T3_Attack": 1.5,

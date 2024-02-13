@@ -1755,18 +1755,6 @@ onUpdate(() => {
       displayTeamIdentifier();
       displayTeamIdentifierPip();
       break;
-    case MAP_BUILDABLE_IDS.ALLAY_KILLER:
-      const team = get(MAP_KEY.TEAM);
-      const localTeam = getLocalPlayerTeam();
-      if (getAllianceRuleResult(localTeam, team, ALLIANCE_RULES.SHARED_MAP)) { //! Custom Added (NON-Defult)
-        // Treat Blue HQ icon as the default if for some reason there is no team
-        makeEntity(ICON_GROUP.MAIN_ICON, get(MAP_KEY.TEAM) === MAP_TEAM.ONE ? MAP_ICON.PVP_HQ_ORANGE : MAP_ICON.PVP_HQ_BLUE);
-        // displayTeamIdentifier();
-        // displayTeamIdentifierPip();
-        // displayPvPUnderAttackIcon();
-        // displayFastTravelStateIcon();
-      }
-      break;
     case MAP_BUILDABLE_IDS.PVP_HQ:
       // Treat Blue HQ icon as the default if for some reason there is no team
       makeEntity(ICON_GROUP.MAIN_ICON, get(MAP_KEY.TEAM) === MAP_TEAM.ONE ? MAP_ICON.PVP_HQ_ORANGE : MAP_ICON.PVP_HQ_BLUE);
@@ -1863,4 +1851,3 @@ onUpdate(() => {
 
   displayObjectiveIcon();
 });
-

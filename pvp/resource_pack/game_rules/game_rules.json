@@ -7,16 +7,17 @@
 		//$ Do not have these uncommeted before a release.
 		"randomseedoverride": 2070850612,
 		"creativemodedefault": true,
+		"skip_lobby_creation": true,
 		//"generator_type": "flat", //Not working for some reason idk why?
 		//$----------------------
-		//todo Toggale at release
-		"precachestructures": false,
+		//? Toggale at release
+		"precachestructures": true,
 		"dodaylightcycle": false,
 		"doweathercycle": false,
 		"dofogofwar": false,
-		// Noramally false vvv / normally true ^^^
+		//? Noramally false vvv / Normally true ^^^
 		"doplayersinvincible": true,
-		//todo-------
+		//?-------
 		"enablecinematicdeaths": true,
 		"bsharpenabled": true,
 		"campaignactsenabled": false,
@@ -24,7 +25,7 @@
 		"teamcolors": true,
 		"entitystreamingenabled": false,
 		"autosaveenabled": false,
-		"saveonquitenabled": false,
+		"saveonquitenabled": true,
 		"difficultymodeenabled": false,
 		"popcapenabled": true,
 		"worldsizeaxischunks": 300,
@@ -43,6 +44,5 @@
 		"allowislands": false,
 		"deconstructionrefundovercap": true
 		//"enableunlocks": true
-		//"skip_lobby_creation": false,
 	}
 }

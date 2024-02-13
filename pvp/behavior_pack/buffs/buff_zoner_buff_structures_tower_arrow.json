@@ -13,7 +13,7 @@
       "badger:modifier_resistance": {
         "resistances": {
           "explosion": 0.55,
-          "crush": 0.8125,
+          "crush": 0.585, // defult 0.65
           "spore": 0.0,
           "ranged": 0.5,
           "melee": 0.55,
