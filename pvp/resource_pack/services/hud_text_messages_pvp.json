@@ -1,0 +1,672 @@
+{
+  /*
+  For details on the values and syntax used in this file, please see the original hud_text_messages.json file!
+  */
+  "badger:hud_text_messages": {
+    "badger:template": {
+      "parent": "badger:hud_text_messages",
+      "game_mode": "lcu_pvp"
+    },
+    "messages": {
+      // ======================= PVP START ==========================
+      "pvp_objective_1": {
+        "message": "messages.pvp_objective",
+        "priority": 2
+      },
+      //Used to initiate songbook icon at start of game
+      "unlock_journal_ally_spawner": {
+        "message": "messages.lore_discovered.description",
+        "priority": -2
+      },
+      // ======================= PLAYER ==========================
+      "lcu_logging": {
+        "message": "message.lcu.logging",
+        "priority": -3
+      },
+      "player_died": {
+        "message": "message.player.died",
+        "priority": -3
+      },
+      // ====== TREASURE CHESTS ======
+      "treasure_chest_pvp_rewards_2": {
+        "message": "reward.chest.items_2",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "treasure_chest_pvp_rewards_4": {
+        "message": "reward.chest.items_4",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "treasure_chest_pvp_rewards_6": {
+        "message": "reward.chest.items_6",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "treasure_chest_pvp_rewards_8": {
+        "message": "reward.chest.items_8",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      // ====== SPAWNER DESTROYED =======
+      "spawner_destroyed_friendly_cavGolem": {
+        "message": "pvp.spawner_destroyed.cavalrygolem.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_cavGolem": {
+        "message": "pvp.spawner_destroyed.cavalrygolem.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_creeper": {
+        "message": "pvp.spawner_destroyed.creeper.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_creeper": {
+        "message": "pvp.spawner_destroyed.creeper.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_skeleton": {
+        "message": "pvp.spawner_destroyed.skeleton.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_skeleton": {
+        "message": "pvp.spawner_destroyed.skeleton.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_stoneGolem": {
+        "message": "pvp.spawner_destroyed.stonegolem.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_stoneGolem": {
+        "message": "pvp.spawner_destroyed.stonegolem.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_woodGolem": {
+        "message": "pvp.spawner_destroyed.woodgolem.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_woodGolem": {
+        "message": "pvp.spawner_destroyed.woodgolem.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_zombie": {
+        "message": "pvp.spawner_destroyed.zombie.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_zombie": {
+        "message": "pvp.spawner_destroyed.zombie.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_first_of_oak": {
+        "message": "pvp.spawner_destroyed.first.oak.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_first_of_oak": {
+        "message": "pvp.spawner_destroyed.first.oak.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_first_of_stone": {
+        "message": "pvp.spawner_destroyed.first.stone.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_first_of_stone": {
+        "message": "pvp.spawner_destroyed.first.stone.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_first_of_brick": {
+        "message": "pvp.spawner_destroyed.first.brick.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_first_of_brick": {
+        "message": "pvp.spawner_destroyed.first.brick.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_first_of_diorite": {
+        "message": "pvp.spawner_destroyed.first.diorite.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_first_of_diorite": {
+        "message": "pvp.spawner_destroyed.first.diorite.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "spawner_destroyed_friendly_warrior_hut": {
+        "message": "pvp.spawner_destroyed.warrior.hut.friendly",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "spawner_destroyed_enemy_warrior_hut": {
+        "message": "pvp.spawner_destroyed.warrior.hut.enemy",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      // ====== XP UPGRADE =======
+      "resourceCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.fatebank.friendly",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "resourceCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.fatebank.enemy",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      "allayCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.allaytreehouse.friendly",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "allayCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.allaytreehouse.enemy",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      "lureCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.houseofflags.friendly",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "lureCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.houseofflags.enemy",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      "playerSpawnerCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.flameofallegiance.friendly",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "playerSpawnerCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.flameofallegiance.enemy",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      "spawnerCap_increased_friendly": {
+        "message": "pvp.xp_upgrade.spawnsmith.friendly",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "spawnerCap_increased_enemy": {
+        "message": "pvp.xp_upgrade.spawnsmith.enemy",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      "lureType_unlocked_friendly": {
+        "message": "pvp.xp_upgrade.bannershop.friendly",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      },
+      "lureType_unlocked_enemy": {
+        "message": "pvp.xp_upgrade.bannershop.enemy",
+        "priority": 6,
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      // ====== HQ DAMAGE =======
+      "hqHealth_damaged_any_friendly": {
+        "message": "pvp.hq_damaged.any.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_light_friendly": {
+        "message": "pvp.hq_damaged.light.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_light_enemy": {
+        "message": "pvp.hq_damaged.light.enemy",
+        "priority": -2
+      },
+      "hqHealth_damaged_medium_friendly": {
+        "message": "pvp.hq_damaged.medium.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_medium_enemy": {
+        "message": "pvp.hq_damaged.medium.enemy",
+        "priority": -2
+      },
+      "hqHealth_damaged_heavy_friendly": {
+        "message": "pvp.hq_damaged.heavy.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_heavy_enemy": {
+        "message": "pvp.hq_damaged.heavy.enemy",
+        "priority": -2
+      },
+      "hqHealth_damaged_extraHeavy_friendly": {
+        "message": "pvp.hq_damaged.extraheavy.friendly",
+        "priority": -2
+      },
+      "hqHealth_damaged_extraHeavy_enemy": {
+        "message": "pvp.hq_damaged.extraheavy.enemy",
+        "priority": -2
+      },
+      "structure_damaged_any_friendly": {
+        "message": "pvp.structure_damaged.any.friendly",
+        "priority": -2
+      },
+      "structure_damaged_any_enemy": {
+        "message": "pvp.structure_damaged.any.enemy",
+        "priority": -2
+      },
+      // ============================ CANNOT SPAWN ======================================
+      "spawn_cost_required_1": {
+        "message": "messages.spawn_cost_required_1",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_spawn_cost_required"
+      },
+      "spawn_cost_required_2": {
+        "message": "messages.spawn_cost_required_2",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_spawn_cost_required"
+      },
+      "spawn_cost_required_3": {
+        "message": "messages.spawn_cost_required_3",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_spawn_cost_required"
+      },
+      "spawn_ticket_required": {
+        "message": "messages.spawn_ticket_required",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_spawn_ticket_required"
+      },
+      // ============================ MOB RECALL ==================================
+      "no_mobs_recalled": {
+        "message": "messages.no_mobs_recalled",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_no_mobs_recalled"
+      },
+      "recall_outside_zone": {
+        "message": "messages.pvp_recall_outside_hq_zone",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_pvp_recall_outside_hq_zone"
+      },
+      // ============================ REFUND NO MOBS ==================================
+      "no_mobs_refunded": {
+        "message": "messages.no_mobs_refunded",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ============================ DECONSTRUCT ZONE PROVIDER WHEN ZONE OCCUPIED ==================================
+      "deconstruct_zone_occupied": {
+        "message": "messages.deconstruct_zone_occupied",
+        "priority": 5,
+        "display_time": 5.0,
+        "looping": true,
+        "audio_event": "BAE_ui_hud_error"
+      },
+      // ============================ POI ALLIES INTERACTION FAIL ==================================
+      "interact_cost_required": {
+        "message": "messages.pvp.interact_cost_required",
+        "priority": 6,
+        "display_time": 12,
+        "audio_event": "BAE_ui_spawn_cost_required"
+      },
+      "interact_unlock_required": {
+        "message": "messages.pvp.interact_unlock_required",
+        "priority": 6,
+        "display_time": 12,
+        "audio_event": "BAE_ui_spawn_ticket_required"
+      },
+      // =========================== PVP ============================
+      "pvp_objectiveB_description": {
+        "message": "pvp.objectiveB.description",
+        "priority": 6,
+        "display_time": 15.0
+      },
+      "pvp_objectiveA_description": {
+        "message": "pvp.objectiveA.description",
+        "priority": 6,
+        "display_time": 3.0,
+        "looping": true
+      },
+      "pvp_autotimer_warning": {
+        "message": "pvp.autotimer_warning",
+        "priority": 2,
+        "display_time": 6.0,
+        "looping": true
+      },
+      "pvp_teamTwo_HQ_placed_description": {
+        "message": "pvp.teamTwo_HQ_placed.description",
+        "priority": 6,
+        "display_time": 2.0
+      },
+      "pvp_teamOne_HQ_placed_description": {
+        "message": "pvp.teamOne_HQ_placed.description",
+        "priority": 6,
+        "display_time": 2.0
+      },
+      "pvp_team_lost": {
+        "message": "pvp.team.lost",
+        "priority": 2,
+        "title": "pvp.team.lost.title",
+        "is_alert": true,
+        "icon_path": "messages/notif_pvp_lose.gif",
+        "audio_event": "BAE_pvp_ui_hud_banner_game_end_neg"
+      },
+      "pvp_team_win": {
+        "message": "pvp.team.won",
+        "priority": 2,
+        "title": "pvp.team.won.title",
+        "is_celebratory": true,
+        "icon_path": "messages/notif_pvp_win.gif",
+        "audio_event": "BAE_pvp_ui_hud_banner_game_end_pos"
+      },
+      "placeholder_pvp_strong_piglin_wave": {
+        "message": "Oh no! The piglins are preparing a devestating attack soon.",
+        "priority": 2,
+        "display_time": 7
+      },
+      // =========================== PvP - Host Towers ============================
+      "pvp_poi_tower_01_friendly_destroyed": {
+        "message": "pvp.tower_01.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "pvp_poi_tower_02_friendly_destroyed": {
+        "message": "pvp.tower_02.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "pvp_poi_tower_04_friendly_destroyed": {
+        "message": "pvp.tower_04.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "pvp_poi_tower_01_enemy_destroyed": {
+        "message": "pvp.tower_01.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "pvp_poi_tower_02_enemy_destroyed": {
+        "message": "pvp.tower_02.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "pvp_poi_tower_04_enemy_destroyed": {
+        "message": "pvp.tower_04.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      // =========================== PvP - First Mobs  ============================
+      "pvp_first_of_oak_friendly_destroyed": {
+        "message": "pvp.first_of_oak.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "pvp_first_of_stone_friendly_destroyed": {
+        "message": "pvp.first_of_stone.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "pvp_first_of_diorite_friendly_destroyed": {
+        "message": "pvp.first_of_diorite.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "pvp_first_of_brick_friendly_destroyed": {
+        "message": "pvp.first_of_brick.friendly.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_neg"
+      },
+      "pvp_first_of_oak_enemy_destroyed": {
+        "message": "pvp.first_of_oak.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "pvp_first_of_stone_enemy_destroyed": {
+        "message": "pvp.first_of_stone.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "pvp_first_of_diorite_enemy_destroyed": {
+        "message": "pvp.first_of_diorite.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      "pvp_first_of_brick_enemy_destroyed": {
+        "message": "pvp.first_of_brick.enemy.destroyed",
+        "priority": -3,
+        "audio_event": "BAE_pvp_ui_chat_alert_pos"
+      },
+      // =========================== PvP - Onboarding  ============================
+      // ====== HQ =======
+      "pvp_onb_start_match": {
+        "title": "pvp.onb.hq.start.match.title",
+        "message": "pvp.onb.hq.start.match.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_start_shared_resources": {
+        "title": "pvp.onb.hq.start.match.shared.resources.title",
+        "message": "pvp.onb.hq.start.match.shared.resources.message",
+        "priority": 6,
+        "display_time": 8
+      },
+      "pvp_onb_gather_res_for_pylon": {
+        "title": "pvp.onb.hq.gather.res.for.pylon.title",
+        "message": "pvp.onb.hq.gather.res.for.pylon.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_build_pylon": {
+        "title": "pvp.onb.hq.build.pylon.title",
+        "message": "pvp.onb.hq.build.pylon.message",
+        "priority": 6
+      },
+      "pvp_onb_upgrade_after_pylon": {
+        "title": "pvp.onb.hq.upgrade.after.pylon.title",
+        "message": "pvp.onb.hq.upgrade.after.pylon.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_build_lapis_flag": {
+        "title": "pvp.onb.hq.build.lapis.flag.title",
+        "message": "pvp.onb.hq.build.lapis.flag.message",
+        "priority": 6,
+        "display_time": 6
+      },
+      "pvp_onb_hq_damaged": {
+        "title": "pvp.onb.hq.damaged.title",
+        "message": "pvp.onb.hq.damaged.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_hq_under_attack": {
+        "title": "pvp.onb.hq.under.attack.title",
+        "message": "pvp.onb.hq.under.attack.message",
+        "priority": 6,
+        "display_time": 12,
+        "persist": true
+      },
+      "pvp_onb_enemy_approach_regular": {
+        "title": "pvp.onb.enemy.approach.regular.title",
+        "message": "pvp.onb.enemy.approach.regular.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_enemy_approach_practice": {
+        "title": "pvp.onb.enemy.approach.practice.title",
+        "message": "pvp.onb.enemy.approach.practice.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      // ====== PIGLIN =======
+      "pvp_onb_piglin_with_structures": {
+        "title": "pvp.onb.piglin.with.structures.title",
+        "message": "pvp.onb.piglin.with.structures.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_piglin_without_structures": {
+        "title": "pvp.onb.piglin.without.structures.title",
+        "message": "pvp.onb.piglin.without.structures.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_onb_piglin_exit": {
+        "title": "pvp.onb.piglin.exit.title",
+        "message": "pvp.onb.piglin.exit.message",
+        "priority": 6,
+        "display_time": 12
+      },
+      "pvp_piglin_grudge_wave": {
+        "title": "pvp.piglin.grudge_wave.title",
+        "message": "pvp.piglin.grudge_wave.message",
+        "priority": 6,
+        "display_time": 5,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_pvp_ui_hud_alert_neg"
+      },
+      "pvp_piglin_night_start": {
+        "title": "pvp.piglin.night_start.title",
+        "message": "pvp.piglin.night_start.message",
+        "priority": 2,
+        "display_time": 5,
+        "is_alert": true,
+        "icon_path": "messages/notif_piglin_alert_01.gif",
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      // ===== WITCHES =====
+      "pvp_witch_event_start": {
+        "title": "pvp.witch.event_start.title",
+        "message": "pvp.witch.event_start.message",
+        "priority": 2,
+        "display_time": 5,
+        "is_celebratory": true,
+        "icon_path": "messages/notif_mob_witch.gif"
+      },
+      "pvp_witch_event_end": {
+        "title": "pvp.witch.event_end.title",
+        "message": "pvp.witch.event_end.message",
+        "priority": 2,
+        "display_time": 5,
+        "is_alert": true,
+        "icon_path": "messages/notif_mob_witch.gif"
+      },
+      "pvp_witch_event_arrive_active": {
+        "title": "pvp.witch.event_start.title",
+        "message": "pvp.witch.event_arrive_active.message",
+        "priority": 2,
+        "display_time": 5,
+        "is_celebratory": true,
+        "icon_path": "messages/notif_mob_witch.gif"
+      },
+      "pvp_witch_event_arrive_inactive": {
+        "title": "pvp.witch.event_end.title",
+        "message": "pvp.witch.event_arrive_inactive.message",
+        "priority": 2,
+        "display_time": 5,
+        "is_alert": true,
+        "icon_path": "messages/notif_mob_witch.gif",
+        "audio_event": "BAE_ui_hud_biggest_banner_neg"
+      },
+      // ======= PASSIVE INCOME ========
+      "pvp_passive_income_start": {
+        "message": "pvp.passive.income.start",
+        "priority": 2,
+        "title": "pvp.passive.income.start.title",
+        "is_celebratory": true,
+        "display_time": 5.0,
+        "icon_path": "messages/notif_lapis_drip.png",
+        "audio_event": "BAE_pvp_ui_hud_banner_drip_start"
+      },
+      "pvp_passive_income_upgrade": {
+        "message": "pvp.passive.income.upgrade",
+        "priority": 6,
+        "display_time": 5.0,
+        "title": "pvp.passive.income.upgrade.title",
+        "is_celebratory": true,
+        "icon_path": "messages/notif_lapis_drip.png",
+        "audio_event": "BAE_pvp_ui_hud_banner_drip_upgrade"
+      },
+      // ======= CUSTOM SETTINGS ========
+      "pvp_hq_zone_immunity_on": {
+        "title": "pvp.hq_zone_immunity_on.title",
+        "message": "pvp.hq_zone_immunity_on.message",
+        "priority": 2,
+        "display_time": 5,
+        "is_celebratory": true
+      },
+      "pvp_hq_zone_immunity_off": {
+        "title": "pvp.hq_zone_immunity_off.title",
+        "message": "pvp.hq_zone_immunity_off.message",
+        "priority": 2,
+        "display_time": 5
+      },
+      // ======= TRAINING MODE ====== //
+      "pvp_open_map_notification": {
+        "title": "pvp.onb.hq.start.match.world.map.title",
+        "message": "pvp.onb.hq.start.match.world.map.message",
+        "priority": 6,
+        "display_time": 8.0
+      },
+      "pvp_open_map_visual": {
+        "message": "pvp.onb.hq.start.match.world.map.icon.message",
+        "priority": 8,
+        "display_time": 5.0
+      },
+      // ======= MOB DAMAGE INCREASE ====== //
+      "pvp_late_game_damage_increase": {
+        "title": "pvp.mob.damage.increase.title",
+        "message": "pvp.mob.damage.increase.message",
+        "priority": 6,
+        "display_time": 8.0,
+        "audio_event": "BAE_pvp_ui_hud_alert_pos"
+      }
+    },
+    // id: If notification, must match message name from above data,
+    // type: 0 = notification, 1 = animation, 2 = subtitle
+    // duration: Time in seconds to display notif or play animation
+    // If no duration provided for notification, display_time from message data will be used
+    "hud_event_sequences": {
+      "resource_first_discovered": [ // works        
+        {
+          "id": "resource_reveal",
+          "type": 1,
+          "duration": 3
+        }
+      ],
+      "open_world_map": [
+        {
+          "id": "pvp_open_map_notification",
+          "type": 0
+        },
+        {
+          "id": "pvp_open_map_visual",
+          "type": 0
+        }
+      ]
+    }
+  }
+}

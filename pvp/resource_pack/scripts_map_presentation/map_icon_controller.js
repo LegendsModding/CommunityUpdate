@@ -1399,6 +1399,7 @@ const displayPlayerWaypoint = () => {
     if (getAllianceRuleResult(localTeam, team, ALLIANCE_RULES.SHARED_MAP)) {
       const playerID = get(MAP_KEY.PLAYER_ID);
       const playerName = getPlayerName(playerID)
+      OUTPUT_AnnounceTeam("lcu_logging", "map controller" + playerID, TEAM_BLUE);
       if (playerName) { // don't show the map marker at all if it's given an invalid playername (empty string)
         if (playerID === getLocalPlayerID()) {
           if (get(MAP_KEY.MARKER_TYPE) == MAP_MARKER_TYPE.ATTACK) {
