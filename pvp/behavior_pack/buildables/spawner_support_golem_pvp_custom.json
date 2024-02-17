@@ -1,0 +1,24 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_support_golem",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "custom_tech_tree_spawner_mossy_golem",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:spawner_support_golem",
+        "game_mode": "conquest_custom"
+      }
+    }
+  }
+}

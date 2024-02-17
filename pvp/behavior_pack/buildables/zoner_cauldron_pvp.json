@@ -1,0 +1,61 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_cauldron",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "zoner_cauldron",
+        "tooltip_title": "structures.zoner_cauldron.name",
+        "tactical_description": "structures.zoner_cauldron.tactical_description",
+        "tooltip_description": "structures.zoner_cauldron.description",
+        "buildable_category": "utility",
+        "sort_order": 1300
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [], //had to make blank
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 200
+          },
+          {
+            "item": "coal",
+            "amount": 100
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:buildable_structure": {
+        "build_time": 30
+      },
+      "badger:template": {
+        "parent": "badger:zoner_cauldron",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

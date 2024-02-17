@@ -1,0 +1,66 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_spawner",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Template"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:template_spawner",
+        "game_mode": "pvp"
+      },
+      "badger:hud_message_proximity": {
+        "messages": [
+          {
+            "range": 6.0,
+            "hud_message_id": "spawn_ticket_required",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          },
+          {
+            "range": 6.0,
+            "hud_message_id": "no_mobs_recalled",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          },
+          {
+            "range": 6.0,
+            "hud_message_id": "recall_outside_zone",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          }
+        ]
+      },
+      "badger:lost_entity_recall_point": {
+        "recall_zone_requirement": "housing"
+      }
+    }
+  }
+}

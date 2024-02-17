@@ -1,0 +1,84 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:poi_tower_01_buildable",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Towers"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:poi_tower_01_buildable",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "poi_tower_01",
+        "tooltip_title": "structures.tower.poi.01.pvp.name",
+        "tactical_description": "structures.tower.poi.01.pvp.tactical_description",
+        "tooltip_description": "structures.tower.poi.01.pvp.description",
+        "buildable_category": "utility",
+        "sort_order": 3180
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_poi_tower_01",
+        "label": "poi.tower_village_01.name",
+        "world_position_offset": [
+          0,
+          5,
+          0
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "medium",
+        "compass_level": 0
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "poi_tower_01",
+        "build_time": 35,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_poi_tower_01_buildable"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "unlock": [
+          {
+            "item": "unlock_host_towers",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 600
+          },
+          {
+            "item": "redstone",
+            "amount": 400
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      }
+    }
+  }
+}

@@ -17,6 +17,7 @@
 		"dofogofwar": false,
 		"autosaveenabled": false,
 		"saveonquitenabled": false,
+		"randomstartingteam": false,
 		//? Noramally False vvv / Normally true ^^^
 		"doplayersinvincible": true,
 		//?-------
@@ -32,7 +33,6 @@
 		"preloadworldchunkradius": 45,
 		"onboardingenabledcampaign": false,
 		"onboardingenabledpvp": true,
-		"randomstartingteam": true,
 		"allaymessages": false,
 		"factioncoloricon": false,
 		"pvpobjectivehealthbars": true,

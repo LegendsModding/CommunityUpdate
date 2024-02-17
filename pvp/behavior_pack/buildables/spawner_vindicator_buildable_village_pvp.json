@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+	  "description": {
+		"identifier": "badger:spawner_vindicator_buildable_village",
+		"runtime_identifier": "badger:buildable",
+		"is_summonable": true
+	  },
+	  "mushroom_data": {
+		"function": "Player",
+		"type": "Spawner"
+	  },
+	  "components": {
+		"badger:buildable_presentation": {
+			"icon": "zoner_apply_dot",
+			"tooltip_title": "structures.spawner.vindicator.pvp.name",
+			"tactical_description": "structures.spawner.vindicator.pvp.tactical_description",
+			"tooltip_description": "structures.spawner.vindicator.pvp.description",
+			"buildable_category": "",
+			"sort_order": 1540
+		},
+		"badger:template": {
+		  "parent": "badger:spawner_vindicator_buildable_village",
+		  "game_mode": "pvp"
+		}
+	  }
+	}
+  }

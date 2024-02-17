@@ -1,0 +1,120 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_starting_cap_medium",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Upgrade"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:increase_starting_cap_medium",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_increase_starting_cap",
+        "tooltip_title": "structures.increase.starting.cap.medium.pvp.name",
+        "tactical_description": "structures.increase.starting.cap.medium.pvp.tactical_description",
+        "tooltip_description": "structures.increase.starting.cap.medium.pvp.description",
+        "buildable_category": "",
+        "sort_order": 305
+      },
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "unlock_prismarine_upgrades",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "stone",
+            "amount": 250
+          },
+          {
+            "item": "xp_common",
+            "amount": 100
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ]
+      },
+      "badger:resource_modifier": {
+        "modifiers": [
+          {
+            "resource": "emerald",
+            "amount": 400
+          },
+          {
+            "resource": "iron",
+            "amount": 500
+          },
+          {
+            "resource": "redstone",
+            "amount": 250
+          },
+          {
+            "resource": "coal",
+            "amount": 150
+          },
+          {
+            "resource": "xp_common",
+            "amount": 500
+          },
+          {
+            "resource": "gold",
+            "amount": 150
+          },
+          {
+            "resource": "diamond",
+            "amount": 150
+          }
+        ]
+      },
+      "badger:health": {
+        "max_health": 100
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "crush": 1.5,
+          "spore": 0.0,
+          "ranged": 0.5
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 15,
+          "sc": 0,
+          "rc": 15
+        }
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_small",
+        "build_time": 40
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "increase_starting_cap_pvp",
+          "player_upgrade"
+        ]
+      },
+      "badger:generate_ruins": {
+        "max": 0,
+        "min": 0
+      }
+    }
+  }
+}

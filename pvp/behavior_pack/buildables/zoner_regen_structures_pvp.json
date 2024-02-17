@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "badger:zoner_buff_structures",
+      "identifier": "badger:zoner_regen_structures",
       "runtime_identifier": "badger:buildable",
       "is_summonable": true
     },
@@ -12,31 +12,31 @@
     },
     "components": {
       "badger:template": {
-        "parent": "badger:zoner_buff_structures",
+        "parent": "badger:zoner_regen_structures",
         "game_mode": "pvp"
       },
       "badger:buildable_presentation": {
-        "icon": "zoner_buff_structures",
-        "tooltip_title": "structures.zoner.mason.pvp.name",
-        "tactical_description": "structures.zoner.mason.pvp.tactical_description",
-        "tooltip_description": "structures.zoner.mason.pvp.description",
+        "icon": "zoner_regen_structures",
+        "tooltip_title": "structures.zoner.regen.structures.name",
+        "tactical_description": "structures.zoner.regen.structures.tactical_description",
+        "tooltip_description": "structures.zoner.regen.structures.description",
         "buildable_category": "utility",
-        "sort_order": 212
+        "sort_order": 210
       },
       "badger:buildable_structure": {
-        "nbt_file": "zoner_buff_structures",
-        "build_time": 30
+        "nbt_file": "zoner_regen_structures",
+        "build_time": 25
       },
       "badger:buildable_requirement": {
         "exclusive_zone_alliance_rule": "enemy",
         "recipe": [
           {
-            "item": "stone",
-            "amount": 500
+            "item": "wood",
+            "amount": 250
           },
           {
-            "item": "iron",
-            "amount": 100
+            "item": "stone",
+            "amount": 125
           }
         ],
         "ticket_cost": [
@@ -59,63 +59,60 @@
       "badger:aura_applicator": {
         "auras": [
           {
-            "include_tags": [
-              "tower_arrow"
-            ],
-            "exclude_tags": [],
-            "alliance_rule_filter": "friendly",
-            "buff_id": "badger:buff_zoner_buff_structures_tower_arrow",
-            "only_apply_to_construction_completed": true,
-            "persistent": true,
-            "buff_queue": {
-              "limit_concurrent_applications": 1,
-              "time_interval": 6.0
-            }
-          },
-          {
             "unlock_condition": {
-              "resource": "upgrade_mason",
+              "resource": "upgrade_carpenter",
               "has_unlock": false
             },
             "include_tags": [
-              "buffable-mason"
+              "buildable_combat"
             ],
             "exclude_tags": [
-              "tower_arrow"
+              "gather",
+              "egg",
+              "pvphq"
             ],
             "alliance_rule_filter": "friendly",
-            "buff_id": "badger:buff_zoner_buff_structures",
             "only_apply_to_construction_completed": true,
-            "persistent": true,
-            "buff_queue": {
-              "limit_concurrent_applications": 1,
-              "time_interval": 2
-            }
+            "can_apply_to_self": true,
+            "buff_id": "badger:buff_carpenter",
+            "only_apply_to_damaged": true
           },
           {
             "unlock_condition": {
-              "resource": "upgrade_mason",
+              "resource": "upgrade_carpenter",
               "has_unlock": true
             },
             "include_tags": [
-              "buffable-mason"
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "gather",
+              "egg",
+              "pvphq"
+            ],
+            "alliance_rule_filter": "friendly",
+            "only_apply_to_construction_completed": true,
+            "can_apply_to_self": true,
+            "buff_id": "badger:buff_carpenter_upgrade",
+            "only_apply_to_damaged": true
+          },
+          {
+            "include_tags": [
+              "buffable-carpenter-hq"
             ],
             "exclude_tags": [],
             "alliance_rule_filter": "friendly",
-            "buff_id": "badger:buff_zoner_buff_structures",
+            "can_apply_to_self": false,
             "only_apply_to_construction_completed": true,
-            "persistent": true,
-            "buff_queue": {
-              "limit_concurrent_applications": 1,
-              "time_interval": 1
-            }
+            "buff_id": "badger:buff_carpenter_pvp_hq",
+            "only_apply_to_damaged": true
           }
         ]
       },
       "badger:rewards": {
         "reward": [
           {
-            "item": "ui_tracking_mason",
+            "item": "ui_tracking_carpenter",
             "amount": 1
           }
         ]

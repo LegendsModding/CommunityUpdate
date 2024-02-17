@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:terraform_gather_surface_002",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Gather"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:terraform_gather_surface_002",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "terraform_gather_surface_002",
+        "tooltip_title": "terraform.gather.surface.002.name",
+        "tactical_description": "terraform.gather.surface.002.tactical_description",
+        "tooltip_description": "terraform.gather.surface.002.description",
+        "buildable_category": "",
+        "sort_order": 1600,
+        "height_offset": 1
+      },
+      "badger:deconstruction": {
+        "deconstruct_time_percent": 1,
+        "resource_refund_percent": 1,
+        "isIndestructable": false,
+        "resource_cost": [],
+        "ticket_cost": []
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "none"
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_creeper",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_creeper",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_creeper",
+        "tooltip_title": "structures.spawner.creeper.pvp.name",
+        "tooltip_description": "structures.spawner.creeper.pvp.description",
+        "tactical_description": "structures.spawner.creeper.pvp.tactical_description",
+        "buildable_category": "mobs",
+        "sort_order": 1530
+      },
+      "badger:buildable_structure": {
+        "build_time": 15
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "coal",
+            "amount": 55
+          },
+          {
+            "item": "emerald",
+            "amount": 45
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "none"
+      },
+      "badger:zone_visualization": {
+        "group": "carpenter"
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_spawner_creeper",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

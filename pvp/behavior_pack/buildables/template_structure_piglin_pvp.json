@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:template_structure_piglin",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:template_structure_piglin",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_foundation": {
+        "placement_rule": "always"
+      }
+    },
+    "mushroom_data": {
+      "type": "Template",
+      "function": "Piglin"
+    }
+  }
+}

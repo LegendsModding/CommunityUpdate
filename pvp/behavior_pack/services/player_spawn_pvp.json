@@ -1,7 +1,7 @@
 {
   "badger:player_spawn_service": {
     "player_archetype": "minecraft:player",
-    "default_mount_archetype": "badger:mount_horse",
+    "default_mount_archetype": "badger:mount_bird_dev",
     "player_spawn_world_request_type": "player_spawn",
     "respawn_seconds": 0.0, //$ <----------- 13.0
     "apply_status": {

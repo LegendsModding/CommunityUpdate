@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_wood_golem",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_wood_golem",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_spawner_golem_wood",
+        "tooltip_title": "structures.spawner.woodGolem.pvp.name",
+        "tactical_description": "structures.spawner.woodGolem.pvp.tactical_description",
+        "tooltip_description": "structures.spawner.woodGolem.pvp.description",
+        "buildable_category": "mobs",
+        "sort_order": 1000
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "spawner_golem_wood",
+        "build_time": 5,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_spawner_wood_golem"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 35
+          },
+          {
+            "item": "emerald",
+            "amount": 15
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 0.0,
+        "waypoint_max_range": 0.0,
+        "compass_max_range": "none"
+      },
+      "badger:zone_visualization": {
+        "group": "carpenter"
+      },
+      "badger:rewards": {
+        "reward": [
+          {
+            "item": "ui_tracking_spawner_golem_plank",
+            "amount": 1
+          }
+        ]
+      }
+    }
+  }
+}

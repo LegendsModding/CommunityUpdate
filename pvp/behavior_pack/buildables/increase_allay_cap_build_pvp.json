@@ -1,0 +1,89 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_allay_cap_build",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Upgrade"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:increase_allay_cap_build",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_increase_allay_build",
+        "tooltip_title": "structures.increase.allay.cap.build.name",
+        "tooltip_description": "structures.increase.allay.cap.build.description",
+        "buildable_category": "",
+        "sort_order": 0
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "wof_upgrade_small",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_increase_allay_cap_build"
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 100
+          },
+          {
+            "item": "stone",
+            "amount": 50
+          },
+          {
+            "item": "xp_common",
+            "amount": 50
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ]
+      },
+      "badger:health": {
+        "max_health": 700
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "aabb",
+        "damage_resistances": {
+          "explosion": 3.0,
+          "crush": 1.25,
+          "ranged": 0.5,
+          "melee": 1.0,
+          "cavalry": 1.0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 15,
+          "sc": 0,
+          "rc": 15
+        }
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "increase_allay_cap_build_pvp",
+          "player_upgrade"
+        ]
+      },
+      "badger:generate_ruins": {
+        "max": 0,
+        "min": 0
+      }
+    }
+  }
+}

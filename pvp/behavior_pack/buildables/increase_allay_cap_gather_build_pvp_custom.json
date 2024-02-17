@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:increase_allay_cap_gather_build",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "components": {
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "custom_tech_tree_improvement_abundant_allay",
+            "amount": 1
+          },
+          {
+            "item": "unlock_prismarine_upgrades",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:increase_allay_cap_gather_build",
+        "game_mode": "conquest_custom"
+      }
+    }
+  }
+}

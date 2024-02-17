@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:spawner_piglin_barracks_fighter",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Spawner"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:spawner_piglin_barracks_fighter",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_spawner": {
+        "offset": [
+          0.0,
+          3.0,
+          5.0
+        ]
+      }
+    }
+  }
+}

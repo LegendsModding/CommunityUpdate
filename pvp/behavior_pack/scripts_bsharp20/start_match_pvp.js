@@ -40,16 +40,16 @@ SNIPPET_InheritsFromGameMode("conquest", () => {
     LISTENFOR_BuildingStart({
         snippet: 'mod_a_allay_sharing_bulding_start',
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        excludeTags: ["tower_allay_killer"], //!remove
+        excludeTags: ["tower_allay_killer"],
         hasCreator: true
     });
 
-    // LISTENFOR_BuildingComplete({
-    //     snippet: 'mod_a_allay_sharing_bulding_complete',
-    //     ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-    //     excludeTags: ["tower_allay_killer"], //!remove
-    //     hasCreator: true
-    // })
+    LISTENFOR_BuildingComplete({
+        snippet: 'mod_a_allay_sharing_bulding_complete',
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        excludeTags: ["tower_allay_killer"],
+        hasCreator: true
+    })
 
     LISTENFOR_VillageGenerated({
         snippet: "vg_pvp_hq",
@@ -72,36 +72,13 @@ SNIPPET_InheritsFromGameMode("conquest", () => {
 })
 
 //! Thing to fix [Team spacific] []
-SNIPPET_BuildingStart('mod_a_allay_sharing_bulding_start', (buildingEntity, _payload) => {
-
-    OUTPUT_TriggerSlashCommand("/sprint 5", true);
-
-    OUTPUT_AnnounceTeam("lcu_logging", "The building is " + buildingEntity.toString(), TEAM_BLUE);
-
-    const creatorId = QUERY_GetCreator(buildingEntity);
-
-    OUTPUT_AnnounceTeam("lcu_logging", "The creatorid is " + creatorId.toString(), TEAM_BLUE);
-
-    const userId = QUERY_GetUserId(creatorId);
-
-    OUTPUT_AnnounceTeam("lcu_logging", "The userid is " + userId.toString(), TEAM_BLUE);
-
-    const playerName = getPlayerName(userId);
-
-    OUTPUT_AnnounceTeam("lcu_logging", "getPlayerName() Succsseded ", TEAM_BLUE);
-
-    OUTPUT_AnnounceTeam("lcu_logging", "The creator is " + playerName, TEAM_BLUE);
-
-    var players = GetAllPlayers();
-    players.forEach(playerElement => {
-        OUTPUT_ApplyTicketModifierToTeam(playerElement, TICKET_BUILD, -1);
-    });
+SNIPPET_BuildingStart('mod_a_allay_sharing_bulding_start', (_buildingEntity, _payload) => {
+    OUTPUT_ApplyTicketModifierToTeam(TEAM_BLUE, TICKET_BUILD, -1);
 });
 
-// SNIPPET_BuildingComplete('mod_a_allay_sharing_bulding_complete', (_payload) => {
-//     var players = GetPlayers();
-//     OUTPUT_ApplyTicketModifierToPlayerForTeam(players[0], TICKET_BUILD, 1);
-// });
+SNIPPET_BuildingComplete('mod_a_allay_sharing_bulding_complete', (_buildingEntity, _payload) => {
+    OUTPUT_ApplyTicketModifierToTeam(TEAM_BLUE, TICKET_BUILD, 1);
+});
 
 SNIPPET_VillageGenerated("vg_pvp_hq", (villageId, payload) => {
     const baseDeck = DECK_Empty()

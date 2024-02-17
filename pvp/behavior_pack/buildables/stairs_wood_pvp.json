@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:stairs_wood",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Player",
+      "type": "Structure"
+    },
+    "components": {
+      "badger:template": {
+        "parent": "badger:stairs_wood",
+        "game_mode": "pvp"
+      },
+      "badger:buildable_presentation": {
+        "icon": "structure_terraform_stairs_large",
+        "tooltip_title": "structures.chunk.drag_stairs_001.pvp.name",
+        "tactical_description": "structures.chunk.drag_stairs_001.pvp.tactical_description",
+        "tooltip_description": "structures.chunk.drag_stairs_001.pvp.description",
+        "buildable_category": "utility",
+        "sort_order": 100,
+        "height_offset": 1
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "stairs_wood",
+        "build_time": 0.2,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_stairs_wood"
+      },
+      "badger:buildable_requirement": {
+        "exclusive_zone_alliance_rule": "enemy",
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 3
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 0.00001
+          }
+        ],
+        "invalid_blocks": [
+          "block_lava",
+          "flowing_lava",
+          "water",
+          "flowing_water"
+        ],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "world_hazard"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "stairs",
+          "structure",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "playerBridge",
+          "tier1PlayerStructure",
+          "noHealthBar"
+        ]
+      },
+      "badger:multistep_buildable": {
+        "max_slope": 1,
+        "max_height": 20,
+        "max_segments": 60
+      }
+    }
+  }
+}
