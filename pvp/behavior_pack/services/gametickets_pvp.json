@@ -5,12 +5,12 @@
     "game_tickets": [
       {
         "ticket_type": "gather",
-        "owner_type": "player",
+        "owner_type": "team",
         "initial_cap": 12
       },
       {
         "ticket_type": "build",
-        "owner_type": "player",
+        "owner_type": "team",
         "initial_cap": 12
       },
       {

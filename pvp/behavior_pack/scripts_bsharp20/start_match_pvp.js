@@ -36,29 +36,6 @@ SNIPPET_InheritsFromGameMode("conquest", () => {
         ownerVillageId: OWNER_VILLAGE_OPT_OUT
     })
 
-    //Allay Sharing more to anothe file in the furtoure
-    LISTENFOR_BuildingStart({
-        snippet: 'mod_a_allay_sharing_bulding_start',
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        excludeTags: ["tower_allay_killer"],
-        hasCreator: true
-    });
-
-    //Allay Sharing more to anothe file in the furtoure
-    LISTENFOR_BuildingStart({
-        snippet: 'mod_a_allay_sharing_bulding_start_has_no_creator',
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        excludeTags: [],
-        hasCreator: false
-    });
-
-    LISTENFOR_BuildingComplete({
-        snippet: 'mod_a_allay_sharing_bulding_complete',
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        excludeTags: ["tower_allay_killer"],
-        hasCreator: true
-    })
-
     LISTENFOR_VillageGenerated({
         snippet: "vg_pvp_hq",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
@@ -78,71 +55,6 @@ SNIPPET_InheritsFromGameMode("conquest", () => {
         eventName: "start_pvp_match"
     })
 })
-
-let buildingDictionary = new Object();
-
-SNIPPET_BuildingStart('mod_a_allay_sharing_bulding_start_has_no_creator', (buildingEntity, _payload) => {
-    OUTPUT_Announce("lcu_logging", "MAASBC --NC-- Building Enitty: " + buildingEntity.toString());
-});
-
-//! Thing to fix [Team spacific] []
-SNIPPET_BuildingStart('mod_a_allay_sharing_bulding_start', (buildingEntity, _payload) => {
-    OUTPUT_Announce("lcu_logging", "MAASB--S-- Building Enitty: " + buildingEntity.toString());
-
-    const playerEntity = QUERY_GetCreator(buildingEntity);
-
-    OUTPUT_Announce("lcu_logging", "step 1");
-
-    let stallBuildings = [];
-
-    OUTPUT_Announce("lcu_logging", "step 2");
-
-    const i = 0;
-    GetAllPlayers().forEach(player => {
-        if (player != playerEntity) {
-
-            OUTPUT_Announce("lcu_logging", "step 3");
-
-            OUTPUT_SpawnBuildableAtWithOffset("badger:tower_allay_killer", buildingEntity, TEAM_BLUE, "north", false, true, RandomNumWorldGen(25, 50), 0, RandomNumWorldGen(25, 50), "");
-
-            OUTPUT_Announce("lcu_logging", "step 4");
-
-            const stallbuildingId = [];
-            stallbuildingId[0] = buildingEntity + 1;
-
-            OUTPUT_Announce("lcu_logging", "Stall Building Enitty: " + stallbuildingId[0].toString());
-
-            OUTPUT_Announce("lcu_logging", "step 5");
-
-            OUTPUT_AssignTicketsToMobsIfAble(playerEntity, stallbuildingId, TICKET_BUILD);
-
-            OUTPUT_Announce("lcu_logging", "step 6");
-
-            stallBuildings[i] = stallbuildingId;
-
-            OUTPUT_Announce("lcu_logging", "step 7");
-
-            i++;
-
-            OUTPUT_Announce("lcu_logging", "step 8");
-        }
-        else {
-            OUTPUT_Announce("lcu_logging", "step ---3---");
-        }
-    });
-
-
-});
-
-SNIPPET_BuildingComplete('mod_a_allay_sharing_bulding_complete', (buildingEntity, _payload) => {
-    OUTPUT_Announce("lcu_logging", "MAASBC Building Enitty: " + buildingEntity.toString());
-
-    OUTPUT_Announce("lcu_logging", "step 9");
-
-    OUTPUT_DestroyEntities(buildingDictionary[buildingEntity])
-
-    OUTPUT_Announce("lcu_logging", "step 10");
-});
 
 SNIPPET_VillageGenerated("vg_pvp_hq", (villageId, payload) => {
     const baseDeck = DECK_Empty()
