@@ -38,7 +38,7 @@
         "ticket_cost": [
           {
             "ticket": "build",
-            "amount": 0.00001
+            "amount": 0.1
           }
         ],
         "invalid_blocks": [],
