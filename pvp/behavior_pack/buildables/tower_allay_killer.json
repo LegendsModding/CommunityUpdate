@@ -55,7 +55,7 @@
         "ticket_cost": [
           {
             "ticket": "build",
-            "amount": 0.1
+            "amount": 1
           }
         ],
         "invalid_block_tags": [
