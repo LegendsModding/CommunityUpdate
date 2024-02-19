@@ -1,0 +1,105 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 2,
+        "time_if_refunded": 0.07
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_mob_golem_support_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mob_golem_support_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_golem_support_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_golem_support_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mob_golem_support_knockback_land"
+        },
+        "sfx_attack_a_interrupt": {
+          "audio": "BAE_mob_golem_support_attack_a_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_lantern",
+        "limit": 128
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "idle_a": "animation.mob_golem_lantern.idle_a",
+        "flash": "animation.mob_golem_lantern.flash",
+        "walk_a": "animation.mob_golem_lantern.walk_a",
+        "run_a": "animation.mob_golem_lantern.run_a",
+        "spawn_a": "animation.mob_golem_lantern.spawn_a",
+        "death_a": "animation.mob_golem_lantern.death_a",
+        "default": "controller.animation.mob_golem_lantern.default",
+        "hit_reaction": "controller.animation.mob_golem_lantern.hit_reaction",
+        "idles": "controller.animation.mob_golem_lantern.idles",
+        "locomotion": "controller.animation.mob_golem_lantern.locomotion"
+      },
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.mob_golem_lantern"
+      },
+      "identifier": "badger:mob_golem_lantern",
+      "materials": {
+        "mat_mob_golem_lantern": "mat_mob_golem_lantern"
+      },
+      /*
+      "particle_effects": {
+        "frx_death": "badger:fx_shared_death_smoke_small",
+        "fx_attack_a": "badger:fx_mob_golem_support_attack_a",
+        "fx_cheer": "badger:fx_mob_golem_support_cheer",
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
+        "fx_spawn": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkle": "badger:fx_shared_spawn_small_sparkle"
+      },*/
+      "render_controllers": ["controller.render.mob_golem_lantern"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+      /*
+      "sound_effects": {
+        "attack_b": "BAE_mob_golem_support_attack_b",
+        "bodyfall": "BAE_mob_golem_support_bodyfall",
+        "cheer": "BAE_mob_golem_support_cheer",
+        "climb": "BAE_mob_golem_support_climb",
+        "death_poof_small": "BAE_mob_death_poof_small",
+        "dx_attack_a": "BAE_mob_golem_support_dx_attack_a",
+        "dx_attack_b": "BAE_mob_golem_support_dx_attack_b",
+        "dx_cheer": "BAE_mob_golem_support_dx_cheer",
+        "dx_death": "BAE_mob_golem_support_dx_death",
+        "dx_hurt": "BAE_mob_golem_support_dx_hurt",
+        "dx_idle": "BAE_mob_golem_support_dx_idle",
+        "dx_walk": "BAE_mob_golem_support_dx_walk",
+        "footstep": "BAE_mob_golem_support_footstep",
+        "footstep_body": "BAE_mob_golem_support_footstep_body",
+        "footstep_idle": "BAE_mob_golem_support_footstep_idle",
+        "spawn": "BAE_mob_golem_support_spawn",
+        "torso_drop": "BAE_mob_golem_support_torso_drop"
+      }*/
+    }
+  }
+}

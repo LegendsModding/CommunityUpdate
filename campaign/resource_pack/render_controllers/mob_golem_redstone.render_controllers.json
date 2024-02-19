@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_redstone": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_redstone": "MetaMaterial.mat_mob_golem_redstone"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

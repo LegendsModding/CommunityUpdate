@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_firework_nis",
+      "is_summonable": true,
+      "runtime_identifier": "badger:badger_mob"
+    },
+    "components": {
+      "badger:aabb": {
+        "height": 2.0,
+        "length": 2.21875,
+        "width": 0.5
+      },
+      "badger:tags": {
+        "tags": ["block"]
+      }
+    }
+  }
+}

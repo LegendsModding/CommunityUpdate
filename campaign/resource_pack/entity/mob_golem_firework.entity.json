@@ -1,0 +1,157 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1.25
+      },
+      "badger:keep_alive_timer": {
+        "time": 2,
+        "time_if_refunded": 0.07
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_golem_firework_dx_rps_notifies_intense_hit"
+        },
+        "intense_knockback": {
+          "audio": "BAE_golem_firework_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_golem_firework_dx_knockback_normal"
+        },
+        "on_golem_stone_melee_hit": {
+          "audio": "BAE_impact_wood_blunt"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_golem_firework_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_golem_firework_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_small"
+        },
+        "on_refund": {
+          "particles": {
+            "bind_to_actor": false,
+            "effect": "badger:fx_shared_refund_smoke_despawn",
+            "enabled": true,
+            "locator": "loc_fx_stat_chest"
+          }
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_golem_firework_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_firework",
+        "limit": 128
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_fast": "animation.mob_golem_firework.additive_tumble_fast",
+        "additive_tumble_slow": "animation.mob_golem_firework.additive_tumble_slow",
+        "attack_a": "animation.mob_golem_firework.attack_a",
+        "attack_b": "animation.mob_golem_firework.attack_b",
+        "attack_b_a": "animation.mob_golem_firework.attack_b_a",
+        "attack_b_b": "animation.mob_golem_firework.attack_b_b",
+        "attack_b_c": "animation.mob_golem_firework.attack_b_c",
+        "cheer_a": "animation.mob_golem_firework.cheer_a",
+        "climb_a": "animation.mob_golem_firework.climb_a",
+        "climb_b": "animation.mob_golem_firework.climb_b",
+        "climb_c": "animation.mob_golem_firework.climb_c",
+        "death_a": "animation.mob_golem_firework.death_a",
+        "death_b": "animation.mob_golem_firework.death_b",
+        "death_c": "animation.mob_golem_firework.death_c",
+        "default": "controller.animation.mob_golem_firework.default",
+        "hit_reaction": "controller.animation.mob_golem_firework.hit_reaction",
+        "hit_reaction_a": "animation.mob_golem_firework.hit_reaction_a",
+        "idle": "controller.animation.mob_golem_firework.idle",
+        "idle_a": "animation.mob_golem_firework.idle_a",
+        "idle_b": "animation.mob_golem_firework.idle_b",
+        "idle_c": "animation.mob_golem_firework.idle_c",
+        "knockback_a": "animation.mob_golem_firework.knockback_a",
+        "knockback_landing": "animation.mob_golem_firework.knockback_landing",
+        "locomotion": "controller.animation.mob_golem_firework.locomotion",
+        "run_a": "animation.mob_golem_firework.run_a",
+        "run_b": "animation.mob_golem_firework.run_b",
+        "run_c": "animation.mob_golem_firework.run_c",
+        "spawn_a": "animation.mob_golem_firework.spawn_a",
+        "sprint_a": "animation.mob_golem_firework.sprint_a",
+        "stop_a": "animation.mob_golem_firework.stop_a",
+        "stop_b": "animation.mob_golem_firework.stop_b",
+        "stun_a": "animation.mob_golem_firework.stun_a",
+        "stun_a_trans": "animation.mob_golem_firework.stun_a_trans",
+        "swim_a": "animation.mob_golem_firework.swim_a",
+        "swim_a_idle": "animation.mob_golem_firework.swim_a_idle"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Happy","Happy Blink","Not Impressed","Afraid","Stunned","Yelling","Determined","Blink Hard"],
+      "geometry": {
+        "default": "geometry.mob_golem_firework"
+      },
+      "identifier": "badger:mob_golem_firework",
+      "materials": {
+        "mat_fx_cauldron_128": "mat_fx_cauldron_128",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_heal_128": "mat_fx_heal_128",
+        "mat_fx_spore_damaged_128": "mat_fx_spore_damaged_128",
+        "mat_mob_golem_firework": "mat_mob_golem_firework",
+        "mat_mob_golem_firework_face": "mat_mob_golem_firework_face"
+      },
+      "particle_effects": {
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_spawn": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkle": "badger:fx_shared_spawn_small_sparkle"
+      },
+      "render_controllers": ["controller.render.mob_golem_firework"],
+      "scripts": {
+        "animate":  [
+          {
+            "hit_reaction": "1"
+          },
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.walkchooser = math.random(0,100);","variable.second_skin_vis = 0;","variable.skin_mat = 0;"]
+      },
+      "sound_effects": {
+        "attack_a": "BAE_golem_firework_attack_a",
+        "attack_b": "BAE_golem_firework_attack_b",
+        "bodyfall": "BAE_golem_firework_bodyfall",
+        "cheer": "BAE_golem_firework_cheer",
+        "death": "BAE_golem_firework_dx_death",
+        "death_poof_small": "BAE_mob_death_poof_small",
+        "dx_attack_short": "BAE_golem_firework_dx_attack_short",
+        "dx_cheer": "BAE_golem_firework_dx_cheer",
+        "dx_death": "BAE_golem_firework_dx_death",
+        "dx_hurt": "BAE_golem_firework_dx_hurt",
+        "dx_idle": "BAE_golem_firework_dx_idle",
+        "dx_idle_sprint": "BAE_golem_firework_dx_idle_sprint",
+        "footstep": "BAE_golem_firework_footstep",
+        "idle_snout_shake": "BAE_golem_firework_idle_snout_shake",
+        "jump": "BAE_golem_firework_jump",
+        "jump_land": "BAE_golem_firework_jump_land",
+        "move_stun": "BAE_golem_firework_move_stun",
+        "swim": "BAE_golem_firework_swim"
+      },
+      "textures": {
+        "default": "textures/entity/tex_mob_golem_firework_d"
+      }
+    }
+  }
+}

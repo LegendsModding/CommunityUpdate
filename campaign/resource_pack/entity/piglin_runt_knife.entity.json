@@ -1,0 +1,164 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 5,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 1.5,
+        "position_interpolation_steps": 2,
+        "position_interpolation_steps_y_down": 0.75
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.333
+      },
+      "badger:presentation_event": {
+        "ghost_runt_knife": {
+          "script": "ghost_on"
+        },
+        "intense_knockback": {
+          "audio": "BAE_piglin_runt_knife_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_runt_knife_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_runt_knife_knockback_land"
+        },
+        "sfx_scared_stop": {
+          "audio": "BAE_piglin_runt_knife_dx_scared_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_runt_knife",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
+      "badger:threat_source": {
+        "base_value": 1,
+        "spawn_value": 1,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_fast": "animation.piglin_runt_knife.additive_tumble_fast",
+        "additive_tumble_slow": "animation.piglin_runt_knife.additive_tumble_slow",
+        "attack_a": "animation.piglin_runt_knife.attack_a",
+        "attack_b": "animation.piglin_runt_knife.attack_b",
+        "cine_turn_a": "animation.piglin_runt_knife.cine_turn_a",
+        "cine_turn_b": "animation.piglin_runt_knife.cine_turn_b",
+        "climb_a": "animation.piglin_runt_knife.climb_a",
+        "climb_b": "animation.piglin_runt_knife.climb_b",
+        "climb_c": "animation.piglin_runt_knife.climb_c",
+        "ctrl_knockback": "controller.animation.piglin_runt_knife.ctrl_knockback",
+        "death_a": "animation.piglin_runt_knife.death_a",
+        "death_b": "animation.piglin_runt_knife.death_b",
+        "death_c": "animation.piglin_runt_knife.death_c",
+        "default": "controller.animation.piglin_runt_knife.default",
+        "hit_react": "animation.piglin_runt_knife.hit_react",
+        "hit_reaction": "controller.animation.piglin_runt_knife.hit_reaction",
+        "idle_a": "animation.piglin_runt_knife.idle_a",
+        "idle_b": "animation.piglin_runt_knife.idle_b",
+        "idle_c": "animation.piglin_runt_knife.idle_c",
+        "idles": "controller.animation.piglin_runt_knife.idles",
+        "knockback_a": "animation.piglin_runt_knife.knockback_a",
+        "landing_a": "animation.piglin_runt_knife.landing_a",
+        "locomotion": "controller.animation.piglin_runt_knife.locomotion",
+        "run_a": "animation.piglin_runt_knife.run_a",
+        "run_b": "animation.piglin_runt_knife.run_b",
+        "run_c": "animation.piglin_runt_knife.run_c",
+        "spawn_a": "animation.piglin_runt_knife.spawn_a",
+        "sprint_a": "animation.piglin_runt_knife.sprint_a",
+        "stop_a": "animation.piglin_runt_knife.stop_a",
+        "stop_b": "animation.piglin_runt_knife.stop_b",
+        "stop_c": "animation.piglin_runt_knife.stop_c",
+        "stun_a": "animation.piglin_runt_knife.stun_a",
+        "stun_exit": "animation.piglin_runt_knife.stun_exit",
+        "swim_a": "animation.piglin_runt_knife.swim_a",
+        "swim_idle": "animation.piglin_runt_knife.swim_idle"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "death": "variable.second_skin_vis = variable.ghost_weapon_vis;",
+        "enemy_spotted": "variable.attack_used = 1;",
+        "ghost_on": "variable.second_skin_vis = 1; variable.ghost_weapon_vis = 1; variable.skin_mat = 2; variable.mat_opacity = 0.75;",
+        "hero_spotted": "variable.attack_used = 2;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Wide Eyes","Shocked"],
+      "geometry": {
+        "attack": "geometry.piglin_runt_knife_attack",
+        "defend": "geometry.piglin_runt_knife_defend",
+        "obstacle": "geometry.piglin_runt_knife_obstacle",
+        "second_skin": "geometry.piglin_runt_knife_second_skin"
+      },
+      "identifier": "badger:piglin_runt_knife",
+      "materials": {
+        "mat_fx_frost_128": "mat_fx_frost_128",
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_ghost_runt_knife": "mat_fx_ghost_runt_knife",
+        "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
+        "mat_piglin_runt_knife_attack": "mat_piglin_runt_knife_attack",
+        "mat_piglin_runt_knife_attack_face": "mat_piglin_runt_knife_attack_face",
+        "mat_piglin_runt_knife_defend": "mat_piglin_runt_knife_defend",
+        "mat_piglin_runt_knife_defend_face": "mat_piglin_runt_knife_defend_face",
+        "mat_piglin_runt_knife_ghost": "mat_piglin_runt_knife_ghost",
+        "mat_piglin_runt_knife_ghost_face": "mat_piglin_runt_knife_ghost_face",
+        "mat_piglin_runt_knife_obstacle": "mat_piglin_runt_knife_obstacle",
+        "mat_piglin_runt_knife_obstacle_face": "mat_piglin_runt_knife_obstacle_face"
+      },
+      "particle_effects": {
+        "fx_attack_a": "badger:fx_piglin_runt_knife_attack",
+        "fx_corpse_removal": "badger:fx_shared_piglin_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_death_tiny": "badger:fx_shared_death_smoke_tiny",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
+      },
+      "render_controllers": ["controller.render.piglin_runt_knife","controller.render.piglin_runt_knife.second_skin"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_reaction": "1"
+          },
+          {
+            "ctrl_knockback": "1"
+          }
+        ],
+        "initialize": ["variable.walkchooser = math.random(0,3);","variable.end_run = 0;","variable.second_skin_vis = 0;","variable.ghost_weapon_vis = 0;","variable.speed_modifier = 1;","variable.mat_opacity = 1;"]
+      },
+      "sound_effects": {
+        "attack_a": "BAE_piglin_runt_knife_attack_a",
+        "attack_b": "BAE_piglin_runt_knife_attack_b",
+        "bodyfall": "BAE_piglin_runt_knife_bodyfall",
+        "dx_attack": "BAE_piglin_runt_knife_dx_attack",
+        "dx_cine_snort": "BAE_piglin_runt_knife_dx_cine_snort",
+        "dx_damage": "BAE_piglin_runt_knife_dx_damage",
+        "dx_death": "BAE_piglin_runt_knife_dx_death",
+        "dx_scared": "BAE_piglin_runt_knife_dx_scared",
+        "dx_snort_misc": "BAE_piglin_runt_knife_dx_snort_misc",
+        "jump": "BAE_piglin_runt_knife_jump",
+        "jump_land": "BAE_piglin_runt_knife_jump_land",
+        "poof_small": "BAE_piglin_death_poof_small",
+        "spawn": "BAE_piglin_portal_spawn",
+        "step": "BAE_piglin_runt_knife_step",
+        "step_climb": "BAE_piglin_runt_knife_step_climb",
+        "weapon_drag": "BAE_piglin_runt_knife_weapon_drag",
+        "weapon_drop": "BAE_piglin_runt_knife_weapon_drop"
+      },
+      "textures": {
+        "default": "textures/entity/piglin_runt_knife/tex_piglin_runt_knife_d"
+      }
+    }
+  }
+}

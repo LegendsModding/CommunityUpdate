@@ -1,0 +1,11 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:template": ["badger:piglin_wheel"]
+    },
+    "description": {
+      "identifier": "badger:piglin_wheel_roaming"
+    }
+  }
+}

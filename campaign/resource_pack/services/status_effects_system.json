@@ -1,0 +1,32 @@
+{
+  "badger:molang_scripts": {
+    "mount_swap": "variable.is_mount_swap = 1;",
+    "exit_shallow_liquid": "variable.fx_trails = 0; variable.fx_trails01 = 0;variable.fx_trails02 = 0;",
+    "enter_deep_liquid": "variable.is_swimming = 1;",
+    "exit_deep_liquid": "variable.is_swimming = 0;",
+    "burning_start": "variable.is_wet = 0;",
+    "burning_stop": "variable.fx_burning = 0;",
+    "stunned_start": "variable.is_stunned = 1;",
+    "stunned_stop": "variable.is_stunned = 0; variable.fx_stunned = 0;",
+    "feared_start": "variable.is_afraid = 1;",
+    "feared_stop": "variable.is_afraid = 0; variable.fx_fear = 0;",
+    "wet_start": "variable.is_wet = 1; variable.fx_burning = 0;",
+    "rooted_stop": "variable.fx_rooted = 0;",
+    "poisoned_stop": "variable.fx_poison = 0;",
+    "start_buffing": "variable.currently_buffing = 1;",
+    "player_speed_stop": "variable.fx_hastened = 0; variable.fx_player_speed = 0;",
+    "player_jump_stop": "variable.fx_player_jump = 0;",
+    "death": "variable.second_skin_vis = 0;",
+    "player_sprint_stop" : "variable.fx_sprint = 0;",
+    "healing_start": "variable.is_healing = 1; variable.skin_mat_saved = variable.skin_mat; variable.second_skin_vis = 1; variable.skin_mat = 0;",
+    "healing_stop": "variable.is_healing = 0;variable.fx_healing = 0; variable.skin_mat = variable.skin_mat_saved;  variable.second_skin_vis =  (variable.is_healing == 0 && variable.is_spore_damaged == 0 && variable.is_cauldron_buffed == 0) ? 0 : 1;",
+    "spore_damaged_start": "variable.is_spore_damaged = 1; variable.skin_mat_saved = variable.skin_mat; variable.second_skin_vis = 1; variable.skin_mat = 2;",
+    "spore_damaged_stop": "variable.fx_spore_damaged = 0; variable.is_spore_damaged = 0; variable.skin_mat = variable.skin_mat_saved;  variable.second_skin_vis =  (variable.is_healing == 0 && variable.is_spore_damaged == 0 && variable.is_cauldron_buffed == 0) ? 0 : 1;",
+    "frozen_on": "variable.is_frozen = 1; variable.skin_mat_saved = variable.skin_mat; variable.second_skin_vis = 1; variable.skin_mat = 1;",
+    "frozen_off": "variable.is_frozen = 0; variable.skin_mat = variable.skin_mat_saved;  variable.second_skin_vis = (variable.is_healing == 0 && variable.is_spore_damaged == 0 && variable.is_cauldron_buffed == 0) ? 0 : 1;",
+    "cauldron_start": "variable.is_cauldron_buffed = 1; variable.skin_mat_saved = variable.skin_mat; variable.second_skin_vis = 1; variable.skin_mat = 3;",
+    "cauldron_stop": "variable.is_cauldron_buffed = 0; variable.skin_mat = variable.skin_mat_saved;  variable.second_skin_vis = (variable.is_healing == 0 && variable.is_spore_damaged == 0 && variable.is_frozen == 0)  ? 0 : 1;",
+    "recall_interrupt": "variable.fast_travel_interrupt1 = 0; variable.fast_travel_interrupt2 = 0;variable.fast_travel_interrupt3 = 0;variable.fast_travel_interrupt4 = 0;"
+    
+  }
+}

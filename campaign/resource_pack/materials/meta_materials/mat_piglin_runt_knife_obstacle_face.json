@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_runt_knife_obstacle_face:base_entity_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_runt_knife_obstacle_face_d",
+      "coeffMap": "textures/entity/tex_piglin_runt_knife_obstacle_face_mr",
+      "emissiveMap": "textures/entity/tex_piglin_runt_knife_obstacle_face_e",
+      "normalMap": "textures/entity/tex_piglin_runt_knife_obstacle_face_n"
+    },
+    "uniforms": {
+      "EmissiveTint": {
+        "is_packed_vec4": true,
+        "expression": "query.piglin_eye_tint"
+      }
+    }
+  }
+}

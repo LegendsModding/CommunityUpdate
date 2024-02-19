@@ -1,0 +1,306 @@
+{
+  "badger:loot_table": {
+    "badger:template": {
+      "parent": "badger:loot_table",
+      "game_mode": "campaign"
+    },
+    "definitions": [
+      {
+        "id": "act1_piglins",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "emerald",
+              "percent_chance": 25.0,
+              "min": 1,
+              "max": 1
+            },
+            { //Don't drop any piglin keys in act 1, since there are no chests there and it would just be noise/confusing
+              "resource_type": "piglin_key",
+              "percent_chance": 0,
+              "min": 0,
+              "max": 0
+            }
+          ]
+        }
+      },
+      {
+        "id": "common_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 0.1,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 7.0,
+              "min": 1,
+              "max": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "uncommon_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 0.5,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 13.0,
+              "min": 1,
+              "max": 3
+            }
+          ]
+        }
+      },
+      {
+        "id": "rare_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 2.5,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 100.0,
+              "min": 3,
+              "max": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "roaming_common_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 1.0,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 70.0,
+              "min": 1,
+              "max": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "roaming_uncommon_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 5.0,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 85.0,
+              "min": 1,
+              "max": 3
+            },
+            {
+              "resource_type": "gold",
+              "percent_chance": 50.0,
+              "min": 1,
+              "max": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "roaming_rare_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 25.0,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 100.0,
+              "min": 2,
+              "max": 3
+            },
+            {
+              "resource_type": "gold",
+              "percent_chance": 100.0,
+              "min": 3,
+              "max": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "outpost_common_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 0.1,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 70.0,
+              "min": 1,
+              "max": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "outpost_uncommon_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 0.5,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 85.0,
+              "min": 1,
+              "max": 3
+            },
+            {
+              "resource_type": "gold",
+              "percent_chance": 5.0,
+              "min": 1,
+              "max": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "outpost_rare_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 2.5,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 100.0,
+              "min": 2,
+              "max": 3
+            },
+            {
+              "resource_type": "gold",
+              "percent_chance": 25.0,
+              "min": 3,
+              "max": 5
+            }
+          ]
+        }
+      },
+      {
+        "id": "village_attack_common_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 0.1,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 25.0,
+              "min": 1,
+              "max": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "village_attack_uncommon_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 0.5,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 50.0,
+              "min": 2,
+              "max": 3
+            },
+            {
+              "resource_type": "gold",
+              "percent_chance": 5.0,
+              "min": 1,
+              "max": 1
+            }
+          ]
+        }
+      },
+      {
+        "id": "village_attack_rare_piglin_loot",
+        "table": {
+          "drop_force": 7.5,
+          "loot": [
+            {
+              "resource_type": "piglin_key",
+              "percent_chance": 2.5,
+              "min": 1,
+              "max": 1
+            },
+            {
+              "resource_type": "emerald",
+              "percent_chance": 100.0,
+              "min": 3,
+              "max": 4
+            },
+            {
+              "resource_type": "gold",
+              "percent_chance": 25.0,
+              "min": 3,
+              "max": 5
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

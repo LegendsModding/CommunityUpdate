@@ -1,0 +1,160 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_cauldron",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "zoner_cauldron",
+        "tooltip_title": "structures.zoner_cauldron.name",
+        "tactical_description": "structures.zoner_cauldron.tactical_description",
+        "tooltip_description": "structures.zoner_cauldron.description",
+        "buildable_category": "utility",
+        "sort_order": 1300
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_cauldron",
+        "build_time": 10,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_zoner_cauldron"
+      },
+      "badger:buildable_requirement": {
+        "unlock": [
+          {
+            "item": "unlock_cauldron",
+            "amount": 1
+          }
+        ],
+        "recipe": [
+          {
+            "item": "iron",
+            "amount": 15
+          },
+          {
+            "item": "coal",
+            "amount": 15
+          },
+          {
+            "item": "diamond",
+            "amount": 15
+          },
+          {
+            "item": "redstone",
+            "amount": 15
+          },
+          {
+            "item": "gold",
+            "amount": 20
+          },
+          {
+            "item": "xp_common",
+            "amount": 20
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water", 
+          "lava", 
+          "netherrack",
+          "gatherable_denether", 
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:health": {
+        "max_health": 120
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            1.5, 
+            0
+          ]
+        ]
+      },
+      "badger:zone_visualization": {
+        "group": "towers_upgrade_structures"
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:culture": {
+        "base_culture_a": 1000
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": ["badger:culture"],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:targeting"
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buffable-mason",
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "structure",
+          "buffable-crows_nest",
+          "buffable-war_drums",
+          "buffable-kaboomery",
+          "defense-target",
+          "tier1PlayerStructure",
+          "cauldron"
+        ]
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_mason_small"
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 0,
+        "defense_multiplier": {
+          "key": "cauldron",
+          "value": 1.1
+        }
+      },
+      "badger:buildable_snap_point": {},
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 2.5,
+            "delay": 1,
+            "include_tags": ["player"],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Player Structure"
+      },
+      "badger:village_influence": {
+        "amount": 5
+      },
+      "badger:template": [
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_player",
+        "badger:component_block_damage_default",
+        "badger:template_structure_stone_player"
+      ]
+    }
+  }
+}

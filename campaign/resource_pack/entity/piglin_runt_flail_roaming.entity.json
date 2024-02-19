@@ -1,0 +1,11 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:piglin_runt_flail_roaming"
+    },
+    "components": {
+      "badger:template": ["badger:piglin_runt_flail"]
+    }
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_firework",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ranged"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.1,
+        "length": 1.1,
+        "height": 2.2
+      },
+      "badger:heartbeat": {
+        "min_expire_time": 240
+      },
+      "badger:spawn_costs": {
+        "costs": [
+          {
+            "item": "wood",
+            "amount": 1
+          },
+          {
+            "item": "emerald",
+            "amount": 1
+          }
+        ],
+        "tickets": [
+          {
+            "ticket": "spawn",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:loot": {
+        "table": "common_golem"
+      },
+      "badger:refundable": {
+        "priority": 1,
+        "refund_multiplier": 1.0
+      },
+      "badger:movement": {
+        "move_speed": 4.5,
+        "air_control_factor": 0.5
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:collision_weight": {
+        "weight": 5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 1.0
+      },
+      "badger:tags": {
+        "tags": [
+          "firework golem",
+          "ranged",
+          "mob",
+          "rider",
+          "luredirect",
+          "golem",
+          "firework_golem_onboarding"
+        ]
+      },
+      "badger:unit_direct_tags" : {
+        "tags": [
+          "unit_direct_mob",
+          "unit_direct_ranged",
+          "unit_direct_firework_golem"
+        ]
+      },
+      "badger:health": {
+        "max_health": 35
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Potion Targeting
+          {
+            "name": "potion_firework_mob_ranged",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "potion_firework_ranged_attack"
+            ]
+          },
+          //Clanger targeting
+          {
+            "name": "firework_mob_ranged",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "disruptor"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "firework_ranged_attack"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "firework_mob_ranged",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "animal",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "firework_ranged_attack"
+            ]
+          },
+          //Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "firework_buildable_ranged",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "firework_ranged_attack"
+            ]
+          },
+          {
+            "name": "firework_wall_ranged",
+            "max_range": 1,
+            "enable_with_line_of_sight": true,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "firework_ranged_attack"
+            ]
+          },
+          {
+            "name": "firework_buildable_nav_fail",
+            "max_range": 2,
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "piglin_wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "firework_ranged_attack"
+            ]
+          },
+          //General Targeting
+          {
+            "name": "firework_general_ranged",
+            "max_range": 15,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "piglin_wall",
+              "animal",
+              "donotattack",
+              "siege_projectile"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "firework_ranged_attack"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "fire": 2.0,
+          "blazerod": 3.1,
+          "chop": 1.5,
+          "roll": 4.25,
+          "grenade": 1.4,
+          "slash": 1.8,
+          "charge": 1.5
+        }
+      },
+      "badger:resist_status": {
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "stunned": {
+          "resisted": false,
+          "time": 5.5,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": false,
+          "time": 8.0,
+          "resistance_persist_time": -1
+        },
+        "bard_stunned": {
+          "resisted": false,
+          "time": 8.5,
+          "resistance_persist_time": -1
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "sc": 4,
+          "rc": 2,
+          "ht": 1,
+          "ct": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "firework_approach",
+            "range": {
+              "max_range": 2.0
+            }
+          },
+          {
+            "name": "firework_ranged_attack",
+            "on_hit_target_trigger": "on_golem_firework_ranged_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 15
+            },
+            "interruptible": {},
+            "state_machine": {
+              "wind_up": 0.1,
+              "wind_down": 0.8,
+              "cooldown_time": 0.33,
+              "deactivates_on_cooldown": false
+            },
+            "transfer_activation": [
+              "firework_ranged_attack_2",
+              "firework_ranged_attack_3"
+            ],
+            "shoot": {
+              "projectile": "badger:proj_dart",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  0.8,
+                  0.28
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "piglin_wall",
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.08,
+                "damage_types": [
+                  "ranged",
+                  "dart"
+                ]
+              }
+            }
+          },
+          {
+            "name": "firework_ranged_attack_2",
+            "on_hit_target_trigger": "on_golem_firework_ranged_attack_hit",
+            "range": {
+              "max_range": 15
+            },
+            "interruptible": {},
+            "state_machine": {
+              "wind_up": 0.2,
+              "wind_down": 0.7,
+              "cooldown_time": 0.33,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 0.0,
+              "max_range": 1.5,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  0.8,
+                  0.28
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "piglin_wall",
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.08,
+                "damage_types": [
+                  "ranged",
+                  "dart"
+                ]
+              }
+            }
+          },
+          {
+            "name": "firework_ranged_attack_3",
+            "on_hit_target_trigger": "on_golem_firework_ranged_attack_hit",
+            "range": {
+              "max_range": 15
+            },
+            "interruptible": {},
+            "state_machine": {
+              "wind_up": 0.3,
+              "wind_down": 0.6,
+              "cooldown_time": 0.33,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 0.0,
+              "max_range": 1.5,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_dart",
+              "position_offsets_from_center": [
+                [
+                  0.0,
+                  0.8,
+                  0.28
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "piglin_wall",
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 2.08,
+                "damage_types": [
+                  "ranged",
+                  "dart"
+                ]
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 0.35,
+              "max_range": 4
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.3,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "timer": {
+          "interval": 3,
+		  "jitter": [-1,0,1]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [
+            ],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+            ],
+            "apply_status": {
+              "small_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:rider": {
+        "include_tags": [
+          "mount"
+        ],
+        "alliance_rule_filter": "friendly"
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.0
+      },
+      "badger:village_influence": {
+        "amount": 5
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_mob",
+        "badger:component_leash_on_stop_default",
+        "badger:component_becomes_lost_default",
+        "badger:component_difficulty_modifiers_mob_firework"
+      ]
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "badger:structure_limit": {
+        "default_limit_max": 10000,
+		"default_limits_warning": [8000, 9000, 9500],
+		"team_limit_overrides" : [
+			{
+				"team_name" : "piglin_team",
+				"limit_max" : -1,
+				"limits_warning" : []
+			}
+		]
+    }
+}

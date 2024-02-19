@@ -1,0 +1,45 @@
+{
+  "badger:time_and_weather_service": {
+    "settings": {
+      "enabled": true,
+      "use_badger_sun_transitions": true
+    },
+    "time_of_day": {
+      "seconds_per_day": 1800,
+      "start_time": 0,
+      "day_percentage": 0.67,
+      "set_time_when_no_cycle": 800,
+      "lock_daynight_cycle_default": true
+    },
+    "time_of_day_names": [
+      {
+        "name": "invasion_phase_intention",
+        "number": 0.75
+      },
+      {
+        "name": "invasion_phase_execution",
+        "number": 0.25
+      },
+      {
+        "name": "invasion_phase_resolve",
+        "number": 0.70
+      }
+    ],
+    "sun_transitions_vanilla_legacy": {
+      "sun_transition_duration": 0.091,
+      "sun_transition_offset_towards_noon": -0.046,
+      "sun_transition_floor": 0.5,
+      "sun_transition_red": [0.2, 0.7],
+      "sun_transition_green": [0.5, 0.2],
+      "sun_transition_blue": [0.0, 0.2]
+    },
+    "sun_transitions_badger": {
+      "sunrise_duration": 0.25,
+      "sunset_duration": 0.25,
+      "sunrise_offset_towards_noon": 0.0,
+      "sunset_offset_towards_noon": 0.0,
+      "sky_state_default": "sky_sunmoon"
+    },
+    "weather": {}
+  }
+}

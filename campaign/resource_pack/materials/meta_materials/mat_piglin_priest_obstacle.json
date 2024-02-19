@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_priest_obstacle:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_priest_obstacle_d"
+      /* "emissiveMap": "textures/entity/tex_piglin_priest_obstacle_e",
+      "coeffMap": "textures/entity/tex_piglin_priest_obstacle_mr",
+      "normalMap": "textures/entity/tex_piglin_priest_obstacle_n"*/
+    }
+  }
+}

@@ -39,7 +39,7 @@ const _CampaignAct1AStart = () => {
     OUTPUT_SetSkyState(SKY_STATE_TWO_SUNS)
     OUTPUT_SetAmbienceTimeOfDayOverride(0)
     OUTPUT_LockDayNightCycle(false)
-
+    
     DeactivateInvasionSystem()
 
     SetRoamingInvisibleSpawnersState(false)

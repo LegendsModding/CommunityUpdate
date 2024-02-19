@@ -1,0 +1,9 @@
+{
+    "format_version": "1.8.0",
+    "mat_endermite_corrupted:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/corrupted_lands/tex_endermite_corrupted_d"
+        }
+    }
+}

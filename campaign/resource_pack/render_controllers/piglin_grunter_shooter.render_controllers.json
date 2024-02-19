@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_grunter_shooter": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_grunter_shooter": "MetaMaterial.mat_piglin_grunter_shooter"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

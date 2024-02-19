@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "mat_piglin_runt_claw_obstacle:base_entity": {
+        "textures": {
+            "diffuseMap": "textures/entity/tex_piglin_runt_claw_obstacle_d"
+            /*BOAR TODO "coeffMap": "textures/entity/tex_piglin_runt_claw_obstacle_mr",
+            "emissiveMap": "textures/entity/tex_piglin_runt_claw_obstacle_e",
+            "normalMap": "textures/entity/tex_piglin_runt_claw_obstacle_n"*/
+        }
+    }
+}

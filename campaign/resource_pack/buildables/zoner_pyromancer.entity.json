@@ -1,0 +1,77 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "badger:zoner_pyromancer",
+      "geometry": {
+        "default": "geometry.block_test"
+      }
+    },
+    "components": {
+      "badger:template": "badger:template_structure",
+      "badger:decal_visualization": {
+        "decal_textures": [
+          "decal_aoi"
+        ]
+      },
+      "badger:area_overlays": {
+        "auras": [
+          {
+            "layer": "aura",
+            "type": "buff",
+            "views": [
+              "placement"
+            ],
+            "filter_team": true,
+            "uses_zone_size": true
+          }
+        ]
+      },
+      "badger:presentation_event": {
+        "on_construction_start": {
+          "audio": "BAE_structure_placement_player_large",
+          "particles": [
+            {
+              "effect": "badger:fx_placement_13x13",
+              "enabled": true,
+              "bind_to_actor": false
+            }
+          ]
+        },
+        "on_construction_end": {
+          "audio": "BAE_pyromancer_fire_central"
+        },
+        "on_damage_applied_to_structure_0": {
+          "audio": "BAE_pyromancer_dmg_stage0"
+        },
+        "on_damage_applied_to_structure_1": {
+          "audio": "BAE_pyromancer_dmg_stage0"
+        },
+        "on_damage_applied_to_structure_2": {
+          "audio": "BAE_pyromancer_dmg_stage1"
+        },
+        "on_damage_applied_to_structure_3": {
+          "audio": "BAE_pyromancer_dmg_stage2"
+        },
+        "on_building_destroyed": {
+          "audio": "BAE_pyromancer_dmg_destroyed"
+        },
+        "on_buff_utilize_start": {
+          "audio": "BAE_pyromancer_upgrade_loop"
+        },
+        "on_buff_utilize_stop": {
+          "audio": "BAE_pyromancer_upgrade_loop_stop"
+        },
+        "on_healing_applied_to_structure_0": {
+          "audio": "BAE_carpenter_heal_full"
+        },
+        "on_healing_applied_to_structure_1": {
+          "audio": "BAE_carpenter_heal_stage1"
+        },
+        "on_healing_applied_to_structure_2": {
+          "audio": "BAE_carpenter_heal_stage2"
+        }
+      }
+    }
+  }
+}

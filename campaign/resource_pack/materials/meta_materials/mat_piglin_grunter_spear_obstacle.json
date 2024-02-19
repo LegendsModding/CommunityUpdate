@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_grunter_spear_obstacle:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_grunter_spear_obstacle_d"
+      /*"coeffMap": "textures/entity/tex_piglin_grunter_spear_obstacle_mr",
+      "emissiveMap": "textures/entity/tex_piglin_grunter_spear_obstacle_e",
+      "normalMap": "textures/entity/tex_piglin_grunter_spear_obstacle_n"*/
+    }
+  }
+}

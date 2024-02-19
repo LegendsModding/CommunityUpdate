@@ -1,0 +1,281 @@
+{
+  "animation_controllers": {
+    "controller.animation.endermite_corrupted.default": {
+      "initial_state": "init",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "attack_a": 1.0
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idles": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "melee_attack": "variable.melee_attack"
+            }
+          ]
+        },
+        "init": {
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "knockback": {
+          "animations":  [
+            {
+              "move_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(query.in_knockback == 0)"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "move": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "melee_attack": {
+          "animations":  [
+            {
+              "attack_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(query.any_animation_finished || variable.interrupted)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "attack_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "move_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(variable.is_stunned == 0)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.endermite_corrupted.hit_reaction": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "transitions":  [
+            {
+              "hit_reaction": "((variable.intense_hit || variable.normal_hit) || query.in_knockback)"
+            }
+          ]
+        },
+        "hit_reaction": {
+          "animations":  [
+            {
+              "move_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "in_knockback": "(query.in_knockback && query.any_animation_finished)"
+            },
+            {
+              "enter_exit": "(query.any_animation_finished && !query.in_knockback)"
+            }
+          ]
+        },
+        "in_knockback": {
+          "transitions":  [
+            {
+              "landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "landing": {
+          "animations":  [
+            {
+              "move_a": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.endermite_corrupted.idles": {
+      "initial_state": "on_land",
+      "states": {
+        "in_water": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "on_land": "!variable.is_swimming"
+            }
+          ]
+        },
+        "on_land": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "in_water": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.endermite_corrupted.locomotion": {
+      "initial_state": "walk",
+      "states": {
+        "sprint": {
+          "animations":  [
+            {
+              "move_a": 1.0
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 7))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "move_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 7))"
+            },
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 7))"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "move_a": "(variable.is_swimming == 0)"
+            }
+          ],
+          "blend_transition": 0.3,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 7))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

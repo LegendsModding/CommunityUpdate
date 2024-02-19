@@ -1,0 +1,9 @@
+{
+  "format_version": "1.8.0",
+  "mat_mob_golem_lantern:base_entity": {
+      "pass": "AlphaTest",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mob_golem_lantern_d"
+    }
+  }
+}

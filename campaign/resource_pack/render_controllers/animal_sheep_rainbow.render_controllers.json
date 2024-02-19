@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.animal_sheep_rainbow": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_animal_sheep_rainbow": "MetaMaterial.mat_animal_sheep_rainbow"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

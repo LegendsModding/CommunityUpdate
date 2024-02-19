@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_priest_attack:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_priest_attack_d"
+      /* BOAR TODO "emissiveMap": "textures/entity/tex_piglin_priest_attack_e",
+      "coeffMap": "textures/entity/tex_piglin_priest_attack_mr",
+      "normalMap": "textures/entity/tex_piglin_priest_attack_n"*/
+    }
+  }
+}

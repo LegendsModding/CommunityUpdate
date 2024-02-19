@@ -1,0 +1,147 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 5,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.3
+      },
+      "badger:presentation_event": {
+        /*BOAR TODO "intense_hit": {
+          "audio": "BAE_piglin_grunter_dart_dx_rps_notifies_intense_hit"
+        },
+        "intense_knockback": {
+          "audio": "BAE_piglin_grunter_dart_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_grunter_dart_dx_knockback_normal"
+        },*/
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_small"
+        }
+        /* BOAR TODO "on_throwable_landed": {
+          "audio": "BAE_piglin_grunter_dart_knockback_land"
+        },
+        "sfx_piglin_tactic_attack": {
+          "audio": "BAE_piglin_grunter_dart_dx_rallyman"
+        }*/
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_grunter_dart",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
+      "badger:threat_source": {
+        "base_value": 1,
+        "spawn_value": 1,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "additive_tumble_fast": "animation.piglin_grunter_dart.knockback_a",
+        "additive_tumble_slow": "animation.piglin_grunter_dart.knockback_a",
+        "burn_idle_a": "animation.piglin_grunter_dart.idle_a",
+        "burn_walk_a": "animation.piglin_grunter_dart.walk_a",
+        "climb_a": "animation.piglin_grunter_dart.hitreact_a",
+        "death_a": "animation.piglin_grunter_dart.death_a",
+        "death_b": "animation.piglin_grunter_dart.death_a",
+        "death_c": "animation.piglin_grunter_dart.death_a",
+        "default": "controller.animation.piglin_grunter_dart.default",
+        "hit_react": "controller.animation.piglin_grunter_dart.hit_react",
+        "hitreact_a": "animation.piglin_grunter_dart.hitreact_a",
+        "idle_a": "animation.piglin_grunter_dart.idle_a",
+        "idle_b": "animation.piglin_grunter_dart.idle_a",
+        "idle_c": "animation.piglin_grunter_dart.idle_a",
+        "idle_d": "animation.piglin_grunter_dart.idle_a",
+        "idles": "controller.animation.piglin_grunter_dart.idles",
+        "knockback_a": "animation.piglin_grunter_dart.knockback_a",
+        "knockback_landing": "animation.piglin_grunter_dart.knockback_landing",
+        "locomotion": "controller.animation.piglin_grunter_dart.locomotion",
+        "range_ability_a": "animation.piglin_grunter_dart.shoot_a",
+        "range_attack_b": "animation.piglin_grunter_dart.shoot_a",
+        "range_attack_c": "animation.piglin_grunter_dart.shoot_a",
+        "ranged_attack_a": "animation.piglin_grunter_dart.shoot_a",
+        "scared_run_a": "animation.piglin_grunter_dart.run_a",
+        "spawn_a": "animation.piglin_grunter_dart.spawn_a",
+        "stun_a": "animation.piglin_grunter_dart.stun_a",
+        "swim_a": "animation.piglin_grunter_dart.swim_a",
+        "swim_idle_a": "animation.piglin_grunter_dart.swim_idle_a",
+        "walk_a": "animation.piglin_grunter_dart.walk_a",
+        "walk_b": "animation.piglin_grunter_dart.walk_a",
+        "walk_c": "animation.piglin_grunter_dart.walk_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "enemy_spotted": "variable.attack_used = 1;",
+        "hero_spotted": "variable.attack_used = 2;"
+      },
+      "face_poses": ["Neutral","Neutral Blink","Wide Eyes","Shocked"],
+      "geometry": {
+        "default": "geometry.piglin_grunter_dart"
+      },
+      "identifier": "badger:piglin_grunter_dart",
+      "materials": {
+        "mat_fx_frozen_128": "mat_fx_frozen_128",
+        "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
+        "mat_piglin_grunter_dart": "mat_piglin_grunter_dart",
+        "mat_piglin_grunter_dart_attack": "mat_piglin_grunter_dart_attack",
+        "mat_piglin_grunter_dart_defend": "mat_piglin_grunter_dart_defend",
+        "mat_piglin_grunter_dart_obstacle": "mat_piglin_grunter_dart_obstacle"
+      },
+      "particle_effects": {
+        "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        //BOAR TODO "fx_flame": "badger:fx_piglin_grunter_dart_rod_flame",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
+      },
+      "render_controllers": ["controller.render.piglin_grunter_dart"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.attack_used = 0;","variable.rod_geo_vis = 1;"]
+      },
+      "sound_effects": {
+        //BOAR TODO
+        "attack_ranged": "BAE_piglin_grunter_attack_ranged",
+        "death_impact": "BAE_piglin_grunter_death_impact",
+        "death_poof_small": "BAE_piglin_death_poof_small",
+        "dx_angry": "BAE_piglin_grunter_dx_angry",
+        "dx_attack_long": "BAE_piglin_grunter_dx_attack_long",
+        "dx_attack_medium": "BAE_piglin_grunter_dx_attack_medium",
+        "dx_attack_short": "BAE_piglin_grunter_dx_attack_short",
+        "dx_damage": "BAE_piglin_grunter_dx_damage",
+        "dx_death": "BAE_piglin_grunter_dx_death",
+        "dx_idle": "BAE_piglin_grunter_dx_idle",
+        "dx_scared": "BAE_piglin_grunter_dx_scared",
+        "dx_snort_misc": "BAE_piglin_grunter_dx_snort_misc",
+        "dx_spotted_enemy": "BAE_piglin_grunter_dx_spotted_enemy",
+        "dx_spotted_hero": "BAE_piglin_grunter_dx_spotted_hero",
+        "footstep": "BAE_piglin_grunter_footstep",
+        "footstep_land": "BAE_piglin_grunter_footstep_land",
+        "idle_ear_pick": "BAE_piglin_grunter_idle_ear_pick",
+        "run_jump": "BAE_piglin_grunter_run_jump"
+      },
+      "textures": {
+        "default": "textures/entity/tex_piglin_grunter_dart_defend_d"
+      }
+    }
+  }
+}

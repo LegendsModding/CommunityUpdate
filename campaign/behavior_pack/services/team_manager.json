@@ -1,0 +1,274 @@
+{
+  "badger:team_manager_service": {
+    "teams": [
+      {
+        "team_id": "team_two",
+        "aliases": [ "blue_team", "campaign_team" ],
+        "team_color": [ 13, 137, 229, 255 ],
+        "is_player_team": true,
+        "is_campaign_team": true,
+        "default_outgoing_alliance_rules": {
+          "friendly": false,
+          "enemy": true,
+          "any_team": true,
+          "collect_loot_items": true,
+          "collect_inventory_items": true,
+          "owned": false,
+          "shared_map": true,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_recall": false,
+          "can_spawn_near": false,
+          "can_block": true
+        },
+        "default_incoming_alliance_rules": {
+          "friendly": false,
+          "enemy": true,
+          "any_team": true,
+          "owned": false,
+          "shared_map": true,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_recall": false,
+          "can_block": true
+        },
+        "specific_alliance_rules": [
+          {
+            "team_id": "team_two",
+            "outgoing": {
+              "same_team": true,
+              "friendly": true,
+              "enemy": false,
+              "collect_loot_items": true,
+              "can_respawn": true,
+              "owned": true,
+              "is_lureable": true,
+              "is_attackable": false,
+              "can_recall": true,
+              "can_spawn_near": true,
+              "can_fast_travel": true
+            }
+          },
+          {
+            "team_id": "wild_team",
+            "outgoing": {
+              "friendly": true,
+              "enemy": false,
+              "is_lureable": true,
+              "is_attackable": false,
+              "can_recall": true,
+              "can_fast_travel": true
+            }
+          }
+        ]
+      },
+      {
+        "team_id": "piglin_team",
+        "aliases": [ "orange_team", "piglin_team" ],
+        "banner_view_team_color": [ 255, 194, 10, 255 ],
+        "team_color": [ 255, 170, 0, 255 ],
+        "team_healing_color": [ 95, 226, 176, 40 ],
+        "default_outgoing_alliance_rules": {
+          "friendly": false,
+          "enemy": true,
+          "any_team": true,
+          "collect_loot_items": true,
+          "collect_inventory_items": true,
+          "owned": false,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_recall": false,
+          "can_block": true
+        },
+        "default_incoming_alliance_rules": {
+          "friendly": false,
+          "enemy": true,
+          "any_team": true,
+          "owned": false,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_recall": false,
+          "can_block": true
+        },
+        "specific_alliance_rules": [
+          {
+            "team_id": "piglin_team",
+            "outgoing": {
+              "same_team": true,
+              "friendly": true,
+              "enemy": false,
+              "collect_loot_items": false,
+              "is_lureable": true,
+              "is_attackable": false
+            }
+          },
+          {
+            "team_id": "wild_team",
+            "outgoing": {
+              "same_team": false,
+              "friendly": false,
+              "enemy": true,
+              "is_lureable": false,
+              "is_attackable": false
+            }
+          },
+          {
+            "team_id": "neutral_team",
+            "outgoing": {
+              "enemy": false,
+              "is_lureable": false,
+              "is_attackable": false
+            }
+          }
+        ]
+      },
+      {
+        "team_id": "wild_team",
+        "aliases": [ "wild" ],
+        "team_color": [ 230, 255, 230, 255 ],
+        "default_outgoing_alliance_rules": {
+          "friendly": true,
+          "enemy": false,
+          "collect_loot_items": true,
+          "collect_inventory_items": true,
+          "owned": false,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_recall": false,
+          "can_block": true
+        },
+        "default_incoming_alliance_rules": {
+          "friendly": true,
+          "enemy": false,
+          "any_team": true,
+          "owned": false,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_recall": false,
+          "can_block": true
+        },
+        "specific_alliance_rules": [
+          {
+            "team_id": "wild_team",
+            "outgoing": {
+              "same_team": true,
+              "friendly": true,
+              "enemy": false,
+              "collect_loot_items": false,
+              "can_respawn": true,
+              "is_lureable": true,
+              "is_attackable": false
+            }
+          },
+          {
+            "team_id": "team_two",
+            "outgoing": {
+              "same_team": true,
+              "friendly": true,
+              "enemy": false,
+              "is_lureable": false,
+              "is_attackable": false,
+              "can_recall": true
+            }
+          },
+          {
+            "team_id": "piglin_team",
+            "outgoing": {
+              "same_team": false,
+              "friendly": false,
+              "enemy": true,
+              "is_lureable": false,
+              "is_attackable": true
+            }
+          }
+        ]
+      },
+      {
+        "team_id": "berserk_team",
+        "aliases": [ "berserk" ],
+        "team_color": [ 148, 0, 211, 255 ],
+        "default_outgoing_alliance_rules": {
+          "friendly": false,
+          "enemy": true,
+          "any_team": true,
+          "collect_loot_items": true,
+          "collect_inventory_items": true,
+          "owned": false,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_block": true
+        },
+        "default_incoming_alliance_rules": {
+          "friendly": false,
+          "enemy": true,
+          "any_team": true,
+          "owned": false,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_block": true
+        },
+        "specific_alliance_rules": [
+          {
+            "team_id": "berserk_team",
+            "outgoing": {
+              "same_team": true,
+              "friendly": false,
+              "enemy": true,
+              "collect_loot_items": true,
+              "is_lureable": false,
+              "is_attackable": false
+            }
+          }
+        ]
+      },
+      {
+        "team_id": "neutral_team",
+        "aliases": [ "neutral" ],
+        "team_color": [ 230, 255, 230, 255 ],
+        "default_outgoing_alliance_rules": {
+          "friendly": false,
+          "enemy": false,
+          "any_team": true,
+          "collect_loot_items": true,
+          "collect_inventory_items": true,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_block": true
+        },
+        "default_incoming_alliance_rules": {
+          "friendly": false,
+          "enemy": false,
+          "any_team": true,
+          "is_lureable": false,
+          "is_attackable": false,
+          "can_block": true
+        },
+        "specific_alliance_rules": [
+          {
+            "team_id": "neutral_team",
+            "outgoing": {
+              "same_team": true,
+              "friendly": true,
+              "is_lureable": false,
+              "is_attackable": false
+            }
+          }
+        ]
+      }
+    ],
+    "molang": {
+      "default": -1.0,
+      "values": [
+        {
+          "enemy": 2.0
+        },
+        {
+          "same_team": 1.0
+        },
+        {
+          "any_team": 0.0
+        }
+      ]
+    }
+  }
+}

@@ -317,8 +317,8 @@
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "forest_1_village",
-            "weight": 1,
-            "mandatory_threshold": 0.1
+            "weight": 3,
+            "mandatory_threshold": 0.6
           }
         },
         {
@@ -330,7 +330,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "forest_1",
             "weight": 1,
-            "mandatory_threshold": 0.1
+            "mandatory_threshold": 0.4
           }
         },
         {
@@ -342,7 +342,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "forest_2",
             "weight": 1,
-            "mandatory_threshold": 0.1
+            "mandatory_threshold": 0.4
           }
         },
         {
@@ -359,7 +359,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               60,
-              150
+              200
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "wellOfFate",
@@ -370,7 +370,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               60,
-              150
+              200
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "center",

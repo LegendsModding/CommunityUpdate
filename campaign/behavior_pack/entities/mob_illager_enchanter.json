@@ -1,0 +1,403 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:mob_illager_enchanter",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "role": "Ranged"
+        },
+        "components": {
+            "badger:aabb": {
+                "width": 1.2,
+                "length": 1.2,
+                "height": 2.1
+            },
+            "badger:spawn_costs": {
+                "costs": [
+                    {
+                        "item": "gold",
+                        "amount": 2
+                    },
+                    {
+                        "item": "xp_common",
+                        "amount": 2
+                    },
+                    {
+                        "item": "emerald",
+                        "amount": 5
+                    }
+                ],
+                "tickets": [
+                    {
+                        "ticket": "spawn",
+                        "amount": 1
+                    }
+                ]
+            },
+            "badger:loot": {
+                "table": "rare_mob"
+            },
+            "badger:refundable": {
+                "priority": 4,
+                "refund_multiplier": 1.0
+            },
+            "badger:movement": {
+                "move_speed": 4.5,
+                "air_control_factor": 0.0
+            },
+            "badger:physics": {
+                "gravity": -30,
+                "friction": 0.04
+            },
+            "badger:collision_weight": {
+                "weight": 40
+            },
+            "badger:wander": {
+                "wander_frequency": 0.1,
+                "wander_radius": 5
+            },
+            "badger:tags": {
+                "tags": [
+                    "enchanter",
+                    "ranged",
+                    "mob",
+                    "rider",
+                    "luredirect",
+                    "backline"
+                ]
+            },
+            "badger:unit_direct_tags": {
+                "tags": [
+                    "unit_direct_mob",
+                    "unit_direct_ranged",
+                    "unit_direct_enchanter"
+                ]
+            },
+            "badger:health": {
+                "max_health": 110
+            },
+            "badger:damage_receiver": {
+                "auto_generate_shape": "cylinder",
+                "damage_resistances": {
+                    "explosion": 1.6,
+                    "crush": 1.25,
+                    "ranged": 0.75,
+                    "melee": 1.5,
+                    "blazerod": 3.0,
+                    "blunt": 5.0,
+                    "spore": 1.2,
+                    "charge": 2.0,
+                    "roll": 4.0,
+                    "dart": 5.0,
+                    "sniper": 2.0,
+                    "chop": 0.4
+                }
+            },
+            "badger:resist_status": {
+                "spore_healed": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "burning": {
+                    "resisted": false,
+                    "time": 2.0,
+                    "resistance_persist_time": 0
+                },
+                "feared": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "stunned": {
+                    "resisted": false,
+                    "time": 2.0,
+                    "resistance_persist_time": 1.0
+                },
+                "electric_stunned": {
+                    "resisted": true,
+                    "time": 0.5,
+                    "resistance_persist_time": 0
+                }
+            },
+            "badger:action_tickets": {
+                "action_tickets": {
+                    "cc": 2,
+                    "sc": 4,
+                    "rc": 2,
+                    "ht": 1
+                }
+            },
+            "badger:targeting": {
+                "targeting_priorities": [
+                    //Bumped
+                    {
+                        "name": "bumped",
+                        "include_tags": [],
+                        "exclude_tags": [
+                            "donotattack"
+                        ],
+                        "alliance_rule_filter": "friendly",
+                        "actions": [
+                            "bump"
+                        ]
+                    },
+                    //Potion Attack
+                    {
+                        "name": "enchanter_mob_potion_cauldron",
+                        "max_range": 40,
+                        "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 5,
+                        "action_tickets": {
+                            "rc": 1
+                        },
+                        "include_tags": [
+                            "mob"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack",
+                            "animal",
+                            "buildable_combat"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "cauldron_potion_attack"
+                        ]
+                    },
+                    //Mob targeting
+                    {
+                        "name": "enchanter_mob_potion",
+                        "max_range": 40,
+                        "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 5,
+                        "action_tickets": {
+                            "rc": 1
+                        },
+                        "include_tags": [
+                            "mob"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack",
+                            "animal",
+                            "buildable_combat"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "potion_attack"
+                        ]
+                    },
+                    //Buildable targeting
+                    {
+                        "name": "enchanter_buildable_potion",
+                        "max_range": 15,
+                        "enable_with_line_of_sight": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "buildable_combat"
+                        ],
+                        "exclude_tags": [
+                            "wall",
+                            "donotattack",
+                            "pigGoldMine"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "potion_attack"
+                        ]
+                    },
+                    //Mob Alliance targeting
+                    {
+                        "name": "enchanter_mob_alliance_potion",
+                        "max_range": 10,
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 5,
+                        "include_tags": [
+                            "mob_alliance_structure"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack",
+                            "animal"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "potion_attack"
+                        ]
+                    },
+                    //General Targeting
+                    {
+                        "name": "enchanter_general_mob_potion",
+                        "max_range": 40,
+                        "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack",
+                            "animal",
+                            "wall"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "potion_attack"
+                        ]
+                    },
+                    {
+                        "name": "enchanter_general_buildable_potion",
+                        "max_range": 40,
+                        "enable_with_line_of_sight": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "buildable_combat"
+                        ],
+                        "exclude_tags": [
+                            "wall",
+                            "donotattack",
+                            "pigGoldMine"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "potion_attack"
+                        ]
+                    },
+                    {
+                        "name": "enchanter_goldmine_buildable_potion",
+                        "max_range": 20,
+                        "enable_with_line_of_sight": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "pigGoldMine"
+                        ],
+                        "exclude_tags": [
+                            "donotattack"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "potion_attack"
+                        ]
+                    }
+                ]
+            },
+            "badger:target_actions": {
+                "actions": [
+                    {
+                        "name": "potion_attack",
+                        "on_hit_target_trigger": "on_enchanter_ranged_attack_hit",
+                        "range": {
+                            "max_range": 20
+                        },
+                        "state_machine": {
+                            "wind_up": 0.8,
+                            "wind_down": 0.8,
+                            "cooldown_time": 1.5,
+                            "deactivates_on_cooldown": false
+                        },
+                        "accuracy": {
+                            "min_range": 1,
+                            "max_range": 2,
+                            "scale_with_range": true
+                        },
+                        "shoot": {
+                            "projectile": "badger:proj_potion",
+                            "position_offsets_from_center": [
+                                [
+                                    0,
+                                    1.7,
+                                    0.4
+                                ]
+                            ],
+                            "collision": {
+                                "include_tags": [],
+                                "exclude_tags": [
+                                    "wall",
+                                    "siege_projectile"
+                                ],
+                                "alliance_rule_filter": "enemy"
+                            },
+                            "damage": {
+                                "damage_amount": 0.1,
+                                "damage_types": [
+                                    "poison"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "badger:aoe": {
+                "shape": {
+                    "type": "sphere",
+                    "radius": 1.3,
+                    "position": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ]
+                },
+                "timer": {
+                    "interval": 3,
+                    "jitter": [
+                        -1,
+                        0,
+                        1
+                    ]
+                },
+                "damage_effects": [
+                    {
+                        "damage": 0,
+                        "damage_types": [],
+                        "include_tags": [
+                            "mob"
+                        ],
+                        "exclude_tags": [],
+                        "apply_status": {
+                            "large_collide": {
+                                "strength": 1.0
+                            }
+                        },
+                        "alliance_rule_filter": "enemy"
+                    }
+                ]
+            },
+            "badger:knockback_resistance": {
+                "affected_scale": 0.5
+            },
+            "badger:rider": {
+                "include_tags": [
+                    "mount"
+                ],
+                "alliance_rule_filter": "friendly"
+            },
+            "badger:village_influence": {
+                "amount": 20
+            },
+            "badger:telemetry_track_banner_order": {
+                "enabled": true
+            },
+            "badger:conditionally_solid_blocks": {
+                "include_tags": [
+                    "barrier_waterfall"
+                ],
+                "exclude_tags": []
+            },
+            "badger:template": [
+                "badger:template_mob",
+                "badger:component_leash_on_stop_default",
+                "badger:component_becomes_lost_default",
+                "badger:component_difficulty_modifiers_mob_enchanter"
+            ]
+        }
+    }
+}

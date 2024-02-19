@@ -1,0 +1,353 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_patcher",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Special"
+    },
+    "components": {
+      "badger:patcher": {
+        "max_travel_timeout": 60,
+        "travel_timeout": 0,
+        "travel_timeout_buff": "badger:buff_patcher_timeout",
+        "building_behaviour": "badger:behavior_piglin_patcher_building"
+      },
+      "badger:aabb": {
+        "width": 1.2,
+        "height": 1.8
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Support"
+      },
+      "badger:heartbeat": {
+        "min_expire_time": 120
+      },
+      "badger:loot": {
+        "table": "uncommon_piglin_loot",
+        "overrides": [
+          {
+            "name": "roaming",
+            "table": "roaming_uncommon_piglin_loot"
+          },
+          {
+            "name": "outpost",
+            "table": "outpost_uncommon_piglin_loot"
+          },
+          {
+            "name": "village_attack",
+            "table": "village_attack_uncommon_piglin_loot"
+          },
+          {
+            "name": "act1",
+            "table": "act1_piglins"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 3.2,
+        "air_control_factor": 0.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 2,
+          "sc": 1,
+          "rc": 2,
+          "ct": 1,
+          "ht": 1
+        }
+      },
+      "badger:collision_weight": {
+        "weight": 5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.2,
+        "wander_radius": 5
+      },
+      "badger:distant_stimulus_movement": {
+        "max_movement_range": 200,
+        "max_movement_duration": 10,
+        "min_distant_stimulus_distance": 50,
+        "nearby_ally_propagation_range": 35,
+        "propagation_include_tags": [
+          "piglin"
+        ],
+        "propagation_exclude_tags": []
+      },
+      "badger:tags": {
+        "tags": [
+          "piglin",
+          "small",
+          "mob",
+          "special",
+          "patcher"
+        ]
+      },
+      "badger:health": {
+        "max_health": 21
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Bumped
+          {
+            "name": "bumped",
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "bump"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "patcher_mob_grenade",
+            "max_range": 35,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 4,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "patcher_buildable",
+            "max_range": 25,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "mob",
+              "melee",
+              "player"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          {
+            "name": "patcher_buildable_nav_failure",
+            "max_range": 2,
+            "enable_with_line_of_sight": false,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "mob",
+              "melee",
+              "player"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          //General Targeting
+          {
+            "name": "patcher_mob_grenade",
+            "max_range": 75,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 4,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          //Roaming targeting
+          {
+            "name": "roam_attractor_combat_pos",
+            "max_range": 25,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 4,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [
+              "locator_roaming_piglin_attractor"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "any_team",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "player": 0.5,
+          "smash": 0.65,
+          "dart": 0.4,
+          "poison": 0.85
+        }
+      },
+      "badger:resist_status": {
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "patcher_grenade",
+            "on_hit_target_trigger": "on_patcher_aoe_attack_hit",
+            "predictive_windup": true,
+            "range": {
+              "max_range": 35
+            },
+            "state_machine": {
+              "wind_up": 1.869,
+              "wind_down": 1.5,
+              "cooldown_time": 2,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 0,
+              "max_range": 5,
+              "scale_with_range": true
+            },
+            "interruptible": {},
+            "shoot": {
+              "projectile": "badger:proj_patcher_grenade",
+              "position_offsets_from_center": [
+                [
+                  -0.08,
+                  1.91,
+                  2.7
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "explosion"
+                ]
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 0,
+              "max_range": 4
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.4,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "timer": {
+          "interval": 3,
+		  "jitter": [-1,0,1]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "small_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.9
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_piglin",
+        "badger:component_difficulty_modifiers_piglin_patcher"
+      ]
+    }
+  }
+}

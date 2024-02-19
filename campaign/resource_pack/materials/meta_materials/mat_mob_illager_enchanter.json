@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "mat_mob_illager_enchanter:base_entity_hero": {
+      "pass": "AlphaTest",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_mob_illager_enchanter_d",
+      "coeffMap": "textures/entity/tex_mob_illager_enchanter_mr",
+      "normalMap": "textures/entity/tex_mob_illager_enchanter_n",
+      "emissiveMap": "textures/entity/tex_mob_illager_enchanter_e"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "badger:advanced_direct_pathfinding_service": {
+    "aabb_width": 1.1,
+    "aabb_height": 1.1,
+    "jump_height": 4,
+    "fall_dist": 5,
+    "path_half_width": 2,
+    "path_length_limit_buffer": 4,
+    "max_dist_to_refresh_path": 1,
+    "ignore_solids_alliance_rule": "same_team",
+    "node_exploration_limit_multiplier": 2
+  }
+}

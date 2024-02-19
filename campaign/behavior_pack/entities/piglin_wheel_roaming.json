@@ -1,0 +1,322 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_wheel_roaming",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Cavalry"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Bumped
+          {
+            "name": "bumped",
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "bump"
+            ]
+          },
+          //Group targeting - roll
+          {
+            "name": "wheel_roll_many_targets",
+            "max_range": 25,
+            "required_target_count": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          //Rolling Targeting
+          {
+            "name": "wheel_roll_support_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "support"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          {
+            "name": "wheel_roll_mob_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          {
+            "name": "wheel_roll_player_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          {
+            "name": "wheel_roll_generic_distance",
+            "max_range": 40,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "wall"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "wheel_mob_melee",
+            "max_range": 10,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //Player Targeting
+          {
+            "name": "wheel_player_melee",
+            "max_range": 5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "wheel_fountain_melee",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "fountain"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "wheel_house_melee",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "house"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "wheel_structures_melee",
+            "max_range": 10,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "wheel_structures_nav_fail",
+            "max_range": 2,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //Mob Alliance targeting
+          {
+            "name": "wheel_totem_alliance_melee",
+            "max_range": 10,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "totem_unlock_mob_alliance"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "wheel_mob_alliance_melee",
+            "max_range": 10,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob_alliance_structure"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          //General Targeting
+          {
+            "name": "wheel_roll_general",
+            "max_range": 75,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "roll_attack"
+            ]
+          }
+        ]
+      },
+      "badger:template": "badger:piglin_wheel"
+    }
+  }
+}

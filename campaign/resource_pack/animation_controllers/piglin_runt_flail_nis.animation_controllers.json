@@ -1,0 +1,219 @@
+{
+  "animation_controllers": {
+    "controller.animation.piglin_runt_flail_nis.default": {
+      "initial_state": "init",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": "(variable.chooser <= 1)"
+            },
+            {
+              "death_b": "((variable.chooser > 1) && (variable.chooser <= 2))"
+            },
+            {
+              "death_c": "(variable.chooser > 2)"
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idles": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.chooser = math.random(0,3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "!variable.skip_spawn"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "move": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "stop": "(!variable.is_swimming && (query.speed <= 0))"
+            },
+            {
+              "idle": "(variable.is_swimming && (query.speed <= 0))"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            },
+            {
+              "stop_b": 1.0
+            },
+            {
+              "stop_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.runchooser",
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_runt_flail_nis.idles": {
+      "initial_state": "on_land",
+      "states": {
+        "in_water": {
+          "animations":  [
+            {
+              "swim_idle": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "on_land": "!variable.is_swimming"
+            }
+          ]
+        },
+        "on_land": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            },
+            {
+              "idle_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.runchooser",
+          "transitions":  [
+            {
+              "in_water": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.piglin_runt_flail_nis.locomotion": {
+      "initial_state": "run",
+      "states": {
+        "run": {
+          "animations":  [
+            {
+              "run_a": 1.0
+            },
+            {
+              "run_b": 1.0
+            },
+            {
+              "run_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.runchooser",
+          "transitions":  [
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 3.75))"
+            }
+          ]
+        },
+        "sprint": {
+          "animations":  [
+            {
+              "burn_run_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "run": "(!variable.is_swimming && (query.speed <= 3.75))"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 3.75))"
+            },
+            {
+              "run": "(!variable.is_swimming && (query.speed <= 3.75))"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

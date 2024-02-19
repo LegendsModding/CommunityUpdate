@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_patcher_attack_face:base_entity_face": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_patcher_attack_face_d",
+      "emissiveMap": "textures/entity/tex_piglin_patcher_attack_face_e",
+      "coeffMap": "textures/entity/tex_piglin_patcher_attack_face_mr",
+      "normalMap": "textures/entity/tex_piglin_patcher_attack_face_n"
+    },
+    "uniforms": {
+      "EmissiveTint": {
+        "is_packed_vec4": true,
+        "expression": "query.piglin_eye_tint"
+      }
+    }
+  }
+}

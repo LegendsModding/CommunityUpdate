@@ -1,0 +1,24 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_wheel_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_wheel": "MetaMaterial.mat_piglin_wheel"
+        },
+        {
+          "mat_piglin_wheel_face": "MetaMaterial.mat_piglin_wheel_face"
+        },
+        {
+          "mat_fx_frozen_256": "MetaMaterial.mat_fx_frozen_256"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

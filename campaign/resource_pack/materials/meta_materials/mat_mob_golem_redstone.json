@@ -1,0 +1,10 @@
+{
+    "format_version": "1.8.0",
+    "mat_mob_golem_redstone:base_entity": {
+        "pass": "AlphaTest",
+        "textures": {
+            "diffuseMap": "textures/entity/tex_mob_golem_redstone_d",
+            "coeffMap": "textures/entity/tex_mob_golem_redstone_mr"
+        }
+    }
+}

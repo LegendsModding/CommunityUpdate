@@ -1,0 +1,66 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2,
+        "position_interpolation_steps": 2
+      },
+      "badger:keep_alive_timer": {
+        "time": 1
+      },
+      "badger:mount_molang": {
+        "mount_variable": "endermite_corrupted"
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_animal_rabbit_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_animal_rabbit_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_animal_rabbit_dx_lured"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_animal_rabbit_knockback_land"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:endermite_corrupted",
+        "limit": 256
+      },
+      "badger:template": ["badger:template_animal","badger:template_status_effects_tiny"]
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.endermite_corrupted.attack_a",
+        "default": "controller.animation.endermite_corrupted.default",
+        "hit_reaction": "controller.animation.endermite_corrupted.hit_reaction",
+        "move_a": "animation.endermite_corrupted.move_a",
+        "idle_a": "animation.endermite_corrupted.idle_a",
+        "idles": "controller.animation.endermite_corrupted.idles",
+        "locomotion": "controller.animation.endermite_corrupted.locomotion"
+      },
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.endermite_corrupted"
+      },
+      "identifier": "badger:endermite_corrupted",
+      "materials": {
+        "mat_endermite_corrupted": "mat_endermite_corrupted"
+      },
+      "render_controllers": ["controller.render.endermite_corrupted"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_wheel": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_wheel": "MetaMaterial.mat_piglin_wheel"
+        },
+        {
+          "mat_piglin_wheel_face": "MetaMaterial.mat_piglin_wheel_face"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ],
+      "textures": ["Texture.default","Texture.default"]
+    }
+  },
+  "format_version": "1.8.0"
+}

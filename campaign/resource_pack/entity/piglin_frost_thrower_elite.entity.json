@@ -1,0 +1,143 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 3
+      },
+      "badger:presentation_event": {
+        /* BOAR TODO "intense_knockback": {
+          "audio": "BAE_piglin_frost_thrower_elite_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_frost_thrower_elite_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_medium"
+        },*/
+        "on_liquid_deep_enter": {
+          "audio": "BAE_mob_generic_swim_liquid_medium"
+        },
+        "on_liquid_deep_exit": {
+          "audio": "BAE_mob_generic_swim_liquid_medium_stop"
+        }
+        /*"on_player_tower_launch_arrow_hit": {
+          "audio": "BAE_impact_proj_tower_arrow_on_piglin_frost_thrower_elite"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_frost_thrower_elite_knockback_land"
+        },
+        "on_zombie_melee_hit": {
+          "audio": "BAE_impact_zombie_on_piglin_frost_thrower_elite"
+        }*/
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_frost_thrower_elite",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
+      "badger:threat_source": {
+        "base_value": 5,
+        "spawn_value": 10,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "climb_a": "animation.piglin_frost_thrower_elite.hitreact_a",
+        "death_a": "animation.piglin_frost_thrower_elite.death_a",
+        "default": "controller.animation.piglin_frost_thrower_elite.default",
+        "hit_react": "controller.animation.piglin_frost_thrower_elite.hit_react",
+        "hitreact_a": "animation.piglin_frost_thrower_elite.hitreact_a",
+        "idle_a": "animation.piglin_frost_thrower_elite.idle_a",
+        "idle_b": "animation.piglin_frost_thrower_elite.idle_a",
+        "idle_d": "animation.piglin_frost_thrower_elite.idle_a",
+        "idle_e": "animation.piglin_frost_thrower_elite.idle_a",
+        "idles": "controller.animation.piglin_frost_thrower_elite.idles",
+        "knockback_a": "animation.piglin_frost_thrower_elite.knockback_a",
+        "knockback_a_end": "animation.piglin_frost_thrower_elite.knockback_a",
+        "locomotion": "controller.animation.piglin_frost_thrower_elite.locomotion",
+        "spawn_a": "animation.piglin_frost_thrower_elite.spawn_a",
+        "sprint_a": "animation.piglin_frost_thrower_elite.run_a",
+        "stop_a": "animation.piglin_frost_thrower_elite.hitreact_a",
+        "stun_a": "animation.piglin_frost_thrower_elite.stun_a",
+        "swim_a": "animation.piglin_frost_thrower_elite.swim_a",
+        "swim_idle_a": "animation.piglin_frost_thrower_elite.swim_idle_a",
+        "walk_a": "animation.piglin_frost_thrower_elite.walk_a",
+        "winddown_a": "animation.piglin_frost_thrower_elite.idle_a",
+        "windup_a": "animation.piglin_frost_thrower_elite.throw_a"
+      },
+      "enable_attachables": false,
+      "event_scripts": {
+        "stunned_start": "variable.is_stunned = 1;",
+        "stunned_stop": "variable.is_stunned = 0;"
+      },
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.piglin_frost_thrower_elite"
+      },
+      "identifier": "badger:piglin_frost_thrower_elite",
+      "materials": {
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_fx_spore_healed_256": "mat_fx_spore_healed_256",
+        "mat_piglin_frost_thrower_elite": "mat_piglin_frost_thrower_elite"
+      },
+      "particle_effects": {
+        "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_med",
+        "fx_death": "badger:fx_shared_death_smoke_med",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_puff": "badger:fx_shared_death_smoke_med"
+      },
+      "render_controllers": ["controller.render.piglin_frost_thrower_elite"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          },
+          {
+            "hit_react": "1"
+          }
+        ],
+        "initialize": ["variable.mushroom_geo_vis = 1;"]
+      },
+      "sound_effects": {
+        //BOAR TODO
+        "attack_a_throw": "BAE_piglin_grenadier_attack_a_throw",
+        "attack_a_winddown_stop": "BAE_piglin_grenadier_attack_a_winddown_stop",
+        "attack_a_windup": "BAE_piglin_grenadier_attack_a_windup",
+        "bodyfall": "BAE_piglin_grenadier_bodyfall",
+        "death_poof_medium": "BAE_piglin_death_poof_medium",
+        "dx_attack_a": "BAE_piglin_grenadier_dx_attack",
+        "dx_attack_reload": "BAE_piglin_grenadier_dx_attack_reload",
+        "dx_climb": "BAE_piglin_grenadier_dx_climb",
+        "dx_damage": "BAE_piglin_grenadier_dx_damage",
+        "dx_death": "BAE_piglin_grenadier_dx_death",
+        "dx_idle": "BAE_piglin_grenadier_dx_idle",
+        "dx_snort": "BAE_piglin_grenadier_dx_snort",
+        "dx_stun": "BAE_piglin_grenadier_dx_stun",
+        "dx_walk": "BAE_piglin_grenadier_dx_walk",
+        "footstep": "BAE_piglin_grenadier_footstep",
+        "idle_move": "BAE_piglin_grenadier_idle_move",
+        "idle_move_stop": "BAE_piglin_grenadier_idle_move_stop",
+        "idle_sniff": "BAE_piglin_grenadier_idle_sniff",
+        "idle_snot": "BAE_piglin_grenadier_idle_snot",
+        "jump": "BAE_piglin_grenadier_jump",
+        "jump_land": "BAE_piglin_grenadier_jump_land",
+        "spawn": "BAE_piglin_grenadier_spawn",
+        "winddown_grenade": "BAE_piglin_grenadier_attack_a_winddown_grenade",
+        "winddown_reload": "BAE_piglin_grenadier_attack_a_winddown_reload"
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_runt_ninja": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_runt_ninja": "MetaMaterial.mat_piglin_runt_ninja"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

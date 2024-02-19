@@ -1,0 +1,430 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_firework.default": {
+      "initial_state": "init",
+      "states": {
+        "attack_a": {
+          "animations":  [
+            {
+              "attack_b_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "stun": "(variable.is_stunned && !query.in_knockback)"
+            }
+          ]
+        },
+        "celebrate": {
+          "animations":  [
+            {
+              "cheer_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "!variable.celebration"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "climb": {
+          "animations":  [
+            {
+              "climb_a": 1.0
+            },
+            {
+              "climb_b": 1.0
+            },
+            {
+              "climb_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.climbchooser",
+          "transitions":  [
+            {
+              "walk": "((query.velocity_y == 0) && query.any_animation_finished)"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "attack_a": "(((variable.wood_ranged_attack || variable.potion_wood_ranged_attack) || variable.potion_wood_ranged_attack_2) || variable.potion_wood_ranged_attack_3)"
+            }
+          ]
+        },
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            },
+            {
+              "death_b": 1.0
+            },
+            {
+              "death_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.deathchooser",
+          "sound_effects":  [
+            {
+              "effect": "death",
+              "enabled": true
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_entry": ["variable.idlechooser = math.random(0,3);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "celebrate": "variable.celebration"
+            },
+            {
+              "attack_a": "(((variable.wood_ranged_attack || variable.potion_wood_ranged_attack) || variable.potion_wood_ranged_attack_2) || variable.potion_wood_ranged_attack_3)"
+            }
+          ]
+        },
+        "init": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "knockback": {
+          "animations":  [
+            {
+              "knockback_a": 1.0
+            },
+            {
+              "additive_tumble_slow": "(variable.speed_modifier < 0.6)"
+            },
+            {
+              "additive_tumble_fast": "(variable.speed_modifier >= 0.6)"
+            }
+          ],
+          "on_entry": ["variable.speed_modifier = math.random(0.1,1.8);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.in_knockback == 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "spawn_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            },
+            {
+              "stop_b": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.stopchooser",
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "walk": "(query.speed > 0)"
+            },
+            {
+              "celebrate": "variable.celebration"
+            },
+            {
+              "attack_a": "(((variable.wood_ranged_attack || variable.potion_wood_ranged_attack) || variable.potion_wood_ranged_attack_2) || variable.potion_wood_ranged_attack_3)"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "idle": "(variable.is_stunned == 0)"
+            },
+            {
+              "knockback": "query.in_knockback"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.walkchooser",
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "climb": "(((query.velocity_y > 0) && (variable.is_swimming == 0)) && (query.speed <= 4))"
+            },
+            {
+              "stop": "((query.speed == 0) && (variable.is_swimming == 0))"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "knockback": "query.in_knockback"
+            },
+            {
+              "idle": "((query.speed == 0) && variable.is_swimming)"
+            },
+            {
+              "celebrate": "variable.celebration"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_firework.hit_reaction": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "hit_reaction": "((variable.intense_hit || variable.normal_hit) || query.in_knockback)"
+            }
+          ]
+        },
+        "hit_reaction": {
+          "animations":  [
+            {
+              "hit_reaction_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "in_air": "(query.in_knockback && query.any_animation_finished)"
+            },
+            {
+              "enter_exit": "(query.any_animation_finished && !query.in_knockback)"
+            }
+          ]
+        },
+        "in_air": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "knockback_landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "knockback_landing": {
+          "animations":  [
+            {
+              "knockback_landing": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_firework.idle": {
+      "initial_state": "on_land",
+      "states": {
+        "in_water": {
+          "animations":  [
+            {
+              "swim_a_idle": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "on_land": "!variable.is_swimming"
+            }
+          ]
+        },
+        "on_land": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            },
+            {
+              "idle_c": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "in_water": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_firework.locomotion": {
+      "initial_state": "walk",
+      "states": {
+        "sprint": {
+          "animations":  [
+            {
+              "sprint_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 5))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "swim_a": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 5))"
+            },
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 5))"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "run_a": 1.0
+            },
+            {
+              "run_b": 1.0
+            },
+            {
+              "run_c": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": true,
+          "on_entry": ["variable.walkchooser = math.random(0,100);"],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.walkchooser",
+          "transitions":  [
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 5))"
+            },
+            {
+              "swim": "variable.is_swimming"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

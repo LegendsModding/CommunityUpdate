@@ -1,0 +1,417 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "badger:piglin_runt_claw",
+            "runtime_identifier": "badger:badger_mob",
+            "is_summonable": true
+        },
+        "mushroom_data": {
+            "role": "Melee"
+        },
+        "components": {
+            "badger:aabb": {
+                "width": 1.01,
+                "height": 1.8
+            },
+            "badger:loot": {
+                "table": "common_piglin_loot",
+                "overrides": [
+                    {
+                      "name": "roaming",
+                      "table": "roaming_common_piglin_loot"
+                    },
+                    {
+                      "name": "outpost",
+                      "table": "outpost_common_piglin_loot"
+                    },
+                    {
+                      "name": "village_attack",
+                      "table": "outpost_common_piglin_loot"
+                    },
+                    {
+                        "name": "act1",
+                        "table": "act1_piglins"
+                    }
+                ]
+            },
+            "badger:telemetry_category": {
+                "category_name": "Piglin Melee"
+            },
+            "badger:movement": {
+                "move_speed": 3.5,
+                "air_control_factor": 0.0
+            },
+            "badger:physics": {
+                "gravity": -30,
+                "friction": 0.04
+            },
+            "badger:collision_weight": {
+                "weight": 1
+            },
+            "badger:wander": {
+                "wander_frequency": 0.1,
+                "wander_radius": 5
+            },
+            "badger:distant_stimulus_movement": {
+                "max_movement_range": 200,
+                "max_movement_duration": 10,
+                "min_distant_stimulus_distance": 30,
+                "nearby_ally_propagation_range": 30,
+                "propagation_include_tags": [
+                    "piglin"
+                ],
+                "propagation_exclude_tags": []
+            },
+            "badger:tags": {
+                "tags": [
+                    "piglin_tier1",
+                    "claw",
+                    "mob",
+                    "piglin",
+                    "luredirect",
+                    "melee"
+                ]
+            },
+            "badger:unit_direct_tags" : {
+                "tags": [
+                  "unit_direct_mob"
+                ]
+            },
+            "badger:health": {
+                "max_health": 12.6
+            },
+            "badger:targeting": {
+                "targeting_priorities": [
+                    //Bumped
+                    {
+                        "name": "claw_bumped",
+                        "include_tags": [],
+                        "exclude_tags": [
+                            "donotattack"
+                        ],
+                        "alliance_rule_filter": "friendly",
+                        "actions": [
+                            "bump"
+                        ]
+                    },
+                    //Mob targeting
+                    {
+                        "name": "claw_mob_melee",
+                        "max_range": 15,
+                        "action_tickets": {
+                            "cc": 1
+                        },
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "mob"
+                        ],
+                        "exclude_tags": [
+                            "wall",
+                            "stairs",
+                            "donotattack",
+                            "mob_alliance_structure",
+                            "totem_unlock_mob_alliance",
+                            "animal"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    //Player Targeting
+                    {
+                        "name": "claw_player_melee",
+                        "max_range": 5,
+                        "action_tickets": {
+                            "cc": 1
+                        },
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "player"
+                        ],
+                        "exclude_tags": [
+                            "buildable_combat",
+                            "wall",
+                            "stairs",
+                            "donotattack",
+                            "animal"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    //Buildable targeting
+                    {
+                        "name": "claw_wall_melee",
+                        "max_range": 3,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "wall"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack",
+                            "animal"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    {
+                        "name": "claw_buildable_melee",
+                        "max_range": 25,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "buildable_combat"
+                        ],
+                        "exclude_tags": [
+                            "wall",
+                            "stairs",
+                            "donotattack",
+                            "mob_alliance_structure",
+                            "totem_unlock_mob_alliance"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    {
+                        "name": "claw_buildable_melee_nav_fail",
+                        "max_range": 1,
+                        "enable_on_navigation_failure": true,
+                        "enabled_duration": 2.5,
+                        "include_tags": [
+                            "buildable_combat"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack",
+                            "mob_alliance_structure",
+                            "totem_unlock_mob_alliance"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    //Mob Alliance targeting
+                    {
+                        "name": "claw_totem_alliance_melee",
+                        "max_range": 10,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "totem_unlock_mob_alliance"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    {
+                        "name": "claw_mob_alliance_melee",
+                        "max_range": 10,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [
+                            "mob_alliance_structure"
+                        ],
+                        "exclude_tags": [
+                            "stairs",
+                            "donotattack"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    },
+                    //General targeting
+                    {
+                        "name": "claw_general_melee",
+                        "max_range": 30,
+                        "enable_with_line_of_sight": true,
+                        "disable_on_navigation_failure": true,
+                        "disabled_duration": 1.5,
+                        "include_tags": [],
+                        "exclude_tags": [
+                            "wall",
+                            "stairs",
+                            "donotattack",
+                            "animal"
+                        ],
+                        "alliance_rule_filter": "enemy",
+                        "actions": [
+                            "melee_attack_1"
+                        ]
+                    }
+                ]
+            },
+            "badger:damage_receiver": {
+                "damage_resistances": {
+                    "player": 1.0,
+                    "crush": 0.5,
+                    "poison": 0.5,
+                    "dart": 1.0
+                }
+            },
+            "badger:resist_status": {
+                "spore_damaged": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "healing": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "healing_stone": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "electric_stunned": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "slowed_piglin_bramble": {
+                    "resisted": true,
+                    "time": 5.0,
+                    "resistance_persist_time": 0
+                },
+                "stunned": {
+                    "resisted": false,
+                    "time": 2.0,
+                    "resistance_persist_time": 8.0
+                }
+            },
+            "badger:action_tickets": {
+                "action_tickets": {
+                    "cc": 1,
+                    "sc": 1,
+                    "rc": 1,
+                    "ct": 1,
+                    "ht": 1
+                }
+            },
+            "badger:target_actions": {
+                "actions": [
+                    {
+                        "name": "melee_attack_1",
+                        //BOAR TODO "on_hit_target_trigger": "on_piglin_runt_claw_melee_attack_hit",
+                        "predictive_windup": false,
+                        "range": {
+                            "max_range": 1.5
+                        },
+                        "state_machine": {
+                            "wind_up": 0.7,
+                            "wind_down": 1.1,
+                            "cooldown_time": 0.2,
+                            "deactivates_on_cooldown": true
+                        },
+                        "interruptible": {},
+                        "shape_area_damage": {
+                            "shape": {
+                                "type": "wedge",
+                                "aperture_angle": 30,
+                                "radius": 2.2,
+                                "thickness": 2.2,
+                                "position": [
+                                    0.0,
+                                    1.0,
+                                    0.1
+                                ]
+                            },
+                            "collision": {
+                                "include_tags": [],
+                                "exclude_tags": [],
+                                "alliance_rule_filter": "enemy"
+                            },
+                            "damage": {
+                                "damage_amount": 1.75,
+                                "damage_types": [
+                                    "blunt"
+                                ]
+                            },
+                            "knockback": {
+                                "angle": 40,
+                                "force": 7
+                            },
+                            "apply_status": {
+                                "engaged": {
+                                    "strength": 1.0
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "name": "secondary_combat_position",
+                        "range": {
+                            "min_range": 3,
+                            "max_range": 4
+                        }
+                    }
+                ]
+            },
+            "badger:aoe": {
+                "shape": {
+                    "type": "sphere",
+                    "radius": 1.4,
+                    "position": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ]
+                },
+				"timer": {
+				  "interval": 3,
+				  "jitter": [-1,0,1]
+				},
+                "damage_effects": [
+                    {
+                        "damage": 0,
+                        "damage_types": [],
+                        "include_tags": [
+                            "mob"
+                        ],
+                        "exclude_tags": [],
+                        "apply_status": {
+                            "small_collide": {
+                                "strength": 1.0
+                            }
+                        },
+                        "alliance_rule_filter": "enemy"
+                    }
+                ]
+            },
+            "badger:knockback_resistance": {
+                "affected_scale": 1.0
+            },
+            "badger:conditionally_solid_blocks": {
+                "include_tags": [
+                    "barrier_waterfall"
+                ],
+                "exclude_tags": []
+            },
+            "badger:template": [
+                "badger:template_piglin"
+                //BOAR TODO "badger:component_difficulty_modifiers_piglin_runt_claw"
+            ]
+        }
+    }
+}

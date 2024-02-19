@@ -1,0 +1,24 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_firework_nis": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_firework": "MetaMaterial.mat_mob_golem_firework"
+        },
+        {
+          "mat_mob_golem_firework_face": "MetaMaterial.mat_mob_golem_firework_face"
+        },
+        {
+          "mat_fx_generic_buff_128": "MetaMaterial.mat_fx_generic_buff_128"
+        }
+      ],
+      "part_visibility":  [
+        {
+          "second_skin": "variable.second_skin_vis"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

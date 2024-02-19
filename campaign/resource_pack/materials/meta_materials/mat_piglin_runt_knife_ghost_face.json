@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_runt_knife_ghost_face:base_entity_face": {
+    "pass": "transparentafterworld",
+    "depthprepass": true,
+    "uniforms": {
+      "BaseColor": [
+        "1.0",
+        "1.0",
+        "1.0",
+        "variable.mat_opacity"
+      ]
+    },
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_runt_knife_attack_face_d",
+      "coeffMap": "textures/entity/tex_piglin_runt_knife_attack_face_mr",
+      "emissiveMap": "textures/entity/tex_piglin_runt_knife_attack_face_e",
+      "normalMap": "textures/entity/tex_piglin_runt_knife_attack_face_n"
+    }
+  }
+}

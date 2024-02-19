@@ -22,7 +22,7 @@ const legendsCommunityUpdateWorldGenDefinition = {
         filterManager.AppendFilter(["village_west_magnet"], 1)
 
         // Place ruined portal(new spawn)
-        filterManager.AppendFilter(["ruined_end_portal"], 1)
+        //filterManager.AppendFilter(["ruined_end_portal"], 1)
 
         // List the villages, place fatelands
         const forestVillage = ["culture_required", "forest"]
@@ -115,10 +115,6 @@ const legendsCommunityUpdateWorldGenDefinition = {
         // They already should be randomized so I don't really need to shuffle them, but am anyways.
         ShuffleArrayGroup(finalPlacements, "world_gen")
 
-        // Append the generic fill filters! Huzzah
-        finalPlacements.forEach((genericFill) => {
-            filterManager.AppendFilter(genericFill, 1)
-        })
 
         // Village base slots
         filterManager.AppendFilter(["villageBaseSlot"], 1)
@@ -135,6 +131,11 @@ const legendsCommunityUpdateWorldGenDefinition = {
         // Hordey horde
         filterManager.AppendFilter(["faction_required"], 1)
         
+        // Append the generic fill filters! Huzzah
+        finalPlacements.forEach((genericFill) => {
+            filterManager.AppendFilter(genericFill, 1)
+        })
+
         // Place firsts
         filterManager.AppendFilter(["poi_deck"], 1)
 

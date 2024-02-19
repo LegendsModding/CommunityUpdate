@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_runt_ninja:base_entity": {
+    "stencilstate": {
+      "enabled": true,
+      "stencilref": 64,
+      "frontface": {
+          "stencilfailop": "keep",
+          "stencildepthfailop": "keep",
+          "stencilpassop": "replace",
+          "stencilfunc": "always"
+      },
+      "backface": {
+          "stencilfailop": "keep",
+          "stencildepthfailop": "keep",
+          "stencilpassop": "replace",
+          "stencilfunc": "always"
+      }
+  },
+  "pass": "AlphaTest",
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_runt_ninja_defend_d"
+      /* BOAR TODO "coeffMap": "textures/entity/tex_piglin_runt_ninja_defend_mr",
+      "emissiveMap": "textures/entity/tex_piglin_runt_ninja_defend_e",
+      "normalMap": "textures/entity/tex_piglin_runt_ninja_defend_n"*/
+    }
+  }
+}

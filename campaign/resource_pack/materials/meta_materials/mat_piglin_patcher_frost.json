@@ -1,0 +1,11 @@
+{
+    "format_version": "1.8.0",
+    "mat_piglin_patcher_frost:base_entity": {
+        "textures": {
+            "coeffMap": "textures/entity/tex_piglin_patcher_frost_mr",
+            "diffuseMap": "textures/entity/tex_piglin_patcher_frost_d",
+            "emissiveMap": "textures/entity/tex_piglin_patcher_frost_e",
+            "normalMap": "textures/entity/tex_piglin_patcher_frost_n"
+        }
+    }
+}

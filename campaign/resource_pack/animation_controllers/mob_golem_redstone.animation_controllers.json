@@ -1,0 +1,385 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_redstone.default": {
+      "initial_state": "init",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ]
+        },
+        "drill_attack": {
+          "animations":  [
+            {
+              "drill.loop": 1.0
+            }
+          ],
+          "on_entry": ["variable.firing_loop = 0;"],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "drill_exit": "(variable.firing_loop >= 3)"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            },
+            {
+              "idle": "variable.interrupted"
+            }
+          ]
+        },
+        "drill_exit": {
+          "animations":  [
+            {
+              "drill.intro": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(query.any_animation_finished || variable.interrupted)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            }
+          ]
+        },
+        "drill_intro": {
+          "animations":  [
+            {
+              "drill.intro": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "drill_attack": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            },
+            {
+              "idle": "variable.interrupted"
+            }
+          ]
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "drill_intro": "variable.drill_attack"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            }
+          ]
+        },
+        "init": {
+          "transitions":  [
+            {
+              "spawn": "(variable.skip_spawn == 0)"
+            },
+            {
+              "idle": "variable.skip_spawn"
+            }
+          ]
+        },
+        "knockback_end": {
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "stun": "(variable.is_stunned && (query.in_knockback == 0))"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "drill_attack": "variable.ground_pound_attack"
+            }
+          ]
+        },
+        "knockback_loop": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ],
+          "on_entry": ["variable.speed_modifier = math.random(0,1.2);"],
+          "transitions":  [
+            {
+              "knockback_end": "(query.in_knockback == 0)"
+            }
+          ]
+        },
+        "move": {
+          "animations":  [
+            {
+              "locomotion": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stop": "((query.speed <= 0) && (variable.is_swimming == 0))"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "idle": "(query.speed <= 0)"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            }
+          ]
+        },
+        "spawn": {
+          "animations":  [
+            {
+              "death": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "stun": "variable.is_stunned"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "blend_transition": 0.1,
+          "blend_via_shortest_path": "slerp",
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.stopchooser",
+          "transitions":  [
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            },
+            {
+              "move": "(query.speed > 0)"
+            },
+            {
+              "drill_intro": "variable.drill_attack"
+            },
+            {
+              "stun": "variable.is_stunned"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            }
+          ]
+        },
+        "stun": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "idle": "(variable.is_stunned == 0)"
+            },
+            {
+              "knockback_loop": "query.in_knockback"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_redstone.hitreaction": {
+      "initial_state": "enter_exit",
+      "states": {
+        "enter_exit": {
+          "transitions":  [
+            {
+              "hit_react": "((variable.normal_hit || variable.intense_hit) || query.in_knockback)"
+            }
+          ]
+        },
+        "hit_react": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "enter_exit": "(query.any_animation_finished && !query.in_knockback)"
+            },
+            {
+              "in_knockback": "(query.in_knockback && query.any_animation_finished)"
+            }
+          ]
+        },
+        "in_knockback": {
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "transitions":  [
+            {
+              "landing": "!query.in_knockback"
+            }
+          ]
+        },
+        "landing": {
+          "animations":  [
+            {
+              "idle": 1.0
+            }
+          ],
+          "transitions":  [
+            {
+              "enter_exit": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_redstone.idle": {
+      "initial_state": "idling",
+      "states": {
+        "idling": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "swimming": "variable.is_swimming"
+            }
+          ]
+        },
+        "swimming": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": true,
+          "transitions":  [
+            {
+              "idling": "!variable.is_swimming"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.mob_golem_redstone.locomotion": {
+      "initial_state": "walk",
+      "states": {
+        "sprint": {
+          "animations":  [
+            {
+              "walk": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 5))"
+            }
+          ]
+        },
+        "swim": {
+          "animations":  [
+            {
+              "walk": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "walk": "(!variable.is_swimming && (query.speed <= 5))"
+            },
+            {
+              "sprint": "(!variable.is_swimming && (query.speed >= 5))"
+            }
+          ]
+        },
+        "walk": {
+          "animations":  [
+            {
+              "walk": 1.0
+            }
+          ],
+          "blend_transition": 0.2,
+          "blend_via_shortest_path": "slerp",
+          "transitions":  [
+            {
+              "swim": "variable.is_swimming"
+            },
+            {
+              "sprint": "(!variable.is_swimming && (query.speed > 5))"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

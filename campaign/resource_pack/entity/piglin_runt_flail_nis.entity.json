@@ -1,0 +1,115 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 5,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1.25
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_runt_flail_nis"
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "attack_a": "animation.piglin_runt_flail.attack_a",
+        "attack_b": "animation.piglin_runt_flail.attack_b",
+        "burn_run_a": "animation.piglin_runt_flail_nis.burn_run_a",
+        "cheer_a": "animation.piglin_runt_flail_nis.cheer_a",
+        "cheer_c": "animation.piglin_runt_flail_nis.cheer_c",
+        "cine_final_boss_death_runt_flail_shot_04": "animation.cine_final_boss_death_runt_flail_nis.cine_final_boss_death_runt_flail_shot_04",
+        "cine_final_boss_death_runt_flail_shot_06": "animation.cine_final_boss_death_runt_flail_nis.cine_final_boss_death_runt_flail_shot_06",
+        "cine_final_boss_death_runt_flail_shot_07": "animation.cine_final_boss_death_runt_flail_nis.cine_final_boss_death_runt_flail_shot_07",
+        "cine_final_boss_death_runt_flail_shot_08_09": "animation.cine_final_boss_death_runt_flail_nis.cine_final_boss_death_runt_flail_shot_08_09",
+        "cine_half_look_up_a": "animation.piglin_runt_flail_nis.cine_half_look_up_a",
+        "cine_intro_jumpturn_a": "animation.piglin_runt_flail_nis.cine_intro_jumpturn_a",
+        "cine_intro_turnlook_a": "animation.piglin_runt_flail_nis.cine_intro_turnlook_a",
+        "cine_intro_warrun_a": "animation.piglin_runt_flail_nis.cine_intro_warrun_a",
+        "cine_portal_listening": "animation.piglin_runt_flail_nis.cine_portal_listening",
+        "cine_react_hotfuzz": "animation.piglin_runt_flail_nis.cine_react_hotfuzz",
+        "cine_turn_a": "animation.piglin_runt_flail.cine_turn_a",
+        "cine_turn_b": "animation.piglin_runt_flail.cine_turn_b",
+        "climb_a": "animation.piglin_runt_flail.climb_a",
+        "climb_b": "animation.piglin_runt_flail.climb_b",
+        "climb_c": "animation.piglin_runt_flail.climb_c",
+        "death_a": "animation.piglin_runt_flail.death_a",
+        "death_b": "animation.piglin_runt_flail.death_b",
+        "death_c": "animation.piglin_runt_flail.death_c",
+        "default": "controller.animation.piglin_runt_flail_nis.default",
+        "float_a": "animation.piglin_runt_flail_nis.float_a",
+        "fly_a": "animation.piglin_runt_flail_nis.fly_a",
+        "giggle_a": "animation.piglin_runt_flail_nis.giggle_a",
+        "idle_a": "animation.piglin_runt_flail.idle_a",
+        "idle_b": "animation.piglin_runt_flail.idle_b",
+        "idle_c": "animation.piglin_runt_flail.idle_c",
+        "idles": "controller.animation.piglin_runt_flail_nis.idles",
+        "knockback_a": "animation.piglin_runt_flail.knockback_a",
+        "large_take_a": "animation.piglin_runt_flail_nis_takes.large_take_a",
+        "large_take_b": "animation.piglin_runt_flail_nis_takes.large_take_b",
+        "left_look_take_a": "animation.piglin_runt_flail_nis_takes.left_look_take_a",
+        "locomotion": "controller.animation.piglin_runt_flail_nis.locomotion",
+        "medium_take_a": "animation.piglin_runt_flail_nis_takes.medium_take_a",
+        "piglin_runt_flail_final_boss_death_nis": "animation.piglin_runt_flail_final_boss_death_nis.piglin_runt_flail_final_boss_death_nis",
+        "piglin_runt_flail_fly_away": "animation.piglin_runt_flail_nis_flypig.piglin_runt_flail_fly_away",
+        "piglin_runt_flail_fly_loop": "animation.piglin_runt_flail_nis_flypig.piglin_runt_flail_fly_loop",
+        "right_look_take_a": "animation.piglin_runt_flail_nis_takes.right_look_take_a",
+        "run_a": "animation.piglin_runt_flail.run_a",
+        "run_b": "animation.piglin_runt_flail.run_b",
+        "run_c": "animation.piglin_runt_flail.run_c",
+        "small_take_a": "animation.piglin_runt_flail_nis_takes.small_take_a",
+        "small_take_b": "animation.piglin_runt_flail_nis_takes.small_take_b",
+        "spawn_a": "animation.piglin_runt_flail.spawn_a",
+        "stop_a": "animation.piglin_runt_flail.stop_a",
+        "stop_b": "animation.piglin_runt_flail.stop_b",
+        "stop_c": "animation.piglin_runt_flail.stop_c",
+        "stun_a": "animation.piglin_runt_flail.stun_a",
+        "stun_exit": "animation.piglin_runt_flail.stun_exit",
+        "swim_a": "animation.piglin_runt_flail.swim_a",
+        "swim_idle": "animation.piglin_runt_flail.swim_idle"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink","Wide Eyes","Shocked","Evil"],
+      "geometry": {
+        "attack": "geometry.piglin_runt_flail_attack_nis",
+        "defend": "geometry.piglin_runt_flail_defend_nis",
+        "obstacle": "geometry.piglin_runt_flail_obstacle_nis",
+        "second_skin": "geometry.piglin_runt_flail_second_skin_nis"
+      },
+      "identifier": "badger:piglin_runt_flail_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_frost_128": "mat_fx_frost_128",
+        "mat_piglin_runt_flail_attack": "mat_piglin_runt_flail_attack",
+        "mat_piglin_runt_flail_attack_face": "mat_piglin_runt_flail_attack_face",
+        "mat_piglin_runt_flail_defend": "mat_piglin_runt_flail_defend",
+        "mat_piglin_runt_flail_defend_face": "mat_piglin_runt_flail_defend_face",
+        "mat_piglin_runt_flail_obstacle": "mat_piglin_runt_flail_obstacle",
+        "mat_piglin_runt_flail_obstacle_face": "mat_piglin_runt_flail_obstacle_face"
+      },
+      "particle_effects": {
+        "fx_float_trail": "badger:fx_final_boss_death_pig_trail"
+      },
+      "render_controllers": ["controller.render.piglin_runt_flail_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 1;","variable.model_chooser = 0;","variable.mace_geo_vis = 1;"]
+      },
+      "sound_effects": {
+        "dx_cine_jump": "BAE_piglin_runt_flail_dx_cine_jump",
+        "dx_cine_scream": "BAE_piglin_runt_flail_dx_cine_scream"
+      }
+    }
+  }
+}

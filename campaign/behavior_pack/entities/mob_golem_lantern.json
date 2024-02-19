@@ -1,0 +1,277 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_lantern",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Special"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.01,
+        "height": 1.8
+      },
+      "badger:heartbeat": {
+        "min_expire_time": 240
+      },
+      "badger:spawn_costs": {
+        "costs": [
+          {
+            "item": "iron",
+            "amount": 1
+          },
+          {
+            "item": "emerald",
+            "amount": 1
+          }
+        ],
+        "tickets": [
+          {
+            "ticket": "spawn",
+            "amount": 1
+          }
+        ]
+      },
+      "badger:loot": {
+        "table": "rare_mob"
+      },
+      "badger:movement": {
+        "move_speed": 4.5,
+        "air_control_factor": 0.5
+      },
+      "badger:refundable": {
+        "priority": 4,
+        "refund_multiplier": 1.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:collision_weight": {
+        "weight": 30
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:tags": {
+        "tags": [
+          "mob",
+          "support",
+          "small",
+          "debuff",
+          "special",
+          "rider",
+          "luredirect",
+          "rotters_boss_target",
+          "golem"
+        ]
+      },
+      "badger:health": {
+        "max_health": 30
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Mob_targeting
+          {
+            "name": "lantern_mob_flash",
+            "max_range": 18,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "action_tickets": {
+              "cc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "flash_attack"
+            ]
+          },
+          /*Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },*/
+          //General targeting
+          {
+            "name": "lantern_enemy_flash",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "buildable_combat",
+              "piglin_wall",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "flash_attack"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "explosion": 1.0,
+          "hazard": 0.5
+        }
+      },
+      "badger:resist_status": {
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": false,
+          "time": 2.5,
+          "resistance_persist_time": -1
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 4,
+          "sc": 4,
+          "rc": 4,
+          "ht": 1,
+          "ct": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "flash_attack",
+            "trigger": "on_flash_attack",
+            "on_hit_target_trigger": "on_golem_cavalry_melee_attack_hit",
+            "predictive_windup": false,
+            "grace_period_between_hits": 2.5,
+            "range": {
+              "max_range": 20
+            },
+            "state_machine": {
+              "wind_up": 0.50,
+              "activation_time": 1.0,
+              "wind_down": 1.25,
+              "cooldown_time": 5.0,
+              "deactivates_on_cooldown": true
+            },
+            "interruptible": {},
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 8.0,
+                "position": [
+                  0.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              "requires_los": true,
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "stairs",
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 1.0,
+                "damage_types": [
+                  "ranged"
+                ]
+              },
+              "apply_status": {
+                "blinded": {
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 45,
+                "force": 8
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 3,
+              "max_range": 10
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 2.3,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "small_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.85
+      },
+      "badger:village_influence": {
+        "amount": 5
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_mob",
+        "badger:component_leash_on_stop_default",
+        "badger:component_becomes_lost_default"
+      ]
+    }
+  }
+}

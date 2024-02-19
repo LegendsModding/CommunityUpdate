@@ -1,0 +1,217 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:zoner_blacksmith",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Upgrade",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "zoner_blacksmith",
+        "tooltip_title": "structures.zoner.blacksmith.name",
+        "tactical_description": "structures.zoner.blacksmith.tactical_description",
+        "tooltip_description": "structures.zoner.blacksmith.description",
+        "buildable_category": "utility",
+        "sort_order": 1700
+      },
+      "badger:culture": {
+        "base_culture_a": 850
+      },
+      "badger:buildable_requirement": {
+        "recipe": [
+          {
+            "item": "wood",
+            "amount": 50
+          },
+          {
+            "item": "stone",
+            "amount": 100
+          },
+          {
+            "item": "iron",
+            "amount": 200
+          }
+        ],
+        "unlock": [
+          {
+            "item": "unlock_remaining_wof_upgrades",
+            "amount": 1
+          }
+        ],
+        "ticket_cost": [
+          {
+            "ticket": "build",
+            "amount": 1
+          }
+        ],
+        "invalid_blocks": [],
+        "invalid_block_tags": [
+          "water",
+          "lava",
+          "netherrack",
+          "gatherable_denether",
+          "piglin_base_not_buildable",
+          "barrier",
+          "world_hazard"
+        ]
+      },
+      "badger:unlockable_buffs": {
+        "buffs": [
+          {
+            "resource": "upgrade_blacksmith",
+            "has_unlock": true,
+            "buff_id": "badger:buff_zone_increase"
+          },
+          {
+            "resource": "upgrade_carpenter",
+            "has_unlock": true,
+            "buff_id": "badger:buff_construction_speed_increase"
+          }
+        ]
+      },
+      "badger:aura_applicator": {
+        "auras": [
+          {
+            "unlock_condition": {
+              "resource": "upgrade_blacksmith",
+              "has_unlock": false
+            },
+            "include_tags": [
+              "buffable-blacksmith"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "buff_id": "badger:buff_zoner_blacksmith",
+            "only_apply_to_construction_completed": true,
+            "persistent": true,
+            "buff_queue": {
+              "limit_concurrent_applications": 1,
+              "time_interval": 2
+            }
+          },
+          {
+            "unlock_condition": {
+              "resource": "upgrade_blacksmith",
+              "has_unlock": true
+            },
+            "include_tags": [
+              "buffable-blacksmith"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "buff_id": "badger:buff_zoner_blacksmith",
+            "only_apply_to_construction_completed": true,
+            "persistent": true,
+            "buff_queue": {
+              "limit_concurrent_applications": 1,
+              "time_interval": 1
+            }
+          }
+        ]
+      },
+      "badger:owned_territory": {
+        "prevent_overlap_tag_set": [],
+        "zone": 41
+      },
+      "badger:zone_type": {
+        "zone_type": "zone_blacksmith",
+        "non_blocking": true
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "zoner_blacksmith",
+        "build_time": 12,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_blacksmith"
+      },
+      "badger:health": {
+        "max_health": 500
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_blacksmith_large"
+      },
+      "badger:deconstruction": {
+        "deconstruct_time_percent": 1,
+        "resource_refund_percent": 1,
+        "isIndestructable": false
+      },
+      "badger:loot": {
+        "table": "common_structure"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0, 
+            2, 
+            0
+          ]
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "blacksmith",
+          "Upgrade",
+          "tier3PlayerStructure"
+        ]
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "building"
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_generate_ruins_default",
+        "badger:component_health_generation_default",
+        "badger:template_structure_stone_player"
+      ],
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:aura_applicator"
+        ],
+        "deconstruction_disabled_components": [
+          "badger:culture",
+          "badger:aura_applicator"
+        ]
+      },
+      "badger:invasion_defense_value": {
+        "defense_value": 0,
+        "defense_multiplier": {
+          "key": "blacksmith",
+          "value": 1.1
+        }
+      },
+      "badger:zone_visualization": {
+        "group": "mason_and_carpenter"
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 7,
+            "delay": 1,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_interaction"
+          }
+        ]
+      },
+      "badger:village_influence": {
+        "amount": 20
+      }
+    }
+  }
+}

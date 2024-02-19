@@ -37,7 +37,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              250
+              300
             ],
             "distance_to_zero_score": 30,
             "tag_parent": "center",
@@ -47,7 +47,7 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
+              120,
               550
             ],
             "distance_to_zero_score": 30,
@@ -58,6 +58,17 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
+              0,
+              100
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "brokenlands_1",
+            "weight": 2
+          }
+        }
+        /*{
+          "distance": {
+            "chunk_distance_from_parent": [
               150,
               550
             ],
@@ -65,7 +76,7 @@
             "tag_parent": "ruined_end_portal",
             "weight": 1
           }
-        }
+        }*/
       ]
     },
     {
@@ -182,12 +193,12 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              550
+              0,
+              100
             ],
             "distance_to_zero_score": 30,
-            "tag_parent": "wellOfFate",
-            "weight": 1
+            "tag_parent": "mountain_1",
+            "weight": 2
           }
         },
         {
@@ -197,10 +208,21 @@
               550
             ],
             "distance_to_zero_score": 30,
-            "tag_parent": "ruined_end_portal",
+            "tag_parent": "wellOfFate",
             "weight": 1
           }
         }
+        /*{
+          "distance": {
+            "chunk_distance_from_parent": [
+              150,
+              550
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "ruined_end_portal",
+            "weight": 1
+          }
+        }*/
       ]
     },
     {
@@ -328,6 +350,17 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
+              0,
+              100
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "frostlands_1",
+            "weight": 2
+          }
+        }
+        /*{
+          "distance": {
+            "chunk_distance_from_parent": [
               150,
               550
             ],
@@ -335,7 +368,7 @@
             "tag_parent": "ruined_end_portal",
             "weight": 1
           }
-        }
+        }*/
       ]
     },
     {
@@ -463,6 +496,17 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
+              0,
+              100
+            ],
+            "distance_to_zero_score": 30,
+            "tag_parent": "wetlands_1",
+            "weight": 2
+          }
+        }
+        /*{
+          "distance": {
+            "chunk_distance_from_parent": [
               150,
               550
             ],
@@ -470,7 +514,7 @@
             "tag_parent": "ruined_end_portal",
             "weight": 2
           }
-        }
+        }*/
       ]
     },
     {

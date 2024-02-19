@@ -1,0 +1,403 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_trapper",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ranged"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.2,
+        "height": 2.8
+      },
+      "badger:loot": {
+        "table": "uncommon_piglin_loot",
+        "overrides": [
+          {
+            "name": "roaming",
+            "table": "roaming_uncommon_piglin_loot"
+          },
+          {
+            "name": "outpost",
+            "table": "outpost_uncommon_piglin_loot"
+          },
+          {
+            "name": "village_attack",
+            "table": "village_attack_uncommon_piglin_loot"
+          }
+        ]
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Ranged"
+      },
+      "badger:physics": {},
+      "badger:fall_damage": {
+        "min_damage_distance": 10,
+        "min_damage": 200
+      },
+      "badger:collision_weight": {
+        "weight": 70
+      },
+      "badger:movement": {
+        "move_speed": 3.5
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 10
+      },
+      "badger:distant_stimulus_movement": {
+        "max_movement_range": 200,
+        "max_movement_duration": 10,
+        "min_distant_stimulus_distance": 50,
+        "nearby_ally_propagation_range": 30,
+        "propagation_include_tags": [
+          "piglin"
+        ],
+        "propagation_exclude_tags": []
+      },
+      "badger:tags": {
+        "tags": [
+          "piglin",
+          "trapper",
+          "mob",
+          "sieger",
+          "luredirect",
+          "ranged"
+        ]
+      },
+      "badger:unit_direct_tags" : {
+        "tags": [
+          "unit_direct_mob"
+        ]
+    },
+      "badger:health": {
+        "max_health": 100
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "explosion": 2.0,
+          "ranged": 0.5,
+          "player": 1.6,
+          "poison": 0.8
+        }
+      },
+      "badger:resist_status": {
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "stunned": {
+          "resisted": false,
+          "time": 7.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 4,
+          "sc": 2,
+          "rc": 3,
+          "ct": 1,
+          "ht": 1
+        }
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Bumped
+          {
+            "name": "bumped",
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "bump"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "trapper_mob_grenade",
+            "max_range": 50,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "buildable_combat"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          {
+            "name": "trapper_default_grenade_arc",
+            "max_range": 50,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+            "action_tickets": {
+              "rc": 1
+            },
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "buildable_combat",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_arc_attack"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "trapper_buildable_grenade",
+            "max_range": 15,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          {
+            "name": "trapper_buildable_grenade_nav_fail",
+            "max_range": 1,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          //Mob Alliance targeting
+          {
+            "name": "trapper_mob_alliance_grenade",
+            "max_range": 10,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob_alliance_structure"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          },
+          //General Targeting
+          {
+            "name": "trapper_mob_grenade",
+            "max_range": 40,
+            "ignore_closest_to_try_and_hit_the_most_targets_within_radius": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "grenade_attack"
+            ]
+          }
+        ]
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "grenade_attack",
+            //BOAR TODO "on_hit_target_trigger": "on_trapper_ranged_attack_hit",
+            "range": {
+              "max_range": 30
+            },
+            "state_machine": {
+              "wind_up": 0.9,
+              "wind_down": 2.46,
+              "cooldown_time": 3,
+              "deactivates_on_cooldown": false
+            },
+            "accuracy": {
+              "min_range": 1,
+              "max_range": 2,
+              "scale_with_range": true
+            },
+            "shoot": {
+              "projectile": "badger:proj_grenade",
+              "position_offsets_from_center": [
+                [
+                  -1.5,
+                  2.0,
+                  1.3
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "spore"
+                ]
+              }
+            }
+          },
+          {
+            "name": "grenade_arc_attack",
+            //BOAR TODO "on_hit_target_trigger": "on_trapper_ranged_attack_hit",
+            "range": {
+              "max_range": 30.0
+            },
+            "state_machine": {
+              "wind_up": 1.0,
+              "wind_down": 2.46,
+              "cooldown_time": 3,
+              "deactivates_on_cooldown": false
+            },
+            "shoot": {
+              "projectile": "badger:proj_grenade_arc",
+              "position_offsets_from_center": [
+                [
+                  0,
+                  2.0,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "buildable_combat"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 0,
+                "damage_types": [
+                  "spore"
+                ]
+              }
+            }
+          },
+          {
+            "name": "secondary_combat_position",
+            "range": {
+              "min_range": 0.35,
+              "max_range": 20
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 2.0,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "timer": {
+          "interval": 3,
+		  "jitter": [-1,0,1]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "small_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.35
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_piglin"
+        //BOAR TODO "badger:component_difficulty_modifiers_piglin_trapper"
+      ]
+    }
+  }
+}

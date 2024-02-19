@@ -1293,13 +1293,13 @@
                     "lod_distance": 0,
                     "rotation": {
                         "0.0": [
-                            null,
-                            null,
+                            0,
+                            0,
                             0
                         ],
                         "0.125": [
-                            null,
-                            null,
+                            0,
+                            0,
                             0
                         ],
                         "lod_distance": 0

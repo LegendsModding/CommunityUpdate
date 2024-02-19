@@ -1,0 +1,459 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_golem_redstone",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ally Unit"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 2.65,
+        "height": 4.5
+      },
+      "badger:loot": {
+        "table": "common_mob"
+      },
+      "badger:movement": {
+        "move_speed": 5
+      },
+      "badger:physics": {},
+      "badger:entity_collision": {},
+      "badger:collision_weight": {
+        "weight": 300
+      },
+      "badger:wander": {
+        "wander_frequency": 0.1,
+        "wander_radius": 5
+      },
+      "badger:navigation": {
+        "avoidance_lookahead": 15.0,
+        "fall_distance": 10,
+        "avoid_block_damage": true,
+        "ignore_solids_rule": "same_team"
+      },
+      "badger:map_controller": {
+        "initial_key_values": [
+          {
+            "key": "mob",
+            "value": "mob_golem_redstone"
+          },
+          {
+            "key": "visibility",
+            "value": "revealed"
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "golem_redstone",
+          "mob",
+          "luredirect",
+          "special",
+          "frontline",
+          "poi_golem"
+        ]
+      },
+      "badger:health": {
+        "max_health": 700
+      },
+      "badger:waypoint_marker_visibility": {
+        "waypoint_min_range": 20.0,
+        "waypoint_max_range": 20.0,
+        "compass_max_range": "short"
+      },
+      "badger:waypoint_marker": {
+        "path": "waypoint_golem_redstone",
+        "label": "poi.ally.05.name",
+        "world_position_offset": [
+          0,
+          7,
+          0
+        ]
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Melee Mob targeting close
+          {
+            "name": "ally_giant_mob_melee_close",
+            "max_range": 3,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "drill_attack"
+            ]
+          },
+          /*Celebrate
+          {
+            "name": "celebrate",
+            "max_range": 100,
+            "action_tickets": {
+              "sc": 0
+            },
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "celebration"
+            ]
+          },*/
+          //Buildable targeting
+          /*
+          {
+            "name": "ally_giant_buildable_ranged",
+            "max_range": 5,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack",
+              "pigGoldMine"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "melee_attack"
+            ]
+          },
+          {
+            "name": "ally_giant_wall_ranged",
+            "min_range": 7,
+            "max_range": 50,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ranged_attack"
+            ]
+          },*/
+          {
+            "name": "ally_giant_melee_nav_fail",
+            "max_range": 6,
+            "enable_with_line_of_sight": true,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "drill_attack"
+            ]
+          },
+          //Melee Mob targeting
+          {
+            "name": "ally_giant_mob_melee",
+            "max_range": 6,
+            "action_tickets": {
+              "cc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "drill_attack"
+            ]
+          },
+          //General targeting
+          {
+            "name": "ally_giant_enemy_melee",
+            "max_range": 10,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "buildable_combat",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "drill_attack"
+            ]
+          }
+          /*
+          {
+            "name": "ally_giant_enemy_ranged",
+            "min_range": 7,
+            "max_range": 50,
+            "required_target_count": 8,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack",
+              "siege_projectile"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ranged_attack"
+            ]
+          }*/
+        ]
+      },
+      "badger:damage_receiver": {
+        "auto_generate_shape": "cylinder",
+        "damage_resistances": {
+          "ranged": 0.5,
+          "explosion": 2,
+          "hazard": 0.5
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 8,
+          "sc": 4,
+          "rc": 8,
+          "ht": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "drill_attack",
+            "trigger": "on_melee_attack",
+            "on_hit_target_trigger": "on_fallen_warrior_melee_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "max_range": 1.5
+            },
+            "state_machine": {
+              "wind_up": 2.2,
+              "wind_down": 1.0,
+              "deactivates_on_cooldown": false
+            },
+            "interruptible": {
+              "time_window": 2.0
+            },
+            "shape_area_damage": {
+              "shape": {
+                "type": "sphere",
+                "radius": 7.5,
+                "position": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 30,
+                "damage_types": [
+                  "crush"
+                ]
+              },
+              "apply_status": {
+                "engaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              },
+              "knockback": {
+                "angle": 47,
+                "force": 21
+              },
+              "falloff": {
+                "min_angle": 10,
+                "min_radius": 5,
+                "max_radius": 7.5
+              }
+            }
+          },
+          /*{
+            "name": "ranged_attack",
+            "trigger": "on_ranged_attack",
+            "on_hit_target_trigger": "on_fallen_warrior_ranged_attack_hit",
+            "predictive_windup": false,
+            "range": {
+              "min_range": 7,
+              "max_range": 50
+            },
+            "state_machine": {
+              "wind_up": 4.2,
+              "wind_down": 2.3,
+              "cooldown_time": 2.0,
+              "deactivates_on_cooldown": false
+            },
+            "interruptible": {
+              "time_window": 4.1
+            },
+            "shoot": {
+              "projectile": "badger:proj_boulder_fallenwarrior",
+              "position_offsets_from_center": [
+                [
+                  -2,
+                  5,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [
+                  "siege_projectile"
+                ],
+                "alliance_rule_filter": "enemy"
+              },
+              "apply_status": {
+                "engaged": {
+                  "chance": 1.0,
+                  "strength": 1.0
+                }
+              }
+            }
+          },*/
+          {
+            "name": "warrior_approach",
+            "range": {
+              "max_range": 3
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 2.5,
+          "position": [
+            0.0,
+            2.0,
+            0.0
+          ]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "large_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:suppress_target_action": {
+        "max_time": 3
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 0.0
+      },
+      "badger:resist_status": {
+        "stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "rooted": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "spore_healed": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "feared": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "frozen": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "poisoned_no_vfx": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "burning": {
+          "resisted": true,
+          "time": 2.5,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:auto_despawn": {
+        "distance": 400
+      },
+      "badger:telemetry_category": {
+        "category_name": "POI Golem"
+      },
+      "badger:telemetry_track_banner_order": {
+        "enabled": true
+      },
+      "badger:village_influence": {
+        "amount": 20
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_poi_mob",
+        "badger:component_leash_on_stop_default"
+      ]
+    }
+  }
+}

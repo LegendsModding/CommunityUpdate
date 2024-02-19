@@ -1,0 +1,134 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_patcher_roaming",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Special"
+    },
+    "components": {
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Bumped
+          {
+            "name": "bumped",
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "bump"
+            ]
+          },
+          //Mob targeting
+          {
+            "name": "patcher_mob_grenade",
+            "max_range": 35,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "patcher_buildable",
+            "max_range": 25,
+            "enable_with_line_of_sight": false,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal",
+              "mob",
+              "melee",
+              "player"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          {
+            "name": "patcher_buildable_nav_failure",
+            "max_range": 2,
+            "enable_with_line_of_sight": false,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack",
+              "animal",
+              "mob",
+              "melee",
+              "player"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          //General Targeting
+          {
+            "name": "patcher_mob_grenade",
+            "max_range": 75,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 5,
+            "include_tags": [
+            ],
+            "exclude_tags": [
+              "stairs",
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "patcher_grenade"
+            ]
+          },
+          //Roaming targeting
+          {
+            "name": "roam_attractor_combat_pos",
+            "max_range": 25,
+            "action_tickets": {
+              "sc": 1
+            },
+            "include_tags": [
+              "locator_roaming_piglin_attractor"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "any_team",
+            "actions": [
+              "secondary_combat_position"
+            ]
+          }
+        ]
+      },
+      "badger:template": "badger:piglin_patcher"
+    }
+  }
+}

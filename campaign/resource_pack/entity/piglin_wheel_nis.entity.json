@@ -1,0 +1,63 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1.25
+      },
+      "badger:rendering": {
+        "definition": "badger:piglin_wheel_nis"
+      }
+    },
+    "description": {
+      "animations": {
+        "attack_boss_intro_nis": "animation.piglin_wheel_nis.attack_boss_intro_nis",
+        "cube_roll": "animation.piglin_wheel.cube_roll",
+        "death_a": "animation.piglin_wheel.death_a",
+        "default": "controller.animation.piglin_wheel_nis.default",
+        "hitreact_a": "animation.piglin_wheel.hitreact_a",
+        "idle_a": "animation.piglin_wheel.idle_a",
+        "melee_attack_a": "animation.piglin_wheel.melee_attack_a",
+        "melee_attack_b": "animation.piglin_wheel.melee_attack_b",
+        "nis_cube_roll_extended": "animation.piglin_wheel.nis_cube_roll_extended",
+        "run_a": "animation.piglin_wheel.run_a",
+        "spawn_a": "animation.piglin_wheel.spawn_a",
+        "sprint_a": "animation.piglin_wheel.sprint_a",
+        "stun_a": "animation.piglin_wheel.stun_a",
+        "swim_a": "animation.piglin_wheel.swim_a",
+        "swimidle_a": "animation.piglin_wheel.swimidle_a",
+        "transform_to_cube": "animation.piglin_wheel.transform_to_cube",
+        "transform_to_pig": "animation.piglin_wheel.transform_to_pig"
+      },
+      "enable_attachables": false,
+      "face_poses": ["Neutral","Neutral Blink"],
+      "geometry": {
+        "default": "geometry.piglin_wheel_nis"
+      },
+      "identifier": "badger:piglin_wheel_nis",
+      "materials": {
+        "default": "entity_model",
+        "mat_fx_frozen_256": "mat_fx_frozen_256",
+        "mat_piglin_wheel": "mat_piglin_wheel",
+        "mat_piglin_wheel_face": "mat_piglin_wheel_face"
+      },
+      "render_controllers": ["controller.render.piglin_wheel_nis"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ],
+        "initialize": ["variable.second_skin_vis = 0;"]
+      }
+    }
+  }
+}

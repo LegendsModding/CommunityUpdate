@@ -1,0 +1,378 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:piglin_ghast_flamethrower",
+      "runtime_identifier": "badger:badger_mob",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "role": "Ranged"
+    },
+    "components": {
+      "badger:aabb": {
+        "width": 1.01,
+        "height": 1.8
+      },
+      "badger:telemetry_category": {
+        "category_name": "Piglin Ranged"
+      },
+      "badger:heartbeat": {
+        "min_expire_time": 120
+      },
+      "badger:loot": {
+        "table": "common_piglin_loot",
+        "overrides": [
+          {
+            "name": "roaming",
+            "table": "roaming_common_piglin_loot"
+          },
+          {
+            "name": "outpost",
+            "table": "outpost_common_piglin_loot"
+          },
+          {
+            "name": "village_attack",
+            "table": "village_attack_common_piglin_loot"
+          },
+          {
+            "name": "act1",
+            "table": "act1_piglins"
+          }
+        ]
+      },
+      "badger:movement": {
+        "move_speed": 3.5,
+        "air_control_factor": 0.0
+      },
+      "badger:physics": {
+        "gravity": -30,
+        "friction": 0.04
+      },
+      "badger:collision_weight": {
+        "weight": 1
+      },
+      "badger:wander": {
+        "wander_frequency": 1.0,
+        "wander_radius": 8
+      },
+      "badger:distant_stimulus_movement": {
+        "max_movement_range": 200,
+        "max_movement_duration": 10,
+        "min_distant_stimulus_distance": 30,
+        "nearby_ally_propagation_range": 30,
+        "propagation_include_tags": [
+          "piglin"
+        ],
+        "propagation_exclude_tags": []
+      },
+      "badger:tags": {
+        "tags": [
+          "piglin_tier2",
+          "piglin",
+          "ghast_flamethrower",
+          "small",
+          "mob",
+          "sieger",
+          "luredirect",
+          "ranged"
+        ]
+      },
+      "badger:unit_direct_tags" : {
+        "tags": [
+          "unit_direct_mob"
+        ]
+    },
+      "badger:health": {
+        "max_health": 10.5
+      },
+      "badger:targeting": {
+        "targeting_priorities": [
+          //Bumped
+          {
+            "name": "bumped",
+            "include_tags": [],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "friendly",
+            "actions": [
+              "bump"
+            ]
+          },
+          //Mob Targeting
+          {
+            "name": "ghast_flamethrower_mob_attack",
+            "max_range": 15,
+            "action_tickets": {
+              "rc": 1
+            },
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          },
+          //Buildable targeting
+          {
+            "name": "ghast_flamethrower_wall_attack",
+            "max_range": 3,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "wall"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          },
+          {
+            "name": "ghast_flamethrower_buildable_attack",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "wall",
+              "donotattack",
+              "animal",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          },
+          {
+            "name": "ghast_flamethrower_buildable_attack_nav_fail",
+            "max_range": 1,
+            "enable_on_navigation_failure": true,
+            "enabled_duration": 2.5,
+            "include_tags": [
+              "buildable_combat"
+            ],
+            "exclude_tags": [
+              "donotattack",
+              "animal",
+              "mob_alliance_structure",
+              "totem_unlock_mob_alliance"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          },
+          //Mob Alliance targeting
+          {
+            "name": "ghast_flamethrower_totem_alliance_attack",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "totem_unlock_mob_alliance"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          },
+          {
+            "name": "ghast_flamethrower_mob_alliance_attack",
+            "max_range": 15,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [
+              "mob_alliance_structure"
+            ],
+            "exclude_tags": [
+              "donotattack"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          },
+          //General targeting
+          {
+            "name": "ghast_flamethrower_general_attack",
+            "max_range": 30,
+            "enable_with_line_of_sight": true,
+            "disable_on_navigation_failure": true,
+            "disabled_duration": 1.5,
+            "include_tags": [],
+            "exclude_tags": [
+              "wall",
+              "stairs",
+              "donotattack",
+              "buildable_combat",
+              "animal"
+            ],
+            "alliance_rule_filter": "enemy",
+            "actions": [
+              "ghast_flamethrower_ranged_attack"
+            ]
+          }
+        ]
+      },
+      "badger:damage_receiver": {
+        "damage_resistances": {
+          "player": 1.3,
+          "dart": 0.25,
+          "poison": 0.6,
+          "slam": 0.45
+        }
+      },
+      "badger:resist_status": {
+        "spore_damaged": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "healing_stone": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "electric_stunned": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        },
+        "slowed_piglin_bramble": {
+          "resisted": true,
+          "time": 5.0,
+          "resistance_persist_time": 0
+        }
+      },
+      "badger:action_tickets": {
+        "action_tickets": {
+          "cc": 1,
+          "sc": 1,
+          "rc": 1,
+          "ct": 1,
+          "ht": 1
+        }
+      },
+      "badger:target_actions": {
+        "actions": [
+          {
+            "name": "ghast_flamethrower_ranged_attack",
+            "trigger": "on_melee_attack_1",
+            //BOAR TODO "on_hit_target_trigger": "on_ghast_flamethrower_ranged_attack_hit",
+            "range": {
+              "max_range": 15.0
+            },
+            "state_machine": {
+              "wind_up": 0.35,
+              "wind_down": 0.85,
+              "cooldown_time": 1,
+              "deactivates_on_cooldown": true
+            },
+            "accuracy": {
+              "min_range": 0.125,
+              "max_range": 2.5,
+              "scale_with_range": true
+            },
+            "interruptible": {},
+            "shoot": {
+              "projectile": "badger:proj_grunter_blazerod", //BOAR TODO
+              "position_offsets_from_center": [
+                [
+                  0,
+                  1,
+                  0
+                ]
+              ],
+              "collision": {
+                "include_tags": [],
+                "exclude_tags": [],
+                "alliance_rule_filter": "enemy"
+              },
+              "damage": {
+                "damage_amount": 1.75,
+                "damage_types": [
+                  "fire",
+                  "blazerod"
+                ]
+              },
+              "should_lead": true
+            }
+          }
+        ]
+      },
+      "badger:aoe": {
+        "shape": {
+          "type": "sphere",
+          "radius": 1.4,
+          "position": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "timer": {
+          "interval": 3,
+		  "jitter": [-1,0,1]
+        },
+        "damage_effects": [
+          {
+            "damage": 0,
+            "damage_types": [],
+            "include_tags": [
+              "mob"
+            ],
+            "exclude_tags": [],
+            "apply_status": {
+              "small_collide": {
+                "strength": 1.0
+              }
+            },
+            "alliance_rule_filter": "enemy"
+          }
+        ]
+      },
+      "badger:knockback_resistance": {
+        "affected_scale": 1.0
+      },
+      "badger:conditionally_solid_blocks": {
+        "include_tags": [
+          "barrier_waterfall"
+        ],
+        "exclude_tags": []
+      },
+      "badger:template": [
+        "badger:template_piglin"
+        //BOAR TODO "badger:component_difficulty_modifiers_piglin_ghast_flamethrower"
+      ]
+    }
+  }
+}

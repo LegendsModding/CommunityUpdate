@@ -1,0 +1,63 @@
+{
+  "badger:zone_groups": {
+    "zone_groups": [
+      {
+        "group_name": "lapis_flag",
+        "zone_types": [
+          "zone_carpenter",
+          "housing"
+        ]
+      },
+      {
+        "group_name": "towers_upgrade_structures",
+        "zone_types": [
+          "zone_mason",
+          "zone_kaboomery",
+          "zone_carpenter",
+          "zone_spyglass",
+          "zone_battle_drums",
+          "housing"
+        ]
+      },
+      {
+        "group_name": "mason_and_carpenter",
+        "zone_types": [
+          "zone_mason",
+          "zone_carpenter",
+          "housing"
+        ]
+      },
+      {
+        "group_name": "redstone_launcher",
+        "zone_types": [
+          "zone_kaboomery",
+          "zone_carpenter",
+          "zone_spyglass",
+          "zone_battle_drums",
+          "housing"
+        ]
+      },
+      {
+        "group_name": "hq_zone_spawners",
+        "zone_types": [
+          "zone_carpenter",
+          "housing"
+        ]
+      },
+      {
+        "group_name": "carpenter",
+        "zone_types": [
+          "zone_carpenter",
+          "housing"
+        ]
+      },
+      {
+        "group_name": "ownership_zones",
+        "zone_types": [
+          "mob_alliance",
+          "utopia"
+        ]
+      }
+    ]
+  }
+}

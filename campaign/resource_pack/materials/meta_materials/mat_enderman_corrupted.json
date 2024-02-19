@@ -1,0 +1,9 @@
+{
+  "format_version": "1.8.0",
+  "mat_enderman_corrupted:base_entity": {
+      "pass": "AlphaTest",
+      "textures": {
+        "diffuseMap": "textures/entity/corrupted_lands/tex_enderman_corrupted_d"
+      }
+    }
+  }

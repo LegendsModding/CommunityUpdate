@@ -1,0 +1,21 @@
+{
+  "render_controllers": {
+    "controller.render.piglin_ghast_flamethrower": {
+      "arrays": {
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_piglin_ghast_flamethrower": "MetaMaterial.mat_piglin_ghast_flamethrower"
+        },
+        {
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

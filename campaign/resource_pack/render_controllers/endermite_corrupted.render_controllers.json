@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.endermite_corrupted": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_endermite_corrupted": "MetaMaterial.mat_endermite_corrupted"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

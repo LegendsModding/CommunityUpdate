@@ -1,0 +1,94 @@
+{
+  "badger:resource_mapper": {
+    "materials": [
+      {
+        "blocktypetag": "gatherable_no_resources_wood",
+        "name": "no_resources_wood_no_surface_clear",
+        "resource": "wood", 
+        "multiplier": 0.0,
+        "base_gather_seconds_per_block": 0.1
+      },  
+      {
+        "blocktypetag": "gatherable_no_resources_stone",
+        "name": "no_resources_stone_no_surface_clear",
+        "resource": "stone",
+        "multiplier": 0.0,
+        "base_gather_seconds_per_block": 0.3
+      },
+      {
+        "blocktypetag": "gatherable_denether",
+        "name": "nether",
+        "resource": "denether",
+        "multiplier": 0.0,
+        "base_gather_seconds_per_block": 0.007
+      },
+      {
+        "blocktypetag": "gatherable_stone",
+        "name": "stone",
+        "resource": "stone",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 0.3
+      },
+      {
+        "blocktypetag": "gatherable_stone_sml",
+        "name": "gatherable_stone_sml",
+        "resource": "stone",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 0.3
+      },
+      {
+        "blocktypetag": "gatherable_wood",
+        "name": "wood",
+        "resource": "wood",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 0.1
+      },
+      {
+        "blocktypetag": "gatherable_wood_sml",
+        "name": "foliage",
+        "resource": "wood",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 0.1
+      },
+      {
+        "blocktypetag": "gatherable_iron",
+        "name": "iron",
+        "resource": "iron",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 0.5
+      },
+      {
+        "blocktypetag": "gatherable_gold",
+        "name": "gold",
+        "resource": "gold",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 5.0
+      },
+      {
+        "blocktypetag": "gatherable_coal",
+        "name": "coal",
+        "resource": "coal",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 1.0
+      },
+      {
+        "blocktypetag": "gatherable_redstone",
+        "name": "redstone",
+        "resource": "redstone",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 1.0
+      },
+      {
+        "blocktypetag": "gatherable_diamond",
+        "name": "diamond",
+        "resource": "diamond",
+        "multiplier": 1.0,
+        "base_gather_seconds_per_block": 1.0
+      }
+    ],
+    "settings": {
+      "dev_gather_speed_multiplier_override": 1.0,
+      "empty_block_volume": 0.5
+    }
+  }
+}

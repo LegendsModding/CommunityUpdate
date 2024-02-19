@@ -1,0 +1,140 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:block_source_info": {
+      },
+      /*"badger:face_animation": {
+        "anim_columns": 2,
+        "anim_rows": 1,
+        "blink_frame": 1,
+        "default_frame": 0
+      },*/
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 2.5,
+        "position_interpolation_steps": 2.25,
+        "position_interpolation_steps_y_down": 1
+      },
+      "badger:keep_alive_timer": {
+        "time": 2,
+        "time_if_refunded": 0.07
+      },
+      "badger:presentation_event": {
+        "intense_hit": {
+          "audio": "BAE_mob_golem_stone_dx_rps_notifies_intense_hit"
+        },
+        "intense_knockback": {
+          "audio": "BAE_mob_golem_stone_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_mob_golem_stone_dx_knockback_normal"
+        },
+        "on_hero_directed": {
+          "audio": "BAE_mob_golem_stone_dx_directed"
+        },
+        "on_hero_lured": {
+          "audio": "BAE_mob_golem_stone_dx_lured"
+        },
+        "on_initialized": {
+          "audio": "BAE_mob_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_mob_golem_stone_knockback_land"
+        },
+        "on_tower_knockback_melee_hit": {
+          "audio": "BAE_impact_tower_piglin_knockback_on_golem_stone"
+        },
+        "sfx_attack_wall_loop_stop": {
+          "audio": "BAE_mob_golem_stone_attack_wall_punch_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:mob_golem_redstone",
+        "limit": 128
+      },
+      "badger:template": ["badger:template_mob","badger:template_status_effects"]
+    },
+    "description": {
+      "animations": {
+        "idle_a": "animation.mob_golem_redstone.idle_a",
+        "drill.intro": "animation.mob_golem_redstone.drill.intro",
+        "drill.loop": "animation.mob_golem_redstone.drill.loop",
+        "walk": "animation.mob_golem_redstone.walk",
+        "artillery.fire": "animation.mob_golem_redstone.artillery.fire",
+        "death": "animation.mob_golem_redstone.death",
+        "default": "controller.animation.mob_golem_redstone.default",
+        "hitreaction": "controller.animation.mob_golem_redstone.hitreaction",
+        "idle": "controller.animation.mob_golem_redstone.idle",
+        "locomotion": "controller.animation.mob_golem_redstone.locomotion"
+      },
+      "enable_attachables": false,
+      "geometry": {
+        "default": "geometry.mob_golem_redstone"
+      },
+      "identifier": "badger:mob_golem_redstone",
+      "materials": {
+        "mat_mob_golem_redstone": "mat_mob_golem_redstone"
+      },
+      /*
+      "particle_effects": {
+        "fx_attack_a": "badger:fx_stone_golem_attack_a",
+        "fx_attack_b": "badger:fx_stone_golem_attack_b",
+        "fx_corpse_removal": "badger:fx_shared_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_spawn": "badger:fx_shared_spawn_small",
+        "fx_spawn_sparkles": "badger:fx_shared_spawn_small_sparkle",
+        "fx_wall_attack": "badger:fx_stone_golem_wall_attack_parts"
+      },*/
+      "render_controllers": ["controller.render.mob_golem_redstone"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      /*
+      "sound_effects": {
+        "attack_slam": "BAE_mob_golem_stone_attack_slam",
+        "attack_wall_punch": "BAE_mob_golem_stone_attack_wall_punch",
+        "attack_wall_punch_stop": "BAE_mob_golem_stone_attack_wall_punch_stop",
+        "attack_wall_winddown": "BAE_mob_golem_stone_attack_wall_winddown",
+        "attack_wall_windup": "BAE_mob_golem_stone_attack_wall_windup",
+        "attack_windmill_run": "BAE_mob_golem_stone_attack_windmill_run",
+        "attack_windmill_run_stop": "BAE_mob_golem_stone_attack_windmill_run_stop",
+        "attack_windmill_winddown": "BAE_mob_golem_stone_attack_windmill_winddown",
+        "attack_windmill_windup": "BAE_mob_golem_stone_attack_windmill_windup",
+        "bodyfall": "BAE_mob_golem_stone_bodyfall",
+        "cheer": "BAE_mob_golem_stone_cheer",
+        "death_poof_small": "BAE_mob_death_poof_small",
+        "death_roll": "BAE_mob_golem_stone_death_roll",
+        "dx_attack_slam": "BAE_mob_golem_stone_dx_attack_slam",
+        "dx_attack_wall_punch": "BAE_mob_golem_stone_dx_attack_wall_punch",
+        "dx_attack_wall_winddown": "BAE_mob_golem_stone_dx_attack_wall_winddown",
+        "dx_attack_wall_windup": "BAE_mob_golem_stone_dx_attack_wall_windup",
+        "dx_attack_windmill_footstep": "BAE_mob_golem_stone_dx_attack_windmill_footstep",
+        "dx_attack_windmill_run": "BAE_mob_golem_stone_dx_attack_windmill_run",
+        "dx_attack_windmill_winddown": "BAE_mob_golem_stone_dx_attack_windmill_winddown",
+        "dx_attack_windmill_windup": "BAE_mob_golem_stone_dx_attack_windmill_windup",
+        "dx_cheer": "BAE_mob_golem_stone_dx_cheer",
+        "dx_death": "BAE_mob_golem_stone_dx_death",
+        "dx_hurt": "BAE_mob_golem_stone_dx_hurt",
+        "dx_idle": "BAE_mob_golem_stone_dx_idle",
+        "dx_jump": "BAE_mob_golem_stone_dx_jump",
+        "dx_run": "BAE_mob_golem_stone_dx_run",
+        "footstep": "BAE_mob_golem_stone_footstep",
+        "jump_high": "BAE_mob_golem_stone_jump_high",
+        "jump_land": "BAE_mob_golem_stone_jump_land",
+        "jump_low": "BAE_mob_golem_stone_jump_low",
+        "move_arms_double": "BAE_mob_golem_stone_move_arms_double",
+        "move_arms_single": "BAE_mob_golem_stone_move_arms_single",
+        "swim_arm": "BAE_mob_golem_stone_swim_arm",
+        "swim_idle": "BAE_mob_golem_stone_swim_idle"
+      },
+      */
+      "textures": {
+        "default": "textures/entity/tex_mob_golem_redstone_d"
+      }
+    }
+  }
+}

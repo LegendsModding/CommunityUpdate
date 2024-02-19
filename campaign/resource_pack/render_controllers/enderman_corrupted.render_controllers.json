@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.enderman_corrupted": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_enderman_corrupted": "MetaMaterial.mat_enderman_corrupted"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

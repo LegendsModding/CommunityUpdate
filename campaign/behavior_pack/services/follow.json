@@ -1,0 +1,10 @@
+{
+    "badger:follow": {
+        "next_checkpoint_distance_multiplier": 0.8,
+		"influencer_distance_multiplier": 1.25,
+		"follow_out_of_fall_range_ticks" : 75,
+		"follow_refresh_after_in_range_ticks" : 20,
+		"force_fall_distance_units": 50,
+		"destination_out_of_fall_range_ticks": 30
+    }
+}

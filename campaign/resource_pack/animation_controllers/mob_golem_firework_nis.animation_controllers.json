@@ -1,0 +1,97 @@
+{
+  "animation_controllers": {
+    "controller.animation.mob_golem_firework_nis.default": {
+      "initial_state": "idle",
+      "states": {
+        "death": {
+          "animations":  [
+            {
+              "death_a": 1.0
+            },
+            {
+              "death_b": 1.0
+            },
+            {
+              "death_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.deathchooser"
+        },
+        "idle": {
+          "animations":  [
+            {
+              "idle_a": 1.0
+            },
+            {
+              "idle_b": 1.0
+            },
+            {
+              "idle_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.idlechooser",
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "run": {
+          "animations":  [
+            {
+              "run_a": 1.0
+            },
+            {
+              "run_b": 1.0
+            },
+            {
+              "run_c": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.movechooser",
+          "transitions":  [
+            {
+              "stop": "(query.speed == 0)"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        },
+        "stop": {
+          "animations":  [
+            {
+              "stop_a": 1.0
+            },
+            {
+              "stop_b": 1.0
+            },
+            {
+              "stun_a": 1.0
+            }
+          ],
+          "on_exit": ["variable.face_anim_frame = 0;"],
+          "select_variable": "variable.movechooser",
+          "transitions":  [
+            {
+              "run": "(query.speed > 0)"
+            },
+            {
+              "idle": "query.any_animation_finished"
+            },
+            {
+              "death": "variable.is_dead"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

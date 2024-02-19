@@ -1,0 +1,60 @@
+{
+  "badger:zone_control": {
+    "color_map": [
+      {
+        "type": "utopia",
+        "color": "#e6009a00",
+        "color_strategic": "#e6009a00"
+      },
+      {
+        "type": "village",
+        "color": "#000000ff",
+        "color_strategic": "#000000ff"
+      },
+      {
+        "type": "wof",
+        "color": "#b300b3b3",
+        "color_strategic": "#b300b3b3"
+      },
+      {
+        "type": "xp",
+        "color": "#b300b3b3",
+        "color_strategic": "#b300b3b3"
+      },
+      {
+        "type": "enemy",
+        "color": "#bfb45800",
+        "color_strategic": "#bfb45800"
+      },
+      {
+        "type": "default",
+        "color": "#b3e6e6e6",
+        "color_strategic": "#b3e6e6e6"
+      },
+      {
+        "type": "aura",
+        "color": "#33e4e4e4",
+        "color_strategic": "#33e4e4e4"
+      },
+      {
+        "type": "gather",
+        "color": "#aa222222",
+        "color_strategic": "#aa222222"
+      },
+      {
+        "type": "mob_alliance",
+        "color": "#b3e6e6e6",
+        "color_strategic": "#b3e6e6e6"
+      },
+      {
+        "type": "fountain",
+        "color": "#b3e6e6e6",
+        "color_strategic": "#b3e6e6e6"
+      }
+    ],
+    "specialized_zone_types": [
+      "xp",
+      "capture_point"
+    ]
+  }
+}

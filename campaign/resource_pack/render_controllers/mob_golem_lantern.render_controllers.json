@@ -1,0 +1,13 @@
+{
+  "render_controllers": {
+    "controller.render.mob_golem_lantern": {
+      "geometry": "Geometry.default",
+      "materials":  [
+        {
+          "mat_mob_golem_lantern": "MetaMaterial.mat_mob_golem_lantern"
+        }
+      ]
+    }
+  },
+  "format_version": "1.8.0"
+}

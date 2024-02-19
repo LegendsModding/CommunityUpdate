@@ -1,0 +1,11 @@
+{
+  "format_version": "1.8.0",
+  "mat_piglin_horn_user_defend:base_entity": {
+    "textures": {
+      "diffuseMap": "textures/entity/tex_piglin_horn_user_defend_d"
+      /* BOAR TODO "coeffMap": "textures/entity/tex_piglin_horn_user_defend_mr",
+      "emissiveMap": "textures/entity/tex_piglin_horn_user_defend_e",
+      "normalMap": "textures/entity/tex_piglin_horn_user_defend_n"*/
+    }
+  }
+}

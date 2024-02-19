@@ -1,0 +1,110 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "components": {
+      "badger:interpolation": {
+        "orientation_interpolation_steps": 1.5,
+        "position_interpolation_steps": 2,
+        "position_interpolation_steps_y_down": 0.75
+      },
+      "badger:keep_alive_timer": {
+        "time": 1.333
+      },
+      "badger:presentation_event": {
+        "intense_knockback": {
+          "audio": "BAE_piglin_runt_dx_knockback_intense"
+        },
+        "normal_knockback": {
+          "audio": "BAE_piglin_runt_dx_knockback_normal"
+        },
+        "on_initialized": {
+          "audio": "BAE_piglin_spawn_poof_small"
+        },
+        "on_throwable_landed": {
+          "audio": "BAE_piglin_runt_knockback_land"
+        },
+        "sfx_scared_stop": {
+          "audio": "BAE_piglin_runt_dx_scared_stop"
+        }
+      },
+      "badger:rendering": {
+        "definition": "badger:enderman_corrupted",
+        "limit": 1024
+      },
+      "badger:template": ["badger:template_piglin","badger:template_status_effects"],
+      "badger:threat_source": {
+        "base_value": 1,
+        "spawn_value": 2,
+        "transition_time": 15
+      }
+    },
+    "description": {
+      "animations": {
+        "idle_a": "animation.enderman_corrupted.idle_a",
+        "run_a": "animation.enderman_corrupted.run_a",
+        "walk_a": "animation.enderman_corrupted.walk_a",
+        "attack_a": "animation.enderman_corrupted.attack_a",
+        "attack_b": "animation.enderman_corrupted.attack_b",
+        "attack_c": "animation.enderman_corrupted.attack_c",
+        "default": "controller.animation.enderman_corrupted.default",
+        "hit_reaction": "controller.animation.enderman_corrupted.hit_reaction",
+        "idles": "controller.animation.enderman_corrupted.idles",
+        "locomotion": "controller.animation.enderman_corrupted.locomotion"
+      },
+      "enable_attachables": false,
+      /*
+      "event_scripts": {
+        "death": "variable.second_skin_vis = variable.ghost_weapon_vis;",
+        "enemy_spotted": "variable.attack_used = 1;",
+        "ghost_on": "variable.second_skin_vis = 1; variable.ghost_weapon_vis = 1; variable.skin_mat = 2; variable.mat_opacity = 0.75;",
+        "hero_spotted": "variable.attack_used = 2;"
+      },*/
+      "geometry": {
+        "default": "geometry.enderman_corrupted"
+      },
+      "identifier": "badger:enderman_corrupted",
+      "materials": {
+        "mat_enderman_corrupted": "mat_enderman_corrupted"
+      },
+      /*
+      "particle_effects": {
+        "fx_attack_a": "badger:fx_piglin_runt_attack",
+        "fx_corpse_removal": "badger:fx_shared_piglin_corpse_remove_small",
+        "fx_death": "badger:fx_shared_death_smoke_small",
+        "fx_death_tiny": "badger:fx_shared_death_smoke_tiny",
+        "fx_spawn": "badger:fx_piglin_spawn_from_portal",
+        "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
+      },*/
+      "render_controllers": ["controller.render.enderman_corrupted"],
+      "scripts": {
+        "animate":  [
+          {
+            "default": "1"
+          }
+        ]
+      },
+      "sound_effects": {
+        "attack_a": "BAE_piglin_runt_attack_a",
+        "attack_b": "BAE_piglin_runt_attack_b",
+        "bodyfall": "BAE_piglin_runt_bodyfall",
+        "dx_attack": "BAE_piglin_runt_dx_attack",
+        "dx_cine_snort": "BAE_piglin_runt_dx_cine_snort",
+        "dx_damage": "BAE_piglin_runt_dx_damage",
+        "dx_death": "BAE_piglin_runt_dx_death",
+        "dx_scared": "BAE_piglin_runt_dx_scared",
+        "dx_snort_misc": "BAE_piglin_runt_dx_snort_misc",
+        "jump": "BAE_piglin_runt_jump",
+        "jump_land": "BAE_piglin_runt_jump_land",
+        "poof_small": "BAE_piglin_death_poof_small",
+        "spawn": "BAE_piglin_portal_spawn",
+        "step": "BAE_piglin_runt_step",
+        "step_climb": "BAE_piglin_runt_step_climb",
+        "weapon_drag": "BAE_piglin_runt_weapon_drag",
+        "weapon_drop": "BAE_piglin_runt_weapon_drop"
+      },
+      "textures": {
+        "default": "textures/entity/corrupted_lands/tex_enderman_corrupted_d"
+      }
+    }
+  }
+}
