@@ -215,25 +215,29 @@ const pvpWorldGenDefinition = {
                 } */
 
         /// ------------ PIGLIN OUTPOSTS -------------
-        const numBiomes = filterManager.GetFilterCount(["biome"])
-        if (numBiomes <= 5) {
-            PiglinPVPData.numOutposts = 1
-        } else if (numBiomes <= 9) {
-            PiglinPVPData.numOutposts = 2
-        } else {
-            PiglinPVPData.numOutposts = 3
-        }
-        if (worldGenDefinitionSettings.mirroredWorld === 0) {
-            filterManager.AppendFilter(["outpost_slot"], PiglinPVPData.numOutposts)
-        } else {
-            if (PiglinPVPData.numOutposts % 2 === 1) {
-                filterManager.AppendFilter(["outpost_slot_center"], 1)
+        //? Have as True ------ vvvvv
+        const SpawnPiglinBases = false
+        //? ------------------- ^^^^^
+        if (SpawnPiglinBases) {
+            const numBiomes = filterManager.GetFilterCount(["biome"])
+            if (numBiomes <= 5) {
+                PiglinPVPData.numOutposts = 1
+            } else if (numBiomes <= 9) {
+                PiglinPVPData.numOutposts = 2
+            } else {
+                PiglinPVPData.numOutposts = 3
             }
-            if (PiglinPVPData.numOutposts >= 2) {
-                filterManager.AppendFilter(["outpost_slot_mirrored_first"], 1)
-                filterManager.AppendFilter(["outpost_slot_mirrored_second"], 1)
+            if (worldGenDefinitionSettings.mirroredWorld === 0) {
+                filterManager.AppendFilter(["outpost_slot"], PiglinPVPData.numOutposts)
+            } else {
+                if (PiglinPVPData.numOutposts % 2 === 1) {
+                    filterManager.AppendFilter(["outpost_slot_center"], 1)
+                }
+                if (PiglinPVPData.numOutposts >= 2) {
+                    filterManager.AppendFilter(["outpost_slot_mirrored_first"], 1)
+                    filterManager.AppendFilter(["outpost_slot_mirrored_second"], 1)
+                }
             }
         }
-
     }
 }

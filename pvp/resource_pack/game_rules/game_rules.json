@@ -4,10 +4,10 @@
 		"parent": "game_rules"
 	},
 	"defaults": {
-		//$ Do not have these uncommeted before a release.
-		"randomseedoverride": 2070850612,
+		//$ Do not have these uncommeted before a any kind of release.
+		"randomseedoverride": 0,
 		"creativemodedefault": true,
-		"skip_lobby_creation": true,
+		//"skip_lobby_creation": true,
 		//"generator_type": "flat", //Not working for some reason idk why?
 		//$----------------------
 		//? Toggale at release
@@ -15,7 +15,10 @@
 		"dodaylightcycle": false,
 		"doweathercycle": false,
 		"dofogofwar": false,
-		//? Noramally false vvv / Normally true ^^^
+		"autosaveenabled": false,
+		"saveonquitenabled": false,
+		"randomstartingteam": false,
+		//? Noramally False vvv / Normally true ^^^
 		"doplayersinvincible": true,
 		//?-------
 		"enablecinematicdeaths": true,
@@ -24,15 +27,12 @@
 		"mapenabled": true,
 		"teamcolors": true,
 		"entitystreamingenabled": false,
-		"autosaveenabled": false,
-		"saveonquitenabled": true,
 		"difficultymodeenabled": false,
 		"popcapenabled": true,
 		"worldsizeaxischunks": 300,
 		"preloadworldchunkradius": 45,
 		"onboardingenabledcampaign": false,
 		"onboardingenabledpvp": true,
-		"randomstartingteam": true,
 		"allaymessages": false,
 		"factioncoloricon": false,
 		"pvpobjectivehealthbars": true,

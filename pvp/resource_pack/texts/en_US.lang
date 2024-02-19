@@ -1,6 +1,7 @@
 pack.name=lcu_pvp
 pack.description=Legends Community Update - PVP Mode
-lcu_pvp.title=Legends Community PVP Update
+lcu_pvp.title=Legends PVP Community Update
 structure.tower.allay.killer.title=Allay Suppressor
 structures.tower.allay.killer.tactical_description=Creates a area where your enemy are unable to gather recorces.
 structures.tower.allay.killer.description=kills all enemy gather allays in area. Has a health of 200.
+message.lcu.logging=%1$s	### Match Log String. Short string: 20-40 characters. Text sent to the match / game log for all players when a player dies. The argument passed in is the name of the player that died. For example it might say "Steve died".
