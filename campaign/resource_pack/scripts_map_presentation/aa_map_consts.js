@@ -60,8 +60,6 @@ const MAP_BASE_SIZE = {
   OCCUPYING_CREEPER: "piglin_occupying_creeper_mob_alliance",
   OCCUPYING_SKELETON: "piglin_occupying_skeleton_mob_alliance",
   OCCUPYING_SPIDER: "piglin_occupying_spider_mob_alliance",
-  OCCUPYING_SLIME: "piglin_occupying_slime_mob_alliance",
-  OCCUPYING_SILVERFISH: "piglin_occupying_silverfish_mob_alliance",
   OCCUPYING_ZOMBIE: "piglin_occupying_zombie_mob_alliance",
   ACT1_A: "act1_a",
   ACT1_B: "act1_b",
@@ -274,8 +272,6 @@ const MAP_FACTION_IDS = {
   MOB_ALLIANCE_CREEPER: "faction.mob.alliance.creeper",
   MOB_ALLIANCE_SKELETON: "faction.mob.alliance.skeleton",
   MOB_ALLIANCE_SPIDER: "faction.mob.alliance.spider",
-  MOB_ALLIANCE_SLIME: "faction.mob.alliance.slime",
-  MOB_ALLIANCE_SILVERFISH: "faction.mob.alliance.silverfish",
   MOB_ALLIANCE_ZOMBIE: "faction.mob.alliance.zombie",
   TOWER_01: "faction.poi.tower_01",
   TOWER_02: "faction.poi.tower_02",
@@ -428,8 +424,6 @@ const MAP_DESCRIPTION_IDS = {
   "faction.mob.alliance.creeper": "badger:wmap_mob_creeper_tooltip",
   "faction.mob.alliance.skeleton": "badger:wmap_mob_skeleton_tooltip",
   "faction.mob.alliance.spider": "badger:wmap_mob_spider_tooltip",
-  "faction.mob.alliance.slime": "badger:wmap_mob_slime_tooltip",
-  "faction.mob.alliance.silverfish": "badger:wmap_mob_silverfish_tooltip",
   "faction.mob.alliance.zombie": "badger:wmap_mob_zombie_tooltip",
   "faction.poi.legend.dragon.red": "badger:wmap_dragon_red_tooltip",
   poi_legend_dragon_red: "badger:wmap_dragon_red_tooltip",
@@ -493,10 +487,6 @@ const MAP_DESCRIPTION_IDS = {
   SKELETON_TARGETED_TOOLTIP: "badger:wmap_mob_skeleton_targeted_tooltip",
   SPIDER_OCCUPIED_TOOLTIP: "badger:wmap_mob_spider_occupied_tooltip",
   SPIDER_TARGETED_TOOLTIP: "badger:wmap_mob_spider_targeted_tooltip",
-  SLIME_OCCUPIED_TOOLTIP: "badger:wmap_mob_slime_occupied_tooltip",
-  SLIME_TARGETED_TOOLTIP: "badger:wmap_mob_slime_targeted_tooltip",
-  SILVERFISH_OCCUPIED_TOOLTIP: "badger:wmap_mob_silverfish_occupied_tooltip",
-  SILVERFISH_TARGETED_TOOLTIP: "badger:wmap_mob_silverfish_targeted_tooltip",
   ZOMBIE_OCCUPIED_TOOLTIP: "badger:wmap_mob_zombie_occupied_tooltip",
   ZOMBIE_TARGETED_TOOLTIP: "badger:wmap_mob_zombie_targeted_tooltip",
   OUTPOST_TARGETED_TOOLTIP: "badger:wmap_zoner_fort_targeted_tooltip",
@@ -512,8 +502,6 @@ const PIGLIN_BOSS_DESCRIPTION_IDS = {
 const MOB_ALLIANCE_PRE_ATTACK_VO_IDS = {
   "faction.mob.alliance.creeper": "badger:wmap_audio_invasion_mob_alliance_creeper_pre_attack",
   "faction.mob.alliance.skeleton": "badger:wmap_audio_invasion_mob_alliance_skeleton_pre_attack",
-  "faction.mob.alliance.silverfish": "badger:wmap_audio_invasion_mob_alliance_silverfish_pre_attack",
-  "faction.mob.alliance.slime": "badger:wmap_audio_invasion_mob_alliance_slime_pre_attack",
   "faction.mob.alliance.spider": "badger:wmap_audio_invasion_mob_alliance_spider_pre_attack",
   "faction.mob.alliance.zombie": "badger:wmap_audio_invasion_mob_alliance_zombie_pre_attack",
 };
@@ -521,8 +509,6 @@ const MOB_ALLIANCE_PRE_ATTACK_VO_IDS = {
 const MOB_ALLIANCE_UNDER_ATTACK_VO_IDS = {
   "faction.mob.alliance.creeper": "badger:wmap_audio_invasion_mob_alliance_creeper_occupied",
   "faction.mob.alliance.skeleton": "badger:wmap_audio_invasion_mob_alliance_skeleton_occupied",
-  "faction.mob.alliance.silverfish": "badger:wmap_audio_invasion_mob_alliance_silverfish_occupied",
-  "faction.mob.alliance.slime": "badger:wmap_audio_invasion_mob_alliance_slime_occupied",
   "faction.mob.alliance.spider": "badger:wmap_audio_invasion_mob_alliance_spider_occupied",
   "faction.mob.alliance.zombie": "badger:wmap_audio_invasion_mob_alliance_zombie_occupied",
 };
@@ -530,8 +516,6 @@ const MOB_ALLIANCE_UNDER_ATTACK_VO_IDS = {
 const MOB_ALLIANCE_UNDER_ATTACK_DESCRIPTION_IDS = {
   "faction.mob.alliance.creeper": "badger:wmap_mob_creeper_under_attack_tooltip",
   "faction.mob.alliance.skeleton": "badger:wmap_mob_skeleton_under_attack_tooltip",
-  "faction.mob.alliance.silverfish": "badger:wmap_mob_silverfish_under_attack_tooltip",
-  "faction.mob.alliance.slime": "badger:wmap_mob_slime_under_attack_tooltip",
   "faction.mob.alliance.spider": "badger:wmap_mob_spider_under_attack_tooltip",
   "faction.mob.alliance.zombie": "badger:wmap_mob_zombie_under_attack_tooltip",
 };
@@ -539,8 +523,6 @@ const MOB_ALLIANCE_UNDER_ATTACK_DESCRIPTION_IDS = {
 const MOB_ALLIANCE_POST_ALLIANCE_VO_IDS = {
   "faction.mob.alliance.creeper": "badger:wmap_audio_invasion_mob_alliance_creeper_post_alliance",
   "faction.mob.alliance.skeleton": "badger:wmap_audio_invasion_mob_alliance_skeleton_post_alliance",
-  "faction.mob.alliance.silverfish": "badger:wmap_audio_invasion_mob_alliance_silverfish_post_alliance",
-  "faction.mob.alliance.slime": "badger:wmap_audio_invasion_mob_alliance_slime_post_alliance",
   "faction.mob.alliance.spider": "badger:wmap_audio_invasion_mob_alliance_spider_post_alliance",
   "faction.mob.alliance.zombie": "badger:wmap_audio_invasion_mob_alliance_zombie_post_alliance",
 };
@@ -602,8 +584,6 @@ const MAP_EXTENDED_TOOLTIP = {
     [MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER]: "badger:wmap_invasion_recap_attack_success_creeper_tooltip",
     [MAP_FACTION_IDS.MOB_ALLIANCE_SKELETON]: "badger:wmap_invasion_recap_attack_success_skeleton_tooltip",
     [MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER]: "badger:wmap_invasion_recap_attack_success_spider_tooltip",
-    [MAP_FACTION_IDS.MOB_ALLIANCE_SLIME]: "badger:wmap_invasion_recap_attack_success_slime_tooltip",
-    [MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH]: "badger:wmap_invasion_recap_attack_success_silverfish_tooltip",
     [MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE]: "badger:wmap_invasion_recap_attack_success_zombie_tooltip",
   },
   INVASION_RECAP_BUILT_DEFENSIVE_OUTPOST: "badger:wmap_invasion_recap_built_defensive_outpost_tooltip",
@@ -615,14 +595,10 @@ const MAP_EXTENDED_TOOLTIP = {
   MOB_ALLEGIANCE_CREEPER: "badger:wmap_mob_alliance_allegiance_creeper",
   MOB_ALLEGIANCE_SKELETON: "badger:wmap_mob_alliance_allegiance_skeleton",
   MOB_ALLEGIANCE_SPIDER: "badger:wmap_mob_alliance_allegiance_spider",
-  MOB_ALLEGIANCE_SLIME: "badger:wmap_mob_alliance_allegiance_slime",
-  MOB_ALLEGIANCE_SILVERFISH: "badger:wmap_mob_alliance_allegiance_silverfish",
   MOB_ALLEGIANCE_ZOMBIE: "badger:wmap_mob_alliance_allegiance_zombie",
   MOB_ALLEGIANCE_LOST_CREEPER: "badger:wmap_mob_alliance_lost_allegiance_creeper",
   MOB_ALLEGIANCE_LOST_SKELETON: "badger:wmap_mob_alliance_lost_allegiance_skeleton",
   MOB_ALLEGIANCE_LOST_SPIDER: "badger:wmap_mob_alliance_lost_allegiance_spider",
-  MOB_ALLEGIANCE_LOST_SLIME: "badger:wmap_mob_alliance_lost_allegiance_slime",
-  MOB_ALLEGIANCE_LOST_SILVERFISH: "badger:wmap_mob_alliance_lost_allegiance_silverfish",
   MOB_ALLEGIANCE_LOST_ZOMBIE: "badger:wmap_mob_alliance_lost_allegiance_zombie",
   SMALL_PIGLIN_BASE: "badger:wmap_piglin_base_small_size_tooltip",
   MEDIUM_PIGLIN_BASE: "badger:wmap_piglin_base_medium_size_tooltip",
@@ -667,8 +643,6 @@ const MAP_EXTENDED_VO_TOOLTIP = {
   INVASION_MOB_ALLIANCE_SKELETON_DESTROYED: "badger:wmap_audio_invasion_mob_alliance_skeleton_destroyed",
   INVASION_MOB_ALLIANCE_CREEPER_DESTROYED: "badger:wmap_audio_invasion_mob_alliance_creeper_destroyed",
   INVASION_MOB_ALLIANCE_SPIDER_DESTROYED: "badger:wmap_audio_invasion_mob_alliance_spider_destroyed",
-  INVASION_MOB_ALLIANCE_SLIME_DESTROYED: "badger:wmap_audio_invasion_mob_alliance_slime_destroyed",
-  INVASION_MOB_ALLIANCE_SILVERFISH_DESTROYED: "badger:wmap_audio_invasion_mob_alliance_silverfish_destroyed",
   INVASION_MOB_ALLIANCE_ZOMBIE_DESTROYED: "badger:wmap_audio_invasion_mob_alliance_zombie_destroyed",
 };
 
@@ -791,8 +765,6 @@ const MAP_ICON = {
   MOB_ALLIANCE_CREEPER: "badger:wmap_mob_creeper",
   MOB_ALLIANCE_SKELETON: "badger:wmap_mob_skeleton",
   MOB_ALLIANCE_SPIDER: "badger:wmap_mob_spider",
-  MOB_ALLIANCE_SLIME: "badger:wmap_mob_slime",
-  MOB_ALLIANCE_SILVERFISH: "badger:wmap_mob_silverfish",
   MOB_ALLIANCE_ZOMBIE: "badger:wmap_mob_zombie",
   TOWER_01: "badger:wmap_knockbacktower",
   TOWER_02: "badger:wmap_frost_tower",
@@ -946,7 +918,7 @@ const HORDE_ARRIVAL_KEY = {
 };
 
 //OTHER
-const INVISIBLE_BASE_SIZES = [MAP_BASE_SIZE.OCCUPYING_CREEPER, MAP_BASE_SIZE.OCCUPYING_SKELETON, MAP_BASE_SIZE.OCCUPYING_SPIDER, MAP_BASE_SIZE.OCCUPYING_SLIME, MAP_BASE_SIZE.OCCUPYING_SILVERFISH, MAP_BASE_SIZE.OCCUPYING_ZOMBIE, MAP_BASE_SIZE.FOB_SMALL, MAP_BASE_SIZE.FOB_MEDIUM, MAP_BASE_SIZE.FOB_LARGE];
+const INVISIBLE_BASE_SIZES = [MAP_BASE_SIZE.OCCUPYING_CREEPER, MAP_BASE_SIZE.OCCUPYING_SKELETON, MAP_BASE_SIZE.OCCUPYING_SPIDER, MAP_BASE_SIZE.OCCUPYING_ZOMBIE, MAP_BASE_SIZE.FOB_SMALL, MAP_BASE_SIZE.FOB_MEDIUM, MAP_BASE_SIZE.FOB_LARGE];
 
 const TEAM_OUTLINES = {
   DISABLED: "disabled",

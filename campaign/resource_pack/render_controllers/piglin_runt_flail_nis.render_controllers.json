@@ -2,46 +2,17 @@
   "render_controllers": {
     "controller.render.piglin_runt_flail_nis": {
       "arrays": {
-        "geometries": {
-          "Array.geo": ["Geometry.attack","Geometry.defend","Geometry.obstacle","Geometry.frost","Geometry.second_skin"]
+        "materials": {
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
         }
       },
-      "geometry": "Array.geo[variable.model_chooser]",
+      "geometry": "Geometry.default",
       "materials":  [
         {
-          "mat_fx_frost_128": "MetaMaterial.mat_fx_frost_128"
+          "mat_piglin_runt_flail": "MetaMaterial.mat_piglin_runt_flail"
         },
         {
-          "mat_piglin_runt_flail_defend": "MetaMaterial.mat_piglin_runt_flail_defend"
-        },
-        {
-          "mat_piglin_runt_flail_defend_face": "MetaMaterial.mat_piglin_runt_flail_defend_face"
-        },
-        {
-          "mat_piglin_runt_flail_attack": "MetaMaterial.mat_piglin_runt_flail_attack"
-        },
-        {
-          "mat_piglin_runt_flail_attack_face": "MetaMaterial.mat_piglin_runt_flail_attack_face"
-        },
-        {
-          "mat_piglin_runt_flail_obstacle": "MetaMaterial.mat_piglin_runt_flail_obstacle"
-        },
-        {
-          "mat_piglin_runt_flail_obstacle_face": "MetaMaterial.mat_piglin_runt_flail_obstacle_face"
-        },
-        {
-          "mat_piglin_runt_flail_frost": "MetaMaterial.mat_piglin_runt_flail_frost"
-        },
-        {
-          "mat_piglin_runt_flail_frost_face": "MetaMaterial.mat_piglin_runt_flail_frost_face"
-        }
-      ],
-      "part_visibility":  [
-        {
-          "second_skin": "variable.second_skin_vis"
-        },
-        {
-          "mace_geo": "variable.mace_geo_vis"
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
         }
       ]
     }

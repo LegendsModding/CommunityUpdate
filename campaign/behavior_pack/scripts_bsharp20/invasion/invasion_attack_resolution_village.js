@@ -120,10 +120,8 @@ const invasionVillageAttackResolveVal = {
         // Intrinsic active defense values to account for mobs fighting back against piglins. NOTE: Mobs are good so this should probably be a bit higher, but we also know that attacks against these mob alliances tend to be ineffective, so I don't want their innate defense to be too effective.
         mobAllianceDefense: {
             [MOB_ALLIANCE_NAME_CREEPER]: 2000,
-            [MOB_ALLIANCE_NAME_SPIDER]: 2000,
-            [MOB_ALLIANCE_NAME_SLIME]: 2000,
-            [MOB_ALLIANCE_NAME_SILVERFISH]: 2000,
             [MOB_ALLIANCE_NAME_SKELETON]: 2000,
+            [MOB_ALLIANCE_NAME_SPIDER]: 2000,
             [MOB_ALLIANCE_NAME_ZOMBIE]: 2000
         },
         global: {
@@ -200,7 +198,7 @@ const invasionVillageAttackResolveVal = {
             }
         }
     },
-    [FACTION_NAME_OBSTACLE]: {
+    [FACTION_NAME_FROST]: {
         destroyPercent: 35,
         strengthData: {
             1: {
@@ -226,7 +224,7 @@ const invasionVillageAttackResolveVal = {
             }
         }
     },
-    [FACTION_NAME_FROST]: {
+    [FACTION_NAME_OBSTACLE]: {
         destroyPercent: 35,
         strengthData: {
             1: {

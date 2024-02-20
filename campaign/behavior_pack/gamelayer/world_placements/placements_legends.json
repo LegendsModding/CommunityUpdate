@@ -43,7 +43,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "brokenlands_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 1.0
           }
         },
         {
@@ -127,7 +127,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "grasslands_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 1.0
           }
         },
         {

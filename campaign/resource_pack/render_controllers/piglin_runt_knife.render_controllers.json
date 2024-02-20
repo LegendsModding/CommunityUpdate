@@ -2,56 +2,17 @@
   "render_controllers": {
     "controller.render.piglin_runt_knife": {
       "arrays": {
-        "geometries": {
-          "Array.geo": ["Geometry.attack","Geometry.defend","Geometry.obstacle"]
-        },
         "materials": {
-          "Array.materials": ["MetaMaterial.mat_piglin_runt_knife_attack","MetaMaterial.mat_piglin_runt_knife_attack_face","MetaMaterial.mat_piglin_runt_knife_ghost","MetaMaterial.mat_piglin_runt_knife_ghost_face"]
+          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_256","MetaMaterial.mat_fx_frozen_256"]
         }
       },
-      "geometry": "Array.geo[variable.model_chooser]",
+      "geometry": "Geometry.default",
       "materials":  [
         {
-          "mat_piglin_runt_knife_defend": "MetaMaterial.mat_piglin_runt_knife_defend"
+          "mat_piglin_runt_knife": "MetaMaterial.mat_piglin_runt_knife"
         },
         {
-          "mat_piglin_runt_knife_defend_face": "MetaMaterial.mat_piglin_runt_knife_defend_face"
-        },
-        {
-          "mat_piglin_runt_knife_attack": "MetaMaterial.mat_piglin_runt_knife_attack"
-        },
-        {
-          "mat_piglin_runt_knife_attack_face": "MetaMaterial.mat_piglin_runt_knife_attack_face"
-        },
-        {
-          "mat_piglin_runt_knife_obstacle": "MetaMaterial.mat_piglin_runt_knife_obstacle"
-        },
-        {
-          "mat_piglin_runt_knife_obstacle_face": "MetaMaterial.mat_piglin_runt_knife_obstacle_face"
-        },
-        {
-          "mat_fx_frost_128": "MetaMaterial.mat_fx_frost_128"
-        }
-      ]
-    },
-    "controller.render.piglin_runt_knife.second_skin": {
-      "arrays": {
-        "materials": {
-          "Array.materials": ["MetaMaterial.mat_fx_spore_healed_128","MetaMaterial.mat_fx_frozen_128","MetaMaterial.mat_fx_ghost_runt_knife"]
-        }
-      },
-      "geometry": "Geometry.second_skin",
-      "materials":  [
-        {
-          "mat_fx_frost_128": "Array.materials[variable.skin_mat]"
-        }
-      ],
-      "part_visibility":  [
-        {
-          "second_skin": "variable.second_skin_vis"
-        },
-        {
-          "ghost_weapon": "variable.ghost_weapon_vis"
+          "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
         }
       ]
     }

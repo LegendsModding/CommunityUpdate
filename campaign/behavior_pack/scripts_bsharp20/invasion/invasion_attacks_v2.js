@@ -64,12 +64,6 @@ const invasionAttackV2Data = {
             [MOB_ALLIANCE_NAME_SPIDER]: {
                 defended: "village_attack_spiders_defended"
             },
-            [MOB_ALLIANCE_NAME_SLIME]: {
-                defended: "village_attack_slimes_defended"
-            },
-            [MOB_ALLIANCE_NAME_SILVERFISH]: {
-                defended: "village_attack_silverfishes_defended"
-            },
             [MOB_ALLIANCE_NAME_ZOMBIE]: {
                 defended: "village_attack_zombies_defended"
             }
@@ -147,91 +141,91 @@ const invasionAttackV2Data = {
             [CULTURE_NAME_FOREST]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul01_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul01_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_FROSTLANDS]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul02_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul02_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_DRYLANDS]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul03_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul03_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_WETLANDS]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul04_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul04_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_GRASSLANDS]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul05_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul05_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_BROKENLANDS]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul06_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul06_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_FATEFUL_LAND]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul07_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul07_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_JUNGLE]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul08_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul08_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [CULTURE_NAME_MOUNTAIN]: {
                 saved: {
                     cineId: "vil01_c05_defended",
-                    centralStructureTag: "zoner_village_cul09_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 },
                 spawn: {
                     cineId: "vil01_c10_ob_spawn",
-                    centralStructureTag: "zoner_village_cul09_center_fountain"
+                    centralStructureTag: TAG_VILLAGE_FOUNTAIN
                 }
             },
             [MOB_ALLIANCE_NAME_CREEPER]: {
@@ -256,32 +250,12 @@ const invasionAttackV2Data = {
             },
             [MOB_ALLIANCE_NAME_SPIDER]: {
                 saved: {
-                    cineId: "mob03_c07_skeleton_defended",
+                    cineId: "mob03_c07_spider_defended",
                     centralStructureTag: "mob_alliance_spider_central_flame"
                 },
                 spawn: {
-                    cineId: "mob03_c06_skeleton_obspawn",
+                    cineId: "mob03_c06_spider_obspawn",
                     centralStructureTag: "mob_alliance_spider_central_flame"
-                }
-            },
-            [MOB_ALLIANCE_NAME_SLIME]: {
-                saved: {
-                    cineId: "mob03_c07_skeleton_defended",
-                    centralStructureTag: "mob_alliance_slime_central_flame"
-                },
-                spawn: {
-                    cineId: "mob03_c06_skeleton_obspawn",
-                    centralStructureTag: "mob_alliance_slime_central_flame"
-                }
-            },
-            [MOB_ALLIANCE_NAME_SILVERFISH]: {
-                saved: {
-                    cineId: "mob03_c07_skeleton_defended",
-                    centralStructureTag: "mob_alliance_silverfish_central_flame"
-                },
-                spawn: {
-                    cineId: "mob03_c06_skeleton_obspawn",
-                    centralStructureTag: "mob_alliance_silverfish_central_flame"
                 }
             },
             [MOB_ALLIANCE_NAME_ZOMBIE]: {
@@ -317,20 +291,20 @@ const invasionAttackV2Data = {
             begin: "village_attack_begin_defend_horde"
         }
     },
-    [FACTION_NAME_OBSTACLE]: {
-        villageArchetype: "badger:piglin_obstacle_fob",
-        numberOfAttackingBases: 4,
-        waveConfigData: invasionAttackV2_waveConfig_obstacleFaction,
-        messaging: {
-            begin: "village_attack_begin_obstacle_horde"
-        }
-    },
     [FACTION_NAME_FROST]: {
         villageArchetype: "badger:piglin_frost_fob",
         numberOfAttackingBases: 4,
         waveConfigData: invasionAttackV2_waveConfig_frostFaction,
         messaging: {
             begin: "village_attack_begin_frost_horde"
+        }
+    },
+    [FACTION_NAME_OBSTACLE]: {
+        villageArchetype: "badger:piglin_obstacle_fob",
+        numberOfAttackingBases: 4,
+        waveConfigData: invasionAttackV2_waveConfig_obstacleFaction,
+        messaging: {
+            begin: "village_attack_begin_obstacle_horde"
         }
     },
     [FACTION_NAME_DBB]: {
@@ -1612,17 +1586,11 @@ const StartHeartSequence = (villageId) => {
         case MOB_ALLIANCE_NAME_SKELETON:
             villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_skeleton_mob"], [])
             break
-        case MOB_ALLIANCE_NAME_CREEPER:
-            villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_creeper_mob"], [])
-            break
         case MOB_ALLIANCE_NAME_SPIDER:
             villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_spider_mob"], [])
             break
-        case MOB_ALLIANCE_NAME_SLIME:
-            villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_slime_mob"], [])
-            break
-        case MOB_ALLIANCE_NAME_SILVERFISH:
-            villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_silverfish_mob"], [])
+        case MOB_ALLIANCE_NAME_CREEPER:
+            villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_creeper_mob"], [])
             break
         case MOB_ALLIANCE_NAME_ZOMBIE:
             villageMobs = FILTER_ByTagFilter(QUERY_GetEntitiesOwnedByVillage(villageId), ["mob_alliance_zombie_mob"], [])

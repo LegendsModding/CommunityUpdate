@@ -109,8 +109,8 @@ const act1FlowVal = {
         villageCageTag: "villageCage",
         piglinsAtVillageTag: "piglinsAtVillage",
         remainingWoFUpgradesUnlock: "unlock_remaining_wof_upgrades",
-        totalCagesNumber: 4,
-        numOfPiglinsToSpawnMarkers: 80,
+        totalCagesNumber: 6,
+        numOfPiglinsToSpawnMarkers: 25,
         piglinLootTableOverride: "act1",
         timeToTriggerStartingResources: 10,
         startingResourcesVO: "onboarding_resources_granted",
@@ -125,8 +125,8 @@ const act1FlowVal = {
         miscTutorials: {
             building: {
                 tutorialKey: "player_built_structures",
-                timeToNudgeAfterGathering: 45,
-                timeToNudgeBeforeCarpenter: 60
+                timeToNudgeAfterGathering: 15,
+                timeToNudgeBeforeCarpenter: 15
             },
             hotbar: {
                 tutorialKey: "player_changed_hotbar",
@@ -161,15 +161,15 @@ const act1FlowVal = {
             advancedDirect: {
                 tutorialKey: "player_advanced_direct",
                 consts: {
-                    firstVoDelay: 45,
-                    secondVoDelay: 15,
-                    tutorialDelay: 16
+                    firstVoDelay: 25,
+                    secondVoDelay: 10,
+                    tutorialDelay: 5
                 }
             },
             sprinting: {
                 tutorialKey: "player_sprinted",
                 consts: {
-                    tutorialDelay: 45
+                    tutorialDelay: 15
                 }
             }
         },
@@ -177,14 +177,14 @@ const act1FlowVal = {
             structures: {
                 tracker: "gv_can_play_structure_misc_vo",
                 timers: {
-                    timeUntilPlayedAgain: 30
+                    timeUntilPlayedAgain: 15
                 }
             },
             fastTravel: {
                 secondReminder: "onboarding_second_skirmish_fasttravel",
                 timers: {
-                    timeToTellPlayerAboutFastTravel: 26,
-                    timeToRemindPlayerAboutFastTravel: 40
+                    timeToTellPlayerAboutFastTravel: 15,
+                    timeToRemindPlayerAboutFastTravel: 15
                 },
                 tracker: "gv_has_fast_travelled"
             },
@@ -290,10 +290,10 @@ const act1FlowVal = {
             timeToTriggerNudgeAfterVO: 1,
             timeToTriggerVOReminder: 10,
             timeToTriggerHint: 40,
-            timeToSendPiglinsToAttackPlayers: 45,
-            numberOfPiglinsToSpawnAtVillage: 60,
-            numberOfPiglinsToSpawnAtCages: 8,
-            numberOfPiglinsLeftForSuccess: 20,
+            timeToSendPiglinsToAttackPlayers: 25,
+            numberOfPiglinsToSpawnAtVillage: 10,
+            numberOfPiglinsToSpawnAtCages: 5,
+            numberOfPiglinsLeftForSuccess: 5,
             numberOfMobsToDemphasizeHud: 10
         },
         message: {
@@ -365,10 +365,10 @@ const act1FlowVal = {
             timeToTriggerNudgeAfterVO: 3,
             timeToTriggerVOReminder: 300,
             timeToTriggerHint: 40,
-            numberOfPiglinsToSpawnAtVillage: 40,
+            numberOfPiglinsToSpawnAtVillage: 20,
             timeToTriggerVillageIntroCine: 10,
             timeToTriggerVOAfterIntroCine: 4,
-            numberOfPiglinsLeftForSuccess: 10
+            numberOfPiglinsLeftForSuccess: 4
         },
         message: {
             onboardingNudge: "onboarding_find_second_village_nudge",
@@ -400,10 +400,10 @@ const act1FlowVal = {
         consts: {
             timeToTriggerFirstVO: 2,
             timeToTriggerNudgeAfterVO: 1,
-            timeToTriggerVOReminder: 60,
-            timeToTriggerHint: 40,
-            timeToSendPiglinsToAttackPlayers: 45,
-            fountainDestroyedReminderDelay: 45,
+            timeToTriggerVOReminder: 30,
+            timeToTriggerHint: 20,
+            timeToSendPiglinsToAttackPlayers: 20,
+            fountainDestroyedReminderDelay: 20,
             numberOfMobsToDemphasizeHud: 10
         },
         message: {
@@ -542,7 +542,7 @@ const act1FlowVal = {
             timeToTriggerNudgeAfterVO: 4,
             timeToTriggerVOReminder: 300,
             timeToTriggerHint: 40,
-            villageAttackDuration: 50,
+            villageAttackDuration: 20,
             timeToReminderToReturnToVillage: 30,
             timeToFirstSkirmishVO: 3,
             thresholdsToPrelimenaryVO: [0.1, 0.4]
@@ -637,7 +637,7 @@ const act1FlowVal = {
         tutorialKey: "",
         tutorialHintUnlock: "",
         tutorialResource: "unlock_onboarding_welloffate_complete",
-        primsarineToTriggerTutorialNudge: 25,
+        primsarineToTriggerTutorialNudge: 15,
         atWellOfFateTutorialHintUnlock: "unlock_onboarding_welloffate_tut",
         onboardingCompleteResource: "unlock_onboarding_wof_upgrade",
         neededResourceToAllowUpgrade: "unlock_iron_tech",
@@ -656,12 +656,12 @@ const act1FlowVal = {
         },
         consts: {
             timeToTriggerFirstVO: 2,
-            timeToTriggerNudgeAfterVO: 12,
-            timeToTriggerVOReminder: 60,
-            timeToTriggerHint: 40,
+            timeToTriggerNudgeAfterVO: 6,
+            timeToTriggerVOReminder: 30,
+            timeToTriggerHint: 20,
             timeToTriggerReturnToWofVO: 2,
             timeToTriggerNudgeAfterWellOfFateVO: 8,
-            timeToTriggerOpenSongBookReminderVO: 120
+            timeToTriggerOpenSongBookReminderVO: 50
         },
         message: {
             onboardingNudge: "onboarding_return_to_well_of_fate_nudge",
@@ -712,10 +712,10 @@ const act1FlowVal = {
             timeToTriggerVOReminder: 60,
             timeToTriggerHint: 40,
             timeToSecondSkirmish: 6,
-            timeToSecondSkirmishFastTravelReminder: 15,
-            timeToSecondSkirmishSecondNudge: 13,
-            responseCooldown: 20,
-            playerBuildingResponseCooldown: 20,
+            timeToSecondSkirmishFastTravelReminder: 10,
+            timeToSecondSkirmishSecondNudge: 10,
+            responseCooldown: 10,
+            playerBuildingResponseCooldown: 10,
             celebration: {
                 data: "celebration",
                 duration: 0.8,
@@ -2384,7 +2384,7 @@ SNIPPET_SpatialPartitionEntered("spe_first_village_under_attack_preparation", (t
     if (QUERY_GetGlobalVariable(act1Skips.skipVillage1) === 0) {
         const villageId = QUERY_GetVillageIDFromEntity(triggerEntity)
 
-        let runts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtVillage, TEAM_ORANGE, villageId, 45, 60)
+        let runts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtVillage, TEAM_ORANGE, villageId, 10, 40)
         OUTPUT_SetVillagePersistentEntities(runts, villageId)
         OUTPUT_SetLootTableOverride(runts, act1FlowVal.misc.piglinLootTableOverride)
 
@@ -2393,7 +2393,7 @@ SNIPPET_SpatialPartitionEntered("spe_first_village_under_attack_preparation", (t
         let villageCages = FILTER_ByTagFilter(villageEntities, ["villageCage"], []) // <-- get all the cages
         while (HasEntities(villageCages)) {
             const cage = RandomEntity(villageCages) // <-- grab a single cage to leash piglins to.
-            const cageRunts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtCages, TEAM_ORANGE, villageId, 45, 60)
+            const cageRunts = SpawnEntitiesInVillage("badger:piglin_runt", act1FlowVal.firstVillageUnderAttack.consts.numberOfPiglinsToSpawnAtCages, TEAM_ORANGE, villageId, 10, 20)
             OUTPUT_SetLeashWithReturnWhenNotTargeting(cageRunts, cage, 20, 10)
             OUTPUT_SetLootTableOverride(cageRunts, act1FlowVal.misc.piglinLootTableOverride)
             OUTPUT_SetVillagePersistentEntities(cageRunts, villageId)
@@ -5768,7 +5768,7 @@ const _TryRunThreeOutpostsPlacementTiers = (baseSize) => {
 
     const friendlyVillages = _GetFirstVillageEntity()
     const otherPiglinOutposts = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), FACTION_NAME_DBB)
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
 
     for (let i = 0; i < mainPlacementTiers.length; i++) {
@@ -5823,7 +5823,7 @@ const _TryRunSecondSkirmishPlacementTiers = () => {
     ]
 
     const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_VILLAGERS])
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SLIME, MOB_ALLIANCE_NAME_SILVERFISH])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER])
     const wof = GetVillageEntityFromFaction(WELL_OF_FATE)
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
 

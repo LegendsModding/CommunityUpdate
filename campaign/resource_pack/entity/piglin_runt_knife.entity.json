@@ -94,10 +94,7 @@
       },
       "face_poses": ["Neutral","Neutral Blink","Wide Eyes","Shocked"],
       "geometry": {
-        "attack": "geometry.piglin_runt_knife_attack",
-        "defend": "geometry.piglin_runt_knife_defend",
-        "obstacle": "geometry.piglin_runt_knife_obstacle",
-        "second_skin": "geometry.piglin_runt_knife_second_skin"
+        "default": "geometry.piglin_runt_knife"
       },
       "identifier": "badger:piglin_runt_knife",
       "materials": {
@@ -105,14 +102,7 @@
         "mat_fx_frozen_128": "mat_fx_frozen_128",
         "mat_fx_ghost_runt_knife": "mat_fx_ghost_runt_knife",
         "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
-        "mat_piglin_runt_knife_attack": "mat_piglin_runt_knife_attack",
-        "mat_piglin_runt_knife_attack_face": "mat_piglin_runt_knife_attack_face",
-        "mat_piglin_runt_knife_defend": "mat_piglin_runt_knife_defend",
-        "mat_piglin_runt_knife_defend_face": "mat_piglin_runt_knife_defend_face",
-        "mat_piglin_runt_knife_ghost": "mat_piglin_runt_knife_ghost",
-        "mat_piglin_runt_knife_ghost_face": "mat_piglin_runt_knife_ghost_face",
-        "mat_piglin_runt_knife_obstacle": "mat_piglin_runt_knife_obstacle",
-        "mat_piglin_runt_knife_obstacle_face": "mat_piglin_runt_knife_obstacle_face"
+        "mat_piglin_runt_knife": "mat_piglin_runt_knife_attack"
       },
       "particle_effects": {
         "fx_attack_a": "badger:fx_piglin_runt_knife_attack",
@@ -122,7 +112,7 @@
         "fx_spawn": "badger:fx_piglin_spawn_from_portal",
         "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
       },
-      "render_controllers": ["controller.render.piglin_runt_knife","controller.render.piglin_runt_knife.second_skin"],
+      "render_controllers": ["controller.render.piglin_runt_knife"],
       "scripts": {
         "animate":  [
           {

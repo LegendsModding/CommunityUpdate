@@ -12,18 +12,9 @@
           "mat_piglin_wheel": "MetaMaterial.mat_piglin_wheel"
         },
         {
-          "mat_piglin_wheel_face": "MetaMaterial.mat_piglin_wheel_face"
-        },
-        {
           "mat_fx_frozen_256": "Array.materials[variable.skin_mat]"
         }
-      ],
-      "part_visibility":  [
-        {
-          "second_skin": "variable.second_skin_vis"
-        }
-      ],
-      "textures": ["Texture.default","Texture.default"]
+      ]
     }
   },
   "format_version": "1.8.0"

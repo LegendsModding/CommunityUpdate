@@ -1,160 +1,131 @@
 /* eslint-disable @typescript-eslint/camelcase */
 // eslint-disable-next-line @typescript-eslint/camelcase, @typescript-eslint/no-unused-vars
 const invasionAttackV2_frostWaveDefinitions = {
-    runts: [{ unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 25 }],
-    grunters: [{ unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 20 }],
-    pigatroopers: [{ unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 }],
-    piggolaunchers: [{ unit: PIGLIN_ARCHETYPE.LAVA_LAUNCHER, delay: 0, count: 1 }],
+    // Solution: Wood
+    runts: [{ unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 30 }],
+    // Solution: Grindstone
+    grunters: [{ unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 30 }],
+    // Solution: Skeletons/Stone+Mossy
+    bruisers: [{ unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 10 }],
+    // Solution: Skeleton/First of Stone
+    portalguards: [{ unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 1 }],
+    // Solution: Skeletons
     runtsGrunters: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 14 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 20 }
+        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 24 },
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 10 }
     ],
+    // Solution: Wood+Mossy
     runtsMedics: [
         { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 24 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 4, count: 3 }
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 25, count: 4 }
     ],
+    // Solution: Grindstone+Mossy
     gruntersMedics: [
         { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 24 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 3 }
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 25, count: 4 }
     ],
+    // Solution: Skeleton
+    gruntersBruisers: [
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 16 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 6 }
+    ],
+    // Solution: Skeleton
+    runtsBruisers: [
+        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 16 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 6 }
+    ],
+    // Solution: Skeletons+Mossy
+    bruisersMedics: [
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 10 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 15, count: 4 }
+    ],
+    // Solution: Skeletons
+    bruisersEngineers: [
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 9 },
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 0, count: 2 }
+    ],
+    // Solution: Skeletons
+    bruisersGrunters: [
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 9 },
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 15 }
+    ],
+    // Solution: Skeletons+Mossy
     runtsGruntersMedics: [
         { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 16 },
         { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 7 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 3 }
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 15, count: 4 }
     ],
-    runtsSeekers: [
+    // Solution: Skeletons
+    runtsGruntersBruisers: [
         { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 16 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 6, count: 2 }
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 10 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 6 }
     ],
-    gruntersSeekers: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 18 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 6, count: 2 }
+    // Solution: Skeletons+Mossy
+    gruntersBruisersMedics: [
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 16 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 2, count: 5 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 15, count: 4 }
     ],
-    gruntersPigatroopers: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 4 }
+    // Solution: Skeletons+Mossy
+    runtsBruisersMedics: [
+        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 16 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 2, count: 6 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 15, count: 4 }
     ],
-    gruntersPigatroopersMedics: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 3 }
-    ],
-    runtsPigatroopers: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 }
-    ],
-    runtsPigatroopersMedics: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 3 }
-    ],
-    pigatroopersSeekers: [
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 }
-    ],
-    runtsGruntersSeekers: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 8 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 14 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 }
-    ],
-    runtsGruntersPigatroopers: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 6 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 3 }
-    ],
-    runtsGruntersPigatroopersMedics: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 6 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 3 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 3 }
-    ],
-    gruntersPigatroopersSeekers: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 10 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 3 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 }
-    ],
-    gruntersPigatroopersSeekersMedics: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 10 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 3 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 3 }
-    ],
-    runtsPigatroopersSeekers: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 3 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 }
-    ],
-    runtsGruntersPigatroopersSeekers: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 6 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 }
-    ],
-    runtsGruntersPigatroopersSeekersMedics: [
-        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 6 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 2 }
+    // Solution: Skeletons+Mossy
+    runtsGruntersBruisersMedics: [
+        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 16 },
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 10 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 2, count: 5 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 15, count: 2 }
     ],
     //New Engineer variants for improved sieging capabilities. General thought is to go light on engineers, since they can be pretty potent in large quantities.
+    // Solution: Warriors (DO NOT USE)
     runtsEngineers: [
         { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 20 },
         { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 4, count: 1 }
     ],
+    // Solution: Grindstone
+    engineers: [{ unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 0, count: 2 }],
+    // Solution: Grindstone
+    engineersMedics: [
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 0, count: 2 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 15, count: 2 }
+    ],
+    // Solution: Grindstone
+    engineersGrunters: [
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 0, count: 2 },
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 10 }
+    ],
+    // Solution: Grindstone
+    engineersBruisers: [
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 0, count: 2 },
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 10 }
+    ],
+    // Solution: Grindstone
     gruntersEngineers: [
         { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 20 },
-        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 4, count: 1 }
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 4, count: 2 }
     ],
     //frost horde specific engineer comps, note there are other specific comps with tier 3 units spelled out explicitly below
-    gruntersGrenadiersEngineers: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 12 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 4, count: 3 },
-        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 6, count: 1 }
+    // Solution: Warriors+Mossy (DO NOT USE)
+    runtsMedicsEngineers: [
+        { unit: PIGLIN_ARCHETYPE.RUNT, delay: 0, count: 16 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 6, count: 4 },
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 4, count: 1 }
     ],
-    medicsGrenadiersEngineers: [
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 6, count: 5 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 4 },
-        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 2, count: 1 }
+    // Solution: Grindstone+Mossy
+    gruntersMedicsEngineers: [
+        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 14 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 4, count: 4 },
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 4, count: 1 }
     ],
-    grenadiersMedics: [
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 4, count: 3 }
-    ],
-    grenadiersGrunters: [
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 6, count: 12 }
-    ],
-    seekers: [{ unit: PIGLIN_ARCHETYPE.SEEKER, delay: 0, count: 4 }],
-    grenadiersEngineers: [
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 6, count: 2 }
-    ],
-    gruntersLavaLauncher: [
-        { unit: PIGLIN_ARCHETYPE.LAVA_LAUNCHER, delay: 0, count: 1 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 24 }
-    ],
-    grenadiersLavaLauncher: [
-        { unit: PIGLIN_ARCHETYPE.LAVA_LAUNCHER, delay: 0, count: 1 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 4 }
-    ],
-    grenadiersGruntersLavaLauncer: [
-        { unit: PIGLIN_ARCHETYPE.LAVA_LAUNCHER, delay: 0, count: 1 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 4 },
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 12 }
-    ],
-    seekersLavaLauncher: [
-        { unit: PIGLIN_ARCHETYPE.LAVA_LAUNCHER, delay: 0, count: 1 },
-        { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 0, count: 4 }
-    ],
-    lotsOfGruntersGrenadiers: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 16 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 }
-    ],
-    gruntersMedicsGrenadiers: [
-        { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 0, count: 10 },
-        { unit: PIGLIN_ARCHETYPE.GRENADIER, delay: 0, count: 2 },
-        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 4, count: 3 }
+    // Solution: Skeleton+Mossy (DO NOT USE)
+    bruisersMedicsEngineers: [
+        { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 0, count: 8 },
+        { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 4, count: 4 },
+        { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 4, count: 1 }
     ]
 }
 
@@ -184,7 +155,7 @@ const invasionAttackV2_waveConfig_frostFaction = [
     */
     {
         strength: 1,
-        defaultWaveTime: 10,
+        defaultWaveTime: 34,
         music: "badger:music_combat_frost_village_small_1",
         mainWaves: [
             {
@@ -193,13 +164,13 @@ const invasionAttackV2_waveConfig_frostFaction = [
                 variations: [
                     {
                         groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runts, multiplier: 3 }
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runts, multiplier: 2.0 }
                     },
                     {
                         groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsMedics, multiplier: 3 }
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsMedics, multiplier: 2.0 }
                     }
                 ]
             },
@@ -208,40 +179,14 @@ const invasionAttackV2_waveConfig_frostFaction = [
                 amount: 2,
                 variations: [
                     {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runts, multiplier: 6 }
+                        groups: 3,
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runts, multiplier: 2.0 }
                     },
                     {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsMedics, multiplier: 6 }
-                    },
-                    {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsSeekers, multiplier: 6 }
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
-                amount: 1,
-                variations: [
-                    {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 6 }
-                    },
-                    {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersMedics, multiplier: 6 }
-                    },
-                    {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 2 }
+                        groups: 3,
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsMedics, multiplier: 2.0 }
                     }
                 ]
             },
@@ -250,40 +195,34 @@ const invasionAttackV2_waveConfig_frostFaction = [
                 amount: 2,
                 variations: [
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.pigatroopers, multiplier: 1 }
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisers, multiplier: 2.0 }
                     },
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersMedics, multiplier: 2 }
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisersMedics, multiplier: 2.0 }
                     },
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 2 }
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsBruisers, multiplier: 2.0 }
                     }
                 ]
             },
             {
                 audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE3,
-                amount: 2,
+                amount: 1,
                 variations: [
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.pigatroopers, multiplier: 1 }
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineers, multiplier: 4.0 }
                     },
                     {
                         groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersMedics, multiplier: 1 }
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineersMedics, multiplier: 4.0 }
                     },
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 1 }
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineersGrunters, multiplier: 4.0 }
                     }
                 ]
             }
@@ -292,18 +231,15 @@ const invasionAttackV2_waveConfig_frostFaction = [
         recurringWaves: [
             {
                 groups: 2,
-                nextWaveTime: 10,
                 unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 4 }
             },
             {
                 groups: 2,
-                nextWaveTime: 10,
                 unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersMedics, multiplier: 4 }
             },
             {
                 groups: 2,
-                nextWaveTime: 10,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 2 }
+                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersEngineers, multiplier: 4 }
             }
         ],
         overtimeSetup: {
@@ -319,64 +255,68 @@ const invasionAttackV2_waveConfig_frostFaction = [
     */
     {
         strength: 2,
-        defaultWaveTime: 10,
+        defaultWaveTime: 33,
         music: "badger:music_combat_frost_village_medium_1",
         mainWaves: [
             {
                 audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE0,
-                amount: 2,
+                amount: 1,
                 variations: [
                     {
                         groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 3.5 }
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 2.5 }
                     },
                     {
                         groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 2 }
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersMedics, multiplier: 2.5 }
                     },
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersMedics, multiplier: 3.5 }
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersEngineers, multiplier: 2.5 }
                     }
                 ]
             },
             {
                 audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
-                amount: 2,
+                amount: 3,
                 variations: [
                     {
                         groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersSeekers, multiplier: 2.0 }
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisers, multiplier: 2.5 }
                     },
                     {
                         groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.pigatroopersSeekers, multiplier: 2.0 }
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisersMedics, multiplier: 2.5 }
+                    },
+                    {
+                        groups: 2,
+                        nextWaveTime: 15,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersBruisers, multiplier: 2.5 }
                     }
                 ]
             },
             {
                 audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE2,
-                amount: 2,
+                amount: 1,
                 variations: [
                     {
-                        groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersLavaLauncher, multiplier: 1.0 }
+                        groups: 3,
+                        nextWaveTime: 60,
+                        units: [
+                            { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 90 },
+                            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 3 }
+                        ]
                     },
                     {
-                        groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersLavaLauncher, multiplier: 1.0 }
-                    },
-                    {
-                        groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersGruntersLavaLauncer, multiplier: 1.0 }
+                        groups: 3,
+                        nextWaveTime: 60,
+                        units: [
+                            { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 4, count: 24 },
+                            { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 80 },
+                            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 3 }
+                        ]
                     }
                 ]
             },
@@ -385,19 +325,16 @@ const invasionAttackV2_waveConfig_frostFaction = [
                 amount: 2,
                 variations: [
                     {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 3.5 }
+                        groups: 3,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersEngineers, multiplier: 6.0 }
                     },
                     {
-                        groups: 2,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 1 }
+                        groups: 3,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineers, multiplier: 6.0 }
                     },
                     {
-                        groups: 1,
-                        nextWaveTime: 10,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersSeekers, multiplier: 2 }
+                        groups: 3,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineersMedics, multiplier: 6.0 }
                     }
                 ]
             }
@@ -406,23 +343,23 @@ const invasionAttackV2_waveConfig_frostFaction = [
         recurringWaves: [
             {
                 groups: 2,
-                nextWaveTime: 10,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 3.5 }
+                nextWaveTime: 40,
+                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 3.0 }
             },
             {
                 groups: 2,
-                nextWaveTime: 10,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 1 }
+                nextWaveTime: 40,
+                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersMedics, multiplier: 3.0 }
             },
             {
-                groups: 1,
-                nextWaveTime: 10,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersSeekers, multiplier: 2 }
+                groups: 2,
+                nextWaveTime: 40,
+                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersEngineers, multiplier: 3.0 }
             }
         ],
         overtimeSetup: {
             minimumCount: 35,
-            fillerUnit: PIGLIN_ARCHETYPE.RUNT,
+            fillerUnit: PIGLIN_ARCHETYPE.GRUNTER,
             maxOvertimePiglinsToDefeat: 50
         }
     },
@@ -433,71 +370,64 @@ const invasionAttackV2_waveConfig_frostFaction = [
     */
     {
         strength: 3,
-        defaultWaveTime: 24,
+        defaultWaveTime: 32,
         music: "badger:music_combat_frost_village_large_1",
         mainWaves: [
             {
                 audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE0,
+                amount: 1,
+                variations: [
+                    {
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineers, multiplier: 5.0 }
+                    },
+                    {
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineersGrunters, multiplier: 5.0 }
+                    },
+                    {
+                        groups: 2,
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineersMedics, multiplier: 5.0 }
+                    }
+                ]
+            },
+            {
+                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
+                amount: 2,
+                variations: [
+                    {
+                        groups: 2,
+                        nextWaveTime: 40,
+                        units: [
+                            { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 3, count: 5 },
+                            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 2 }
+                        ]
+                    },
+                    {
+                        groups: 2,
+                        nextWaveTime: 40,
+                        units: [
+                            { unit: PIGLIN_ARCHETYPE.BRUISER, delay: 3, count: 5 },
+                            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 2 }
+                        ]
+                    }
+                ]
+            },
+            {
+                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE2,
                 amount: 3,
                 variations: [
                     {
                         groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.pigatroopers, multiplier: 3.0 }
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisers, multiplier: 3 }
                     },
                     {
                         groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.pigatroopersSeekers, multiplier: 2.0 }
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisersEngineers, multiplier: 3 }
                     },
                     {
                         groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersPigatroopers, multiplier: 2.0 }
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
-                amount: 2,
-                variations: [
-                    {
-                        groups: 1,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersLavaLauncher, multiplier: 1.0 }
-                    },
-                    {
-                        groups: 1,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.seekersLavaLauncher, multiplier: 1.0 }
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE2,
-                amount: 2,
-                variations: [
-                    {
-                        groups: 1,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersLavaLauncher, multiplier: 1.0 }
-                    },
-                    {
-                        groups: 1,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersLavaLauncher, multiplier: 1.0 }
-                    }
-                ]
-            },
-            //Buffer wave next. Give the player a breather
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE2,
-                amount: 2,
-                variations: [
-                    {
-                        groups: 2,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grunters, multiplier: 2.0 }
+                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.bruisersGrunters, multiplier: 3 }
                     }
                 ]
             },
@@ -506,133 +436,19 @@ const invasionAttackV2_waveConfig_frostFaction = [
                 amount: 2,
                 variations: [
                     {
-                        groups: 1,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.lotsOfGruntersGrenadiers, multiplier: 2.0 }
-                    },
-                    {
-                        groups: 1,
-                        nextWaveTime: 24,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersMedicsGrenadiers, multiplier: 2.0 }
-                    }
-                ]
-            }
-        ],
-        recurringAudioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE3,
-        recurringWaves: [
-            {
-                groups: 2,
-                nextWaveTime: 24,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersGrunters, multiplier: 2.0 }
-            },
-            {
-                groups: 2,
-                nextWaveTime: 24,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.grenadiersMedics, multiplier: 2.0 }
-            },
-            {
-                groups: 2,
-                nextWaveTime: 24,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.pigatroopersSeekers, multiplier: 2.0 }
-            }
-        ],
-        overtimeSetup: {
-            minimumCount: 40,
-            fillerUnit: PIGLIN_ARCHETYPE.GRUNTER,
-            maxOvertimePiglinsToDefeat: 60
-        }
-    },
-    /*
-    --------------------
-    ---- STRENGTH 4 ----
-    --------------------
-    */
-    {
-        strength: 4,
-        defaultWaveTime: 30,
-        music: "badger:music_combat_frost_village_large_1",
-        mainWaves: [
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE0,
-                amount: 2,
-                variations: [
-                    {
                         groups: 2,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsSeekers, multiplier: 3.7 }
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
-                amount: 2,
-                variations: [
-                    {
-                        groups: 2,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersWarboars, multiplier: 3.7 }
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
-                amount: 1,
-                variations: [
-                    {
-                        groups: 3,
-                        units: [
-                            { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 16 },
-                            { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 3 }
-                        ]
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE1,
-                amount: 1,
-                variations: [
-                    {
-                        groups: 3,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsWarboars, multiplier: 3.7 }
-                    },
-                    {
-                        groups: 3,
-                        unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsWarboarsMedics, multiplier: 3.7 }
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE2,
-                amount: 2,
-                variations: [
-                    {
-                        groups: 3,
-                        units: [
-                            { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 36 },
-                            { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 3 }
-                        ]
-                    },
-                    {
-                        groups: 3,
-                        units: [
-                            { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 36 },
-                            { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 3 }
-                        ]
-                    }
-                ]
-            },
-            {
-                audioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE3,
-                amount: 1,
-                variations: [
-                    {
-                        groups: 3,
                         nextWaveTime: 40,
                         units: [
-                            { unit: PIGLIN_ARCHETYPE.RUNT, delay: 3, count: 36 },
-                            { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 24 },
-                            { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 6 },
-                            { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 2 },
-                            { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 8 },
-                            { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 4 }
+                            { unit: PIGLIN_ARCHETYPE.ENGINEER, delay: 3, count: 5 },
+                            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 2 }
+                        ]
+                    },
+                    {
+                        groups: 2,
+                        nextWaveTime: 40,
+                        units: [
+                            { unit: PIGLIN_ARCHETYPE.RUNT, delay: 3, count: 40 },
+                            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, delay: 0, count: 2 }
                         ]
                     }
                 ]
@@ -641,93 +457,17 @@ const invasionAttackV2_waveConfig_frostFaction = [
         recurringAudioPhase: INVASION_ATTACK_AUDIO.PHASES.PHASE3,
         recurringWaves: [
             {
-                groups: 3,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsSeekers, multiplier: 4.3 }
+                groups: 2,
+                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineers, multiplier: 4.2 }
             },
             {
-                groups: 3,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.gruntersWarboars, multiplier: 4.3 }
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 20 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 4 }
-                ]
-            },
-            {
-                groups: 3,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsWarboars, multiplier: 4.3 }
-            },
-            {
-                groups: 3,
-                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.runtsWarboarsMedics, multiplier: 4.3 }
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 20 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 2 }
-                ]
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 28 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 2 }
-                ]
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.RUNT, delay: 3, count: 48 },
-                    { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 24 },
-                    { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 7 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 1 },
-                    { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 4 }
-                ]
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 48 },
-                    { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 12 },
-                    { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 8 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 1 }
-                ]
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.RUNT, delay: 4, count: 45 },
-                    { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 6, count: 24 },
-                    { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 12 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 1 }
-                ]
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 45 },
-                    { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 6 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 1 }
-                ]
-            },
-            {
-                groups: 3,
-                units: [
-                    { unit: PIGLIN_ARCHETYPE.RUNT, delay: 3, count: 47 },
-                    { unit: PIGLIN_ARCHETYPE.GRUNTER, delay: 4, count: 24 },
-                    { unit: PIGLIN_ARCHETYPE.WARBOAR, delay: 2, count: 6 },
-                    { unit: PIGLIN_ARCHETYPE.PIGMADILO, delay: 0, count: 1 },
-                    { unit: PIGLIN_ARCHETYPE.SEEKER, delay: 10, count: 4 },
-                    { unit: PIGLIN_ARCHETYPE.MEDIC, delay: 5, count: 4 }
-                ]
+                groups: 2,
+                unitPreset: { preset: invasionAttackV2_frostWaveDefinitions.engineersBruisers, multiplier: 4.2 }
             }
         ],
         overtimeSetup: {
             minimumCount: 40,
-            fillerUnit: PIGLIN_ARCHETYPE.RUNT,
+            fillerUnit: PIGLIN_ARCHETYPE.ENGINEER,
             maxOvertimePiglinsToDefeat: 25
         }
     }

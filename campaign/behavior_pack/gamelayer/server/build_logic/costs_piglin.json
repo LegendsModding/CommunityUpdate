@@ -289,22 +289,6 @@
       ]
     },
     {
-      "unique_card_id": "badger_spawnerDarkBeaconAllySlime",
-      "cost": 0,
-      "buildable": "badger:spawner_db_ally_slime",
-      "tags": [
-        "spawnerDarkBeaconAllySlime"
-      ]
-    },
-    {
-      "unique_card_id": "badger_spawnerDarkBeaconAllySilverfish",
-      "cost": 0,
-      "buildable": "badger:spawner_db_ally_silverfish",
-      "tags": [
-        "spawnerDarkBeaconAllySilverfish"
-      ]
-    },
-    {
       "unique_card_id": "badger_darkBeaconPlayerTeleportLocation",
       "cost": 0,
       "buildable": "badger:dark_beacon_player_teleport_location",

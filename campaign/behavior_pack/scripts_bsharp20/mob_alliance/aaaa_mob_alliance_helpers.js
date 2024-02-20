@@ -30,7 +30,7 @@ const SelectMobBehaviourSet = (mobEG, mobId) => {
 }
 
 const IsMobAlliancePiglinSize = (size) => {
-    return size === BASE_SIZE_PIGLIN_ZOMBIE || size === BASE_SIZE_PIGLIN_CREEPER || size === BASE_SIZE_PIGLIN_SKELETON || size === BASE_SIZE_PIGLIN_SILVERFISH || size === BASE_SIZE_PIGLIN_SLIME || size === BASE_SIZE_PIGLIN_SPIDER
+    return size === BASE_SIZE_PIGLIN_ZOMBIE || size === BASE_SIZE_PIGLIN_CREEPER || size === BASE_SIZE_PIGLIN_SKELETON || size === BASE_SIZE_PIGLIN_SPIDER
 }
 
 const IsMobAllianceVillage = (villageId) => {
@@ -86,15 +86,11 @@ const SetMobWorldSpawnersState = (state) => {
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_CREEPER, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SKELETON, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SPIDER, 1)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SLIME, 1)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SILVERFISH, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_ZOMBIE, 1)
     } else {
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_CREEPER, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SKELETON, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SPIDER, 0)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SLIME, 0)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SILVERFISH, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_ZOMBIE, 0)
     }
 }
@@ -104,15 +100,11 @@ const SetMobWorldHomesteadSpawnersState = (state) => {
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_CREEPER_HOMESTEAD, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SKELETON_HOMESTEAD, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SPIDER_HOMESTEAD, 1)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SLIME_HOMESTEAD, 1)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SILVERFISH_HOMESTEAD, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_ZOMBIE_HOMESTEAD, 1)
     } else {
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_CREEPER_HOMESTEAD, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SKELETON_HOMESTEAD, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SPIDER_HOMESTEAD, 0)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SLIME_HOMESTEAD, 0)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SILVERFISH_HOMESTEAD, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_ZOMBIE_HOMESTEAD, 0)
     }
 }
@@ -122,15 +114,11 @@ const SetMobWorldConflictSpawnersState = (state) => {
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_CREEPER_CONFLICT, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SKELETON_CONFLICT, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SPIDER_CONFLICT, 1)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SLIME_CONFLICT, 1)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SILVERFISH_CONFLICT, 1)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_ZOMBIE_CONFLICT, 1)
     } else {
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_CREEPER_CONFLICT, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SKELETON_CONFLICT, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SPIDER_CONFLICT, 0)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SLIME_CONFLICT, 0)
-        OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_SILVERFISH_CONFLICT, 0)
         OUTPUT_SetGlobalVariable(GV_WORLD_SPAWNER_ZOMBIE_CONFLICT, 0)
     }
 }
@@ -353,10 +341,6 @@ const GetMACenterBuildingTag = (mobId) => {
             return "mob_alliance_skeleton_central_flame"
         case "spider":
             return "mob_alliance_spider_central_flame"
-        case "slime":
-            return "mob_alliance_slime_central_flame"
-        case "silverfish":
-            return "mob_alliance_silverfish_central_flame"
         case "zombie":
             return "mob_alliance_zombie"
         default:
@@ -372,10 +356,6 @@ const GetMAHouseTag = (mobId) => {
             return "smaller_skeleton_mob_alliance_spawner"
         case "spider":
             return "smaller_spider_mob_alliance_spawner"
-        case "silverfish":
-            return "smaller_silverfish_mob_alliance_spawner"
-        case "slime":
-            return "smaller_slime_mob_alliance_spawner"
         case "zombie":
             return "mob_alliance_zombie_house"
         default:
@@ -399,10 +379,6 @@ const GetMAPiglinsTargetTag = (mobId) => {
             return "skeleton_mob_alliance_piglin_target"
         case "spider":
             return "spider_mob_alliance_piglin_target"
-        case "slime":
-            return "slime_mob_alliance_piglin_target"
-        case "silverfish":
-            return "silverfish_mob_alliance_piglin_target"
         case "zombie":
             return "zombie_mob_alliance_piglin_target"
         default:

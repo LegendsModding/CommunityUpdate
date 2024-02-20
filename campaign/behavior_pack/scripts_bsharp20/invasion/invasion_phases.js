@@ -161,11 +161,11 @@ SNIPPET_VillageDestroyed("vd_increment_bases_destroyed_count", (villageId, _payl
             case FACTION_NAME_DEFEND:
                 IncrementGlobal(INVASION_PHASE_STATE.DEFEND_HORDE_DESTROYED)
                 break
-            case FACTION_NAME_OBSTACLE:
-                IncrementGlobal(INVASION_PHASE_STATE.OBSTACLE_HORDE_DESTROYED)
-                break
             case FACTION_NAME_FROST:
                 IncrementGlobal(INVASION_PHASE_STATE.FROST_HORDE_DESTROYED)
+                break
+            case FACTION_NAME_OBSTACLE:
+                IncrementGlobal(INVASION_PHASE_STATE.OBSTACLE_HORDE_DESTROYED)
                 break
         }
     }

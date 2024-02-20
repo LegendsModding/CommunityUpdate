@@ -8,12 +8,12 @@ const newVanguardFactionMessages = [
         message: "invasion_new_vanguard_defend"
     },
     {
-        faction: FACTION_NAME_OBSTACLE,
-        message: "invasion_new_vanguard_obstacle"
-    },
-    {
         faction: FACTION_NAME_FROST,
         message: "invasion_new_vanguard_frost"
+    },
+    {
+        faction: FACTION_NAME_OBSTACLE,
+        message: "invasion_new_vanguard_obstacle"
     }
 ]
 

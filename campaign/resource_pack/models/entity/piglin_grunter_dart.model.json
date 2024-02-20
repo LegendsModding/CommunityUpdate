@@ -7,27 +7,6 @@
                     "\u0001\u0002\u0003\u0004\u0005__": {
                         "bind_pose_rotation": [
                             0,
-                            0,
-                            0
-                        ]
-                    },
-                    "name": "minecraft_geometry_root_bone",
-                    "parent": "",
-                    "pivot": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "\u0001\u0002\u0003\u0004\u0005__": {
-                        "bind_pose_rotation": [
-                            0,
                             -180,
                             0
                         ]
@@ -368,7 +347,7 @@
                             0
                         ]
                     },
-                    "name": "arm_left",
+                    "name": "arm2",
                     "parent": "body",
                     "pivot": [
                         -0.25,
@@ -389,7 +368,7 @@
                             0
                         ]
                     },
-                    "name": "arm_right",
+                    "name": "arm",
                     "parent": "body",
                     "pivot": [
                         0.25,
@@ -411,7 +390,7 @@
                         ]
                     },
                     "name": "blazerod",
-                    "parent": "arm_right",
+                    "parent": "arm",
                     "pivot": [
                         0.05312500000000012,
                         -0.44687499999999974,
@@ -557,12 +536,12 @@
                             0
                         ]
                     },
-                    "name": "leg_right",
-                    "parent": "body",
+                    "name": "leg",
+                    "parent": "waist",
                     "pivot": [
-                        0.125,
-                        -0.03125,
-                        0
+                        0.0625,
+                        0.40625,
+                        0.0625
                     ],
                     "scale": [
                         1,
@@ -578,11 +557,32 @@
                             0
                         ]
                     },
-                    "name": "leg_left",
-                    "parent": "body",
+                    "name": "leg2",
+                    "parent": "waist",
                     "pivot": [
-                        -0.125,
-                        -0.03125,
+                        -0.1875,
+                        0.40625,
+                        0.0625
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "\u0001\u0002\u0003\u0004\u0005__": {
+                        "bind_pose_rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "name": "minecraft_geometry_root_bone",
+                    "parent": "",
+                    "pivot": [
+                        0,
+                        0,
                         0
                     ],
                     "scale": [
@@ -7787,76 +7787,76 @@
                     ],
                     "indices": [
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ]
                     ]
                 },
@@ -8346,76 +8346,76 @@
                     ],
                     "indices": [
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ]
                     ]
                 },
@@ -11141,76 +11141,76 @@
                     ],
                     "indices": [
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ]
                     ]
                 },
@@ -11700,76 +11700,76 @@
                     ],
                     "indices": [
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ]
                     ]
                 },

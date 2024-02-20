@@ -5,8 +5,7 @@ const LocksKeys = {
         ally1: "poi_ally_02_completed",
         ally2: "poi_ally_04_completed_all",
         ally3: "poi_ally_05_completed_all",
-        ally4: "poi_ally_06_completed_all",
-        ally5: "poi_ally_07_completed_all"
+        ally4: "poi_ally_06_completed_all"
     },
     [FACTION_NAME_ATTACK]: {
         [BASE_SIZE_MEDIUM]: {
@@ -113,9 +112,7 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider",
-                    ma4: "unlock_spawner_slime",
-                    ma5: "unlock_spawner_silverfish"
+                    ma3: "unlock_spawner_spider"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -241,9 +238,133 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider",
-                    ma4: "unlock_spawner_slime",
-                    ma5: "unlock_spawner_silverfish"
+                    ma3: "unlock_spawner_spider"
+                },
+                allies: {},
+                spawnerCap: 0
+            },
+            secondary: {
+                globals: {},
+                resources: {
+                    res0: "coal"
+                },
+                mobAlliances: {
+                    ma0: "unlock_spawner_creeper"
+                },
+                allies: {},
+                alliesRequired: 0,
+                spawnerCap: 30
+            },
+            passable: {
+                globals: {},
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                alliesRequired: 3,
+                spawnerCap: 0
+            }
+        }
+    },
+    [FACTION_NAME_FROST]: {
+        [BASE_SIZE_MEDIUM]: {
+            op: {
+                globals: {
+                    vindicators: "gv_vindicator_spawner_unlocked"
+                },
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                alliesRequired: 0,
+                spawnerCap: 0
+            },
+            primary: {
+                globals: {},
+                resources: {
+                    res0: "coal"
+                },
+                mobAlliances: {
+                    ma0: "unlock_spawner_creeper"
+                },
+                allies: {},
+                alliesRequired: 0,
+                spawnerCap: 0
+            },
+            secondary: {
+                globals: {},
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                alliesRequired: 0,
+                spawnerCap: 20
+            },
+            passable: {
+                globals: {},
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                alliesRequired: 1,
+                spawnerCap: 0
+            }
+        },
+        [BASE_SIZE_LARGE]: {
+            op: {
+                globals: {
+                    vindicators: "gv_vindicator_spawner_unlocked"
+                },
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                spawnerCap: 0
+            },
+            primary: {
+                globals: {},
+                resources: {
+                    res0: "coal"
+                },
+                mobAlliances: {
+                    ma0: "unlock_spawner_creeper"
+                },
+                allies: {},
+                alliesRequired: 0,
+                spawnerCap: 20
+            },
+            secondary: {
+                globals: {},
+                resources: {
+                    res0: "coal"
+                },
+                mobAlliances: {},
+                allies: {},
+                alliesRequired: 0,
+                spawnerCap: 30
+            },
+            passable: {
+                globals: {},
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                alliesRequired: 2,
+                spawnerCap: 0
+            }
+        },
+        [BASE_SIZE_BOSS]: {
+            op: {
+                globals: {
+                    vindicators: "gv_vindicator_spawner_unlocked"
+                },
+                resources: {},
+                mobAlliances: {},
+                allies: {},
+                spawnerCap: 0
+            },
+            primary: {
+                globals: {},
+                resources: {},
+                mobAlliances: {
+                    ma0: "unlock_spawner_zombie",
+                    ma1: "unlock_spawner_skeleton",
+                    ma2: "unlock_spawner_creeper",
+                    ma3: "unlock_spawner_spider"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -369,9 +490,7 @@ const LocksKeys = {
                     ma0: "unlock_spawner_zombie",
                     ma1: "unlock_spawner_skeleton",
                     ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider",
-                    ma4: "unlock_spawner_slime",
-                    ma5: "unlock_spawner_silverfish"
+                    ma3: "unlock_spawner_spider"
                 },
                 allies: {},
                 spawnerCap: 0
@@ -383,134 +502,6 @@ const LocksKeys = {
                 },
                 mobAlliances: {
                     ma0: "unlock_spawner_skeleton"
-                },
-                allies: {},
-                alliesRequired: 0,
-                spawnerCap: 30
-            },
-            passable: {
-                globals: {},
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                alliesRequired: 3,
-                spawnerCap: 0
-            }
-        }
-    },
-    [FACTION_NAME_FROST]: {
-        [BASE_SIZE_MEDIUM]: {
-            op: {
-                globals: {
-                    vindicators: "gv_vindicator_spawner_unlocked"
-                },
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                alliesRequired: 0,
-                spawnerCap: 0
-            },
-            primary: {
-                globals: {},
-                resources: {
-                    res0: "diamond"
-                },
-                mobAlliances: {
-                    ma0: "unlock_spawner_spider"
-                },
-                allies: {},
-                alliesRequired: 0,
-                spawnerCap: 0
-            },
-            secondary: {
-                globals: {},
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                alliesRequired: 0,
-                spawnerCap: 20
-            },
-            passable: {
-                globals: {},
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                alliesRequired: 1,
-                spawnerCap: 0
-            }
-        },
-        [BASE_SIZE_LARGE]: {
-            op: {
-                globals: {
-                    vindicators: "gv_vindicator_spawner_unlocked"
-                },
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                spawnerCap: 0
-            },
-            primary: {
-                globals: {},
-                resources: {
-                    res0: "diamond"
-                },
-                mobAlliances: {
-                    ma0: "unlock_spawner_spider"
-                },
-                allies: {},
-                alliesRequired: 0,
-                spawnerCap: 20
-            },
-            secondary: {
-                globals: {},
-                resources: {
-                    res0: "diamond"
-                },
-                mobAlliances: {},
-                allies: {},
-                alliesRequired: 0,
-                spawnerCap: 30
-            },
-            passable: {
-                globals: {},
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                alliesRequired: 2,
-                spawnerCap: 0
-            }
-        },
-        [BASE_SIZE_BOSS]: {
-            op: {
-                globals: {
-                    vindicators: "gv_vindicator_spawner_unlocked"
-                },
-                resources: {},
-                mobAlliances: {},
-                allies: {},
-                spawnerCap: 0
-            },
-            primary: {
-                globals: {},
-                resources: {},
-                mobAlliances: {
-                    ma0: "unlock_spawner_zombie",
-                    ma1: "unlock_spawner_skeleton",
-                    ma2: "unlock_spawner_creeper",
-                    ma3: "unlock_spawner_spider",
-                    ma4: "unlock_spawner_slime",
-                    ma5: "unlock_spawner_silverfish"
-                },
-                allies: {},
-                spawnerCap: 0
-            },
-            secondary: {
-                globals: {},
-                resources: {
-                    res0: "diamond"
-                },
-                mobAlliances: {
-                    ma0: "unlock_spawner_spider"
                 },
                 allies: {},
                 alliesRequired: 0,
@@ -1398,40 +1389,8 @@ const IncreaseOutpostDifficultyForFaction = (faction) => {
 
 const SetupMobCages = (villageId, cageTag, mobArchetype = "", mobAmount = 15) => {
     if (!mobArchetype) {
-        //Have villageId in case we do somesmart filtering later to pick victim 
-        // Thank you ^
-        factionName = QUERY_GetFactionNameFromVillageID(villageId)
-
-        const possibleVictims = [MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND]
-
-        //Check if specific village cultures have been attacked
-        if (factionName === CULTURE_NAME_FOREST) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_FOREST)
-        }
-        if (factionName === CULTURE_NAME_FROSTLANDS) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_FROSTLANDS)
-        }
-        if (factionName === CULTURE_NAME_DRYLANDS) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_DRYLANDS)
-        }
-        if (factionName === CULTURE_NAME_WETLANDS) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_WETLANDS)
-        }
-        if (factionName === CULTURE_NAME_GRASSLANDS) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_GRASSLANDS)
-        }
-        if (factionName === CULTURE_NAME_BROKENLANDS) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_BROKENLANDS)
-        }
-        if (factionName === CULTURE_NAME_FATEFUL_LAND) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND)
-        }
-        if (factionName === CULTURE_NAME_JUNGLE) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_JUNGLE)
-        }
-        if (factionName === CULTURE_NAME_MOUNTAIN) {
-            possibleVictims.push(MOB_ARCHETYPE.VILLAGERS_MOUNTAIN)
-        }
+        //Have villageId in case we do somesmart filtering later to pick victim
+        const possibleVictims = [MOB_ARCHETYPE.VILLAGERS]
 
         //Check if specific mobs have been attacked
         if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_ZOMBIE)) {
@@ -1445,12 +1404,6 @@ const SetupMobCages = (villageId, cageTag, mobArchetype = "", mobAmount = 15) =>
         }
         if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_SPIDER)) {
             possibleVictims.push(MOB_ARCHETYPE.SPIDER)
-        }
-        if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_SLIME)) {
-            possibleVictims.push(MOB_ARCHETYPE.SLIME)
-        }
-        if (MobAllianceOccupation.IsEntered(MOB_ALLIANCE_NAME_SILVERFISH)) {
-            possibleVictims.push(MOB_ARCHETYPE.SILVERFISH)
         }
         possibleVictims.push(ChooseFromArray(MOB_ARCHETYPE.ANIMALS))
         mobArchetype = possibleVictims[QUERY_RandomNumber(0, possibleVictims.length - 1)]
@@ -1512,15 +1465,7 @@ SNIPPET_EntitySpawned("es_caged_mobs_spawned", (entitySpawned, payload) => {
     const victimArchetype = payload.string
     let behavior = ""
     switch (victimArchetype) {
-        case MOB_ARCHETYPE.VILLAGERS_FOREST:
-        case MOB_ARCHETYPE.VILLAGERS_FROSTLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_DRYLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_WETLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_GRASSLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_BROKENLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND:
-        case MOB_ARCHETYPE.VILLAGERS_JUNGLE:
-        case MOB_ARCHETYPE.VILLAGERS_MOUNTAIN:
+        case MOB_ARCHETYPE.VILLAGERS:
             behavior = VILLAGE_BEHAVIOR.villager.heavyScared
             break
         case MOB_ARCHETYPE.ZOMBIE:
@@ -1534,12 +1479,6 @@ SNIPPET_EntitySpawned("es_caged_mobs_spawned", (entitySpawned, payload) => {
             break
         case MOB_ARCHETYPE.SPIDER:
             behavior = MOB_BEHAVIOUR_DICTIONARY.spider.caged
-            break
-        case MOB_ARCHETYPE.SLIME:
-            behavior = MOB_BEHAVIOUR_DICTIONARY.slime.caged
-            break
-        case MOB_ARCHETYPE.SILVERFISH:
-            behavior = MOB_BEHAVIOUR_DICTIONARY.silverfish.caged
             break
         case MOB_ARCHETYPE.WITCH:
             behavior = MOB_BEHAVIOUR_DICTIONARY.witch.caged
@@ -1579,10 +1518,6 @@ const HandleFreeingMobsFromCagesAfterDestroyingVillage = (villageId) => {
             mobAllianceData = GetMobAllianceData("creeper")
         } else if (QUERY_HasTags(oneCagedMob, ["skeleton"])) {
             mobAllianceData = GetMobAllianceData("skeleton")
-        } else if (QUERY_HasTags(oneCagedMob, ["slime"])) {
-            mobAllianceData = GetMobAllianceData("slime")
-        } else if (QUERY_HasTags(oneCagedMob, ["silverfish"])) {
-            mobAllianceData = GetMobAllianceData("silverfish")
         } else {
             mobAllianceData = GetMobAllianceData("spider")
         }
@@ -1624,15 +1559,7 @@ SNIPPET_NonPopCappedEntityDestroyed("ed_raiding_party_cage", (cage, payload) => 
     const villageEntities = QUERY_GetEntitiesOwnedByVillage(payload.ownerVillageId)
     const piglins = FILTER_ByTagFilter(villageEntities, ["piglin"], [])
     switch (victimArchetype) {
-        case MOB_ARCHETYPE.VILLAGERS_FOREST:
-        case MOB_ARCHETYPE.VILLAGERS_FROSTLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_DRYLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_WETLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_GRASSLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_BROKENLANDS:
-        case MOB_ARCHETYPE.VILLAGERS_FATEFUL_LAND:
-        case MOB_ARCHETYPE.VILLAGERS_JUNGLE:
-        case MOB_ARCHETYPE.VILLAGERS_MOUNTAIN:
+        case MOB_ARCHETYPE.VILLAGERS:
             if (QUERY_GetEntitiesCount(piglins) > 0) {
                 OUTPUT_SetBehavior(closeCagedMobs, VILLAGE_BEHAVIOR.villager.scared)
                 OUTPUT_ApplyStatusEffectWithSource(closeCagedMobs, RandomEntity(piglins), "feared", 40)
@@ -1651,12 +1578,6 @@ SNIPPET_NonPopCappedEntityDestroyed("ed_raiding_party_cage", (cage, payload) => 
             break
         case MOB_ARCHETYPE.SPIDER:
             mobAllianceData = GetMobAllianceData("spider")
-            break
-        case MOB_ARCHETYPE.SILVERFISH:
-            mobAllianceData = GetMobAllianceData("silverfish")
-            break
-        case MOB_ARCHETYPE.SLIME:
-            mobAllianceData = GetMobAllianceData("slime")
             break
         case MOB_ARCHETYPE.WITCH:
             OUTPUT_SetBehavior(closeCagedMobs, MOB_BEHAVIOUR_DICTIONARY.witch.default)
@@ -1774,12 +1695,12 @@ const GetDefendBasesDestroyed = () => {
     return QUERY_GetGlobalVariable("defend_bases_destroyed")
 }
 
-const GetAttackBasesDestroyed = () => {
-    return QUERY_GetGlobalVariable("gv_attack_faction_bases_destroyed")
-}
-
 const GetFrostBasesDestroyed = () => {
     return QUERY_GetGlobalVariable("frost_bases_destroyed")
+}
+
+const GetAttackBasesDestroyed = () => {
+    return QUERY_GetGlobalVariable("gv_attack_faction_bases_destroyed")
 }
 
 const IsBossVillage = (villageId) => {
@@ -1891,7 +1812,7 @@ const SetupPortalInvulnerabilityVO = (villageId) => {
         return //exit out if an attack horde base
     } else if (factionName === FACTION_NAME_OBSTACLE) {
         presentationVO = "piglin_portal_invulnerable_obstacle"
-    } 
+    }
 
     const invulnerabilityVOTrigger = SpawnTriggerVolume(villagePortal, villagePortal, "badger:spatial_trigger_invulnerability_vo", TEAM_WILD, villageId, true, TAG_PLAYER, [], ALLIANCE_FRIENDLY)
     //const invulnerabilityVOTrigger = SpawnTriggerVolumeWithMultipleTagsets(villagePortal, villagePortal, "badger:spatial_trigger_invulnerability_vo", TEAM_WILD, villageId, true, TAGSET_PLAYER_OR_MOB)
@@ -1918,12 +1839,12 @@ SNIPPET_SpatialPartitionEntered("spe_invulnerability_vo_tv", (triggerEntity, int
         if (QUERY_GetGlobalVariable("obstacleBossKilled") === 1) {
             return
         }
-    } else if (factionName === FACTION_NAME_FROST) {
-        if (QUERY_GetGlobalVariable("frostBossKilled") === 1) {
+    } else if (factionName === FACTION_NAME_DEFEND) {
+        if (QUERY_GetGlobalVariable("magmaBossKilled") === 1) {
             return
         }
-    }else if (factionName === FACTION_NAME_DEFEND) {
-        if (QUERY_GetGlobalVariable("magmaBossKilled") === 1) {
+    } else if (factionName === FACTION_NAME_FROST) {
+        if (QUERY_GetGlobalVariable("frostBossKilled") === 1) {
             return
         }
     }

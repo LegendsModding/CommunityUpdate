@@ -1,7 +1,7 @@
 {
   "format_version": "1.8.0",
   "animations": {
-    "animation.piglin_shooter.idle_a": {
+    "animation.piglin_ghast_flamethrower.idle_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": true,
@@ -868,7 +868,7 @@
         }
       }
     },
-    "animation.piglin_shooter.walk_a": {
+    "animation.piglin_ghast_flamethrower.walk_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": true,
@@ -1553,7 +1553,7 @@
         }
       }
     },
-    "animation.piglin_shooter.gasp_a": {
+    "animation.piglin_ghast_flamethrower.gasp_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "override_previous_animation": true,
@@ -3149,7 +3149,7 @@
         }
       }
     },
-    "animation.piglin_shooter.celebrate_a": {
+    "animation.piglin_ghast_flamethrower.celebrate_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "override_previous_animation": true,
@@ -4485,7 +4485,7 @@
         }
       }
     },
-    "animation.piglin_shooter.laugh_a": {
+    "animation.piglin_ghast_flamethrower.laugh_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "override_previous_animation": true,
@@ -5765,7 +5765,7 @@
         }
       }
     },
-    "animation.piglin_shooter.shoot_a": {
+    "animation.piglin_ghast_flamethrower.shoot_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "override_previous_animation": true,
@@ -6616,7 +6616,7 @@
         }
       }
     },
-    "animation.piglin_shooter.run_a": {
+    "animation.piglin_ghast_flamethrower.run_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": true,
@@ -6864,7 +6864,7 @@
         }
       }
     },
-    "animation.piglin_shooter.hitreact_a": {
+    "animation.piglin_ghast_flamethrower.hitreact_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "bones": {
@@ -7032,7 +7032,7 @@
         }
       }
     },
-    "animation.piglin_shooter.knockback_a": {
+    "animation.piglin_ghast_flamethrower.knockback_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "override_previous_animation": true,
@@ -7353,7 +7353,7 @@
         }
       }
     },
-    "animation.piglin_shooter.spawn_a": {
+    "animation.piglin_ghast_flamethrower.spawn_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "override_previous_animation": true,
@@ -7466,7 +7466,7 @@
         }
       }
     },
-    "animation.piglin_shooter.death_a": {
+    "animation.piglin_ghast_flamethrower.death_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": "hold_last_frame",
@@ -8076,7 +8076,7 @@
         }
       }
     },
-    "animation.piglin_shooter.swim_a": {
+    "animation.piglin_ghast_flamethrower.swim_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": true,
@@ -8401,7 +8401,7 @@
         }
       }
     },
-    "animation.piglin_shooter.swim_idle_a": {
+    "animation.piglin_ghast_flamethrower.swim_idle_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": true,
@@ -8686,7 +8686,7 @@
         }
       }
     },
-    "animation.piglin_shooter.stun_a": {
+    "animation.piglin_ghast_flamethrower.stun_a": {
       "anim_time_update": "(query.anim_time + (query.delta_time * 1))",
       "blend_weight": "1",
       "loop": true,

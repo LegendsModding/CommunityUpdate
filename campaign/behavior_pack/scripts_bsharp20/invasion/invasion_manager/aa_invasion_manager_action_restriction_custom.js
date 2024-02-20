@@ -5,20 +5,20 @@ const invasionManagerSharedRestrictions_Custom = {
     baseNumberRestriction: {
         [FACTION_NAME_ATTACK]: 5,
         [FACTION_NAME_DEFEND]: 5,
-        [FACTION_NAME_OBSTACLE]: 5,
-        [FACTION_NAME_FROST]: 5
+        [FACTION_NAME_FROST]: 5,
+        [FACTION_NAME_OBSTACLE]: 5
     },
     outpostNumberRestriction: {
         [FACTION_NAME_ATTACK]: 10,
         [FACTION_NAME_DEFEND]: 10,
-        [FACTION_NAME_OBSTACLE]: 10,
-        [FACTION_NAME_FROST]: 10
+        [FACTION_NAME_FROST]: 10,
+        [FACTION_NAME_OBSTACLE]: 10
     },
     claimedAreasNumberRestriction: {
         [FACTION_NAME_ATTACK]: 15,
         [FACTION_NAME_DEFEND]: 12,
-        [FACTION_NAME_OBSTACLE]: 15,
-        [FACTION_NAME_FROST]: 12
+        [FACTION_NAME_FROST]: 12,
+        [FACTION_NAME_OBSTACLE]: 15
     }
 }
 
@@ -82,12 +82,16 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
                 gapBetweenActions: null,
-                concurrentActions: null, //used to be ANY_CONCURRENT
+                concurrentActions: [
+                    [1, 1, 1, 2, 2, 2, 2],
+                    [1, 1, 1, 2, 2, 2, 2],
+                    [1, 1, 1, 2, 2, 2, 2]
+                ],
                 customFunction: null
             },
             //any succeeds: can enforce
@@ -98,7 +102,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -167,7 +171,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -183,7 +187,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -247,7 +251,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -263,7 +267,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -327,7 +331,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -343,7 +347,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -412,7 +416,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde
@@ -428,7 +432,7 @@ const invasionManagerActionRestriction_Custom = {
                 customFunction: null
             }
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             //any fails: can't plan
             planningRestrictions: {
                 // 1st horde, 2nd horde, 3rd horde

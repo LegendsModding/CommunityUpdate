@@ -9,10 +9,10 @@
       "buildable": "badger:zoner_piglin_frost_territory_low_health"
     },
     {
-      "unique_card_id": "badger_occupationfrostPortalSmall",
+      "unique_card_id": "badger_occupationFrostPortalSmall",
       "cost": 0,
       "tags": [
-        "occupationfrostPortalSmall"
+        "occupationFrostPortalSmall"
       ],
       "buildable": "badger:occupation_zoner_piglin_frost_territory_low_health"
     },
@@ -35,10 +35,10 @@
   ],
   "zone_height_change_cards": [
     {
-      "unique_card_id": "FlattenFrost",
+      "unique_card_id": "Flatten",
       "cost": 0,
       "tags": [
-        "FlattenFrost"
+        "Flatten"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 0,
@@ -435,80 +435,80 @@
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "8UpRelativeToCentreFrost",
+      "unique_card_id": "8UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "8UpRelativeToCentreFrost"
+        "8UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 8,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "7UpRelativeToCentreFrost",
+      "unique_card_id": "7UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "7UpRelativeToCentreFrost"
+        "7UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 7,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "6UpRelativeToCentreFrost",
+      "unique_card_id": "6UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "6UpRelativeToCentreFrost"
+        "6UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 6,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "5UpRelativeToCentreFrost",
+      "unique_card_id": "5UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "5UpRelativeToCentreFrost"
+        "5UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 5,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "4UpRelativeToCentreFrost",
+      "unique_card_id": "4UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "4UpRelativeToCentreFrost"
+        "4UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 4,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "3UpRelativeToCentreFrost",
+      "unique_card_id": "3UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "3UpRelativeToCentreFrost"
+        "3UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 3,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "2UpRelativeToCentreFrost",
+      "unique_card_id": "2UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "2UpRelativeToCentreFrost"
+        "2UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 2,
       "zone_height_control": "height_control_centered"
     },
     {
-      "unique_card_id": "1UpRelativeToCentreFrost",
+      "unique_card_id": "1UpRelativeToCentre",
       "cost": 0,
       "tags": [
-        "1UpRelativeToCentreFrost"
+        "1UpRelativeToCentre"
       ],
       "biome": "nether_rotters_upper",
       "zone_height_change": 1,
@@ -517,20 +517,20 @@
   ],
   "walls_cards": [
     {
-      "unique_card_id": "wallNoTowersNoGatesFrost",
+      "unique_card_id": "wallNoTowersNoGates",
       "cost": 0,
       "tags": [
-        "wallNoTowersNoGatesFrost"
+        "wallNoTowersNoGates"
       ],
       "wall_buildable": "badger:chunk_piglin_wall_001",
       "path_entrance": "badger:gate_piglin",
       "embedded_buildables": []
     },
     {
-      "unique_card_id": "wallNoTowers3GatesFrost",
+      "unique_card_id": "wallNoTowers3Gates",
       "cost": 0,
       "tags": [
-        "wallNoTowers3GatesFrost"
+        "wallNoTowers3Gates"
       ],
       "wall_buildable": "badger:chunk_piglin_wall_001",
       "path_entrance": "badger:gate_piglin",
@@ -1148,30 +1148,30 @@
       "exclude": false
     },
     {
-      "unique_card_id": "zone_filter_cards_keepZoneFrost",
+      "unique_card_id": "zone_filter_cards_keepZone",
       "cost": 0,
       "tags": [
-        "keepZoneFrost"
+        "keepZone"
       ],
-      "zone_filter": "keepZoneFrost",
+      "zone_filter": "keepZone",
       "exclude": false
     },
     {
-      "unique_card_id": "zone_filter_cards_groundZoneFrost",
+      "unique_card_id": "zone_filter_cards_groundZone",
       "cost": 0,
       "tags": [
-        "groundZoneFrost"
+        "groundZone"
       ],
-      "zone_filter": "groundZoneFrost",
+      "zone_filter": "groundZone",
       "exclude": false
     },
     {
-      "unique_card_id": "zone_filter_cards_dropZoneFrost",
+      "unique_card_id": "zone_filter_cards_dropZone",
       "cost": 0,
       "tags": [
-        "dropZoneFrost"
+        "dropZone"
       ],
-      "zone_filter": "dropZoneFrost",
+      "zone_filter": "dropZone",
       "exclude": false
     }
   ],
@@ -1521,28 +1521,28 @@
       "zone_tag": "frostValidZone"
     },
     {
-      "unique_card_id": "zone_tag_cards_keepZoneFrost",
+      "unique_card_id": "zone_tag_cards_keepZone",
       "cost": 0,
       "tags": [
-        "keepZoneFrost"
+        "keepZone"
       ],
-      "zone_tag": "keepZoneFrost"
+      "zone_tag": "keepZone"
     },
     {
-      "unique_card_id": "zone_tag_cards_groundZoneFrost",
+      "unique_card_id": "zone_tag_cards_groundZone",
       "cost": 0,
       "tags": [
-        "groundZoneFrost"
+        "groundZone"
       ],
-      "zone_tag": "groundZoneFrost"
+      "zone_tag": "groundZone"
     },
     {
-      "unique_card_id": "zone_tag_cards_dropZoneFrost",
+      "unique_card_id": "zone_tag_cards_dropZone",
       "cost": 0,
       "tags": [
-        "dropZoneFrost"
+        "dropZone"
       ],
-      "zone_tag": "dropZoneFrost"
+      "zone_tag": "dropZone"
     }
   ],
   "zones_cards": [

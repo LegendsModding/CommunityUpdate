@@ -91,24 +91,13 @@
       "enable_attachables": false,
       "face_poses": ["Neutral","Neutral Blink"],
       "geometry": {
-        "attack": "geometry.piglin_patcher_attack",
-        "defend": "geometry.piglin_patcher_defend",
-        "obstacle": "geometry.piglin_patcher_obstacle",
-        "frost": "geometry.piglin_patcher_frost",
-        "second_skin": "geometry.piglin_patcher_second_skin"
+        "default": "geometry.piglin_patcher"
       },
       "identifier": "badger:piglin_patcher",
       "materials": {
         "mat_fx_frozen_128": "mat_fx_frozen_128",
         "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
-        "mat_piglin_patcher_attack": "mat_piglin_patcher_attack",
-        "mat_piglin_patcher_attack_face": "mat_piglin_patcher_attack_face",
-        "mat_piglin_patcher_defend": "mat_piglin_patcher_defend",
-        "mat_piglin_patcher_defend_face": "mat_piglin_patcher_defend_face",
-        "mat_piglin_patcher_obstacle": "mat_piglin_patcher_obstacle",
-        "mat_piglin_patcher_obstacle_face": "mat_piglin_patcher_obstacle_face",
-        "mat_piglin_patcher_frost": "mat_piglin_patcher_frost",
-        "mat_piglin_patcher_frost_face": "mat_piglin_patcher_frost_face"
+        "mat_piglin_patcher": "mat_piglin_patcher_attack"
       },
       "particle_effects": {
         "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_med",
@@ -119,7 +108,7 @@
         "fx_spawn": "badger:fx_piglin_spawn_from_portal",
         "fx_spawn_dust": "badger:fx_piglin_spawn_from_portal_spawndust"
       },
-      "render_controllers": ["controller.render.piglin_patcher","controller.render.piglin_patcher.second_skin"],
+      "render_controllers": ["controller.render.piglin_patcher"],
       "scripts": {
         "animate":  [
           {

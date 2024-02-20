@@ -3,32 +3,32 @@ const invasionMessagingVal = {
         [BASE_SIZE_OUTPOST]: {
             [FACTION_NAME_ATTACK]: "invasion_outpost_base_destroyed_attack_sequence",
             [FACTION_NAME_DEFEND]: "invasion_outpost_base_destroyed_defend_sequence",
-            [FACTION_NAME_OBSTACLE]: "invasion_outpost_base_destroyed_obstacle_sequence",
-            [FACTION_NAME_FROST]: "invasion_outpost_base_destroyed_frost_sequence"
+            [FACTION_NAME_FROST]: "invasion_outpost_base_destroyed_frost_sequence",
+            [FACTION_NAME_OBSTACLE]: "invasion_outpost_base_destroyed_obstacle_sequence"
         },
         [BASE_SIZE_SMALL]: {
             [FACTION_NAME_ATTACK]: "invasion_small_base_destroyed_attack_sequence",
             [FACTION_NAME_DEFEND]: "invasion_small_base_destroyed_defend_sequence",
-            [FACTION_NAME_OBSTACLE]: "invasion_small_base_destroyed_obstacle_sequence",
             [FACTION_NAME_FROST]: "invasion_small_base_destroyed_frost_sequence",
+            [FACTION_NAME_OBSTACLE]: "invasion_small_base_destroyed_obstacle_sequence"
         },
         [BASE_SIZE_MEDIUM]: {
             [FACTION_NAME_ATTACK]: "invasion_medium_base_destroyed_attack_sequence",
             [FACTION_NAME_DEFEND]: "invasion_medium_base_destroyed_defend_sequence",
-            [FACTION_NAME_OBSTACLE]: "invasion_medium_base_destroyed_obstacle_sequence",
-            [FACTION_NAME_FROST]: "invasion_medium_base_destroyed_frost_sequence"
+            [FACTION_NAME_FROST]: "invasion_medium_base_destroyed_frost_sequence",
+            [FACTION_NAME_OBSTACLE]: "invasion_medium_base_destroyed_obstacle_sequence"
         },
         [BASE_SIZE_LARGE]: {
             [FACTION_NAME_ATTACK]: "invasion_large_base_destroyed_attack_sequence",
             [FACTION_NAME_DEFEND]: "invasion_large_base_destroyed_defend_sequence",
-            [FACTION_NAME_OBSTACLE]: "invasion_large_base_destroyed_obstacle_sequence",
-            [FACTION_NAME_FROST]: "invasion_large_base_destroyed_frost_sequence"
+            [FACTION_NAME_FROST]: "invasion_large_base_destroyed_frost_sequence",
+            [FACTION_NAME_OBSTACLE]: "invasion_large_base_destroyed_obstacle_sequence"
         },
         [BASE_SIZE_BOSS]: {
             [FACTION_NAME_ATTACK]: "invasion_boss_base_destroyed_attack_sequence",
             [FACTION_NAME_DEFEND]: "invasion_boss_base_destroyed_defend_sequence",
-            [FACTION_NAME_OBSTACLE]: "invasion_boss_base_destroyed_obstacle_sequence",
-            [FACTION_NAME_FROST]: "invasion_boss_base_destroyed_frost_sequence"
+            [FACTION_NAME_FROST]: "invasion_boss_base_destroyed_frost_sequence",
+            [FACTION_NAME_OBSTACLE]: "invasion_boss_base_destroyed_obstacle_sequence"
         }
     }
 }
@@ -74,13 +74,13 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
         LISTENFOR_VillagePlanned({
             snippet: "vp_horde_difficulty_message",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: FACTION_NAME_OBSTACLE
+            factionName: FACTION_NAME_FROST
         })
 
         LISTENFOR_VillagePlanned({
             snippet: "vp_horde_difficulty_message",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: FACTION_NAME_FROST
+            factionName: FACTION_NAME_OBSTACLE
         })
 
         LISTENFOR_VillageDestroyed({
@@ -97,13 +97,13 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
         })
         LISTENFOR_VillageDestroyed({
             snippet: "vd_invasion_piglin_base_destroyed_message",
-            factionName: FACTION_NAME_OBSTACLE,
+            factionName: FACTION_NAME_FROST,
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
             despawned: false
         })
         LISTENFOR_VillageDestroyed({
             snippet: "vd_invasion_piglin_base_destroyed_message",
-            factionName: FACTION_NAME_FROST,
+            factionName: FACTION_NAME_OBSTACLE,
             ownerVillageId: OWNER_VILLAGE_OPT_OUT,
             despawned: false
         })
@@ -151,10 +151,10 @@ SNIPPET_SpatialPartitionEntered("spe_player_entered_difficulty_message_range", (
             OUTPUT_AnnouncePlayer("invasion_base_difficulty_level_attack", [difficultyString], enteringEntity)
         } else if (horde === FACTION_NAME_DEFEND) {
             OUTPUT_AnnouncePlayer("invasion_base_difficulty_level_defend", [difficultyString], enteringEntity)
-        } else if (horde === FACTION_NAME_OBSTACLE) {
-            OUTPUT_AnnouncePlayer("invasion_base_difficulty_level_obstacle", [difficultyString], enteringEntity)
         } else if (horde === FACTION_NAME_FROST) {
             OUTPUT_AnnouncePlayer("invasion_base_difficulty_level_frost", [difficultyString], enteringEntity)
+        } else if (horde === FACTION_NAME_OBSTACLE) {
+            OUTPUT_AnnouncePlayer("invasion_base_difficulty_level_obstacle", [difficultyString], enteringEntity)
         }
     }
 })

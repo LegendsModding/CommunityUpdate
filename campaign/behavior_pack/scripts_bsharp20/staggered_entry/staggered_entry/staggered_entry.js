@@ -55,132 +55,23 @@ const SetupStaggeredEntry = () => {
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
         despawned: false
     })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FOREST,
-        villageSize: BASE_SIZE_SMALL
-    })
     
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FROSTLANDS,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_DRYLANDS,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_WETLANDS,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_GRASSLANDS,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_BROKENLANDS,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_FATEFUL_LAND,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_JUNGLE,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_MOUNTAIN,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-
-    LISTENFOR_PlayerEnteredVillage({
-        snippet: "player_entered_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
-    
-    LISTENFOR_PlayerExitedVillage({
-        snippet: "player_exited_village_staggered_flow",
-        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: CULTURE_NAME_,
-        villageSize: BASE_SIZE_SMALL
-    })
+    for (const factionName of CULTURE_NAME_VILLAGERS) {
+        LISTENFOR_PlayerEnteredVillage({
+            snippet: "player_entered_village_staggered_flow",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: factionName,
+            villageSize: BASE_SIZE_SMALL
+        })
+    }
+    for (const factionName of CULTURE_NAME_VILLAGERS) {
+        LISTENFOR_PlayerExitedVillage({
+            snippet: "player_exited_village_staggered_flow",
+            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+            factionName: factionName,
+            villageSize: BASE_SIZE_SMALL
+        })
+    }
 
     LISTENFOR_DifficultyChanged({
         snippet: "dc_update_establishment",

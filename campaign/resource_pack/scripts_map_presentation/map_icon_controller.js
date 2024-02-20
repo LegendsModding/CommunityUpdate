@@ -3,8 +3,6 @@ const isMobAlliance = () => {
     case MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER:
     case MAP_FACTION_IDS.MOB_ALLIANCE_SKELETON:
     case MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER:
-    case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-    case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
     case MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE:
       return true;
   }
@@ -499,8 +497,6 @@ const displayInvasionActiveIcon = () => {
           break;
         case MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER:
         case MAP_FACTION_IDS.MOB_ALLIANCE_SKELETON:
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
         case MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER:
         case MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE:
           makeEntity(
@@ -542,8 +538,6 @@ const displayInvasionActiveIcon = () => {
           break;
         case MAP_FACTION_IDS.MOB_ALLIANCE_CREEPER:
         case MAP_FACTION_IDS.MOB_ALLIANCE_SKELETON:
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
         case MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER:
         case MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE:
           makeEntity(
@@ -869,26 +863,6 @@ const displayMobAllegianceStateIcon = (mobAlliance) => {
             MAP_EXTENDED_VO_TOOLTIP.INVASION_MOB_ALLIANCE_SPIDER_DESTROYED
           );
           break;
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-          makeEntity(
-            ICON_GROUP.MOB_ALLIANCE_EXTENDED_TOOLTIP,
-            MAP_EXTENDED_TOOLTIP.MOB_ALLEGIANCE_LOST_SLIME
-          );
-          makeEntity(
-            ICON_GROUP.VO_TOOLTIP,
-            MAP_EXTENDED_VO_TOOLTIP.INVASION_MOB_ALLIANCE_SLIME_DESTROYED
-          );
-          break;
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
-          makeEntity(
-            ICON_GROUP.MOB_ALLIANCE_EXTENDED_TOOLTIP,
-            MAP_EXTENDED_TOOLTIP.MOB_ALLEGIANCE_LOST_SILVERFISH
-          );
-          makeEntity(
-            ICON_GROUP.VO_TOOLTIP,
-            MAP_EXTENDED_VO_TOOLTIP.INVASION_MOB_ALLIANCE_SILVERFISH_DESTROYED
-          );
-          break;
         case MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE:
           makeEntity(
             ICON_GROUP.MOB_ALLIANCE_EXTENDED_TOOLTIP,
@@ -924,18 +898,6 @@ const displayMobAllegianceStateIcon = (mobAlliance) => {
           makeEntity(
             ICON_GROUP.MOB_ALLIANCE_EXTENDED_TOOLTIP,
             MAP_EXTENDED_TOOLTIP.MOB_ALLEGIANCE_SPIDER
-          );
-          break;
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-          makeEntity(
-            ICON_GROUP.MOB_ALLIANCE_EXTENDED_TOOLTIP,
-            MAP_EXTENDED_TOOLTIP.MOB_ALLEGIANCE_SLIME
-          );
-          break;
-        case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
-          makeEntity(
-            ICON_GROUP.MOB_ALLIANCE_EXTENDED_TOOLTIP,
-            MAP_EXTENDED_TOOLTIP.MOB_ALLEGIANCE_SILVERFISH
           );
           break;
         case MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE:
@@ -1182,12 +1144,6 @@ const addMainTooltip = (id) => {
     case MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER:
       addMobAllianceMainTooltip(MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER);
       return;
-    case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-      addMobAllianceMainTooltip(MAP_FACTION_IDS.MOB_ALLIANCE_SLIME);
-      return;
-    case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
-      addMobAllianceMainTooltip(MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH);
-      return;
     case MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE:
       addMobAllianceMainTooltip(MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE);
       return;
@@ -1276,10 +1232,6 @@ const addMobAllianceMainTooltip = (mobFactionId) => {
         mobDescriptionId = MAP_DESCRIPTION_IDS.SKELETON_OCCUPIED_TOOLTIP;
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER) {
         mobDescriptionId = MAP_DESCRIPTION_IDS.SPIDER_OCCUPIED_TOOLTIP;
-      } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SLIME) {
-        mobDescriptionId = MAP_DESCRIPTION_IDS.SLIME_OCCUPIED_TOOLTIP;
-      } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH) {
-        mobDescriptionId = MAP_DESCRIPTION_IDS.SILVERFISH_OCCUPIED_TOOLTIP;
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE) {
         mobDescriptionId = MAP_DESCRIPTION_IDS.ZOMBIE_OCCUPIED_TOOLTIP;
       }
@@ -1296,10 +1248,6 @@ const addMobAllianceMainTooltip = (mobFactionId) => {
         mobDescriptionId = MAP_DESCRIPTION_IDS.SKELETON_TARGETED_TOOLTIP;
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER) {
         mobDescriptionId = MAP_DESCRIPTION_IDS.SPIDER_TARGETED_TOOLTIP;
-      } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH) {
-        mobDescriptionId = MAP_DESCRIPTION_IDS.SILVERFISH_TARGETED_TOOLTIP;
-      } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_SLIME) {
-        mobDescriptionId = MAP_DESCRIPTION_IDS.SLIME_TARGETED_TOOLTIP;
       } else if (mobFactionId === MAP_FACTION_IDS.MOB_ALLIANCE_ZOMBIE) {
         mobDescriptionId = MAP_DESCRIPTION_IDS.ZOMBIE_TARGETED_TOOLTIP;
       }
@@ -1387,9 +1335,7 @@ const isMobAllianceSlot = () => {
     get("debug_slot_name") === "skeleton_alliance" ||
     get("debug_slot_name") === "zombie_alliance" ||
     get("debug_slot_name") === "creeper_alliance" ||
-    get("debug_slot_name") === "spider_alliance" ||
-    get("debug_slot_name") === "slime_alliance" ||
-    get("debug_slot_name") === "silverfish_alliance"
+    get("debug_slot_name") === "spider_alliance"
   );
 };
 
@@ -1425,8 +1371,6 @@ const displayAlivePiglinFactionIcon = () => {
     case MAP_BASE_SIZE.OCCUPYING_CREEPER:
     case MAP_BASE_SIZE.OCCUPYING_SKELETON:
     case MAP_BASE_SIZE.OCCUPYING_SPIDER:
-    case MAP_BASE_SIZE.OCCUPYING_SLIME:
-    case MAP_BASE_SIZE.OCCUPYING_SILVERFISH:
     case MAP_BASE_SIZE.OCCUPYING_ZOMBIE:
       makeEntity(ICON_GROUP.MAIN_ICON, MAP_ICON.FACTION_PIGLIN_SMALL);
       break;
@@ -1527,9 +1471,7 @@ const isMobAllianceOBSlot = () => {
     get("debug_slot_name") === "creeperPiglinBaseSlot" ||
     get("debug_slot_name") === "skeletonPiglinBaseSlot" ||
     get("debug_slot_name") === "spiderPiglinBaseSlot" ||
-    get("debug_slot_name") === "zombiePiglinBaseSlot" ||
-    get("debug_slot_name") === "slimePiglinBaseSlot" ||
-    get("debug_slot_name") === "silverfishPiglinBaseSlot"
+    get("debug_slot_name") === "zombiePiglinBaseSlot"
   );
 };
 
@@ -1555,8 +1497,6 @@ const addSizeTooltip = () => {
     case MAP_BASE_SIZE.OCCUPYING_CREEPER:
     case MAP_BASE_SIZE.OCCUPYING_SKELETON:
     case MAP_BASE_SIZE.OCCUPYING_SPIDER:
-    case MAP_BASE_SIZE.OCCUPYING_SLIME:
-    case MAP_BASE_SIZE.OCCUPYING_SILVERFISH:
     case MAP_BASE_SIZE.OCCUPYING_ZOMBIE:
     case MAP_BASE_SIZE.DARK_BEACON:
       makeEntity(
@@ -1960,24 +1900,6 @@ onUpdate(() => {
       displayInvasionStateIcon();
       displayMobAllianceStateIcon();
       displayMobAllegianceStateIcon(MAP_FACTION_IDS.MOB_ALLIANCE_SPIDER);
-      displayPvpAllegianceStateIcon();
-      displayTeamIdentifier();
-      displayPvPUnderAttackIcon();
-      break;
-    case MAP_FACTION_IDS.MOB_ALLIANCE_SLIME:
-      makeEntity(ICON_GROUP.MAIN_ICON, MAP_ICON.MOB_ALLIANCE_SLIME);
-      displayInvasionStateIcon();
-      displayMobAllianceStateIcon();
-      displayMobAllegianceStateIcon(MAP_FACTION_IDS.MOB_ALLIANCE_SLIME);
-      displayPvpAllegianceStateIcon();
-      displayTeamIdentifier();
-      displayPvPUnderAttackIcon();
-      break;
-    case MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH:
-      makeEntity(ICON_GROUP.MAIN_ICON, MAP_ICON.MOB_ALLIANCE_SILVERFISH);
-      displayInvasionStateIcon();
-      displayMobAllianceStateIcon();
-      displayMobAllegianceStateIcon(MAP_FACTION_IDS.MOB_ALLIANCE_SILVERFISH);
       displayPvpAllegianceStateIcon();
       displayTeamIdentifier();
       displayPvPUnderAttackIcon();

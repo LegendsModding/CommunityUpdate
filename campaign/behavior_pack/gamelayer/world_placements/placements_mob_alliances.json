@@ -41,8 +41,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              40,
-              80
+              30,
+              110
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "frostlands_1_village",
@@ -53,8 +53,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              0,
-              80
+              30,
+              110
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "frostlands_1",
@@ -134,24 +134,24 @@
             "one_of": [
               {
                 "chunk_distance_from_parent": [
-                  20,
-                  55
+                  40,
+                  110
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_1_village"
               },
               {
                 "chunk_distance_from_parent": [
-                  0,
-                  35
+                  40,
+                  110
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_1"
               },
               {
                 "chunk_distance_from_parent": [
-                  0,
-                  35
+                  40,
+                  110
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "jungle_2"
@@ -224,7 +224,7 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  40
+                  90
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "brokenlands_1"
@@ -232,19 +232,19 @@
               {
                 "chunk_distance_from_parent": [
                   0,
-                  40
+                  80
                 ],
                 "distance_to_zero_score": 30,
                 "tag_parent": "brokenlands_2"
               }
             ],
-            "weight": 5,
-            "mandatory_threshold": 0.1
+            "weight": 3,
+            "mandatory_threshold": 0.8
           }
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 90,
+            "chunk_distance_from_parent": 120,
             "distance_to_zero_score": 10,
             "tag_parent": "village",
             "weight": 1,
@@ -263,10 +263,20 @@
         },
         {
           "distance": {
+            "chunk_distance_from_parent": [
+              50,
+              200],
+            "distance_to_zero_score": 10,
+            "tag_parent": "center",
+            "weight": 2
+          }
+        },
+        {
+          "distance": {
             "chunk_distance_from_parent": 86,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
-            "mandatory_threshold": 1.0
+            "mandatory_threshold": 0.9
           }
         }
       ]
@@ -312,8 +322,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              20,
-              80
+              60,
+              120
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "forest_1_village",
@@ -325,7 +335,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              120
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "forest_1",
@@ -337,7 +347,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              120
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "forest_2",
@@ -379,171 +389,7 @@
         },
         {
           "distance": {
-            "chunk_distance_from_parent": 56,
-            "distance_to_zero_score": 0,
-            "tag_parent": "claimed_area_cluster",
-            "mandatory_threshold": 1.0
-          }
-        }
-      ]
-    },
-    {
-      "unique_card_id": "badger_silverfish_alliance_mob_alliance_factions",
-      "map_data": "badger:mob_alliance_silverfish_faction",
-      "village_data": "badger:mob_alliance_silverfish_village",
-      "placement_name": "silverfish_alliance",
-      "placement_type": "poi",
-      "add_to_poi_graph": true,
-      "allow_rivers_nearby": false,
-      "priority": 1,
-      "initial_villages": {
-        "small": {
-          "count": 1
-        }
-      },
-      "tags": [
-        "mob_alliance_factions"
-      ],
-      "biome": {
-        "biome": "mountain_parent_valleys",
-        "total_pixels": 35,
-        "starting_pixels": 5,
-        "spread_priority": 1
-      },
-      "jitter": 0,
-      "textures": [
-        {
-          "enabled": true,
-          "texture_key": "primary_texture",
-          "texture_name": "ma_silverfish_homestead_biome",
-          "manual_height": true,
-          "manual_height_range": [
-            30,
-            40
-          ],
-          "auto_rotate": false
-        }
-      ],
-      "placement_rules": [
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              20,
-              80
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "mountain_1_village",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              0,
-              90
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "mountain_1",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              30,
-              100],
-            "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
-          }
-        },
-        {
-          "distance": {
             "chunk_distance_from_parent": 70,
-            "distance_to_zero_score": 0,
-            "tag_parent": "claimed_area_cluster",
-            "mandatory_threshold": 1.0
-          }
-        }
-      ]
-    },
-    {
-      "unique_card_id": "badger_slime_alliance_mob_alliance_factions",
-      "map_data": "badger:mob_alliance_slime_faction",
-      "village_data": "badger:mob_alliance_slime_village",
-      "placement_name": "slime_alliance",
-      "placement_type": "poi",
-      "add_to_poi_graph": true,
-      "allow_rivers_nearby": false,
-      "priority": 1,
-      "initial_villages": {
-        "small": {
-          "count": 1
-        }
-      },
-      "tags": [
-        "mob_alliance_factions"
-      ],
-      "biome": {
-        "biome": "wetlands",
-        "total_pixels": 35,
-        "starting_pixels": 5,
-        "spread_priority": 1
-      },
-      "jitter": 0,
-      "textures": [
-        {
-          "enabled": true,
-          "texture_key": "primary_texture",
-          "texture_name": "ma_slime_homestead_biome",
-          "manual_height": true,
-          "manual_height_range": [
-            30,
-            40
-          ],
-          "auto_rotate": false
-        }
-      ],
-      "placement_rules": [
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              20,
-              80
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "wetlands_1_village",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-              0,
-              90
-            ],
-            "distance_to_zero_score": 10,
-            "tag_parent": "wetlands_1",
-            "weight": 1,
-            "mandatory_threshold": 0.1
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": [
-            30,
-            100],
-            "distance_to_zero_score": 10,
-            "tag_parent": "poi",
-            "weight": 3
-          }
-        },
-        {
-          "distance": {
-            "chunk_distance_from_parent": 65,
             "distance_to_zero_score": 0,
             "tag_parent": "claimed_area_cluster",
             "mandatory_threshold": 1.0

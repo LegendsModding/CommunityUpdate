@@ -155,11 +155,6 @@
           "archetype": "badger:piglin_obstacle_small",
           "count": 0,
           "invasion": 1
-        },
-        "piglin_occupying_slime_mob_alliance": {
-          "archetype": "badger:piglin_attack_small",
-          "count": 0,
-          "invasion": 1
         }
       }
     },
@@ -245,11 +240,6 @@
           "invasion": 1
         },
         "piglin_occupying_creeper_mob_alliance": {
-          "archetype": "badger:piglin_defend_small",
-          "count": 0,
-          "invasion": 1
-        },
-        "piglin_occupying_silverfish_mob_alliance": {
           "archetype": "badger:piglin_defend_small",
           "count": 0,
           "invasion": 1

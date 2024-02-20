@@ -6,16 +6,17 @@
 const legendsCommunityUpdateWorldGenDefinition = {
     base: null, //base definition is null, which means this definition will not inherit any filters. It is very likely you will need to make such filters in modify()
     modify: (filterManager) => {
+        //NEW COOL BROKEN WORLDGEN BELOW
         // Center first
         filterManager.AppendFilter(["center", "campaign"], 1)
         
         // Magnet for WoF
-        filterManager.AppendFilter(["wellOfFate_NE_magnet"], 1)
+        //filterManager.AppendFilter(["wellOfFate_NE_magnet"], 1)
 
         // Magnet for end portal
-        filterManager.AppendFilter(["ruinedEndPortal_SW_magnet"], 1)
+        //filterManager.AppendFilter(["ruinedEndPortal_SW_magnet"], 1)
         
-        // Place WoF far from center
+        // Place WoF far from center(in center for now)
         filterManager.AppendFilter(["wellOfFate", "campaign"], 1)
         
         // Magnet for Fateful Land village
@@ -148,7 +149,7 @@ const legendsCommunityUpdateWorldGenDefinition = {
         filterManager.AppendFilter(["poi_mount_07"], 1)
         filterManager.AppendFilter(["poi_mount_08"], 1)
         filterManager.AppendFilter(["poi_mount_09"], 1)
-        */
+        
         // Legend PoIs
         //filterManager.AppendFilter(["poi_legend", "dragon_red"], 1)
         //filterManager.AppendFilter(["poi_legend", "killer_rabbit"], 1)
@@ -159,7 +160,7 @@ const legendsCommunityUpdateWorldGenDefinition = {
         //filterManager.AppendFilter(["poi_tower_04"], 1)
         //filterManager.AppendFilter(["poi_tower_05"], 1)
         //filterManager.AppendFilter(["poi_tower_06"], 1)
-        
+        */
         // Invasion base slots
         filterManager.AppendFilter(["invasionBaseSlot"], 1)
     }

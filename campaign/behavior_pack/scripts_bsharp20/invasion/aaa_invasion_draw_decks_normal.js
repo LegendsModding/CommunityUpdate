@@ -248,18 +248,18 @@ invasionDrawData_Normal = {
             ]
         },
         {
-            factionName: FACTION_NAME_OBSTACLE,
-            deckName: "obstacle_faction_invasion_deck",
+            factionName: FACTION_NAME_FROST,
+            deckName: "frost_faction_invasion_deck",
             phases: [
                 {
                     phase: "1",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 6 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 6 },
+                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 2 }
                             ]
                         }
                     ]
@@ -268,11 +268,11 @@ invasionDrawData_Normal = {
                     phase: "2",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 6 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 6 },
+                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 2 }
                             ]
                         }
                     ]
@@ -281,12 +281,11 @@ invasionDrawData_Normal = {
                     phase: "3",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 5 },
-                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 1 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 6 },
+                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 2 }
                             ]
                         }
                     ]
@@ -295,12 +294,12 @@ invasionDrawData_Normal = {
                     phase: "4",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 4 },
-                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 2 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 5 },
+                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 1 },
+                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 1 }
                             ]
                         }
                     ]
@@ -309,12 +308,12 @@ invasionDrawData_Normal = {
                     phase: "5",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 4 },
-                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 2 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 4 },
+                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 1 },
+                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 1 }
                             ]
                         }
                     ]
@@ -323,12 +322,11 @@ invasionDrawData_Normal = {
                     phase: "6",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 3 },
-                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 3 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 6 },
+                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 2 }
                             ]
                         }
                     ]
@@ -337,12 +335,11 @@ invasionDrawData_Normal = {
                     phase: "7",
                     formationByOrder: [
                         {
-                            order: 3,
+                            order: 2,
                             formation: [
                                 { action: FACTION_ACTION_ATTACK_VILLAGE_V2, amount: 2 },
-                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 2 },
-                                { action: FACTION_ACTION_BUILD_NEW_OUTPOST, amount: 3 },
-                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 3 }
+                                { action: FACTION_ACTION_UPGRADE_BASE, amount: 6 },
+                                { action: FACTION_ACTION_BUILD_NEAR_BASE, amount: 2 }
                             ]
                         }
                     ]
@@ -350,8 +347,8 @@ invasionDrawData_Normal = {
             ]
         },
         {
-            factionName: FACTION_NAME_FROST,
-            deckName: "frost_faction_invasion_deck",
+            factionName: FACTION_NAME_OBSTACLE,
+            deckName: "obstacle_faction_invasion_deck",
             phases: [
                 {
                     phase: "1",

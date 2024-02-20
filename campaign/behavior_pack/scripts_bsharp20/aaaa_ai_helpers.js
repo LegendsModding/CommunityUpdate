@@ -51,7 +51,8 @@ const _CreateBaseAi = (villageId, AiData, AiName, rallyData = [], overrideSpawnL
 }
 
 const _IsItANormalBase = (villageSize) => {
-    return villageSize !== BASE_SIZE_DARK_BEACON && villageSize !== BASE_SIZE_PIGLIN_ZOMBIE && villageSize !== BASE_SIZE_PIGLIN_SKELETON && villageSize !== BASE_SIZE_PIGLIN_SLIME && villageSize !== BASE_SIZE_PIGLIN_SPIDER && villageSize !== BASE_SIZE_PIGLIN_SILVERFISH && villageSize !== BASE_SIZE_PIGLIN_CREEPER && villageSize !== BASE_SIZE_PIGLIN_WOF && villageSize !== VILLAGE_SIZE_DEBUG
+    return villageSize !== BASE_SIZE_DARK_BEACON && villageSize !== BASE_SIZE_PIGLIN_ZOMBIE && villageSize !== BASE_SIZE_PIGLIN_SKELETON && villageSize !== BASE_SIZE_PIGLIN_SPIDER  && villageSize !== BASE_SIZE_PIGLIN_CREEPER && villageSize !== BASE_SIZE_PIGLIN_WOF && villageSize !== VILLAGE_SIZE_DEBUG
+
 }
 const SetupBaseAIs = (AiRootConfig) => {
     /*for (const entry in AiRootConfig) {

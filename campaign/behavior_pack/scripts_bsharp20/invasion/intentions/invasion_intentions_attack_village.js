@@ -30,7 +30,7 @@ const invasionIntentionAttackVals = {
             outpost:     [1, 1, 1, 1, 1, 1, 1]
         }
     },
-    [FACTION_NAME_OBSTACLE]: {
+    [FACTION_NAME_FROST]: {
         minSeconds: 60,
         attackWeights: {
             village:     [10, 10, 9, 8, 8, 8, 8], //Weights for phases 1-> 7
@@ -38,7 +38,7 @@ const invasionIntentionAttackVals = {
             outpost:     [1, 1, 1, 1, 1, 1, 1]
         }
     },
-    [FACTION_NAME_FROST]: {
+    [FACTION_NAME_OBSTACLE]: {
         minSeconds: 60,
         attackWeights: {
             village:     [10, 10, 9, 8, 8, 8, 8], //Weights for phases 1-> 7

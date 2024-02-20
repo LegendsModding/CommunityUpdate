@@ -211,16 +211,6 @@
       "pips": 1
     },
     {
-      "size": "piglin_occupying_slime_mob_alliance",
-      "ui_key": "piglin.base_size.small",
-      "pips": 1
-    },
-    {
-      "size": "piglin_occupying_silverfish_mob_alliance",
-      "ui_key": "piglin.base_size.small",
-      "pips": 1
-    },
-    {
       "size": "piglin_act1_first_skirmish",
       "ui_key": "",
       "pips": 1

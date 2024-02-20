@@ -8,12 +8,12 @@ const oopsFactionMessages = [
         message: "invasion_oops_defend"
     },
     {
-        faction: FACTION_NAME_OBSTACLE,
-        message: "invasion_oops_obstacle"
-    },
-    {
         faction: FACTION_NAME_FROST,
         message: "invasion_oops_frost"
+    },
+    {
+        faction: FACTION_NAME_OBSTACLE,
+        message: "invasion_oops_obstacle"
     }
 ]
 

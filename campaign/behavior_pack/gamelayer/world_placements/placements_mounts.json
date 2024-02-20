@@ -39,20 +39,20 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              0,
-              30
+              30,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "drylands_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 1.0
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              110
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "drylands_1",
@@ -64,7 +64,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              110
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "drylands_2",
@@ -121,20 +121,20 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              25,
-              60
+              30,
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "jungle_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 1.0
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              110
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "jungle_1",
@@ -146,7 +146,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              110
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "jungle_2",
@@ -208,32 +208,32 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              25,
-              60
+              40,
+              90
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "mountain_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 0.8
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              80
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "mountain_1",
-            "weight": 1,
+            "weight": 2,
             "mandatory_threshold": 0.4
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
-              30,
-              120
+              60,
+              200
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "defend_cluster",
@@ -245,7 +245,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0, 
-              250
+              200
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "center",
@@ -295,20 +295,20 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              25,
-              60
+              30,
+              90
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "wetlands_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 1.0
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              110
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "wetlands_1",
@@ -319,8 +319,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              30,
-              120
+              60,
+              150
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "obstacle_cluster",
@@ -382,20 +382,20 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              25,
-              60
+              30,
+              90
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "brokenlands_1_village",
             "weight": 3,
-            "mandatory_threshold": "1.0"
+            "mandatory_threshold": 1.0
           }
         },
         {
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              90
+              110
             ],
             "distance_to_zero_score": 10,
             "tag_parent": "brokenlands_1",
@@ -406,8 +406,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              30,
-              120
+              60,
+              150
             ],
             "distance_to_zero_score": 20,
             "tag_parent": "attack_cluster",
@@ -469,13 +469,13 @@
           {
             "distance": {
               "chunk_distance_from_parent": [
-                25,
-                60
+                30,
+                90
               ],
               "distance_to_zero_score": 10,
               "tag_parent": "frostlands_1_village",
               "weight": 3,
-              "mandatory_threshold": "1.0"
+              "mandatory_threshold": 1.0
             }
           },
           {
@@ -493,8 +493,8 @@
           {
             "distance": {
               "chunk_distance_from_parent": [
-                30,
-                120
+                60,
+                150
               ],
               "distance_to_zero_score": 20,
               "tag_parent": "frost_cluster",
@@ -556,8 +556,8 @@
           {
             "distance": {
               "chunk_distance_from_parent": [
-                10,
-                30
+                30,
+                50
               ],
               "distance_to_zero_score": 10,
               "tag_parent": "fateful_land_1_village",
@@ -567,7 +567,7 @@
           },
           {
             "distance": {
-              "chunk_distance_from_parent": [10,30],
+              "chunk_distance_from_parent": [20,50],
               "distance_to_zero_score": 0,
               "tag_parent": "wellOfFate",
               "weight": 2

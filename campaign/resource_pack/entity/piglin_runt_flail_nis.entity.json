@@ -78,21 +78,13 @@
       "enable_attachables": false,
       "face_poses": ["Neutral","Neutral Blink","Wide Eyes","Shocked","Evil"],
       "geometry": {
-        "attack": "geometry.piglin_runt_flail_attack_nis",
-        "defend": "geometry.piglin_runt_flail_defend_nis",
-        "obstacle": "geometry.piglin_runt_flail_obstacle_nis",
-        "second_skin": "geometry.piglin_runt_flail_second_skin_nis"
+        "default": "geometry.piglin_runt_flail_nis"
       },
       "identifier": "badger:piglin_runt_flail_nis",
       "materials": {
         "default": "entity_model",
         "mat_fx_frost_128": "mat_fx_frost_128",
-        "mat_piglin_runt_flail_attack": "mat_piglin_runt_flail_attack",
-        "mat_piglin_runt_flail_attack_face": "mat_piglin_runt_flail_attack_face",
-        "mat_piglin_runt_flail_defend": "mat_piglin_runt_flail_defend",
-        "mat_piglin_runt_flail_defend_face": "mat_piglin_runt_flail_defend_face",
-        "mat_piglin_runt_flail_obstacle": "mat_piglin_runt_flail_obstacle",
-        "mat_piglin_runt_flail_obstacle_face": "mat_piglin_runt_flail_obstacle_face"
+        "mat_piglin_runt_flail": "mat_piglin_runt_flail"
       },
       "particle_effects": {
         "fx_float_trail": "badger:fx_final_boss_death_pig_trail"
@@ -104,7 +96,7 @@
             "default": "1"
           }
         ],
-        "initialize": ["variable.second_skin_vis = 1;","variable.model_chooser = 0;","variable.mace_geo_vis = 1;"]
+        "initialize": ["variable.model_chooser = 0;","variable.mace_geo_vis = 1;"]
       },
       "sound_effects": {
         "dx_cine_jump": "BAE_piglin_runt_flail_dx_cine_jump",

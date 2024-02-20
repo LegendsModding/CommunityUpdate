@@ -69,36 +69,36 @@ const invasionOccupation_initialUnits = {
             [PIGLIN_ARCHETYPE.PORTAL_GUARD]: 2
         }
     },
-    [FACTION_NAME_OBSTACLE]: {
+    [FACTION_NAME_FROST]: {
         1: {
             [PIGLIN_ARCHETYPE.RUNT]: 14,
             [PIGLIN_ARCHETYPE.GRUNTER]: 17,
-            [PIGLIN_ARCHETYPE.GRENADIER]: 3,
+            [PIGLIN_ARCHETYPE.BRUISER]: 3,
             [PIGLIN_ARCHETYPE.ENGINEER]: 0,
             [PIGLIN_ARCHETYPE.MEDIC]: 3,
             [PIGLIN_ARCHETYPE.SEEKER]: 0,
-            [PIGLIN_ARCHETYPE.LAVA_LAUNCHER]: 0
+            [PIGLIN_ARCHETYPE.PORTAL_GUARD]: 0
         },
         2: {
-            [PIGLIN_ARCHETYPE.RUNT]: 17,
-            [PIGLIN_ARCHETYPE.GRUNTER]: 24,
-            [PIGLIN_ARCHETYPE.GRENADIER]: 5,
-            [PIGLIN_ARCHETYPE.ENGINEER]: 1,
+            [PIGLIN_ARCHETYPE.RUNT]: 21,
+            [PIGLIN_ARCHETYPE.GRUNTER]: 27,
+            [PIGLIN_ARCHETYPE.BRUISER]: 5,
+            [PIGLIN_ARCHETYPE.ENGINEER]: 0,
             [PIGLIN_ARCHETYPE.MEDIC]: 5,
             [PIGLIN_ARCHETYPE.SEEKER]: 0,
-            [PIGLIN_ARCHETYPE.LAVA_LAUNCHER]: 1
+            [PIGLIN_ARCHETYPE.PORTAL_GUARD]: 1
         },
         3: {
-            [PIGLIN_ARCHETYPE.RUNT]: 21,
+            [PIGLIN_ARCHETYPE.RUNT]: 26,
             [PIGLIN_ARCHETYPE.GRUNTER]: 31,
-            [PIGLIN_ARCHETYPE.GRENADIER]: 8,
-            [PIGLIN_ARCHETYPE.ENGINEER]: 2,
+            [PIGLIN_ARCHETYPE.BRUISER]: 8,
+            [PIGLIN_ARCHETYPE.ENGINEER]: 0,
             [PIGLIN_ARCHETYPE.MEDIC]: 7,
             [PIGLIN_ARCHETYPE.SEEKER]: 0,
-            [PIGLIN_ARCHETYPE.LAVA_LAUNCHER]: 2
+            [PIGLIN_ARCHETYPE.PORTAL_GUARD]: 2
         }
     },
-    [FACTION_NAME_FROST]: {
+    [FACTION_NAME_OBSTACLE]: {
         1: {
             [PIGLIN_ARCHETYPE.RUNT]: 14,
             [PIGLIN_ARCHETYPE.GRUNTER]: 17,

@@ -39,7 +39,7 @@ const _CampaignAct1AStart = () => {
     OUTPUT_SetSkyState(SKY_STATE_TWO_SUNS)
     OUTPUT_SetAmbienceTimeOfDayOverride(0)
     OUTPUT_LockDayNightCycle(false)
-    
+
     DeactivateInvasionSystem()
 
     SetRoamingInvisibleSpawnersState(false)
@@ -166,16 +166,12 @@ const _grantAct1SkipResources = () => {
     GrantStartingResources()
     // Give the player extra resources from skipping to act 2
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_creeper_rally", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_silverfish_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_zombie_rally", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_creeper", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_skeleton", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_slime", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_spider", 1, false)
-    OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_silverfish", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_zombie", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_iron_tech", 1, false)
     OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_remaining_wof_upgrades", 1, false)
@@ -212,8 +208,8 @@ const _DBBPlacementTiers = () => {
         { playersMin: 500, primaryMin: 350, primaryMax: 400, wofMin: 750, friendlyVillagesMin: 400, poiMin: 550, maMin: 550 }
     ]
 
-    const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS)
-    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_ZOMBIE, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_SILVERFISH, MOB_ALLIANCE_NAME_SLIME])
+    const friendlyVillages = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN])
+    const homesteads = FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [MOB_ALLIANCE_NAME_CREEPER, MOB_ALLIANCE_NAME_SKELETON, MOB_ALLIANCE_NAME_SPIDER, MOB_ALLIANCE_NAME_ZOMBIE])
     const primaryRef = _GetFirstVillageEntity()
     const wof = GetVillageEntityFromFaction(WELL_OF_FATE)
     const pois = FILTER_ByFactionName(QUERY_GetAllVillages(), FACTION_POI_ALL)
@@ -233,7 +229,7 @@ const _DBBPlacementTiers = () => {
             OUTPUT_PlacementAddExcludeProximityRule(friendlyVillages, placement.friendlyVillagesMin, BSHARP_PLACEMENT.requireAll)
             OUTPUT_PlacementAddExcludeProximityRule(homesteads, placement.maMin, BSHARP_PLACEMENT.requireAll)
             OUTPUT_PlacementAddExcludeProximityRule(pois, placement.poiMin, BSHARP_PLACEMENT.requireAll)
-            OUTPUT_PlacementAddExcludeOceanProximityRule(400)
+            OUTPUT_PlacementAddExcludeOceanProximityRule(300)
             // Exclude player
             OUTPUT_PlacementAddExcludeProximityRule(GetPlayers(), placement.playersMin, BSHARP_PLACEMENT.requireAll)
 
@@ -423,14 +419,13 @@ const _CampaignAct2Start = () => {
     LISTENFOR_VillageDestroyed({
         snippet: campaignActsVal.snippets.act2BaseDestroyed,
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: FACTION_NAME_OBSTACLE,
+        factionName: FACTION_NAME_FROST,
         despawned: false
     })
-
     LISTENFOR_VillageDestroyed({
         snippet: campaignActsVal.snippets.act2BaseDestroyed,
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-        factionName: FACTION_NAME_FROST,
+        factionName: FACTION_NAME_OBSTACLE,
         despawned: false
     })
 
@@ -860,8 +855,8 @@ const _InvasionStartAct2 = () => {
     //Set invasion turn active for all factions
     OUTPUT_SetGlobalVariable("invasionFactionInvasionActionsTempDisabled" + FACTION_NAME_ATTACK, 1)
     OUTPUT_SetGlobalVariable("invasionFactionInvasionActionsTempDisabled" + FACTION_NAME_DEFEND, 1)
-    OUTPUT_SetGlobalVariable("invasionFactionInvasionActionsTempDisabled" + FACTION_NAME_OBSTACLE, 1)
     OUTPUT_SetGlobalVariable("invasionFactionInvasionActionsTempDisabled" + FACTION_NAME_FROST, 1)
+    OUTPUT_SetGlobalVariable("invasionFactionInvasionActionsTempDisabled" + FACTION_NAME_OBSTACLE, 1)
 
     // Reset all global actions days tracking to 9999
     SetupAllGlobalInvasionActionTracking()
@@ -936,7 +931,7 @@ const _CampaignAct3AStart = () => {
     //move players near the wof to not be near the wof
     const playersNearWof = FILTER_ByDistance(QUERY_GetAllPlayers(), wofVillageEntity, 600) // covers the area around the wof where the final base spawns
     if (HasEntities(playersNearWof)) {
-        const randomVillage = RandomEntity(FILTER_ByFactionName(QUERY_GetAllAliveVillages(),CULTURE_NAME_VILLAGERS))
+        const randomVillage = RandomEntity(FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN]))
         OUTPUT_TeleportFastTravel(playersNearWof, randomVillage)
     }
 
@@ -1137,13 +1132,6 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
             factionName: FACTION_NAME_OBSTACLE,
             villageSize: BASE_SIZE_BOSS
         })
-        LISTENFOR_VillagePlanned({
-            snippet: campaignActsVal.testSnippet.testSnippetDestroyPigFactionBoss,
-            ownerVillageId: OWNER_VILLAGE_OPT_OUT,
-            factionName: FACTION_NAME_FROST,
-            villageSize: BASE_SIZE_BOSS
-        })
-
         for (const factionName of CULTURE_NAME_VILLAGERS) {
             LISTENFOR_PlayerEnteredVillage({
                 snippet: "pev_player_enetered_village_fast_travel_check",
@@ -1152,7 +1140,6 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.campaignActsEnabled, (ruleValue) => {
                 villageSize: BASE_SIZE_SMALL
             })
         }
-        
 
         //EE listeners for testing campaign acts
         LISTENFOR_ExternalEvent({
@@ -1307,9 +1294,6 @@ const CheckIfAct2IsOver = () => {
     if (!QUERY_GetGlobalVariable("obstacleBossKilled")) {
         return false
     }
-    if (!QUERY_GetGlobalVariable("frostBossKilled")) {
-        return false
-    }
 
     return true
 }
@@ -1406,9 +1390,6 @@ SNIPPET_ExternalEvent(campaignActsVal.testSnippet.testSnippetStartAct2, () => {
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_golemstone", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_golemwood", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_creeper_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_silverfish_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_zombie_rally", 1, false)
         OUTPUT_ServerMapSetKeyValue(MAP_KEY.VILLAGE_RESOURCE_VISIBILITY, MAP_VISIBILITY.VISIBLE)
@@ -1446,9 +1427,6 @@ SNIPPET_ExternalEvent(campaignActsVal.testSnippet.testSnippetStartAct2WithArriva
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_golemstone", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_golemwood", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_creeper_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_silverfish_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_zombie_rally", 1, false)
         OUTPUT_ServerMapSetKeyValue(MAP_KEY.VILLAGE_RESOURCE_VISIBILITY, MAP_VISIBILITY.VISIBLE)
@@ -1493,9 +1471,6 @@ SNIPPET_ExternalEvent(campaignActsVal.testSnippet.testSnippetStartAct3A, () => {
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_golemstone", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_golemwood", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_creeper_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_silverfish_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_zombie_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_support", 1, false)
@@ -1506,12 +1481,6 @@ SNIPPET_ExternalEvent(campaignActsVal.testSnippet.testSnippetStartAct3A, () => {
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_skeleton", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_creeper", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_creeper", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_spider", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_spider", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_slime", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_slime", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spawner_silverfish", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_battle_view_silverfish", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_remaining_wof_upgrades", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "battle_view_unlock", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "advanced_direct_unlock", 1, false)
@@ -1551,9 +1520,6 @@ SNIPPET_ExternalEvent(campaignActsVal.testSnippet.testSnippetStartEpilogue, () =
         _CampaignAct3AEnd()
         OUTPUT_RemoveAmbienceTimeOfDayOverride()
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_creeper_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_spider_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_slime_rally", 1, false)
-        OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_silverfish_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_skeleton_rally", 1, false)
         OUTPUT_AddOrRemoveTeamResource(TEAM_BLUE, "unlock_zombie_rally", 1, false)
         OUTPUT_ServerMapSetKeyValue(MAP_KEY.VILLAGE_RESOURCE_VISIBILITY, MAP_VISIBILITY.VISIBLE)
@@ -1648,10 +1614,6 @@ const _SetBossDestroyedForBossBase = (factionName) => {
         OUTPUT_SetGlobalVariable("obstacleBossKilled", 1)
         OUTPUT_AddOrSubtractObjectiveProgress("objectives.defeatSpore", 1)
     }
-    if (factionName === FACTION_NAME_FROST) {
-        OUTPUT_SetGlobalVariable("frostBossKilled", 1)
-        OUTPUT_AddOrSubtractObjectiveProgress("objectives.defeatFrost", 1)
-    }
 }
 
 const _ClearAllPiglinBases = () => {
@@ -1688,11 +1650,6 @@ const _ForceDisableFactionRoamingPiglin = (factionName) => {
             break
         case FACTION_NAME_OBSTACLE:
             GV_ROAMING_PIGLIN_OBSTACLE_FACTION_SPAWNERS.forEach((roamingGV) => {
-                OUTPUT_SetGlobalVariable(roamingGV, 1)
-            })
-            break
-        case FACTION_NAME_FROST:
-            GV_ROAMING_PIGLIN_FROST_FACTION_SPAWNERS.forEach((roamingGV) => {
                 OUTPUT_SetGlobalVariable(roamingGV, 1)
             })
             break

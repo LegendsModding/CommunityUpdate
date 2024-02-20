@@ -8,20 +8,20 @@ const basePlacementConfig = {
     minDistanceToMobAllianceOccupationBases: {
         [FACTION_NAME_ATTACK]: 325,
         [FACTION_NAME_DEFEND]: 275,
-        [FACTION_NAME_FROST]: 400,
+        [FACTION_NAME_FROST]: 275,
         [FACTION_NAME_OBSTACLE]: 400
     },
     biomePreferences: {
-        [FACTION_NAME_ATTACK]: ["forest", "frostlands", "grasslands", "drylands", "brokenlands", "brokenlands_ridge"],
+        [FACTION_NAME_ATTACK]: ["forest", "grasslands", "drylands", "brokenlands", "brokenlands_ridge"],
         [FACTION_NAME_DEFEND]: ["mountain_parent_valleys"],
-        [FACTION_NAME_OBSTACLE]: ["wetlands", "jungle"],
-        [FACTION_NAME_FROST]: ["frostlands"]
+        [FACTION_NAME_FROST]: ["frostlands"],
+        [FACTION_NAME_OBSTACLE]: ["wetlands", "jungle"]
     },
     maxElevationAllowed: {
-        [FACTION_NAME_ATTACK]: 60,
-        [FACTION_NAME_DEFEND]: 170,
-        [FACTION_NAME_OBSTACLE]: 80,
-        [FACTION_NAME_FROST]: 120
+        [FACTION_NAME_ATTACK]: 50,
+        [FACTION_NAME_DEFEND]: 150,
+        [FACTION_NAME_FROST]: 150,
+        [FACTION_NAME_OBSTACLE]: 70
     },
     claimedAreaRadius: {        // specific to bases - the radius of claimed area to bring in with the base
         [FACTION_NAME_ATTACK]: {
@@ -32,11 +32,11 @@ const basePlacementConfig = {
             default: 350,
             [BASE_SIZE_BOSS]: 500
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             default: 350,
             [BASE_SIZE_BOSS]: 500
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             default: 350,
             [BASE_SIZE_BOSS]: 500
         }
@@ -48,10 +48,10 @@ const basePlacementConfig = {
         [FACTION_NAME_DEFEND]: {
             default: 0
         },
-        [FACTION_NAME_OBSTACLE]: {
+        [FACTION_NAME_FROST]: {
             default: 0
         },
-        [FACTION_NAME_FROST]: {
+        [FACTION_NAME_OBSTACLE]: {
             default: 0
         }
     }
@@ -69,26 +69,26 @@ const outpostPlacementConfig = {
     minDistanceToMobAllianceOccupationBases: {
         [FACTION_NAME_ATTACK]: 250,
         [FACTION_NAME_DEFEND]: 250,
-        [FACTION_NAME_OBSTACLE]: 250,
-        [FACTION_NAME_FROST]: 250
+        [FACTION_NAME_FROST]: 250,
+        [FACTION_NAME_OBSTACLE]: 250
     },
     biomePreferences: {
-        [FACTION_NAME_ATTACK]: ["forest", "frostlands", "grasslands", "drylands", "brokenlands", "brokenlands_ridge"],
+        [FACTION_NAME_ATTACK]: ["forest", "grasslands", "drylands", "brokenlands", "brokenlands_ridge"],
         [FACTION_NAME_DEFEND]: ["mountain_parent_valleys"],
-        [FACTION_NAME_OBSTACLE]: ["wetlands", "jungle"],
-        [FACTION_NAME_FROST]: ["frostlands"]
+        [FACTION_NAME_FROST]: ["frostlands"],
+        [FACTION_NAME_OBSTACLE]: ["wetlands", "jungle"]
     },
     maxElevationAllowed: {
         [FACTION_NAME_ATTACK]: 999,
         [FACTION_NAME_DEFEND]: 999,
-        [FACTION_NAME_OBSTACLE]: 999,
-        [FACTION_NAME_FROST]: 999
+        [FACTION_NAME_FROST]: 999,
+        [FACTION_NAME_OBSTACLE]: 999
     },
     textureStampPadding: {  // in case the texture stamp has too much / too little padding, we can adjust the padding here
         [FACTION_NAME_ATTACK]: 0,
         [FACTION_NAME_DEFEND]: 0,
-        [FACTION_NAME_OBSTACLE]: 0,
-        [FACTION_NAME_FROST]: 0
+        [FACTION_NAME_FROST]: 0,
+        [FACTION_NAME_OBSTACLE]: 0
     }
 }
 
@@ -140,8 +140,8 @@ const _GetHordeClusterPosition = (horde) => {
     const hordeClusterNames = {
         [FACTION_NAME_ATTACK]: "attack_cluster",
         [FACTION_NAME_DEFEND]: "defend_cluster",
-        [FACTION_NAME_OBSTACLE]: "obstacle_cluster",
-        [FACTION_NAME_FROST]: "frost_cluster"
+        [FACTION_NAME_FROST]: "frost_cluster",
+        [FACTION_NAME_OBSTACLE]: "obstacle_cluster"
     }
     const clusterSlotName = hordeClusterNames[horde]
 
@@ -159,7 +159,7 @@ const _GetHordeClusterPosition = (horde) => {
 // There is only one slot per each mob alliance so this is safe.
 const _GetMobAllianceOccupationBases = () => {
     const occupationBases = []
-    const mobIds = ["creeper", "skeleton", "spider", "silverfish", "slime", "zombie"]
+    const mobIds = ["creeper", "skeleton", "spider", "zombie"]
     for (const mob of mobIds) {
         const occupationBaseSlot = maOccupationVal[mob].baseSlot
         OUTPUT_PlacementStart()
@@ -525,14 +525,14 @@ const PlacePiglinBase = (horde, size) => {
                 minimumPresenceToKeepFromStomping: 1
             },
             {
-                factions: [FACTION_NAME_OBSTACLE],
+                factions: [FACTION_NAME_FROST],
                 sizes: BASE_SIZE_ALL_PORTALS,
                 alive: true,
                 dead: false,
                 minimumPresenceToKeepFromStomping: 1
             },
             {
-                factions: [FACTION_NAME_FROST],
+                factions: [FACTION_NAME_OBSTACLE],
                 sizes: BASE_SIZE_ALL_PORTALS,
                 alive: true,
                 dead: false,

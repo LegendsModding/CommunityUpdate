@@ -2,8 +2,8 @@ const upgradeHordeMessages = {
     //Notification messages per horde
     [FACTION_NAME_ATTACK]: "invasion_upgrade_base_attack",
     [FACTION_NAME_DEFEND]: "invasion_upgrade_base_defend",
-    [FACTION_NAME_OBSTACLE]: "invasion_upgrade_base_obstacle",
-    [FACTION_NAME_FROST]: "invasion_upgrade_base_frost"
+    [FACTION_NAME_FROST]: "invasion_upgrade_base_frost",
+    [FACTION_NAME_OBSTACLE]: "invasion_upgrade_base_obstacle"
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -54,20 +54,19 @@ const occupationValPiglins = {
             { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, count: 1, reinforce: 0, diminish: 1, unitTag: "portalguard" }
         ]
     },
-    [FACTION_NAME_OBSTACLE]: {
+    [FACTION_NAME_FROST]: {
         abandonedTickTime: 60,
-        villageDamagePerTick: 360,
+        villageDamagePerTick: 320,
         occupyingUnits: [
-            { unit: PIGLIN_ARCHETYPE.RUNT, count: 16, reinforce: 4, diminish: 4, unitTag: "runt" },
-            { unit: PIGLIN_ARCHETYPE.GRUNTER, count: 31, reinforce: 6, diminish: 5, unitTag: "grunter" },
-            { unit: PIGLIN_ARCHETYPE.GRENADIER, count: 7, reinforce: 2, diminish: 2, unitTag: "grenadier" },
-            { unit: PIGLIN_ARCHETYPE.ENGINEER, count: 2, reinforce: 0, diminish: 1, unitTag: "engineer" },
-            { unit: PIGLIN_ARCHETYPE.SEEKER, count: 0, reinforce: 0, diminish: 5, unitTag: "seeker" },
-            { unit: PIGLIN_ARCHETYPE.MEDIC, count: 4, reinforce: 1, diminish: 1, unitTag: "medic" },
-            { unit: PIGLIN_ARCHETYPE.LAVA_LAUNCHER, count: 1, reinforce: 0, diminish: 1, unitTag: "piggo_lava_launcher" }
+            { unit: PIGLIN_ARCHETYPE.RUNT, count: 36, reinforce: 5, diminish: 5, unitTag: "runt" },
+            { unit: PIGLIN_ARCHETYPE.GRUNTER, count: 21, reinforce: 6, diminish: 2, unitTag: "grunter" },
+            { unit: PIGLIN_ARCHETYPE.BRUISER, count: 9, reinforce: 1, diminish: 2, unitTag: "bruiser" },
+            { unit: PIGLIN_ARCHETYPE.ENGINEER, count: 0, reinforce: 0, diminish: 0, unitTag: "engineer" },
+            { unit: PIGLIN_ARCHETYPE.MEDIC, count: 5, reinforce: 0, diminish: 0, unitTag: "medic" },
+            { unit: PIGLIN_ARCHETYPE.PORTAL_GUARD, count: 1, reinforce: 0, diminish: 1, unitTag: "portalguard" }
         ]
     },
-    [FACTION_NAME_FROST]: {
+    [FACTION_NAME_OBSTACLE]: {
         abandonedTickTime: 60,
         villageDamagePerTick: 360,
         occupyingUnits: [
@@ -122,7 +121,7 @@ const occupationValMobs = {
         id: "spider",
         mobArchetype: "badger:mob_spider",
         numberOfCages: 3,
-        amountInCage: 2,
+        amountInCage: 3,
         messaging: {
             freeOccupation: "village_attack_occupation_free_spiders",
             beginOccupation: "village_attack_occupation_begin_spiders",
@@ -131,36 +130,6 @@ const occupationValMobs = {
             endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_spiders",
             repairReminder: "village_attack_occupation_repair_reminder_spiders",
             repairMessage: "village_attack_occupation_repair_message_spiders"
-        }
-    },
-    [MOB_ALLIANCE_NAME_SLIME]: {
-        id: "slime",
-        mobArchetype: "badger:mob_slime",
-        numberOfCages: 3,
-        amountInCage: 2,
-        messaging: {
-            freeOccupation: "village_attack_occupation_free_slimes",
-            beginOccupation: "village_attack_occupation_begin_slimes",
-            abandonOccupation: "village_attack_occupation_abandon_slimes",
-            endOccupationSequence: "village_attack_occupation_end_slimes_sequence",
-            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_slimes",
-            repairReminder: "village_attack_occupation_repair_reminder_slimes",
-            repairMessage: "village_attack_occupation_repair_message_slimes"
-        }
-    },
-    [MOB_ALLIANCE_NAME_SILVERFISH]: {
-        id: "silverfish",
-        mobArchetype: "badger:mob_silverfish",
-        numberOfCages: 3,
-        amountInCage: 2,
-        messaging: {
-            freeOccupation: "village_attack_occupation_free_silverfishes",
-            beginOccupation: "village_attack_occupation_begin_silverfishes",
-            abandonOccupation: "village_attack_occupation_abandon_silverfishes",
-            endOccupationSequence: "village_attack_occupation_end_silverfishes_sequence",
-            endOccupationWithRepairRemaining: "village_attack_occupation_end_repair_remaining_silverfishes",
-            repairReminder: "village_attack_occupation_repair_reminder_silverfishes",
-            repairMessage: "village_attack_occupation_repair_message_silverfishes"
         }
     },
     [MOB_ALLIANCE_NAME_ZOMBIE]: {
@@ -801,7 +770,7 @@ SNIPPET_PresenceEntered("pe_setup_occupation_state", (triggerEntity, _count, pay
     const villageFaction = QUERY_GetFactionNameFromVillageID(villageId)
 
     //VO
-    if (villageFaction === CULTURE_NAME_FOREST || villageFaction === CULTURE_NAME_FROSTLANDS || villageFaction === CULTURE_NAME_DRYLANDS || villageFaction === CULTURE_NAME_WETLANDS || villageFaction === CULTURE_NAME_GRASSLANDS || villageFaction === CULTURE_NAME_BROKENLANDS|| villageFaction === CULTURE_NAME_FATEFUL_LAND || villageFaction === CULTURE_NAME_JUNGLE || villageFaction === CULTURE_NAME_MOUNTAIN) {
+    if (villageFaction === CULTURE_NAME_FOREST || villageFaction === CULTURE_NAME_FROSTLANDS || villageFaction === CULTURE_NAME_DRYLANDS || villageFaction === CULTURE_NAME_WETLANDS || villageFaction === CULTURE_NAME_GRASSLANDS || villageFaction === CULTURE_NAME_BROKENLANDS || villageFaction === CULTURE_NAME_FATEFUL_LAND || villageFaction === CULTURE_NAME_JUNGLE || villageFaction === CULTURE_NAME_MOUNTAIN) {
         if (DoOnce(occupationValCommon.vars.villageOccupiedSeenFirstTime)) {
             PlayPresentationActionToAll(occupationValCommon.VO.villageOccupiedSeenFirstTime)
         }
@@ -1033,7 +1002,7 @@ const FinishVillageOccupation = (villageId, hordeName) => {
         ForEachEntities(nearbyPlayers, (playerEntity) => {
             OUTPUT_AnnounceSequencePlayer(mobData.messaging.endOccupationSequence, playerEntity)
             //Only show this message if we haven't visited it  before AND its a village, not a mob homestead
-            if (shouldWeAnnounceFastTravel && (CULTURE_NAME_VILLAGERS.includes(villageFaction))) {
+            if (shouldWeAnnounceFastTravel && villageFaction === CULTURE_NAME_VILLAGERS) {
                 OUTPUT_AnnouncePlayer("village_unlock_fast_travel", [], playerEntity)
             }
         })

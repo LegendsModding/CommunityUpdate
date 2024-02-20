@@ -8,8 +8,8 @@ const VARIATION_ID_OBJECTIVE = 1
 
 const debugUseVillageVariation = ""
 
-const ALLOWED_VILLAGE_VARIATION_SIZES = [BASE_SIZE_OUTPOST, BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_SIZE_LARGE, BASE_SIZE_PIGLIN_ZOMBIE, BASE_SIZE_PIGLIN_CREEPER, BASE_SIZE_PIGLIN_SKELETON, BASE_SIZE_PIGLIN_SPIDER, BASE_SIZE_PIGLIN_SLIME, BASE_SIZE_PIGLIN_SILVERFISH]
-const ALLOWED_VILLAGE_VARIATION_FACTIONS = [FACTION_NAME_ATTACK, FACTION_NAME_DEFEND, FACTION_NAME_OBSTACLE, FACTION_NAME_FROST]
+const ALLOWED_VILLAGE_VARIATION_SIZES = [BASE_SIZE_OUTPOST, BASE_SIZE_SMALL, BASE_SIZE_MEDIUM, BASE_SIZE_LARGE, BASE_SIZE_PIGLIN_ZOMBIE, BASE_SIZE_PIGLIN_CREEPER, BASE_SIZE_PIGLIN_SKELETON, BASE_SIZE_PIGLIN_SPIDER]
+const ALLOWED_VILLAGE_VARIATION_FACTIONS = [FACTION_NAME_ATTACK, FACTION_NAME_DEFEND, FACTION_NAME_FROST, FACTION_NAME_OBSTACLE]
 
 // FLAVOURS
 const VILLAGE_VARIATION_DEFAULT = "villageVariationDefault"
@@ -71,12 +71,6 @@ const variationVals = {
                 },
                 piglin_occupying_spider_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_slime_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_silverfish_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
                 }
             },
             {
@@ -117,11 +111,45 @@ const variationVals = {
                 },
                 piglin_occupying_spider_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
+                }
+            },
+            {
+                factionName: FACTION_NAME_FROST,
+                frontlineA: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_A, amount: 1 },
+                        { type: VILLAGE_VARIATION_B, amount: 1 },
+                        { type: VILLAGE_VARIATION_C, amount: 1 }
+                    ]
                 },
-                piglin_occupying_slime_mob_alliance: {
+                small: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_A, amount: 1 },
+                        { type: VILLAGE_VARIATION_B, amount: 1 }
+                    ]
+                },
+                medium: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_A, amount: 1 },
+                        { type: VILLAGE_VARIATION_B, amount: 1 }
+                    ]
+                },
+                large: {
+                    deck: [{ type: VILLAGE_VARIATION_A, amount: 1 }]
+                },
+                boss: {
+                    deck: [{ type: VILLAGE_VARIATION_DEFAULT, amount: 1 }]
+                },
+                piglin_occupying_zombie_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
                 },
-                piglin_occupying_silverfish_mob_alliance: {
+                piglin_occupying_creeper_mob_alliance: {
+                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
+                },
+                piglin_occupying_skeleton_mob_alliance: {
+                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
+                },
+                piglin_occupying_spider_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
                 }
             },
@@ -159,55 +187,6 @@ const variationVals = {
                     deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
                 },
                 piglin_occupying_spider_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_slime_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_silverfish_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                }
-            },
-            {
-                factionName: FACTION_NAME_FROST,
-                frontlineA: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_A, amount: 1 },
-                        { type: VILLAGE_VARIATION_B, amount: 1 },
-                        { type: VILLAGE_VARIATION_C, amount: 1 }
-                    ]
-                },
-                small: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_A, amount: 1 },
-                        { type: VILLAGE_VARIATION_B, amount: 1 }
-                    ]
-                },
-                medium: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_A, amount: 1 },
-                        { type: VILLAGE_VARIATION_B, amount: 1 }
-                    ]
-                },
-                large: {
-                    deck: [{ type: VILLAGE_VARIATION_A, amount: 1 }]
-                },
-                piglin_occupying_zombie_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_creeper_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_skeleton_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_spider_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_slime_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
-                },
-                piglin_occupying_silverfish_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_B, amount: 1 }]
                 }
             }
@@ -262,12 +241,6 @@ const variationVals = {
                 },
                 piglin_occupying_spider_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_slime_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_silverfish_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
                 }
             },
             {
@@ -309,11 +282,46 @@ const variationVals = {
                 },
                 piglin_occupying_spider_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
+                }
+            },
+            {
+                factionName: FACTION_NAME_FROST,
+                frontlineA: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_RAIDING_PARTY, amount: 1 }
+                    ]
                 },
-                piglin_occupying_slime_mob_alliance: {
+                small: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 },
+                        { type: VILLAGE_VARIATION_STRUCTURE_DESTRUCTION, amount: 0 }
+                    ]
+                },
+                medium: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 },
+                        { type: VILLAGE_VARIATION_STRUCTURE_DESTRUCTION, amount: 1 }
+                    ]
+                },
+                large: {
+                    deck: [
+                        { type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 },
+                        { type: VILLAGE_VARIATION_STRUCTURE_DESTRUCTION, amount: 1 }
+                    ]
+                },
+                boss: {
                     deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
                 },
-                piglin_occupying_silverfish_mob_alliance: {
+                piglin_occupying_zombie_mob_alliance: {
+                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
+                },
+                piglin_occupying_creeper_mob_alliance: {
+                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
+                },
+                piglin_occupying_skeleton_mob_alliance: {
+                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
+                },
+                piglin_occupying_spider_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
                 }
             },
@@ -352,56 +360,6 @@ const variationVals = {
                     deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
                 },
                 piglin_occupying_spider_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_slime_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_silverfish_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                }
-            },
-            {
-                factionName: FACTION_NAME_FROST,
-                frontlineA: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_RAIDING_PARTY, amount: 1 }
-                    ]
-                },
-                small: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 },
-                        { type: VILLAGE_VARIATION_STRUCTURE_DESTRUCTION, amount: 0 }
-                    ]
-                },
-                medium: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 },
-                        { type: VILLAGE_VARIATION_STRUCTURE_DESTRUCTION, amount: 1 }
-                    ]
-                },
-                large: {
-                    deck: [
-                        { type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 },
-                        { type: VILLAGE_VARIATION_STRUCTURE_DESTRUCTION, amount: 1 }
-                    ]
-                },
-                piglin_occupying_zombie_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_creeper_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_skeleton_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_spider_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_slime_mob_alliance: {
-                    deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
-                },
-                piglin_occupying_silverfish_mob_alliance: {
                     deck: [{ type: VILLAGE_VARIATION_OBJECTIVE_DEFAULT, amount: 1 }]
                 }
             }

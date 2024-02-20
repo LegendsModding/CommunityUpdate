@@ -41,7 +41,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "grasslands_1_village",
             "weight": 3,
-            "mandatory_threshold": "0.9"
+            "mandatory_threshold": 0.9
           }
         },
         {
@@ -53,7 +53,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "grasslands_1",
             "weight": 1,
-            "mandatory_threshold": 0.4
+            "mandatory_threshold": 0.8
           }
         },
         {
@@ -65,7 +65,7 @@
             "distance_to_zero_score": 20,
             "tag_parent": "grasslands_2",
             "weight": 1,
-            "mandatory_threshold": 0.4
+            "mandatory_threshold": 0.8
           }
         },
         {
@@ -123,7 +123,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "frostlands_1_village",
             "weight": 3,
-            "mandatory_threshold": "0.9"
+            "mandatory_threshold": 0.9
           }
         },
         {
@@ -205,7 +205,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "brokenlands_1_village",
             "weight": 3,
-            "mandatory_threshold": "0.9"
+            "mandatory_threshold": 0.9
           }
         },
         {
@@ -288,7 +288,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "drylands_1_village",
             "weight": 3,
-            "mandatory_threshold": "0.9"
+            "mandatory_threshold": 0.9
           }
         },
         {
@@ -370,7 +370,7 @@
             "distance_to_zero_score": 10,
             "tag_parent": "wetlands_1_village",
             "weight": 3,
-            "mandatory_threshold": "0.9"
+            "mandatory_threshold": 0.9
           }
         },
         {

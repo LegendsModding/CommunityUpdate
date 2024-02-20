@@ -573,13 +573,13 @@ const invasionDrawData_Custom = {
             phases: []
         },
         {
-            factionName: FACTION_NAME_OBSTACLE,
-            deckName: "obstacle_faction_invasion_deck",
+            factionName: FACTION_NAME_FROST,
+            deckName: "frost_faction_invasion_deck",
             phases: []
         },
         {
-            factionName: FACTION_NAME_FROST,
-            deckName: "frost_faction_invasion_deck",
+            factionName: FACTION_NAME_OBSTACLE,
+            deckName: "obstacle_faction_invasion_deck",
             phases: []
         }
     ]

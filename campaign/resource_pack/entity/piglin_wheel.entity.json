@@ -95,8 +95,7 @@
       "materials": {
         "mat_fx_frozen_256": "mat_fx_frozen_256",
         "mat_fx_spore_healed_256": "mat_fx_spore_healed_256",
-        "mat_piglin_wheel": "mat_piglin_wheel",
-        "mat_piglin_wheel_face": "mat_piglin_wheel_face"
+        "mat_piglin_wheel": "mat_piglin_wheel"
       },
       "particle_effects": {
         "fx_cine_boss_intro_dust": "badger:fx_cine_pigdillo_intro_dust",

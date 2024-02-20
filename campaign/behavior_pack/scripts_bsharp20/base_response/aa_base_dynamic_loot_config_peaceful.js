@@ -64,7 +64,37 @@ const baseLootTables_Peaceful = {
                 loot: [Resource("gold", 50), Resource("xp_common", 50)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SILVERFISH]: [
+        [BASE_SIZE_MEDIUM]: [
+            {
+                name: baseLootVariations.GOLD,
+                weight: 2,
+                loot: [Resource("gold", 75), Resource("xp_common", 100)]
+            }
+        ],
+        [BASE_SIZE_LARGE]: [
+            {
+                name: baseLootVariations.GOLD,
+                weight: 2,
+                loot: [Resource("gold", 150), Resource("xp_common", 150)]
+            }
+        ]
+    },
+    [FACTION_NAME_FROST]: {
+        [BASE_SIZE_OUTPOST]: [
+            {
+                name: baseLootVariations.GOLD,
+                weight: 1,
+                loot: [Resource("gold", 50)]
+            }
+        ],
+        [BASE_SIZE_SMALL]: [
+            {
+                name: baseLootVariations.GOLD,
+                weight: 2,
+                loot: [Resource("gold", 50), Resource("xp_common", 50)]
+            }
+        ],
+        [BASE_SIZE_PIGLIN_CREEPER]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,
@@ -102,50 +132,6 @@ const baseLootTables_Peaceful = {
             }
         ],
         [BASE_SIZE_PIGLIN_ZOMBIE]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 50), Resource("xp_common", 50)]
-            }
-        ],
-        [BASE_SIZE_PIGLIN_SLIME]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 50), Resource("xp_common", 50)]
-            }
-        ],
-        [BASE_SIZE_MEDIUM]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 75), Resource("xp_common", 100)]
-            }
-        ],
-        [BASE_SIZE_LARGE]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 150), Resource("xp_common", 150)]
-            }
-        ]
-    },
-    [FACTION_NAME_FROST]: {
-        [BASE_SIZE_OUTPOST]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 1,
-                loot: [Resource("gold", 50)]
-            }
-        ],
-        [BASE_SIZE_SMALL]: [
-            {
-                name: baseLootVariations.GOLD,
-                weight: 2,
-                loot: [Resource("gold", 50), Resource("xp_common", 50)]
-            }
-        ],
-        [BASE_SIZE_PIGLIN_SPIDER]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,

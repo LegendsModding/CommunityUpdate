@@ -94,10 +94,7 @@
       "materials": {
         "mat_fx_frozen_128": "mat_fx_frozen_128",
         "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
-        "mat_piglin_runt_horn": "mat_piglin_runt_horn",
-        "mat_piglin_runt_horn_attack": "mat_piglin_runt_horn_attack",
-        "mat_piglin_runt_horn_defend": "mat_piglin_runt_horn_defend",
-        "mat_piglin_runt_horn_obstacle": "mat_piglin_runt_horn_obstacle"
+        "mat_piglin_runt_horn": "mat_piglin_runt_horn"
       },
       "particle_effects": {
         "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_small",

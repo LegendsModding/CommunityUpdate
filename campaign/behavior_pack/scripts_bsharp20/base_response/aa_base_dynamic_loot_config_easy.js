@@ -78,7 +78,7 @@ const baseLootTables = {
             }
         ]
     },
-    [FACTION_NAME_OBSTACLE]: {
+    [FACTION_NAME_FROST]: {
         [BASE_SIZE_OUTPOST]: [
             {
                 name: baseLootVariations.GOLD,
@@ -93,7 +93,7 @@ const baseLootTables = {
                 loot: [Resource("gold", 25), Resource("xp_common", 10)]
             }
         ],
-        [BASE_SIZE_PIGLIN_ZOMBIE]: [
+        [BASE_SIZE_PIGLIN_CREEPER]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,
@@ -115,7 +115,7 @@ const baseLootTables = {
             }
         ]
     },
-    [FACTION_NAME_FROST]: {
+    [FACTION_NAME_OBSTACLE]: {
         [BASE_SIZE_OUTPOST]: [
             {
                 name: baseLootVariations.GOLD,
@@ -130,7 +130,7 @@ const baseLootTables = {
                 loot: [Resource("gold", 25), Resource("xp_common", 10)]
             }
         ],
-        [BASE_SIZE_PIGLIN_SPIDER]: [
+        [BASE_SIZE_PIGLIN_ZOMBIE]: [
             {
                 name: baseLootVariations.GOLD,
                 weight: 2,

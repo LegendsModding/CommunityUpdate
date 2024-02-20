@@ -37,7 +37,7 @@ const HordeBasesSetup_Peaceful = {
         numInitialBases: 3,
         numInitialOutposts: 4,
         establishmentPace: 2,
-        firstAttackDelayDays: 1
+        firstAttackDelayDays: 1000
     }
 }
 
@@ -104,18 +104,6 @@ const HordeEntryConfig_Peaceful = {
             mobAlliancePool: [MOB_ALLIANCE_NAME_SPIDER],
             occupation: {
                 [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_CREEPER))
-            }
-        },
-        {
-            mobAlliancePool: [MOB_ALLIANCE_NAME_SLIME],
-            occupation: {
-                [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_SPIDER))
-            }
-        },
-        {
-            mobAlliancePool: [MOB_ALLIANCE_NAME_SILVERFISH],
-            occupation: {
-                [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_SLIME))
             }
         }
     ]

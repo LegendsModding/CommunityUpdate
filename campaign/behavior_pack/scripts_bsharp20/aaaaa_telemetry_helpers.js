@@ -387,12 +387,6 @@ const TelemetrySendInvasionAttackConcludedEvent = (attackV2Data, defenseSuccess,
         case MOB_ALLIANCE_NAME_SPIDER:
             attackArea = "spider_mob_alliance"
             break
-        case MOB_ALLIANCE_NAME_SLIME:
-            attackArea = "slime_mob_alliance"
-            break
-        case MOB_ALLIANCE_NAME_SILVERFISH:
-            attackArea = "silverfish_mob_alliance"
-            break
         case MOB_ALLIANCE_NAME_ZOMBIE:
             attackArea = "zombie_mob_alliance"
             break

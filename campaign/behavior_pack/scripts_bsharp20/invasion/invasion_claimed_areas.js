@@ -63,7 +63,7 @@ const CLAIMED_AREAS_DEF = {
             }
         }
     },
-    [FACTION_NAME_OBSTACLE]: {
+    [FACTION_NAME_FROST]: {
         PREGAME_CENTER: {
             radius: 400,
             numOutposts: 2
@@ -95,7 +95,7 @@ const CLAIMED_AREAS_DEF = {
             }
         }
     },
-    [FACTION_NAME_FROST]: {
+    [FACTION_NAME_OBSTACLE]: {
         PREGAME_CENTER: {
             radius: 400,
             numOutposts: 2

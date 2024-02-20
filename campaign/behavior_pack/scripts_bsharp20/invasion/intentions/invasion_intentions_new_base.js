@@ -2,8 +2,8 @@ const newBaseHordeMessages = {
     //Notification messages per horde
     [FACTION_NAME_ATTACK]: "invasion_new_base_attack",
     [FACTION_NAME_DEFEND]: "invasion_new_base_defend",
-    [FACTION_NAME_OBSTACLE]: "invasion_new_base_obstacle",
-    [FACTION_NAME_FROST]: "invasion_new_base_frost"
+    [FACTION_NAME_FROST]: "invasion_new_base_frost",
+    [FACTION_NAME_OBSTACLE]: "invasion_new_base_obstacle"
 }
 
 const _SuccessfulBuilding = (faction) => {

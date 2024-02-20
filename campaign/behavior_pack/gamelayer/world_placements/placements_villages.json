@@ -18,10 +18,10 @@
           "precise_distance": {
             "chunk_distance_from_parent": [
               40,
-              60
+              80
             ],
             "tag_parent": "wellOfFate",
-            "jitter_angle": 0,
+            "jitter_angle": 0.01,
             "initial_direction": 180
           }
         }
@@ -71,7 +71,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -81,8 +81,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              100,
+              300],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -93,7 +93,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -147,7 +147,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -168,8 +168,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              100,
+              300],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -180,7 +180,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -234,7 +234,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -244,8 +244,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              100,
+              300],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -256,7 +256,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -310,7 +310,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -320,8 +320,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              80,
+              250],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -343,7 +343,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -397,7 +397,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -407,8 +407,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              100,
+              300],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -419,7 +419,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -473,7 +473,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -483,8 +483,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              100,
+              300],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -506,7 +506,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -559,8 +559,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              130,
-              550],
+              100,
+              300],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 1
@@ -570,7 +570,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               10,
-              60
+              80
             ],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "wellOfFate",
@@ -634,7 +634,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -644,8 +644,8 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
-              450],
+              100,
+              350],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
             "weight": 2,
@@ -656,7 +656,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              250
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",
@@ -710,7 +710,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               80,
-              500],
+              300],
             "distance_to_zero_score": 20,
             "tag_parent": "claimed_area_cluster",
             "weight": 1,
@@ -720,7 +720,7 @@
         {
           "distance": {
             "chunk_distance_from_parent": [
-              150,
+              80,
               450],
             "distance_to_zero_score": [10, 20],
             "tag_parent": "village",
@@ -743,7 +743,7 @@
           "distance": {
             "chunk_distance_from_parent": [
               0,
-              300
+              160
             ],
             "distance_to_zero_score": [15, 35],
             "tag_parent": "center",

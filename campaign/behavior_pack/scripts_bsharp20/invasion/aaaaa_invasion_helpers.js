@@ -21,9 +21,9 @@ const invasionHelperVal = {
                     playerDistance: OPTIONAL distance from player
                 }
                 */
-                { wofMinDistance: 1800, wofMaxDistance: 2400, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
-                { wofMinDistance: 1600, wofMaxDistance: 2600, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
-                { wofMinDistance: 1500, wofMaxDistance: 2800, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
+                { wofMinDistance: 1800, wofMaxDistance: 3100, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
+                { wofMinDistance: 1600, wofMaxDistance: 3300, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
+                { wofMinDistance: 1500, wofMaxDistance: 3500, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
                 { otherFactionDistance: 600, otherDistance: 400 }
             ],
             basePlacement: {
@@ -38,8 +38,8 @@ const invasionHelperVal = {
                         playerDistance: OPTIONAL distance from player
                     }
                     */
-                    { ownMinDistance: 600, ownMaxDistance: 1000, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
-                    { ownMinDistance: 600, ownMaxDistance: 1000, outpostDistance: 250, otherDistance: 500 },
+                    { ownMinDistance: 600, ownMaxDistance: 900, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
+                    { ownMinDistance: 600, ownMaxDistance: 900, outpostDistance: 250, otherDistance: 500 },
                     { ownMinDistance: 400, ownMaxDistance: 1300, outpostDistance: 100, otherDistance: 500 }
                 ],
                 initRuleList: [
@@ -52,8 +52,8 @@ const invasionHelperVal = {
                         playerDistance: OPTIONAL distance from player
                     }
                     */
-                    { ownMinDistance: 500, ownMaxDistance: 750, otherDistance: 300, playerDistance: 500 },
-                    { ownMinDistance: 500, ownMaxDistance: 750, otherDistance: 300 }
+                    { ownMinDistance: 500, ownMaxDistance: 850, otherDistance: 300, playerDistance: 500 },
+                    { ownMinDistance: 500, ownMaxDistance: 850, otherDistance: 300 }
                 ]
             },
             defensiveOutpostPlacement: [
@@ -66,8 +66,8 @@ const invasionHelperVal = {
                     playerDistance: OPTIONAL distance from player
                 }
                 */
-                { ownMinDistance: 300, ownMaxDistance: 800, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 300, ownMaxDistance: 800, outpostDistance: 200, otherDistance: 200 },
+                { ownMinDistance: 300, ownMaxDistance: 900, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 300, ownMaxDistance: 900, outpostDistance: 200, otherDistance: 200 },
                 { ownMinDistance: 300, ownMaxDistance: 1200, outpostDistance: 200, otherDistance: 200 },
                 { outpostDistance: 200, otherDistance: 200 }
             ],
@@ -81,8 +81,8 @@ const invasionHelperVal = {
                     playerDistance: OPTIONAL distance from player
                 }
                 */
-                { ownMinDistance: 300, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 300, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200 },
+                { ownMinDistance: 300, ownMaxDistance: 600, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 300, ownMaxDistance: 600, outpostDistance: 150, otherDistance: 200 },
                 { ownMinDistance: 300, outpostDistance: 150, otherDistance: 200 }
             ],
             offensiveOutpostPlacement: [
@@ -95,9 +95,9 @@ const invasionHelperVal = {
                     playerDistance: OPTIONAL distance away fro player
                 }
                 */
-                { ownMaxDistance: 780, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 },
-                { ownMaxDistance: 1560, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 },
-                { ownMaxDistance: 1560, villageMaxDistance: 680, allDistance: 275 }
+                { ownMaxDistance: 780, villageMaxDistance: 880, allDistance: 275, playerDistance: 500 },
+                { ownMaxDistance: 1560, villageMaxDistance: 880, allDistance: 275, playerDistance: 500 },
+                { ownMaxDistance: 1560, villageMaxDistance: 880, allDistance: 275 }
             ],
             farBasePlacement: [
                 /*
@@ -111,8 +111,8 @@ const invasionHelperVal = {
                 }
                 */
                 { ownMaxDistance: 1600, villageMaxDistance: 800, ownMinDistance: 1000, allDistance: 500, outpostDistance: 250, playerDistance: 500 },
-                { ownMaxDistance: 1600, villageMaxDistance: 1400, ownMinDistance: 1000, allDistance: 500, outpostDistance: 250, playerDistance: 500 },
-                { ownMaxDistance: 1600, villageMaxDistance: 3000, ownMinDistance: 800, allDistance: 500, outpostDistance: 250, playerDistance: 500 },
+                { ownMaxDistance: 1600, villageMaxDistance: 1500, ownMinDistance: 1000, allDistance: 500, outpostDistance: 250, playerDistance: 500 },
+                { ownMaxDistance: 1600, villageMaxDistance: 2700, ownMinDistance: 800, allDistance: 500, outpostDistance: 250, playerDistance: 500 },
                 { ownMaxDistance: 2400, villageMaxDistance: 3000, ownMinDistance: 800, allDistance: 500 }
             ]
         },
@@ -128,94 +128,43 @@ const invasionHelperVal = {
                 [BASE_SIZE_BOSS]: "badger:piglin_defend_boss"
             },
             firstBasePlacement: [
-                { wofMinDistance: 1800, wofMaxDistance: 2400, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
-                { wofMinDistance: 1600, wofMaxDistance: 2700, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
-                { wofMinDistance: 1500, wofMaxDistance: 2900, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
+                { wofMinDistance: 1800, wofMaxDistance: 2500, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
+                { wofMinDistance: 1600, wofMaxDistance: 2800, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
+                { wofMinDistance: 1500, wofMaxDistance: 3000, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
                 { otherFactionDistance: 600, otherDistance: 400 }
             ],
             basePlacement: {
                 newBaseAdjacents: [BASE_SIZE_LARGE, BASE_SIZE_MEDIUM, BASE_SIZE_SMALL],
                 ruleList: [
                     { ownMinDistance: 500, ownMaxDistance: 950, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
-                    { ownMinDistance: 500, ownMaxDistance: 1050, outpostDistance: 250, otherDistance: 500 },
+                    { ownMinDistance: 500, ownMaxDistance: 950, outpostDistance: 250, otherDistance: 500 },
                     { ownMinDistance: 400, ownMaxDistance: 1400, outpostDistance: 250, otherDistance: 500 }
                 ],
                 initRuleList: [
-                    { ownMinDistance: 400, ownMaxDistance: 700, otherDistance: 300, playerDistance: 500 },
-                    { ownMinDistance: 400, ownMaxDistance: 700, otherDistance: 300 }
+                    { ownMinDistance: 400, ownMaxDistance: 900, otherDistance: 300, playerDistance: 500 },
+                    { ownMinDistance: 400, ownMaxDistance: 900, otherDistance: 300 }
                 ]
             },
             defensiveOutpostPlacement: [
-                { ownMinDistance: 250, ownMaxDistance: 850, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 250, ownMaxDistance: 850, outpostDistance: 200, otherDistance: 200 },
-                { ownMinDistance: 250, ownMaxDistance: 1200, outpostDistance: 200, otherDistance: 200 },
+                { ownMinDistance: 250, ownMaxDistance: 950, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 250, ownMaxDistance: 950, outpostDistance: 200, otherDistance: 200 },
+                { ownMinDistance: 250, ownMaxDistance: 1400, outpostDistance: 200, otherDistance: 200 },
                 { outpostDistance: 200, otherDistance: 200 }
             ],
             initDefensiveOutpostPlacement: [
-                { ownMinDistance: 200, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 200, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200 },
+                { ownMinDistance: 200, ownMaxDistance: 800, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 200, ownMaxDistance: 800, outpostDistance: 150, otherDistance: 200 },
                 { ownMinDistance: 200, outpostDistance: 150, otherDistance: 200 }
             ],
             offensiveOutpostPlacement: [
-                { ownMaxDistance: 580, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 },
-                { ownMaxDistance: 1160, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 }
+                { ownMaxDistance: 880, villageMaxDistance: 980, allDistance: 275, playerDistance: 500 },
+                { ownMaxDistance: 1460, villageMaxDistance: 980, allDistance: 275, playerDistance: 500 }
             ],
             farBasePlacement: [
-                { ownMaxDistance: 1400, villageMaxDistance: 800, ownMinDistance: 800, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 1400, villageMaxDistance: 1400, ownMinDistance: 800, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 1400, villageMaxDistance: 2400, ownMinDistance: 600, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 2000, villageMaxDistance: 2400, ownMinDistance: 600, allDistance: 500 }
-            ]
-        },
-        obstacleFaction: {
-            name: FACTION_NAME_OBSTACLE,
-            villageArchetype: "badger:piglin_obstacle",
-            villageArchetypes: {
-                [BASE_SIZE_VANGUARD]: "badger:piglin_obstacle_small",
-                [BASE_SIZE_OUTPOST]: "badger:piglin_obstacle_outpost",
-                [BASE_SIZE_SMALL]: "badger:piglin_obstacle_small",
-                [BASE_SIZE_MEDIUM]: "badger:piglin_obstacle_medium",
-                [BASE_SIZE_LARGE]: "badger:piglin_obstacle_large",
-                [BASE_SIZE_BOSS]: "badger:piglin_obstacle_boss"
-            },
-            firstBasePlacement: [
-                { wofMinDistance: 1800, wofMaxDistance: 2400, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
-                { wofMinDistance: 1600, wofMaxDistance: 2700, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
-                { wofMinDistance: 1500, wofMaxDistance: 2900, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
-                { otherFactionDistance: 600, otherDistance: 400 }
-            ],
-            basePlacement: {
-                newBaseAdjacents: [BASE_SIZE_LARGE, BASE_SIZE_MEDIUM, BASE_SIZE_SMALL],
-                ruleList: [
-                    { ownMinDistance: 550, ownMaxDistance: 1000, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
-                    { ownMinDistance: 550, ownMaxDistance: 1000, outpostDistance: 250, otherDistance: 500 },
-                    { ownMinDistance: 400, ownMaxDistance: 1400, outpostDistance: 250, otherDistance: 500 }
-                ],
-                initRuleList: [
-                    { ownMinDistance: 400, ownMaxDistance: 700, otherDistance: 300, playerDistance: 500 },
-                    { ownMinDistance: 400, ownMaxDistance: 700, otherDistance: 300 }
-                ]
-            },
-            defensiveOutpostPlacement: [
-                { ownMinDistance: 250, ownMaxDistance: 850, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 250, ownMaxDistance: 850, outpostDistance: 200, otherDistance: 200 },
-                { ownMinDistance: 250, ownMaxDistance: 1200, outpostDistance: 200, otherDistance: 200 },
-                { outpostDistance: 200, otherDistance: 200 }
-            ],
-            initDefensiveOutpostPlacement: [
-                { ownMinDistance: 200, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 200, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200 },
-                { ownMinDistance: 200, outpostDistance: 150, otherDistance: 200 }
-            ],
-            offensiveOutpostPlacement: [
-                { ownMaxDistance: 680, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 },
-                { ownMaxDistance: 1360, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 }
-            ],
-            farBasePlacement: [
-                { ownMaxDistance: 1500, villageMaxDistance: 800, ownMinDistance: 850, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 1500, villageMaxDistance: 1500, ownMinDistance: 850, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 1500, villageMaxDistance: 2600, ownMinDistance: 600, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 2200, villageMaxDistance: 2900, ownMinDistance: 600, allDistance: 500 }
+                { ownMaxDistance: 1700, villageMaxDistance: 800, ownMinDistance: 800, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 1700, villageMaxDistance: 1600, ownMinDistance: 800, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 1700, villageMaxDistance: 2400, ownMinDistance: 600, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 2400, villageMaxDistance: 2500, ownMinDistance: 600, allDistance: 500 }
             ]
         },
         frostFaction: {
@@ -230,43 +179,94 @@ const invasionHelperVal = {
                 [BASE_SIZE_BOSS]: "badger:piglin_frost_boss"
             },
             firstBasePlacement: [
-                { wofMinDistance: 1800, wofMaxDistance: 2400, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
-                { wofMinDistance: 1600, wofMaxDistance: 2700, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
-                { wofMinDistance: 1500, wofMaxDistance: 2900, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
+                { wofMinDistance: 1800, wofMaxDistance: 2500, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
+                { wofMinDistance: 1600, wofMaxDistance: 2900, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
+                { wofMinDistance: 1500, wofMaxDistance: 3200, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
                 { otherFactionDistance: 600, otherDistance: 400 }
             ],
             basePlacement: {
                 newBaseAdjacents: [BASE_SIZE_LARGE, BASE_SIZE_MEDIUM, BASE_SIZE_SMALL],
                 ruleList: [
-                    { ownMinDistance: 550, ownMaxDistance: 1000, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
-                    { ownMinDistance: 550, ownMaxDistance: 1000, outpostDistance: 250, otherDistance: 500 },
+                    { ownMinDistance: 500, ownMaxDistance: 950, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
+                    { ownMinDistance: 500, ownMaxDistance: 950, outpostDistance: 250, otherDistance: 500 },
                     { ownMinDistance: 400, ownMaxDistance: 1400, outpostDistance: 250, otherDistance: 500 }
                 ],
                 initRuleList: [
-                    { ownMinDistance: 400, ownMaxDistance: 700, otherDistance: 300, playerDistance: 500 },
-                    { ownMinDistance: 400, ownMaxDistance: 700, otherDistance: 300 }
+                    { ownMinDistance: 400, ownMaxDistance: 900, otherDistance: 300, playerDistance: 500 },
+                    { ownMinDistance: 400, ownMaxDistance: 900, otherDistance: 300 }
                 ]
             },
             defensiveOutpostPlacement: [
-                { ownMinDistance: 250, ownMaxDistance: 850, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 250, ownMaxDistance: 850, outpostDistance: 200, otherDistance: 200 },
-                { ownMinDistance: 250, ownMaxDistance: 1200, outpostDistance: 200, otherDistance: 200 },
+                { ownMinDistance: 250, ownMaxDistance: 950, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 250, ownMaxDistance: 950, outpostDistance: 200, otherDistance: 200 },
+                { ownMinDistance: 250, ownMaxDistance: 1300, outpostDistance: 200, otherDistance: 200 },
                 { outpostDistance: 200, otherDistance: 200 }
             ],
             initDefensiveOutpostPlacement: [
-                { ownMinDistance: 200, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
-                { ownMinDistance: 200, ownMaxDistance: 500, outpostDistance: 150, otherDistance: 200 },
+                { ownMinDistance: 200, ownMaxDistance: 800, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 200, ownMaxDistance: 800, outpostDistance: 150, otherDistance: 200 },
                 { ownMinDistance: 200, outpostDistance: 150, otherDistance: 200 }
             ],
             offensiveOutpostPlacement: [
-                { ownMaxDistance: 680, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 },
-                { ownMaxDistance: 1360, villageMaxDistance: 680, allDistance: 275, playerDistance: 500 }
+                { ownMaxDistance: 980, villageMaxDistance: 980, allDistance: 275, playerDistance: 500 },
+                { ownMaxDistance: 1460, villageMaxDistance: 980, allDistance: 275, playerDistance: 500 }
             ],
             farBasePlacement: [
-                { ownMaxDistance: 1500, villageMaxDistance: 800, ownMinDistance: 850, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 1500, villageMaxDistance: 1400, ownMinDistance: 850, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 1500, villageMaxDistance: 2500, ownMinDistance: 600, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
-                { ownMaxDistance: 2200, villageMaxDistance: 2500, ownMinDistance: 600, allDistance: 500 }
+                { ownMaxDistance: 1800, villageMaxDistance: 900, ownMinDistance: 800, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 1800, villageMaxDistance: 1500, ownMinDistance: 800, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 1800, villageMaxDistance: 2400, ownMinDistance: 600, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 2400, villageMaxDistance: 2400, ownMinDistance: 600, allDistance: 500 }
+            ]
+        },
+        obstacleFaction: {
+            name: FACTION_NAME_OBSTACLE,
+            villageArchetype: "badger:piglin_obstacle",
+            villageArchetypes: {
+                [BASE_SIZE_VANGUARD]: "badger:piglin_obstacle_small",
+                [BASE_SIZE_OUTPOST]: "badger:piglin_obstacle_outpost",
+                [BASE_SIZE_SMALL]: "badger:piglin_obstacle_small",
+                [BASE_SIZE_MEDIUM]: "badger:piglin_obstacle_medium",
+                [BASE_SIZE_LARGE]: "badger:piglin_obstacle_large",
+                [BASE_SIZE_BOSS]: "badger:piglin_obstacle_boss"
+            },
+            firstBasePlacement: [
+                { wofMinDistance: 1800, wofMaxDistance: 2500, playerDistance: 500, otherFactionDistance: 3200, otherDistance: 750 },
+                { wofMinDistance: 1600, wofMaxDistance: 2800, playerDistance: 500, otherFactionDistance: 2800, otherDistance: 500 },
+                { wofMinDistance: 1500, wofMaxDistance: 3000, playerDistance: 500, otherFactionDistance: 2500, otherDistance: 400 },
+                { otherFactionDistance: 600, otherDistance: 400 }
+            ],
+            basePlacement: {
+                newBaseAdjacents: [BASE_SIZE_LARGE, BASE_SIZE_MEDIUM, BASE_SIZE_SMALL],
+                ruleList: [
+                    { ownMinDistance: 550, ownMaxDistance: 900, outpostDistance: 250, otherDistance: 500, playerDistance: 500 },
+                    { ownMinDistance: 550, ownMaxDistance: 900, outpostDistance: 250, otherDistance: 500 },
+                    { ownMinDistance: 400, ownMaxDistance: 1400, outpostDistance: 250, otherDistance: 500 }
+                ],
+                initRuleList: [
+                    { ownMinDistance: 400, ownMaxDistance: 800, otherDistance: 300, playerDistance: 500 },
+                    { ownMinDistance: 400, ownMaxDistance: 800, otherDistance: 300 }
+                ]
+            },
+            defensiveOutpostPlacement: [
+                { ownMinDistance: 250, ownMaxDistance: 950, outpostDistance: 200, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 250, ownMaxDistance: 950, outpostDistance: 200, otherDistance: 200 },
+                { ownMinDistance: 250, ownMaxDistance: 1400, outpostDistance: 200, otherDistance: 200 },
+                { outpostDistance: 200, otherDistance: 200 }
+            ],
+            initDefensiveOutpostPlacement: [
+                { ownMinDistance: 200, ownMaxDistance: 800, outpostDistance: 150, otherDistance: 200, playerDistance: 500 },
+                { ownMinDistance: 200, ownMaxDistance: 800, outpostDistance: 150, otherDistance: 200 },
+                { ownMinDistance: 200, outpostDistance: 150, otherDistance: 200 }
+            ],
+            offensiveOutpostPlacement: [
+                { ownMaxDistance: 980, villageMaxDistance: 980, allDistance: 275, playerDistance: 500 },
+                { ownMaxDistance: 1660, villageMaxDistance: 980, allDistance: 275, playerDistance: 500 }
+            ],
+            farBasePlacement: [
+                { ownMaxDistance: 1900, villageMaxDistance: 900, ownMinDistance: 850, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 1900, villageMaxDistance: 1500, ownMinDistance: 850, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 1900, villageMaxDistance: 2500, ownMinDistance: 600, allDistance: 500, outpostDistance: 200, playerDistance: 500 },
+                { ownMaxDistance: 2700, villageMaxDistance: 2600, ownMinDistance: 600, allDistance: 500 }
             ]
         }
     }
@@ -284,10 +284,8 @@ const PLACEMENT_NAME = {
     MOUNTAIN_VILLAGE: "mountain_1_village",
     CREEPER_ALLIANCE: "creeper_alliance",
     SKELETON_ALLIANCE: "skeleton_alliance",
-    ZOMBIE_ALLIANCE: "zombie_alliance",
-    SLIME_ALLIANCE: "slime_alliance",
-    SILVERFISH_ALLIANCE: "silverfish_alliance",
-    SPIDER_ALLIANCE: "spider_alliance"
+    SPIDER_ALLIANCE: "spider_alliance",
+    ZOMBIE_ALLIANCE: "zombie_alliance"
 }
 
 const PLACEMENT_NAME_MAP = {
@@ -304,10 +302,8 @@ const PLACEMENT_NAME_MAP = {
     //Mob alliances
     [PLACEMENT_NAME.CREEPER_ALLIANCE]: "creeperPiglinBaseSlot",
     [PLACEMENT_NAME.SKELETON_ALLIANCE]: "skeletonPiglinBaseSlot",
-    [PLACEMENT_NAME.ZOMBIE_ALLIANCE]: "zombiePiglinBaseSlot",
     [PLACEMENT_NAME.SPIDER_ALLIANCE]: "spiderPiglinBaseSlot",
-    [PLACEMENT_NAME.SILVERFISH_ALLIANCE]: "silverfishPiglinBaseSlot",
-    [PLACEMENT_NAME.SLIME_ALLIANCE]: "slimePiglinBaseSlot"
+    [PLACEMENT_NAME.ZOMBIE_ALLIANCE]: "zombiePiglinBaseSlot"
 }
 
 const PIGLIN_CAMP_PLACEMENT_NAME_MAP = {
@@ -319,7 +315,7 @@ const PIGLIN_CAMP_PLACEMENT_NAME_MAP = {
     [PLACEMENT_NAME.BROKENLANDS_VILLAGE]: "act1CampsSlotBrokenlands",
     [PLACEMENT_NAME.FATEFUL_LAND_VILLAGE]: "act1CampsSlotFatefulLand",
     [PLACEMENT_NAME.JUNGLE_VILLAGE]: "act1CampsSlotJungle",
-    [PLACEMENT_NAME.MOUNTAIN_VILLAGE]: "act1CampsSlotMountain",
+    [PLACEMENT_NAME.MOUNTAIN_VILLAGE]: "act1CampsSlotMountain"
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -354,12 +350,12 @@ const GetAliveFactions = () => {
         result.push(FACTION_NAME_DEFEND)
     }
 
-    if (QUERY_GetGlobalVariable(INVASION_PHASE_STATE.OBSTACLE_HORDE_DESTROYED) === 0) {
-        result.push(FACTION_NAME_OBSTACLE)
-    }
-
     if (QUERY_GetGlobalVariable(INVASION_PHASE_STATE.FROST_HORDE_DESTROYED) === 0) {
         result.push(FACTION_NAME_FROST)
+    }
+
+    if (QUERY_GetGlobalVariable(INVASION_PHASE_STATE.OBSTACLE_HORDE_DESTROYED) === 0) {
+        result.push(FACTION_NAME_OBSTACLE)
     }
 
     return result
@@ -367,7 +363,7 @@ const GetAliveFactions = () => {
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const GetAllFriendlyVillages = () => {
-    return FILTER_ByFactionName(QUERY_GetAllAliveVillages(), [CULTURE_NAME_FOREST, CULTURE_NAME_FROSTLANDS, CULTURE_NAME_DRYLANDS, CULTURE_NAME_WETLANDS, CULTURE_NAME_GRASSLANDS, CULTURE_NAME_BROKENLANDS, CULTURE_NAME_FATEFUL_LAND, CULTURE_NAME_JUNGLE, CULTURE_NAME_MOUNTAIN])
+    return FILTER_ByFactionName(QUERY_GetAllAliveVillages(), CULTURE_NAME_VILLAGERS)
 }
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars

@@ -94,10 +94,7 @@
       "materials": {
         "mat_fx_frozen_128": "mat_fx_frozen_128",
         "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
-        "mat_piglin_grunter_shooter": "mat_piglin_grunter_shooter",
-        "mat_piglin_grunter_shooter_attack": "mat_piglin_grunter_shooter_attack",
-        "mat_piglin_grunter_shooter_defend": "mat_piglin_grunter_shooter_defend",
-        "mat_piglin_grunter_shooter_obstacle": "mat_piglin_grunter_shooter_obstacle"
+        "mat_piglin_grunter_shooter": "mat_piglin_grunter_shooter"
       },
       "particle_effects": {
         "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_small",
@@ -116,7 +113,7 @@
             "hit_react": "1"
           }
         ],
-        "initialize": ["variable.attack_used = 0;","variable.rod_geo_vis = 1;"]
+        "initialize": ["variable.attack_used = 0;"]
       },
       "sound_effects": {
         //BOAR TODO

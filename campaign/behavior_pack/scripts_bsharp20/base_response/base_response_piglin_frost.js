@@ -170,13 +170,13 @@ const FrostCompositions = {
     }
 }
 const FrostDiscreteEncounters = {
-    frostBlockade: {
+    sporeBlockade: {
         unitComposition: FrostCompositions.grunters,
         buildableTag: "pigKnockbackTower",
         leashDistance: 100,
         returnDistance: 50
     },
-    blazedFrost: {
+    blazedSpore: {
         unitComposition: FrostCompositions.grunters,
         buildableTag: "pigArrowTower",
         leashDistance: 100,
@@ -236,13 +236,13 @@ const FrostDiscreteEncounters = {
         leashDistance: 100,
         returnDistance: 50
     },
-    frostGrowth: {
+    sporeGrowth: {
         unitComposition: FrostCompositions.genadiers,
         buildableTag: "pigArrowTower",
         leashDistance: 100,
         returnDistance: 50
     },
-    frostCannons: {
+    sporeCannons: {
         unitComposition: FrostCompositions.longrangeSiege,
         buildableTag: "pigKnockbackTower",
         leashDistance: 100,
@@ -254,7 +254,7 @@ const FrostDiscreteEncounters = {
         leashDistance: 100,
         returnDistance: 50
     },
-    frostScore: {
+    sporeScore: {
         unitComposition: FrostCompositions.rotSquad,
         buildableTag: "pigSpreader",
         leashDistance: 100,
@@ -266,7 +266,7 @@ const FrostDiscreteEncounters = {
         leashDistance: 100,
         returnDistance: 50
     },
-    frostSpread: {
+    sporeSpread: {
         unitComposition: FrostCompositions.grunterPatrol,
         buildableTag: "frostComposition1",
         leashDistance: 100,
@@ -1034,7 +1034,7 @@ const frostVal = {
             //----------------------------------------------------
             villageVariationB1: {
                 ["de0"]: {
-                    type: FrostDiscreteEncounters.blazedFrost,
+                    type: FrostDiscreteEncounters.blazedSpore,
                     amount: 1
                 },
                 ["de1"]: {
@@ -1048,7 +1048,7 @@ const frostVal = {
             },
             villageVariationB2: {
                 ["de0"]: {
-                    type: FrostDiscreteEncounters.blazedFrost,
+                    type: FrostDiscreteEncounters.blazedSpore,
                     amount: 2
                 },
                 ["de1"]: {
@@ -1062,7 +1062,7 @@ const frostVal = {
             },
             villageVariationB3: {
                 ["de0"]: {
-                    type: FrostDiscreteEncounters.blazedFrost,
+                    type: FrostDiscreteEncounters.blazedSpore,
                     amount: 3
                 },
                 ["de1"]: {
@@ -1185,7 +1185,7 @@ const frostVal = {
                     amount: 5
                 },
                 ["de1"]: {
-                    type: FrostDiscreteEncounters.frostScore,
+                    type: FrostDiscreteEncounters.sporeScore,
                     amount: 3
                 },
                 ["de2"]: {
@@ -1217,7 +1217,7 @@ const frostVal = {
                     amount: 2
                 },
                 ["de2"]: {
-                    type: FrostDiscreteEncounters.frostScore,
+                    type: FrostDiscreteEncounters.sporeScore,
                     amount: 2
                 },
                 ["de3"]: {
@@ -1840,7 +1840,7 @@ SNIPPET_SpatialPartitionEntered("spe_frost_general", (triggerEntity, intruderEnt
             })
 
             LISTENFOR_CinematicFinished({
-                snippet: "frostSpawnFrostoss",
+                snippet: "frostSpawnFrostBoss",
                 ownerVillageId: villageId,
                 cinematicName: frostVal.cinematic.bossIntro
             })
@@ -1871,7 +1871,7 @@ SNIPPET_SpatialPartitionEntered("spe_frost_general", (triggerEntity, intruderEnt
     // Escalation
     if (!IsBaseEscalated(triggerEntity, frostVal.escalation.phase1.name)) {
         MarkBaseAsEscalated(triggerEntity, frostVal.escalation.phase1.name)
-        SetEscalationValueAndUpdateAllBarracksForVillageVariation(villageId, Val.barracks, 1)
+        SetEscalationValueAndUpdateAllBarracksForVillageVariation(villageId, frostVal.barracks, 1)
     }
 })
 
@@ -1902,7 +1902,7 @@ SNIPPET_BuildingComplete("bc_frost_portal", (portalEntity) => {
             ownerVillageId: villageId,
             triggerEntity: frostInnerKeepTV
         })
-        //LISTEN FOR frost Faction DESTRUCTION
+        //LISTEN FOR FROST Faction DESTRUCTION
         LISTENFOR_VillageDestroyed({
             snippet: "vd_frost_faction_portal",
             ownerVillageId: villageId,
@@ -2533,7 +2533,7 @@ SNIPPET_EntitySpawned("es_set_appearance_to_frost_faction_piglins", (piglinEntit
 })
 
 /* -------------------------------------------------------------------------- */
-/*                           frostBOSS Scripting                           */
+/*                           FROSTBOSS Scripting                           */
 /* -------------------------------------------------------------------------- */
 
 const _TeleportBoss = (villageId, BossEntity, Stage) => {
@@ -2660,7 +2660,7 @@ const _onFrostBossBaseDefeated = (villageId) => {
     if (DoOnce("frostBossKilled")) {
         UnlockJournalEntry(JOURNAL_UNLOCKS.HORDE_FROST_BOSS)
 
-        OUTPUT_AddOrSubtractObjectiveProgress("objectives.defeatFrost", 1)
+        OUTPUT_AddOrSubtractObjectiveProgress("objectives.defeatSpore", 1)
 
         const villageEntity = GetVillageEntityFromID(villageId)
         OUTPUT_MapSetKeyValue(villageEntity, MAP_KEY.BOSS, MAP_BOSS.DEFEATED)
@@ -3708,7 +3708,7 @@ SNIPPET_VillageGenerated("vg_frost", (villageId, _payload) => {
     OUTPUT_SetNamedDeck(INSTANT_BUILD_DECK_NAME + villageId, baseDeck)
 })
 
-/* -------------------- BUILDING PLAN FOR frost Faction -------------------- */
+/* -------------------- BUILDING PLAN FOR FROST Faction -------------------- */
 
 //const frostBaseMiniDeckNames = ["keepPrimary", "keepSecondary", "keepUtility", "keepPlateau", "northPlatform", "eastPlatform", "southPlatform", "westPlatform", "northeastPlatform", "southeastPlatform", "northwestPlatform", "southwestPlatform", "northSpires", "eastSpires", "southSpires", "westSpires", "northeastSpires", "southeastSpires", "southwestSpires", "northwestSpires"]
 //const frostOutpostMiniDeckNames = ["core", "crates", "middle", "outer"]

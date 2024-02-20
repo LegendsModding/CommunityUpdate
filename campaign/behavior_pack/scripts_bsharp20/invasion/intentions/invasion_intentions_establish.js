@@ -8,12 +8,12 @@ const establishFactionMessages = [
         message: "invasion_new_base_defend"
     },
     {
-        faction: FACTION_NAME_OBSTACLE,
-        message: "invasion_new_base_obstacle"
-    },
-    {
         faction: FACTION_NAME_FROST,
         message: "invasion_new_base_frost"
+    },
+    {
+        faction: FACTION_NAME_OBSTACLE,
+        message: "invasion_new_base_obstacle"
     }
 ]
 

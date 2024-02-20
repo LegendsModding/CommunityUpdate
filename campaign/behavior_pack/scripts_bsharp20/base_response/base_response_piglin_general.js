@@ -14,15 +14,13 @@ const piglinGeneralVal = {
         shieldDown: {
             [FACTION_NAME_ATTACK]: "hrd02_c50b_shield_down",
             [FACTION_NAME_DEFEND]: "hrd01_c50b_shield_down",
-            [FACTION_NAME_OBSTACLE]: "hrd03_c50b_shield_down",
-            [FACTION_NAME_FROST]: "hrd04_c50b_shield_down"
+            [FACTION_NAME_FROST]: "hrd04_c50b_shield_down",
+            [FACTION_NAME_OBSTACLE]: "hrd03_c50b_shield_down"
         },
         occupationPortalDestuction: {
             zombieOccupationCine: "mob02_c04_zombie_portaldestruction",
             skeletonOccupationCine: "mob03_c04_skeleton_portaldestruction",
-            slimeOccupationCine: "mob03_c04_skeleton_portaldestruction",
-            silverfishOccupationCine: "mob03_c04_skeleton_portaldestruction",
-            spiderOccupationCine: "mob03_c04_skeleton_portaldestruction",
+            spiderOccupationCine: "mob04_c04_spider_portaldestruction",
             creeperOccupationCine: "mob01_c04_creeper_portaldestruction"
         },
         portalDestruction: {
@@ -37,30 +35,24 @@ const piglinGeneralVal = {
                 bossMadCine: "hrd01_c06_defend_portaldestruction_v1b",
                 lastPortalDestroyedCine: "hrd01_c06_defend_portaldestruction_v2"
             },
+            [FACTION_NAME_FROST]: {
+                firstPortalDestroyedCine: "hrd01_c06_frost_portaldestruction_v3",
+                bossMadCine: "hrd01_c06_frost_portaldestruction_v1b",
+                lastPortalDestroyedCine: "hrd01_c06_frost_portaldestruction_v2"
+            },
             [FACTION_NAME_OBSTACLE]: {
                 firstPortalDestroyedCine: "hrd03_c06_obs_portaldestruction_v3",
                 bossMadCine: "hrd03_c06_obs_portaldestruction_v1b",
                 lastPortalDestroyedCine: "hrd03_c06_obs_portaldestruction_v2"
             },
-            [FACTION_NAME_FROST]: {
-                firstPortalDestroyedCine: "hrd04_c06_obs_portaldestruction_v3",
-                bossMadCine: "hrd04_c06_obs_portaldestruction_v1b",
-                lastPortalDestroyedCine: "hrd04_c06_obs_portaldestruction_v2"
-            },
             [BASE_SIZE_PIGLIN_CREEPER]: {
                 occupationCine: "mob01_c04_creeper_portaldestruction"
-            },
-            [BASE_SIZE_PIGLIN_SILVERFISH]: {
-                occupationCine: "mob03_c04_skeleton_portaldestruction"
             },
             [BASE_SIZE_PIGLIN_SKELETON]: {
                 occupationCine: "mob03_c04_skeleton_portaldestruction"
             },
-            [BASE_SIZE_PIGLIN_SLIME]: {
-                occupationCine: "mob03_c04_skeleton_portaldestruction"
-            },
             [BASE_SIZE_PIGLIN_SPIDER]: {
-                occupationCine: "mob03_c04_skeleton_portaldestruction"
+                occupationCine: "mob03_c04_spider_portaldestruction"
             },
             [BASE_SIZE_PIGLIN_ZOMBIE]: {
                 occupationCine: "mob02_c04_zombie_portaldestruction"
@@ -71,8 +63,8 @@ const piglinGeneralVal = {
         postShieldDown: {
             [FACTION_NAME_ATTACK]: "piglin_post_lavacoil_destruction_attack",
             [FACTION_NAME_DEFEND]: "piglin_post_lavacoil_destruction_defend",
-            [FACTION_NAME_OBSTACLE]: "piglin_post_lavacoil_destruction_obstacle",
-            [FACTION_NAME_FROST]: "piglin_post_lavacoil_destruction_frost"
+            [FACTION_NAME_FROST]: "piglin_post_lavacoil_destruction_frost",
+            [FACTION_NAME_OBSTACLE]: "piglin_post_lavacoil_destruction_obstacle"
         }
     }
 }

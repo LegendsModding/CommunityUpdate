@@ -94,10 +94,7 @@
       "materials": {
         "mat_fx_frozen_128": "mat_fx_frozen_128",
         "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
-        "mat_piglin_grunter_spear": "mat_piglin_grunter_spear",
-        "mat_piglin_grunter_spear_attack": "mat_piglin_grunter_spear_attack",
-        "mat_piglin_grunter_spear_defend": "mat_piglin_grunter_spear_defend",
-        "mat_piglin_grunter_spear_obstacle": "mat_piglin_grunter_spear_obstacle"
+        "mat_piglin_grunter_spear": "mat_piglin_grunter_spear"
       },
       "particle_effects": {
         "fx_corpse_remove": "badger:fx_shared_piglin_corpse_remove_small",

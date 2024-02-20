@@ -7,27 +7,6 @@
                     "\u0001\u0002\u0003\u0004\u0005__": {
                         "bind_pose_rotation": [
                             0,
-                            0,
-                            0
-                        ]
-                    },
-                    "name": "minecraft_geometry_root_bone",
-                    "parent": "",
-                    "pivot": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "scale": [
-                        1,
-                        1,
-                        1
-                    ]
-                },
-                {
-                    "\u0001\u0002\u0003\u0004\u0005__": {
-                        "bind_pose_rotation": [
-                            0,
                             -180,
                             0
                         ]
@@ -368,7 +347,7 @@
                             0
                         ]
                     },
-                    "name": "arm_left",
+                    "name": "arm2",
                     "parent": "body",
                     "pivot": [
                         -0.25,
@@ -389,7 +368,7 @@
                             0
                         ]
                     },
-                    "name": "arm_right",
+                    "name": "arm",
                     "parent": "body",
                     "pivot": [
                         0.25,
@@ -411,7 +390,7 @@
                         ]
                     },
                     "name": "blazerod",
-                    "parent": "arm_right",
+                    "parent": "arm",
                     "pivot": [
                         0.06874999999999998,
                         -0.40625,
@@ -641,12 +620,12 @@
                             0
                         ]
                     },
-                    "name": "leg_right",
-                    "parent": "body",
+                    "name": "leg",
+                    "parent": "waist",
                     "pivot": [
-                        0.125,
-                        -0.03125,
-                        0
+                        0.0625,
+                        0.40625,
+                        0.0625
                     ],
                     "scale": [
                         1,
@@ -662,11 +641,32 @@
                             0
                         ]
                     },
-                    "name": "leg_left",
-                    "parent": "body",
+                    "name": "leg2",
+                    "parent": "waist",
                     "pivot": [
-                        -0.125,
-                        -0.03125,
+                        -0.1875,
+                        0.40625,
+                        0.0625
+                    ],
+                    "scale": [
+                        1,
+                        1,
+                        1
+                    ]
+                },
+                {
+                    "\u0001\u0002\u0003\u0004\u0005__": {
+                        "bind_pose_rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "name": "minecraft_geometry_root_bone",
+                    "parent": "",
+                    "pivot": [
+                        0,
+                        0,
                         0
                     ],
                     "scale": [
@@ -678,7 +678,7 @@
             ],
             "meshes": [
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -1237,7 +1237,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -1796,7 +1796,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -2355,7 +2355,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -2914,7 +2914,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -3473,7 +3473,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -4032,7 +4032,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -4591,7 +4591,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -5150,7 +5150,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -5709,7 +5709,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -6268,7 +6268,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -6827,7 +6827,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -7386,7 +7386,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -7871,81 +7871,81 @@
                     ],
                     "indices": [
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ],
                         [
-                            "arm_left"
+                            "arm2"
                         ]
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -8430,81 +8430,81 @@
                     ],
                     "indices": [
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ],
                         [
-                            "arm_right"
+                            "arm"
                         ]
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -9063,7 +9063,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -9622,7 +9622,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -10181,7 +10181,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -10740,7 +10740,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -11225,81 +11225,81 @@
                     ],
                     "indices": [
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ],
                         [
-                            "leg_right"
+                            "leg"
                         ]
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -11784,81 +11784,81 @@
                     ],
                     "indices": [
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ],
                         [
-                            "leg_left"
+                            "leg2"
                         ]
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -12417,7 +12417,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -12976,7 +12976,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -13535,7 +13535,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -14094,7 +14094,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -14653,7 +14653,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -15212,7 +15212,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -15771,7 +15771,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -16330,7 +16330,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -16889,7 +16889,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -17448,7 +17448,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -18007,7 +18007,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -18566,7 +18566,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -19125,7 +19125,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -19684,7 +19684,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -20243,7 +20243,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -20802,7 +20802,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -21361,7 +21361,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -21920,7 +21920,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -22479,7 +22479,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -23038,7 +23038,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -23597,7 +23597,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -24156,7 +24156,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -24715,7 +24715,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -25274,7 +25274,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -25833,7 +25833,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -26392,7 +26392,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -26951,7 +26951,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -27510,7 +27510,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -28069,7 +28069,7 @@
                     ]
                 },
                 {
-                    "meta_material": "mat_piglin_spear_thrower",
+                    "meta_material": "mat_piglin_grunter_spear",
                     "normal_sets": [
                         [
                             [
@@ -28629,7 +28629,7 @@
                 }
             ],
             "description": {
-                "identifier": "geometry.piglin_spear_thrower"
+                "identifier": "geometry.piglin_grunter_spear"
             }
         }
     ]

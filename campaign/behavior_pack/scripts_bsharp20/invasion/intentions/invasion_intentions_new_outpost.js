@@ -2,8 +2,8 @@ const newOutpostHordeMessages = {
     //Notification messages per horde
     [FACTION_NAME_ATTACK]: "invasion_new_outpost_attack",
     [FACTION_NAME_DEFEND]: "invasion_new_outpost_defend",
-    [FACTION_NAME_OBSTACLE]: "invasion_new_outpost_obstacle",
-    [FACTION_NAME_FROST]: "invasion_new_outpost_frost"
+    [FACTION_NAME_FROST]: "invasion_new_outpost_frost",
+    [FACTION_NAME_OBSTACLE]: "invasion_new_outpost_obstacle"
 }
 
 const GenerateNewOutpostSource = (faction) => {

@@ -1,41 +1,41 @@
 const HordeBasesSetup_Normal = {
     [FACTION_NAME_ATTACK]: {
         centralBase: BASE_SIZE_LARGE,
-        numSmall: 3,
+        numSmall: 1,
         numMedium: 1,
         numLarge: 0,
-        numInitialBases: 5,
-        numInitialOutposts: 7,
+        numInitialBases: 3,
+        numInitialOutposts: 4,
         establishmentPace: 2,
         firstAttackDelayDays: 1
     },
     [FACTION_NAME_DEFEND]: {
         centralBase: BASE_SIZE_LARGE,
-        numSmall: 3,
+        numSmall: 1,
         numMedium: 1,
         numLarge: 0,
-        numInitialBases: 5,
-        numInitialOutposts: 7,
+        numInitialBases: 3,
+        numInitialOutposts: 4,
         establishmentPace: 2,
         firstAttackDelayDays: 1
     },
     [FACTION_NAME_OBSTACLE]: {
         centralBase: BASE_SIZE_LARGE,
-        numSmall: 3,
+        numSmall: 1,
         numMedium: 1,
         numLarge: 0,
-        numInitialBases: 5,
-        numInitialOutposts: 7,
+        numInitialBases: 3,
+        numInitialOutposts: 4,
         establishmentPace: 2,
         firstAttackDelayDays: 1
     },
     [FACTION_NAME_FROST]: {
         centralBase: BASE_SIZE_LARGE,
-        numSmall: 3,
+        numSmall: 1,
         numMedium: 1,
         numLarge: 0,
-        numInitialBases: 5,
-        numInitialOutposts: 7,
+        numInitialBases: 3,
+        numInitialOutposts: 4,
         establishmentPace: 2,
         firstAttackDelayDays: 1
     }
@@ -104,18 +104,6 @@ const HordeEntryConfig_Normal = {
             mobAlliancePool: [MOB_ALLIANCE_NAME_SPIDER],
             occupation: {
                 [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_CREEPER))
-            }
-        },
-        {
-            mobAlliancePool: [MOB_ALLIANCE_NAME_SLIME],
-            occupation: {
-                [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_SPIDER))
-            }
-        },
-        {
-            mobAlliancePool: [MOB_ALLIANCE_NAME_SILVERFISH],
-            occupation: {
-                [TRIGGER_TIME_IMMEDIATE]: TRIGGER_DaysSince(0, SNAPSHOT_MobAllianceOccupationStarted(MOB_ALLIANCE_NAME_SLIME))
             }
         }
     ]

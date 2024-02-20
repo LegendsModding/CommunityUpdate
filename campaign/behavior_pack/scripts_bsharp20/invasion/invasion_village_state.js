@@ -19,7 +19,7 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.invasionEnabled, (ruleValue) => {
             snippet: "ed_disable_mob_allegaince_invasion",
             ownerVillageId: OWNER_VILLAGE_OPT_OUT
         })
-
+        
         for (const factionName of CULTURE_NAME_VILLAGERS) {
             LISTENFOR_VillageDestroyed({
                 snippet: "vd_destroyed_player_outposts",
@@ -28,15 +28,15 @@ SNIPPET_RuleInitialized(GAME_RULE_NAMES.invasionEnabled, (ruleValue) => {
                 villageSize: VILLAGE_SIZE_PLAYER
             })
         }
-
         for (const factionName of CULTURE_NAME_VILLAGERS) {
-            OUTPUT_DebugLogInvasion(`Setting up vg_setup_village_damaged_state_listeners for ${factionName}`)
             LISTENFOR_VillageGenerated({
                 snippet: "vg_setup_village_damaged_state_listeners",
                 ownerVillageId: OWNER_VILLAGE_OPT_OUT,
                 factionName: factionName
             })
         }
+        
+        
 
         for (const factionName of FACTION_MOB_ALLIANCES) {
             OUTPUT_DebugLogInvasion(`Setting up vg_setup_village_damaged_state_listeners for ${factionName}`)

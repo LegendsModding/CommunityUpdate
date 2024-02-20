@@ -100,12 +100,12 @@
         "mat_fx_frozen_128": "mat_fx_frozen_128",
         //BOAR TODO "mat_fx_ghost_runt": "mat_fx_ghost_runt",
         "mat_fx_spore_healed_128": "mat_fx_spore_healed_128",
-        "mat_piglin_runt_claw": "mat_piglin_runt_claw",
-        "mat_piglin_runt_claw_attack": "mat_piglin_runt_claw_attack",
-        "mat_piglin_runt_claw_defend": "mat_piglin_runt_claw_defend",
+        "mat_piglin_runt_claw": "mat_piglin_runt_claw"
+        //"mat_piglin_runt_claw_attack": "mat_piglin_runt_claw_attack",
+        //"mat_piglin_runt_claw_defend": "mat_piglin_runt_claw_defend",
         //BOAR TODO"mat_piglin_runt_claw_ghost": "mat_piglin_runt_claw_ghost",
         //"mat_piglin_runt_claw_ghost_face": "mat_piglin_runt_claw_ghost_face",
-        "mat_piglin_runt_claw_obstacle": "mat_piglin_runt_claw_obstacle"
+        //"mat_piglin_runt_claw_obstacle": "mat_piglin_runt_claw_obstacle"
       },
       "particle_effects": {
         //BOAR TODO "fx_attack_a": "badger:fx_piglin_runt_claw_attack",
