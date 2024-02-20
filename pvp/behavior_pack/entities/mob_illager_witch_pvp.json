@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:mob_illager_witch",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": true
+    },
+    "mushroom_data": {
+      "function": "Ranged"
+    },
+    "components": {
+      "badger:spawn_costs": {
+        "costs": [
+          {
+            "item": "emerald",
+            "amount": 10 //defult 15
+          },
+          {
+            "item": "coal",
+            "amount": 10
+          }
+        ],
+        "tickets": [
+          {
+            "ticket": "spawn",
+            "amount": 2
+          }
+        ]
+      },
+      "badger:template": {
+        "parent": "badger:mob_illager_witch",
+        "game_mode": "pvp"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "badger:status_effect_poisoned",
+			"runtime_identifier": "badger:status_effect"
+		},
+		"components": {
+			"badger:status": {
+				"applied_name": "poisoned",
+				"default_resistance": {
+					"resisted": false,
+					"time": 10.0,
+					"resistance_persist_time": 0
+				}
+			},
+			"badger:damage_over_time": {
+				"interval": 0.5,
+				"damage": {
+					"damage_amount": 1,
+					"damage_types": [
+						"poison"
+					]
+				}
+			},
+			"badger:negate_status": {
+				"negated_status": [
+					"player_jump",
+					"player_speed"
+				]
+			}
+		}
+	}
+}
