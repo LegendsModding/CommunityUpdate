@@ -17,7 +17,7 @@
 			"requires_online_premium": true,
 			"name": "lcu_campaign",
 			"telemetry_name": "lcu_campaign",
-			"lobby_title": "hbui.lobby.lcu_campaign.title",
+			"lobby_title": "Community Campaign",
 			"invite_detail": "hbui.inviteReceived.lcu_campaignInviteDetail",
 			"invite_panel_text": "hbui.inviteReceivedItem.invite.lcu_campaign",
 			"host_warning_string": "hbui.inviteReceived.hostWarningContentLcu",

@@ -10,7 +10,7 @@
         "name": "The Frozen",
         "description": "Dey cold tho",
         "icon": "ui_map_biomelegend_piglin",
-        "color": [ 0.09, 0.56, 0.42, 1.0 ],
+        "color": [ 0.5, 0.95, 0.96, 1.0 ],
         "health_bar_color": [ 0.74, 0.22, 0.77, 1.0 ],
         "known": true,
         "appearance_name": "frost",
