@@ -1,0 +1,153 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "badger:enchantment_smith",
+      "runtime_identifier": "badger:buildable",
+      "is_summonable": false
+    },
+    "mushroom_data": {
+      "function": "Military",
+      "type": "Player"
+    },
+    "components": {
+      "badger:buildable_presentation": {
+        "icon": "enchantment_smith",
+        "tooltip_title": "structure.enchantment_.mith.title",
+        "tactical_description": "structures.enchantment.smith.tactical_description",
+        "tooltip_description": "structures.enchantment.smith.description",
+        "buildable_category": "utility",
+        "sort_order": 1600
+      },
+      "badger:buildable_structure": {
+        "nbt_file": "enchantment_smith",
+        "build_time": 1,
+        "construction_start_trigger": "on_construction_start",
+        "construction_end_trigger": "on_construction_end",
+        "buildable_placed_player_trigger": "on_building_tower_anti_siege"
+      },
+      "badger:buildable_destruction": {
+        "particle_effect": "badger:fx_destruction_spawner"
+      },
+      "badger:auto_lure": {
+        "lure_archetype": "badger:mob_lure_instant_trigger",
+        "lure_action_id": "lure_instant_all_trigger"
+      },
+      "badger:health": {
+        "max_health": 125
+      },
+      "badger:offline_traits": {
+        "offline_disabled_components": [
+          "badger:culture"
+        ],
+        "construction_disabled_components": [
+          "badger:culture",
+          "badger:buildable_spawner"
+        ]
+      },
+      "badger:refunding_spawner": {
+        "alliance_rule": "friendly",
+        "include_tags": [],
+        "exclude_tags": [],
+        "can_refund_in_combat": false
+      },
+      "badger:generate_ruins": {
+        "max": 1
+      },
+      "badger:reports_buildable_state": {
+        "reports_state": "combat"
+      },
+      "badger:ranged_target": {
+        "target_positions": [
+          [
+            0,
+            1.5,
+            0
+          ]
+        ]
+      },
+      "badger:template": [
+        "badger:component_block_damage_default",
+        "badger:component_deconstruction_default",
+        "badger:component_health_generation_default",
+        "badger:component_generate_ruins_default",
+        "badger:template_tower_with_foundation",
+        "badger:component_generate_ruins_default",
+        "badger:template_structure_player"
+      ],
+      "badger:hud_message_proximity": {
+        "messages": [
+          {
+            "range": 6.0,
+            "hud_message_id": "spawn_ticket_required",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          },
+          {
+            "range": 6.0,
+            "hud_message_id": "no_mobs_recalled",
+            "cooldown_seconds": 1.0,
+            "hud_message_args": [],
+            "filter": {
+              "include": [
+                "player"
+              ],
+              "exclude": [],
+              "alliance_rule_filter": "friendly"
+            }
+          }
+        ]
+      },
+      "badger:tags": {
+        "tags": [
+          "buildable",
+          "buildable_combat",
+          "buildable_structure",
+          "player_buildable",
+          "spawner"
+        ]
+      },
+      "badger:lost_entity_recall_point": {
+        "min_recall_radius": 0.0,
+        "min_entity_distance_from_hero": 0.0,
+        "alliance_rule_filter": "can_recall",
+        "tag_filter": {
+          "include_tags": [],
+          "exclude_tags": []
+        },
+        "include_in_combat": true,
+        "disable_influencing_during_channel": false,
+        "arrival_min_radius": 0.0,
+        "arrival_max_radius": 5.0,
+        "arrival_max_height_difference": 4
+      },
+      "badger:interaction_presentation": {
+        "trigger_specific_events": true,
+        "trigger_generic_events": true
+      },
+      "badger:interactable": {
+        "interactions": [
+          {
+            "name": "interaction_zone",
+            "range": 5,
+            "include_tags": [
+              "player"
+            ],
+            "exclude_tags": [],
+            "alliance_rule_filter": "friendly",
+            "input_layout_override": "overlay_gameplay_bsharp_interaction_hold",
+            "input_layout_under_construction": "overlay_gameplay_under_construction",
+            "input_layout_interactor_luring": "overlay_gameplay_bsharp_interaction_hold"
+          }
+        ]
+      }
+    }
+  }
+}

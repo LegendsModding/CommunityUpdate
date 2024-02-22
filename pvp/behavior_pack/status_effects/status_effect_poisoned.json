@@ -17,7 +17,7 @@
 			"badger:damage_over_time": {
 				"interval": 0.5,
 				"damage": {
-					"damage_amount": 1,
+					"damage_amount": 0.5,
 					"damage_types": [
 						"poison"
 					]

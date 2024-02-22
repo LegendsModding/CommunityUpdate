@@ -5,13 +5,14 @@
 	},
 	"defaults": {
 		//$ Do not have these uncommeted before a any kind of release.
-		"randomseedoverride": 0,
+		//"randomseedoverride": 0,
 		"creativemodedefault": true,
 		//"skip_lobby_creation": true,
 		//"generator_type": "flat", //Not working for some reason idk why?
 		//$----------------------
 		//? Toggale at release
 		"precachestructures": true,
+		"enablecinematicdeaths": true,
 		"dodaylightcycle": false,
 		"doweathercycle": false,
 		"dofogofwar": false,
@@ -21,7 +22,6 @@
 		//? Noramally False vvv / Normally true ^^^
 		"doplayersinvincible": true,
 		//?-------
-		"enablecinematicdeaths": true,
 		"bsharpenabled": true,
 		"campaignactsenabled": false,
 		"mapenabled": true,

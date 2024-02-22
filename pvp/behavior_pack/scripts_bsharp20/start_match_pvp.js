@@ -36,6 +36,12 @@ SNIPPET_InheritsFromGameMode("conquest", () => {
         ownerVillageId: OWNER_VILLAGE_OPT_OUT
     })
 
+    LISTENFOR_PlayerInteracted({
+        snippet: "mob_a_spawner_PlayerIntracted",
+        ownerVillageId: OWNER_VILLAGE_OPT_OUT,
+        includeTags: ["spawner"]
+    })
+
     LISTENFOR_VillageGenerated({
         snippet: "vg_pvp_hq",
         ownerVillageId: OWNER_VILLAGE_OPT_OUT,
@@ -55,6 +61,10 @@ SNIPPET_InheritsFromGameMode("conquest", () => {
         eventName: "start_pvp_match"
     })
 })
+
+SNIPPET_PlayerInteracted("mob_a_spawner_PlayerIntracted", (_playerEntity, _interactedEntity, _payload) => {
+    OUTPUT_Announce("lcu_logging", "player Intracted");
+});
 
 SNIPPET_VillageGenerated("vg_pvp_hq", (villageId, payload) => {
     const baseDeck = DECK_Empty()

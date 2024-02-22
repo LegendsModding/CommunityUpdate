@@ -1,0 +1,255 @@
+{
+  "layouts": [
+    // ---- Layouts ---------------------
+    {
+      "json": "layout_gameplay",
+      "layoutID": "gamePlayNormal",
+      "acceptOverlays": [
+        "overlay_gameplay_interaction",
+        "overlay_gameplay_interaction_enchantment_smith",
+        "overlay_gameplay_interaction_spawner",
+        "overlay_gameplay_spawner_interactor_luring",
+        "overlay_gameplay_spawner_interactor_luring_witch_campaign",
+        "overlay_gameplay_spawner_interactor_luring_witch_pvp",
+        "overlay_gameplay_lute_interaction_hold",
+        "overlay_gameplay_flame_interaction_hold",
+        "overlay_gameplay_poi_golem_interaction_hold",
+        "overlay_gameplay_chest_interaction_hold",
+        "overlay_gameplay_crate_interaction_hold",
+        "overlay_gameplay_swap_mounts",
+        "overlay_gameplay_under_construction",
+        "overlay_gameplay_aiming",
+        "overlay_gameplay_director",
+        "overlay_gameplay_no_placeable_interaction",
+        "overlay_gameplay_bsharp_interaction_hold",
+        "overlay_gameplay_mount_interaction_hold",
+        "overlay_gameplay_animal_interaction_hold",
+        "overlay_gameplay_bsharp_interaction_tap",
+        "overlay_gameplay_interaction_investigate_poi_tower",
+        "overlay_gameplay_interaction_poi_tower",
+        "overlay_gameplay_interaction_piglin_cage",
+        "overlay_gameplay_toolbarselect_build",
+        "overlay_gameplay_toolbarselect_combat",
+        "overlay_gameplay_ability",
+        "overlay_gameplay_quickchat",
+        "overlay_gameplay_interaction_upgrades_pvp",
+        "overlay_gameplay_interaction_spawner_witch_pvp",
+        "overlay_gameplay_interaction_spawner_witch_campaign",
+        "overlay_gameplay_structures",
+        "overlay_gameplay_structure_multistep_start",
+        "overlay_gameplay_structure_resources",
+        "overlay_gameplay_battle_view",
+        "overlay_cinematic_candidates"
+      ],
+      "setting": "player_moving"
+    },
+    {
+      "json": "layout_screen",
+      "layoutID": "screen",
+      "setting": "vanilla",
+      "acceptOverlays": [
+        "overlay_screen_world_map"
+      ]
+    },
+    {
+      "json": "layout_debug_camera",
+      "layoutID": "debugCamera",
+      "setting": "debug",
+      "acceptOverlays": [
+        "overlay_cinematic_candidates"
+      ]
+    },
+    {
+      "json": "layout_screen",
+      "layoutID": "screenTextInputOnly"
+    },
+    {
+      "json": "layout_gameplay_aiming",
+      "setting": "aiming"
+    },
+    {
+      "json": "layout_editor",
+      "setting": "player_moving"
+    },
+    {
+      "json": "layout_cinematic_skippable"
+    },
+    {
+      "json": "layout_cinematic_blocking"
+    },
+    {
+      "json": "layout_cinematic_editor",
+      "setting": "debug"
+    },
+    // ---- Overlays ---------------------    
+    {
+      "json": "overlay_gameplay_aiming",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_cinematic_candidates",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_director",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_structures",
+      "type": "overlay",
+      "setting": "structure_placement"
+    },
+    {
+      "json": "overlay_gameplay_structure_multistep_start",
+      "type": "overlay",
+      "setting": "structure_placement"
+    },
+    {
+      "json": "overlay_gameplay_structure_resources",
+      "type": "overlay",
+      "setting": "structure_placement"
+    },
+    {
+      "json": "overlay_gameplay_interaction",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_spawner",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_enchantment_smith",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_spawner_interactor_luring",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_spawner_interactor_luring_witch_campaign",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_spawner_interactor_luring_witch_pvp",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_lute_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_flame_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_poi_golem_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_chest_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_crate_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_bsharp_interaction_tap",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_bsharp_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_mount_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_animal_interaction_hold",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_no_placeable_interaction",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_investigate_poi_tower",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_poi_tower",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_piglin_cage",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_ability",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_swap_mounts",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_aiming",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_under_construction",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_upgrades_pvp",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_spawner_witch_pvp",
+      "type": "overlay"
+    },
+    {
+      "json": "overlay_gameplay_interaction_spawner_witch_campaign",
+      "type": "overlay"
+    },
+    // ---- Overlays with Radial Menus ----------------
+    {
+      "json": "overlay_gameplay_battle_view",
+      "type": "overlay",
+      "radial": "radial_gameplay_unittype",
+      "setting": "aiming"
+    },
+    {
+      "json": "overlay_gameplay_toolbarselect_build",
+      "type": "overlay",
+      "radial": "radial_gameplay_toolbar_build"
+    },
+    {
+      "json": "overlay_gameplay_toolbarselect_combat",
+      "type": "overlay",
+      "radial": "radial_gameplay_toolbar_combat"
+    },
+    {
+      "json": "overlay_gameplay_quickchat",
+      "type": "overlay",
+      "radial": "radial_gameplay_quickchat"
+    },
+    {
+      "json": "overlay_screen_world_map",
+      "type": "overlay"
+    }
+  ],
+  "mappings": [
+    {
+      "json": "mapping_gamepad",
+      "device": "controller",
+      "mode": "standard"
+    },
+    {
+      "json": "mapping_kb",
+      "device": "keyboard",
+      "mode": "standard"
+    }
+  ]
+}

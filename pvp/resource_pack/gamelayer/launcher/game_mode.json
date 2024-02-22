@@ -9,7 +9,7 @@
       "loading_tip_set": "pvp",
       "requires_online_premium": true,
       "name": "lcu_pvp",
-      "telemetry_name": "PVP_Private",
+      "telemetry_name": "lcu_pvp",
       "default_privacy": 3,
       "lobby_title": "Legends Community PVP Update",
       "ui_style": "pvp",
